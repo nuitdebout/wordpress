@@ -323,8 +323,234 @@ agressions sexistes)</dd>
                 </div>
               </div>
             </div>
+
+             <!-- commented cause links are not the same with static version 
+             <div class="row">
+              <h5 class="center nd_brand">Envie de participer ? Envie de s'organiser ?</h5>
+              <p class="center">Retrouvez les informations de votre ville.</p>
+              <div class="col s12 cities-chips">
+                 <div class="chip">
+                    <a href="/ville/aix-en-provence">Aix-en-Provence</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/ales">Alès</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/agen">Agen</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/amiens">Amiens</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/angers">Angers</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/annecy">Annecy</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/aubervilliers">Aubervilliers</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/auxerre">Auxerre</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/avignon">Avignon</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/bethune">Béthune</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/bordeaux">Bordeaux</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/bourges">Bourges</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/caen">Caen</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/besancon">Besançon</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/calais">Calais</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/chalon-sur-saone">Chalon-sur-Saône</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/chambery">Chambéry</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/clermont-ferrand">Clermont-Ferrand</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/figeac">Figeac</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/gap">Gap</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/grasse">Grasse</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/dijon">Dijon</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/grenoble">Grenoble</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/le-havre">Le Havre</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/la-rochelle">La Rochelle</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/laval">Laval</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/la-roche-sur-yon">La Roche-sur-Yon</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/le-mans">Le Mans</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/les-sables-dolonne">Les Sables d&#x27;Olonne</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/lille">Lille</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/limoges">Limoges</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/lodeve">Lodeve</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/lorient">Lorient</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/lyon">Lyon</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/manosque">Manosque</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/marseille">Marseille</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/metz">Metz</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/montpellier">Montpellier</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/montreuil">Montreuil</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/nancy">Nancy</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/nantes">Nantes</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/nice">Nice</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/nimes">Nimes</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/niort">Niort</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/nontron">Nontron</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/orleans">Orléans</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/paris">Paris</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/perpignan">Perpignan</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/poitiers">Poitiers</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/rambouillet">Rambouillet</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/rennes">Rennes</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/rodez">Rodez</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/rouen">Rouen</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/saint-denis-de-la-reunion">Saint-Denis de la Réunion</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/saint-etienne">Saint-Étienne</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/saint-leu">Saint-Leu</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/saint-malo">Saint-Malo</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/strasbourg">Strasbourg</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/tarbes">Tarbes</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/toulon">Toulon</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/tours">Tours</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/troyes">Troyes</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/villejuif">Villejuif</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/toulouse">Toulouse</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/bruxelles">Bruxelles</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/liege">Liège</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/namur">Namur</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/gent">Gent</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/malaga">Málaga</a>
+                  </div>
+                 <div class="chip">
+                    <a href="/ville/amsterdam">Amsterdam</a>
+                  </div>
+              </div>
+            </div>
+            !-->
+
+
           </div>
         </div>
+
+
+
+
+
         <div id="radio" class="section">
           <iframe src="https://mixlr.com/radiodebout/embed" width="100%" height="180px" scrolling="no" frameborder="no" marginheight="0" marginwidth="0"></iframe>
         </div>
@@ -348,7 +574,6 @@ agressions sexistes)</dd>
 
 
       </div>
-
 
 <?php /// get_sidebar(); ?>
 <?php get_footer(); ?>

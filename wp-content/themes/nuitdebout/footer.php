@@ -23,19 +23,7 @@
 					?>
 			<?php endif; ?>
 
-			<?php if ( has_nav_menu( 'social' ) ) : ?>
-					<?php
-						
-						wp_nav_menu( array(
-							'theme_location' => 'social',
-							'menu_class'     => 'social-links-menu',
-							'depth'          => 1,
-							'link_before'    => '<span class="screen-reader-text">',
-							'link_after'     => '</span>',
-						) );
-						
-					?>
-			<?php endif; ?>
+		
 
 			
 				<?php
@@ -55,53 +43,44 @@
         <div class="container">
           <div class="row" >
 
+			  	<div class="col s6">
+              	  	<h5>#NuitDebout</h5>
+                  	<div class="social-networks social-networks--footer">
+	              		<?php 
+	              		if ( has_nav_menu( 'social' ) ){ 
+							wp_nav_menu( array(
+								'theme_location' => 'social',
+								'menu_class'     => 'social-links-menu',
+								'depth'          => 1,
+								'link_before'    => '<span class="screen-reader-text">',
+								'link_after'     => '</span>',
+							) );
+							
+						} 
+						else { ?>
+		 					<a href="https://www.facebook.com/NuitDebout/" target="_blank" class="social-icons facebook">
+		                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/icons/ic_fb_light.svg" />
+		                    </a>
+		                    <a href="https://twitter.com/nuitdebout" target="_blank" class="social-icons twitter ">
+		                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/icons/ic_twitter_light.svg" />
+		                    </a>
+		                    <a href="https://www.periscope.tv/RemyBuisine" target="_blank" class="social-icons periscope ">
+		                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/icons/ic_periscope.svg" />
+		                    </a>
 
-			  <div class="col s6">
-              <h5>#NuitDebout</h5>
-                  <div class="social-networks social-networks--footer">
-              		<?php if ( has_nav_menu( 'social' ) ){ 
-						
-						wp_nav_menu( array(
-							'theme_location' => 'social',
-							'menu_class'     => 'social-links-menu',
-							'depth'          => 1,
-							'link_before'    => '<span class="screen-reader-text">',
-							'link_after'     => '</span>',
-						) );
-						
-					} else { ?>
- 					<a href="https://www.facebook.com/NuitDebout/" target="_blank" class="social-icons facebook">
-                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/icons/ic_fb_light.svg" />
-                    </a>
-                    <a href="https://twitter.com/nuitdebout" target="_blank" class="social-icons twitter ">
-                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/icons/ic_twitter_light.svg" />
-                    </a>
-                    <a href="https://www.periscope.tv/RemyBuisine" target="_blank" class="social-icons periscope ">
-                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/icons/ic_periscope.svg" />
-                    </a>
-
-                     <a href="https://github.com/nuitdebout/nuitdebout.github.io" target="_blank" class="social-icons github  ">
-                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/icons/ic_github_light.svg" />
-                    </a>
-
-					<?php	} ?>
-					    </div>
-
-            </div>
-			
-
-			
-
-           
-                  
-            
-
-            <div class="col s6">
-              <h5>Voir aussi</h5>
-              <a target="_blank" href="https://www.convergence-des-luttes.org/">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/CONVERGENCE-DES-LUTTES.png"/>
-              </a>
-            </div>
+		                     <a href="https://github.com/nuitdebout/nuitdebout.github.io" target="_blank" class="social-icons github  ">
+		                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/icons/ic_github_light.svg" />
+		                    </a>
+						<?php	} ?>
+					</div>
+				</div>
+	
+	            <div class="col s6">
+	              <h5>Voir aussi</h5>
+	              <a target="_blank" href="https://www.convergence-des-luttes.org/">
+	                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/CONVERGENCE-DES-LUTTES.png"/>
+	              </a>
+	            </div>
 
           </div>
         </div>
