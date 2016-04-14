@@ -18,7 +18,34 @@
 	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php endif; ?>
+
+  <meta name="description" content="<?php bloginfo( 'description' ); ?>">
+
+  <!-- Place favicon.ico in the root directory , both file are missing ! cc @graphistes-->
+
+  <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/apple-touch-icon.png">
+  <link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/logo2.png" type="image/ico" />
+
+
+  <!--Import Google Icon Font-->
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <meta property="og:locale" content="fr_FR"> <!-- a tester : <?php bloginfo( 'language' ); ?> !-->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="<?php bloginfo( 'name' ); ?> - Nuit Debout">
+  <meta property="og:description" content="<?php bloginfo( 'description' ); ?> - Chaque jour, nous sommes des milliers à occuper l’espace public pour reprendre notre place dans la République. Rejoignez-nous, et décidons ensemble de notre devenir commun dans ce mouvement politique sans parti ni bannières.">
+  <meta property="og:url" content="<?php bloginfo( 'url' ); ?>">
+  <meta property="og:site_name" content="<?php bloginfo( 'name' ); ?>">
+  <meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/img/headertest.jpg">
+  <script type="text/javascript" id="gretaScript" src="https://cdn.greta.io/greta.min.js" data-ac="db56c2f2489199823062893e30e03720"></script>
 	<?php wp_head(); ?>
+
+
+
 </head>
 <body class="grey-text text-darken-4">
   <div id="fb-root"></div>
@@ -38,50 +65,58 @@
         <div class="navbar-fixed">
           <nav role="navigation">
             <div class="nav-wrapper">
-              <a id="logo-container" href="#" class="brand-logo">
+	            <a id="logo-container" href="#" class="brand-logo">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logoblack.svg" class="navbar__logo" alt="Nuit Debout"/>
+	            </a>
+             	<div class="container">
+	                <ul class="hide-on-med-and-down">
+	                  <li><a href="#header">Le mouvement</a></li>
+	                  <li><a href="#calendar">Programme</a></li>
+	                  <li><a href="#participate">Participer</a></li>
+	                  <li><a href="#assembly">Rassemblements</a></li>
+	                  <li><a href="https://wiki.nuitdebout.fr" target="_blank" >WIKI</a></li>
+	                </ul>
 
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logoblack.svg" class="navbar__logo" alt="Nuit Debout"/>
-              </a>
-              <div class="container">
+	                <ul id="nav-mobile" class="side-nav">
+	                  <li><a href="#header">Le mouvement</a></li>
+	                  <li><a href="#calendar">Programme</a></li>
+	                  <li><a href="#participate">Participer</a></li>
+	                  <li><a href="#assembly">Rassemblements</a></li>
+	                  <li><a href="https://wiki.nuitdebout.fr" target="_blank" >WIKI</a></li>
 
-                <ul class="hide-on-med-and-down">
-                  <li><a href="#header">Le mouvement</a></li>
-                  <li><a href="#calendar">Programme</a></li>
-                  <li><a href="#participate">Participer</a></li>
-                  <li><a href="#assembly">Rassemblements</a></li>
-                  <li><a href="https://wiki.nuitdebout.fr" target="_blank" >WIKI</a></li>
+	                </ul>
+	                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons grey-text">menu</i></a>
+              	</div>
 
+             	<div class="social-networks">
+                <?php 
+	              		if ( has_nav_menu( 'social' ) ){ 
+							wp_nav_menu( array(
+								'theme_location' => 'social',
+								'menu_class'     => 'social-links-menu',
+								'depth'          => 1,
+								'link_before'    => '<span class="screen-reader-text">',
+								'link_after'     => '</span>',
+							) );
+							
+						} 
+						else { ?>
+		 					<a href="https://www.facebook.com/NuitDebout/" target="_blank" class="social-icons facebook">
+		                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/icons/ic_fb_light.svg" />
+		                    </a>
+		                    <a href="https://twitter.com/nuitdebout" target="_blank" class="social-icons twitter ">
+		                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/icons/ic_twitter_light.svg" />
+		                    </a>
+		                    <a href="https://www.periscope.tv/RemyBuisine" target="_blank" class="social-icons periscope ">
+		                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/icons/ic_periscope.svg" />
+		                    </a>
 
-                </ul>
+		                     <a href="https://github.com/nuitdebout/nuitdebout.github.io" target="_blank" class="social-icons github  ">
+		                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/icons/ic_github_light.svg" />
+		                    </a>
+						<?php	} ?>
 
-                <ul id="nav-mobile" class="side-nav">
-                  <li><a href="#header">Le mouvement</a></li>
-                  <li><a href="#calendar">Programme</a></li>
-                  <li><a href="#participate">Participer</a></li>
-                  <li><a href="#assembly">Rassemblements</a></li>
-                  <li><a href="https://wiki.nuitdebout.fr" target="_blank" >WIKI</a></li>
-
-                </ul>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons grey-text">menu</i></a>
-
-              </div>
-
-              <div class="social-networks">
-                <a href="https://www.facebook.com/NuitDebout/" target="_blank" class="social-icons facebook">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/icons/ic_fb.svg" /> 
-                </a>
-                <a href="https://twitter.com/nuitdebout" target="_blank" class="social-icons twitter  hide-on-small-only">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/icons/ic_twitter.svg" />
-                </a>
-                <a href="https://www.periscope.tv/RemyBuisine" target="_blank" class="social-icons periscope  hide-on-small-only">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/icons/ic_periscope_2.svg" />
-                </a>
-
-                 <a href="https://github.com/nuitdebout/nuitdebout.github.io" target="_blank" class="social-icons github  hide-on-small-only">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/icons/ic_github_dark.svg" />
-                </a>
-
-              </div>
+              	</div>
             </div>
           </nav>
         </div>
