@@ -184,7 +184,7 @@ agressions sexistes)</dd>
             <h2 class="center nd_brand">Les dernières actus</h2>
             <div class="row">
               <div class="col s12 m4">
-                <a href="#" target="_blank">
+                <a href="" target="_blank">
                   <div class="card small hoverable">
                     <div class="card-image">
                     </div>
@@ -196,7 +196,7 @@ agressions sexistes)</dd>
                 </a>
               </div>
               <div class="col s12 m4">
-                <a href="#" target="_blank">
+                <a href="" target="_blank">
                   <div class="card small hoverable">
                     <div class="card-image">
                     </div>
@@ -208,7 +208,7 @@ agressions sexistes)</dd>
                 </a>
               </div>
               <div class="col s12 m4">
-                <a href="#" target="_blank">
+                <a href="" target="_blank">
                   <div class="card small hoverable">
                     <div class="card-image">
                     </div>
@@ -223,7 +223,7 @@ agressions sexistes)</dd>
             </div>
             <div class="row">
               <div class="col s12 m4">
-                <a href="#" target="_blank">
+                <a href="" target="_blank">
                   <div class="card small hoverable">
                     <div class="card-image">
                     </div>
@@ -234,7 +234,7 @@ agressions sexistes)</dd>
                 </a>
               </div>
               <div class="col s12 m4">
-                <a href="#" target="_blank">
+                <a href="" target="_blank">
                   <div class="card small hoverable">
                     <div class="card-image">
                     </div>
@@ -246,7 +246,7 @@ agressions sexistes)</dd>
                 </a>
               </div>
               <div class="col s12 m4">
-                <a href="#" target="_blank">
+                <a href="" target="_blank">
                   <div class="card small hoverable">
                     <div class="card-image">
                     </div>
