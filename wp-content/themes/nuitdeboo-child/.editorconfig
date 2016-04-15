@@ -9,3 +9,49 @@ end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
+
+[*.js]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+#translate_tabs_to_spaces = true
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.json]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+#translate_tabs_to_spaces = true
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.php]
+indent_style = tab
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+#translate_spaces_to_tabs = true
+trim_trailing_whitespace = true
+insert_final_newline = false
+
+[*.html]
+indent_style = tab
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+#translate_spaces_to_tabs = true
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.scss]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+#translate_tabs_to_spaces = true
+trim_trailing_whitespace = true
+insert_final_newline = true
+
