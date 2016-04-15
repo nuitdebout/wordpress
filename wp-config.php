@@ -22,10 +22,10 @@
 define('DB_NAME', 'nuitdeboutdev');
 
 /** Utilisateur de la base de données MySQL. */
-define('DB_USER', 'changeME');
+define('DB_USER', 'root');
 
 /** Mot de passe de la base de données MySQL. */
-define('DB_PASSWORD', 'changeMe');
+define('DB_PASSWORD', 'root');
 
 /** Adresse de l'hébergement MySQL. */
 define('DB_HOST', 'localhost');
@@ -66,7 +66,7 @@ define('NONCE_SALT',       'qVJ4/C%(?V6*h/h!D-TL=FEUg?^R{:t3uS+T;)CV<5M:ARH<f%la
  * si vous leur donnez chacune un préfixe unique.
  * N'utilisez que des chiffres, des lettres non-accentuées, et des caractères soulignés!
  */
-$table_prefix  = 'wpdb_';
+$table_prefix  = 'wp_';
 
 /**
  * Pour les développeurs : le mode déboguage de WordPress.

@@ -103,7 +103,7 @@ CREATE TABLE IF NOT EXISTS `wpdb_commentslinks` (
 -- Structure de la table `wpdb_commentsoptions`
 --
 
-CREATE TABLE IF NOT EXISTS `wpdb_commentsoptions` (
+CREATE TABLE IF NOT EXISTS `wpdb_options` (
   `option_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `option_name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `option_value` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
