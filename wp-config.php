@@ -19,7 +19,7 @@
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
-define('DB_NAME', 'nuitdeboutdev');
+define('DB_NAME', 'nuitdeboutdev2');
 
 /** Utilisateur de la base de données MySQL. */
 define('DB_USER', 'root');
@@ -66,7 +66,7 @@ define('NONCE_SALT',       'qVJ4/C%(?V6*h/h!D-TL=FEUg?^R{:t3uS+T;)CV<5M:ARH<f%la
  * si vous leur donnez chacune un préfixe unique.
  * N'utilisez que des chiffres, des lettres non-accentuées, et des caractères soulignés!
  */
-$table_prefix  = 'wp_';
+$table_prefix  = 'wpdb_';
 
 /**
  * Pour les développeurs : le mode déboguage de WordPress.
@@ -87,7 +87,7 @@ define('WP_DEBUG', false);
 define('WP_ALLOW_MULTISITE', true);
 
 define('MULTISITE', true);
-define('SUBDOMAIN_INSTALL', true);
+define('SUBDOMAIN_INSTALL', false);
 define('DOMAIN_CURRENT_SITE', 'nuitdebout.dev');
 define('PATH_CURRENT_SITE', '/');
 define('SITE_ID_CURRENT_SITE', 1);
