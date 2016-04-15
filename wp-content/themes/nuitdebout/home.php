@@ -8,7 +8,45 @@
  */
 get_header(); 
 ?>
+ <div class="section no-pad-bot valign-wrapper nd_header">
+          <div class="nd_header__img"> </div>
+          <div class="container white-text valign" style="z-index: 2">
 
+            <h1 class="header center  nd_brand white-text
+            nd_header__cta"><img class="nd_header__brand" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logowhite.svg" alt="Nuit Debout"></h1>
+            <h4 class="nd_header__quote header white-text">
+              <small></small>
+            </h4>
+            <div class="row center">
+              <a href="http://petition.nuitdebout.fr" class="btn-large waves-effect waves-light indigo">Signer la pétition</a>
+            </div>
+          </div>
+
+          <a class="nd_header__radio_link  hide-on-small-only" alt="radio debout" href="#radio"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/svg/radio.svg" style="width:100%;height:100%;"></a>
+        </div>
+
+
+        <div id="header" class="section">
+          <div class="container center">
+
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/svg/manifesto.svg" class="hide-on-med-and-up" style="height: 50px;">
+
+            <h2 class="center nd_brand">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/svg/manifesto.svg" class="hide-on-small-only" style="height: 50px;">
+              Manifeste
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/svg/manifesto.svg" class="hide-on-small-only" style="height: 50px; transform: rotateY(180deg);">
+            </h2>
+
+            <div class="border-text">
+              <p> <strong>Sais-­tu ce qui se passe là ? </strong> Des milliers de personnes se réunissent Place de la République à Paris, et dans toute la France, depuis le 31 mars. Des assemblées se forment où les gens discutent et échangent. Chacun se réapproprie la parole et l’espace public.</p>
+
+              <p>Ni entendues ni représentées, des personnes de tous horizons reprennent possession de la réflexion sur l’avenir de notre monde. La politique n’est pas une affaire de professionnels, <strong>c’est l’affaire de tous</strong>. L’humain devrait être au cœur des préoccupations de nos dirigeants. Les intérêts particuliers ont pris le pas sur l’intérêt général.</p>
+
+              <p><strong>Chaque jour, nous sommes des milliers à occuper l’espace public pour reprendre notre place dans la République.</strong> Venez nous rejoindre, et décidons ensemble de notre devenir commun.</p>
+            </div>
+
+          </div>
+        </div>
  <div id="calendar" class="section">
           <h2 class="center nd_brand">Programme</h2>
           <div class="container nd_calendar">
