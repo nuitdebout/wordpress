@@ -10,8 +10,16 @@ if($page_parent->ID){
 	$include = get_pages('include='.$parent_id);
 	$content = apply_filters('the_content',$include[0]->post_content);
 	$title = apply_filters('the_title',$include[0]->post_title);
-	echo '<h2>'.$title.'</h2>';
-	echo '<strong>'.$content.'</strong>';
+	?>
+	<div class="container">
+		<h2><?php echo $title; ?></h2>
+	</div>
+	<div class="socialonhome container-fluid">
+		<div class="row">
+			<?php echo $content; ?>
+		</div>
+	</div>
+	<?php
 	$args = array(
 		'child_of' => $parent_id,
 		'post_type' => 'page',
@@ -25,8 +33,16 @@ if($page_parent->ID){
 			$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($p->ID), 'thumbnail' );
 			$url = $thumb['0'];
 			echo '<img src='.$url.' />';
-			echo '<h2>'.$title.'</h2>';
-			echo $content;
+			?>
+			<div class="container">
+				<h2><?php echo $title; ?></h2>
+			</div>
+			<div class="socialonhome container-fluid">
+				<div class="row">
+					<?php echo $content; ?>
+				</div>
+			</div>
+			<?php
 		endforeach;
 	} // if subs
 }
