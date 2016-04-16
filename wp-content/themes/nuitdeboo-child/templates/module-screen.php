@@ -1,6 +1,6 @@
 <?php
-	if ( get_option('homepage_screen', 'option') ) {
+	if ( get_field('homepage_screen', 'option') ) {
 		// Temporary
-		print_r( get_option('homepage_screen', 'option') );
+		print_r( get_field('homepage_screen', 'option') );
 	}
 ?>
