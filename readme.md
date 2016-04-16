@@ -173,7 +173,10 @@ Voici l'exemple de vhost que vous pouvez créer, considérant que les fichiers s
 
 ## Using the child theme named nuitdeboo-child
 
-Vous devez utiliser le thème enfant nommé **nuitdeboo-child**
+Placez vous dans le répertoire (comme prédéfinit ci dessus) :
+**/Users/duke/Sites/nuitdebout-fr/wp-content/themes/nuitdeboo-child**
+
+Vous devez utiliser le thème enfant nommé **nuitdeboo-child** puis au sein de ce répertoire lancer les commandes suivantes :
 
 1. npm install -g gulp bower
 2. npm install
