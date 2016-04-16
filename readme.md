@@ -8,7 +8,7 @@ Utilise WordPress multisites.
 > peut servir de base de redirection pour les villes ayant leur propre site deja en place
 > "juste" le theme peut être utilisé par les villes ayant un wordpress mais avec un theme generique 
 
-exemple: nuitdebout.fr/marseille (utilisation de sous-domaine en discut. sur loomio)
+exemple: nuitdebout.fr/marseille (utilisation de répertoire statué sur loomio)
 
 > utilise un "theme" commun qui peut etre largement modifié et adapté avec ses propres liens et contenus
 
@@ -172,4 +172,29 @@ Voici l'exemple de vhost que vous pouvez créer, considérant que les fichiers s
 ## Using the child theme named nuitdeboo-child
 
 Vous devez utiliser le thème enfant nommé **nuitdeboo-child**
+
+1/ npm install -g gulp bower
+2/ npm install
+3/ bower install
+
+Changer l'url de assets/manifest.json (line 25) pour BrowserSync mon vhost étant nuitdebout.dev (Afin que http://localhost:3000 appelle le bon vhost et refresh auto à chaque sauvegarde d'un fichier du thème)
+
+Pour la suite :
+
+1/ Au premier lancement ` gulp && gulp watch `
+
+### Available gulp commands
+
+* `gulp` — Compile and optimize the files in your assets directory
+* `gulp watch` — Compile assets when file changes are made
+* `gulp --production` — Compile assets for production (no source maps).
+
+2/ Le reste du temps / les autres fois utilisez la commande 
+**gulp watch**
+
+3/ Les styles s'éditent bien sur dans assets/styles/
+
+4/ Dès lors qu'on a besoin d'une librairie JS il n'y a plus qu'à se servir de la commande bower install
+exemple : ` bower install isotope `
+
 
