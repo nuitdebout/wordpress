@@ -40,10 +40,13 @@
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ic_fb_light.svg" />
 					!-->
 					</a>
-
-					<a href="https://github.com/nuitdebout/nuitdebout.github.io" target="_blank" class="social-icons github  ">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ic_github_light.svg" />
-					</a>
+					<ul class="social-networks list-inline">
+						<li>
+							<a href="https://github.com/nuitdebout/" target="_blank" class="social-icons github  ">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ic_github_light.svg" />
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 
