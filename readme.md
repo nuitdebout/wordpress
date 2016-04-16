@@ -132,6 +132,7 @@ require_once(ABSPATH . 'wp-settings.php');
 ## Using the multisite
 
 Le DUMP de la database se trouve dans le répertoire /dump à la racine du projet
+Le fichier concerné est : **nuitdebout_multisite.sql**
 
 
 ## Default pwd for admin user (temporary)
