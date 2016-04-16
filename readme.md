@@ -173,15 +173,15 @@ Voici l'exemple de vhost que vous pouvez créer, considérant que les fichiers s
 
 Vous devez utiliser le thème enfant nommé **nuitdeboo-child**
 
-1/ npm install -g gulp bower
-2/ npm install
-3/ bower install
+1. npm install -g gulp bower
+2. npm install
+3. bower install
 
 Changer l'url de assets/manifest.json (line 25) pour BrowserSync mon vhost étant nuitdebout.dev (Afin que http://localhost:3000 appelle le bon vhost et refresh auto à chaque sauvegarde d'un fichier du thème)
 
 Pour la suite :
 
-1/ Au premier lancement ` gulp && gulp watch `
+1. Au premier lancement ` gulp && gulp watch `
 
 ### Available gulp commands
 
@@ -189,12 +189,12 @@ Pour la suite :
 * `gulp watch` — Compile assets when file changes are made
 * `gulp --production` — Compile assets for production (no source maps).
 
-2/ Le reste du temps / les autres fois utilisez la commande 
+2. Le reste du temps / les autres fois utilisez la commande 
 **gulp watch**
 
-3/ Les styles s'éditent bien sur dans assets/styles/
+3. Les styles s'éditent bien sur dans assets/styles/
 
-4/ Dès lors qu'on a besoin d'une librairie JS il n'y a plus qu'à se servir de la commande bower install
+4. Dès lors qu'on a besoin d'une librairie JS il n'y a plus qu'à se servir de la commande bower install
 exemple : ` bower install isotope `
 
 
