@@ -9,9 +9,9 @@
  *
  * @link https://github.com/roots/sage/pull/1042
  */
-define( 'ACF_LITE', true );
+// define( 'ACF_LITE', true );
 
-include_once('advanced-custom-fields/acf.php');
+// include_once('advanced-custom-fields/acf.php');
 
 $sage_includes = [
   'lib/assets.php',    // Scripts and stylesheets
@@ -20,7 +20,7 @@ $sage_includes = [
   'lib/titles.php',    // Page titles
   'lib/wrapper.php',   // Theme wrapper class
   'lib/customizer.php', // Theme customizer
-  'acf/acf_social.php' // ACF
+  'acf/acf_options.php' // ACF
 ];
 
 foreach ($sage_includes as $file) {

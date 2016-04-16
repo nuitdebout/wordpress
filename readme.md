@@ -178,9 +178,9 @@ Placez vous dans le répertoire (comme prédéfinit ci dessus) :
 
 Vous devez utiliser le thème enfant nommé **nuitdeboo-child** puis au sein de ce répertoire lancer les commandes suivantes :
 
-1. npm install -g gulp bower
-2. npm install
-3. bower install
+1. `npm install -g gulp bower`
+2. `npm install`
+3. `bower install`
 
 Changer l'url de assets/manifest.json (line 25) pour BrowserSync mon vhost étant nuitdebout.dev (Afin que http://localhost:3000 appelle le bon vhost et refresh auto à chaque sauvegarde d'un fichier du thème)
 
