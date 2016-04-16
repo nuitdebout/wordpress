@@ -11,6 +11,14 @@ front-page.php
 		get_template_part('templates/module', 'screen');
 	}
 
+	//if ( get_field('manifesto_module_screen', 'option') == 'oui' ) {
+		get_template_part('templates/module', 'manifesto');
+	//}
+
+	//if ( get_field('manifesto_module_screen', 'option') == 'oui' ) {
+		get_template_part('templates/module', 'participate');
+	//}
+
 	/**
 	* Module social network
 	*/
