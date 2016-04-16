@@ -34,10 +34,9 @@
 
                   <a href="http://wiki.nuitdebout.fr" target="_blank" class="social-icons facebook">
                    	WIKI
-                   <!--
-                   no ico
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ic_fb_light.svg" />
-                  	!-->
+
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ic_wiki.svg" />
+
                   </a>
 
                    <a href="https://github.com/nuitdebout/nuitdebout.github.io" target="_blank" class="social-icons github  ">
