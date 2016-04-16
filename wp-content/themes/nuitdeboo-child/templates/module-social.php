@@ -2,7 +2,15 @@
 	<?php
 	$sc = array(
 		'facebook',
-		'twitter'
+		'twitter',
+		'bambuser',
+		'youtube',
+		'instagram',
+		'tumblr',
+		'periscope',
+		'snapchat',
+		'scoopit',
+		'github'
 	);
 	foreach ( $sc as $value ) :
 		if( get_field('social_'.$value, 'option') ) : ?>

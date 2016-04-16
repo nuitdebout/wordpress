@@ -23,7 +23,7 @@
 	* Module social network
 	*/
 	if ( get_field('global_module_social', 'option') == 'oui' ) {
-		get_template_part('templates/social');
+		get_template_part('templates/module', 'social');
 	}
 ?>
 
