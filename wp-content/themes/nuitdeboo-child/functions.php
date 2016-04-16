@@ -11,7 +11,7 @@
  */
 define( 'ACF_LITE', true );
 
-include_once('advanced-custom-fields/acf.php');
+include_once(ABSPATH . 'wp-content/plugins/advanced-custom-fields/acf.php');
 
 $sage_includes = [
   'lib/assets.php',    // Scripts and stylesheets
