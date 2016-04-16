@@ -14,3 +14,10 @@
 		get_template_part('templates/social');
 	}
 ?>
+
+<h1>Ma title</h1>
+
+<h2>Ma second title</h2>
+
+<button class="btn btn-primary">My button</button>
+<br /><br />
