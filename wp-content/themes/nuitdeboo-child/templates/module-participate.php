@@ -12,7 +12,9 @@ if($page_parent->ID){
 	$title = apply_filters('the_title',$include[0]->post_title);
 	?>
 	<div class="container">
-		<h2><?php echo $title; ?></h2>
+		<div class="page-header">
+			<h2><?php echo $title; ?></h2>
+		</div>
 	</div>
 	<div class="container-fluid">
 		<div class="row">
@@ -35,7 +37,9 @@ if($page_parent->ID){
 			echo '<img src='.$url.' />';
 			?>
 			<div class="container">
-				<h2><?php echo $title; ?></h2>
+				<div class="page-header">
+					<h2><?php echo $title; ?></h2>
+				</div>
 			</div>
 			<div class="container-fluid">
 				<div class="row">
