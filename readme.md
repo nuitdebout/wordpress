@@ -122,7 +122,7 @@ define('WP_DEFAULT_THEME', 'nuitdeboo-child');
 
 /** Chemin absolu vers le dossier de WordPress. */
 if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
+    define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Réglage des variables de WordPress et de ses fichiers inclus. */
 require_once(ABSPATH . 'wp-settings.php');
@@ -201,5 +201,4 @@ Pour la suite :
 
 4. Dès lors qu'on a besoin d'une librairie JS il n'y a plus qu'à se servir de la commande bower install
 exemple : ` bower install isotope `
-
 
