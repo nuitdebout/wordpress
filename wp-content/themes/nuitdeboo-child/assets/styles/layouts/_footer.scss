@@ -1,6 +1,11 @@
 .content-info {
   background-color: $footer-bg;
 
+  .foot {
+    padding-top: 4em !important;
+    padding-bottom: 4em !important;
+  }
+
   h5 {
     font-size: ceil(($font-size-base * 1.15));
     color: #fff;

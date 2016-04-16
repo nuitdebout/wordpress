@@ -1,6 +1,6 @@
 <footer class="content-info">
-	<div class="container-fluid">
-		<div class="row">
+	<div class="container">
+		<div class="row foot">
 
 			<div class="col-xs-2 col-sm-4">
 				<h5>#NuitDebout</h5>
