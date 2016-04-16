@@ -7,4 +7,5 @@ foreach ($sc as $value){
 		</a>';
 	}
 }
+
 ?>
