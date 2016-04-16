@@ -10,7 +10,7 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="text-center">
-						Message
+						<div id="sentencerotate"></div>
 					</div>
 				</div>
 			</div>

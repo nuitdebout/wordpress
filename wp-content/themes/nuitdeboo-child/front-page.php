@@ -1,6 +1,6 @@
-<?php get_template_part('templates/page', 'header'); ?>
-
-front-page.php
+<div class="page-header">
+	<h1>Nuit debout numérique</h1>
+</div>
 
 <?php
 
