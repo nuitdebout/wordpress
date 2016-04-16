@@ -33,12 +33,10 @@
 			<div class="col-xs-2 col-sm-4">
 				<h5>Contribuer</h5>
 				<div class="contribute">
-					<a href="http://wiki.nuitdebout.fr" target="_blank" class="social-icons facebook">
-					WIKI
-					<!--
-					no ico
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ic_fb_light.svg" />
-					!-->
+					<a href="http://wiki.nuitdebout.fr" target="_blank" class="social-icons wiki">
+
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ic_wiki.svg" />
+
 					</a>
 					<ul class="social-networks list-inline">
 						<li>
