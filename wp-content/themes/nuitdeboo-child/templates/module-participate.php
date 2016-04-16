@@ -2,7 +2,8 @@
 /*
  module "participer" goes here
 */
-$page_parent = get_page_by_title( 'Participer' );
+$page_parent = get_field('homepage_manifesto', 'option');
+
 if($page_parent->ID){
 	$parent_id = $page_parent->ID;
 
@@ -28,6 +29,9 @@ if($page_parent->ID){
 			echo $content;
 		endforeach;
 	} // if subs
-} // if parent
+}
+else{
+	echo 'Please go to admin > options > Participer and select the page you want to display (a page must be created before)';
+}
 ?>
 

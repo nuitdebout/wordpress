@@ -7,13 +7,17 @@
 		get_template_part('templates/module', 'screen');
 	}
 
-	//if ( get_field('manifesto_module_screen', 'option') == 'oui' ) {
-		get_template_part('templates/module', 'manifesto');
-	//}
+	if ( get_field('homepage_module_manifesto', 'option') == 'oui' ) {
+		if ( get_field('homepage_manifesto', 'option') ) {
+			get_template_part('templates/module', 'manifesto');
+		}
+	}
 
-	//if ( get_field('manifesto_module_screen', 'option') == 'oui' ) {
-		get_template_part('templates/module', 'participate');
-	//}
+	if ( get_field('homepage_module_takepart', 'option') == 'oui' ) {
+		if ( get_field('homepage_takepart', 'option') ) {
+			get_template_part('templates/module', 'participate');
+		}
+	}
 
 	/**
 	* Module social network
