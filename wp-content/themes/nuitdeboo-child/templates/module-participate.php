@@ -14,7 +14,7 @@ if($page_parent->ID){
 	<div class="container">
 		<h2><?php echo $title; ?></h2>
 	</div>
-	<div class="socialonhome container-fluid">
+	<div class="container-fluid">
 		<div class="row">
 			<?php echo $content; ?>
 		</div>
@@ -37,7 +37,7 @@ if($page_parent->ID){
 			<div class="container">
 				<h2><?php echo $title; ?></h2>
 			</div>
-			<div class="socialonhome container-fluid">
+			<div class="container-fluid">
 				<div class="row">
 					<?php echo $content; ?>
 				</div>

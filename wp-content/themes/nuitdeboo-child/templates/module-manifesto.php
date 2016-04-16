@@ -13,7 +13,7 @@ if ( $include[0]->post_title ){
 	<div class="container">
 		<h2><?php echo $title; ?></h2>
 	</div>
-	<div class="socialonhome container-fluid">
+	<div class="container-fluid">
 		<div class="row">
 			<?php echo $content; ?>
 		</div>
