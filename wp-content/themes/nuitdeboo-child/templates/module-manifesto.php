@@ -18,7 +18,7 @@ if ( $include[0]->post_title ){
 			<?php echo $content; ?>
 		</div>
 	</div>
-	?>
+	<?php
 }
 else{
 	echo 'Please go to admin > options > Manifesto and select the page you want to display (a page must be created before)';
