@@ -131,6 +131,7 @@ require_once(ABSPATH . 'wp-settings.php');
 
 ## Using the multisite
 
+Nous partons du principe que votre database se nomme : **nuitdebout2**
 Le DUMP de la database se trouve dans le répertoire /dump à la racine du projet
 Le fichier concerné est : **nuitdebout_multisite.sql**
 
