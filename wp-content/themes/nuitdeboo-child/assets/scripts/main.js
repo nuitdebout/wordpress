@@ -10,6 +10,22 @@
  * always reference jQuery with $, even when in .noConflict() mode.
  * ======================================================================== */
 
+function rotate(sentences, element) {
+  function print() {
+    var counter = Math.floor(Math.random()*sentences.length);
+    element.children().fadeOut().remove();
+    element
+        .children()
+        .fadeOut()
+        .remove();
+    element
+        .append(jQuery('<span>' + sentences[counter] + '</span>').fadeIn());
+  }
+  print();
+  setInterval(print, 10000);
+}
+
+
 (function($) {
 
   // Use this variable to set up the common and page specific functions. If you
@@ -19,6 +35,18 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        // quote rotation
+        rotate([
+            "Nos rêves ne rentrent pas dans vos urnes",
+            "Nous ne rentrerons pas chez nous",
+            "Le jour : à bout, la nuit : debout",
+            "Partout en Europe, levons-nous !",
+            "Ils pourront couper les fleurs, ils n'arrêteront pas le printemps",
+            "Ne plus perdre sa vie à la gagner",
+            "C'est un grand printemps qui se lève",
+            "Je reviendrai et serai des millions",
+            "Que nul n'entre ici s'il n'est révolté"
+        ], jQuery('#sentencerotate'));
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

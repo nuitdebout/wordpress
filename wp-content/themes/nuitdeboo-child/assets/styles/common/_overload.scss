@@ -1,0 +1,27 @@
+.navbar {
+  margin-bottom: 0;
+}
+body.admin-bar {
+  .navbar-fixed-top {
+    top: 32px !important;
+  }
+}
+.opaque-navbar {
+    background-color: rgba(255,255,255,0.9);
+  /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
+    height: 60px;
+    border-bottom: 0px;
+    transition: background-color .5s ease 0s;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: $heading-color;
+}
+
+h2:first-letter {
+  box-shadow:
+    0 3px 0 -1px $light-blue, /* to indent the green bottom line with the same color as the background */
+    0 3px 0 0 $light-blue,  /* to create a bottom 3px high green line */
+    inset 0 -1px 0 0 $light-blue; /* to create the top (1px) of the outline */
+}
