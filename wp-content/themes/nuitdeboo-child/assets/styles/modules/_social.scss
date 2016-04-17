@@ -8,7 +8,8 @@ $socials: (
   periscope,
   snapchat,
   scoopit,
-  github
+  github,
+  nuitdebout
 );
 
 $social-colors: (
@@ -22,6 +23,7 @@ $social-colors: (
   snapchat: #424242,
   scoopit: #91c846,
   github: #424242,
+  nuitdebout: white,
 );
 
 
@@ -35,7 +37,8 @@ $social-colors: (
   justify-content: center;
   flex-direction: column;
 
-  width: 230px;
+  min-width: 230px;
+  flex: 1;
   height: 230px;
   background-color: white;
   border-top: 1px solid $gray-light;
@@ -76,14 +79,23 @@ $social-colors: (
 
   }
 }
+
 .social-networks-section-item__icon {
   font-size: 40px;
 }
 
+.social-networks-section-item__image {
+  width: 40px;
+  height: 40px;
+}
+
 .social-networks-section-item__name {
-  font-size: 16px;
+  font-size: 22px;
   text-transform: uppercase;
   padding: 5px;
+  font-family: AmaticSC;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 
@@ -100,5 +112,13 @@ $social-colors: (
       &:before {
         background-color: map-get($social-colors, $social);
       }
+  }
+}
+
+.social-networks-section-item--nuitdebout {
+  background-color: $brand-primary;
+  .social-networks-section-item__image {
+    width: 65px;
+    height: 65px;
   }
 }
