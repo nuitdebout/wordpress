@@ -4,3 +4,88 @@
   margin-left: -15px !important;
   margin-right: -15px !important;
 }
+
+#socialhome {
+  .page-header {
+    border: 0 !important;
+  }
+}
+
+#manifesto,
+#participate {
+  .page-header {
+    border: 0 !important;
+  }
+  .wrapper {
+    .container-fluid {
+      margin-left: -15px;
+      margin-right: -15px;
+      background: #fff;
+      padding: 30px 45px;
+    }
+  }
+}
+
+.socialonhome {
+  margin-right: -15px;
+  margin-left: -15px;
+  border-bottom: 1px solid #eee;
+
+  .socialsquare {
+    background: #fff;
+    height: 200px;
+    min-height: 200px;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
+
+    text-align: center;
+
+    &.nuitdebout {
+      background: $brand-primary;
+      h3 {
+        margin: 0 !important;
+        padding: 0 !important;
+        color: #fff;
+        @include vertical-align();
+
+        small {
+          display: block;
+          color: #fff;
+        }
+      }
+    }
+
+    a {
+      color: #ccc;
+      @include vertical-align(40%);
+
+      i {
+        font-size: 30px !important;
+      }
+
+      &.periscope {
+        background-color: red;
+        -webkit-mask-image: url(/wp-content/themes/nuitdeboo-child/assets/images/ic_periscope.svg);
+        mask-image: url(/wp-content/themes/nuitdeboo-child/assets/images/ic_periscope.svg);
+      }
+      &.facebook {
+        color: $social-facebook;
+      }
+      &.twitter {
+        color: $social-twitter;
+      }
+      &.tumblr {
+        color: $social-tumblr;
+      }
+      &.instagram {
+        color: $social-instagram;
+      }
+      &.youtube {
+        color: $social-youtube;
+      }
+      &.snapchat {
+        color: $social-snapchat;
+      }
+    }
+  }
+}

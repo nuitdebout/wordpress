@@ -1,4 +1,6 @@
+<br /><br /><br /><br /><br /><br />
 <?php
+	get_template_part('templates/module', 'home-social');
 
 	/**
 	 * Module homepage screen
