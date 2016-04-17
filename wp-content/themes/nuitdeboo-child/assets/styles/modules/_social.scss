@@ -26,10 +26,14 @@ $social-colors: (
   nuitdebout: white,
 );
 
+$item-size: 230px;
 
 .social-networks-section {
   display: flex;
   flex-wrap: wrap;
+
+  margin-left: -15px;
+  margin-right: -15px;
 }
 .social-networks-section-item {
   display: flex;
@@ -37,12 +41,13 @@ $social-colors: (
   justify-content: center;
   flex-direction: column;
 
-  min-width: 230px;
+  min-width: $item-size;
   flex: 1;
-  height: 230px;
+  height: $item-size;
   background-color: white;
+
   border-top: 1px solid $gray-light;
-  border-right: 1px solid $gray-light;
+  border-left: 1px solid $gray-light;
 
   position: relative;
 
@@ -120,5 +125,11 @@ $social-colors: (
   .social-networks-section-item__image {
     width: 65px;
     height: 65px;
+  }
+}
+
+@media (min-width: 6.5*$item-size) {
+  .social-networks-section-item {
+    min-width: 16%;
   }
 }

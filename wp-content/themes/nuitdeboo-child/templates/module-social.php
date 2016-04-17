@@ -1,4 +1,9 @@
-<h2>Réseaux sociaux</h2>
+<div class="container">
+	<div class="page-header">
+		<h2>Réseaux sociaux</h2>
+	</div>
+</div>
+
 <div class="social-networks-section">
 	<?php
 	// @todo move in a config file
@@ -22,6 +27,11 @@
 			'url' => 'http://www.nuitdebout.fr',
 			'image' => 'logowhite.svg',
 			'title' => 'dans le monde',
+			'special' => true
+		],
+		'fluxtwitter' => [
+			'url' => 'http://www.nuitdebout.fr',
+			'title' => 'Flux twitter',
 			'special' => true
 		],
 		'tumblr' =>  [
