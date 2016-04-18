@@ -398,21 +398,43 @@ if(function_exists("register_field_group"))
 			),
 			array (
 				'key' => 'field_57qs125fb8963ea',
-				'label' => 'url bouton libre',
+				'label' => 'Url bouton libre',
 				'name' => 'homepage_manifesto_btn_url',
 				'type' => 'text',
 				'default_value' => '',
 				'allow_null' => 0,
 				'multiple' => 0,
+				'conditional_logic' => array (
+					'status' => 1,
+					'rules' => array (
+						array (
+							'field' => 'field_57125fb8963ea',
+							'operator' => '==',
+							'value' => 'oui',
+						),
+					),
+					'allorany' => 'all',
+				),
 			),
 			array (
 				'key' => 'field_57qs1qsd25fb8963ea',
-				'label' => 'texte bouton libre',
+				'label' => 'Texte bouton libre',
 				'name' => 'homepage_manifesto_btn_text',
 
 				'default_value' => '',
 				'allow_null' => 0,
 				'multiple' => 0,
+				'conditional_logic' => array (
+					'status' => 1,
+					'rules' => array (
+						array (
+							'field' => 'field_57125fb8963ea',
+							'operator' => '==',
+							'value' => 'oui',
+						),
+					),
+					'allorany' => 'all',
+				),
 			),
 
 			array (
