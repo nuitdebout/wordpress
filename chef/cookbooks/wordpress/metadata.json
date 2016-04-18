@@ -1,0 +1,126 @@
+{
+  "name": "wordpress",
+  "version": "3.0.0",
+  "description": "Installs/Configures WordPress",
+  "long_description": "[![Build Status](https://travis-ci.org/brint/wordpress-cookbook.svg?branch=master)](https://travis-ci.org/brint/wordpress-cookbook)\n[![Dependency Status](https://gemnasium.com/brint/wordpress-cookbook.svg)](https://gemnasium.com/brint/wordpress-cookbook)\n\nDescription\n===========\n\nThe Chef WordPress cookbook installs and configures WordPress according to the instructions at http://codex.wordpress.org/Installing_WordPress.\n\nDescription\n===========\n\nThis cookbook does not set up the WordPress blog. You will need to do this manually by going to http://hostname/wp-admin/install.php (this URL may be different if you change the attribute values).\n\nRequirements\n============\n\nPlatform\n--------\n\n* Ubuntu 12.04, 14.04\n* RHEL/CentOS 5, 6\n* Windows\n\nCookbooks\n---------\n\n* mysql\n* mysql_chef_gem\n* php\n* apache2\n* iis\n* windows\n* openssl (uses library to generate secure passwords)\n* selinux (used to disable selinux for MySQL on RHEL-based systems)\n\nAttributes\n==========\n\n### WordPress\n\n* `node['wordpress']['version']` - Version of WordPress to download. Use 'latest' to download most recent version.\n* `node['wordpress']['parent_dir']` - Parent directory to where WordPress will be extracted. (Windows Only)\n* `node['wordpress']['dir']` - Location to place WordPress files.\n* `node['wordpress']['db']['root_password']` - Root password for MySQL (added for support with community cookbook version 6+)\n* `node['wordpress']['db']['instance_name']` - Name of the MySQL instance to use with MySQL (community cookbook version 6+)\n* `node['wordpress']['db']['name']` - Name of the WordPress MySQL database.\n* `node['wordpress']['db']['user']` - Name of the WordPress MySQL user.\n* `node['wordpress']['db']['pass']` - Password of the WordPress MySQL user. By default, generated using openssl cookbook.\n* `node['wordpress']['db']['prefix']` - Prefix of all MySQL tables created by WordPress.\n* `node['wordpress']['db']['host']` - Host of the WordPress MySQL database.\n* `node['wordpress']['db']['port']` - Port of the WordPress MySQL database.\n* `node['wordpress']['db']['charset']` - [Character set](http://dev.mysql.com/doc/refman/5.7/en/charset-charsets.html) of the WordPress MySQL database tables. Defaults to 'utf8'.\n* `node['wordpress']['db']['collate']` - [Collation](http://dev.mysql.com/doc/refman/5.7/en/charset-collation-effect.html) of the WordPress MySQL database tables.\n* `node['wordpress']['db']['mysql_version']` - Version of MySQL to install (for supporting community cookbook version 6+)\n\n* `node['wordpress']['allow_multisite']` - Enable [multisite](http://codex.wordpress.org/Create_A_Network) features (default: false).\n* `node['wordpress']['wp_config_options']` - A hash of options to define in wp_config.php, output as key value pairs into a PHP constant e.g. `define( '<%= @key %>', <%= @value %> );`. Note: for values you will need to add single quotes around text but omit them for booleans and numbers. (default: {}).\n* `node['wordpress']['config_perms']` - Permissions to set for a site's wp-config.php.\n* `node['wordpress']['server_aliases']` - Aliases to use when setting up Virtual Host with Nginx or Apache\n* `node['wordpress']['server_port']` - Port to use when setting up the Virtual Host with Nginx or Apache\n\n* `node['wordpress']['install']['user']` - Install user used for WordPress file permissions and the PHP-FPM user (if applicable)\n* `node['wordpress']['install']['group']` - Install group used for WordPress file permissions and the PHP-FPM group (if necessary)\n\n* `node['wordpress']['parent_dir']` - Parent directory of where WordPress will be installed. This is used in the Windows installation to determine where the .zip will be downloaded to.\n* `node['wordpress']['dir']` - Path where WordPress should be installed\n* `node['wordpress']['url']` - URL to the zip or tarball installer of WordPress\n* `node['wordpress']['server_name']` - Hostname used for setting up the Virtual Host configuration for your WordPress site\n\n* `node['wordpress']['php_options']` - Additional PHP settings for the installation.\n\nUsage\n=====\n\nAdd the \"wordpress\" recipe to your node's run list or role, or include the recipe in another cookbook.\n\nLicense and Author\n==================\n\n* Author:: Barry Steinglass (barry@opscode.com)\n* Author:: Joshua Timberman (joshua@opscode.com)\n* Author:: Seth Chisamore (schisamo@opscode.com)\n* Author:: Lucas Hansen (lucash@opscode.com)\n* Author:: Julian C. Dunn (jdunn@getchef.com)\n\nCopyright:: 2010-2013, Chef Software, Inc.\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n",
+  "maintainer": "Brint O'Hearn",
+  "maintainer_email": "cookbooks@opscode.com",
+  "license": "Apache 2.0",
+  "platforms": {
+    "debian": ">= 0.0.0",
+    "ubuntu": ">= 0.0.0",
+    "windows": ">= 0.0.0",
+    "centos": ">= 0.0.0",
+    "redhat": ">= 0.0.0",
+    "scientific": ">= 0.0.0",
+    "oracle": ">= 0.0.0"
+  },
+  "dependencies": {
+    "php": ">= 0.0.0",
+    "openssl": ">= 0.0.0",
+    "apache2": ">= 2.0.0",
+    "database": ">= 1.6.0",
+    "mysql": ">= 6.0",
+    "mysql2_chef_gem": "~> 1.0.1",
+    "build-essential": ">= 0.0.0",
+    "iis": ">= 1.6.2",
+    "tar": ">= 0.3.1",
+    "nginx": "~> 2.7.4",
+    "php-fpm": "~> 0.6.10",
+    "selinux": "~> 0.7"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+    "WordPress/version": {
+      "display_name": "WordPress download version",
+      "description": "Version of WordPress to download from the WordPress site or 'latest' for the current release.",
+      "default": "latest"
+    },
+    "WordPress/checksum": {
+      "display_name": "WordPress tarball checksum",
+      "description": "Checksum of the tarball for the version specified.",
+      "default": ""
+    },
+    "WordPress/dir": {
+      "display_name": "WordPress installation directory",
+      "description": "Location to place WordPress files.",
+      "default": "/var/www/wordpress"
+    },
+    "WordPress/db/database": {
+      "display_name": "WordPress MySQL database",
+      "description": "WordPress will use this MySQL database to store its data.",
+      "default": "wordpressdb"
+    },
+    "WordPress/db/user": {
+      "display_name": "WordPress MySQL user",
+      "description": "WordPress will connect to MySQL using this user.",
+      "default": "wordpressuser"
+    },
+    "WordPress/db/password": {
+      "display_name": "WordPress MySQL password",
+      "description": "Password for the WordPress MySQL user.",
+      "default": "randomly generated"
+    },
+    "WordPress/keys/auth": {
+      "display_name": "WordPress auth key",
+      "description": "WordPress auth key.",
+      "default": "randomly generated"
+    },
+    "WordPress/keys/secure_auth": {
+      "display_name": "WordPress secure auth key",
+      "description": "WordPress secure auth key.",
+      "default": "randomly generated"
+    },
+    "WordPress/keys/logged_in": {
+      "display_name": "WordPress logged-in key",
+      "description": "WordPress logged-in key.",
+      "default": "randomly generated"
+    },
+    "WordPress/keys/nonce": {
+      "display_name": "WordPress nonce key",
+      "description": "WordPress nonce key.",
+      "default": "randomly generated"
+    },
+    "WordPress/server_aliases": {
+      "display_name": "WordPress Server Aliases",
+      "description": "WordPress Server Aliases",
+      "default": "FQDN"
+    },
+    "WordPress/languages/lang": {
+      "display_name": "WordPress WPLANG configulation value",
+      "description": "WordPress WPLANG configulation value",
+      "default": ""
+    },
+    "WordPress/languages/version": {
+      "display_name": "Version of WordPress translation file",
+      "description": "Version of WordPress translation file",
+      "default": ""
+    },
+    "WordPress/languages/projects": {
+      "display_name": "WordPress translation projects",
+      "description": "WordPress translation projects",
+      "type": "array",
+      "default": [
+        "main",
+        "admin",
+        "admin/network",
+        "cc"
+      ]
+    }
+  },
+  "groupings": {
+  },
+  "recipes": {
+    "WordPress": "Installs and configures WordPress LAMP stack on a single system",
+    "WordPress::languages": "Install WordPress translation files"
+  }
+}
