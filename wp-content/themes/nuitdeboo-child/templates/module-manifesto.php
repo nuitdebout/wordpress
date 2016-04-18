@@ -1,4 +1,6 @@
 <div id="manifesto">
+	<button class="btn btn-primary"><a href="<?php echo get_field('homepage_manifesto_btn_url', 'option'); ?>"><?php echo get_field('homepage_manifesto_btn_text', 'option'); ?></a></button>
+
 	<?php
 	/*
 	module "manifesto"

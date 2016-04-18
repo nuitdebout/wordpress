@@ -1,6 +1,4 @@
-<br /><br /><br /><br /><br /><br />
 <?php
-	get_template_part('templates/module', 'home-social');
 
 	/**
 	 * Module homepage screen
@@ -13,6 +11,18 @@
 		if ( get_field('homepage_manifesto', 'option') ) {
 			get_template_part('templates/module', 'manifesto');
 		}
+	}
+
+	get_template_part('templates/module', 'home-social');
+
+
+	if ( get_field('homepage_module_free_iframe_1', 'option') ) {
+		get_template_part('templates/module', 'free_iframe_1');
+
+	}
+	if ( get_field('homepage_module_free_iframe_2', 'option') ) {
+		get_template_part('templates/module', 'free_iframe_2');
+
 	}
 
 	if ( get_field('homepage_module_takepart', 'option') == 'oui' ) {
@@ -28,10 +38,3 @@
 		get_template_part('templates/module', 'social');
 	}
 ?>
-
-<h1>Ma title</h1>
-
-<h2>Ma second title</h2>
-
-<button class="btn btn-primary">My button</button>
-<br /><br />

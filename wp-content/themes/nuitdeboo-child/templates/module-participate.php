@@ -3,7 +3,7 @@
 	/*
 	 module "participer" goes here
 	*/
-	$page_parent = get_field('homepage_manifesto', 'option');
+	$page_parent = get_field('homepage_takepart', 'option');
 
 	if($page_parent->ID){
 		$parent_id = $page_parent->ID;

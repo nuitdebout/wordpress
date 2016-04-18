@@ -1,4 +1,4 @@
-<footer class="content-info">
+<footer class="content-info container-fluid">
 	<div class="container">
 		<div class="row foot">
 
@@ -33,18 +33,22 @@
 			<div class="col-xs-2 col-sm-4">
 				<h5>Contribuer</h5>
 				<div class="contribute">
-					<a href="http://wiki.nuitdebout.fr" target="_blank" class="social-icons wiki">
+							<ul class="social-networks list-inline">
+					<li>
 
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ic_wiki.svg" />
 
-					</a>
-					<ul class="social-networks list-inline">
-						<li>
+							<a href="http://wiki.nuitdebout.fr" target="_blank" class="social-icons wiki  ">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ic_wiki.svg" />
+							</a>
+							</li>
+<li>
+
 							<a href="https://github.com/nuitdebout/" target="_blank" class="social-icons github  ">
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ic_github_light.svg" />
 							</a>
-						</li>
-					</ul>
+							</li>
+
+</ul>
 				</div>
 			</div>
 
