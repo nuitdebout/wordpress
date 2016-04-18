@@ -5,16 +5,20 @@
   margin-right: -15px !important;
 
   h1 {
-    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
-    filter: drop-shadow( 0px 3px 4px rgba(0,0,0,0.5));
-    -webkit-filter: drop-shadow( 0px 3px 4px rgba(0,0,0,0.5));
+
     font-size: 98px;
     max-height: 400px;
 
     a{
       color:#fff;
-
     }
+  }
+  #sentencerotate span {
+    font-size: 28px;
+    font-weight:bold;
+    max-height: 200px;
+    color:#fff;
+
   }
 
 }
@@ -26,7 +30,8 @@
 }
 
 #manifesto,
-#participate {
+#participate,
+#rassemblements {
   .page-header {
     border: 0 !important;
   }

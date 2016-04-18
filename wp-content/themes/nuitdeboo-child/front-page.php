@@ -24,7 +24,11 @@
 		get_template_part('templates/module', 'free_iframe_2');
 
 	}
-
+	if ( get_field('homepage_module_map', 'option') == 'oui' ) {
+		if ( get_field('homepage_module_map', 'option') ) {
+			get_template_part('templates/module', 'rassemblements');
+		}
+	}
 	if ( get_field('homepage_module_takepart', 'option') == 'oui' ) {
 		if ( get_field('homepage_takepart', 'option') ) {
 			get_template_part('templates/module', 'participate');

@@ -91,6 +91,7 @@ function display_sidebar() {
   return apply_filters('sage/display_sidebar', $display);
 }
 
+
 /**
  * Theme assets
  */
