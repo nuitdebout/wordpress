@@ -385,6 +385,17 @@ if(function_exists("register_field_group"))
 				'default_value' => '',
 				'allow_null' => 0,
 				'multiple' => 0,
+				'conditional_logic' => array (
+					'status' => 1,
+					'rules' => array (
+						array (
+							'field' => 'field_57125fb8963ea',
+							'operator' => '==',
+							'value' => 'oui',
+						),
+					),
+					'allorany' => 'all',
+				),
 			),
 			array (
 				'key' => 'field_57qs1qsd25fb8963ea',
@@ -394,6 +405,17 @@ if(function_exists("register_field_group"))
 				'default_value' => '',
 				'allow_null' => 0,
 				'multiple' => 0,
+				'conditional_logic' => array (
+					'status' => 1,
+					'rules' => array (
+						array (
+							'field' => 'field_57125fb8963ea',
+							'operator' => '==',
+							'value' => 'oui',
+						),
+					),
+					'allorany' => 'all',
+				),
 			),
 
 			array (
