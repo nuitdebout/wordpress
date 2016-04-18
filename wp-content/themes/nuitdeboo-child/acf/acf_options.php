@@ -45,6 +45,25 @@ if(function_exists("register_field_group"))
 				'library' => 'all',
 			),
 			array (
+				'key' => 'field_571239024bdd0',
+				'label' => 'carte',
+				'name' => '',
+				'type' => 'tab',
+			),
+			array (
+				'key' => 'field_57123848f36de',
+				'label' => 'Inclure le module "carte" fond d\'écran',
+				'name' => 'homepage_module_map',
+				'type' => 'select',
+				'choices' => array (
+					'oui' => 'Oui',
+					'non' => 'Non',
+				),
+				'default_value' => '',
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+			array (
 				'key' => 'field_5712397bda1ca',
 				'label' => 'Réseaux',
 				'name' => '',
