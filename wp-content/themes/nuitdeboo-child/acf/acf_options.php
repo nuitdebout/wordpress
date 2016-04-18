@@ -379,7 +379,7 @@ if(function_exists("register_field_group"))
 			),
 			array (
 				'key' => 'field_57qs125fb8963ea',
-				'label' => 'url bouton libre',
+				'label' => 'Url bouton libre',
 				'name' => 'homepage_manifesto_btn_url',
 				'type' => 'text',
 				'default_value' => '',
@@ -399,7 +399,7 @@ if(function_exists("register_field_group"))
 			),
 			array (
 				'key' => 'field_57qs1qsd25fb8963ea',
-				'label' => 'texte bouton libre',
+				'label' => 'Texte bouton libre',
 				'name' => 'homepage_manifesto_btn_text',
 
 				'default_value' => '',
