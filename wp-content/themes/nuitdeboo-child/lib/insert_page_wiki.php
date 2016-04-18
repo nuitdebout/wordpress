@@ -29,7 +29,7 @@ function insert_page_wiki(){
 	foreach ( $returned_content as $p ) :
 
 		//print_r($p);
-		$t =wp_strip_all_tags($p['slug']);
+		$t = wp_strip_all_tags($p['name']);
 		$c = '';
 		$links =$p['links'];
 		if($t == 'paris'){
@@ -40,15 +40,20 @@ function insert_page_wiki(){
 			$c = $c.'<li><a href="'.$l.'">'.$l.'</a></li>';
 		endforeach;
 		$c = $c.'</ul>';
-		$c = $c. '<p>Vous voulez compléter cette page, ajouter des liens ? Venez sur le <a href="'.$p['wiki_url'].'">WIKI</a></p>';
+		$c = $c. '<p>Vous voulez compléter cette page, ajouter des liens ? Venez sur le <a href="'.$p['wiki_url'].'">wiki</a></p>';
 		echo $c;
 
 		$page = get_page_by_name($t);
 		if (!empty($page)) {
 
+		$pageville = get_page_by_name('ville');
+
+
 		$my_post = array(
 		    'ID'           => $page->ID,
-		    'post_content' => $c
+		    'post_content' => $c,
+		    'post_parent' =>  $pageville->ID,
+		    'post_title'  =>  $t
 		  );
 		//print_r($my_post);
 		// Update the post into the database
