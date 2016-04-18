@@ -10,8 +10,12 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="text-center">
+						<div id="nuitdeboutdate"></div>
+
 						<div id="site_title"><h1><a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a></h1></div>
 						<div id="sentencerotate"></div>
+
+
 					</div>
 				</div>
 			</div>

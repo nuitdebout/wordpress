@@ -25,6 +25,25 @@ function rotate(sentences, element) {
   setInterval(print, 10000);
 }
 
+function nuitdebout_getDate(element) {
+    var days  = ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi', 'dimanche']
+    // from https://git.framasoft.org/corpsmoderne/nuitdebout_today.git
+    var startDate = new Date("march 31 2016");
+    var day = 1000*60*60*24;
+
+    var today =  Date.now();
+    var jd =    new Date();
+    var j = jd.getDay();
+    var delta = today-startDate;
+    var delta_days = delta/day;
+    var d = Math.floor(delta_days) + 31;
+    console.log(d)
+    element.append(days[j-1] +' '+d+' mars')
+    return d;
+
+}
+
+
 
 (function($) {
 
@@ -36,6 +55,7 @@ function rotate(sentences, element) {
       init: function() {
         // JavaScript to be fired on all pages
         // quote rotation
+
         rotate([
             "Nos rêves ne rentrent pas dans vos urnes",
             "Nous ne rentrerons pas chez nous",
@@ -55,6 +75,7 @@ function rotate(sentences, element) {
     // Home page
     'home': {
       init: function() {
+        nuitdebout_getDate(jQuery('#nuitdeboutdate'))
         // JavaScript to be fired on the home page
       },
       finalize: function() {
