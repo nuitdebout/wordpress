@@ -302,7 +302,7 @@ if(function_exists("register_field_group"))
 			array (
 				'key' => 'field_57123be236e57',
 				'label' => 'Inclure le module carte',
-				'name' => 'homepage_module_map',
+  				'name' => 'homepage_module_map',
 				'type' => 'select',
 				'choices' => array (
 					'oui' => 'Oui',
@@ -362,6 +362,8 @@ if(function_exists("register_field_group"))
 				'name' => '',
 				'type' => 'tab',
 			),
+
+
 			array (
 				'key' => 'field_57125fb8963ea',
 				'label' => 'Inclure le module manifesto',
@@ -375,6 +377,25 @@ if(function_exists("register_field_group"))
 				'allow_null' => 0,
 				'multiple' => 0,
 			),
+			array (
+				'key' => 'field_57qs125fb8963ea',
+				'label' => 'url bouton libre',
+				'name' => 'homepage_manifesto_btn_url',
+				'type' => 'text',
+				'default_value' => '',
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+			array (
+				'key' => 'field_57qs1qsd25fb8963ea',
+				'label' => 'texte bouton libre',
+				'name' => 'homepage_manifesto_btn_text',
+
+				'default_value' => '',
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+
 			array (
 				'key' => 'field_57125edc26c22',
 				'label' => 'Manifesto (page)',
@@ -397,6 +418,30 @@ if(function_exists("register_field_group"))
 				'taxonomy' => array (
 					0 => 'all',
 				),
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+			array (
+				'key' => 'field_57544125fb0963e9',
+				'label' => 'iframe libre',
+				'name' => 'iframe_libre',
+				'type' => 'tab',
+						),
+			array (
+				'key' => 'field_5712781119845f1984b8963ea',
+				'label' => 'Inclure iframe libre 1 (url)',
+				'name' => 'homepage_module_free_iframe_1',
+				'type' => 'text',
+				'default_value' => '',
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+			array (
+				'key' => 'field_5712781119845fb8963ea',
+				'label' => 'Inclure iframe libre 2 (url)',
+				'name' => 'homepage_module_free_iframe_2',
+				'type' => 'text',
+				'default_value' => '',
 				'allow_null' => 0,
 				'multiple' => 0,
 			),
