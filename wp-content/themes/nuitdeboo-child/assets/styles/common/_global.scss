@@ -3,8 +3,6 @@ body {
   padding-top: 70px;
 }
 
-
-
 .content {
   margin:0 auto;
   background: #fff;
@@ -16,4 +14,8 @@ body {
 .padded {
   padding-top: 3em;
   padding-bottom: 3em;
+}
+
+.bg-grey {
+  background: $gray-lighter;
 }
