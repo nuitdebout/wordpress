@@ -1,10 +1,12 @@
 <div id="socialhome">
-	<div class="container">
-		<div class="page-header">
-			<h2>R&eacute;seaux sociaux</h2>
+	<div class="container padded">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+    			<h2>R&eacute;seaux sociaux</h2>
+        </div>
 		</div>
 	</div>
-	<div class="socialonhome container-fluid">
+	<div class="socialonhome">
 		<div class="row">
 			<?php
 				$sc = array(

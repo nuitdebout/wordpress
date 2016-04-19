@@ -1,7 +1,5 @@
-
 body {
-  background: #36474f;
-  padding-top:100px;
+  background: #fff;
 }
 
 .content {
@@ -10,4 +8,9 @@ body {
   max-width:80%;
   padding-top:50px;
   padding-bottom:30px;
+}
+
+.padded {
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
