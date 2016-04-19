@@ -11,47 +11,47 @@
 				$sc = array(
 							'twitter'=> array(
 								'name'=>'Twitter',
-								'icon' => 'fa fa-twitter'
+								'icon' => 'ic-twitter'
 							),
 							'facebook' => array(
 								'name'=>'Facebook',
-								'icon' => 'fa fa-facebook'
+								'icon' => 'ic-facebook'
 							),
 							'bambuser'=> array(
 								'name'=>'Bambuser',
-								'icon' => ''
+								'icon' => 'ic-bambuser'
 							),
 							'youtube'=> array(
 								'name'=>'Youtube',
-								'icon' => 'fa-youtube-play'
+								'icon' => 'ic-youtube'
 							),
 							'instagram'=> array(
 								'name'=>'Instagram',
-								'icon' => 'fa fa-instagram'
+								'icon' => 'ic-instagram'
 							),
 							'tumblr'=> array(
 								'name'=>'Tumblr',
-								'icon' => 'fa fa-tumblr'
+								'icon' => 'ic-tumblr'
 							),
 							'periscope'=> array(
 								'name'=>'Periscope',
-								'icon' => ''
+								'icon' => 'ic-periscope'
 							),
 							'snapchat'=> array(
 								'name'=>'Snapchat',
-								'icon' => 'fa fa-snapchat-ghost'
+								'icon' => 'ic-snapchat'
 							),
 							'scoopit'=> array(
 								'name'=>'Scoopit',
-								'icon' => ''
+								'icon' => 'ic-scoopit'
 							),
 							'github'=> array(
 								'name'=>'Github',
-								'icon' => 'fa fa-github'
+								'icon' => 'ic-github'
 							),
 							'reddit'=> array(
 								'name'=>'Reddit',
-								'icon' => 'fa'
+								'icon' => 'ic-reddit'
 							),
 							'nuitdebout'=> array(
 								'icon' => '',
@@ -64,7 +64,7 @@
 				if( get_field('social_'.$key, 'option') ) : ?>
 					<a href="<?php echo get_field('social_'.$key, 'option'); ?>" target="_blank"
 						class="social-networks-section-item social-networks-section-item--<?php echo $key ?>">
-							<i class="social-networks-section-item__icon fa fa-<?= $socialConfig['icon'] ?>" ></i>
+							<i class="social-networks-section-item__icon <?= $socialConfig['icon'] ?>" ></i>
 							<div class="social-networks-section-item__name">
 								<?php echo $socialConfig['name']; ?>
 							</div>
