@@ -28,6 +28,11 @@
 								'name'=>'Youtube',
 								'icon' => 'fa-youtube-play'
 							),
+							'reddit'=> array(
+								'key_' => 'reddit',
+								'name'=>'Reddit',
+								'icon' => 'fa'
+							),
 							'partout'=> array(
 								'key_' => 'partout',
 								'name'=>'<h3>Nuit debout <small>est partout</small></h3>',

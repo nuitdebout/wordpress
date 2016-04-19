@@ -26,7 +26,6 @@
 			echo '<li><a href="'.$url.'"">'.$title.'</a></li>';
 
 			endforeach;
-				echo '</ul>';
-
-			echo '<p>	<button class="btn btn-primary"><a href="http://wiki.nuitdebout.fr">Votre ville n\'est pas listée ? ajoutez-la sur le wiki !</a></button>';
+			echo '</ul>';
+			echo '<p><button class="btn btn-primary"><a href="http://wiki.nuitdebout.fr">Votre ville n\'est pas listée ? ajoutez-la sur le wiki !</a></button></p>';
 		}

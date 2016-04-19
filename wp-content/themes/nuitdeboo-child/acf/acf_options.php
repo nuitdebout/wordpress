@@ -221,6 +221,29 @@ if(function_exists("register_field_group"))
 				'maxlength' => '',
 			),
 			array (
+				'key' => 'field_57dsdfsdfsdf63fd',
+				'label' => 'Reddit',
+				'name' => 'social_reddit',
+				'type' => 'text',
+				'conditional_logic' => array (
+					'status' => 1,
+					'rules' => array (
+						array (
+							'field' => 'field_57123987da1cb',
+							'operator' => '==',
+							'value' => 'oui',
+						),
+					),
+					'allorany' => 'all',
+				),
+				'default_value' => '',
+				'placeholder' => 'https://www.reddit.com/r/nuitdebout/',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+			array (
 				'key' => 'field_57123ae5b63fe',
 				'label' => 'Bambuser',
 				'name' => 'social_bambuser',
