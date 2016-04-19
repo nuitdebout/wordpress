@@ -16,7 +16,11 @@
 				?>
 				<h2><?php echo $title; ?></h2>
 				<?php echo $content; ?>
-				 <button class="btn btn-primary btn-lg"><a href="<?php echo get_field('homepage_manifesto_btn_url', 'option'); ?>"><?php echo get_field('homepage_manifesto_btn_text', 'option'); ?></a></button>
+				 <button class="btn btn-primary btn-lg">
+				 <a href="<?php echo get_field('homepage_manifesto_btn_url', 'option'); ?>">
+				 	<?php echo get_field('homepage_manifesto_btn_text', 'option'); ?>
+				 </a>
+				 </button>
 			<?php
 			}
 			else{

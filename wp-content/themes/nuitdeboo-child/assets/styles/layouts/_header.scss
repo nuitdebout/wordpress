@@ -148,3 +148,16 @@ nav ul li:hover a, nav ul li:active a, nav ul li:focus a, nav ul li.active a {
 nav ul li:hover, nav ul li:active, nav ul li:focus, nav ul li.active {
   background: none;
 }
+
+
+body.logged-in{
+  .navbar-nuitdebout {
+         &-fixed {
+            position: fixed;
+            left: 0px;
+            top: 30px;
+          }
+
+  }
+
+}
