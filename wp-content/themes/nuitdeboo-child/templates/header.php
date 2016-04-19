@@ -29,3 +29,8 @@
 </nav>
 </header>
 
+<div id="head">
+	logo
+	menu
+	icons
+</div>

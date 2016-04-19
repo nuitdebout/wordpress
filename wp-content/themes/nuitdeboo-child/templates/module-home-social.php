@@ -6,66 +6,94 @@
 	</div>
 	<div class="socialonhome container-fluid">
 		<div class="row">
-			<div class="socialsquare col-xs-6 col-sm-4 col-md-2">
-				<a href="https://www.periscope.tv/RemyBuisine" target="_blank" class="social-icons facebook">
-					<i class="fa fa-facebook"></i><br />Facebook
-				</a>
-			</div>
-			<div class="socialsquare col-xs-6 col-sm-4 col-md-2">
-				<a href="https://www.periscope.tv/RemyBuisine" target="_blank" class="social-icons twitter">
-					<i class="fa fa-twitter"></i><br />Twitter
-				</a>
-			</div>
-			<div class="socialsquare col-xs-6 col-sm-4 col-md-2">
-				<a href="https://www.periscope.tv/RemyBuisine" target="_blank" class="social-icons tumblr">
-					<i class="fa fa-tumblr"></i><br />Tumblr
-				</a>
-			</div>
-			<div class="socialsquare col-xs-6 col-sm-4 col-md-2">
-				<a href="https://www.periscope.tv/RemyBuisine" target="_blank" class="social-icons instagram">
-					<i class="fa fa-instagram"></i><br />Instagram
-				</a>
-			</div>
-			<div class="socialsquare col-xs-6 col-sm-4 col-md-2">
-				<a href="https://www.periscope.tv/RemyBuisine" target="_blank" class="social-icons youtube">
-					<i class="fa fa-youtube-play"></i><br />Youtube
-				</a>
-			</div>
-			<div class="socialsquare nuitdebout col-xs-6 col-sm-4 col-md-2">
-				<h3>Nuit debout <small>est partout</small></h3>
-			</div>
+			<?php
 
 
+
+				$sc = array(
+							'facebook' => array(
+								'key_' => 'facebook',
+								'name'=>'Facebook',
+								'icon' => 'fa fa-facebook'
+							),
+							'twitter'=> array(
+								'key_' => 'twitter',
+								'name'=>'Twitter',
+								'icon' => 'fa fa-twitter'
+							),
+							'bambuser'=> array(
+								'key_' => 'bambuser',
+								'name'=>'Bambuser',
+								'icon' => ''
+							),
+							'youtube'=> array(
+								'key_' => 'youtube',
+								'name'=>'Youtube',
+								'icon' => 'fa-youtube-play'
+							),
+							'partout'=> array(
+								'key_' => 'partout',
+								'name'=>'<h3>Nuit debout <small>est partout</small></h3>',
+								'icon' => ''
+							),
+
+							'instagram'=> array(
+								'key_' => 'instagram',
+								'name'=>'Instagram',
+								'icon' => 'fa fa-instagram'
+							),
+							'tumblr'=> array(
+								'key_' => 'tumblr',
+								'name'=>'Tumblr',
+								'icon' => 'fa fa-tumblr'
+							),
+							'periscope'=> array(
+								'key_' => 'periscope',
+								'name'=>'Periscope',
+								'icon' => ''
+							),
+							'snapchat'=> array(
+								'key_' => 'snapchat',
+								'name'=>'Snapchat',
+								'icon' => 'fa fa-snapchat-ghost'
+							),
+							'scoopit'=> array(
+								'key_' => 'scoopit',
+								'name'=>'Scoopit',
+								'icon' => ''
+							),
+							'github'=> array(
+								'key_' => 'github',
+								'name'=>'Github',
+								'icon' => ''
+							),
+				);
+
+		foreach ( $sc as $value  ) :
+
+			if( get_field('social_'.$value['key_'], 'option') ) : ?>
+
+				<div class="socialsquare col-xs-6 col-sm-4 col-md-2">
+					<a href="<?php echo get_field('social_'.$value['key_'], 'option'); ?>" target="_blank" class="social-icons facebook">
+						<i class="fa fa-<?php echo $value['icon']; ?>"></i><br /><?php echo $value['name']; ?>
+					</a>
+				</div>
+				<?php
+			endif;
+
+			if( $value['key_'] == 'partout') : ?>
 			<div class="socialsquare col-xs-6 col-sm-4 col-md-2">
-				<a href="https://www.periscope.tv/RemyBuisine" target="_blank" class="social-icons snapchat">
-					<i class="fa fa-snapchat-ghost"></i><br />Snapchat
-				</a>
+					<?php echo $value['name']; ?>
 			</div>
-			<div class="socialsquare col-xs-6 col-sm-4 col-md-2">
-				<a href="https://www.periscope.tv/RemyBuisine" target="_blank" class="social-icons periscope">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ic_periscope.svg" />
-				</a>
-			</div>
-			<div class="socialsquare col-xs-6 col-sm-4 col-md-2">
-				<a href="https://www.periscope.tv/RemyBuisine" target="_blank" class="social-icons periscope">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ic_periscope.svg" />
-				</a>
-			</div>
-			<div class="socialsquare col-xs-6 col-sm-4 col-md-2">
-				<a href="https://www.periscope.tv/RemyBuisine" target="_blank" class="social-icons periscope">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ic_periscope.svg" />
-				</a>
-			</div>
-			<div class="socialsquare col-xs-6 col-sm-4 col-md-2">
-				<a href="https://www.periscope.tv/RemyBuisine" target="_blank" class="social-icons periscope">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ic_periscope.svg" />
-				</a>
-			</div>
-			<div class="socialsquare col-xs-6 col-sm-4 col-md-2">
-				<a href="https://www.periscope.tv/RemyBuisine" target="_blank" class="social-icons periscope">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ic_periscope.svg" />
-				</a>
-			</div>
+
+			<?php endif;
+			endforeach;
+		?>
+
+
+
+
+
 		</div>
 	</div>
 </div>

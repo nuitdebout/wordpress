@@ -25,6 +25,7 @@ function get_page_by_name($pagename){
 
 function insert_page_wiki(){
 	$returned_content = get_data('https://raw.githubusercontent.com/nuitdebout/nuitdebout.github.io/master/data/cities.json');
+    $pageville = get_page_by_name('ville');
 
 	foreach ( $returned_content as $p ) :
 
@@ -44,9 +45,9 @@ function insert_page_wiki(){
 		echo $c;
 
 		$page = get_page_by_name($t);
+
 		if (!empty($page)) {
 
-		$pageville = get_page_by_name('ville');
 
 
 		$my_post = array(
@@ -67,7 +68,7 @@ function insert_page_wiki(){
 		  'post_status'   => 'publish',
 		  'post_author'   => 1,
 		  'post_type' => 'page',
-		  'post_parent' => 0
+		  'post_parent' =>  $pageville->ID,
 		);
 		echo 'create '.$t;
 		wp_insert_post( $my_post );
