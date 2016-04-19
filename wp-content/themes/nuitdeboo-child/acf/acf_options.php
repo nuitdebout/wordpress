@@ -63,6 +63,25 @@ if(function_exists("register_field_group"))
 				'allow_null' => 0,
 				'multiple' => 0,
 			),
+ 			array (
+                                'key' => 'field_57qsd123qsqsd9sdf024bdd0',
+                                'label' => 'Module globalDebout',
+                                'name' => '',
+                                'type' => 'tab',
+                        ),
+                        array (
+                                'key' => 'field_571sqqez23848f36dqse',
+                                'label' => 'Inclure le module "globaldebout" ',
+                                'name' => 'homepage_module_global',
+                                'type' => 'select',
+                                'choices' => array (
+                                        'oui' => 'Oui',
+                                        'non' => 'Non',
+                                ),
+                                'default_value' => '',
+                                'allow_null' => 0,
+                                'multiple' => 0,
+                        ),
 			array (
 				'key' => 'field_5712ssd397bda1ca',
 				'label' => 'Réseaux',

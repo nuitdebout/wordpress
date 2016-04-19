@@ -35,6 +35,12 @@
 		}
 	}
 
+	if ( get_field('homepage_module_global', 'option') == 'oui' ) {
+                //if ( get_field('homepage_globaldebout', 'option') ) {
+                        get_template_part('templates/module', 'global');
+                //}
+        }
+
 	/**
 	* Module social network
 	*/
