@@ -12,14 +12,11 @@
 		$content = apply_filters('the_content',$include[0]->post_content);
 		$title = apply_filters('the_title',$include[0]->post_title);
 		?>
-		<div class="container">
-			<div class="page-header">
-				<h2><?php echo $title; ?></h2>
-			</div>
-		</div>
-		<div class="wrapper">
-			<div class="container-fluid">
-				<div class="row">
+
+		<div class="container padded">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h2><?php echo $title; ?></h2>
 					<?php echo $content; ?>
 				</div>
 			</div>
@@ -37,18 +34,18 @@
 				$title = apply_filters('the_title',$p->post_title);
 				$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($p->ID), 'thumbnail' );
 				$url = $thumb['0'];
-				echo '<img src='.$url.' />';
+
 				?>
-				<div class="container">
-					<div class="page-header">
-						<h2><?php echo $title; ?></h2>
+				<div class="container padded">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <?php echo '<img class="pull-left" src='.$url.' />'; ?>
+						  <h3><?php echo $title; ?></h3>
+              <?php echo $content; ?>
+            </div>
 					</div>
 				</div>
-				<div class="container-fluid">
-					<div class="row">
-						<?php echo $content; ?>
-					</div>
-				</div>
+
 				<?php
 			endforeach;
 		} // if subs

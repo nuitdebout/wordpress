@@ -1,47 +1,32 @@
 <div id="manifesto">
-	<?php
-	/*
-	module "manifesto"
-	*/
-	// $page = get_page_by_title( 'Manifeste' );
-	$page = get_field('homepage_manifesto', 'option');
+  <div class="container padded">
+    <div class="row">
+       <div class="col-md-8 col-md-offset-2">
+      	<?php
+      	/*
+      	module "manifesto"
+      	*/
+      	// $page = get_page_by_title( 'Manifeste' );
+      	$page = get_field('homepage_manifesto', 'option');
 
-	$include = get_pages('include='.$page->ID);
-	if ( $include[0]->post_title ){
-		$content = apply_filters('the_content',$include[0]->post_content);
-		$title = apply_filters('the_title',$include[0]->post_title);
-		?>
+      	$include = get_pages('include='.$page->ID);
+      	if ( $include[0]->post_title ){
+      		$content = apply_filters('the_content',$include[0]->post_content);
+      		$title = apply_filters('the_title',$include[0]->post_title);
+      		?>
 
-		<div class="row">
-		  <div class="col-md-2"></div>
-		  <div class="col-md-2">
-			  <div class="container">
-					<div class="page-header">
-						<h2><?php echo $title; ?></h2>
-						<button class="btn btn-primary"><a href="<?php echo get_field('homepage_manifesto_btn_url', 'option'); ?>"><?php echo get_field('homepage_manifesto_btn_text', 'option'); ?></a></button>
-					</div>
-			  </div>
+      		<h2><?php echo $title; ?></h2>
+      		<?php echo $content; ?>
 
-		  </div>
-		  <div class="col-md-8">
-		  		<div class="wrapper">
-					<div class="container-fluid">
-						<div class="row">
-							<?php echo $content; ?>
-						</div>
-					</div>
-				</div>
-		  </div>
-		</div>
+          <button class="btn btn-primary btn-lg"><a href="<?php echo get_field('homepage_manifesto_btn_url', 'option'); ?>"><?php echo get_field('homepage_manifesto_btn_text', 'option'); ?></a></button>
 
-
-
-
-
-		<?php
-	}
-	else{
-		echo 'Please go to admin > options > Manifesto and select the page you want to display (a page must be created before)';
-	}
-	?>
+      		<?php
+      	}
+      	else{
+      		echo 'Please go to admin > options > Manifesto and select the page you want to display (a page must be created before)';
+      	}
+      	?>
+      </div>
+    </div>
+  </div>
 </div>
