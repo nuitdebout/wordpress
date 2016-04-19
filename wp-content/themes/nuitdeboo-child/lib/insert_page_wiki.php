@@ -59,7 +59,9 @@ function insert_page_wiki(){
 		  );
 		//print_r($my_post);
 		// Update the post into the database
-	  wp_update_post( $my_post );
+		
+		// add_post_meta( $page->ID, '_wp_page_template', 'page-ville.php' );
+ 		wp_update_post( $my_post );
 		echo 'p updated';
 	} else {
 
@@ -73,6 +75,8 @@ function insert_page_wiki(){
 		);
 		echo 'create '.$t;
 		wp_insert_post( $my_post );
+               //  add_post_meta( $page->ID, '_wp_page_template', 'page-ville.php'$
+
 	}
 	endforeach;
 }
