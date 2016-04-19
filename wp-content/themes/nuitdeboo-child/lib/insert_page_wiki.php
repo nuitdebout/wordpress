@@ -31,6 +31,7 @@ function insert_page_wiki(){
 
 		//print_r($p);
 		$t = wp_strip_all_tags($p['name']);
+
 		$c = '';
 		$links =$p['links'];
 		if($t == 'paris'){

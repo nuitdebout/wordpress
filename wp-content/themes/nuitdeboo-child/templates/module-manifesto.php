@@ -1,8 +1,4 @@
 <div id="manifesto">
-
-
-	<button class="btn btn-primary"><a href="<?php echo get_field('homepage_manifesto_btn_url', 'option'); ?>"><?php echo get_field('homepage_manifesto_btn_text', 'option'); ?></a></button>
-
 	<?php
 	/*
 	module "manifesto"
@@ -15,18 +11,33 @@
 		$content = apply_filters('the_content',$include[0]->post_content);
 		$title = apply_filters('the_title',$include[0]->post_title);
 		?>
-		<div class="container">
-			<div class="page-header">
-				<h2><?php echo $title; ?></h2>
-			</div>
-		</div>
-		<div class="wrapper">
-			<div class="container-fluid">
-				<div class="row">
-					<?php echo $content; ?>
+
+		<div class="row">
+		  <div class="col-md-2"></div>
+		  <div class="col-md-2">
+			  <div class="container">
+					<div class="page-header">
+						<h2><?php echo $title; ?></h2>
+						<button class="btn btn-primary"><a href="<?php echo get_field('homepage_manifesto_btn_url', 'option'); ?>"><?php echo get_field('homepage_manifesto_btn_text', 'option'); ?></a></button>
+					</div>
+			  </div>
+
+		  </div>
+		  <div class="col-md-8">
+		  		<div class="wrapper">
+					<div class="container-fluid">
+						<div class="row">
+							<?php echo $content; ?>
+						</div>
+					</div>
 				</div>
-			</div>
+		  </div>
 		</div>
+
+
+
+
+
 		<?php
 	}
 	else{

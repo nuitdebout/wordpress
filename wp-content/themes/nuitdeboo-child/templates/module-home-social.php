@@ -7,9 +7,6 @@
 	<div class="socialonhome container-fluid">
 		<div class="row">
 			<?php
-
-
-
 				$sc = array(
 							'facebook' => array(
 								'key_' => 'facebook',
@@ -65,35 +62,26 @@
 							'github'=> array(
 								'key_' => 'github',
 								'name'=>'Github',
-								'icon' => ''
+								'icon' => 'fa fa-github'
 							),
 				);
 
-		foreach ( $sc as $value  ) :
-
-			if( get_field('social_'.$value['key_'], 'option') ) : ?>
-
+			foreach ( $sc as $value  ) :
+				if( get_field('social_'.$value['key_'], 'option') ) : ?>
+					<div class="socialsquare col-xs-6 col-sm-4 col-md-2">
+						<a href="<?php echo get_field('social_'.$value['key_'], 'option'); ?>" target="_blank" class="social-icons facebook">
+							<i class="fa fa-<?php echo $value['icon']; ?>"></i><br /><?php echo $value['name']; ?>
+						</a>
+					</div>
+					<?php
+				endif;
+				if( $value['key_'] == 'partout') : ?>
 				<div class="socialsquare col-xs-6 col-sm-4 col-md-2">
-					<a href="<?php echo get_field('social_'.$value['key_'], 'option'); ?>" target="_blank" class="social-icons facebook">
-						<i class="fa fa-<?php echo $value['icon']; ?>"></i><br /><?php echo $value['name']; ?>
-					</a>
+						<?php echo $value['name']; ?>
 				</div>
-				<?php
-			endif;
-
-			if( $value['key_'] == 'partout') : ?>
-			<div class="socialsquare col-xs-6 col-sm-4 col-md-2">
-					<?php echo $value['name']; ?>
-			</div>
-
-			<?php endif;
-			endforeach;
-		?>
-
-
-
-
-
+				<?php endif;
+				endforeach;
+			?>
 		</div>
 	</div>
 </div>

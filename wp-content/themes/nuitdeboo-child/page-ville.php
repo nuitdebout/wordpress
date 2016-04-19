@@ -7,14 +7,16 @@
  * @since Twenty Fourteen 1.0
  */
 
-$page = get_page_by_name('ville');
+		$page = get_page_by_name('ville');
 
-$args = array(
+		$args = array(
 			'child_of' => $page->ID,
 			'post_type' => 'page',
 			'post_status' => 'publish'
 		);
 		$pages_sub = get_pages($args);
+
+
 		if($pages_sub){
 			echo '<ul>';
 			foreach ( $pages_sub as $p ) :
@@ -24,6 +26,7 @@ $args = array(
 			echo '<li><a href="'.$url.'"">'.$title.'</a></li>';
 
 			endforeach;
-				echo '<ul>';
-				echo '<p>Votre ville n\'est pas listée ? ajoutez-la sur le wiki ! </p>';
+				echo '</ul>';
+
+			echo '<p>	<button class="btn btn-primary"><a href="http://wiki.nuitdebout.fr">Votre ville n\'est pas listée ? ajoutez-la sur le wiki !</a></button>';
 		}
