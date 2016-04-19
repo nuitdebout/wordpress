@@ -1,0 +1,15 @@
+.tag a {
+  /* Rectangle 118: */
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  border-radius: 16px;
+  padding: 0.5em 1em !important;
+  margin-bottom: 10px;
+  display: block;
+
+  &:hover {
+    background: $link-color;
+    color: #fff;
+    text-decoration:none;
+  }
+}

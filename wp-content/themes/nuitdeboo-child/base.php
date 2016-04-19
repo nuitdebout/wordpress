@@ -24,13 +24,13 @@ use Roots\Sage\Wrapper;
       </div>
     <![endif]-->
 
-    <div class="wrap container" role="document">
+    <div class="wrap" role="document">
       <div class="content row">
        <?php
         do_action('get_header');
         get_template_part('templates/header');
         ?>
-        <main class="main">
+        <main>
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
         <?php if (Setup\display_sidebar()) : ?>
