@@ -12,58 +12,35 @@ exemple: nuitdebout.fr/marseille (utilisation de répertoire statué sur loomio)
 
 > utilise un "theme" commun qui peut etre largement modifié et adapté avec ses propres liens et contenus
 
-## Utilisation de la configuration par défaut
+## Utilisation de la machine virtuelle
 
-Pour installer la configuration par défaut, copiez le fichier ̀̀`wp-config.php.dist` vers `wp-config.php` :
-```bash
-cp wp-config.php.dist wp-config.php
+- Installer [VirtualBox](https://www.virtualbox.org/) & [Vagrant](https://docs.vagrantup.com/v2/installation/index.html)
+- Installer Vagrant Omnibus, puis lancer la création de la machine virtuelle
+```
+$ vagrant plugin install vagrant-omnibus
+$ vagrant up
+```
+- Copier la configuration
+```
+$ cp wp-config.php.dist wp-config.php
+```
+- Importer la base de données :
+```
+$ vagrant ssh -c 'cat /var/www/nuitdebout/dump/nuitdebout_multisite.sql | mysql -h127.0.0.1 -uroot -pleurfairepeur nuitdebout'
 ```
 
-## Utiliser le multisite
-
-Nous partons du principe que votre database se nomme : **nuitdebout2**
-Le DUMP de la database se trouve dans le répertoire /dump à la racine du projet
-Le fichier concerné est : **nuitdebout_multisite.sql**
-
-Pour mettre à jour votre base de donnée avec mysql :
-```bash
-mysql -u root -D nuitdebout2 -p < dump/nuitdebout_multisite.sql
+- Ajouter la ligne suivante au fichier `/etc/hosts`
 ```
+192.168.31.03 nuitdebout.dev
+```
+- Aller sur `http://nuitdebout.dev`.
+
+
+Pour arrêter la machine virtuelle, lancer `vagrant halt`.
 
 ## Default pwd for admin user (temporary)
 
 admin / urWnshZ)f0xYJCbPJ9 (utilise mon mail perso à changer svp)
-
-
-## Hostname default : nuitdebout.dev
-
-configuré par défaut pour un site en local : **nuitdebout.dev**
-(il faut configurer apache2 et le fichier hosts)
-
-Voici l'exemple de vhost que vous pouvez créer, considérant que les fichiers sont stockés dans le répertoire :
-
-**/Users/YOUR_USER/Sites/nuitdebout-fr/www**
-
-```
-<VirtualHost *:80>
-    ServerName nuitdebout.dev
-
-    DocumentRoot "/Users/YOUR_USER/Sites/nuitdebout-fr/www"
-
-    Options -Indexes
-    <Directory /Users/YOUR_USER/Sites/nuitdebout-fr/www>
-        Options Indexes +ExecCGI +SymLinksIfOwnerMatch
-        AllowOverride All
-        Order allow,deny
-        Allow from all
-    </Directory>
-
-    ServerAdmin yourEmail@domain.com
-
-    ErrorLog "/Users/YOUR_USER/Sites/nuitdebout-fr/errors.log"
-    CustomLog "/Users/YOUR_USER/Sites/nuitdebout-fr/access.log" common
-</VirtualHost>
-```
 
 ## Using the child theme named nuitdeboo-child
 
