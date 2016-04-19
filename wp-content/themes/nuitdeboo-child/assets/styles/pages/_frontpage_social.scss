@@ -1,0 +1,139 @@
+$socials: (
+  facebook,
+  twitter,
+  bambuser,
+  youtube,
+  instagram,
+  tumblr,
+  periscope,
+  snapchat,
+  scoopit,
+  github,
+  reddit,
+  nuitdebout
+);
+
+$social-colors: (
+  facebook: #3f5b9a,
+  twitter: #60b0ef,
+  bambuser: #424242,
+  youtube: #ba0100,
+  instagram: #105689,
+  tumblr: #334d68,
+  periscope: #3e95b1,
+  snapchat: #424242,
+  scoopit: #91c846,
+  github: #424242,
+  reddit: #424242,
+  nuitdebout: white,
+);
+
+.social-networks-section {
+  display: flex;
+
+  margin-left: -15px;
+  margin-right: -15px;
+
+  border-right: 1px solid $gray-lighter;
+  border-bottom: 1px solid $gray-lighter;
+}
+.social-networks-section-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  flex: 1 1 140px;
+  height: 140px;
+  background-color: white;
+
+  border-left: 1px solid $gray-lighter;
+  border-top: 1px solid $gray-lighter;
+
+  position: relative;
+
+  overflow: hidden;
+
+}
+
+.social-networks-section-item__icon {
+  font-size: 40px;
+}
+
+.social-networks-section-item__image {
+  width: 40px;
+  height: 40px;
+}
+
+.social-networks-section-item__name {
+  font-size: 22px;
+  text-transform: uppercase;
+  padding: 5px;
+  font-family: AmaticSC;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.social-networks-section-item--nuitdebout {
+  background-color: $brand-primary;
+  .social-networks-section-item__image {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+// hover animation
+a[href].social-networks-section-item {
+  &:before {
+    display: block;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    content: "";
+    height: 8px;
+    width: 100%;
+
+    transform: translateY(8px);
+    transition: transform .3s ease-in-out;
+  }
+  * {
+    transition: transform .3s ease-in-out;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    * {
+      transform: translateY(-8px);
+    }
+    &:before {
+      transform: translateY(0);
+    }
+
+  }
+}
+@each $social in $socials {
+  .social-networks-section-item--#{$social} {
+      color: map-get($social-colors, $social);
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: map-get($social-colors, $social);
+      }
+
+      &:before {
+        background-color: map-get($social-colors, $social);
+      }
+  }
+}
+
+// responsive
+@media (max-width: $screen-md-max) {
+  .social-networks-section {
+    flex-wrap: wrap;
+  }
+}
