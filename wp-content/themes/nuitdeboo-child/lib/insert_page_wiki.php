@@ -8,27 +8,9 @@ if(isset($_GET["sync"])) {
 		}
 }
 
-function get_data($url) {
-	$ch = curl_init();
-	$timeout = 5;
-	curl_setopt($ch, CURLOPT_URL, $url);
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-	curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
-	$data = curl_exec($ch);
-	curl_close($ch);
-	return 	json_decode($data, true);
-
-}
-function get_page_by_name($pagename){
-	$pages = get_pages();
-	foreach ($pages as $page) if ($page->post_title == $pagename) return $page;
-	return false;
-}
-
-
 function insert_page_wiki(){
 	$returned_content = get_data('https://raw.githubusercontent.com/nuitdebout/nuitdebout.github.io/master/data/cities.json');
-    $pageville = get_page_by_name('ville');
+    $pageville = get_page_by_name('Liste des villes');
 
 	foreach ( $returned_content as $p ) :
 
@@ -71,9 +53,6 @@ function insert_page_wiki(){
 						echo $t.' updated <br/><br/>';
 
 			}
-
-
-
 	} else {
 
 		$my_post = array(
@@ -100,5 +79,21 @@ function insert_page_wiki(){
 
 	}
 	endforeach;
+}
+function get_data($url) {
+	$ch = curl_init();
+	$timeout = 5;
+	curl_setopt($ch, CURLOPT_URL, $url);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+	curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+	$data = curl_exec($ch);
+	curl_close($ch);
+	return 	json_decode($data, true);
+
+}
+function get_page_by_name($pagename){
+	$pages = get_pages();
+	foreach ($pages as $page) if ($page->post_title == $pagename) return $page;
+	return false;
 }
 ?>
