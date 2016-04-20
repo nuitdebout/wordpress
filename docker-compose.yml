@@ -1,0 +1,16 @@
+version: '2'
+services:
+  web:
+    build: .
+    command: php -S 0.0.0.0:80 -t /code
+    ports:
+      - "8000:80"
+    depends_on:
+      - mariadb
+    volumes:
+      - .:/code
+  mariadb:
+    image: mariadb:10.1
+    environment:
+      MYSQL_DATABASE: nuitdebout
+      MYSQL_ROOT_PASSWORD: leurfairepeur

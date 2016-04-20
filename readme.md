@@ -12,7 +12,7 @@ exemple: nuitdebout.fr/marseille (utilisation de répertoire statué sur loomio)
 
 > utilise un "theme" commun qui peut etre largement modifié et adapté avec ses propres liens et contenus
 
-## Utilisation de la machine virtuelle
+## Installation avec Vagrant
 
 - Installer [VirtualBox](https://www.virtualbox.org/) & [Vagrant](https://docs.vagrantup.com/v2/installation/index.html)
 - Installer Vagrant Omnibus, puis lancer la création de la machine virtuelle
@@ -37,6 +37,13 @@ $ vagrant ssh -c 'cat /var/www/nuitdebout/dump/nuitdebout_multisite.sql | mysql 
 
 
 Pour arrêter la machine virtuelle, lancer `vagrant halt`.
+
+## Installation avec docker et docker-compose
+
+1. Lancer `./script/bootstrap` et suivez les indications
+1. Aller sur [nuitdebout.dev](http://nuitdebout.dev)
+
+Pour relancer plus tard: `./script/server`
 
 ## Default pwd for admin user (temporary)
 
