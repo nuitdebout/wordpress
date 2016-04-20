@@ -31,7 +31,7 @@ $ vagrant ssh -c 'cat /var/www/nuitdebout/dump/nuitdebout_multisite.sql | mysql 
 
 - Ajouter la ligne suivante au fichier `/etc/hosts`
 ```
-192.168.31.03 nuitdebout.dev
+192.168.31.3 nuitdebout.dev
 ```
 - Aller sur `http://nuitdebout.dev`.
 
