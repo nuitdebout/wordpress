@@ -68,3 +68,24 @@
     }
 }
 
+.page-template-page-ville {
+  h1:first-letter {
+    box-shadow:
+      0 3px 0 -1px $light-blue, /* to indent the green bottom line with the same color as the background */
+      0 3px 0 0 $light-blue,  /* to create a bottom 3px high green line */
+      inset 0 -1px 0 0 $light-blue; /* to create the top (1px) of the outline */
+    border: 0 !important;
+  }
+  .page-header {
+    border: 0 !important;
+  }
+
+  ul {
+    list-style-type: none;
+    li {
+      border-bottom: 1px solid $gray-lighter;
+      padding: 15px;
+    }
+  }
+}
+
