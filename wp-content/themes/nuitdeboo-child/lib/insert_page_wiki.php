@@ -1,8 +1,11 @@
 <?php
-
-if(isset($_GET["syncc"]) && $_GET["syncc"] == "secret" ) {
-  	insert_page_wiki();
-
+if(isset($_GET["sync"])) {
+		if($_GET["sync"] == SECRET_SYNC_WIKI ){
+			insert_page_wiki();
+		}
+		else{
+			echo 'false secret key';
+		}
 }
 
 function get_data($url) {
@@ -18,7 +21,7 @@ function get_data($url) {
 }
 function get_page_by_name($pagename){
 	$pages = get_pages();
-	foreach ($pages as $page) if ($page->post_name == $pagename) return $page;
+	foreach ($pages as $page) if ($page->post_title == $pagename) return $page;
 	return false;
 }
 
@@ -42,14 +45,11 @@ function insert_page_wiki(){
 			$c = $c.'<li><a href="'.$l.'">'.$l.'</a></li>';
 		endforeach;
 		$c = $c.'</ul>';
-		$c = $c. '<p>Vous voulez compléter cette page, ajouter des liens ? Venez sur le <a href="'.$p['wiki_url'].'">wiki</a></p>';
-		echo $c;
+		// echo $c;
 
 		$page = get_page_by_name($t);
 
 		if (!empty($page)) {
-
-
 
 		$my_post = array(
 		    'ID'           => $page->ID,
@@ -57,12 +57,23 @@ function insert_page_wiki(){
 		    'post_parent' =>  $pageville->ID,
 		    'post_title'  =>  $t
 		  );
-		//print_r($my_post);
-		// Update the post into the database
-		
-		// add_post_meta( $page->ID, '_wp_page_template', 'page-ville.php' );
- 		wp_update_post( $my_post );
-		echo 'p updated';
+
+
+			$post_id = wp_update_post( $my_post, true );
+			if (is_wp_error($post_id)) {
+				$errors = $post_id->get_error_messages();
+				foreach ($errors as $error) {
+					echo $error;
+				}
+			}
+			else{
+						add_post_meta( $post_id, '_wp_page_template', 'page-ville.php' );
+						echo $t.' updated <br/><br/>';
+
+			}
+
+
+
 	} else {
 
 		$my_post = array(
@@ -73,9 +84,19 @@ function insert_page_wiki(){
 		  'post_type' => 'page',
 		  'post_parent' =>  $pageville->ID,
 		);
-		echo 'create '.$t;
-		wp_insert_post( $my_post );
-               //  add_post_meta( $page->ID, '_wp_page_template', 'page-ville.php'$
+
+		$post_id =  wp_insert_post( $my_post,true );
+		if (is_wp_error($post_id)) {
+			$errors = $post_id->get_error_messages();
+			foreach ($errors as $error) {
+				echo $error;
+			}
+		}
+		else{
+			add_post_meta( $post_id, '_wp_page_template', 'page-ville.php' );
+		}
+
+		echo $t.' created <br/><br/>';
 
 	}
 	endforeach;
