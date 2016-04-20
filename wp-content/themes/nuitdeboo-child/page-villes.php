@@ -13,7 +13,7 @@
       <div class="col-md-8 col-md-offset-2">
         <div class="text-center padded">
 		<?php
-			$page = get_page_by_name('ville');
+			$page = get_page_by_name('Liste des villes');
 		    $title = apply_filters('the_title',$page->post_title);
 		    echo '<h2>'.$title.'</h2>';
 			$args = array(
