@@ -6,89 +6,83 @@
         </div>
 		</div>
 	</div>
-	<div class="socialonhome">
-		<div class="row">
+	<div class="social-networks-section">
 			<?php
 				$sc = array(
-							'facebook' => array(
-								'key_' => 'facebook',
-								'name'=>'Facebook',
-								'icon' => 'fa fa-facebook'
-							),
 							'twitter'=> array(
-								'key_' => 'twitter',
 								'name'=>'Twitter',
-								'icon' => 'fa fa-twitter'
+								'icon' => 'ic-twitter'
+							),
+							'facebook' => array(
+								'name'=>'Facebook',
+								'icon' => 'ic-facebook'
 							),
 							'bambuser'=> array(
-								'key_' => 'bambuser',
 								'name'=>'Bambuser',
-								'icon' => ''
+								'icon' => 'ic-bambuser'
 							),
 							'youtube'=> array(
-								'key_' => 'youtube',
 								'name'=>'Youtube',
-								'icon' => 'fa-youtube-play'
+								'icon' => 'ic-youtube'
 							),
-							'reddit'=> array(
-								'key_' => 'reddit',
-								'name'=>'Reddit',
-								'icon' => 'fa'
-							),
-							'partout'=> array(
-								'key_' => 'partout',
-								'name'=>'<h3>Nuit debout <small>est partout</small></h3>',
-								'icon' => ''
-							),
-
 							'instagram'=> array(
-								'key_' => 'instagram',
 								'name'=>'Instagram',
-								'icon' => 'fa fa-instagram'
+								'icon' => 'ic-instagram'
 							),
 							'tumblr'=> array(
-								'key_' => 'tumblr',
 								'name'=>'Tumblr',
-								'icon' => 'fa fa-tumblr'
+								'icon' => 'ic-tumblr'
 							),
 							'periscope'=> array(
-								'key_' => 'periscope',
 								'name'=>'Periscope',
-								'icon' => ''
+								'icon' => 'ic-periscope'
 							),
 							'snapchat'=> array(
-								'key_' => 'snapchat',
 								'name'=>'Snapchat',
-								'icon' => 'fa fa-snapchat-ghost'
+								'icon' => 'ic-snapchat'
 							),
 							'scoopit'=> array(
-								'key_' => 'scoopit',
 								'name'=>'Scoopit',
-								'icon' => ''
+								'icon' => 'ic-scoopit'
 							),
 							'github'=> array(
-								'key_' => 'github',
 								'name'=>'Github',
-								'icon' => 'fa fa-github'
+								'icon' => 'ic-github'
+							),
+							'reddit'=> array(
+								'name'=>'Reddit',
+								'icon' => 'ic-reddit'
+							),
+							'nuitdebout'=> array(
+								'icon' => '',
+								'name' => 'est partout',
+								'image' => 'logowhite.svg'
 							),
 				);
 
-			foreach ( $sc as $value  ) :
-				if( get_field('social_'.$value['key_'], 'option') ) : ?>
-					<div class="socialsquare col-xs-6 col-sm-4 col-md-2">
-						<a href="<?php echo get_field('social_'.$value['key_'], 'option'); ?>" target="_blank" class="social-icons facebook">
-							<i class="fa fa-<?php echo $value['icon']; ?>"></i><br /><?php echo $value['name']; ?>
+			foreach ( $sc as $key => $socialConfig ) :
+				if( get_field('social_'.$key, 'option') ) : ?>
+					<a href="<?php echo get_field('social_'.$key, 'option'); ?>" target="_blank"
+						class="social-networks-section-item social-networks-section-item--<?php echo $key ?>">
+							<i class="social-networks-section-item__icon <?= $socialConfig['icon'] ?>" ></i>
+							<div class="social-networks-section-item__name">
+								<?php echo $socialConfig['name']; ?>
+							</div>
 						</a>
-					</div>
 					<?php
 				endif;
-				if( $value['key_'] == 'partout') : ?>
-				<div class="socialsquare col-xs-6 col-sm-4 col-md-2">
-						<?php echo $value['name']; ?>
-				</div>
-				<?php endif;
-				endforeach;
+				if ($key === 'nuitdebout') {
+				?>
+					<div class="social-networks-section-item social-networks-section-item--<?php echo $key ?>">
+						<img class="social-networks-section-item__image" alt="<?php echo $key ?>"
+								 src="<?php echo get_stylesheet_directory_uri() . '/assets/images/' . $socialConfig['image'] ?>" />
+						<div class="social-networks-section-item__name">
+							<?php echo $socialConfig['name']; ?>
+						</div>
+					</div>
+				<?php
+				}
+			endforeach;
 			?>
-		</div>
 	</div>
 </div>
