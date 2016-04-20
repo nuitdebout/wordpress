@@ -36,10 +36,13 @@
 	}
 
 	if ( get_field('homepage_module_global', 'option') == 'oui' ) {
-                //if ( get_field('homepage_globaldebout', 'option') ) {
-                        get_template_part('templates/module', 'global');
-                //}
-        }
+         get_template_part('templates/module', 'global');
+    }
+
+    if ( get_field('homepage_module_agenda', 'option') == 'oui' ) {
+       get_template_part('templates/module', 'agenda');
+    }
+
 
 	/**
 	* Module social network

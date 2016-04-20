@@ -24,6 +24,7 @@ if(function_exists("register_field_group"))
 				'allow_null' => 0,
 				'multiple' => 0,
 			),
+
 			array (
 				'key' => 'field_571239164bdd1',
 				'label' => 'Changer l\'écran de la page d\'accueil',
@@ -82,6 +83,31 @@ if(function_exists("register_field_group"))
                                 'allow_null' => 0,
                                 'multiple' => 0,
                         ),
+                        array (
+				'key' => 'field_5712uio5edsddfc26c22',
+				'label' => 'global (page parent)',
+				'name' => 'homepage_global',
+				'type' => 'post_object',
+				'conditional_logic' => array (
+					'status' => 1,
+					'rules' => array (
+						array (
+							'field' => 'field_571sqqez23848f36dqse',
+							'operator' => '==',
+							'value' => 'oui',
+						),
+					),
+					'allorany' => 'all',
+				),
+				'post_type' => array (
+					0 => 'page',
+				),
+				'taxonomy' => array (
+					0 => 'all',
+				),
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
 			array (
 				'key' => 'field_5712ssd397bda1ca',
 				'label' => 'Réseaux',
@@ -423,8 +449,6 @@ if(function_exists("register_field_group"))
 				'name' => '',
 				'type' => 'tab',
 			),
-
-
 			array (
 				'key' => 'field_57125fb8963ea',
 				'label' => 'Inclure le module manifesto',
@@ -553,8 +577,8 @@ if(function_exists("register_field_group"))
 				'type' => 'tab',
 			),
 			array (
-				'key' => 'field_5hyg63ea',
-				'label' => 'Inclure agenda',
+				'key' => 'field_57125fbfgh8963ea',
+				'label' => 'Inclure le module agenda',
 				'name' => 'homepage_module_agenda',
 				'type' => 'select',
 				'choices' => array (
@@ -565,6 +589,32 @@ if(function_exists("register_field_group"))
 				'allow_null' => 0,
 				'multiple' => 0,
 			),
+			array (
+				'key' => 'field_5712uio5edc26c22',
+				'label' => 'agenda (page)',
+				'name' => 'homepage_agenda',
+				'type' => 'post_object',
+				'conditional_logic' => array (
+					'status' => 1,
+					'rules' => array (
+						array (
+							'field' => 'field_57125fbfgh8963ea',
+							'operator' => '==',
+							'value' => 'oui',
+						),
+					),
+					'allorany' => 'all',
+				),
+				'post_type' => array (
+					0 => 'page',
+				),
+				'taxonomy' => array (
+					0 => 'all',
+				),
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+
 		),
 		'location' => array (
 			array (
