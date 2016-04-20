@@ -17,10 +17,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de données: `nuitdebout_multisite`
+-- Base de données: `nuitdebout`
 --
-CREATE DATABASE IF NOT EXISTS `nuitdebout_multisite` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `nuitdebout_multisite`;
+CREATE DATABASE IF NOT EXISTS `nuitdebout` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `nuitdebout`;
 
 -- --------------------------------------------------------
 
