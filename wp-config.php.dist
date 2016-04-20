@@ -97,6 +97,7 @@ define('SITE_ID_CURRENT_SITE', 1);
 define('BLOG_ID_CURRENT_SITE', 1);
 
 define('WP_DEFAULT_THEME', 'nuitdeboo-child');
+define('SECRET_SYNC_WIKI', '4545sd4fgvch4556dsf');
 
 // define('ADMIN_COOKIE_PATH', '/');
 // define('COOKIE_DOMAIN', '');
