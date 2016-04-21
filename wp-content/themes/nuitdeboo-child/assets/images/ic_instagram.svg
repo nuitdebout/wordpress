@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7 (28169) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_instagram</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="1_NuitDebout_Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="v2_NuitDebout_Home_Desktop-HD" transform="translate(-1067.000000, -1455.000000)" fill="#125688">
+            <g id="3.social" transform="translate(0.000000, 1287.000000)">
+                <g id="raw1" transform="translate(0.000000, 88.000000)">
+                    <g id="instagram" transform="translate(966.000000, 80.000000)">
+                        <path d="M129.8,7.2 C129.8,7.68 129.48,8 129,8 L125.8,8 C125.32,8 125,7.68 125,7.2 L125,4 C125,3.52 125.32,3.2 125.8,3.2 L129,3.2 C129.48,3.2 129.8,3.52 129.8,4 L129.8,7.2 Z M105,28.8 C104.52,28.8 104.2,28.48 104.2,28 L104.2,14.4 L107.56,14.4 C107.4,14.88 107.4,15.52 107.4,16 C107.4,21.28 111.72,25.6 117,25.6 C122.28,25.6 126.6,21.28 126.6,16 C126.6,15.52 126.6,14.88 126.44,14.4 L129.8,14.4 L129.8,28 C129.8,28.48 129.48,28.8 129,28.8 L105,28.8 Z M117,9.6 C120.52,9.6 123.4,12.48 123.4,16 C123.4,19.52 120.52,22.4 117,22.4 C113.48,22.4 110.6,19.52 110.6,16 C110.6,12.48 113.48,9.6 117,9.6 L117,9.6 Z M129.8,0 L104.2,0 C102.44,0 101,1.44 101,3.2 L101,28.8 C101,30.56 102.44,32 104.2,32 L129.8,32 C131.56,32 133,30.56 133,28.8 L133,3.2 C133,1.44 131.56,0 129.8,0 L129.8,0 Z" id="ic_instagram"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
