@@ -73,6 +73,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     vb.customize ["modifyvm", :id, "--cpus", cpus]
   end
 
+  config.vm.provision :hosts do |provisioner|
+    provisioner.add_host '127.0.0.1', ['mysql']
+  end
+
   # Use vagrant-omnibus to install chef client
   config.omnibus.chef_version = :latest
 

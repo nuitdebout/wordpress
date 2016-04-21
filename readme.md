@@ -15,9 +15,10 @@ exemple: nuitdebout.fr/marseille (utilisation de répertoire statué sur loomio)
 ## Installation avec Vagrant
 
 - Installer [VirtualBox](https://www.virtualbox.org/) & [Vagrant](https://docs.vagrantup.com/v2/installation/index.html)
-- Installer Vagrant Omnibus, puis lancer la création de la machine virtuelle
+- Installer Vagrant Omnibus et hosts, puis lancer la création de la machine virtuelle
 ```
 $ vagrant plugin install vagrant-omnibus
+$ vagrant plugin install vagrant-hosts
 $ vagrant up
 ```
 - Copier la configuration

@@ -6,10 +6,10 @@ services:
     ports:
       - "8000:80"
     depends_on:
-      - mariadb
+      - mysql
     volumes:
       - .:/code
-  mariadb:
+  mysql:
     image: mariadb:10.1
     environment:
       MYSQL_DATABASE: nuitdebout
