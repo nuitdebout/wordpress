@@ -56,21 +56,32 @@ add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
  */
 function widgets_init() {
   register_sidebar([
-    'name'          => __('Primary', 'sage'),
-    'id'            => 'sidebar-primary',
-    'before_widget' => '<section class="widget %1$s %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
+    'name'          => 'homepage-top',
+    'id'            => 'homepage-top',
+    'before_widget' => '<div id="widget-homepage-top"><div class="container padded"><div class="row"><div class=" %1$s %2$s col-md-8 col-md-offset-2">',
+    'after_widget'  => '</div></div></div></div>',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>'
   ]);
+
+  register_sidebar([
+    'name'          => 'homepage-bottom',
+    'id'            => 'homepage-bottom',
+    'before_widget' => '<div id="widget-homepage-bottom"><div class="container padded"><div class="row"><div class=" %1$s %2$s col-md-8 col-md-offset-2">',
+    'after_widget'  => '</div></div></div></div>',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>'
+  ]);
+
+
 
   register_sidebar([
     'name'          => __('Footer', 'sage'),
     'id'            => 'sidebar-footer',
-    'before_widget' => '<section class="widget %1$s %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
+    'before_widget' => '<div>',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h5>',
+    'after_title'   => '</h5>'
   ]);
 }
 add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
@@ -86,8 +97,7 @@ function display_sidebar() {
     // @link https://codex.wordpress.org/Conditional_Tags
     is_404(),
     is_front_page(),
-    is_page_template('template-custom.php'),
-    is_page_template('page-ville.php'),
+   // is_page_template('page-ville.php'),
   ]);
 
   return apply_filters('sage/display_sidebar', $display);
@@ -107,3 +117,4 @@ function assets() {
   wp_enqueue_script('sage/js', get_stylesheet_directory_uri() . '/dist/scripts/main.js', ['jquery'], null, true);
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
+

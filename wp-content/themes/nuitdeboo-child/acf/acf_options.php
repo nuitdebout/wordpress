@@ -1,4 +1,60 @@
 <?php
+
+function get_social_array() {
+	$sc = array(
+		'twitter'=> array(
+			'name'=>'Twitter',
+			'icon' => 'ic-twitter'
+		),
+		'facebook' => array(
+			'name'=>'Facebook',
+			'icon' => 'ic-facebook'
+		),
+		'bambuser'=> array(
+			'name'=>'Bambuser',
+			'icon' => 'ic-bambuser'
+		),
+		'youtube'=> array(
+			'name'=>'Youtube',
+			'icon' => 'ic-youtube'
+		),
+		'instagram'=> array(
+			'name'=>'Instagram',
+			'icon' => 'ic-instagram'
+		),
+		'tumblr'=> array(
+			'name'=>'Tumblr',
+			'icon' => 'ic-tumblr'
+		),
+		'periscope'=> array(
+			'name'=>'Periscope',
+			'icon' => 'ic-periscope'
+		),
+		'snapchat'=> array(
+			'name'=>'Snapchat',
+			'icon' => 'ic-snapchat'
+		),
+		'scoopit'=> array(
+			'name'=>'Scoopit',
+			'icon' => 'ic-scoopit'
+		),
+		'github'=> array(
+			'name'=>'Github',
+			'icon' => 'ic-github'
+		),
+		'reddit'=> array(
+			'name'=>'Reddit',
+			'icon' => 'ic-reddit'
+		),
+		'nuitdebout'=> array(
+			'icon' => '',
+			'name' => 'est partout',
+			'image' => 'logowhite.svg'
+		),
+	);
+	return $sc;
+}
+
 if(function_exists("register_field_group"))
 {
 	register_field_group(array (
@@ -635,5 +691,93 @@ if(function_exists("register_field_group"))
 		),
 		'menu_order' => 0,
 	));
+
+
+
+	register_field_group(array (
+		'id' => 'acf_social-page',
+		'title' => 'social page',
+		'fields' => array (
+			array (
+				'key' => 'field_57182e6hj18',
+				'label' => 'Garder cette page synchronisée automatiquement au wiki ?',
+				'name' => 'keep_sync',
+				'type' => 'true_false',
+				'instructions' => '',
+				'layout' => 'vertical',
+			),
+			array (
+				'key' => 'field_5qs318218',
+				'label' => 'facebook page url',
+				'name' => 'facebook_page_url',
+				'type' => 'text',
+				'instructions' => 'url',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_qsd18218',
+				'label' => 'twitter page url',
+				'name' => 'twitter_page_url',
+				'type' => 'text',
+				'instructions' => 'url',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_qs456456456452348',
+				'label' => '#chat page url',
+				'name' => 'chat_page_url',
+				'type' => 'text',
+				'instructions' => 'url',
+				'default_value' => 'http://chat.nuitdebout.fr',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_457457645658',
+				'label' => '#wiki page url',
+				'name' => 'wiki_page_url',
+				'type' => 'text',
+				'instructions' => 'url',
+				'default_value' => 'http://wiki.nuitdebout.fr',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'page_template',
+					'operator' => '==',
+					'value' => 'page-ville.php',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
 }
+
 ?>

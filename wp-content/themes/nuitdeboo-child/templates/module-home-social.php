@@ -8,57 +8,8 @@
 	</div>
 	<div class="social-networks-section">
 			<?php
-				$sc = array(
-							'twitter'=> array(
-								'name'=>'Twitter',
-								'icon' => 'ic-twitter'
-							),
-							'facebook' => array(
-								'name'=>'Facebook',
-								'icon' => 'ic-facebook'
-							),
-							'bambuser'=> array(
-								'name'=>'Bambuser',
-								'icon' => 'ic-bambuser'
-							),
-							'youtube'=> array(
-								'name'=>'Youtube',
-								'icon' => 'ic-youtube'
-							),
-							'instagram'=> array(
-								'name'=>'Instagram',
-								'icon' => 'ic-instagram'
-							),
-							'tumblr'=> array(
-								'name'=>'Tumblr',
-								'icon' => 'ic-tumblr'
-							),
-							'periscope'=> array(
-								'name'=>'Periscope',
-								'icon' => 'ic-periscope'
-							),
-							'snapchat'=> array(
-								'name'=>'Snapchat',
-								'icon' => 'ic-snapchat'
-							),
-							'scoopit'=> array(
-								'name'=>'Scoopit',
-								'icon' => 'ic-scoopit'
-							),
-							'github'=> array(
-								'name'=>'Github',
-								'icon' => 'ic-github'
-							),
-							'reddit'=> array(
-								'name'=>'Reddit',
-								'icon' => 'ic-reddit'
-							),
-							'nuitdebout'=> array(
-								'icon' => '',
-								'name' => 'est partout',
-								'image' => 'logowhite.svg'
-							),
-				);
+			$sc = get_social_array();
+
 
 			foreach ( $sc as $key => $socialConfig ) :
 				if( get_field('social_'.$key, 'option') ) : ?>

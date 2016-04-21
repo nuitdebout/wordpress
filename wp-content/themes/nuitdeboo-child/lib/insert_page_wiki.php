@@ -1,4 +1,11 @@
 <?php
+
+// synchronize wiki and wordpress
+// curl data file
+// insert or create wp post
+// use secret key (wp-config.php)
+
+
 if(isset($_GET["sync"])) {
 		if($_GET["sync"] == SECRET_SYNC_WIKI ){
 			insert_page_wiki();
@@ -33,27 +40,35 @@ function insert_page_wiki(){
 
 		if (!empty($page)) {
 
-		$my_post = array(
-		    'ID'           => $page->ID,
-		    'post_content' => $c,
-		    'post_parent' =>  $pageville->ID,
-		    'post_title'  =>  $t
-		  );
+		$keep_sync = get_post_meta( $page->ID, 'keep_sync',true);
+		echo $keep_sync;
+		if($keep_sync && $keep_sync == '1'){
+			$my_post = array(
+			    'ID'         => $page->ID,
+			    'post_content' => $c,
+			    'post_parent' =>  $pageville->ID,
+			    'post_title'  =>  $t
+			);
 
 
-			$post_id = wp_update_post( $my_post, true );
-			if (is_wp_error($post_id)) {
-				$errors = $post_id->get_error_messages();
-				foreach ($errors as $error) {
-					echo $error;
+				$post_id = wp_update_post( $my_post, true );
+				if (is_wp_error($post_id)) {
+					$errors = $post_id->get_error_messages();
+					foreach ($errors as $error) {
+						echo $error;
+					}
+				}
+				else{
+							add_post_meta( $post_id, '_wp_page_template', 'page-ville.php' );
+							echo $t.' updated <br/><br/>';
+
 				}
 			}
 			else{
-						add_post_meta( $post_id, '_wp_page_template', 'page-ville.php' );
-						echo $t.' updated <br/><br/>';
-
+				echo $t.' not updated (keepsync off) <br/><br/>';
 			}
-	} else {
+
+		} else {
 
 		$my_post = array(
 		  'post_title'    =>  $t,
