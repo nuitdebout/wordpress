@@ -12,33 +12,35 @@
 }
 
 @font-face {
-    font-family: 'socialIcons';
-    src: url('../fonts/socialIcons.eot');
-    src: url('../fonts/socialIcons.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/socialIcons.woff') format('woff'),
-         url('../fonts/socialIcons.ttf') format('truetype'),
-         url('../fonts/socialIcons.svg#socialIcons') format('svg');
+  font-family: 'socialIcon';
+  src: url('../fonts/socialIcon.eot');
+  src: url('../fonts/socialIcon.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/socialIcon.woff') format('woff'),
+        url('../fonts/socialIcon.ttf') format('truetype'),
+        url('../fonts/socialIcon.svg#socialIcon') format('svg');
 
-    font-weight: normal;
-    font-style: normal;
+  font-weight: normal;
+  font-style: normal;
 }
+
 [class*='ic-']:before{
-	display: inline-block;
-   font-family: 'socialIcons';
-   font-style: normal;
-   font-weight: normal;
-   line-height: 1;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale
+  display: inline-block;
+  font-family: 'socialIcon';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
 }
-.ic-facebook:before{content:'\0042';}
-.ic-github:before{content:'\0043';}
-.ic-instagram:before{content:'\0044';}
-.ic-periscope:before{content:'\0045';}
-.ic-scoopit:before{content:'\0046';}
-.ic-snapchat:before{content:'\0047';}
-.ic-tumblr:before{content:'\0048';}
-.ic-twitter:before{content:'\0049';}
-.ic-youtube:before{content:'\004a';}
-.ic-bambuser:before{content:'\004b';}
-.ic-reddit:before{content:'\004c';}
+.ic-facebook:before { content: "\e900";}
+.ic-github:before { content: "\e901";}
+.ic-instagram:before { content: "\e902";}
+.ic-periscope:before { content: "\e903";}
+.ic-reddit:before { content: "\e904";}
+.ic-scoopit:before { content: "\e905";}
+.ic-snapchat-plain:before { content: "\e906";}
+.ic-snapchat:before { content: "\e907";}
+.ic-tumblr:before { content: "\e908";}
+.ic-twitter:before { content: "\e909";}
+.ic-youtube:before { content: "\e90a";}
+.ic-bambuser:before { content: "\e90b";}
