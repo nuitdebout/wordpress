@@ -1,4 +1,19 @@
 <?php
+function get_extra_social_array() {
+
+	$sc = array(
+		'wiki'=> array(
+			'name'=>'Wiki',
+			'icon' => 'ic-wiki'
+		),
+		'chat'=> array(
+			'name'=>'chat',
+			'icon' => 'ic-chat'
+		)
+
+	);
+	return $sc;
+}
 
 function get_social_array() {
 	$sc = array(
@@ -18,6 +33,7 @@ function get_social_array() {
 			'name'=>'Youtube',
 			'icon' => 'ic-youtube'
 		),
+
 		'instagram'=> array(
 			'name'=>'Instagram',
 			'icon' => 'ic-instagram'
@@ -46,6 +62,7 @@ function get_social_array() {
 			'name'=>'Reddit',
 			'icon' => 'ic-reddit'
 		),
+
 		'nuitdebout'=> array(
 			'icon' => '',
 			'name' => 'est partout',
@@ -437,6 +454,52 @@ if(function_exists("register_field_group"))
 				'maxlength' => '',
 			),
 			array (
+				'key' => 'field_5sdfsdf3aa7b63fb',
+				'label' => 'WIKI',
+				'name' => 'extra_social_wiki',
+				'type' => 'text',
+				'conditional_logic' => array (
+					'status' => 1,
+					'rules' => array (
+						array (
+							'field' => 'field_57123987da1cb',
+							'operator' => '==',
+							'value' => 'oui',
+						),
+					),
+					'allorany' => 'all',
+				),
+				'default_value' => '',
+				'placeholder' => 'https://instagram.com/xxxx',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_5ssdfaa7b63fb',
+				'label' => 'chat',
+				'name' => 'extra_social_chat',
+				'type' => 'text',
+				'conditional_logic' => array (
+					'status' => 1,
+					'rules' => array (
+						array (
+							'field' => 'field_57123987da1cb',
+							'operator' => '==',
+							'value' => 'oui',
+						),
+					),
+					'allorany' => 'all',
+				),
+				'default_value' => '',
+				'placeholder' => 'https://instagram.com/xxxx',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+			array (
 				'key' => 'field_57123b4136e55',
 				'label' => 'Carte',
 				'name' => '',
@@ -752,6 +815,23 @@ if(function_exists("register_field_group"))
 				'type' => 'text',
 				'instructions' => 'url',
 				'default_value' => 'http://wiki.nuitdebout.fr',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_45qsd74576sdf45658',
+				'label' => 'france ou monde',
+				'name' => 'location_type',
+				'type' => 'select',
+				'choices' => array (
+					'france' => 'france',
+					'monde' => 'monde',
+				),
+				'instructions' => 'France ou monde',
+				'default_value' => 'france',
 				'placeholder' => '',
 				'prepend' => '',
 				'append' => '',

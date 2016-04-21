@@ -1,5 +1,5 @@
 <?php ?>
-<div id="global">
+<div id="global" class="bg-grey">
 	<div class="container padded">
     	<div class="row">
      		<div class="col-md-8 col-md-offset-2">

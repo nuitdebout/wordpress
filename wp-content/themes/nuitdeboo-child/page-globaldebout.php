@@ -7,9 +7,11 @@
  * @since Twenty Fourteen 1.0
  */
 ?>
+<?php
+	get_template_part('templates/module', 'screen');
+?>
 <div class="container">
   <?php while (have_posts()) : the_post(); ?>
-    <?php get_template_part('templates/page', 'header'); ?>
     <?php get_template_part('templates/content', 'page'); ?>
    	<div class="col s12">
 	      <div class="center-block">

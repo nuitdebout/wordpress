@@ -1,4 +1,4 @@
-<div id="participate" class="bg-grey">
+<div id="participate" >
 	<?php
 	$page_parent = get_field('homepage_takepart', 'option');
 	if($page_parent->ID){
@@ -10,7 +10,7 @@
 		?>
 		<div class="container padded">
        		<div class="row">
-    			<div class="col-md-8 col-md-offset-2">
+    			<div class="col-md-8 col-md-offset-2 ">
        				<h2><?php echo $title; ?></h2>
   					<?php echo $content; ?>
   				</div>
@@ -30,9 +30,9 @@
 				 	$i = wp_get_attachment_image_src($thumb , 'thumbnail' );
 					$url = $i['0'];
 					?>
-					<div class="container padded">
+					<div class="container padded ">
 	          			<div class="row">
-	        				<div class="col-md-8 col-md-offset-2">
+	        				<div class="bg-grey padded-inside col-md-8 col-md-offset-2">
 	           					<?php echo '<img class="pull-left" src='.$url.' />'; ?>
 								<h3><?php echo $title; ?></h3>
 	            				<?php echo $content; ?>
