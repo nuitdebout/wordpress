@@ -22,15 +22,17 @@
          			<div class="banner-homepage" style="
                       background: url(<?= $bg ?>);
                       background-size: cover !important;
-                      background-position: center center;
+                      background-position: center bottom;
                       background-repeat: no-repeat;">
             			<div class="text-center container">
               				<div id="nuitdeboutdate"></div>
 	              			<div id="site_title">
-	               					<h1>
+	               					  <?php if(is_home() ){ ?>
+                            <h1>
 	                  					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logowhite.svg" class="nd_header__brand" alt="Nuit Debout"/>
-	                				</h1>
-	                				<?php if(is_page() ){ ?>
+	                				 </h1>
+	                				<?php }  ?>
+                          <?php if(is_page() ){ ?>
 	                					<h2>
 	                  						<?php the_title(); ?>
 	                					</h2>
@@ -43,13 +45,13 @@
 	                					<div class="ville-screen_btns">
 	                  						   		<?php
 	                  						   			if(get_field('chat_page_url')){ ?>
-	                  						   				<p><a class="btn btn-primary" href="<?php echo  get_field('chat_page_url'); ?>">Aller sur le chat</a></p>
+	                  						   				<a class="btn btn-primary btn-lg" href="<?php echo  get_field('chat_page_url'); ?>">Aller sur le chat</a>
 
 	                  						   			<?php }
 	                  						   		?>
 	                  						   		<?php
 	                  						   			if( get_field('wiki_page_url') ){ ?>
-	                  						   				<p><a class="btn btn-primary" href="<?php echo  get_field('wiki_page_url'); ?>">Aller sur le wiki</a></p>
+	                  						   				<a class="btn btn-primary btn-lg" href="<?php echo  get_field('wiki_page_url'); ?>">Aller sur le wiki</a>
 
 	                  						   			<?php }
 	                  						   		?>
