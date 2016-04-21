@@ -822,6 +822,17 @@ if(function_exists("register_field_group"))
 				'maxlength' => '',
 			),
 			array (
+				'key' => 'field_4sdesdf45658',
+				'label' => 'agendaID',
+				'name' => 'agenda_page',
+				'type' => 'text',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
 				'key' => 'field_45qsd74576sdf45658',
 				'label' => 'france ou monde',
 				'name' => 'location_type',

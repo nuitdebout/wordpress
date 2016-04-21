@@ -140,12 +140,15 @@ nav ul li a {
   background: none;
 }
 
-nav ul li:hover a, nav ul li:active a, nav ul li:focus a, nav ul li.active a {
+nav ul li:hover a, nav ul li:active a, nav ul li:focus a, nav ul li.active a,  nav ul li.current_page_item a {
   color: #424242;
   background: none;
 }
 
-nav ul li:hover, nav ul li:active, nav ul li:focus, nav ul li.active {
+
+
+
+nav ul li:hover, nav ul li:active, nav ul li:focus, nav ul li.active, nav ul li.current_page_item  {
   background: none;
 }
 
