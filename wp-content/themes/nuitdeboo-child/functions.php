@@ -14,22 +14,22 @@ define( 'ACF_LITE', true );
 include_once(ABSPATH . 'wp-content/plugins/advanced-custom-fields/acf.php');
 
 $sage_includes = [
-  'lib/assets.php',    // Scripts and stylesheets
-  'lib/extras.php',    // Custom functions
-  'lib/setup.php',     // Theme setup
-  'lib/titles.php',    // Page titles
-  'lib/wrapper.php',   // Theme wrapper class
-  'lib/customizer.php', // Theme customizer
-    'lib/insert_page_wiki.php', // Theme customizer
+	'lib/assets.php',    // Scripts and stylesheets
+	'lib/extras.php',    // Custom functions
+	'lib/setup.php',     // Theme setup
+	'lib/titles.php',    // Page titles
+	'lib/wrapper.php',   // Theme wrapper class
+	'lib/customizer.php', // Theme customizer
+	'lib/insert_page_wiki.php', // Theme customizer
 
-  'acf/acf_options.php' // ACF
+	'acf/acf_options.php' // ACF
 ];
 
 foreach ($sage_includes as $file) {
-  if (!$filepath = locate_template($file)) {
-    trigger_error(sprintf(__('Error locating %s for inclusion', 'sage'), $file), E_USER_ERROR);
-  }
+	if (!$filepath = locate_template($file)) {
+		trigger_error(sprintf(__('Error locating %s for inclusion', 'sage'), $file), E_USER_ERROR);
+	}
 
-  require_once $filepath;
+	require_once $filepath;
 }
 unset($file, $filepath);

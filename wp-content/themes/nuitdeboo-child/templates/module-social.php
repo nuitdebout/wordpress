@@ -1,22 +1,11 @@
-<ul class="list-inline">
+<ul class="social-networks social-networks-picto list-inline">
 	<?php
-	$sc = array(
-		'facebook',
-		'twitter',
-		'bambuser',
-		'youtube',
-		'instagram',
-		'tumblr',
-		'periscope',
-		'snapchat',
-		'scoopit',
-		'github'
-	);
-	foreach ( $sc as $value ) :
-		if( get_field('social_'.$value, 'option') ) : ?>
+	$sc = get_social_array();
+	foreach ( $sc as $key => $socialConfig  ) :
+		if( get_field('social_'.$key, 'option') ) : ?>
 			<li>
-				<a href="<?php echo get_field('social_'.$value, 'option'); ?>" target="_blank" class="social-icons facebook">
-					<i class="fa fa-<?php echo $value ?>"></i>
+				<a href="<?php echo get_field('social_'.$key, 'option'); ?>" target="_blank" class="social-icons <?php echo $value ?>">
+					<i class="fa fa-<?php echo $key ?>"></i>
 				</a>
 			</li>
 			<?php

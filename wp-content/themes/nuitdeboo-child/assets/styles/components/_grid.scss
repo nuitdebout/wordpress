@@ -5,6 +5,7 @@
     @include make-sm-column($main-sm-columns - $sidebar-sm-columns);
   }
 }
+
 .sidebar {
   @include make-sm-column($sidebar-sm-columns);
 }

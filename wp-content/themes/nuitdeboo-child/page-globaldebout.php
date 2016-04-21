@@ -23,6 +23,7 @@
 	      	<p>
 	        	<a href="mailto:intnuitdebout@riseup.net">intnuitdebout@riseup.net</a>
 	      	</p>
+	      	<?php edit_post_link('edit', '<p>', '</p>'); ?>
 	      </div>
     </div>
   <?php endwhile; ?>
