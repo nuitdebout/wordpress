@@ -12,8 +12,19 @@
 
 
 			foreach ( $sc as $key => $socialConfig ) :
-				if( get_field('social_'.$key, 'option') ) : ?>
-					<a href="<?php echo get_field('social_'.$key, 'option'); ?>" target="_blank"
+				if( is_page_template('page-ville.php') ){
+					$key_name = $key.'_page_url';
+					$val_key  = get_field($key_name);
+
+				}
+				else{
+					$key_name = 'social_'.$key;
+				    $val_key  = get_field($key_name, 'option');
+
+				}
+
+				if( $val_key ) : ?>
+					<a href="<?php echo $val_key; ?>" target="_blank"
 						class="social-networks-section-item social-networks-section-item--<?php echo $key ?>">
 							<i class="social-networks-section-item__icon <?= $socialConfig['icon'] ?>" ></i>
 							<div class="social-networks-section-item__name">
@@ -22,7 +33,7 @@
 						</a>
 					<?php
 				endif;
-				if ($key === 'nuitdebout') {
+				if ($key === 'nuitdebout' && !is_page_template('page-ville.php') ) {
 				?>
 					<div class="social-networks-section-item social-networks-section-item--<?php echo $key ?>">
 						<img class="social-networks-section-item__image" alt="<?php echo $key ?>"

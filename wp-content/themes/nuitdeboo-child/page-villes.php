@@ -31,12 +31,26 @@
 							echo '<li class="tag"><a href="'.$url.'"">'.$title.'</a></li>';
 							endforeach;
 					echo '</ul>';
-		     		echo '<h3>Votre ville n\'est pas listée ?</h3>';
-					echo '<p><a class="btn btn-primary btn-lg" href="http://wiki.nuitdebout.fr">ajoutez-la sur le wiki !</a></p>';
+
 			}
 		?>
         </div>
       </div>
     </div>
+
+
+
+
+
   </div>
 </div>
+
+    <div class="row">
+<div class="text-center bg-grey padded">
+
+				<h3>Votre ville n'est pas listée ?</h3>
+				<p><a class="btn btn-primary btn-lg" href="http://wiki.nuitdebout.fr">ajoutez-la sur le wiki !</a></p>
+
+         </div>
+
+         </div>

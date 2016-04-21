@@ -30,9 +30,26 @@
 					echo '<ul class="list-unstyled list-inline padded">';
 					$limit_count = 0;
 					$all_count = 0;
+					$fr_count = 0;
+					$world_count = 0;
+
 					echo '<li class="tag"><a href="'.get_bloginfo("home").'/ville/paris">Paris</a></li>';
 					foreach ( $pages_sub as $p ) :
 							$all_count++;
+
+							if(get_field('location_type',$p->ID ) ){
+									if(get_field('location_type',$p->ID ) == 'France' ){
+										$fr_count++;
+									}
+									else{
+											$world_count++;
+									}
+
+		                  	}
+		                  	else{
+		                  		$fr_count++;
+		                  	}
+
 
 							if($limit_count < 15 ){
 								$limit_count++;
@@ -48,7 +65,10 @@
 			?>
 		<div class="row">
 			<?php /// todo css :
-			// echo $all_count.' au total';
+			echo $all_count.' au total';
+			echo 'France:'.$fr_count;
+						echo 'monde:'.$fr_count;
+
 			?>
 		</div>
 

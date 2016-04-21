@@ -1,12 +1,18 @@
 .homepagescreen {
+
+  h1 a,h2{
+       color:#fff;
+  }
   h1 {
 
     font-size: 98px;
     max-height: 300px;
 
-    a{
-      color:#fff;
-    }
+
+  }
+  h2{
+    font-size: 3em;
+    margin-bottom: 40px;
   }
   #sentencerotate span {
     font-size: 28px;
@@ -80,9 +86,11 @@
     border: 0 !important;
   }
 
-  .container.ul {
-    list-style-type: none;
+  .post{
+
+
     li {
+      list-style-type: none;
       border-bottom: 1px solid $gray-lighter;
       padding: 15px;
     }
