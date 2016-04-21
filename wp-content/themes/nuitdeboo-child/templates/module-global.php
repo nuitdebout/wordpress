@@ -14,7 +14,7 @@
 						);
 						$pages_sub = get_pages($args);
 						$include = get_pages('include='.$parent_id);
-						$content = apply_filters('the_content',$include[0]->post_content);
+						$excerpt = get_the_excerpt($include[0]->ID);
 						$title = apply_filters('the_title',$include[0]->post_title);
 						$permalink = get_permalink($include[0]->ID);
 
@@ -22,8 +22,10 @@
 					?>
           			<h2><?php echo $title; ?></h2>
 			          <div class="padded">
-			            <p><?php echo $title; ?></p>
-			            <a href="<?php echo $permalink; ?>">Voir l'appel</a>
+			            <p><?php echo $excerpt; ?></p>
+							<button class="btn btn-primary btn-lg">
+								<a href="<?php echo $permalink; ?>">Voir l'appel</a>
+			          		</button>
 			          </div>
 			          <ul class="list-unstyled list-inline">
 			          <?php
