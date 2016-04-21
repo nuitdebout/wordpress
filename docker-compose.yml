@@ -1,7 +1,9 @@
 version: '2'
 services:
   web:
-    build: .
+    build:
+      context: docker
+      dockerfile: web
     command: php -S 0.0.0.0:80 -t /code
     ports:
       - "8000:80"
@@ -14,3 +16,9 @@ services:
     environment:
       MYSQL_DATABASE: nuitdebout
       MYSQL_ROOT_PASSWORD: leurfairepeur
+  provisioning:
+    build:
+      context: docker
+      dockerfile: provisioning
+    volumes_from:
+      - web
