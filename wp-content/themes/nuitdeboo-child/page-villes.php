@@ -9,7 +9,7 @@
 ?>
 
 
-<div class="list-towns bg-grey">
+<div class="list-towns">
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
@@ -25,7 +25,7 @@
 			);
 			$pages_sub = get_pages($args);
 			if($pages_sub){
-					echo '<ul class="list-unstyled list-inline padded">';
+					echo '<ul class="list-unstyled list-inline">';
 					foreach ( $pages_sub as $p ) :
 							$content = apply_filters('the_content',$p->post_content);
 							$title = apply_filters('the_title',$p->post_title);
@@ -39,22 +39,15 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
 
-
-
-
-
+<div class="row">
+  <div class="text-center padded bg-grey" >
+    <h3>Votre ville n'est pas listée ?</h3>
+    <p><a class="btn btn-primary btn-lg" href="http://wiki.nuitdebout.fr">ajoutez-la sur le wiki !</a></p>
   </div>
 </div>
 	<?php
 		get_template_part('templates/module', 'rassemblements');
 		?>
-    <div class="row">
-<div class="text-center padded">
-
-				<h3>Votre ville n'est pas listée ?</h3>
-				<p><a class="btn btn-primary btn-lg" href="http://wiki.nuitdebout.fr">ajoutez-la sur le wiki !</a></p>
-
-         </div>
-
-         </div>
