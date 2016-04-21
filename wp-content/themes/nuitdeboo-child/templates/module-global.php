@@ -23,9 +23,6 @@
           			<h2><?php echo $title; ?></h2>
 			          <div class="padded">
 			            <p><?php echo $excerpt; ?></p>
-							<button class="btn btn-primary btn-lg">
-								<a href="<?php echo $permalink; ?>">Voir l'appel</a>
-			          		</button>
 			          </div>
 			          <ul class="list-unstyled list-inline">
 			          <?php

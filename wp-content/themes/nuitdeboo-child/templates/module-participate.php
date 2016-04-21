@@ -10,10 +10,14 @@
 		?>
 		<div class="container padded">
        		<div class="row">
-    			<div class="col-md-8 col-md-offset-2 ">
-       				<h2><?php echo $title; ?></h2>
-  					<?php echo $content; ?>
-  				</div>
+      			<div class="col-md-6 col-md-offset-3">
+              <div class="text-center">
+                <h2><?php echo $title; ?></h2>
+                <?php echo $content; ?>
+                <p><a class="btn btn-primary" href="http://wiki.nuitdebout.fr">Participez au Wiki</a></p>
+              </div>
+
+    				</div>
   			</div>
 			<?php
 			$args = array(
@@ -30,15 +34,17 @@
 				 	$i = wp_get_attachment_image_src($thumb , 'thumbnail' );
 					$url = $i['0'];
 					?>
-					<div class="container padded ">
-	          			<div class="row">
-	        				<div class="bg-grey padded-inside col-md-8 col-md-offset-2">
-	           					<?php echo '<img class="pull-left" src='.$url.' />'; ?>
-								<h3><?php echo $title; ?></h3>
-	            				<?php echo $content; ?>
-	         				</div>
+
+	          	<div class="row">
+	        			<div class="col-md-6 col-md-offset-3">
+	           			<div class="padded-small">
+                    <?php echo '<img class="pull-left" src='.$url.' />'; ?>
+                    <h3 class="mg-top0"><?php echo $title; ?></h3>
+                    <?php echo $content; ?>
+                  </div>
+	         			</div>
 	  					</div>
-	  				</div>
+
 					<?php
 				endforeach;
 			} // if subs

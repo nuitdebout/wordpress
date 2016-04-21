@@ -1,19 +1,17 @@
-<div id="rassemblements">
+<div id="rassemblements" class="bg-grey text-center">
 	<div class="container padded">
-
-      	<div class="row">
-	       	 <div class="col-md-8 col-md-offset-2">
-				<?php if(is_home()) { ?>
-				<h2>Rassemblements</h2>
-				<?php } ?>
-	       		<div class="text-center">
-
-	       			<!-- <p>Chercher ma ville</p> !-->
-	       			<?php
-	       			// echo '<p><a class="btn btn-primary btn-lg" href="'.get_bloginfo("home").'/ville">Voir toutes les villes</a></p>';
-	       			?>
-	       		</div>
-	       	 </div>
+    <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+           <?php if(is_home()) { ?>
+           <h2 class='text-center'>Rassemblements</h2>
+           <?php } ?>
+               <div class="text-center">
+             <!-- <p>Chercher ma ville</p> !-->
+             <?php
+             // echo '<p><a class="btn btn-primary btn-lg" href="'.get_bloginfo("home").'/ville">Voir toutes les villes</a></p>';
+             ?>
+               </div>
+       </div>
 		</div>
 
 
@@ -38,7 +36,7 @@
 					$world_count = 0;
 
 					if(is_home()) {
-						echo '<ul class="list-unstyled list-inline padded">';
+						echo '<ul class="list-unstyled list-inline">';
 						echo '<li class="tag"><a href="'.get_bloginfo("home").'/ville/paris">Paris</a></li>';
 					}
 					foreach ( $pages_sub as $p ) :
@@ -58,7 +56,7 @@
 		                  	}
 
 
-							if($limit_count < 15 ){
+							if($limit_count < 5 ){
 								$limit_count++;
 								if(is_home()) {
 									$title = apply_filters('the_title',$p->post_title);
@@ -70,8 +68,8 @@
 							}
 					endforeach;
 					if(is_home()) {
-						echo '<li class="tag list_more"><a href="'.get_bloginfo("home").'/ville/">Voir plus de villes</a></li>';
 						echo '</ul>';
+            echo '<a class="btn btn-primary" href="'.get_bloginfo("home").'/ville/">Voir plus de villes</a>';
 					}
 				//
 			}
@@ -79,6 +77,7 @@
 		</div>
 
 	</div>
+<!--
 	<div class="row border-grey">
 			<div class="col-md-4 bg-dark padded-left">
 				<?php /// todo css :
@@ -97,10 +96,10 @@
 			</div>
 			<div class="col-md-4 padded-left-search">
 				<?php /// todo css :
-
-get_search_form(  );
+          get_search_form(  );
 					?>
-			</div>
- 	<iframe border="none"  width="100%" height="600px" frameBorder="0" src="https://framacarte.org/fr/map/nuitdebout_2420?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&datalayersControl=false&onLoadPanel=none&captionBar=false#5/46.332/3.340"></iframe>
+		</div> -->
+
+ 	<iframe border="none"  width="100%" height="400px" frameBorder="0" src="https://framacarte.org/fr/map/nuitdebout_2420?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&datalayersControl=false&onLoadPanel=none&captionBar=false#5/46.332/3.340"></iframe>
 	</div>
 </div>
