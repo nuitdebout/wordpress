@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+WWW="/var/www/wordpress"
+
+echo "Compiling theme..."
+
+cd wp-content/themes/nuitdeboo-child
+
+npm install
+bower install
+gulp
+
+cd -
+
+echo "Deploying theme using rsync..."
+rsync --stats -t -P --recursive --exclude-from=bin/rsync.exclude.conf wp-content/themes/nuitdeboo-child/ nuitdebout.fr:$WWW/wp-content/themes/nuitdeboo-child/

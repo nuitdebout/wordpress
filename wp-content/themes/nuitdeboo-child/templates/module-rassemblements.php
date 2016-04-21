@@ -1,4 +1,4 @@
-<div id="rassemblements" class="bg-grey text-center">
+<div id="rassemblements" class="row bg-grey text-center">
 	<div class="container padded">
     <div class="row">
           <div class="col-md-8 col-md-offset-2">
@@ -101,5 +101,4 @@
 		</div> -->
 
  	<iframe border="none"  width="100%" height="400px" frameBorder="0" src="https://framacarte.org/fr/map/nuitdebout_2420?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&datalayersControl=false&onLoadPanel=none&captionBar=false#5/46.332/3.340"></iframe>
-	</div>
 </div>

@@ -1,5 +1,5 @@
-<div id="participate" >
-	<?php
+<div id="participate" class="row">
+    <?php
 	$page_parent = get_field('homepage_takepart', 'option');
 	if($page_parent->ID){
 		$parent_id = $page_parent->ID;

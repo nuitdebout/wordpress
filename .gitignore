@@ -1,2 +1,3 @@
-wp-config.php
 .vagrant
+wp-config.php
+wp-content/uploads/
