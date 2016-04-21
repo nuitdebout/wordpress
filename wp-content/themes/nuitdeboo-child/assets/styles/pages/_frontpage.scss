@@ -6,7 +6,7 @@
   h1 {
 
     font-size: 98px;
-    max-height: 300px;
+    max-height: 250px;
 
 
   }
@@ -23,11 +23,11 @@
   .nd_header__brand {
     filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.5));
     font-size: 98px;
-    max-height: 300px;
+    max-height: 250px;
 
   }
   .banner-homepage {
-    padding: 7em 0;
+    padding: 2em 0;
     text-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
     color:#fff;
   }
@@ -93,15 +93,23 @@
   .page-header {
     border: 0 !important;
   }
+}
 
-  .post{
-
-
-    li {
-      list-style-type: none;
-      border-bottom: 1px solid $gray-lighter;
-      padding: 15px;
-    }
+.post{
+  li {
+    list-style-type: none;
+    border-bottom: 1px solid $gray-lighter;
+    padding: 15px;
   }
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.scroll {
+  max-height: 600px;
+  overflow: auto;
+  border: 1px solid #eee;
+  padding: 1em;
 }
 
