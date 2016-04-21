@@ -35,6 +35,27 @@
 	                				<?php } else {  ?>
 										<div id="sentencerotate"></div>
 	                				<?php } ?>
+
+									<?php if(is_page_template('page-ville.php') ){ ?>
+	                					<div class="ville-screen_btns">
+	                  						   		<?php
+	                  						   			if(get_field('chat_page_url')){ ?>
+	                  						   				<p><a class="btn btn-primary" href="<?php echo  get_field('chat_page_url'); ?>">Aller sur le chat</a></p>
+
+	                  						   			<?php }
+	                  						   		?>
+	                  						   		<?php
+	                  						   			if( get_field('wiki_page_url') ){ ?>
+	                  						   				<p><a class="btn btn-primary" href="<?php echo  get_field('wiki_page_url'); ?>">Aller sur le wiki</a></p>
+
+	                  						   			<?php }
+	                  						   		?>
+
+
+	                					</div>
+
+	                				<?php }  ?>
+
 	              			</div>
           				</div>
 					</div>
