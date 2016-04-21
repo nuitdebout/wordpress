@@ -2,7 +2,7 @@
 	<div class="container padded">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
-    			<h2>R&eacute;seaux sociaux</h2>
+    				<h2>R&eacute;seaux sociaux</h2>
         </div>
 		</div>
 	</div>

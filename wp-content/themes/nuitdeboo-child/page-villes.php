@@ -7,7 +7,9 @@
  * @since Twenty Fourteen 1.0
  */
 ?>
-<div class="list-towns">
+
+
+<div class="list-towns bg-grey">
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
@@ -44,9 +46,11 @@
 
   </div>
 </div>
-
+	<?php
+		get_template_part('templates/module', 'rassemblements');
+		?>
     <div class="row">
-<div class="text-center bg-grey padded">
+<div class="text-center padded">
 
 				<h3>Votre ville n'est pas listée ?</h3>
 				<p><a class="btn btn-primary btn-lg" href="http://wiki.nuitdebout.fr">ajoutez-la sur le wiki !</a></p>

@@ -15,6 +15,7 @@ function setup() {
   add_theme_support('soil-nice-search');
   add_theme_support('soil-jquery-cdn');
   add_theme_support('soil-relative-urls');
+  add_post_type_support( 'page', 'excerpt' );
 
   // Make theme available for translation
   // Community translations can be found at https://github.com/roots/sage-translations

@@ -1,6 +1,5 @@
 <?php
 	if ( is_page() || get_field('homepage_screen', 'option') ) {
-		$bg = '';
 		if(is_home() || is_front_page() ){
 			$bg_ = get_field('homepage_screen', 'option');
 			$bg = $bg_['url'];
@@ -11,6 +10,10 @@
 			$thumb =  get_post_thumbnail_id(  );
 			$i = wp_get_attachment_image_src($thumb , 'page-banner' );
 			$bg = $i['0'];
+			if(!$bg){
+						$bg = 'https://raw.githubusercontent.com/nuitdebout/nuitdebout.github.io/master/img/headertest.jpg';
+
+			}
 		}
 		?>
 		<div class="homepagescreen">
