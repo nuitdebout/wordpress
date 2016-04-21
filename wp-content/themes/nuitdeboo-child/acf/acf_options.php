@@ -720,7 +720,7 @@ if(function_exists("register_field_group"))
 				'maxlength' => '',
 			),
 			array (
-				'key' => 'field_qsd18218',
+				'key' => 'field_qsd1d8218',
 				'label' => 'twitter page url',
 				'name' => 'twitter_page_url',
 				'type' => 'text',
@@ -733,7 +733,7 @@ if(function_exists("register_field_group"))
 				'maxlength' => '',
 			),
 			array (
-				'key' => 'field_qs456456456452348',
+				'key' => 'field_qdqd456456456452348',
 				'label' => '#chat page url',
 				'name' => 'chat_page_url',
 				'type' => 'text',
@@ -746,7 +746,7 @@ if(function_exists("register_field_group"))
 				'maxlength' => '',
 			),
 			array (
-				'key' => 'field_457457645658',
+				'key' => 'field_4574576sdf45658',
 				'label' => '#wiki page url',
 				'name' => 'wiki_page_url',
 				'type' => 'text',
