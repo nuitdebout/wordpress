@@ -2,7 +2,7 @@
 # Cookbook Name:: apt
 # Recipe:: cacher-ng
 #
-# Copyright 2008-2013, Opscode, Inc.
+# Copyright 2008-2016, Chef Software, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the 'License');
 # you may not use this file except in compliance with the License.
@@ -19,25 +19,23 @@
 
 node.set['apt']['caching_server'] = true
 
-package 'apt-cacher-ng' do
-  action :install
-end
+package 'apt-cacher-ng'
 
 directory node['apt']['cacher_dir'] do
   owner 'apt-cacher-ng'
   group 'apt-cacher-ng'
-  mode 0755
+  mode '0755'
 end
 
 template '/etc/apt-cacher-ng/acng.conf' do
   source 'acng.conf.erb'
   owner 'root'
   group 'root'
-  mode 00644
+  mode '0644'
   notifies :restart, 'service[apt-cacher-ng]', :immediately
 end
 
 service 'apt-cacher-ng' do
-  supports :restart => true, :status => false
+  supports restart: true, status: false
   action [:enable, :start]
 end
