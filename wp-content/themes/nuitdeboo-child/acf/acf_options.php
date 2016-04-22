@@ -15,7 +15,7 @@ function get_extra_social_array() {
 	return $sc;
 }
 
-function get_social_array() {
+function get_social_array($include_only = NULL) {
 	$sc = array(
 		'twitter'=> array(
 			'name'=>'Twitter',
@@ -69,6 +69,9 @@ function get_social_array() {
 			'image' => 'logowhite.svg'
 		),
 	);
+	if ($include_only) {
+		return array_filter($sc, function($key) use ($include_only) { return in_array($key, $include_only);  }, ARRAY_FILTER_USE_KEY);
+	}
 	return $sc;
 }
 
