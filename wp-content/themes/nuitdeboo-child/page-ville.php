@@ -24,10 +24,6 @@
   </div>
 </div>
 <?php get_template_part('templates/module', 'home-social'); ?>
-<?php get_template_part('templates/module', 'agenda'); ?>
-
-
-
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <div class="padded text-center">
