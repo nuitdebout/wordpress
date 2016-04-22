@@ -49,6 +49,9 @@ body {
 .border-grey{
   border-top:1px solid $gray-lighter;
 }
+.border-grey-bottom{
+  border-bottom:1px solid $gray-lighter;
+}
 
 .bg-grey {
   background: $gray-lighter;

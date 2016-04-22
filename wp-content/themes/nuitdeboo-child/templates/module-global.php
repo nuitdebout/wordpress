@@ -33,12 +33,14 @@
 								$permalink = get_permalink($p->ID);
 								//$thumb =  get_post_thumbnail_id( $p->ID );
 							 	//$i = wp_get_attachment_image_src($thumb , 'thumbnail' );
-								$page_lang_code = get_field('page_lang_code',$p->ID )
-
-								// $url = $i['0'];
+								$label = $title;
+								$page_lang_code = get_field('page_lang_code',$p->ID );
+								if($page_lang_code){
+									$label = $page_lang_code;
+								}
 								?>
-			            		<li class="tag with-lang"><a href="<?php echo $permalink; ?>"><span><?php echo $page_lang_code; ?></span>&nbsp;<?php echo $title; ?></a></li>
-			           			<?php endforeach;
+			            		<li class="tag with-lang"><a href="<?php echo $permalink; ?>"><?php echo $page_lang_code; ?></a></li>
+			           		<?php endforeach;
 			          	}
 			          	?>
 			          </ul>
