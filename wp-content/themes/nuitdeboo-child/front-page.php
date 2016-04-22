@@ -16,6 +16,11 @@
 		 get_template_part('templates/module', 'screen');
 	}
 
+	if ( get_field('homepage_module_blog', 'option') == 'oui' ) {
+		 get_template_part('templates/module', 'blog');
+	}
+
+
 	if ( get_field('homepage_module_manifesto', 'option') == 'oui' ) {
 		if ( get_field('homepage_manifesto', 'option') ) {
 			 get_template_part('templates/module', 'manifesto');

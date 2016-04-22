@@ -119,6 +119,20 @@ if(function_exists("register_field_group"))
 				'library' => 'all',
 			),
 			array (
+				'key' => 'field_545d3848f36de',
+				'label' => 'homepage_module_blog',
+				'name' => 'homepage_module_blog',
+				'type' => 'select',
+				'choices' => array (
+					'oui' => 'Oui',
+					'non' => 'Non',
+				),
+				'default_value' => '',
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+
+			array (
 				'key' => 'field_571239sdf024bdd0',
 				'label' => 'carte',
 				'name' => '',
