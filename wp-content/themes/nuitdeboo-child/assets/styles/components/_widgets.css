@@ -1,0 +1,18 @@
+#widget-homepage-top, .post {
+    ul{
+        margin: 0;
+        padding: 0em;
+        li{
+            border-bottom: 2px solid #eee;
+            list-style: outside none none;
+            padding: 1em 0;
+            a{
+
+            }
+        }
+    }
+
+    .post-date{
+      text-align:right;
+    }
+}
