@@ -31,7 +31,7 @@
   </div>
 </div>
 
-<div class="center-block bg-grey padded ">
+<div class="center-block bg-grey padded row">
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2">

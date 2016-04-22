@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+
 @font-face {
   font-family: 'AmaticSC';
   src: url('../fonts/AmaticSC-Regular.ttf') format('truetype');
@@ -11,12 +14,12 @@
   font-style: normal;
 }
 
+
 @font-face {
-    font-family: 'CommuneB1San31';
-    src: url('../fonts/Commune-B1San31-NuitDebout.otf');
-    src: url('../fonts/socialIcons.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
+font-family: CommuneB1San31;
+font-weight: normal;
+font-style: normal;
+src: url("../fonts/Commune-B1San31-NuitDebout.otf") format("opentype");
 }
 @font-face {
     font-family: 'socialIcons';
@@ -52,12 +55,34 @@
 
 
 
-/**
-body{
-    font-family:CommuneB1San31;
-}
-.btn{
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 
+h1, h2
+{
+  font-family:CommuneB1San31;
+  letter-spacing: 1px;
 }
-**/
+h1{
+  font-size: 4em;
+}
+h2{
+  font-size:4em;
+}
+
+
+.post, #sentencerotate,#nuitdeboutdate{
+
+  font-family: 'Roboto', sans-serif;
+}
+
+html .homepagescreen h2 {
+    font-size: 5em;
+}
+
+#comments h2{
+     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+}
+.post .btn{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 17px;
+}

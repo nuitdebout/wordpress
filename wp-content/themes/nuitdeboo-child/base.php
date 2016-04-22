@@ -31,5 +31,9 @@ use Roots\Sage\Wrapper;
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
     </script>
+
+  	<script src="https://snapwidget.com/js/snapwidget.js"></script>
+	<script type="text/javascript" id="gretaScript" src="https://cdn.greta.io/greta.min.js" data-ac="db56c2f2489199823062893e30e03720"></script>
+
   </body>
 </html>
