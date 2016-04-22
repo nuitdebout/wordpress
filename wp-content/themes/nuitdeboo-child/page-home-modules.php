@@ -1,4 +1,13 @@
 <?php
+/**
+ * Template Name: page "home"
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fourteen
+ * @since Twenty Fourteen 1.0
+ */
+?>
+<?php
 
 	/**
 	 * Module homepage screen
