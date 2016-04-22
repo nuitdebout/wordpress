@@ -11,6 +11,8 @@
 							'child_of' => $parent_id,
 							'post_type' => 'page',
 							'post_status' => 'publish'
+							'sort_order' => 'asc',
+							'sort_column' => 'menu_order'
 						);
 						$pages_sub = get_pages($args);
 						$include = get_pages('include='.$parent_id);
@@ -19,7 +21,7 @@
 						$permalink = get_permalink($include[0]->ID);
 					}
 					?>
-          			<h2><?php echo $title; ?></h2>
+          				<h2><?php echo $title; ?></h2>
 			          <div class="padded">
 			            <p><?php echo $excerpt; ?></p>
 			          </div>
