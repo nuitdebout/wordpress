@@ -119,6 +119,20 @@ if(function_exists("register_field_group"))
 				'library' => 'all',
 			),
 			array (
+				'key' => 'field_545d3848f36de',
+				'label' => 'homepage_module_blog',
+				'name' => 'homepage_module_blog',
+				'type' => 'select',
+				'choices' => array (
+					'oui' => 'Oui',
+					'non' => 'Non',
+				),
+				'default_value' => '',
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+
+			array (
 				'key' => 'field_571239sdf024bdd0',
 				'label' => 'carte',
 				'name' => '',
@@ -805,6 +819,58 @@ if(function_exists("register_field_group"))
 				'maxlength' => '',
 			),
 			array (
+				'key' => 'field_1qqqspoiuysd8218',
+				'label' => 'instagram page url',
+				'name' => 'instagram_page_url',
+				'type' => 'text',
+				'instructions' => 'url',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_4qqqspoiuysd8218',
+				'label' => 'bambuser page url',
+				'name' => 'bambuser_page_url',
+				'type' => 'text',
+				'instructions' => 'url',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_2qqqspoiuysd8218',
+				'label' => 'periscope page url',
+				'name' => 'periscope_page_url',
+				'type' => 'text',
+				'instructions' => 'url',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_3qqqspoiuysd8218',
+				'label' => 'tumblr page url',
+				'name' => 'tumblr_page_url',
+				'type' => 'text',
+				'instructions' => 'url',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
 				'key' => 'field_qdqd456456456452348',
 				'label' => '#chat page url',
 				'name' => 'chat_page_url',
@@ -878,6 +944,49 @@ if(function_exists("register_field_group"))
 		),
 		'menu_order' => 0,
 	));
+
+
+
+	register_field_group(array (
+		'id' => 'acf_globaldebout-page',
+		'title' => 'globalpage page',
+		'fields' => array (
+			array (
+				'key' => 'field_57182e6hj18',
+				'label' => 'langue code',
+				'name' => 'page_lang_code',
+				'type' => 'text',
+				'instructions' => '',
+				'layout' => 'vertical',
+			)
+
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'page_template',
+					'operator' => '==',
+					'value' => 'page-globaldebout.php',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+
+
+
+
+
+
+
 }
 
 ?>

@@ -19,8 +19,8 @@
     				<?php echo $content; ?>
 
     				 <p class="text-center"><a class="btn btn-primary btn-lg" href="<?php echo get_field('homepage_manifesto_btn_url', 'option'); ?>">
-              <?php echo get_field('homepage_manifesto_btn_text', 'option'); ?>
-             </a></p>
+              			<?php echo get_field('homepage_manifesto_btn_text', 'option'); ?>
+             			</a></p>
 
     			<?php
     			}

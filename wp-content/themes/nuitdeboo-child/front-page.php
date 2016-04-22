@@ -1,4 +1,13 @@
 <?php
+/**
+ * Template Name: page "home"
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fourteen
+ * @since Twenty Fourteen 1.0
+ */
+?>
+<?php
 
 	/**
 	 * Module homepage screen
@@ -6,6 +15,11 @@
 	if ( get_field('homepage_module_screen', 'option') == 'oui' ) {
 		 get_template_part('templates/module', 'screen');
 	}
+
+	if ( get_field('homepage_module_blog', 'option') == 'oui' ) {
+		 get_template_part('templates/module', 'blog');
+	}
+
 
 	if ( get_field('homepage_module_manifesto', 'option') == 'oui' ) {
 		if ( get_field('homepage_manifesto', 'option') ) {

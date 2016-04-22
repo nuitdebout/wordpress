@@ -5,11 +5,10 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
-      <div class="padded">
+      <div class="">
         <div class="post">
           <?php get_template_part('templates/page', 'header'); ?>
-
-            <?php get_template_part('templates/content', 'page'); ?>
+          <?php get_template_part('templates/content', 'page'); ?>
         </div>
       	<div class="share-btns">
   	     	<div class="center-block">

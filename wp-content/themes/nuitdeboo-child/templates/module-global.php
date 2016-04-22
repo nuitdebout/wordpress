@@ -1,5 +1,5 @@
 <?php ?>
-<div id="global" class="bg-grey">
+<div id="global" class="bg-grey row">
 	<div class="container padded">
     	<div class="row">
      		<div class="col-md-8 col-md-offset-2">
@@ -17,7 +17,6 @@
 						$excerpt = get_the_excerpt($include[0]->ID);
 						$title = apply_filters('the_title',$include[0]->post_title);
 						$permalink = get_permalink($include[0]->ID);
-
 					}
 					?>
           			<h2><?php echo $title; ?></h2>
@@ -34,9 +33,11 @@
 								$permalink = get_permalink($p->ID);
 								//$thumb =  get_post_thumbnail_id( $p->ID );
 							 	//$i = wp_get_attachment_image_src($thumb , 'thumbnail' );
+								$page_lang_code = get_field('page_lang_code',$p->ID )
+
 								// $url = $i['0'];
 								?>
-			            		<li class="tag"><a href="<?php echo $permalink; ?>"><?php echo $title; ?></a></li>
+			            		<li class="tag with-lang"><a href="<?php echo $permalink; ?>"><span><?php echo $page_lang_code; ?></span>&nbsp;<?php echo $title; ?></a></li>
 			           			<?php endforeach;
 			          	}
 			          	?>
