@@ -709,6 +709,15 @@ if(function_exists("register_field_group"))
 				'multiple' => 0,
 			),
 			array (
+				'key' => 'field_5vuhvggfgh8963ea',
+				'label' => 'agenda ID',
+				'name' => 'homepage_agenda_ID',
+				'type' => 'text',
+				'default_value' => '',
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+			array (
 				'key' => 'field_5712uio5edc26c22',
 				'label' => 'agenda (page)',
 				'name' => 'homepage_agenda',
