@@ -1,6 +1,6 @@
 <ul class="social-networks social-networks-picto list-inline">
 	<?php
-	$sc = get_social_array();
+	$sc = get_social_array(array('facebook', 'twitter', 'periscope'));
 	foreach ( $sc as $key => $socialConfig  ) :
 		if( get_field('social_'.$key, 'option') ) : ?>
 			<li>
