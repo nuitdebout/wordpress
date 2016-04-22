@@ -19,6 +19,8 @@ var runSequence  = require('run-sequence');
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
+var iconfont     = require('gulp-iconfont');
+var consolidate  = require('gulp-consolidate');
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
@@ -198,6 +200,27 @@ gulp.task('scripts', ['jshint'], function() {
     .pipe(writeToManifest('scripts'));
 });
 
+gulp.task('font-socialIcons', function(){
+  var fontName = 'socialIcons';
+  return gulp.src([path.source + 'socialIcons/*.svg'])
+    .pipe(iconfont({
+       formats: ['ttf', 'eot', 'woff', 'woff2'],
+       fontName: fontName,
+       normalize:true
+    }))
+    .on('glyphs', function(glyphs, options) {
+        gulp.src('assets/socialIcons/_fonts.scss')
+          .pipe(consolidate('lodash', {
+            glyphs: glyphs,
+            fontName: fontName,
+            fontPath: '../fonts/',
+            cssClass: 'ic'
+          }))
+          .pipe(gulp.dest('assets/styles/common/'));
+    })
+   .pipe(gulp.dest(path.dist + 'fonts'))
+   .pipe(browserSync.stream());
+});
 // ### Fonts
 // `gulp fonts` - Grabs all the fonts and outputs them in a flattened directory
 // structure. See: https://github.com/armed/gulp-flatten
@@ -253,7 +276,8 @@ gulp.task('watch', function() {
   });
   gulp.watch([path.source + 'styles/**/*'], ['styles']);
   gulp.watch([path.source + 'scripts/**/*'], ['jshint', 'scripts']);
-  gulp.watch([path.source + 'fonts/**/*'], ['fonts']);
+  gulp.watch([path.source + 'fonts/**/**'], ['fonts']);
+  gulp.watch([path.source + 'socialIcons/*.svg'], ['font-socialIcons']);
   gulp.watch([path.source + 'images/**/*'], ['images']);
   gulp.watch(['bower.json', 'assets/manifest.json'], ['build']);
 });
@@ -262,9 +286,10 @@ gulp.task('watch', function() {
 // `gulp build` - Run all the build tasks but don't clean up beforehand.
 // Generally you should be running `gulp` instead of `gulp build`.
 gulp.task('build', function(callback) {
-  runSequence('styles',
+  runSequence(['fonts', 'font-socialIcons'],
+              'styles',
               'scripts',
-              ['fonts', 'images'],
+              'images',
               callback);
 });
 
