@@ -14,7 +14,12 @@
 		  <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
 		<?php endwhile; ?>
 
-		<?php the_posts_navigation(); ?>
 		</div>
 	</div>
+	<div class="row">
+	  	<div class="col-md-8 col-md-offset-2">
+			<div class="navigation text-center padded border-grey-bottom"><?php the_posts_navigation(); ?></div>
+		</div>
+	</div>
+
 </div>

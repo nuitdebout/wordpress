@@ -1,4 +1,12 @@
 <?php
+function is_rootsite(){
+	$blogid = get_current_blog_id();
+	$blog_details = get_blog_details($blogid);
+	if($blog_details && $blogid && $blogid =='1' && ($blog_details->domain == 'nuitdebout.dev' || $blog_details->domain == 'nuitdebout.fr' ) ){
+	  return 'is root site';
+	}
+}
+
 function get_extra_social_array() {
 
 	$sc = array(
@@ -470,6 +478,7 @@ if(function_exists("register_field_group"))
 				'formatting' => 'none',
 				'maxlength' => '',
 			),
+			/*
 			array (
 				'key' => 'field_5sdfsdf3aa7b63fb',
 				'label' => 'WIKI',
@@ -516,6 +525,7 @@ if(function_exists("register_field_group"))
 				'formatting' => 'none',
 				'maxlength' => '',
 			),
+			*/
 			array (
 				'key' => 'field_57123b4136e55',
 				'label' => 'Carte',
