@@ -1,3 +1,4 @@
 .vagrant
 wp-config.php
 wp-content/uploads/
+/wp-content/themes/nuitdeboo-child/assets/styles/common/_fonts.scss
