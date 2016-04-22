@@ -13,7 +13,7 @@
 	        endif;
 			?>
 			</div>
-	        <div class="nav-left text-right col-md-4" >
+	        <div class="nav-right text-right col-md-4" >
 	        	<?php  get_template_part('templates/module', 'social');
 			?>
 			</div>

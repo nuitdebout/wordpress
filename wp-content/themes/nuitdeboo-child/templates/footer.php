@@ -17,7 +17,6 @@
 
 			<div class="col-xs-2 col-sm-4">
 				<?php dynamic_sidebar('sidebar-footer'); ?>
-
 				<h5>Contribuer</h5>
 				<div class="contribute">
 					<ul class="social-networks list-inline">
