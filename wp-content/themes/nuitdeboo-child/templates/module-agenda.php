@@ -4,7 +4,7 @@
        <div class="col-md-8 col-md-offset-2">
 		  <h2>agenda</h2>
 		  <?php
-			// $page = get_field('homepage_agenda', 'option');
+				// $page = get_field('homepage_agenda', 'option');
 			    //if(if_home() ){
 				$agenda_ID = get_field('homepage_agenda_ID', 'option');
 			?>
@@ -12,7 +12,6 @@
         </div>
     </div>
     <div class="row">
-
                 <div class="cbpgmp cibulMap" data-oamp data-cbctl="27805494/8131954" data-lang="fr" ></div>
     </div>
     <div class="row">

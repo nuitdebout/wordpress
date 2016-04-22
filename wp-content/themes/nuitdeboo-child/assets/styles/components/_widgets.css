@@ -1,3 +1,8 @@
+.snapwidget-widget {
+    pointer-events: none;
+    border:none; overflow:hidden; width:100%;
+}
+
 #widget-homepage-top, .post {
     ul{
         margin: 0;
@@ -10,6 +15,7 @@
 
             }
         }
+
     }
 
     .post-date{

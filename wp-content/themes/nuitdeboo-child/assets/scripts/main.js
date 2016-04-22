@@ -43,7 +43,24 @@ function nuitdebout_getDate(element) {
 
 }
 function social_widgets(element) {
-/*
+  /*
+  jQuery.ajax({
+      url: 'http://api.nuitdebout.fr/api/bambuser',
+      success: function (resp, status, jqxhr) {
+        resp = JSON.parse(resp);
+
+        if (resp && resp.result) {
+          $('<iframe />');  // Create an iframe element
+          $('<iframe />', {
+            src: 'https://embed.bambuser.com/broadcast/' + resp.result[0].vid,
+            width: '100%',
+            height: '260px',
+            frameborder: 'none'
+          }).appendTo('#livestream');
+          }
+      }
+    });
+
  jQuery.ajax({
       url: 'http://api.nuitdebout.fr/api/facebook',
       success: function (resp, status, jqxhr) {

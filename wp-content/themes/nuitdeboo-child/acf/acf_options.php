@@ -930,6 +930,49 @@ if(function_exists("register_field_group"))
 		),
 		'menu_order' => 0,
 	));
+
+
+
+	register_field_group(array (
+		'id' => 'acf_globaldebout-page',
+		'title' => 'globalpage page',
+		'fields' => array (
+			array (
+				'key' => 'field_57182e6hj18',
+				'label' => 'langue code',
+				'name' => 'page_lang_code',
+				'type' => 'text',
+				'instructions' => '',
+				'layout' => 'vertical',
+			)
+
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'page_template',
+					'operator' => '==',
+					'value' => 'page-globaldebout.php',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+
+
+
+
+
+
+
 }
 
 ?>
