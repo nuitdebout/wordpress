@@ -48,6 +48,3 @@
     <p><a class="btn btn-primary btn-lg" href="http://wiki.nuitdebout.fr">ajoutez-la sur le wiki !</a></p>
   </div>
 </div>
-	<?php
-		get_template_part('templates/module', 'rassemblements');
-		?>
