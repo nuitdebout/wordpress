@@ -1,5 +1,5 @@
 <div id="participate" class="row">
-    <?php
+<?php
 	$page_parent = get_field('homepage_takepart', 'option');
 	if($page_parent->ID){
 		$parent_id = $page_parent->ID;
@@ -9,16 +9,16 @@
 		$title = apply_filters('the_title',$include[0]->post_title);
 		?>
 		<div class="container padded">
-       		<div class="row">
-      			<div class="col-md-6 col-md-offset-3">
-              <div class="text-center">
-                <h2><?php echo $title; ?></h2>
-                <?php echo $content; ?>
-                <p><a class="btn btn-primary" href="http://wiki.nuitdebout.fr">Participez au Wiki</a></p>
-              </div>
-
-    				</div>
-  			</div>
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="text-center">
+						<h2><?php echo $title; ?></h2>
+						<?php echo $content; ?>
+						<p><a class="btn btn-primary" href="http://wiki.nuitdebout.fr">Participez au Wiki</a></p>
+					</div>
+				</div>
+			</div>
+			
 			<?php
 			$args = array(
 				'child_of' => $parent_id,
@@ -35,23 +35,22 @@
 					$url = $i['0'];
 					?>
 
-	          	<div class="row">
-	        			<div class="col-md-6 col-md-offset-3">
-	           			<div class="padded-small">
-                    <?php echo '<img class="pull-left" src='.$url.' />'; ?>
-                    <h3 class="mg-top0"><?php echo $title; ?></h3>
-                    <?php echo $content; ?>
-                  </div>
-	         			</div>
-	  					</div>
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3">
+							<div class="padded-small">
+								<?php echo '<img class="pull-left" src='.$url.' />'; ?>
+								<h3 class="mg-top0"><?php echo $title; ?></h3>
+								<?php echo $content; ?>
+							</div>
+						</div>
+					</div>
 
 					<?php
 				endforeach;
 			} // if subs
-		}
-		else{
+		} else{
 			echo 'Please go to admin > options > Participer and select the page you want to display (a page must be created before)';
 		}
 		?>
-		</div>
+	</div>
 </div>

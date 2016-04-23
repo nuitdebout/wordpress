@@ -1,6 +1,3 @@
-<?php
-	// get_template_part('templates/module', 'screen');
-?>
 <?php while (have_posts()) : the_post(); ?>
 <div class="container">
   <div class="row">

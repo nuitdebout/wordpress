@@ -1,10 +1,10 @@
 <div id="socialhome">
 	<div class="container padded">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-    		<h2>R&eacute;seaux sociaux</h2>
-        </div>
-	  </div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<h2>R&eacute;seaux sociaux</h2>
+			</div>
+		</div>
 	</div>
 
 	<div class="social-networks-section">
@@ -38,7 +38,7 @@
 				?>
 					<div class="social-networks-section-item social-networks-section-item--<?php echo $key ?>">
 						<img class="social-networks-section-item__image" alt="<?php echo $key ?>"
-								 src="<?php echo get_stylesheet_directory_uri() . '/assets/images/' . $socialConfig['image'] ?>" />
+							 src="<?php echo get_stylesheet_directory_uri() . '/assets/images/' . $socialConfig['image'] ?>" />
 						<div class="social-networks-section-item__name">
 							<?php echo $socialConfig['name']; ?>
 						</div>
