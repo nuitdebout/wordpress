@@ -1,0 +1,50 @@
+
+.section {
+  @include make-row;
+  padding: 50px 0;
+
+  &.section--gray {
+    background-color: $gray-lighter;
+  }
+
+  .section__title {
+    text-align: center;
+    font-size: 45px;
+    font-family: "Roboto";
+
+    margin: 0;
+    margin-bottom: 30px;
+
+    &:first-letter {
+      box-shadow:
+      0 3px 0 -1px $light-blue, /* to indent the green bottom line with the same color as the background */
+      0 3px 0 0 $light-blue,  /* to create a bottom 3px high green line */
+      inset 0 -1px 0 0 $light-blue; /* to create the top (1px) of the outline */
+    }
+  }
+
+  .section__content {
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 100%;
+    max-width: 750px;
+
+    font-size: 16px;
+    p {
+      margin: 0 0 20px;
+    }
+  }
+
+  .section__content--emph {
+    font-weight: bold;
+  }
+
+  .section__actions-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 30px;
+  }
+}
