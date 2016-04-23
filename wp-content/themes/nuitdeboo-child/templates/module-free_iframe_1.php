@@ -1,9 +1,9 @@
 <?php if ( get_field('homepage_module_free_iframe_1', 'option') ) : ?>
     <?php
-    $iframe = get_field('homepage_module_free_iframe_1', 'option');
-    $iframe_height = get_field('homepage_module_free_iframe_1_height', 'option');
+        $iframe = get_field('homepage_module_free_iframe_1', 'option');
+        $iframe_height = get_field('homepage_module_free_iframe_1_height', 'option');
     ?>
     <div class="row">
-      <iframe height="<?php echo $iframe_height; ?>" width="100%" src="<?php echo $iframe; ?>"></iframe>
+        <iframe height="<?php echo $iframe_height; ?>" width="100%" src="<?php echo $iframe; ?>"></iframe>
     </div>
 <?php endif; ?>
