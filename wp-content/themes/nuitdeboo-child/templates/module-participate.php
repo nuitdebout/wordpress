@@ -8,17 +8,12 @@
 		$content = apply_filters('the_content',$include[0]->post_content);
 		$title = apply_filters('the_title',$include[0]->post_title);
 		?>
-		<div class="container padded">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
-					<div class="text-center">
-						<h2><?php echo $title; ?></h2>
-						<?php echo $content; ?>
-						<p><a class="btn btn-primary" href="http://wiki.nuitdebout.fr">Participez au Wiki</a></p>
-					</div>
-				</div>
+		<div class="section">
+			<h2 class="section__title"><?php echo $title; ?></h2>
+			<div class="section__content section__content--emph"><?php echo $content; ?></div>
+			<div class="section__actions-container">
+				<a class="btn btn-primary" href="http://wiki.nuitdebout.fr">Participez au Wiki</a>
 			</div>
-			
 			<?php
 			$args = array(
 				'child_of' => $parent_id,

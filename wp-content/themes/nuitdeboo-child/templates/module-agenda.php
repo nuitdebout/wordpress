@@ -1,16 +1,12 @@
-<div id="agenda">
-    <div class="container ">
+<section id="agenda" class="section">
+    <h2 class="section__title">Agenda</h2>
+    <div class="section__content">
+        <?php $agenda_ID = get_field('homepage_agenda_ID', 'option'); ?>
+        <p class="center">
+            Vous souhaitez compléter cet agenda, ajouter un évènement ?
+            <a href="https://openagenda.com/nuitdebout">Venez sur l'agenda participatif Nuit Debout.</a>
+        </p>
 
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h2>agenda</h2>
-                <?php $agenda_ID = get_field('homepage_agenda_ID', 'option'); ?>
-                <p class="center">
-                    Vous souhaitez compléter cet agenda, ajouter un évènement ?
-                    <a href="https://openagenda.com/nuitdebout">Venez sur l'agenda participatif Nuit Debout.</a>
-                </p>
-            </div>
-        </div>
 
         <div class="row">
             <div class="cbpgmp cibulMap" data-oamp data-cbctl="27805494/8131954" data-lang="fr" ></div>
