@@ -10,7 +10,7 @@
 						$args = array(
 							'child_of' => $parent_id,
 							'post_type' => 'page',
-							'post_status' => 'publish'
+							'post_status' => 'publish',
 							'sort_order' => 'asc',
 							'sort_column' => 'menu_order'
 						);

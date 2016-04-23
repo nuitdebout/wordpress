@@ -1,37 +1,24 @@
-apt Cookbook
-============
-[![Cookbook Version](http://img.shields.io/cookbook/v/apt.svg)][cookbook]
-[![Build Status](http://img.shields.io/travis/opscode-cookbooks/apt.svg)][travis]
-
-[cookbook]: https://community.opscode.com/cookbooks/apt
-[travis]: http://travis-ci.org/opscode-cookbooks/apt
+# apt Cookbook
+[![Build Status](https://img.shields.io/travis/chef-cookbooks/apt.svg)][travis] [![Cookbook Version](https://img.shields.io/cookbook/v/apt.svg)][cookbook]
 
 This cookbook includes recipes to execute apt-get update to ensure the local APT package cache is up to date. There are recipes for managing the apt-cacher-ng caching proxy and proxy clients. It also includes a LWRP for managing APT repositories in /etc/apt/sources.list.d as well as an LWRP for pinning packages via /etc/apt/preferences.d.
 
-
-Requirements
-------------
-**Version 2.0.0+ of this cookbook requires Chef 11.0.0 or later**. If your Chef version is earlier than 11.0.0, use version 1.10.0 of this cookbook.
-
-Version 1.8.2 to 1.10.0 of this cookbook requires **Chef 10.16.4** or later.
-
-If your Chef version is earlier than 10.16.4, use version 1.7.0 of this cookbook.
-
-### Platform
-Please refer to the [TESTING file](TESTING.md) to see the currently (and passing) tested platforms. The release was tested on:
-
-* Ubuntu 10.04
-* Ubuntu 12.04
-* Ubuntu 13.04
-* Debian 7.1
-* Debian 6.0 (have with manual testing)
+## Requirements
+### Platforms
+- Ubuntu 12.04+
+- Debian 7+
 
 May work with or without modification on other Debian derivatives.
 
+### Chef
+- Chef 11+
 
--------
+### Cookbooks
+- None
+
+## Recipes
 ### default
-This recipe installs the `update-notifier-common` package to provide the timestamp file used to only run `apt-get update` if the cache is more than one day old.
+This recipe manually updates the timestamp file used to only run `apt-get update` if the cache is more than one day old.
 
 This recipe should appear first in the run list of Debian or Ubuntu nodes to ensure that the package cache is up to date before managing any `package` resources with Chef.
 
@@ -49,11 +36,9 @@ To do this, you need to override the `cache_bypass` attribute with an array of r
 
 ```json
 {
-    ...,
-    'apt': {
-        ...,
-        'cache_bypass': {
-            URL: PROTOCOL
+    "apt": {
+        "cache_bypass": {
+            "URL": "PROTOCOL"
         }
     }
 }
@@ -63,49 +48,73 @@ For example, to prevent caching and directly connect to the repository at `downl
 
 ```json
 {
-    'apt': {
-        'cache_bypass': {
-            'download.oracle.com': 'http'
+    "apt": {
+        "cache_bypass": {
+            "download.oracle.com": "http"
         }
     }
 }
 ```
 
 ### cacher-ng
-Installs the `apt-cacher-ng` package and service so the system can provide APT caching. You can check the usage report at http://{hostname}:3142/acng-report.html.
+Installs the `apt-cacher-ng` package and service so the system can provide APT caching. You can check the usage report at [http://{hostname}:3142/acng-report.html](http://{hostname}:3142/acng-report.html).
 
 If you wish to help the `cacher-ng` recipe seed itself, you must now explicitly include the `cacher-client` recipe in your run list **after** `cacher-ng` or you will block your ability to install any packages (ie. `apt-cacher-ng`).
 
+### unattended-upgrades
+Installs and configures the `unattended-upgrades` package to provide automatic package updates. This can be configured to upgrade all packages or to just install security updates by setting `['apt']['unattended_upgrades']['allowed_origins']`.
 
-Attributes
-----------
-* `['apt']['cacher_ipaddress']` - use a cacher server (or standard proxy server) not available via search
-* `['apt']['cacher_interface]` - interface to connect to the cacher-ng service, no default.
-* `['apt']['cacher_port']` - port for the cacher-ng service (either client or server), default is '3142'
-* `['apt']['cacher_dir']` - directory used by cacher-ng service, default is '/var/cache/apt-cacher-ng'
-* `['apt']['cacher-client']['restrict_environment']` - restrict your node to using the `apt-cacher-ng` server in your Environment, default is 'false'
-* `['apt']['compiletime']` - force the `cacher-client` recipe to run before other recipes. It forces apt to use the proxy before other recipes run. Useful if your nodes have limited access to public apt repositories. This is overridden if the `cacher-ng` recipe is in your run list. Default is 'false'
-* `['apt']['cache_bypass']` - array of URLs to bypass the cache. Accepts the URL and protocol to  fetch directly from the remote repository and not attempt to cache
-* `['apt']['periodic_update_min_delay']` - minimum delay (in seconds) beetween two actual executions of `apt-get update` by the `execute[apt-get-update-periodic]` resource, default is '86400' (24 hours)
+To pull just security updates, you'd set `allowed_origins` to something link `["Ubuntu trusty-security"]` (for Ubuntu trusty) or `["Debian wheezy-security"]` (for Debian wheezy).
 
-Libraries
----------
+## Attributes
+### General
+- `['apt']['compile_time_update']` - force the default recipe to run `apt-get update` at compile time.
+- `['apt']['periodic_update_min_delay']` - minimum delay (in seconds) beetween two actual executions of `apt-get update` by the `execute[apt-get-update-periodic]` resource, default is '86400' (24 hours)
+
+### Caching
+- `['apt']['cacher_ipaddress']` - use a cacher server (or standard proxy server) not available via search
+- `['apt']['cacher_interface']` - interface to connect to the cacher-ng service, no default.
+- `['apt']['cacher_port']` - port for the cacher-ng service (either client or server), default is '3142'
+- `['apt']['cacher_ssl_support']` - indicates whether the cacher supports upstream SSL servers, default is 'false'
+- `['apt']['cacher_dir']` - directory used by cacher-ng service, default is '/var/cache/apt-cacher-ng'
+- `['apt']['cacher-client']['restrict_environment']` - restrict your node to using the `apt-cacher-ng` server in your Environment, default is 'false'
+- `['apt']['compiletime']` - force the `cacher-client` recipe to run before other recipes. It forces apt to use the proxy before other recipes run. Useful if your nodes have limited access to public apt repositories. This is overridden if the `cacher-ng` recipe is in your run list. Default is 'false'
+- `['apt']['cache_bypass']` - array of URLs to bypass the cache. Accepts the URL and protocol to  fetch directly from the remote repository and not attempt to cache
+
+### Unattended Upgrades
+- `['apt']['unattended_upgrades']['enable']` - enables unattended upgrades, default is false
+- `['apt']['unattended_upgrades']['update_package_lists']` - automatically update package list (`apt-get update`) daily, default is true
+- `['apt']['unattended_upgrades']['allowed_origins']` - array of allowed apt origins from which to pull automatic upgrades, defaults to a guess at the system's main origin and should almost always be overridden
+- `['apt']['unattended_upgrades']['package_blacklist']` - an array of package which should never be automatically upgraded, defaults to none
+- `['apt']['unattended_upgrades']['auto_fix_interrupted_dpkg']` - attempts to repair dpkg state with `dpkg --force-confold --configure -a` if it exits uncleanly, defaults to false (contrary to the unattended-upgrades default)
+- `['apt']['unattended_upgrades']['minimal_steps']` - Split the upgrade into the smallest possible chunks. This makes the upgrade a bit slower but it has the benefit that shutdown while a upgrade is running is possible (with a small delay). Defaults to false.
+- `['apt']['unattended_upgrades']['install_on_shutdown']` - Install upgrades when the machine is shuting down instead of doing it in the background while the machine is running. This will (obviously) make shutdown slower. Defaults to false.
+- `['apt']['unattended_upgrades']['mail']` - Send email to this address for problems or packages upgrades. Defaults to no email.
+- `['apt']['unattended_upgrades']['mail_only_on_error']` - If set, email will only be set on upgrade errors. Otherwise, an email will be sent after each upgrade. Defaults to true.
+- `['apt']['unattended_upgrades']['remove_unused_dependencies']` Do automatic removal of new unused dependencies after the upgrade. Defaults to false.
+- `['apt']['unattended_upgrades']['automatic_reboot']` - Automatically reboots _without confirmation_ if a restart is required after the upgrade. Defaults to false.
+- `['apt']['unattended_upgrades']['dl_limit']` - Limits the bandwidth used by apt to download packages. Value given as an integer in kb/sec. Defaults to nil (no limit).
+
+### Configuration for APT
+- `['apt']['confd']['install_recommends']` - Consider recommended packages as a dependency for installing. (default: true)
+- `['apt']['confd']['install_suggests']` - Consider suggested packages as a dependency for installing. (default: false)
+
+## Libraries
 There is an `interface_ipaddress` method that returns the IP address for a particular host and interface, used by the `cacher-client` recipe. To enable it on the server use the `['apt']['cacher_interface']` attribute.
 
-Resources/Providers
--------------------
+## Resources/Providers
 ### `apt_repository`
 This LWRP provides an easy way to manage additional APT repositories. Adding a new repository will notify running the `execute[apt-get-update]` resource immediately.
 
 #### Actions
-- :add: creates a repository file and builds the repository listing
+- :add: creates a repository file and builds the repository listing (default)
 - :remove: removes the repository file
 
 #### Attribute Parameters
 - repo_name: name attribute. The name of the channel to discover
 - uri: the base of the Debian distribution
 - distribution: this is usually your release's codename...ie something like `karmic`, `lucid` or `maverick`
-- components: package groupings..when it doubt use `main`
+- components: package groupings... when in doubt use `main`
 - arch: constrain package to a particular arch like `i386`, `amd64` or even `armhf` or `powerpc`. Defaults to nil.
 - trusted: treat all packages from this repository as authenticated regardless of signature
 - deb_src: whether or not to add the repository as a source repo as well - value can be `true` or `false`, default `false`.
@@ -115,7 +124,6 @@ This LWRP provides an easy way to manage additional APT repositories. Adding a n
 - cookbook: if key should be a cookbook_file, specify a cookbook where the key is located for files/default. Defaults to nil, so it will use the cookbook where the resource is used.
 
 #### Examples
-
 Add the Zenoss repo:
 
 ```ruby
@@ -125,28 +133,37 @@ apt_repository 'zenoss' do
 end
 ```
 
-Add the Nginx PPA, grabbing the key from keyserver:
+Enable Ubuntu [multiverse](https://help.ubuntu.com/community/Repositories/Ubuntu) repositories:
 
 ```ruby
-apt_repository 'nginx-php' do
-  uri          'http://ppa.launchpad.net/nginx/php5/ubuntu'
-  distribution node['lsb']['codename']
-  components   ['main']
-  keyserver    'keyserver.ubuntu.com'
-  key          'C300EE8C'
+apt_repository 'security-ubuntu-multiverse' do
+  uri        'http://security.ubuntu.com/ubuntu'
+  distribution 'trusty-security'
+  components ['multiverse']
+  deb_src 'true'
 end
 ```
 
-Add the Nginx PPA, grab the key from the keyserver, and add source repo:
+Add the Nginx PPA, autodetect the key and repository url:
 
 ```ruby
 apt_repository 'nginx-php' do
-  uri          'http://ppa.launchpad.net/nginx/php5/ubuntu'
+  uri          'ppa:nginx/stable'
   distribution node['lsb']['codename']
-  components   ['main']
-  keyserver    'keyserver.ubuntu.com'
-  key          'C300EE8C'
-  deb_src      true
+end
+```
+
+Add the JuJu PPA, grab the key from the keyserver, and add source repo:
+
+```ruby
+apt_repository 'juju' do
+  uri 'http://ppa.launchpad.net/juju/stable/ubuntu'
+  components ['main']
+  distribution 'trusty'
+  key 'C8068B11'
+  keyserver 'keyserver.ubuntu.com'
+  action :add
+  deb_src true
 end
 ```
 
@@ -173,7 +190,7 @@ end
 ### `apt_preference`
 This LWRP provides an easy way to pin packages in /etc/apt/preferences.d. Although apt-pinning is quite helpful from time to time please note that Debian does not encourage its use without thorough consideration.
 
-Further information regarding apt-pinning is available via http://wiki.debian.org/AptPreferences.
+Further information regarding apt-pinning is available via [http://wiki.debian.org/AptPreferences](http://wiki.debian.org/AptPreferences).
 
 #### Actions
 - :add: creates a preferences file under /etc/apt/preferences.d
@@ -213,9 +230,7 @@ apt_preference 'dotdeb' do
 end
 ```
 
-
-Usage
------
+## Usage
 Put `recipe[apt]` first in the run list. If you have other recipes that you want to use to configure how apt behaves, like new sources, notify the execute resource to run, e.g.:
 
 ```ruby
@@ -230,16 +245,12 @@ Put `recipe[apt::cacher-ng]` in the run_list for a server to provide APT caching
 
 If you want to cleanup unused packages, there is also the `apt-get autoclean` and `apt-get autoremove` resources provided for automated cleanup.
 
+## License & Authors
+**Author:** Cookbook Engineering Team ([cookbooks@chef.io](mailto:cookbooks@chef.io))
 
-License & Authors
------------------
-- Author:: Joshua Timberman (joshua@opscode.com)
-- Author:: Matt Ray (matt@opscode.com)
-- Author:: Seth Chisamore (schisamo@opscode.com)
+**Copyright:** 2009-2015, Chef Software, Inc.
 
-```text
-Copyright 2009-2013, Opscode, Inc.
-
+```
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -252,3 +263,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
+[cookbook]: https://community.chef.io/cookbooks/apt
+[travis]: https://travis-ci.org/chef-cookbooks/apt
