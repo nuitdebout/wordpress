@@ -1,12 +1,5 @@
-<div id="socialhome">
-	<div class="container padded">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-				<h2>R&eacute;seaux sociaux</h2>
-			</div>
-		</div>
-	</div>
-
+<section id="socialhome" class="section section--gray">
+	<h2 class="section__title">R&eacute;seaux sociaux</h2>
 	<div class="social-networks-section">
 			<?php
 			$sc = get_social_array();
