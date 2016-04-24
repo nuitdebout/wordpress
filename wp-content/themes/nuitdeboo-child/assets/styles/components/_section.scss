@@ -35,6 +35,9 @@
       margin: 0 0 20px;
     }
   }
+  .section__content--center {
+    text-align: center;
+  }
 
   .section__content--emph {
     font-weight: bold;
@@ -46,5 +49,24 @@
     justify-content: center;
 
     margin-top: 30px;
+  }
+
+  .section__actions-container + .section__content {
+    margin-top: 20px;
+  }
+}
+
+.section--subsection {
+  padding: 30px 0;
+  .section__title {
+    font-size: 35px;
+  }
+
+  .section__actions-container {
+    margin-top: 20px;
+  }
+
+  .section__actions-container + .section__content {
+    margin-top: 15px;
   }
 }
