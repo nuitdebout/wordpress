@@ -53,7 +53,7 @@
 		?>
 			</ul>
 			<div class="section__actions-container">
-				<a class="btn btn-primary" href="'.get_bloginfo("home").'/ville/">Voir plus de villes</a>
+				<a class="btn btn-primary" href="<?php get_bloginfo("home")?>/ville/">Voir plus de villes</a>
 			</div>
 		<?php
 		endif;
