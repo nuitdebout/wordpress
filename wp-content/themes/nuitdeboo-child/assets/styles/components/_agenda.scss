@@ -1,0 +1,25 @@
+.calendar-canvas {
+  margin-bottom: 20px;
+}
+
+.calendar-canvas > div {
+  width: 100%;
+  font-size: inherit;
+}
+
+.calendar-canvas .ccal li {
+  width: 14.2857%;
+}
+
+.calendar-canvas .ccal li.calmonth {
+    width: 70%;
+}
+
+.calendar-canvas .ccal li.calmonth {
+    width: 70%;
+}
+
+.calendar-canvas .ccal li.calprevmonth,
+.calendar-canvas .ccal li.calnextmonth {
+  width: 15%;
+}

@@ -9,11 +9,11 @@ use Roots\Sage\Wrapper;
 <html <?php language_attributes(); ?>>
   <?php get_template_part('templates/head'); ?>
   <body <?php body_class(); ?>>
+    <?php
+      do_action('get_header');
+      get_template_part('templates/header');
+    ?>
     <div class="container-fluid">
-      <?php
-        do_action('get_header');
-        get_template_part('templates/header');
-      ?>
       <?php include Wrapper\template_path(); ?>
     </div>
     <?php

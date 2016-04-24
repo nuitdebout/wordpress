@@ -1,4 +1,4 @@
-<ul class="social-networks social-networks-picto list-inline">
+<ul class="nav navbar-nav navbar-right">
 	<?php
 	$sc = get_social_array(array('facebook', 'twitter', 'periscope'));
 	foreach ( $sc as $key => $socialConfig  ) :
