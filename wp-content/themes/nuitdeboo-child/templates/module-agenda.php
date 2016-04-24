@@ -1,10 +1,10 @@
 <section id="agenda" class="section">
     <h2 class="section__title">Agenda</h2>
-    <div class="section__content">
-        <?php $agenda_ID = get_field('homepage_agenda_ID', 'option'); ?>
-        <p class="center">
-            Vous souhaitez compléter cet agenda, ajouter un évènement ?
-            <a href="https://openagenda.com/nuitdebout">Venez sur l'agenda participatif Nuit Debout.</a>
+    <div class="section__content text-center">
+        <?php // $agenda_ID = get_field('homepage_agenda_ID', 'option'); ?>
+        <p>Vous souhaitez compléter cet agenda, ajouter un évènement ?</p>
+        <p>
+           <a class="btn btn-primary" title="agenda" href="https://openagenda.com/nuitdebout">Venez sur l'agenda participatif Nuit Debout</a>
         </p>
     </div>
 </section>
