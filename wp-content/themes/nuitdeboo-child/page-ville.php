@@ -29,7 +29,7 @@
 		<p>Vous voulez compléter cette page, ajouter des liens ?</p>
 	</div>
 	<div class="section__actions-container">
-		<a class="btn btn-primary" href="https://wiki.nuitdebout.fr/wiki/Villes/<?php echo get_the_title(); ?>">
+		<a class="primary-button" href="https://wiki.nuitdebout.fr/wiki/Villes/<?php echo get_the_title(); ?>">
 			Venez sur le wiki
 		</a>
 	</div>
@@ -41,7 +41,7 @@
 		<p>Pour déployer un site de votre ville debout et le gérer comme vous le souhaitez :</p>
 	</div>
 	<div class="section__actions-container">
-		<a class="btn btn-primary" href="mailto:homeof+nb@gmail.com">Faire une demande de site</a>
+		<a class="primary-button" href="mailto:homeof+nb@gmail.com">Faire une demande de site</a>
 	</div>
 	<div class="section__content section__content--center ">
 		<p>Vous avez déja un site ? <a href="mailto:homeof+nb@gmail.com">Envoyez-nous</a> le lien</p>

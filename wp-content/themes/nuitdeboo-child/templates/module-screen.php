@@ -45,10 +45,10 @@ if ( is_page() || get_field('homepage_screen', 'option') ) {
 						<div class="ville-screen_btns">
 							<?php
 							if(get_field('chat_page_url')){
-								echo '<a class="btn btn-primary btn-lg" href="'.get_field('chat_page_url').'">Aller sur le chat</a>';
+								echo '<a class="primary-button" href="'.get_field('chat_page_url').'">Aller sur le chat</a>';
 							}
 							if( get_field('wiki_page_url') ){
-								echo '<a class="btn btn-primary btn-lg" href="'.get_field('wiki_page_url').'">Aller sur le wiki</a>';
+								echo '<a class="primary-button" href="'.get_field('wiki_page_url').'">Aller sur le wiki</a>';
 							}
 							?>
 						</div>
