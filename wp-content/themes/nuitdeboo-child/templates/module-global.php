@@ -20,7 +20,7 @@
 	<h2 class="section__title"><?php echo $title; ?></h2>
 	<div class="section__content">
 		<p><?php echo $excerpt; ?></p>
-		<ul class="list-unstyled list-inline">
+		<ul class="cities-list">
 		<?php
 		if($pages_sub){
 			foreach ( $pages_sub as $p ) :

@@ -1,15 +1,25 @@
 .tag a {
   /* Rectangle 118: */
-  background: #FFFFFF;
-  border: 1px solid #EEEEEE;
+  background: white;
+  border: 1px solid $gray-lighter;
   border-radius: 16px;
   padding: 0.5em 1em !important;
   margin-bottom: 10px;
   display: block;
 
+  transition: box-shadow .3s;
+
+  &:focus,
+  &:active,
   &:hover {
     background: $link-color;
-    color: #fff;
+    border-color: $link-color;
+    color: white;
     text-decoration:none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+
+  &:active {
+    box-shadow: none;
   }
 }
