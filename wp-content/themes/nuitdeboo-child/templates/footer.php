@@ -4,8 +4,9 @@
 
 			<div class="col-xs-2 col-sm-4">
 				<h5>#NuitDebout</h5>
+				<ul class="list-unstyled list-inline">
 				<?php get_template_part('templates/module', 'social'); ?>
-
+				</ul>
 			</div>
 
 			<div class="col-xs-2 col-sm-4">

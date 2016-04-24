@@ -19,7 +19,9 @@
         wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
         endif;
         ?>
+        <ul class="nav navbar-nav navbar-right">
         <?php get_template_part('templates/module', 'social'); ?>
+        </ul>
       </div>
     </div>
   </nav><!--/.nav-collapse -->
