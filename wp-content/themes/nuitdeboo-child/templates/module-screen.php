@@ -22,7 +22,7 @@ if ( is_page() || get_field('homepage_screen', 'option') ) {
 					background-position: center center;
 					background-repeat: no-repeat;">
 			<div class="text-center container">
-				<div id="nuitdeboutdate"></div>
+				<div id="nuitdeboutdate"><?php echo nd_get_revolutionary_date() ?></div>
 				<div id="site_title">
 					<?php
 					if (is_home()) {
