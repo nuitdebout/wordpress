@@ -7,6 +7,12 @@
 				<ul class="list-unstyled list-inline">
 				<?php get_template_part('templates/module', 'social'); ?>
 				</ul>
+				<h5>Liens</h5>
+				<?php
+		        if (has_nav_menu('footer_navigation')) :
+		        	wp_nav_menu(['theme_location' => 'footer_navigation', 'menu_class' => 'nav nav-footer']);
+		        endif;
+		        ?>
 			</div>
 
 			<div class="col-xs-2 col-sm-4">
@@ -14,6 +20,7 @@
 				<a target="_blank" href="https://www.convergence-des-luttes.org/">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/CONVERGENCE-DES-LUTTES.png"/>
 				</a>
+
 			</div>
 
 			<div class="col-xs-2 col-sm-4">
