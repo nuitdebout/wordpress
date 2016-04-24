@@ -113,7 +113,6 @@ function social_widgets(element) {
       init: function() {
         // JavaScript to be fired on all pages
         // quote rotation
-        nuitdebout_getDate(jQuery('#nuitdeboutdate'))
         rotate([
             "Nos rêves ne rentrent pas dans vos urnes",
             "Nous ne rentrerons pas chez nous",
