@@ -11,7 +11,7 @@
 			<h2 class="section__title"><?php echo $title; ?></h2>
 			<div class="section__content section__content--emph"><?php echo $content; ?></div>
 			<div class="section__actions-container">
-				<a class="btn btn-primary" href="http://wiki.nuitdebout.fr">Participez au Wiki</a>
+				<a class="primary-button" href="http://wiki.nuitdebout.fr">Participez au Wiki</a>
 			</div>
     </div>
     <div class="container">
