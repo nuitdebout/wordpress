@@ -6,45 +6,48 @@
  * @subpackage Twenty_Fourteen
  * @since Twenty Fourteen 1.0
  */
+
+/**
+ * @todo move the logic
+ */
+$page = get_page_by_name('Liste des villes');
+$pageTitle = apply_filters('the_title',$page->post_title);
+$args = array(
+		'child_of' => $page->ID,
+		'post_type' => 'page',
+		'post_status' => 'publish'
+);
+$pages_sub = get_pages($args);
+$cities = [];
+if($pages_sub){
+	foreach ( $pages_sub as $p ) {
+		$content = apply_filters('the_content',$p->post_content);
+		$title = apply_filters('the_title',$p->post_title);
+		$url = esc_url( get_permalink($p->ID) );
+        $cities[] = [
+            'url' => $url,
+            'title' => $title
+        ];
+    }
+}
 ?>
 
-
-<div class="list-towns">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <div class="text-center padded">
-		<?php
-			$page = get_page_by_name('Liste des villes');
-		    $title = apply_filters('the_title',$page->post_title);
-		    echo '<h2>'.$title.'</h2>';
-			$args = array(
-					'child_of' => $page->ID,
-					'post_type' => 'page',
-					'post_status' => 'publish'
-			);
-			$pages_sub = get_pages($args);
-			if($pages_sub){
-					echo '<ul class="list-unstyled list-inline">';
-					foreach ( $pages_sub as $p ) :
-							$content = apply_filters('the_content',$p->post_content);
-							$title = apply_filters('the_title',$p->post_title);
-							$url = esc_url( get_permalink($p->ID) );
-							echo '<li class="tag"><a href="'.$url.'"">'.$title.'</a></li>';
-							endforeach;
-					echo '</ul>';
-
-			}
-		?>
-        </div>
-      </div>
+<section class="section list-towns">
+    <h2 class="section__title">Liste des villes</h2>
+    <div class="section__content">
+        <ul class="cities-list">
+            <?php foreach ($cities as $city) : ?>
+                <li class="tag">
+                    <a href="<?php echo $city['url'] ?>"><?php echo $city['title'] ?></a>
+                </li>
+            <?php endforeach; ?>
+        </ul>
     </div>
-  </div>
-</div>
+</section>
 
-<div class="row">
-  <div class="text-center padded bg-grey" >
-    <h3>Votre ville n'est pas listée ?</h3>
-    <p><a class="btn btn-primary btn-lg" href="http://wiki.nuitdebout.fr">ajoutez-la sur le wiki !</a></p>
-  </div>
-</div>
+<section class="section section--gray section--subsection">
+    <h3 class="section__title">Votre ville n'est pas listée ?</h3>
+    <div class="section__actions-container">
+        <a class="btn btn-primary btn-lg" href="http://wiki.nuitdebout.fr">ajoutez-la sur le wiki !</a>
+    </p>
+</section>
