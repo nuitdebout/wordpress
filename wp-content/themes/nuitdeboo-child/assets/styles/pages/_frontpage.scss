@@ -103,3 +103,28 @@ iframe {
   padding: 1em;
 }
 
+.participate-action {
+  @include make-row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  .participate-action__image {
+    @extend .col-md-6;
+
+    @media (max-width: $screen-sm-max) {
+      display: none;
+    }
+  }
+  .participate-action__content {
+    @extend .col-md-6;
+  }
+}
+
+.action-title {
+  color: $light-blue;
+  font-size: 18px;
+  font-weight: bold;
+}

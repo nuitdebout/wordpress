@@ -1,5 +1,5 @@
 <?php ?>
-<div id="global" class="section section--gray">
+<div id="global" class="section">
 	<?php $page_parent = get_field('homepage_global', 'option');
 	if($page_parent->ID){
 		$parent_id = $page_parent->ID;

@@ -37,15 +37,16 @@
   }
   dynamic_sidebar('homepage-bottom');
 
+  if ( !is_paged() && get_field('homepage_module_global', 'option') == 'oui' ) {
+    get_template_part('templates/module', 'global');
+  }
 
   if( !is_paged() && get_field('homepage_module_takepart', 'option') == 'oui' ) {
 	if ( get_field('homepage_takepart', 'option') ) {
 	  get_template_part('templates/module', 'participate');
 	}
   }
-  if ( !is_paged() && get_field('homepage_module_global', 'option') == 'oui' ) {
-    get_template_part('templates/module', 'global');
-  }
+
   if ( !is_paged() && get_field('homepage_module_agenda', 'option') == 'oui' ) {
     get_template_part('templates/module', 'agenda');
   }
