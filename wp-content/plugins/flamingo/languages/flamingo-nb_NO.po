@@ -1,0 +1,425 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Flamingo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-03 00:20+0900\n"
+"PO-Revision-Date: 2014-10-24 08:47+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_c\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.6.5\n"
+"Language: nb_NO\n"
+"X-Poedit-SearchPath-0: flamingo\n"
+
+#: flamingo/admin/admin.php:16 flamingo/admin/admin.php:22
+#: flamingo/admin/admin.php:284
+msgid "Flamingo Address Book"
+msgstr "Flamingo adressebok"
+
+#: flamingo/admin/admin.php:17
+msgid "Flamingo"
+msgstr "Flamingo"
+
+#: flamingo/admin/admin.php:23
+msgid "Address Book"
+msgstr "Adressebok"
+
+#: flamingo/admin/admin.php:30 flamingo/includes/class-inbound-message.php:26
+msgid "Flamingo Inbound Messages"
+msgstr "Flamingo innkommende meldinger"
+
+#: flamingo/admin/admin.php:31 flamingo/admin/admin.php:600
+msgid "Inbound Messages"
+msgstr "Innkommende meldinger."
+
+#: flamingo/admin/admin.php:78
+msgid "Contact updated."
+msgstr "Kontakt oppdatert"
+
+#: flamingo/admin/admin.php:80
+msgid "Contact deleted."
+msgstr "Kontakt slettet."
+
+#: flamingo/admin/admin.php:82
+msgid "Messages trashed."
+msgstr "Melding flyttet til papirkurv."
+
+#: flamingo/admin/admin.php:84
+msgid "Messages restored."
+msgstr "Melding gjenoprettet."
+
+#: flamingo/admin/admin.php:86
+msgid "Messages deleted."
+msgstr "Melding slettet."
+
+#: flamingo/admin/admin.php:88
+msgid "Messages got marked as spam."
+msgstr "Meldningen ble market som spam."
+
+#: flamingo/admin/admin.php:90
+msgid "Messages got marked as not spam."
+msgstr "Meldingen ble markert som ikke spam."
+
+#: flamingo/admin/admin.php:92
+msgid "Messages updated."
+msgstr "Meldinger oppdatert."
+
+#: flamingo/admin/admin.php:119 flamingo/admin/admin.php:657
+msgid "You are not allowed to edit this item."
+msgstr "Du har ikke tillatelse til å redigere dette elementet."
+
+#: flamingo/admin/admin.php:158 flamingo/admin/admin.php:407
+msgid "You are not allowed to delete this item."
+msgstr "Du har ikke tillatelse til å slette dette elementet."
+
+#: flamingo/admin/admin.php:161 flamingo/admin/admin.php:410
+msgid "Error in deleting."
+msgstr "Feil ved sletting."
+
+#: flamingo/admin/admin.php:186
+#: flamingo/admin/includes/class-contacts-list-table.php:11
+msgid "Email"
+msgstr "E-post"
+
+#: flamingo/admin/admin.php:186 flamingo/admin/includes/meta-boxes.php:142
+msgid "Full name"
+msgstr "Fullt navn"
+
+#: flamingo/admin/admin.php:187 flamingo/admin/includes/meta-boxes.php:147
+msgid "First name"
+msgstr "Fornavn"
+
+#: flamingo/admin/admin.php:187 flamingo/admin/includes/meta-boxes.php:152
+msgid "Last name"
+msgstr "Etternavn"
+
+#: flamingo/admin/admin.php:243 flamingo/admin/admin.php:562
+#: flamingo/admin/includes/meta-boxes.php:184
+msgid "Save"
+msgstr "Lagre"
+
+#: flamingo/admin/admin.php:246
+#: flamingo/admin/includes/class-contacts-list-table.php:13
+msgid "Tags"
+msgstr "Etiketter"
+
+#: flamingo/admin/admin.php:249
+#: flamingo/admin/includes/class-contacts-list-table.php:12
+msgid "Name"
+msgstr "Navn"
+
+#: flamingo/admin/admin.php:262
+msgid "Contacts"
+msgstr "Kontakter"
+
+#: flamingo/admin/admin.php:288 flamingo/admin/admin.php:604
+#: flamingo/admin/admin.php:716
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
+msgstr "Søkresultat for &#8220;%s&#8221;"
+
+#: flamingo/admin/admin.php:297
+msgid "Search Contacts"
+msgstr "Søk kontakter"
+
+#: flamingo/admin/admin.php:338
+msgid "You are not allowed to move this item to the Trash."
+msgstr "Du har ikke tillatelser til å legge elementet i papirkurven."
+
+#: flamingo/admin/admin.php:341
+msgid "Error in moving to Trash."
+msgstr "Feil: Kunne ikke flytte element til papirkurv."
+
+#: flamingo/admin/admin.php:368
+msgid "You are not allowed to restore this item from the Trash."
+msgstr ""
+"Du har ikke tillatelse til å gjenopprette dette elementet fra papirkurven."
+
+#: flamingo/admin/admin.php:371
+msgid "Error in restoring from Trash."
+msgstr "Feil: Kunne ikke gjenopprette fra papirkurv."
+
+#: flamingo/admin/admin.php:437
+msgid "You are not allowed to spam this item."
+msgstr "Du har ikke tillatelse til å markere dette som spam."
+
+#: flamingo/admin/admin.php:465
+msgid "You are not allowed to unspam this item."
+msgstr "Du har ikke tillatelse til å markere dette som ikke spam."
+
+#: flamingo/admin/admin.php:533 flamingo/admin/edit-inbound-form.php:42
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:14
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:13
+msgid "Date"
+msgstr "Dato"
+
+#: flamingo/admin/admin.php:565
+msgid "Fields"
+msgstr "Felter"
+
+#: flamingo/admin/admin.php:578 flamingo/admin/admin.php:690
+msgid "Messages"
+msgstr "Meldinger"
+
+#: flamingo/admin/admin.php:615 flamingo/admin/admin.php:727
+msgid "Search Messages"
+msgstr "Søk i meldinger"
+
+#: flamingo/admin/admin.php:677
+msgid "Send"
+msgstr "Send"
+
+#: flamingo/admin/admin.php:712
+msgid "Outbound Messages"
+msgstr "Utgående meldinger"
+
+#: flamingo/admin/edit-contact-form.php:17
+msgid "Edit Contact"
+msgstr "Endre kontakt"
+
+#: flamingo/admin/edit-contact-form.php:43
+msgid "Enter email here"
+msgstr "Skriv inn e-post her"
+
+#: flamingo/admin/edit-inbound-form.php:17
+msgid "Inbound Message"
+msgstr "Innkommende melding"
+
+#: flamingo/admin/edit-inbound-form.php:47
+#: flamingo/admin/edit-outbound-form.php:61
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:11
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:11
+msgid "Subject"
+msgstr "Emne"
+
+#: flamingo/admin/edit-inbound-form.php:52
+#: flamingo/admin/edit-outbound-form.php:56
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:12
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:12
+msgid "From"
+msgstr "Fra"
+
+#: flamingo/admin/edit-outbound-form.php:19
+msgid "Compose a Message"
+msgstr "Lag en ny melding"
+
+#: flamingo/admin/edit-outbound-form.php:21
+msgid "Outbound Message"
+msgstr "Utgående melding"
+
+#: flamingo/admin/edit-outbound-form.php:48
+msgid "To"
+msgstr "Til"
+
+#: flamingo/admin/edit-outbound-form.php:66
+msgid "Body"
+msgstr "Innhold"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:14
+msgid "History"
+msgstr "Historie"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:15
+msgid "Last Contact"
+msgstr "Sist kontakt"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:82
+#: flamingo/admin/includes/meta-boxes.php:11
+msgid "Delete"
+msgstr "Slett"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:106
+msgid "View all tags"
+msgstr "Vis alle etiketter"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:112
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:212
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:153
+msgid "Filter"
+msgstr "Filter"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:115
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:217
+msgid "Export"
+msgstr "Eksporter"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:138
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:252
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:187
+msgid "Edit"
+msgstr "Endre"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:142
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:271
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:191
+#, php-format
+msgid "Edit &#8220;%s&#8221;"
+msgstr "Endre &#8220;%s&#8221;"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:154
+msgid "No Tags"
+msgstr "Ingen etiketter"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:183
+msgid "User"
+msgstr "Bruker"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:196
+#, php-format
+msgid "Comment (%d)"
+msgstr "Kommentar (%d)"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:235
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:323
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:207
+#: flamingo/includes/class-inbound-message.php:132
+#: flamingo/includes/class-outbound-message.php:80
+msgid "Y/m/d g:i:s A"
+msgstr "Y/m/d g:i:s A"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:242
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:330
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:214
+#, php-format
+msgid "%s ago"
+msgstr "%s siden"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:244
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:332
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:216
+msgid "Y/m/d"
+msgstr "Y/m/d"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:13
+msgid "Channel"
+msgstr "Kanal"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:160
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:134
+msgid "Restore"
+msgstr "Gjenopprett"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:164
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:138
+#: flamingo/admin/includes/meta-boxes.php:108
+#: flamingo/admin/includes/meta-boxes.php:209
+msgid "Delete Permanently"
+msgstr "Slett permanent"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:166
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:140
+#: flamingo/admin/includes/meta-boxes.php:110
+#: flamingo/admin/includes/meta-boxes.php:211
+msgid "Move to Trash"
+msgstr "Flytt til papirkurv"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:170
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:260
+msgid "Not Spam"
+msgstr "Ikke spam"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:172
+msgid "Mark as Spam"
+msgstr "Marker som spam"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:204
+msgid "View all channels"
+msgstr "Vis alle kanaler "
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:223
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:158
+msgid "Empty Trash"
+msgstr "Tøm papirkurv"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:266
+#: flamingo/includes/class-inbound-message.php:32
+msgid "Spam"
+msgstr "Spam"
+
+#: flamingo/admin/includes/meta-boxes.php:17
+#, php-format
+msgid ""
+"You are about to delete this contact '%s'\n"
+" 'Cancel' to stop, 'OK' to delete."
+msgstr ""
+"Du er i ferd med å slette kontakten '%s'\n"
+"\"Avbryt\" for å stoppe, \"OK\" for å slette."
+
+#: flamingo/admin/includes/meta-boxes.php:23
+msgid "Update Contact"
+msgstr "Oppdater kontakt"
+
+#: flamingo/admin/includes/meta-boxes.php:25
+msgid "Add Contact"
+msgstr "Legg til kontakt"
+
+#: flamingo/admin/includes/meta-boxes.php:69
+msgid "Separate tags with commas"
+msgstr "Seperer etiketter med komma"
+
+#: flamingo/admin/includes/meta-boxes.php:72
+msgid "Choose from the most used tags"
+msgstr "Velg fra mest brukte etiketter"
+
+#: flamingo/admin/includes/meta-boxes.php:122
+msgid "Update Message"
+msgstr "Oppdater meldinger"
+
+#: flamingo/admin/includes/meta-boxes.php:124
+msgid "Add Message"
+msgstr "Legg til melding"
+
+#: flamingo/admin/includes/meta-boxes.php:189
+msgid "Save Draft"
+msgstr "Lagre kladd"
+
+#: flamingo/admin/includes/meta-boxes.php:223
+msgid "Send Message"
+msgstr "Send melding"
+
+#: flamingo/includes/class-contact.php:20
+msgid "Flamingo Contacts"
+msgstr "Flamingo kontakter"
+
+#: flamingo/includes/class-contact.php:21
+msgid "Flamingo Contact"
+msgstr "Flamingo kontakt"
+
+#: flamingo/includes/class-contact.php:27
+msgid "Flamingo Contact Tags"
+msgstr "Flamingo kontakt etiketter"
+
+#: flamingo/includes/class-contact.php:28
+msgid "Flamingo Contact Tag"
+msgstr "Flamingo kontakt etikett"
+
+#: flamingo/includes/class-inbound-message.php:27
+msgid "Flamingo Inbound Message"
+msgstr "Flamingo innkommende melding"
+
+#: flamingo/includes/class-inbound-message.php:40
+msgid "Flamingo Inbound Message Channels"
+msgstr "Flamingo inkommende melding kanaler"
+
+#: flamingo/includes/class-inbound-message.php:41
+msgid "Flamingo Inbound Message Channel"
+msgstr "Flamingo inkommende melding kanal"
+
+#: flamingo/includes/class-inbound-message.php:168
+#: flamingo/includes/class-outbound-message.php:92
+msgid "(No Title)"
+msgstr "(Ingen tittel)"
+
+#: flamingo/includes/class-outbound-message.php:20
+msgid "Flamingo Outbound Messages"
+msgstr "Flamingo utgående meldinger"
+
+#: flamingo/includes/class-outbound-message.php:21
+msgid "Flamingo Outbound Message"
+msgstr "Flamingo utgående melding"

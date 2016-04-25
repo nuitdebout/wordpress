@@ -1,0 +1,350 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Flamingo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-10-19 00:15+0900\n"
+"PO-Revision-Date: 2013-06-14 17:07+0900\n"
+"Last-Translator: Takayuki Miyoshi <takayukister@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_c\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.5\n"
+"Language: Hungarian\n"
+"X-Poedit-SearchPath-0: flamingo\n"
+
+#: flamingo/admin/admin.php:9 flamingo/admin/admin.php:14
+#: flamingo/admin/admin.php:256
+msgid "Flamingo Address Book"
+msgstr "Flamingo Címlista"
+
+#: flamingo/admin/admin.php:9
+msgid "Flamingo"
+msgstr "Flamingo"
+
+#: flamingo/admin/admin.php:14
+msgid "Address Book"
+msgstr "Címlista"
+
+#: flamingo/admin/admin.php:20 flamingo/includes/class-inbound-message.php:24
+msgid "Flamingo Inbound Messages"
+msgstr "Flamingo Bejövő üzenetek"
+
+#: flamingo/admin/admin.php:20 flamingo/admin/admin.php:489
+msgid "Inbound Messages"
+msgstr "Bejövő üzenetek"
+
+#: flamingo/admin/admin.php:66
+msgid "Contact updated."
+msgstr "Kapcsolat frissítve."
+
+#: flamingo/admin/admin.php:68
+msgid "Contact deleted."
+msgstr "Kapcsolat törölve."
+
+#: flamingo/admin/admin.php:70
+msgid "Messages trashed."
+msgstr "Üzenet eldobva."
+
+#: flamingo/admin/admin.php:72
+msgid "Messages restored."
+msgstr "Üzenet visszaállítva."
+
+#: flamingo/admin/admin.php:74
+msgid "Messages deleted."
+msgstr "Üzenetek törölve."
+
+#: flamingo/admin/admin.php:76
+msgid "Messages got marked as spam."
+msgstr "Üzenetek spamnek jelölve."
+
+#: flamingo/admin/admin.php:78
+msgid "Messages got marked as not spam."
+msgstr "Üzenetek spam státusza törölve."
+
+#: flamingo/admin/admin.php:105
+msgid "You are not allowed to edit this item."
+msgstr "Nincs jogod szerkeszteni ezt a tételt."
+
+#: flamingo/admin/admin.php:144 flamingo/admin/admin.php:377
+msgid "You are not allowed to delete this item."
+msgstr "Nincs jogod törölni ezt a tételt."
+
+#: flamingo/admin/admin.php:147 flamingo/admin/admin.php:380
+msgid "Error in deleting."
+msgstr "Hiba történt a törlés során."
+
+#: flamingo/admin/admin.php:170
+#: flamingo/admin/includes/class-contacts-list-table.php:11
+msgid "Email"
+msgstr "Email"
+
+#: flamingo/admin/admin.php:170 flamingo/admin/includes/meta-boxes.php:140
+msgid "Full name"
+msgstr "Teljes név"
+
+#: flamingo/admin/admin.php:171 flamingo/admin/includes/meta-boxes.php:145
+msgid "First name"
+msgstr "Keresztnév"
+
+#: flamingo/admin/admin.php:171 flamingo/admin/includes/meta-boxes.php:150
+msgid "Last name"
+msgstr "Vezetéknév"
+
+#: flamingo/admin/admin.php:215 flamingo/admin/admin.php:451
+msgid "Save"
+msgstr "Mentés"
+
+#: flamingo/admin/admin.php:218
+#: flamingo/admin/includes/class-contacts-list-table.php:13
+msgid "Tags"
+msgstr "Címkék"
+
+#: flamingo/admin/admin.php:221
+#: flamingo/admin/includes/class-contacts-list-table.php:12
+msgid "Name"
+msgstr "Név"
+
+#: flamingo/admin/admin.php:234
+msgid "Contacts"
+msgstr "Kapcsolatok"
+
+#: flamingo/admin/admin.php:260 flamingo/admin/admin.php:493
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
+msgstr "Találatok a(z) &#8220;%s&#8221; keresésére"
+
+#: flamingo/admin/admin.php:269
+msgid "Search Contacts"
+msgstr "Kapcsolatok keresése"
+
+#: flamingo/admin/admin.php:310
+msgid "You are not allowed to move this item to the Trash."
+msgstr "Nincs jogod a szemetesbe dobni ezt a tételt."
+
+#: flamingo/admin/admin.php:313
+msgid "Error in moving to Trash."
+msgstr "Hiba történt a szemetesbe dobás közben."
+
+#: flamingo/admin/admin.php:340
+msgid "You are not allowed to restore this item from the Trash."
+msgstr "Nincs jogod kivenni a szemetesből ezt a tételt."
+
+#: flamingo/admin/admin.php:343
+msgid "Error in restoring from Trash."
+msgstr "Hiba történt a szemetesből kivétel közben."
+
+#: flamingo/admin/admin.php:407
+msgid "You are not allowed to spam this item."
+msgstr "Nincs jogod spamnek jelölni ezt a tételt."
+
+#: flamingo/admin/admin.php:435
+msgid "You are not allowed to unspam this item."
+msgstr "Nincs jogod visszavonni a spam státuszt."
+
+#: flamingo/admin/admin.php:454
+msgid "Fields"
+msgstr "Mezők"
+
+#: flamingo/admin/admin.php:467
+msgid "Messages"
+msgstr "Üzenetek"
+
+#: flamingo/admin/admin.php:504
+msgid "Search Messages"
+msgstr "Üzenet keresés"
+
+#: flamingo/admin/edit-contact-form.php:17
+msgid "Edit Contact"
+msgstr "Kapcsolat szerkesztés"
+
+#: flamingo/admin/edit-contact-form.php:43
+msgid "Enter email here"
+msgstr "Itt írd az üzenetedet"
+
+#: flamingo/admin/edit-inbound-form.php:17
+msgid "Inbound Message"
+msgstr "Bejövő üzenetek"
+
+#: flamingo/admin/edit-inbound-form.php:42
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:14
+msgid "Date"
+msgstr "Dátum"
+
+#: flamingo/admin/edit-inbound-form.php:47
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:11
+msgid "Subject"
+msgstr "Cím"
+
+#: flamingo/admin/edit-inbound-form.php:52
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:12
+msgid "From"
+msgstr "Feladó"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:14
+msgid "History"
+msgstr "Előzmények"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:15
+msgid "Last Contact"
+msgstr "Utolsó kapcsolat"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:82
+#: flamingo/admin/includes/meta-boxes.php:11
+msgid "Delete"
+msgstr "Töröl"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:106
+msgid "View all tags"
+msgstr "Mutasd az összes címkét"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:112
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:173
+msgid "Filter"
+msgstr "Szűrő"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:115
+msgid "Export"
+msgstr "Export"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:138
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:207
+msgid "Edit"
+msgstr "Szekeszt"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:142
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:227
+#, php-format
+msgid "Edit &#8220;%s&#8221;"
+msgstr "&#8220;%s&#8221; szerkesztése"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:154
+msgid "No Tags"
+msgstr "Nincs címke"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:183
+msgid "User"
+msgstr "Felhasználó"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:196
+#, php-format
+msgid "Comment (%d)"
+msgstr "(%d). hozzászólás"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:235
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:260
+#: flamingo/includes/class-inbound-message.php:115
+msgid "Y/m/d g:i:s A"
+msgstr "Y-m-d h:i:s"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:242
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:267
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: flamingo/admin/includes/class-contacts-list-table.php:244
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:269
+msgid "Y/m/d"
+msgstr "Y-m-d"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:13
+msgid "Channel"
+msgstr "Csatorna"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:131
+msgid "Restore"
+msgstr "Visszaállít"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:134
+#: flamingo/admin/includes/meta-boxes.php:107
+msgid "Delete Permanently"
+msgstr "Végleges törölés"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:136
+#: flamingo/admin/includes/meta-boxes.php:109
+msgid "Move to Trash"
+msgstr "Szemetesbe dob"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:167
+msgid "View all channels"
+msgstr "Mutasd az összes csatornát"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:178
+msgid "Empty Trash"
+msgstr "Szemetes ürítés"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:215
+msgid "Not Spam"
+msgstr "Nem spam"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:221
+msgid "Spam"
+msgstr "Spam"
+
+#: flamingo/admin/includes/meta-boxes.php:17
+#, php-format
+msgid ""
+"You are about to delete this contact '%s'\n"
+" 'Cancel' to stop, 'OK' to delete."
+msgstr "Törlöd a kapcsolatot: '%s'?"
+
+#: flamingo/admin/includes/meta-boxes.php:22
+msgid "Update Contact"
+msgstr "Kapcsolat frissítés"
+
+#: flamingo/admin/includes/meta-boxes.php:24
+msgid "Add Contact"
+msgstr "Új kapcsolat"
+
+#: flamingo/admin/includes/meta-boxes.php:68
+msgid "Separate tags with commas"
+msgstr "Címkék elválasztása vesszővel"
+
+#: flamingo/admin/includes/meta-boxes.php:71
+msgid "Choose from the most used tags"
+msgstr "Választás a leggyakoribb címkék közül"
+
+#: flamingo/admin/includes/meta-boxes.php:120
+msgid "Update Message"
+msgstr "Üzenet frissítés"
+
+#: flamingo/admin/includes/meta-boxes.php:122
+msgid "Add Message"
+msgstr "Új üzenet"
+
+#: flamingo/includes/class-contact.php:20
+msgid "Flamingo Contacts"
+msgstr "Falmingo kapcsolatok"
+
+#: flamingo/includes/class-contact.php:21
+msgid "Flamingo Contact"
+msgstr "Flamingo kapcsolat"
+
+#: flamingo/includes/class-contact.php:27
+msgid "Flamingo Contact Tags"
+msgstr "Falmingo kapcsolat címkék"
+
+#: flamingo/includes/class-contact.php:28
+msgid "Flamingo Contact Tag"
+msgstr "Falmingo kapcsolat címke"
+
+#: flamingo/includes/class-inbound-message.php:25
+msgid "Flamingo Inbound Message"
+msgstr "Flamingo bejövő üzenetek"
+
+#: flamingo/includes/class-inbound-message.php:31
+msgid "Flamingo Inbound Message Channels"
+msgstr "Flamino bejövő üzenet csatornák"
+
+#: flamingo/includes/class-inbound-message.php:32
+msgid "Flamingo Inbound Message Channel"
+msgstr "Flamino bejövő üzenet csatorna"
+
+#: flamingo/includes/class-inbound-message.php:135
+msgid "(No Title)"
+msgstr "(Nincs cím)"

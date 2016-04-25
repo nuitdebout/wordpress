@@ -1,0 +1,319 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Flamingo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-06-06 00:47+0900\n"
+"PO-Revision-Date: 2012-07-26 21:11+0200\n"
+"Last-Translator: Dan Stramer <d.stramer@hotmail.com>\n"
+"Language-Team: Dan Stramer <dan@dmdesign.co.il>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_c\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-Language: Hebrew\n"
+"X-Poedit-Country: ISRAEL\n"
+"X-Poedit-SearchPath-0: flamingo\n"
+
+#: flamingo/flamingo.php:5
+msgid "Flamingo manages your contact list on WordPress."
+msgstr "פלמינגו מנהלת את רשימת אנשי הקשר שלך בוורדפרס"
+
+#: flamingo/admin/admin.php:9
+#: flamingo/admin/admin.php:14
+#: flamingo/admin/admin.php:154
+msgid "Flamingo Address Book"
+msgstr "ספר כתובות פלמינגו"
+
+#: flamingo/admin/admin.php:9
+msgid "Flamingo"
+msgstr "פלמינגו"
+
+#: flamingo/admin/admin.php:14
+msgid "Address Book"
+msgstr "ספר כתובות"
+
+#: flamingo/admin/admin.php:20
+#: flamingo/includes/class-inbound-message.php:22
+msgid "Flamingo Inbound Messages"
+msgstr "הודעות נכנסות פלמינגו"
+
+#: flamingo/admin/admin.php:20
+#: flamingo/admin/admin.php:323
+msgid "Inbound Messages"
+msgstr "הודעות נכנסות"
+
+#: flamingo/admin/admin.php:64
+msgid "Contact updated."
+msgstr "אישר קשר עודכן"
+
+#: flamingo/admin/admin.php:66
+msgid "Messages trashed."
+msgstr "הודעות נזרקו לאשפה"
+
+#: flamingo/admin/admin.php:68
+msgid "Messages restored."
+msgstr "הודעות שוחזרו."
+
+#: flamingo/admin/admin.php:70
+msgid "Messages deleted."
+msgstr "הודעות נמחקו."
+
+#: flamingo/admin/admin.php:97
+msgid "You are not allowed to edit this item."
+msgstr "אינך מורשה לערוך את הפריט הזה"
+
+#: flamingo/admin/admin.php:130
+msgid "Contacts"
+msgstr "אנשי קשר"
+
+#: flamingo/admin/admin.php:158
+#: flamingo/admin/admin.php:327
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
+msgstr "תוצאות חיפוש עבור  &#8220;%s&#8221;"
+
+#: flamingo/admin/admin.php:167
+msgid "Search Contacts"
+msgstr "חפש אנשי קשר"
+
+#: flamingo/admin/admin.php:208
+msgid "You are not allowed to move this item to the Trash."
+msgstr "אינך מורשה להעביר פריט זה לאשפה"
+
+#: flamingo/admin/admin.php:211
+msgid "Error in moving to Trash."
+msgstr "שגיאה בהעברה לאשפה"
+
+#: flamingo/admin/admin.php:238
+msgid "You are not allowed to restore this item from the Trash."
+msgstr "אינך מורשה לשחזר פריט זה מהאשפה"
+
+#: flamingo/admin/admin.php:241
+msgid "Error in restoring from Trash."
+msgstr "שגיאה בשחזור מהאשפה."
+
+#: flamingo/admin/admin.php:275
+msgid "You are not allowed to delete this item."
+msgstr "אינך מורשה למחוק פריט זה."
+
+#: flamingo/admin/admin.php:278
+msgid "Error in deleting."
+msgstr "שגיאה במחיקה."
+
+#: flamingo/admin/admin.php:299
+msgid "Messages"
+msgstr "הודעות"
+
+#: flamingo/admin/admin.php:338
+msgid "Search Messages"
+msgstr "חפש הודעות"
+
+#: flamingo/admin/edit-contact-form.php:13
+#: flamingo/admin/edit-inbound-form.php:13
+msgid "Save"
+msgstr "שמירה"
+
+#: flamingo/admin/edit-contact-form.php:16
+#: flamingo/admin/includes/class-contacts-list-table.php:13
+msgid "Tags"
+msgstr "תגיות"
+
+#: flamingo/admin/edit-contact-form.php:19
+#: flamingo/admin/includes/class-contacts-list-table.php:12
+msgid "Name"
+msgstr "שם"
+
+#: flamingo/admin/edit-contact-form.php:26
+msgid "Edit Contact"
+msgstr "ערוך איש קשר"
+
+#: flamingo/admin/edit-contact-form.php:52
+msgid "Enter email here"
+msgstr "הכנס כתובת מייל כאן"
+
+#: flamingo/admin/edit-inbound-form.php:16
+msgid "Fields"
+msgstr "שדות"
+
+#: flamingo/admin/edit-inbound-form.php:23
+msgid "Inbound Message"
+msgstr "הודעה נכנסת"
+
+#: flamingo/admin/edit-inbound-form.php:48
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:14
+msgid "Date"
+msgstr "תאריך"
+
+#: flamingo/admin/edit-inbound-form.php:53
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:11
+msgid "Subject"
+msgstr "נושא"
+
+#: flamingo/admin/edit-inbound-form.php:58
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:12
+msgid "From"
+msgstr "מאת"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:11
+msgid "Email"
+msgstr "מייל"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:14
+msgid "History"
+msgstr "היסטוריה"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:15
+msgid "Last Contact"
+msgstr "איש קשר אחרון"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:82
+msgid "Send Mail"
+msgstr "שלח מייל"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:106
+msgid "View all tags"
+msgstr "צפה בכל התגיות"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:112
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:173
+msgid "Filter"
+msgstr "פילטר"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:136
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:205
+msgid "Edit"
+msgstr "ערוך"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:140
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:209
+#, php-format
+msgid "Edit &#8220;%s&#8221;"
+msgstr "ערוך &#8220;%s&#8221;"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:152
+msgid "No Tags"
+msgstr "אין תגיות"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:181
+msgid "User"
+msgstr "משתמש"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:194
+#, php-format
+msgid "Comment (%d)"
+msgstr "תגובה(%d)"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:233
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:242
+#: flamingo/includes/class-inbound-message.php:107
+msgid "Y/m/d g:i:s A"
+msgstr ""
+
+#: flamingo/admin/includes/class-contacts-list-table.php:240
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:249
+#, php-format
+msgid "%s ago"
+msgstr "לפני %s"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:242
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:251
+msgid "Y/m/d"
+msgstr "שנה/חודש/יום"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:13
+msgid "Channel"
+msgstr "ערוץ"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:131
+msgid "Restore"
+msgstr "שחזר"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:134
+#: flamingo/admin/includes/meta-boxes.php:95
+msgid "Delete Permanently"
+msgstr "מחק לתמיד"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:136
+#: flamingo/admin/includes/meta-boxes.php:97
+msgid "Move to Trash"
+msgstr "העבר לאשפה"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:167
+msgid "View all channels"
+msgstr "צפה בכל הערוצים"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:178
+msgid "Empty Trash"
+msgstr "רוקן אשפה"
+
+#: flamingo/admin/includes/meta-boxes.php:10
+msgid "Update Contact"
+msgstr "עדכן איש קשר"
+
+#: flamingo/admin/includes/meta-boxes.php:12
+msgid "Add Contact"
+msgstr "הוסף איש קשר"
+
+#: flamingo/admin/includes/meta-boxes.php:56
+msgid "Separate tags with commas"
+msgstr "הפרד תגיות בפסיקים"
+
+#: flamingo/admin/includes/meta-boxes.php:59
+msgid "Choose from the most used tags"
+msgstr "בחר תגית מהנפוצות ביותר"
+
+#: flamingo/admin/includes/meta-boxes.php:108
+msgid "Update Message"
+msgstr "עדכן הודעה"
+
+#: flamingo/admin/includes/meta-boxes.php:110
+msgid "Add Message"
+msgstr "הוסף הודעה"
+
+#: flamingo/admin/includes/meta-boxes.php:128
+msgid "Full name"
+msgstr "שם מלא"
+
+#: flamingo/admin/includes/meta-boxes.php:133
+msgid "First name"
+msgstr "שם פרטי"
+
+#: flamingo/admin/includes/meta-boxes.php:138
+msgid "Last name"
+msgstr "שם משפחה"
+
+#: flamingo/includes/class-contact.php:20
+msgid "Flamingo Contacts"
+msgstr "אנשי קשר פלמינגו"
+
+#: flamingo/includes/class-contact.php:21
+msgid "Flamingo Contact"
+msgstr "איש קשר פלמינגו"
+
+#: flamingo/includes/class-contact.php:25
+msgid "Flamingo Contact Tags"
+msgstr "תגיות איש קשר פלמינגו"
+
+#: flamingo/includes/class-contact.php:26
+msgid "Flamingo Contact Tag"
+msgstr "תגית איש קשר פלמינגו"
+
+#: flamingo/includes/class-inbound-message.php:23
+msgid "Flamingo Inbound Message"
+msgstr "הודעה נכנסת פלמינגו"
+
+#: flamingo/includes/class-inbound-message.php:27
+msgid "Flamingo Inbound Message Channels"
+msgstr "ערוצי הודעות נכנסות פלמינגו"
+
+#: flamingo/includes/class-inbound-message.php:28
+msgid "Flamingo Inbound Message Channel"
+msgstr "ערוץ הודעות נכנסות פלמינגו"
+
+#: flamingo/includes/class-inbound-message.php:125
+msgid "(No Title)"
+msgstr "(ללא כותרת)"
+
