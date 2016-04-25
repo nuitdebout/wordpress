@@ -1,0 +1,352 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Flamingo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-10-19 00:15+0900\n"
+"PO-Revision-Date: 2014-01-01 15:01+0300\n"
+"Last-Translator: Takayuki Miyoshi <takayukister@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_c\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.6.3\n"
+"Language: ar_SA\n"
+"X-Poedit-SearchPath-0: flamingo\n"
+
+#: flamingo/admin/admin.php:9 flamingo/admin/admin.php:14
+#: flamingo/admin/admin.php:256
+msgid "Flamingo Address Book"
+msgstr "دفتر عناوين فلامنقو"
+
+#: flamingo/admin/admin.php:9
+msgid "Flamingo"
+msgstr "فلامنقو"
+
+#: flamingo/admin/admin.php:14
+msgid "Address Book"
+msgstr "دفتر العناوين"
+
+#: flamingo/admin/admin.php:20 flamingo/includes/class-inbound-message.php:24
+msgid "Flamingo Inbound Messages"
+msgstr "وارد فلامنقو"
+
+#: flamingo/admin/admin.php:20 flamingo/admin/admin.php:489
+msgid "Inbound Messages"
+msgstr "الوارد"
+
+#: flamingo/admin/admin.php:66
+msgid "Contact updated."
+msgstr "تم تحديث جهة الاتصال."
+
+#: flamingo/admin/admin.php:68
+msgid "Contact deleted."
+msgstr "تم حذف جهة الاتصال"
+
+#: flamingo/admin/admin.php:70
+msgid "Messages trashed."
+msgstr "تم حذف الرسائل"
+
+#: flamingo/admin/admin.php:72
+msgid "Messages restored."
+msgstr "تم إعادة الرسائل"
+
+#: flamingo/admin/admin.php:74
+msgid "Messages deleted."
+msgstr "تم حذف الرسائل"
+
+#: flamingo/admin/admin.php:76
+msgid "Messages got marked as spam."
+msgstr "تم وضع علامة غير مرغوب على الرسالة"
+
+#: flamingo/admin/admin.php:78
+msgid "Messages got marked as not spam."
+msgstr "تم إزالة علامة غير مرغوب من الرسالة"
+
+#: flamingo/admin/admin.php:105
+msgid "You are not allowed to edit this item."
+msgstr "لا يسمح لك تحرير هذه الرسالة"
+
+#: flamingo/admin/admin.php:144 flamingo/admin/admin.php:377
+msgid "You are not allowed to delete this item."
+msgstr "لا يسمح لك حذف هذه الرسالة"
+
+#: flamingo/admin/admin.php:147 flamingo/admin/admin.php:380
+msgid "Error in deleting."
+msgstr "خطأ في الحذف"
+
+#: flamingo/admin/admin.php:170
+#: flamingo/admin/includes/class-contacts-list-table.php:11
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#: flamingo/admin/admin.php:170 flamingo/admin/includes/meta-boxes.php:140
+msgid "Full name"
+msgstr "الاسم الكامل"
+
+#: flamingo/admin/admin.php:171 flamingo/admin/includes/meta-boxes.php:145
+msgid "First name"
+msgstr "الاسم الأول"
+
+#: flamingo/admin/admin.php:171 flamingo/admin/includes/meta-boxes.php:150
+msgid "Last name"
+msgstr "اسم العائلة"
+
+#: flamingo/admin/admin.php:215 flamingo/admin/admin.php:451
+msgid "Save"
+msgstr "حفذ"
+
+#: flamingo/admin/admin.php:218
+#: flamingo/admin/includes/class-contacts-list-table.php:13
+msgid "Tags"
+msgstr "وسوم"
+
+#: flamingo/admin/admin.php:221
+#: flamingo/admin/includes/class-contacts-list-table.php:12
+msgid "Name"
+msgstr "الاسم"
+
+#: flamingo/admin/admin.php:234
+msgid "Contacts"
+msgstr "جهات الاتصال"
+
+#: flamingo/admin/admin.php:260 flamingo/admin/admin.php:493
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
+msgstr "نتائج البحث لـ &#8220;%s&#8221;"
+
+#: flamingo/admin/admin.php:269
+msgid "Search Contacts"
+msgstr "ابحث في جهات الاتصال"
+
+#: flamingo/admin/admin.php:310
+msgid "You are not allowed to move this item to the Trash."
+msgstr "لا يسمح لك نقل هذه الرسالة إلى سلة المهملات"
+
+#: flamingo/admin/admin.php:313
+msgid "Error in moving to Trash."
+msgstr "حصل خطأ في النقل إلى سلة المهملات"
+
+#: flamingo/admin/admin.php:340
+msgid "You are not allowed to restore this item from the Trash."
+msgstr "لا يسمح لك إعادة هذه الرسالة من سلة المعملات"
+
+#: flamingo/admin/admin.php:343
+msgid "Error in restoring from Trash."
+msgstr "حصل خطأ في الإعادة من سلة المهملات"
+
+#: flamingo/admin/admin.php:407
+msgid "You are not allowed to spam this item."
+msgstr "لا يسمح لك وضع علامة غير مرغوب على هذه الرسالة"
+
+#: flamingo/admin/admin.php:435
+msgid "You are not allowed to unspam this item."
+msgstr "لا يسمح لك إزالة علامة غير مرغوب من هذه الرسالة"
+
+#: flamingo/admin/admin.php:454
+msgid "Fields"
+msgstr "الحقول"
+
+#: flamingo/admin/admin.php:467
+msgid "Messages"
+msgstr "الرسائل"
+
+#: flamingo/admin/admin.php:504
+msgid "Search Messages"
+msgstr "ابحث في الرسائل"
+
+#: flamingo/admin/edit-contact-form.php:17
+msgid "Edit Contact"
+msgstr "تحرير جهة الاتصال"
+
+#: flamingo/admin/edit-contact-form.php:43
+msgid "Enter email here"
+msgstr "ادخل البريد الإلكتروني هنا"
+
+#: flamingo/admin/edit-inbound-form.php:17
+msgid "Inbound Message"
+msgstr "رسالة واردة"
+
+#: flamingo/admin/edit-inbound-form.php:42
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:14
+msgid "Date"
+msgstr "التاريخ"
+
+#: flamingo/admin/edit-inbound-form.php:47
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:11
+msgid "Subject"
+msgstr "الموضوع"
+
+#: flamingo/admin/edit-inbound-form.php:52
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:12
+msgid "From"
+msgstr "من"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:14
+msgid "History"
+msgstr "التاريخ"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:15
+msgid "Last Contact"
+msgstr "آخر جهة اتصال"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:82
+#: flamingo/admin/includes/meta-boxes.php:11
+msgid "Delete"
+msgstr "احذف"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:106
+msgid "View all tags"
+msgstr "مشاهدة جميع الوسوم"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:112
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:173
+msgid "Filter"
+msgstr "تصفية"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:115
+msgid "Export"
+msgstr "تصدير"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:138
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:207
+msgid "Edit"
+msgstr "تحرير"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:142
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:227
+#, php-format
+msgid "Edit &#8220;%s&#8221;"
+msgstr "تحرير &#8220;%s&#8221;"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:154
+msgid "No Tags"
+msgstr "لا توجد وسوم"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:183
+msgid "User"
+msgstr "مستخدم"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:196
+#, php-format
+msgid "Comment (%d)"
+msgstr "تعليق (%d)"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:235
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:260
+#: flamingo/includes/class-inbound-message.php:115
+msgid "Y/m/d g:i:s A"
+msgstr "Y/m/d g:i:s A"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:242
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:267
+#, php-format
+msgid "%s ago"
+msgstr "منذ %s"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:244
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:269
+msgid "Y/m/d"
+msgstr "Y/m/d"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:13
+msgid "Channel"
+msgstr "قناة"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:131
+msgid "Restore"
+msgstr "إعادة"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:134
+#: flamingo/admin/includes/meta-boxes.php:107
+msgid "Delete Permanently"
+msgstr "احذف نهائيا"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:136
+#: flamingo/admin/includes/meta-boxes.php:109
+msgid "Move to Trash"
+msgstr "انقل إلى سلة المهملات"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:167
+msgid "View all channels"
+msgstr "شاهد جميع القنوات"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:178
+msgid "Empty Trash"
+msgstr "افرغ سلة المهملات"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:215
+msgid "Not Spam"
+msgstr "ليست رسالة غير مرغوب فيها"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:221
+msgid "Spam"
+msgstr "رسالة غير مرغوب فيها"
+
+#: flamingo/admin/includes/meta-boxes.php:17
+#, php-format
+msgid ""
+"You are about to delete this contact '%s'\n"
+" 'Cancel' to stop, 'OK' to delete."
+msgstr ""
+"سوف تحذف جهة اتصال   ‘%s’\n"
+"انقر على 'Cancel' للإلغاء أو على 'OK' لتأكيد الحذف."
+
+#: flamingo/admin/includes/meta-boxes.php:22
+msgid "Update Contact"
+msgstr "تحديث جهة اتصال"
+
+#: flamingo/admin/includes/meta-boxes.php:24
+msgid "Add Contact"
+msgstr "إضافة جهة اتصال"
+
+#: flamingo/admin/includes/meta-boxes.php:68
+msgid "Separate tags with commas"
+msgstr "فصل الوسوم بفواصل"
+
+#: flamingo/admin/includes/meta-boxes.php:71
+msgid "Choose from the most used tags"
+msgstr "اختر من الوسوم الأكثر استخداماً"
+
+#: flamingo/admin/includes/meta-boxes.php:120
+msgid "Update Message"
+msgstr "تحديث الرسالة"
+
+#: flamingo/admin/includes/meta-boxes.php:122
+msgid "Add Message"
+msgstr "إضافة رسالة"
+
+#: flamingo/includes/class-contact.php:20
+msgid "Flamingo Contacts"
+msgstr "جهات إتصال فلامنقو"
+
+#: flamingo/includes/class-contact.php:21
+msgid "Flamingo Contact"
+msgstr "جهة إتصال فلامنقو"
+
+#: flamingo/includes/class-contact.php:27
+msgid "Flamingo Contact Tags"
+msgstr "وسوم جهات اتصال فلامنقو"
+
+#: flamingo/includes/class-contact.php:28
+msgid "Flamingo Contact Tag"
+msgstr "وسم جهة اتصال فلامنقو"
+
+#: flamingo/includes/class-inbound-message.php:25
+msgid "Flamingo Inbound Message"
+msgstr "رسالة فلامنقو واردة"
+
+#: flamingo/includes/class-inbound-message.php:31
+msgid "Flamingo Inbound Message Channels"
+msgstr "قنوات رسائل فلامنقو الواردة"
+
+#: flamingo/includes/class-inbound-message.php:32
+msgid "Flamingo Inbound Message Channel"
+msgstr "قناة رسائل فلامنقو الواردة"
+
+#: flamingo/includes/class-inbound-message.php:135
+msgid "(No Title)"
+msgstr "(بدون عنوان)"

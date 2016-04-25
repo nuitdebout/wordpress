@@ -1,0 +1,424 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Flamingo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-03 00:20+0900\n"
+"PO-Revision-Date: 2015-02-17 14:46+0900\n"
+"Last-Translator: Takayuki Miyoshi <takayukister@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_c\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.7.3\n"
+"Language: my_MM\n"
+"X-Poedit-SearchPath-0: flamingo\n"
+
+#: flamingo/admin/admin.php:16 flamingo/admin/admin.php:22
+#: flamingo/admin/admin.php:284
+msgid "Flamingo Address Book"
+msgstr "Flamingo လိပ်စာစာရင်း"
+
+#: flamingo/admin/admin.php:17
+msgid "Flamingo"
+msgstr "Flamingo"
+
+#: flamingo/admin/admin.php:23
+msgid "Address Book"
+msgstr "လိပ်စာစာရင်း"
+
+#: flamingo/admin/admin.php:30 flamingo/includes/class-inbound-message.php:26
+msgid "Flamingo Inbound Messages"
+msgstr "Flamingo ဝင်စာများ"
+
+#: flamingo/admin/admin.php:31 flamingo/admin/admin.php:600
+msgid "Inbound Messages"
+msgstr "ဝင်စာများ"
+
+#: flamingo/admin/admin.php:78
+msgid "Contact updated."
+msgstr "အဆက်အသွယ်ကို ပြုပြင်မွမ်းမံထားပြီး"
+
+#: flamingo/admin/admin.php:80
+msgid "Contact deleted."
+msgstr "အဆက်အသွယ်ကို ဖျက်ထားပြီး"
+
+#: flamingo/admin/admin.php:82
+msgid "Messages trashed."
+msgstr "စာများကို လွှင့်ပစ်ထားပြီး"
+
+#: flamingo/admin/admin.php:84
+msgid "Messages restored."
+msgstr "စာများကို ပြန်ယူထားပြီး"
+
+#: flamingo/admin/admin.php:86
+msgid "Messages deleted."
+msgstr "စာများကို ဖျက်ထားပြီး"
+
+#: flamingo/admin/admin.php:88
+msgid "Messages got marked as spam."
+msgstr "စာများကို "
+
+#: flamingo/admin/admin.php:90
+msgid "Messages got marked as not spam."
+msgstr ""
+
+#: flamingo/admin/admin.php:92
+msgid "Messages updated."
+msgstr "စာများကို ပြင်ထားပြီး"
+
+#: flamingo/admin/admin.php:119 flamingo/admin/admin.php:657
+msgid "You are not allowed to edit this item."
+msgstr "ဤအရာကို ပြင်ခွင့်မပြုပါ"
+
+#: flamingo/admin/admin.php:158 flamingo/admin/admin.php:407
+msgid "You are not allowed to delete this item."
+msgstr "ဤအရာကို ဖျက်ခွင့်မပြုပါ"
+
+#: flamingo/admin/admin.php:161 flamingo/admin/admin.php:410
+msgid "Error in deleting."
+msgstr "ဖျက်ရာ၌  အမှားအယွင်း ဖြစ်နေပါသည်"
+
+#: flamingo/admin/admin.php:186
+#: flamingo/admin/includes/class-contacts-list-table.php:11
+msgid "Email"
+msgstr "အီးမေးလ်"
+
+#: flamingo/admin/admin.php:186 flamingo/admin/includes/meta-boxes.php:142
+msgid "Full name"
+msgstr "အမည်အပြည့်အစုံ"
+
+#: flamingo/admin/admin.php:187 flamingo/admin/includes/meta-boxes.php:147
+msgid "First name"
+msgstr "နာမည် ပထမ စာလုံး"
+
+#: flamingo/admin/admin.php:187 flamingo/admin/includes/meta-boxes.php:152
+msgid "Last name"
+msgstr "နာမည် နောက်ဆုံး စာလုံး"
+
+#: flamingo/admin/admin.php:243 flamingo/admin/admin.php:562
+#: flamingo/admin/includes/meta-boxes.php:184
+msgid "Save"
+msgstr "သိမ်း"
+
+#: flamingo/admin/admin.php:246
+#: flamingo/admin/includes/class-contacts-list-table.php:13
+msgid "Tags"
+msgstr "စာညွှန်းများ"
+
+#: flamingo/admin/admin.php:249
+#: flamingo/admin/includes/class-contacts-list-table.php:12
+msgid "Name"
+msgstr "အမည်"
+
+#: flamingo/admin/admin.php:262
+msgid "Contacts"
+msgstr "အဆက်အသွယ်များ"
+
+#: flamingo/admin/admin.php:288 flamingo/admin/admin.php:604
+#: flamingo/admin/admin.php:716
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
+msgstr "&#8220;%s&#8221; အတွက် ရှာဖွေမှုရလဒ်များ"
+
+#: flamingo/admin/admin.php:297
+msgid "Search Contacts"
+msgstr "အဆက်အသွယ်များကို ရှာမည်"
+
+#: flamingo/admin/admin.php:338
+msgid "You are not allowed to move this item to the Trash."
+msgstr "ဤအရာကို အမှိုက်ပုံးထဲသို့ ထည့်ခွင့်မပြုပါ"
+
+#: flamingo/admin/admin.php:341
+msgid "Error in moving to Trash."
+msgstr "အမှိုက်ပုံးထဲသို့ထည့်ရာ၌  အမှားအယွင်းဖြစ်နေပါသည်"
+
+#: flamingo/admin/admin.php:368
+msgid "You are not allowed to restore this item from the Trash."
+msgstr "ဤအရာကို အမှိုက်ပုံးထဲမှ ပြန်ယူခွင့် မပြုပါ"
+
+#: flamingo/admin/admin.php:371
+msgid "Error in restoring from Trash."
+msgstr "အမှိုက်ပုံးထဲမှ ပြန်ယူရာ၌ အမှားအယွင်း ဖြစ်နေပါသည်"
+
+#: flamingo/admin/admin.php:437
+msgid "You are not allowed to spam this item."
+msgstr ""
+
+#: flamingo/admin/admin.php:465
+msgid "You are not allowed to unspam this item."
+msgstr ""
+
+#: flamingo/admin/admin.php:533 flamingo/admin/edit-inbound-form.php:42
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:14
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:13
+msgid "Date"
+msgstr "နေ့စွဲအလိုက်"
+
+#: flamingo/admin/admin.php:565
+msgid "Fields"
+msgstr "Fields"
+
+#: flamingo/admin/admin.php:578 flamingo/admin/admin.php:690
+msgid "Messages"
+msgstr "စာများ"
+
+#: flamingo/admin/admin.php:615 flamingo/admin/admin.php:727
+msgid "Search Messages"
+msgstr "စာများကို ရှာပါ"
+
+#: flamingo/admin/admin.php:677
+msgid "Send"
+msgstr "စာပို့ပါ"
+
+#: flamingo/admin/admin.php:712
+msgid "Outbound Messages"
+msgstr "ထွက်စာများ"
+
+#: flamingo/admin/edit-contact-form.php:17
+msgid "Edit Contact"
+msgstr "အဆက်အသွယ်ကို ပြင်ပါ"
+
+#: flamingo/admin/edit-contact-form.php:43
+msgid "Enter email here"
+msgstr "သည်နေရာမှာ အီးမေးလ် ရိုက်ထည့်ပါ"
+
+#: flamingo/admin/edit-inbound-form.php:17
+msgid "Inbound Message"
+msgstr "ဝင်စာ"
+
+#: flamingo/admin/edit-inbound-form.php:47
+#: flamingo/admin/edit-outbound-form.php:61
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:11
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:11
+msgid "Subject"
+msgstr "အကြောင်းအရာ"
+
+#: flamingo/admin/edit-inbound-form.php:52
+#: flamingo/admin/edit-outbound-form.php:56
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:12
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:12
+msgid "From"
+msgstr "မှ"
+
+#: flamingo/admin/edit-outbound-form.php:19
+msgid "Compose a Message"
+msgstr "စာရေးပါ"
+
+#: flamingo/admin/edit-outbound-form.php:21
+msgid "Outbound Message"
+msgstr "ထွက်စာ"
+
+#: flamingo/admin/edit-outbound-form.php:48
+msgid "To"
+msgstr "သို့"
+
+#: flamingo/admin/edit-outbound-form.php:66
+msgid "Body"
+msgstr "စာကိုယ်"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:14
+msgid "History"
+msgstr "မှတ်တမ်း"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:15
+msgid "Last Contact"
+msgstr "နောက်ဆုံးရ အဆက်အသွယ် အချိန်"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:82
+#: flamingo/admin/includes/meta-boxes.php:11
+msgid "Delete"
+msgstr "ဖျက်ရန်"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:106
+msgid "View all tags"
+msgstr "စာညွှန်းများအားလုံးကို ကြည့်ပါ"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:112
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:212
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:153
+msgid "Filter"
+msgstr "စစ်ထုတ်ရန်"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:115
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:217
+msgid "Export"
+msgstr "ဖိုင်ထုတ်ယူရန်"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:138
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:252
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:187
+msgid "Edit"
+msgstr "ပြင်ရန်"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:142
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:271
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:191
+#, php-format
+msgid "Edit &#8220;%s&#8221;"
+msgstr "&#8220;%s&#8221; ကို ပြင်ရန်"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:154
+msgid "No Tags"
+msgstr "စာညွှန်းများ မရှိပါ"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:183
+msgid "User"
+msgstr "အသုံးပြုသူ"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:196
+#, php-format
+msgid "Comment (%d)"
+msgstr "မှတ်ချက် (%d)"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:235
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:323
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:207
+#: flamingo/includes/class-inbound-message.php:132
+#: flamingo/includes/class-outbound-message.php:80
+msgid "Y/m/d g:i:s A"
+msgstr "Y/m/d g:i:s A"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:242
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:330
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:214
+#, php-format
+msgid "%s ago"
+msgstr " လွန်ခဲ့သော%s က"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:244
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:332
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:216
+msgid "Y/m/d"
+msgstr "Y/m/d"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:13
+msgid "Channel"
+msgstr "ချန်နယ်"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:160
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:134
+msgid "Restore"
+msgstr "ပြန်ယူရန်"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:164
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:138
+#: flamingo/admin/includes/meta-boxes.php:108
+#: flamingo/admin/includes/meta-boxes.php:209
+msgid "Delete Permanently"
+msgstr "အပြီးအပိုင် ဖျက်ပါ"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:166
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:140
+#: flamingo/admin/includes/meta-boxes.php:110
+#: flamingo/admin/includes/meta-boxes.php:211
+msgid "Move to Trash"
+msgstr "အမှိုက်ပုံးထဲသို့ ထည့်ရန်"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:170
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:260
+msgid "Not Spam"
+msgstr ""
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:172
+msgid "Mark as Spam"
+msgstr ""
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:204
+msgid "View all channels"
+msgstr "ချန်နယ်များအားလုံးကို ကြည့်ရန်"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:223
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:158
+msgid "Empty Trash"
+msgstr "အမှိုက်မရှိပါ"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:266
+#: flamingo/includes/class-inbound-message.php:32
+msgid "Spam"
+msgstr ""
+
+#: flamingo/admin/includes/meta-boxes.php:17
+#, php-format
+msgid ""
+"You are about to delete this contact '%s'\n"
+" 'Cancel' to stop, 'OK' to delete."
+msgstr ""
+"ဤ အဆက်အသွယ်'%s' ကို ဖျက်ပစ်တော့မည် \n"
+"မဖျက်တော့ပါက 'Cancel' , ဖျက်မည်ဆိုက 'OK' ရွေးရန်"
+
+#: flamingo/admin/includes/meta-boxes.php:23
+msgid "Update Contact"
+msgstr "အဆက်အသွယ်ကို ပြင်ရန်"
+
+#: flamingo/admin/includes/meta-boxes.php:25
+msgid "Add Contact"
+msgstr "အဆက်အသွယ် ထည့်ရန်"
+
+#: flamingo/admin/includes/meta-boxes.php:69
+msgid "Separate tags with commas"
+msgstr "စာညွှန်းများကို ကော်မာဖြင့် ခွဲခြားရန်"
+
+#: flamingo/admin/includes/meta-boxes.php:72
+msgid "Choose from the most used tags"
+msgstr "အသုံးအများဆုံး "
+
+#: flamingo/admin/includes/meta-boxes.php:122
+msgid "Update Message"
+msgstr "စာ ပြင်ရန်"
+
+#: flamingo/admin/includes/meta-boxes.php:124
+msgid "Add Message"
+msgstr "စာ ထည့်ရန်"
+
+#: flamingo/admin/includes/meta-boxes.php:189
+msgid "Save Draft"
+msgstr "အကြမ်းသိမ်းရန်"
+
+#: flamingo/admin/includes/meta-boxes.php:223
+msgid "Send Message"
+msgstr "စာပို့ရန်"
+
+#: flamingo/includes/class-contact.php:20
+msgid "Flamingo Contacts"
+msgstr "Flamingo အဆက်အသွယ်များ"
+
+#: flamingo/includes/class-contact.php:21
+msgid "Flamingo Contact"
+msgstr "Flamingo အဆက်အသွယ်"
+
+#: flamingo/includes/class-contact.php:27
+msgid "Flamingo Contact Tags"
+msgstr "Flamingo အဆက်အသွယ် စာညွှန်းများ"
+
+#: flamingo/includes/class-contact.php:28
+msgid "Flamingo Contact Tag"
+msgstr "Flamingo အဆက်အသွယ် စာညွှန်း"
+
+#: flamingo/includes/class-inbound-message.php:27
+msgid "Flamingo Inbound Message"
+msgstr "Flamingo ဝင်စာ"
+
+#: flamingo/includes/class-inbound-message.php:40
+msgid "Flamingo Inbound Message Channels"
+msgstr "Flamingo အဝင်စာ ချန်နယ်များ"
+
+#: flamingo/includes/class-inbound-message.php:41
+msgid "Flamingo Inbound Message Channel"
+msgstr "Flamingo အဝင်စာ ချန်နယ်"
+
+#: flamingo/includes/class-inbound-message.php:168
+#: flamingo/includes/class-outbound-message.php:92
+msgid "(No Title)"
+msgstr "(ခေါင်းစဉ်တပ်ထားခြင်းမရှိ)"
+
+#: flamingo/includes/class-outbound-message.php:20
+msgid "Flamingo Outbound Messages"
+msgstr "Flamingo ထွက်စာများ"
+
+#: flamingo/includes/class-outbound-message.php:21
+msgid "Flamingo Outbound Message"
+msgstr "Flamingo ထွက်စာ"

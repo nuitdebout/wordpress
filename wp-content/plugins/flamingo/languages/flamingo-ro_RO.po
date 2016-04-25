@@ -1,0 +1,352 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Flamingo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-10-19 00:15+0900\n"
+"PO-Revision-Date: 2014-01-08 15:43-0000\n"
+"Last-Translator: Inbox Translation <info@inboxtranslation.com>\n"
+"Language-Team: Inbox Translation\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_c\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.6.3\n"
+"Language: ro\n"
+"X-Poedit-SearchPath-0: flamingo\n"
+
+#: flamingo/admin/admin.php:9 flamingo/admin/admin.php:14
+#: flamingo/admin/admin.php:256
+msgid "Flamingo Address Book"
+msgstr "Agendă Flamingo"
+
+#: flamingo/admin/admin.php:9
+msgid "Flamingo"
+msgstr "Flamingo"
+
+#: flamingo/admin/admin.php:14
+msgid "Address Book"
+msgstr "Agendă"
+
+#: flamingo/admin/admin.php:20 flamingo/includes/class-inbound-message.php:24
+msgid "Flamingo Inbound Messages"
+msgstr "Mesaje de intrare Flamingo"
+
+#: flamingo/admin/admin.php:20 flamingo/admin/admin.php:489
+msgid "Inbound Messages"
+msgstr "Mesaje de intrare"
+
+#: flamingo/admin/admin.php:66
+msgid "Contact updated."
+msgstr "Contact actualizat."
+
+#: flamingo/admin/admin.php:68
+msgid "Contact deleted."
+msgstr "Contact şters."
+
+#: flamingo/admin/admin.php:70
+msgid "Messages trashed."
+msgstr "Mesajele au fost trimise la gunoi."
+
+#: flamingo/admin/admin.php:72
+msgid "Messages restored."
+msgstr "Mesajele au fost restituite."
+
+#: flamingo/admin/admin.php:74
+msgid "Messages deleted."
+msgstr "Mesajele au fost şterse."
+
+#: flamingo/admin/admin.php:76
+msgid "Messages got marked as spam."
+msgstr "Mesajele au fost marcate ca spam."
+
+#: flamingo/admin/admin.php:78
+msgid "Messages got marked as not spam."
+msgstr "Mesajele au fost marcate ca non-spam."
+
+#: flamingo/admin/admin.php:105
+msgid "You are not allowed to edit this item."
+msgstr "Editarea acestui obiect nu este permisă."
+
+#: flamingo/admin/admin.php:144 flamingo/admin/admin.php:377
+msgid "You are not allowed to delete this item."
+msgstr "Ştergerea acestui obiect nu este permisă."
+
+#: flamingo/admin/admin.php:147 flamingo/admin/admin.php:380
+msgid "Error in deleting."
+msgstr "Eroare la ştergere."
+
+#: flamingo/admin/admin.php:170
+#: flamingo/admin/includes/class-contacts-list-table.php:11
+msgid "Email"
+msgstr "Email"
+
+#: flamingo/admin/admin.php:170 flamingo/admin/includes/meta-boxes.php:140
+msgid "Full name"
+msgstr "Nume întreg"
+
+#: flamingo/admin/admin.php:171 flamingo/admin/includes/meta-boxes.php:145
+msgid "First name"
+msgstr "Prenume"
+
+#: flamingo/admin/admin.php:171 flamingo/admin/includes/meta-boxes.php:150
+msgid "Last name"
+msgstr "Nume de familie"
+
+#: flamingo/admin/admin.php:215 flamingo/admin/admin.php:451
+msgid "Save"
+msgstr "Salvează"
+
+#: flamingo/admin/admin.php:218
+#: flamingo/admin/includes/class-contacts-list-table.php:13
+msgid "Tags"
+msgstr "Etichete"
+
+#: flamingo/admin/admin.php:221
+#: flamingo/admin/includes/class-contacts-list-table.php:12
+msgid "Name"
+msgstr "Nume"
+
+#: flamingo/admin/admin.php:234
+msgid "Contacts"
+msgstr "Contacte"
+
+#: flamingo/admin/admin.php:260 flamingo/admin/admin.php:493
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
+msgstr "Rezultatele căutării pentru &#8220;%s&#8221;"
+
+#: flamingo/admin/admin.php:269
+msgid "Search Contacts"
+msgstr "Caută în contacte"
+
+#: flamingo/admin/admin.php:310
+msgid "You are not allowed to move this item to the Trash."
+msgstr "Mutarea acestui obiect în gunoi nu este permisă."
+
+#: flamingo/admin/admin.php:313
+msgid "Error in moving to Trash."
+msgstr "Eroare la mutarea în gunoi."
+
+#: flamingo/admin/admin.php:340
+msgid "You are not allowed to restore this item from the Trash."
+msgstr "Restituirea acestui obiect din gunoi nu este permisă."
+
+#: flamingo/admin/admin.php:343
+msgid "Error in restoring from Trash."
+msgstr "Eroare la restituirea din gunoi."
+
+#: flamingo/admin/admin.php:407
+msgid "You are not allowed to spam this item."
+msgstr "Marcarea acestui obiect ca spam nu este permisă."
+
+#: flamingo/admin/admin.php:435
+msgid "You are not allowed to unspam this item."
+msgstr "Marcarea acestui obiect ca non-spam nu este permisă."
+
+#: flamingo/admin/admin.php:454
+msgid "Fields"
+msgstr "Câmpuri"
+
+#: flamingo/admin/admin.php:467
+msgid "Messages"
+msgstr "Mesaje"
+
+#: flamingo/admin/admin.php:504
+msgid "Search Messages"
+msgstr "Caută în mesaje"
+
+#: flamingo/admin/edit-contact-form.php:17
+msgid "Edit Contact"
+msgstr "Editează contactul"
+
+#: flamingo/admin/edit-contact-form.php:43
+msgid "Enter email here"
+msgstr "Introduceţi email-ul aici"
+
+#: flamingo/admin/edit-inbound-form.php:17
+msgid "Inbound Message"
+msgstr "Mesaj de intrare"
+
+#: flamingo/admin/edit-inbound-form.php:42
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:14
+msgid "Date"
+msgstr "Dată"
+
+#: flamingo/admin/edit-inbound-form.php:47
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:11
+msgid "Subject"
+msgstr "Subiect"
+
+#: flamingo/admin/edit-inbound-form.php:52
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:12
+msgid "From"
+msgstr "De la"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:14
+msgid "History"
+msgstr "Istorie"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:15
+msgid "Last Contact"
+msgstr "Ultimul contact"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:82
+#: flamingo/admin/includes/meta-boxes.php:11
+msgid "Delete"
+msgstr "Şterge"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:106
+msgid "View all tags"
+msgstr "Vizualizează toate etichetele"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:112
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:173
+msgid "Filter"
+msgstr "Filtrează"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:115
+msgid "Export"
+msgstr "Exportă"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:138
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:207
+msgid "Edit"
+msgstr "Editează"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:142
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:227
+#, php-format
+msgid "Edit &#8220;%s&#8221;"
+msgstr "Editează &#8220;%s&#8221;"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:154
+msgid "No Tags"
+msgstr "Nici o etichetă"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:183
+msgid "User"
+msgstr "Utilizator"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:196
+#, php-format
+msgid "Comment (%d)"
+msgstr "Comentariu (%d)"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:235
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:260
+#: flamingo/includes/class-inbound-message.php:115
+msgid "Y/m/d g:i:s A"
+msgstr "Y/m/d g:i:s A"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:242
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:267
+#, php-format
+msgid "%s ago"
+msgstr "Acum %s"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:244
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:269
+msgid "Y/m/d"
+msgstr "Y/m/d"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:13
+msgid "Channel"
+msgstr "Canal"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:131
+msgid "Restore"
+msgstr "Restituie"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:134
+#: flamingo/admin/includes/meta-boxes.php:107
+msgid "Delete Permanently"
+msgstr "Şterge permanent"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:136
+#: flamingo/admin/includes/meta-boxes.php:109
+msgid "Move to Trash"
+msgstr "Mută la gunoi"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:167
+msgid "View all channels"
+msgstr "Vizualizează toate canalele"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:178
+msgid "Empty Trash"
+msgstr "Goleşte gunoiul"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:215
+msgid "Not Spam"
+msgstr "Nu este spam"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:221
+msgid "Spam"
+msgstr "Spam"
+
+#: flamingo/admin/includes/meta-boxes.php:17
+#, php-format
+msgid ""
+"You are about to delete this contact '%s'\n"
+" 'Cancel' to stop, 'OK' to delete."
+msgstr ""
+"Sunteţi pe cale sa ştergeţi acest contact '%s'\n"
+" 'Cancel' pentru a opri procesul, 'OK' pentru a şterge."
+
+#: flamingo/admin/includes/meta-boxes.php:22
+msgid "Update Contact"
+msgstr "Actualizează contactul"
+
+#: flamingo/admin/includes/meta-boxes.php:24
+msgid "Add Contact"
+msgstr "Adaugă contact"
+
+#: flamingo/admin/includes/meta-boxes.php:68
+msgid "Separate tags with commas"
+msgstr "Separă etichetele cu virgule"
+
+#: flamingo/admin/includes/meta-boxes.php:71
+msgid "Choose from the most used tags"
+msgstr "Alege din etichetele cele mai folosite"
+
+#: flamingo/admin/includes/meta-boxes.php:120
+msgid "Update Message"
+msgstr "Actualizează mesajul"
+
+#: flamingo/admin/includes/meta-boxes.php:122
+msgid "Add Message"
+msgstr "Adaugă mesaj"
+
+#: flamingo/includes/class-contact.php:20
+msgid "Flamingo Contacts"
+msgstr "Contacte Flamingo"
+
+#: flamingo/includes/class-contact.php:21
+msgid "Flamingo Contact"
+msgstr "Contact Flamingo"
+
+#: flamingo/includes/class-contact.php:27
+msgid "Flamingo Contact Tags"
+msgstr "Etichete ale contactului Flamingo"
+
+#: flamingo/includes/class-contact.php:28
+msgid "Flamingo Contact Tag"
+msgstr "Etichetă a contactului Flamingo"
+
+#: flamingo/includes/class-inbound-message.php:25
+msgid "Flamingo Inbound Message"
+msgstr "Mesaj de intrare Flamingo"
+
+#: flamingo/includes/class-inbound-message.php:31
+msgid "Flamingo Inbound Message Channels"
+msgstr "Canale pentru mesaje de intrare Flamingo"
+
+#: flamingo/includes/class-inbound-message.php:32
+msgid "Flamingo Inbound Message Channel"
+msgstr "Canal pentru mesaje de intrare Flamingo"
+
+#: flamingo/includes/class-inbound-message.php:135
+msgid "(No Title)"
+msgstr "(Fără titlu)"

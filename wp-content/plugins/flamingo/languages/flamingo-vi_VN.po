@@ -1,0 +1,352 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Flamingo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-10-19 00:15+0900\n"
+"PO-Revision-Date: 2013-02-01 15:54+0700\n"
+"Last-Translator: \n"
+"Language-Team: ICA Design <lienhe@icadesign.vn>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_c\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.4\n"
+"Language: vi_VN\n"
+"X-Poedit-SearchPath-0: flamingo\n"
+
+#: flamingo/admin/admin.php:9 flamingo/admin/admin.php:14
+#: flamingo/admin/admin.php:256
+msgid "Flamingo Address Book"
+msgstr "Địa chỉ liên hệ"
+
+#: flamingo/admin/admin.php:9
+msgid "Flamingo"
+msgstr "Danh bạ Liên Hệ"
+
+#: flamingo/admin/admin.php:14
+msgid "Address Book"
+msgstr "Địa chỉ liên hệ"
+
+#: flamingo/admin/admin.php:20 flamingo/includes/class-inbound-message.php:24
+msgid "Flamingo Inbound Messages"
+msgstr "Xem Liên hệ"
+
+#: flamingo/admin/admin.php:20 flamingo/admin/admin.php:489
+msgid "Inbound Messages"
+msgstr "Xem Liên hệ"
+
+#: flamingo/admin/admin.php:66
+msgid "Contact updated."
+msgstr "Đã cập nhật liên hệ"
+
+#: flamingo/admin/admin.php:68
+msgid "Contact deleted."
+msgstr "Đã xóa địa chỉ liên hệ"
+
+#: flamingo/admin/admin.php:70
+msgid "Messages trashed."
+msgstr "Thư đã được xóa"
+
+#: flamingo/admin/admin.php:72
+msgid "Messages restored."
+msgstr "Thư đã được khôi phục"
+
+#: flamingo/admin/admin.php:74
+msgid "Messages deleted."
+msgstr "Đã xóa Thư"
+
+#: flamingo/admin/admin.php:76
+msgid "Messages got marked as spam."
+msgstr "Thư đã được đánh dấu là Thư rác"
+
+#: flamingo/admin/admin.php:78
+msgid "Messages got marked as not spam."
+msgstr "Thư không được đánh dấu là Thư rác"
+
+#: flamingo/admin/admin.php:105
+msgid "You are not allowed to edit this item."
+msgstr "Bạn không được phép chỉnh sửa mục này."
+
+#: flamingo/admin/admin.php:144 flamingo/admin/admin.php:377
+msgid "You are not allowed to delete this item."
+msgstr "Bạn không được phép xóa mục này."
+
+#: flamingo/admin/admin.php:147 flamingo/admin/admin.php:380
+msgid "Error in deleting."
+msgstr "Lỗi khi xóa"
+
+#: flamingo/admin/admin.php:170
+#: flamingo/admin/includes/class-contacts-list-table.php:11
+msgid "Email"
+msgstr "Hòm thư"
+
+#: flamingo/admin/admin.php:170 flamingo/admin/includes/meta-boxes.php:140
+msgid "Full name"
+msgstr "Tên đầy đủ"
+
+#: flamingo/admin/admin.php:171 flamingo/admin/includes/meta-boxes.php:145
+msgid "First name"
+msgstr "Họ"
+
+#: flamingo/admin/admin.php:171 flamingo/admin/includes/meta-boxes.php:150
+msgid "Last name"
+msgstr "Tên"
+
+#: flamingo/admin/admin.php:215 flamingo/admin/admin.php:451
+msgid "Save"
+msgstr "Lưu lại"
+
+#: flamingo/admin/admin.php:218
+#: flamingo/admin/includes/class-contacts-list-table.php:13
+msgid "Tags"
+msgstr "Thẻ"
+
+#: flamingo/admin/admin.php:221
+#: flamingo/admin/includes/class-contacts-list-table.php:12
+msgid "Name"
+msgstr "Tên"
+
+#: flamingo/admin/admin.php:234
+msgid "Contacts"
+msgstr "Liên hệ"
+
+#: flamingo/admin/admin.php:260 flamingo/admin/admin.php:493
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
+msgstr "Kết quả tìm kiếm cho &#8220;%s&#8221;"
+
+#: flamingo/admin/admin.php:269
+msgid "Search Contacts"
+msgstr "Tìm kiếm Địa chỉ liên hệ"
+
+#: flamingo/admin/admin.php:310
+msgid "You are not allowed to move this item to the Trash."
+msgstr "Bạn không được phép di chuyển mục này vào Thùng rác"
+
+#: flamingo/admin/admin.php:313
+msgid "Error in moving to Trash."
+msgstr "Lỗi khi di chuyển vào Thùng rác"
+
+#: flamingo/admin/admin.php:340
+msgid "You are not allowed to restore this item from the Trash."
+msgstr "Bạn không được phép khôi phục mục này từ Thùng rác"
+
+#: flamingo/admin/admin.php:343
+msgid "Error in restoring from Trash."
+msgstr "Lỗi khi khôi phục từ Thùng rác"
+
+#: flamingo/admin/admin.php:407
+msgid "You are not allowed to spam this item."
+msgstr "Bạn không được phép gởi thư rác mục này"
+
+#: flamingo/admin/admin.php:435
+msgid "You are not allowed to unspam this item."
+msgstr "Bạn không được phép không gởi thư rác mục này"
+
+#: flamingo/admin/admin.php:454
+msgid "Fields"
+msgstr "Trường"
+
+#: flamingo/admin/admin.php:467
+msgid "Messages"
+msgstr "Tin nhắn"
+
+#: flamingo/admin/admin.php:504
+msgid "Search Messages"
+msgstr "Tìm kiếm Tin nhắn"
+
+#: flamingo/admin/edit-contact-form.php:17
+msgid "Edit Contact"
+msgstr "Chỉnh sửa liên hệ"
+
+#: flamingo/admin/edit-contact-form.php:43
+msgid "Enter email here"
+msgstr "Nhập hòm thư vào đây"
+
+#: flamingo/admin/edit-inbound-form.php:17
+msgid "Inbound Message"
+msgstr "Xem liên hệ"
+
+#: flamingo/admin/edit-inbound-form.php:42
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:14
+msgid "Date"
+msgstr "Ngày"
+
+#: flamingo/admin/edit-inbound-form.php:47
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:11
+msgid "Subject"
+msgstr "Chủ đề"
+
+#: flamingo/admin/edit-inbound-form.php:52
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:12
+msgid "From"
+msgstr "Người gửi"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:14
+msgid "History"
+msgstr "Lịch sử"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:15
+msgid "Last Contact"
+msgstr "Liên hệ gần đây nhất"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:82
+#: flamingo/admin/includes/meta-boxes.php:11
+msgid "Delete"
+msgstr "Xóa"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:106
+msgid "View all tags"
+msgstr "Xem tất cả các thẻ"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:112
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:173
+msgid "Filter"
+msgstr "Bộ lọc"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:115
+msgid "Export"
+msgstr "Xuất ra"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:138
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:207
+msgid "Edit"
+msgstr "Chỉnh sửa"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:142
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:227
+#, php-format
+msgid "Edit &#8220;%s&#8221;"
+msgstr "Chỉnh sửa &#8220;%s&#8221;"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:154
+msgid "No Tags"
+msgstr "Không có thẻ"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:183
+msgid "User"
+msgstr "Thành viên"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:196
+#, php-format
+msgid "Comment (%d)"
+msgstr "Bình luận (%d)"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:235
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:260
+#: flamingo/includes/class-inbound-message.php:115
+msgid "Y/m/d g:i:s A"
+msgstr "Y/m/d g:i:s A"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:242
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:267
+#, php-format
+msgid "%s ago"
+msgstr "%s ago"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:244
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:269
+msgid "Y/m/d"
+msgstr "Y/m/d"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:13
+msgid "Channel"
+msgstr "Kênh liên hệ"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:131
+msgid "Restore"
+msgstr "Khôi phục"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:134
+#: flamingo/admin/includes/meta-boxes.php:107
+msgid "Delete Permanently"
+msgstr "Xóa vĩnh viễn"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:136
+#: flamingo/admin/includes/meta-boxes.php:109
+msgid "Move to Trash"
+msgstr "Di chuyển sang Thùng rác"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:167
+msgid "View all channels"
+msgstr "Xem tất cả các kênh liên hệ"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:178
+msgid "Empty Trash"
+msgstr "Dọn sạch Thùng rác"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:215
+msgid "Not Spam"
+msgstr "Không phải Thư rác"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:221
+msgid "Spam"
+msgstr "Thư rác"
+
+#: flamingo/admin/includes/meta-boxes.php:17
+#, php-format
+msgid ""
+"You are about to delete this contact '%s'\n"
+" 'Cancel' to stop, 'OK' to delete."
+msgstr ""
+"Bạn muốn xóa địa chỉ liên hệ này '%s'\n"
+" 'Hủy' để dừng lại, 'Chấp nhận' để xóa đi."
+
+#: flamingo/admin/includes/meta-boxes.php:22
+msgid "Update Contact"
+msgstr "Cập nhật liên hệ"
+
+#: flamingo/admin/includes/meta-boxes.php:24
+msgid "Add Contact"
+msgstr "Thêm địa chỉ liên hệ"
+
+#: flamingo/admin/includes/meta-boxes.php:68
+msgid "Separate tags with commas"
+msgstr "Phân cách các thẻ bằng dấu phẩy"
+
+#: flamingo/admin/includes/meta-boxes.php:71
+msgid "Choose from the most used tags"
+msgstr "Chọn từ các thẻ được sử dụng nhiều nhất"
+
+#: flamingo/admin/includes/meta-boxes.php:120
+msgid "Update Message"
+msgstr "Cập nhật Tin nhắn"
+
+#: flamingo/admin/includes/meta-boxes.php:122
+msgid "Add Message"
+msgstr "Thêm tin nhắn"
+
+#: flamingo/includes/class-contact.php:20
+msgid "Flamingo Contacts"
+msgstr "Liên hệ"
+
+#: flamingo/includes/class-contact.php:21
+msgid "Flamingo Contact"
+msgstr "Liên hệ"
+
+#: flamingo/includes/class-contact.php:27
+msgid "Flamingo Contact Tags"
+msgstr "Thẻ Liên hệ"
+
+#: flamingo/includes/class-contact.php:28
+msgid "Flamingo Contact Tag"
+msgstr "Thẻ Liên hệ"
+
+#: flamingo/includes/class-inbound-message.php:25
+msgid "Flamingo Inbound Message"
+msgstr "Xem Liên hệ"
+
+#: flamingo/includes/class-inbound-message.php:31
+msgid "Flamingo Inbound Message Channels"
+msgstr "Xem Kênh Liên hệ"
+
+#: flamingo/includes/class-inbound-message.php:32
+msgid "Flamingo Inbound Message Channel"
+msgstr "Xem Kênh Liên hệ"
+
+#: flamingo/includes/class-inbound-message.php:135
+msgid "(No Title)"
+msgstr "(Không tiêu đề)"

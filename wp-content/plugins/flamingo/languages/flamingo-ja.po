@@ -1,0 +1,442 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Flamingo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-02 14:57+0900\n"
+"PO-Revision-Date: 2015-08-02 14:57+0900\n"
+"Last-Translator: Takayuki Miyoshi <takayukister@gmail.com>\n"
+"Language-Team: Takayuki Miyoshi <takayukister@gmail.com>\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_c\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.1\n"
+"X-Poedit-SearchPath-0: flamingo\n"
+
+#: flamingo/admin/admin.php:16 flamingo/admin/admin.php:22
+#: flamingo/admin/admin.php:284
+msgid "Flamingo Address Book"
+msgstr "Flamingo アドレス帳"
+
+#: flamingo/admin/admin.php:17
+msgid "Flamingo"
+msgstr "Flamingo"
+
+#: flamingo/admin/admin.php:23
+msgid "Address Book"
+msgstr "アドレス帳"
+
+#: flamingo/admin/admin.php:30 flamingo/includes/class-inbound-message.php:26
+msgid "Flamingo Inbound Messages"
+msgstr "Flamingo 受信メッセージ"
+
+#: flamingo/admin/admin.php:31 flamingo/admin/admin.php:600
+msgid "Inbound Messages"
+msgstr "受信メッセージ"
+
+#: flamingo/admin/admin.php:78
+msgid "Contact updated."
+msgstr "連絡先を更新しました。"
+
+#: flamingo/admin/admin.php:80
+msgid "Contact deleted."
+msgstr "連絡先を削除しました。"
+
+#: flamingo/admin/admin.php:82
+msgid "Messages trashed."
+msgstr "メッセージをゴミ箱に移動しました。"
+
+#: flamingo/admin/admin.php:84
+msgid "Messages restored."
+msgstr "メッセージをゴミ箱から復元しました。"
+
+#: flamingo/admin/admin.php:86
+msgid "Messages deleted."
+msgstr "メッセージを削除しました。"
+
+#: flamingo/admin/admin.php:88
+msgid "Messages got marked as spam."
+msgstr "メッセージをスパムとして報告しました。"
+
+#: flamingo/admin/admin.php:90
+msgid "Messages got marked as not spam."
+msgstr "メッセージをスパムではないと報告しました。"
+
+#: flamingo/admin/admin.php:92
+msgid "Messages updated."
+msgstr "メッセージを更新しました。"
+
+#: flamingo/admin/admin.php:119 flamingo/admin/admin.php:657
+msgid "You are not allowed to edit this item."
+msgstr "この項目の編集は許可されていません。"
+
+#: flamingo/admin/admin.php:158 flamingo/admin/admin.php:407
+msgid "You are not allowed to delete this item."
+msgstr "この項目を削除する権限がありません。"
+
+#: flamingo/admin/admin.php:161 flamingo/admin/admin.php:410
+msgid "Error in deleting."
+msgstr "削除中にエラーが発生しました。"
+
+#: flamingo/admin/admin.php:186
+#: flamingo/admin/includes/class-contacts-list-table.php:11
+msgid "Email"
+msgstr "メールアドレス"
+
+#: flamingo/admin/admin.php:186 flamingo/admin/includes/meta-boxes.php:142
+msgid "Full name"
+msgstr "フルネーム"
+
+#: flamingo/admin/admin.php:187 flamingo/admin/includes/meta-boxes.php:147
+msgid "First name"
+msgstr "名"
+
+#: flamingo/admin/admin.php:187 flamingo/admin/includes/meta-boxes.php:152
+msgid "Last name"
+msgstr "姓"
+
+#: flamingo/admin/admin.php:243 flamingo/admin/admin.php:562
+#: flamingo/admin/includes/meta-boxes.php:184
+msgid "Save"
+msgstr "保存"
+
+#: flamingo/admin/admin.php:246
+#: flamingo/admin/includes/class-contacts-list-table.php:13
+msgid "Tags"
+msgstr "タグ"
+
+#: flamingo/admin/admin.php:249
+#: flamingo/admin/includes/class-contacts-list-table.php:12
+msgid "Name"
+msgstr "名前"
+
+#: flamingo/admin/admin.php:262
+msgid "Contacts"
+msgstr "連絡先"
+
+#: flamingo/admin/admin.php:288 flamingo/admin/admin.php:604
+#: flamingo/admin/admin.php:716
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
+msgstr "&#8220;%s&#8221; の検索結果"
+
+#: flamingo/admin/admin.php:297
+msgid "Search Contacts"
+msgstr "連絡先を検索"
+
+#: flamingo/admin/admin.php:338
+msgid "You are not allowed to move this item to the Trash."
+msgstr "この項目をゴミ箱へ移動する権限がありません。 "
+
+#: flamingo/admin/admin.php:341
+msgid "Error in moving to Trash."
+msgstr "ゴミ箱への移動中にエラーが発生しました。"
+
+#: flamingo/admin/admin.php:368
+msgid "You are not allowed to restore this item from the Trash."
+msgstr "この項目をゴミ箱から元の状態に戻す権限がありません。 "
+
+#: flamingo/admin/admin.php:371
+msgid "Error in restoring from Trash."
+msgstr "ゴミ箱からの復元中にエラーが発生しました。"
+
+#: flamingo/admin/admin.php:437
+msgid "You are not allowed to spam this item."
+msgstr "この項目のスパム登録は許可されていません。"
+
+#: flamingo/admin/admin.php:465
+msgid "You are not allowed to unspam this item."
+msgstr "この項目のスパム解除は許可されていません。"
+
+#: flamingo/admin/admin.php:533 flamingo/admin/edit-inbound-form.php:42
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:17
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:15
+msgid "Date"
+msgstr "日付"
+
+#: flamingo/admin/admin.php:565
+msgid "Fields"
+msgstr "項目"
+
+#: flamingo/admin/admin.php:578 flamingo/admin/admin.php:690
+msgid "Messages"
+msgstr "メッセージ"
+
+#: flamingo/admin/admin.php:615 flamingo/admin/admin.php:727
+msgid "Search Messages"
+msgstr "メッセージを検索"
+
+#: flamingo/admin/admin.php:677
+msgid "Send"
+msgstr "送信"
+
+#: flamingo/admin/admin.php:712
+msgid "Outbound Messages"
+msgstr "送信メッセージ"
+
+#: flamingo/admin/edit-contact-form.php:17
+msgid "Edit Contact"
+msgstr "連絡先を編集"
+
+#: flamingo/admin/edit-contact-form.php:43
+msgid "Enter email here"
+msgstr "メールアドレスを入力してください"
+
+#: flamingo/admin/edit-inbound-form.php:17
+msgid "Inbound Message"
+msgstr "受信メッセージ"
+
+#: flamingo/admin/edit-inbound-form.php:47
+#: flamingo/admin/edit-outbound-form.php:61
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:14
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:13
+msgid "Subject"
+msgstr "件名"
+
+#: flamingo/admin/edit-inbound-form.php:52
+#: flamingo/admin/edit-outbound-form.php:56
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:15
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:14
+msgid "From"
+msgstr "送信者"
+
+#: flamingo/admin/edit-outbound-form.php:19
+msgid "Compose a Message"
+msgstr "メッセージを作成"
+
+#: flamingo/admin/edit-outbound-form.php:21
+msgid "Outbound Message"
+msgstr "送信メッセージ"
+
+#: flamingo/admin/edit-outbound-form.php:48
+msgid "To"
+msgstr "宛先"
+
+#: flamingo/admin/edit-outbound-form.php:66
+msgid "Body"
+msgstr "本文"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:14
+msgid "History"
+msgstr "履歴"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:15
+msgid "Last Contact"
+msgstr "最終接触"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:85
+#: flamingo/admin/includes/meta-boxes.php:11
+msgid "Delete"
+msgstr "削除"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:109
+msgid "View all tags"
+msgstr "すべてのタグを表示する"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:115
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:220
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:159
+msgid "Filter"
+msgstr "フィルター"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:118
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:225
+msgid "Export"
+msgstr "エクスポート"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:142
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:261
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:194
+msgid "Edit"
+msgstr "編集"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:146
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:280
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:198
+#, php-format
+msgid "Edit &#8220;%s&#8221;"
+msgstr "&#8220;%s&#8221; を編集する"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:158
+msgid "No Tags"
+msgstr "タグなし"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:187
+msgid "User"
+msgstr "ユーザー"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:200
+#, php-format
+msgid "Comment (%d)"
+msgstr "コメント (%d)"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:239
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:332
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:214
+#: flamingo/includes/class-inbound-message.php:132
+#: flamingo/includes/class-outbound-message.php:80
+msgid "Y/m/d g:i:s A"
+msgstr "Y年n月j日 g:i:s a"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:246
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:339
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:221
+#, php-format
+msgid "%s ago"
+msgstr "%s前"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:248
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:341
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:223
+msgid "Y/m/d"
+msgstr "Y年n月j日"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:16
+msgid "Channel"
+msgstr "経路"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:168
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:140
+msgid "Restore"
+msgstr "復元"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:172
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:144
+#: flamingo/admin/includes/meta-boxes.php:108
+#: flamingo/admin/includes/meta-boxes.php:209
+msgid "Delete Permanently"
+msgstr "完全に削除する"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:174
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:146
+#: flamingo/admin/includes/meta-boxes.php:110
+#: flamingo/admin/includes/meta-boxes.php:211
+msgid "Move to Trash"
+msgstr "ゴミ箱へ移動"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:178
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:269
+msgid "Not Spam"
+msgstr "スパムを解除"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:180
+msgid "Mark as Spam"
+msgstr "スパムとしてマーク"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:212
+msgid "View all channels"
+msgstr "すべての経路を表示する"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:231
+#: flamingo/admin/includes/class-outbound-messages-list-table.php:164
+msgid "Empty Trash"
+msgstr "ゴミ箱を空にする"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:275
+#: flamingo/includes/class-inbound-message.php:32
+msgid "Spam"
+msgstr "スパム"
+
+#: flamingo/admin/includes/meta-boxes.php:17
+#, php-format
+msgid ""
+"You are about to delete this contact '%s'\n"
+" 'Cancel' to stop, 'OK' to delete."
+msgstr ""
+"この連絡先 '%s' を削除しようとしています。\n"
+"中止するには 'キャンセル' を、削除するには 'OK' をクリックしてください。"
+
+#: flamingo/admin/includes/meta-boxes.php:23
+msgid "Update Contact"
+msgstr "連絡先を更新"
+
+#: flamingo/admin/includes/meta-boxes.php:25
+msgid "Add Contact"
+msgstr "連絡先を追加"
+
+#: flamingo/admin/includes/meta-boxes.php:69
+msgid "Separate tags with commas"
+msgstr "タグが複数ある場合はコンマで区切ってください"
+
+#: flamingo/admin/includes/meta-boxes.php:72
+msgid "Choose from the most used tags"
+msgstr "最もよく使われているタグから選択"
+
+#: flamingo/admin/includes/meta-boxes.php:122
+msgid "Update Message"
+msgstr "メッセージを更新"
+
+#: flamingo/admin/includes/meta-boxes.php:124
+msgid "Add Message"
+msgstr "メッセージを追加"
+
+#: flamingo/admin/includes/meta-boxes.php:189
+msgid "Save Draft"
+msgstr "下書きとして保存"
+
+#: flamingo/admin/includes/meta-boxes.php:223
+msgid "Send Message"
+msgstr "メッセージを送信"
+
+#: flamingo/includes/class-contact.php:20
+msgid "Flamingo Contacts"
+msgstr "Flamingo の連絡先"
+
+#: flamingo/includes/class-contact.php:21
+msgid "Flamingo Contact"
+msgstr "Flamingo の連絡先"
+
+#: flamingo/includes/class-contact.php:27
+msgid "Flamingo Contact Tags"
+msgstr "Flamingo の連絡先タグ"
+
+#: flamingo/includes/class-contact.php:28
+msgid "Flamingo Contact Tag"
+msgstr "Flamingo の連絡先タグ"
+
+#: flamingo/includes/class-inbound-message.php:27
+msgid "Flamingo Inbound Message"
+msgstr "Flamingo の受信メッセージ"
+
+#: flamingo/includes/class-inbound-message.php:40
+msgid "Flamingo Inbound Message Channels"
+msgstr "Flamingo 受信メッセージ経路"
+
+#: flamingo/includes/class-inbound-message.php:41
+msgid "Flamingo Inbound Message Channel"
+msgstr "Flamingo 受信メッセージ経路"
+
+#: flamingo/includes/class-inbound-message.php:168
+#: flamingo/includes/class-outbound-message.php:92
+msgid "(No Title)"
+msgstr "(タイトルなし)"
+
+#: flamingo/includes/class-outbound-message.php:20
+msgid "Flamingo Outbound Messages"
+msgstr "Flamingo 送信メッセージ"
+
+#: flamingo/includes/class-outbound-message.php:21
+msgid "Flamingo Outbound Message"
+msgstr "Flamingo の送信メッセージ"
+
+#~ msgid "Flamingo manages your contact list on WordPress."
+#~ msgstr "Flamingo は WordPress 上であなたのアドレス帳を管理します。"
+
+#~ msgid "% Comments"
+#~ msgstr "%件のコメント"
+
+#~ msgid "Contact Form 7"
+#~ msgstr "Contact Form 7"
+
+#~ msgid "1 Message via Contact Form 7"
+#~ msgstr "1件の Contact Form 7 経由のメッセージ"
+
+#~ msgid "% Messages via Contact Form 7"
+#~ msgstr "%件の Contact Form 7 経由のメッセージ"
+
+#~ msgid "% Users"
+#~ msgstr "%人のユーザー"

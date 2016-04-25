@@ -1,0 +1,351 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Flamingo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-10-19 00:15+0900\n"
+"PO-Revision-Date: 2014-02-01 12:42+0100\n"
+"Last-Translator: Takayuki Miyoshi <takayukister@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_c\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SearchPath-0: flamingo\n"
+
+#: flamingo/admin/admin.php:9 flamingo/admin/admin.php:14
+#: flamingo/admin/admin.php:256
+msgid "Flamingo Address Book"
+msgstr "Flamingo adresar"
+
+#: flamingo/admin/admin.php:9
+msgid "Flamingo"
+msgstr "Flamingo"
+
+#: flamingo/admin/admin.php:14
+msgid "Address Book"
+msgstr "Adresar"
+
+#: flamingo/admin/admin.php:20 flamingo/includes/class-inbound-message.php:24
+msgid "Flamingo Inbound Messages"
+msgstr "Flamingo dolazne poruke"
+
+#: flamingo/admin/admin.php:20 flamingo/admin/admin.php:489
+msgid "Inbound Messages"
+msgstr "Dolazne poruke"
+
+#: flamingo/admin/admin.php:66
+msgid "Contact updated."
+msgstr "Kontakt ažuriran"
+
+#: flamingo/admin/admin.php:68
+msgid "Contact deleted."
+msgstr "Kontakt obrisan"
+
+#: flamingo/admin/admin.php:70
+msgid "Messages trashed."
+msgstr "Poruke obrisane"
+
+#: flamingo/admin/admin.php:72
+msgid "Messages restored."
+msgstr "Poruke vraćene"
+
+#: flamingo/admin/admin.php:74
+msgid "Messages deleted."
+msgstr "Poruke obrisane"
+
+#: flamingo/admin/admin.php:76
+msgid "Messages got marked as spam."
+msgstr "Poruke označene kao spam"
+
+#: flamingo/admin/admin.php:78
+msgid "Messages got marked as not spam."
+msgstr "Poruke označene kao da nisu spam"
+
+#: flamingo/admin/admin.php:105
+msgid "You are not allowed to edit this item."
+msgstr "Nemate ovlasti urediti ovu stavku"
+
+#: flamingo/admin/admin.php:144 flamingo/admin/admin.php:377
+msgid "You are not allowed to delete this item."
+msgstr "Nemate ovlasti obrisati ovu stavku"
+
+#: flamingo/admin/admin.php:147 flamingo/admin/admin.php:380
+msgid "Error in deleting."
+msgstr "Greška pri brisanju"
+
+#: flamingo/admin/admin.php:170
+#: flamingo/admin/includes/class-contacts-list-table.php:11
+msgid "Email"
+msgstr "E-pošta"
+
+#: flamingo/admin/admin.php:170 flamingo/admin/includes/meta-boxes.php:140
+msgid "Full name"
+msgstr "Ime i prezime"
+
+#: flamingo/admin/admin.php:171 flamingo/admin/includes/meta-boxes.php:145
+msgid "First name"
+msgstr "Ime"
+
+#: flamingo/admin/admin.php:171 flamingo/admin/includes/meta-boxes.php:150
+msgid "Last name"
+msgstr "Prezime"
+
+#: flamingo/admin/admin.php:215 flamingo/admin/admin.php:451
+msgid "Save"
+msgstr "Snimi"
+
+#: flamingo/admin/admin.php:218
+#: flamingo/admin/includes/class-contacts-list-table.php:13
+msgid "Tags"
+msgstr "Iznake"
+
+#: flamingo/admin/admin.php:221
+#: flamingo/admin/includes/class-contacts-list-table.php:12
+msgid "Name"
+msgstr "naziv"
+
+#: flamingo/admin/admin.php:234
+msgid "Contacts"
+msgstr "Kontakti"
+
+#: flamingo/admin/admin.php:260 flamingo/admin/admin.php:493
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
+msgstr "Rezultati pretrage za &#8220;%s&#8221;"
+
+#: flamingo/admin/admin.php:269
+msgid "Search Contacts"
+msgstr "Pretraži kontakte"
+
+#: flamingo/admin/admin.php:310
+msgid "You are not allowed to move this item to the Trash."
+msgstr "Nemate ovlasti obrisati ovu stavku"
+
+#: flamingo/admin/admin.php:313
+msgid "Error in moving to Trash."
+msgstr "Greška pri brisanju"
+
+#: flamingo/admin/admin.php:340
+msgid "You are not allowed to restore this item from the Trash."
+msgstr "Nemate ovlasti povratiti stavku iz smeća"
+
+#: flamingo/admin/admin.php:343
+msgid "Error in restoring from Trash."
+msgstr "Greška pri povraćanju stavke iz smeća"
+
+#: flamingo/admin/admin.php:407
+msgid "You are not allowed to spam this item."
+msgstr "Nemate ovlasti označiti stavku kao spam"
+
+#: flamingo/admin/admin.php:435
+msgid "You are not allowed to unspam this item."
+msgstr "Nemate ovlasti označiti stavku kao da nije spam"
+
+#: flamingo/admin/admin.php:454
+msgid "Fields"
+msgstr "Polja"
+
+#: flamingo/admin/admin.php:467
+msgid "Messages"
+msgstr "Poruke"
+
+#: flamingo/admin/admin.php:504
+msgid "Search Messages"
+msgstr "Pretraži poruke"
+
+#: flamingo/admin/edit-contact-form.php:17
+msgid "Edit Contact"
+msgstr "Uredi kontakt"
+
+#: flamingo/admin/edit-contact-form.php:43
+msgid "Enter email here"
+msgstr "Unesite e-poštu ovdje"
+
+#: flamingo/admin/edit-inbound-form.php:17
+msgid "Inbound Message"
+msgstr "Dolazna poruka"
+
+#: flamingo/admin/edit-inbound-form.php:42
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:14
+msgid "Date"
+msgstr "Datum"
+
+#: flamingo/admin/edit-inbound-form.php:47
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:11
+msgid "Subject"
+msgstr "Predmet"
+
+#: flamingo/admin/edit-inbound-form.php:52
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:12
+msgid "From"
+msgstr "Od"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:14
+msgid "History"
+msgstr "Povijest"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:15
+msgid "Last Contact"
+msgstr "Zadnji kontakt"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:82
+#: flamingo/admin/includes/meta-boxes.php:11
+msgid "Delete"
+msgstr "Obriši"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:106
+msgid "View all tags"
+msgstr "Pregledaj sve oznake"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:112
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:173
+msgid "Filter"
+msgstr "Filtriraj"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:115
+msgid "Export"
+msgstr "Izvezi"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:138
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:207
+msgid "Edit"
+msgstr "Uredi"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:142
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:227
+#, php-format
+msgid "Edit &#8220;%s&#8221;"
+msgstr "Uredi &#8220;%s&#8221;"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:154
+msgid "No Tags"
+msgstr "Nema oznaka"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:183
+msgid "User"
+msgstr "Korisnik"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:196
+#, php-format
+msgid "Comment (%d)"
+msgstr "Komentar (%d)"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:235
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:260
+#: flamingo/includes/class-inbound-message.php:115
+msgid "Y/m/d g:i:s A"
+msgstr "Y/m/d g:i:s A"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:242
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:267
+#, php-format
+msgid "%s ago"
+msgstr "Prije %s"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:244
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:269
+msgid "Y/m/d"
+msgstr "G/m/d"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:13
+msgid "Channel"
+msgstr "Kanal"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:131
+msgid "Restore"
+msgstr "Povrati"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:134
+#: flamingo/admin/includes/meta-boxes.php:107
+msgid "Delete Permanently"
+msgstr "Trajno izbriši"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:136
+#: flamingo/admin/includes/meta-boxes.php:109
+msgid "Move to Trash"
+msgstr "Premjesti u smeće"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:167
+msgid "View all channels"
+msgstr "Pogledaj sve kanale"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:178
+msgid "Empty Trash"
+msgstr "Isprazni smeće"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:215
+msgid "Not Spam"
+msgstr "Nije spam"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:221
+msgid "Spam"
+msgstr "Spam"
+
+#: flamingo/admin/includes/meta-boxes.php:17
+#, php-format
+msgid ""
+"You are about to delete this contact '%s'\n"
+" 'Cancel' to stop, 'OK' to delete."
+msgstr ""
+"Upravo ćete obrisati kontakt '%s'\n"
+" 'Obustavi' za prekid, 'OK' za brisanje."
+
+#: flamingo/admin/includes/meta-boxes.php:22
+msgid "Update Contact"
+msgstr "Ažuriraj kontakt"
+
+#: flamingo/admin/includes/meta-boxes.php:24
+msgid "Add Contact"
+msgstr "Dodaj kontakt"
+
+#: flamingo/admin/includes/meta-boxes.php:68
+msgid "Separate tags with commas"
+msgstr "Odvojite oznake zarezima"
+
+#: flamingo/admin/includes/meta-boxes.php:71
+msgid "Choose from the most used tags"
+msgstr "Odaberite iz najčešće korištenih oznaka"
+
+#: flamingo/admin/includes/meta-boxes.php:120
+msgid "Update Message"
+msgstr "Ažuriraj poruku"
+
+#: flamingo/admin/includes/meta-boxes.php:122
+msgid "Add Message"
+msgstr "Dodaj poruku"
+
+#: flamingo/includes/class-contact.php:20
+msgid "Flamingo Contacts"
+msgstr "Flamingo kontakti"
+
+#: flamingo/includes/class-contact.php:21
+msgid "Flamingo Contact"
+msgstr "Flamingo kontakt"
+
+#: flamingo/includes/class-contact.php:27
+msgid "Flamingo Contact Tags"
+msgstr "Flamingo kontakt oznake"
+
+#: flamingo/includes/class-contact.php:28
+msgid "Flamingo Contact Tag"
+msgstr "Flamingo kontakt oznaka"
+
+#: flamingo/includes/class-inbound-message.php:25
+msgid "Flamingo Inbound Message"
+msgstr "Flamingo dolazne poruke"
+
+#: flamingo/includes/class-inbound-message.php:31
+msgid "Flamingo Inbound Message Channels"
+msgstr "Flamingo kanali dolaznih poruka"
+
+#: flamingo/includes/class-inbound-message.php:32
+msgid "Flamingo Inbound Message Channel"
+msgstr "Flamingo kanal dolaznih poruka"
+
+#: flamingo/includes/class-inbound-message.php:135
+msgid "(No Title)"
+msgstr "(bez naslova)"

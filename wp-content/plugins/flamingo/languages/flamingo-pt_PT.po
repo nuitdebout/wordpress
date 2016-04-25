@@ -1,0 +1,314 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Flamingo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-06-06 00:47+0900\n"
+"PO-Revision-Date: 2014-02-04 17:22-0000\n"
+"Last-Translator: baannng.com <central@baannng.com>\n"
+"Language-Team: baannng.com\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_c\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: pt_PT\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-SearchPath-0: flamingo\n"
+
+#: flamingo/flamingo.php:5
+msgid "Flamingo manages your contact list on WordPress."
+msgstr "Flamingo gere a sua lista de contactos no WordPress."
+
+#: flamingo/admin/admin.php:9 flamingo/admin/admin.php:14
+#: flamingo/admin/admin.php:154
+msgid "Flamingo Address Book"
+msgstr "Livro de Endereços do Flamingo"
+
+#: flamingo/admin/admin.php:9
+msgid "Flamingo"
+msgstr "Flamingo"
+
+#: flamingo/admin/admin.php:14
+msgid "Address Book"
+msgstr "Livro de Endereços"
+
+#: flamingo/admin/admin.php:20 flamingo/includes/class-inbound-message.php:22
+msgid "Flamingo Inbound Messages"
+msgstr "Mensagens de Entrada do Flamingo"
+
+#: flamingo/admin/admin.php:20 flamingo/admin/admin.php:323
+msgid "Inbound Messages"
+msgstr "Mensagens de Entrada"
+
+#: flamingo/admin/admin.php:64
+msgid "Contact updated."
+msgstr "Contacto atualizado."
+
+#: flamingo/admin/admin.php:66
+msgid "Messages trashed."
+msgstr "Mensagens enviadas para o lixo."
+
+#: flamingo/admin/admin.php:68
+msgid "Messages restored."
+msgstr "Mensagens restauradas."
+
+#: flamingo/admin/admin.php:70
+msgid "Messages deleted."
+msgstr "Mensagens apagadas."
+
+#: flamingo/admin/admin.php:97
+msgid "You are not allowed to edit this item."
+msgstr "Não tem permissões para editar este item."
+
+#: flamingo/admin/admin.php:130
+msgid "Contacts"
+msgstr "Contactos"
+
+#: flamingo/admin/admin.php:158 flamingo/admin/admin.php:327
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
+msgstr "Resultados da pesquisa para &#8220;%s&#8221;"
+
+#: flamingo/admin/admin.php:167
+msgid "Search Contacts"
+msgstr "Pesquisar Contactos"
+
+#: flamingo/admin/admin.php:208
+msgid "You are not allowed to move this item to the Trash."
+msgstr "Não tem permissões para mover este item para o Lixo."
+
+#: flamingo/admin/admin.php:211
+msgid "Error in moving to Trash."
+msgstr "Erro ao mover para o Lixo."
+
+#: flamingo/admin/admin.php:238
+msgid "You are not allowed to restore this item from the Trash."
+msgstr "Não tem permissões para restaurar este item do Lixo."
+
+#: flamingo/admin/admin.php:241
+msgid "Error in restoring from Trash."
+msgstr "Erro ao restaurar do Lixo."
+
+#: flamingo/admin/admin.php:275
+msgid "You are not allowed to delete this item."
+msgstr "Não tem permissões para apagar este item."
+
+#: flamingo/admin/admin.php:278
+msgid "Error in deleting."
+msgstr "Erro ao apagar."
+
+#: flamingo/admin/admin.php:299
+msgid "Messages"
+msgstr "Mensagens"
+
+#: flamingo/admin/admin.php:338
+msgid "Search Messages"
+msgstr "Pesquisar Mensagens"
+
+#: flamingo/admin/edit-contact-form.php:13
+#: flamingo/admin/edit-inbound-form.php:13
+msgid "Save"
+msgstr "Guardar"
+
+#: flamingo/admin/edit-contact-form.php:16
+#: flamingo/admin/includes/class-contacts-list-table.php:13
+msgid "Tags"
+msgstr "Etiquetas"
+
+#: flamingo/admin/edit-contact-form.php:19
+#: flamingo/admin/includes/class-contacts-list-table.php:12
+msgid "Name"
+msgstr "Nome"
+
+#: flamingo/admin/edit-contact-form.php:26
+msgid "Edit Contact"
+msgstr "Editar Contacto"
+
+#: flamingo/admin/edit-contact-form.php:52
+msgid "Enter email here"
+msgstr "Insira endereço de e-mail aqui"
+
+#: flamingo/admin/edit-inbound-form.php:16
+msgid "Fields"
+msgstr "Campos"
+
+#: flamingo/admin/edit-inbound-form.php:23
+msgid "Inbound Message"
+msgstr "Mensagens de Entrada"
+
+#: flamingo/admin/edit-inbound-form.php:48
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:14
+msgid "Date"
+msgstr "Data"
+
+#: flamingo/admin/edit-inbound-form.php:53
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:11
+msgid "Subject"
+msgstr "Assunto"
+
+#: flamingo/admin/edit-inbound-form.php:58
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:12
+msgid "From"
+msgstr "De"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:11
+msgid "Email"
+msgstr "E-mail"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:14
+msgid "History"
+msgstr "Histórico"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:15
+msgid "Last Contact"
+msgstr "Último Contacto"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:82
+msgid "Send Mail"
+msgstr "Enviar E-mail"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:106
+msgid "View all tags"
+msgstr "Ver todas as etiquetas"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:112
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:173
+msgid "Filter"
+msgstr "Filtrar"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:136
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:205
+msgid "Edit"
+msgstr "Editar"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:140
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:209
+#, php-format
+msgid "Edit &#8220;%s&#8221;"
+msgstr "Editar &#8220;%s&#8221;"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:152
+msgid "No Tags"
+msgstr "Sem Etiquetas"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:181
+msgid "User"
+msgstr "Utilizador"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:194
+#, php-format
+msgid "Comment (%d)"
+msgstr "Comentários (%d)"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:233
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:242
+#: flamingo/includes/class-inbound-message.php:107
+msgid "Y/m/d g:i:s A"
+msgstr "d/m/Y g:i:s A"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:240
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:249
+#, php-format
+msgid "%s ago"
+msgstr "%s atrás"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:242
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:251
+msgid "Y/m/d"
+msgstr "d/m/Y"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:13
+msgid "Channel"
+msgstr "Canal"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:131
+msgid "Restore"
+msgstr "Restaurar"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:134
+#: flamingo/admin/includes/meta-boxes.php:95
+msgid "Delete Permanently"
+msgstr "Apagar Permanentemente"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:136
+#: flamingo/admin/includes/meta-boxes.php:97
+msgid "Move to Trash"
+msgstr "Mover para o Lixo"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:167
+msgid "View all channels"
+msgstr "Ver todos os canais"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:178
+msgid "Empty Trash"
+msgstr "Esvaziar o Lixo"
+
+#: flamingo/admin/includes/meta-boxes.php:10
+msgid "Update Contact"
+msgstr "Atualizar Contacto"
+
+#: flamingo/admin/includes/meta-boxes.php:12
+msgid "Add Contact"
+msgstr "Adicionar Contacto"
+
+#: flamingo/admin/includes/meta-boxes.php:56
+msgid "Separate tags with commas"
+msgstr "Separar etiquetas por vírgulas"
+
+#: flamingo/admin/includes/meta-boxes.php:59
+msgid "Choose from the most used tags"
+msgstr "Escolha de entre as etiquetas mais utilizadas"
+
+#: flamingo/admin/includes/meta-boxes.php:108
+msgid "Update Message"
+msgstr "Atualizar Mensagem"
+
+#: flamingo/admin/includes/meta-boxes.php:110
+msgid "Add Message"
+msgstr "Adicionar Mensagem"
+
+#: flamingo/admin/includes/meta-boxes.php:128
+msgid "Full name"
+msgstr "Nome Completo"
+
+#: flamingo/admin/includes/meta-boxes.php:133
+msgid "First name"
+msgstr "Primeiro nome"
+
+#: flamingo/admin/includes/meta-boxes.php:138
+msgid "Last name"
+msgstr "Último nome"
+
+#: flamingo/includes/class-contact.php:20
+msgid "Flamingo Contacts"
+msgstr "Contactos do Flamingo"
+
+#: flamingo/includes/class-contact.php:21
+msgid "Flamingo Contact"
+msgstr "Contacto do Flamingo"
+
+#: flamingo/includes/class-contact.php:25
+msgid "Flamingo Contact Tags"
+msgstr "Etiquetas de Contactos do Flamingo"
+
+#: flamingo/includes/class-contact.php:26
+msgid "Flamingo Contact Tag"
+msgstr "Etiqueta do Contato do Flamingo"
+
+#: flamingo/includes/class-inbound-message.php:23
+msgid "Flamingo Inbound Message"
+msgstr "Mensagem de Entrada do Flamingo"
+
+#: flamingo/includes/class-inbound-message.php:27
+msgid "Flamingo Inbound Message Channels"
+msgstr "Canais de Mensagem de Entrada do Flamingo"
+
+#: flamingo/includes/class-inbound-message.php:28
+msgid "Flamingo Inbound Message Channel"
+msgstr "Canal de Mensagem de Entrada do Flamingo"
+
+#: flamingo/includes/class-inbound-message.php:125
+msgid "(No Title)"
+msgstr "(Sem Título)"

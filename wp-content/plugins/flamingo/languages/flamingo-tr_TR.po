@@ -1,0 +1,319 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Flamingo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-06-06 00:47+0900\n"
+"PO-Revision-Date: 2012-07-20 10:48+0200\n"
+"Last-Translator: Ömür Yanıkoğlu <hayatbiralem@gmail.com>\n"
+"Language-Team: Ömür YANIKOĞLU <hayatbiralem@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_c\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-Language: Turkish\n"
+"X-Poedit-Country: TURKEY\n"
+"X-Poedit-SearchPath-0: flamingo\n"
+
+#: flamingo/flamingo.php:5
+msgid "Flamingo manages your contact list on WordPress."
+msgstr "Flamingo, WordPress üzerindeki iletişim listenizi yönetir."
+
+#: flamingo/admin/admin.php:9
+#: flamingo/admin/admin.php:14
+#: flamingo/admin/admin.php:154
+msgid "Flamingo Address Book"
+msgstr "Flamigo Adres Defteri"
+
+#: flamingo/admin/admin.php:9
+msgid "Flamingo"
+msgstr ""
+
+#: flamingo/admin/admin.php:14
+msgid "Address Book"
+msgstr "Adres Defteri"
+
+#: flamingo/admin/admin.php:20
+#: flamingo/includes/class-inbound-message.php:22
+msgid "Flamingo Inbound Messages"
+msgstr "Flamingo Gelen Mesajlar"
+
+#: flamingo/admin/admin.php:20
+#: flamingo/admin/admin.php:323
+msgid "Inbound Messages"
+msgstr "Gelen Mesajlar"
+
+#: flamingo/admin/admin.php:64
+msgid "Contact updated."
+msgstr "İletişim bilgisi güncellendi."
+
+#: flamingo/admin/admin.php:66
+msgid "Messages trashed."
+msgstr "Mesaj Çöp Kutusuna gönderildi."
+
+#: flamingo/admin/admin.php:68
+msgid "Messages restored."
+msgstr "Mesaj eski haline getirildi."
+
+#: flamingo/admin/admin.php:70
+msgid "Messages deleted."
+msgstr "Mesaj silindi."
+
+#: flamingo/admin/admin.php:97
+msgid "You are not allowed to edit this item."
+msgstr "Bu öğeyi düzenlemek için izniniz bulunmuyor."
+
+#: flamingo/admin/admin.php:130
+msgid "Contacts"
+msgstr "Kişiler"
+
+#: flamingo/admin/admin.php:158
+#: flamingo/admin/admin.php:327
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
+msgstr "&#8220;%s&#8221; için arama sonuçları"
+
+#: flamingo/admin/admin.php:167
+msgid "Search Contacts"
+msgstr "Kişilerde Ara"
+
+#: flamingo/admin/admin.php:208
+msgid "You are not allowed to move this item to the Trash."
+msgstr "Bu öğeyi Çöp Kutusuna göndermek için izniniz buunmuyor."
+
+#: flamingo/admin/admin.php:211
+msgid "Error in moving to Trash."
+msgstr "Öğe Çöp Kutusuna gönderilirken bir hata ile karşılaşıldı."
+
+#: flamingo/admin/admin.php:238
+msgid "You are not allowed to restore this item from the Trash."
+msgstr "Bu öğeyi eski haline getirmek için izniniz bulunmuyor."
+
+#: flamingo/admin/admin.php:241
+msgid "Error in restoring from Trash."
+msgstr "Öğe Gelen Kutusuna gönderilirken bir hata ile karşılaşıldı."
+
+#: flamingo/admin/admin.php:275
+msgid "You are not allowed to delete this item."
+msgstr "Bu öğeyi silmek için izniniz bulunmuyor."
+
+#: flamingo/admin/admin.php:278
+msgid "Error in deleting."
+msgstr "Öğe silinirken bir hata ile karşılaşıldı."
+
+#: flamingo/admin/admin.php:299
+msgid "Messages"
+msgstr "Mesajlar"
+
+#: flamingo/admin/admin.php:338
+msgid "Search Messages"
+msgstr "Mesajlarda ara"
+
+#: flamingo/admin/edit-contact-form.php:13
+#: flamingo/admin/edit-inbound-form.php:13
+msgid "Save"
+msgstr "Kaydet"
+
+#: flamingo/admin/edit-contact-form.php:16
+#: flamingo/admin/includes/class-contacts-list-table.php:13
+msgid "Tags"
+msgstr "Etiketler"
+
+#: flamingo/admin/edit-contact-form.php:19
+#: flamingo/admin/includes/class-contacts-list-table.php:12
+msgid "Name"
+msgstr "İsim"
+
+#: flamingo/admin/edit-contact-form.php:26
+msgid "Edit Contact"
+msgstr "Kişiyi Düzenle"
+
+#: flamingo/admin/edit-contact-form.php:52
+msgid "Enter email here"
+msgstr "E-posta adresini giriniz"
+
+#: flamingo/admin/edit-inbound-form.php:16
+msgid "Fields"
+msgstr "Alanlar"
+
+#: flamingo/admin/edit-inbound-form.php:23
+msgid "Inbound Message"
+msgstr "Gelen Mesaj"
+
+#: flamingo/admin/edit-inbound-form.php:48
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:14
+msgid "Date"
+msgstr "Tarih"
+
+#: flamingo/admin/edit-inbound-form.php:53
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:11
+msgid "Subject"
+msgstr "Konu"
+
+#: flamingo/admin/edit-inbound-form.php:58
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:12
+msgid "From"
+msgstr "Gönderen"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:11
+msgid "Email"
+msgstr "E-posta"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:14
+msgid "History"
+msgstr "Geçmiş"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:15
+msgid "Last Contact"
+msgstr "Son İletişim"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:82
+msgid "Send Mail"
+msgstr "Mesaj Gönder"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:106
+msgid "View all tags"
+msgstr "Tüm etiketleri görüntüle"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:112
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:173
+msgid "Filter"
+msgstr "Filtre"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:136
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:205
+msgid "Edit"
+msgstr "Düzenle"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:140
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:209
+#, php-format
+msgid "Edit &#8220;%s&#8221;"
+msgstr "Düzenle &#8220;%s&#8221;"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:152
+msgid "No Tags"
+msgstr "Etiket Yok"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:181
+msgid "User"
+msgstr "Kullanıcı"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:194
+#, php-format
+msgid "Comment (%d)"
+msgstr "Yorum (%d)"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:233
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:242
+#: flamingo/includes/class-inbound-message.php:107
+msgid "Y/m/d g:i:s A"
+msgstr "d F Y H:i:s"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:240
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:249
+#, php-format
+msgid "%s ago"
+msgstr "%s önce"
+
+#: flamingo/admin/includes/class-contacts-list-table.php:242
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:251
+msgid "Y/m/d"
+msgstr "d F Y"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:13
+msgid "Channel"
+msgstr "Kanal"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:131
+msgid "Restore"
+msgstr "Eski Haline Getir"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:134
+#: flamingo/admin/includes/meta-boxes.php:95
+msgid "Delete Permanently"
+msgstr "Kalıcı Olarak Sil"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:136
+#: flamingo/admin/includes/meta-boxes.php:97
+msgid "Move to Trash"
+msgstr "Çöpe Taşı"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:167
+msgid "View all channels"
+msgstr "Tüm kanalları göster"
+
+#: flamingo/admin/includes/class-inbound-messages-list-table.php:178
+msgid "Empty Trash"
+msgstr "Çöp Kutusu Boş"
+
+#: flamingo/admin/includes/meta-boxes.php:10
+msgid "Update Contact"
+msgstr "Kişiyi Güncelle"
+
+#: flamingo/admin/includes/meta-boxes.php:12
+msgid "Add Contact"
+msgstr "Kişi Ekle"
+
+#: flamingo/admin/includes/meta-boxes.php:56
+msgid "Separate tags with commas"
+msgstr "Etiketleri virgülle ayırınız"
+
+#: flamingo/admin/includes/meta-boxes.php:59
+msgid "Choose from the most used tags"
+msgstr "En çok kullanılan etiketlerden seçin"
+
+#: flamingo/admin/includes/meta-boxes.php:108
+msgid "Update Message"
+msgstr "Mesajı Gğncelle"
+
+#: flamingo/admin/includes/meta-boxes.php:110
+msgid "Add Message"
+msgstr "Mesaj Ekle"
+
+#: flamingo/admin/includes/meta-boxes.php:128
+msgid "Full name"
+msgstr "Tam isim"
+
+#: flamingo/admin/includes/meta-boxes.php:133
+msgid "First name"
+msgstr "Ad"
+
+#: flamingo/admin/includes/meta-boxes.php:138
+msgid "Last name"
+msgstr "Soyad"
+
+#: flamingo/includes/class-contact.php:20
+msgid "Flamingo Contacts"
+msgstr "Flamingo Kişiler"
+
+#: flamingo/includes/class-contact.php:21
+msgid "Flamingo Contact"
+msgstr "Flamingo Kişi"
+
+#: flamingo/includes/class-contact.php:25
+msgid "Flamingo Contact Tags"
+msgstr "Flamingo Kişi Etiketleri"
+
+#: flamingo/includes/class-contact.php:26
+msgid "Flamingo Contact Tag"
+msgstr "Flamingo Kişi Etiketi"
+
+#: flamingo/includes/class-inbound-message.php:23
+msgid "Flamingo Inbound Message"
+msgstr "Flamingo Gelen Kutusu"
+
+#: flamingo/includes/class-inbound-message.php:27
+msgid "Flamingo Inbound Message Channels"
+msgstr "Flamingo Gelen Kutusu Kanalları"
+
+#: flamingo/includes/class-inbound-message.php:28
+msgid "Flamingo Inbound Message Channel"
+msgstr "Flamingo Gelen Kutusu Kanalı"
+
+#: flamingo/includes/class-inbound-message.php:125
+msgid "(No Title)"
+msgstr "(Başlık Yok)"
+
