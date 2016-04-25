@@ -1,4 +1,4 @@
-<div id="participate" class="row">
+<div id="participate">
 <?php
 	$page_parent = get_field('homepage_takepart', 'option');
 	if ($page_parent->ID) :
