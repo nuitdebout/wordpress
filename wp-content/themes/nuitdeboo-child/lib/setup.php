@@ -61,9 +61,18 @@ function widgets_init() {
   register_sidebar([
     'name'          => 'homepage-top',
     'id'            => 'homepage-top',
-    'before_widget' => '<div class=" %1$s %2$s col-md-8 col-md-offset-2">',
+    'before_widget' => '<div class=" %1$s %2$s section__content">',
     'after_widget'  => '</div>',
-    'before_title'  => '<h2>',
+    'before_title'  => '<h2 class="section__title">',
+    'after_title'   => '</h2>'
+  ]);
+
+  register_sidebar([
+    'name'          => 'homepage-flex-top',
+    'id'            => 'homepage-flex-top',
+    'before_widget' => '<div class="flex-widget"><div class=" %1$s %2$s">',
+    'after_widget'  => '</div></div>',
+    'before_title'  => '<h2 class="flex-widget__title">',
     'after_title'   => '</h2>'
   ]);
 
@@ -120,5 +129,3 @@ function assets() {
   wp_enqueue_script('sage/js', get_stylesheet_directory_uri() . '/dist/scripts/main.js', ['jquery'], null, true);
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
-
-

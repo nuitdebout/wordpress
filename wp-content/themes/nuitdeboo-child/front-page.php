@@ -30,9 +30,15 @@
     	get_template_part('templates/module', 'rassemblements');
   }
   if ( is_active_sidebar( 'homepage-top' ) ) :
-	  echo '<div id="widget-homepage-top"><div class="container padded"><div class="row">';
+	  echo '<div id="widget-homepage-top" class="section home-widget-container">';
 	  	dynamic_sidebar('homepage-top');
-	  echo '</div></div></div>';
+	  echo '</div>';
+  endif;
+
+  if ( is_active_sidebar( 'homepage-flex-top' ) ) :
+	  echo '<div class="section home-widget-container"><div class="flex-widget-container">';
+	  	dynamic_sidebar('homepage-flex-top');
+	  echo '</div></div>';
   endif;
 
   if( !is_paged() && get_field('global_module_social', 'option') == 'oui' ) {

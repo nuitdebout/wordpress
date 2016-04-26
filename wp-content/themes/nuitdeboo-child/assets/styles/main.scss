@@ -6,6 +6,7 @@
 // endbower
 @import "../../bower_components/font-awesome/scss/font-awesome.scss";
 
+@import "components/mixins";
 @import "common/global";
 @import "common/fonts";
 @import "common/overload";
@@ -15,7 +16,6 @@
 @import "components/forms";
 @import "components/grid";
 @import "components/wp-classes";
-@import "components/mixins";
 @import "components/widgets";
 @import "components/social_icons";
 @import "components/section";
