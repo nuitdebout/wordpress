@@ -13,9 +13,9 @@
 		}
 		else{
 			$include = get_pages('include='.$parent_id);
-			$title = apply_filters('the_title',$include[0]->post_title);
-			$permalink = get_permalink($post->ID);
-			$excerpt = get_the_excerpt($post->ID);
+			$title   = apply_filters('the_title',$include[0]->post_title);
+			$permalink = get_permalink($include[0]->ID);
+			$excerpt   = get_the_excerpt($include[0]->ID);
 		}
 		$args = array(
 			'child_of' => $parent_id,
