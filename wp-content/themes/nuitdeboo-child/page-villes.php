@@ -48,6 +48,6 @@ if($pages_sub){
 <section class="section section--gray section--subsection">
     <h3 class="section__title">Votre ville n'est pas listée ?</h3>
     <div class="section__actions-container">
-        <a class="primary-button" href="http://wiki.nuitdebout.fr">ajoutez-la sur le wiki !</a>
-    </p>
+        <a class="primary-button" href="http://wiki.nuitdebout.fr">Ajoutez-la sur le wiki !</a>
+    </div>
 </section>
