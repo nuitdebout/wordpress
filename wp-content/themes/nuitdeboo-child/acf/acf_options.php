@@ -959,6 +959,41 @@ if(function_exists("register_field_group"))
 	));
 
 
+	register_field_group(array (
+		'id' => 'acf_commission-page',
+		'title' => 'commission page',
+		'fields' => array (
+			array (
+				'key' => 'field_2e6hj18',
+				'label' => 'testkey',
+				'name' => 'key_name',
+				'type' => 'true_false',
+				'instructions' => '',
+				'layout' => 'vertical',
+			),
+
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'page_template',
+					'operator' => '==',
+					'value' => 'page-commission.php',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+
+
 
 	register_field_group(array (
 		'id' => 'acf_globaldebout-page',
