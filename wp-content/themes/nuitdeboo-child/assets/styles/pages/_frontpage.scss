@@ -69,7 +69,12 @@
 }
 
 iframe {
-  border: none;
+  border:none;
+}
+.iframe-module{
+  iframe{
+    width:100%;
+  }
 }
 
 .page-template-page-ville {
