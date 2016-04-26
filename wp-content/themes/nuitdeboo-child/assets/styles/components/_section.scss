@@ -1,4 +1,3 @@
-
 .section {
   @include make-row;
   padding: 50px 0;
@@ -8,19 +7,10 @@
   }
 
   .section__title {
-    text-align: center;
+    @include title-font;
     font-size: 45px;
-    font-family: "Roboto";
-
     margin: 0;
     margin-bottom: 30px;
-
-    &:first-letter {
-      box-shadow:
-      0 3px 0 -1px $light-blue, /* to indent the green bottom line with the same color as the background */
-      0 3px 0 0 $light-blue,  /* to create a bottom 3px high green line */
-      inset 0 -1px 0 0 $light-blue; /* to create the top (1px) of the outline */
-    }
   }
 
   .section__content {
