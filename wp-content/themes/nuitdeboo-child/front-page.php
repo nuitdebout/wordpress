@@ -29,12 +29,16 @@
   if( !is_paged() && get_field('homepage_module_map', 'option') == 'oui' ) {
     	get_template_part('templates/module', 'rassemblements');
   }
-
-  dynamic_sidebar('homepage-top');
+  if ( is_active_sidebar( 'homepage-top' ) ) :
+	  echo '<div id="widget-homepage-top"><div class="container padded"><div class="row">';
+	  	dynamic_sidebar('homepage-top');
+	  echo '</div></div></div>';
+  endif;
 
   if( !is_paged() && get_field('global_module_social', 'option') == 'oui' ) {
 	get_template_part('templates/module', 'home-social');
   }
+
   dynamic_sidebar('homepage-bottom');
 
   if ( !is_paged() && get_field('homepage_module_global', 'option') == 'oui' ) {

@@ -61,8 +61,8 @@ function widgets_init() {
   register_sidebar([
     'name'          => 'homepage-top',
     'id'            => 'homepage-top',
-    'before_widget' => '<div id="widget-homepage-top"><div class="container padded"><div class="row"><div class=" %1$s %2$s col-md-8 col-md-offset-2">',
-    'after_widget'  => '</div></div></div></div>',
+    'before_widget' => '<div class=" %1$s %2$s col-md-8 col-md-offset-2">',
+    'after_widget'  => '</div>',
     'before_title'  => '<h2>',
     'after_title'   => '</h2>'
   ]);
