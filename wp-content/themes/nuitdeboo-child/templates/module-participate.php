@@ -46,5 +46,4 @@ if ($page_parent->ID) :
 		<?php endforeach;?>
 	</div>
 </section>
-
 <?php endif; ?>
