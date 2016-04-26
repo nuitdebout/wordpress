@@ -20,10 +20,16 @@
 				<a target="_blank" href="https://www.convergence-des-luttes.org/">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/CONVERGENCE-DES-LUTTES.png"/>
 				</a>
+				<?php dynamic_sidebar('sidebar-footer'); ?>
 			</div>
 
 			<div class="col-xs-12 col-sm-4">
-				<?php dynamic_sidebar('sidebar-footer'); ?>
+				<h5>A propos</h5>
+				<?php
+		        if (has_nav_menu('footer_colophon_navigation')) :
+		        	wp_nav_menu(['theme_location' => 'footer_colophon_navigation', 'menu_class' => 'list-unstyled']);
+		        endif;
+		        ?>
 				<h5>Contribuer</h5>
 				<div class="contribute">
 					<ul class="social-networks list-inline">
