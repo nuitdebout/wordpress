@@ -4,6 +4,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <?php wp_head(); ?>
 
+
+	  <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/favicon.ico" />
 	  <meta property="og:locale" content="fr_FR"> <!-- a tester : <?php bloginfo( 'language' ); ?> !-->
 	  <meta property="og:type" content="website">
 	  <meta property="og:title" content="<?php bloginfo( 'name' ); ?> - Nuit Debout">
