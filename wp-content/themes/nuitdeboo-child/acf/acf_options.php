@@ -632,7 +632,6 @@ if(function_exists("register_field_group"))
 				'key' => 'field_57qs1qsd25fb8963ea',
 				'label' => 'Texte bouton libre',
 				'name' => 'homepage_manifesto_btn_text',
-
 				'default_value' => '',
 				'allow_null' => 0,
 				'multiple' => 0,
@@ -690,11 +689,38 @@ if(function_exists("register_field_group"))
 				'multiple' => 0,
 			),
 			array (
+				'key' => 'field_iosqqsoi9845fb8963ea',
+				'label' => 'titre iframe libre 1 ',
+				'name' => 'homepage_module_free_iframe_1_title',
+				'type' => 'text',
+				'default_value' => '',
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+			array (
 				'key' => 'field_57sf1984b8963ea',
 				'label' => 'hauteur iframe libre 1',
 				'name' => 'homepage_module_free_iframe_1_height',
 				'type' => 'text',
 				'default_value' => '200px',
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+			array (
+				'key' => 'field_s4b8968543ea',
+				'label' => 'id iframe libre 1',
+				'name' => 'homepage_module_free_iframe_1_id',
+				'type' => 'text',
+				'default_value' => '',
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+			array (
+				'key' => 'field_s4b8945875863ea',
+				'label' => 'class css iframe libre 1',
+				'name' => 'homepage_module_free_iframe_1_class',
+				'type' => 'text',
+				'default_value' => '',
 				'allow_null' => 0,
 				'multiple' => 0,
 			),
@@ -708,11 +734,38 @@ if(function_exists("register_field_group"))
 				'multiple' => 0,
 			),
 			array (
+				'key' => 'field_ioppoi9845fb8963ea',
+				'label' => 'titre iframe libre 2 ',
+				'name' => 'homepage_module_free_iframe_2_title',
+				'type' => 'text',
+				'default_value' => '',
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+			array (
 				'key' => 'field_s4b8963ea',
 				'label' => 'hauteur iframe libre 2',
 				'name' => 'homepage_module_free_iframe_2_height',
 				'type' => 'text',
 				'default_value' => '200px',
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+			array (
+				'key' => 'field_s4b89638554588888ea',
+				'label' => 'id iframe libre 2',
+				'name' => 'homepage_module_free_iframe_2_id',
+				'type' => 'text',
+				'default_value' => '',
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+			array (
+				'key' => 'field_7887478b8963ea',
+				'label' => 'class css iframe libre 2',
+				'name' => 'homepage_module_free_iframe_2_class',
+				'type' => 'text',
+				'default_value' => '',
 				'allow_null' => 0,
 				'multiple' => 0,
 			),
@@ -993,7 +1046,39 @@ if(function_exists("register_field_group"))
 		'menu_order' => 0,
 	));
 
+	register_field_group(array (
+		'id' => 'acf_extra-page',
+		'title' => 'extra page',
+		'fields' => array (
+			array (
+				'key' => 'field_opedffd6hj18',
+				'label' => 'inclure banniere en-tete',
+				'name' => 'page_include_screen',
+				'type' => 'true_false',
+				'instructions' => '',
+				'layout' => 'vertical',
+			)
 
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'page_template',
+					'operator' => '==',
+					'value' => 'default',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
 
 	register_field_group(array (
 		'id' => 'acf_globaldebout-page',

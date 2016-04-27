@@ -16,7 +16,7 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <?php
         if (has_nav_menu('primary_navigation')) :
-        wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
+        wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav menu-top']);
         endif;
         ?>
         <ul class="nav navbar-nav navbar-right">

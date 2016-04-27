@@ -1,5 +1,9 @@
 <?php
-if ( is_page() || get_field('homepage_screen', 'option') ) {
+	$inpage = '';
+	if ( is_page()){
+			$inpage = 'in_page';
+	}
+	if ( is_page() || get_field('homepage_screen', 'option') ) {
 
 	if(is_home() || is_front_page() ){
 		$bg_ = get_field('homepage_screen', 'option');
@@ -15,14 +19,14 @@ if ( is_page() || get_field('homepage_screen', 'option') ) {
 		}
 	}
 	?>
-	<div class="row homepagescreen">
+	<div class="row homepagescreen <?php echo $inpage; ?>">
 		<div class="banner-homepage"
 			 style="background: url(<?= $bg ?>);
 					background-size: cover !important;
 					background-position: center center;
 					background-repeat: no-repeat;">
 			<div class="text-center container">
-				<div id="nuitdeboutdate"><?php echo nd_get_revolutionary_date() ?></div>
+				<div id="nuitdeboutdate"><?php echo nd_get_revolutionary_date(); ?></div>
 				<div id="site_title">
 					<?php
 					if (is_home()) {
@@ -34,9 +38,13 @@ if ( is_page() || get_field('homepage_screen', 'option') ) {
 						}
 					}
 
-					if (is_page()) {
-						?> <h2><?php the_title(); ?></h2> <?php
-					} elseif (is_rootsite()) {
+					elseif (is_page()) {
+						echo '<h2 class="CommuneFont  CommuneFont-page_title">'.get_the_title().'</h2>';
+
+					}
+
+
+					if (is_rootsite() && !is_page() ) {
 						echo '<div id="sentencerotate"></div>';
 					}
 
@@ -45,10 +53,19 @@ if ( is_page() || get_field('homepage_screen', 'option') ) {
 						<div class="ville-screen_btns">
 							<?php
 							if(get_field('chat_page_url')){
-								echo '<a class="primary-button" href="'.get_field('chat_page_url').'">Aller sur le chat</a>';
+								echo '<a class="primary-button space-right-btn" href="'.get_field('chat_page_url').'">Aller sur le chat</a>';
+
 							}
+							else{
+								echo '<a class="primary-button space-right-btn" href="https://chat.nuitdebout.fr">Aller sur le chat</a>';
+
+							}
+
 							if( get_field('wiki_page_url') ){
 								echo '<a class="primary-button" href="'.get_field('wiki_page_url').'">Aller sur le wiki</a>';
+							}
+							else{
+								echo '<a class="primary-button" href="https://wiki.nuitdebout.fr">Aller sur le wiki</a>';
 							}
 							?>
 						</div>

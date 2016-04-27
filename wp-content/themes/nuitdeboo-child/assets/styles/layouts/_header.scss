@@ -53,7 +53,7 @@ body.logged-in{
   padding: (($navbar-height - 50) / 2) $navbar-padding-horizontal;
 }
 
-#menu-top {
+.menu-top {
   @extend .navbar-nav;
   > li > a {
     padding: $navbar-padding-vertical $navbar-padding-horizontal;
