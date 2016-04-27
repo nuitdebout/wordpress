@@ -24,12 +24,14 @@ function get_iframe($nid){
 	if ( get_field($prefix.$nid, 'option') ) :
 		$iframe = array(
 	    		'url' 	 => get_field($prefix.$nid, 'option'),
+	   			'title'  => get_field($prefix.$nid.'_title', 'option'),
 	   			'height' => get_field($prefix.$nid.'_height', 'option'),
 	   			'id'     => get_field($prefix.$nid.'_id', 'option'),
 	   			'class'  => get_field($prefix.$nid.'_class', 'option')
 	    );
-		$output .= '<div class="row iframe-module iframe-module--'.$nid.'">';
-		$output .=  '<iframe src="'.$iframe['url'].'"  height="'.$iframe['height'].'" class="'.$iframe['class'].'" id="'.$iframe['id'].'" allowTransparency="true" frameborder="0" scrolling="no"></iframe>';
+		$output .= '<div class="section iframe-module iframe-module--'.$nid.'">';
+		$output .= 		'<h2 class="section__title">'.$iframe['title'].'</h2>';
+		$output .=  	'<iframe src="'.$iframe['url'].'"  height="'.$iframe['height'].'" class="'.$iframe['class'].'" id="'.$iframe['id'].'" allowTransparency="true" frameborder="0" scrolling="no"></iframe>';
 		$output .='</div>';
 	endif;
     return $output;
