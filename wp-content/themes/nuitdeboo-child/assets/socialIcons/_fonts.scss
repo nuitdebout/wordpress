@@ -71,31 +71,7 @@
 }
 <% }); %>
 
-h1, h2 {
+.CommuneFont {
   font-family:CommuneB1San31;
   letter-spacing: 1px;
-}
-h1 {
-  font-size: 4em;
-}
-h2 {
-  font-size:4em;
-}
-
-.post, #sentencerotate,#nuitdeboutdate {
-
-  font-family: 'Roboto', sans-serif;
-}
-
-html .homepagescreen h2 {
-    font-size: 5em;
-}
-
-#comments h2 {
-     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-size: 16px;
-}
-.post .btn {
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-size: 17px;
 }
