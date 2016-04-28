@@ -12,13 +12,11 @@
       ],
       "main": true
     },
-    "customizer.js": {
-      "files": [
-        "scripts/customizer.js"
-      ]
-    },
     "jquery.js": {
       "bower": ["jquery"]
+    },
+    "underscore.js": {
+      "bower": ["underscore"]
     }
   },
   "config": {
