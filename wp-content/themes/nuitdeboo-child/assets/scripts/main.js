@@ -26,24 +26,24 @@ function rotate(sentences, element) {
 }
 
 function nuitdebout_getDate(element) {
-    var days  = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche']
+    var days  = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];
     // from https://git.framasoft.org/corpsmoderne/nuitdebout_today.git
     var startDate = new Date("march 31 2016");
     var day = 1000*60*60*24;
-
     var today =  Date.now();
     var jd =    new Date();
     var j = jd.getDay();
     var delta = today-startDate;
     var delta_days = delta/day;
     var d = Math.floor(delta_days) + 31;
-    console.log(d)
-    element.append(days[j-1] +' '+d+' mars')
+    element.append(days[j-1] +' '+d+' mars');
     return d;
-
 }
-function social_widgets(element) {
 
+
+function social_widgets(element) {
+/*
+waiting api fix
   jQuery.ajax({
       url: 'http://api.nuitdebout.fr/api/bambuser',
       success: function (resp, status, jqxhr) {
@@ -100,9 +100,15 @@ function social_widgets(element) {
         rotate(tweets, jQuery('.nd_tweet_feed'));
       }
     });
-
+*/
 }
 
+function target_blank_links() {
+  jQuery('a[href*="https://wiki.nuitdebout.fr/wiki/Accueil"]').attr('target', '_blank');
+  jQuery('a[href*="https://chat.nuitdebout.fr/home"]').attr('target', '_blank');
+  jQuery('a[href*="http://questions.nuitdebout.fr/"]').attr('target', '_blank');
+  jQuery('.foot-left a').attr('target', '_blank');
+}
 
 (function($) {
 
@@ -125,6 +131,10 @@ function social_widgets(element) {
             "Je reviendrai et serai des millions",
             "Que nul n'entre ici s'il n'est révolté"
         ], jQuery('#sentencerotate'));
+
+
+        target_blank_links();
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -133,7 +143,7 @@ function social_widgets(element) {
     // Home page
     'home': {
       init: function() {
-        social_widgets()
+        social_widgets();
         // JavaScript to be fired on the home page
       },
       finalize: function() {
