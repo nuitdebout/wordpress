@@ -2,9 +2,17 @@
     <h2 class="section__title">Agenda</h2>
     <div class="section__content text-center">
         <?php // $agenda_ID = get_field('homepage_agenda_ID', 'option'); ?>
-        <p>Vous souhaitez compléter cet agenda, ajouter un évènement ?</p>
         <p>
-           <a class="primary-button" title="agenda" href="https://openagenda.com/nuitdebout">Venez sur l'agenda participatif Nuit Debout</a>
+        Retrouvez les horaires de réunion des commissions, des AG, ainsi que les actions en cours.
+        <br>
+        Vous pouvez filtrer les évènements en utilisant la carte ou le calendrier ci-dessous.
+        </p>
+        <p>
+        <strong>Cet agenda est ouvert et collaboratif, tout le monde peut y contribuer.</strong>
+        <br>
+        <span class="glyphicon glyphicon-hand-right"></span>
+        <a href="https://openagenda.com/nuitdebout" target="_blank">Ajouter un évènement à l'agenda Nuit Debout.</a>
+        <span class="glyphicon glyphicon-hand-left"></span>
         </p>
     </div>
 </section>
