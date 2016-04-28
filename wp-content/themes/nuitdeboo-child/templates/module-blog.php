@@ -9,8 +9,9 @@
             <h3 class="entry-title">
                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             </h3>
-
-            <?php get_template_part('templates/entry-meta'); ?>
+  			<div class="entry-meta">
+            	<?php get_template_part('templates/entry-meta'); ?>
+            </div>
 
             <div class="entry-content noCommune">
                 <?php the_content(); ?>
@@ -19,7 +20,9 @@
         </div>
     </div>
 	<?php endwhile; ?>
+	<!--
     <div class="section__content">
         <div class="navigation text-center padded border-grey-bottom"><?php the_posts_navigation(); ?></div>
     </div>
+    !-->
 </div>
