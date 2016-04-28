@@ -2,9 +2,7 @@
 
 function nd_get_revolutionary_date()
 {
-	if(is_page() ){
-		return;
-	}
+
 
 	$days = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
 
