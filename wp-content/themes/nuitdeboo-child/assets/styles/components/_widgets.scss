@@ -62,7 +62,7 @@
      }
   }
 
-  .widget_rss {
+  .widget_rss, .widget_fbcard {
     border-radius: 5px;
     padding: 15px;
     height: 100%;
@@ -72,6 +72,35 @@
     flex-direction: column;
 
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    .widget-thumb{
+          min-height:300px;
+
+          background-size: cover !important;
+          background-position: center center;
+          background-repeat: no-repeat;
+    }
+    .widget-content h3{
+
+            height: 100px;
+            overflow: hidden;
+            font-size: 1.4em;
+            line-height: 1.3em;
+            position: relative;
+        &:after{
+              content: "";
+              height: 90px;
+              border: none;
+              display: block;
+              width: 100%;
+              background: -webkit-linear-gradient(top,hsla(0,0%,100%,0),#fff);
+              background: -webkit-linear-gradient(270deg,hsla(0,0%,100%,0),#fff);
+              background: linear-gradient(180deg,hsla(0,0%,100%,0),#fff);
+              position: absolute;
+              top: 20px;
+        }
+
+    }
+
 
   }
 }

@@ -1,7 +1,7 @@
 .homepagescreen {
 
   h1 a,h2{
-       color:#fff;
+    color:#fff;
   }
   h1 {
     font-size: 125px;
@@ -14,8 +14,8 @@
     font-size: 3em;
     margin-bottom: 20px;
   }
-  #sentencerotate span {
-    font-size: 28px;
+  #sentencerotate span, .subpage-title {
+    font-size: 26px;
     font-weight:bold;
     max-height: 200px;
     color:#fff;
@@ -34,9 +34,6 @@
 
 }
 
-body.page .homepagescreen {
-    margin-bottom:2em;
-}
 
 #socialhome {
   .page-header {

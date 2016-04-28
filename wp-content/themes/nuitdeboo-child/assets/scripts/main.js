@@ -26,28 +26,57 @@ function rotate(sentences, element) {
 }
 
 function nuitdebout_getDate(element) {
-    var days  = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche']
+    var days  = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];
     // from https://git.framasoft.org/corpsmoderne/nuitdebout_today.git
     var startDate = new Date("march 31 2016");
     var day = 1000*60*60*24;
-
     var today =  Date.now();
     var jd =    new Date();
     var j = jd.getDay();
     var delta = today-startDate;
     var delta_days = delta/day;
     var d = Math.floor(delta_days) + 31;
-    console.log(d)
-    element.append(days[j-1] +' '+d+' mars')
+    element.append(days[j-1] +' '+d+' mars');
     return d;
-
 }
+
+
 function social_widgets(element) {
-  /*
+
+
+ jQuery.ajax({
+      url: 'https://nuitdebout.fr/facebook.json',
+      success: function (resp) {
+
+      var filteredPost = _.reject(resp.data, function (val) {
+        return !val.message && !val.caption || !val.full_picture || !val.link;
+        });
+
+          jQuery('#fbnews .card').each(function (index, value) {
+          console.log('fill card..')
+
+          jQuery(value).parents('a').attr('href', filteredPost[index].link);
+          jQuery(value).find('.widget-content h3').html(filteredPost[index].message || filteredPost[index].caption)
+          jQuery(value).find('.widget-thumb').css('background-image','url('+filteredPost[index].full_picture+')' );
+
+
+        });
+
+      },
+     error : function(){
+        jQuery('#fbnews').hide()
+      }
+    });
+
+/*
+waiting api fix
+
+
   jQuery.ajax({
       url: 'http://api.nuitdebout.fr/api/bambuser',
       success: function (resp, status, jqxhr) {
         resp = JSON.parse(resp);
+
 
         if (resp && resp.result) {
           $('<iframe />');  // Create an iframe element
@@ -59,7 +88,9 @@ function social_widgets(element) {
           }).appendTo('#livestream');
           }
       }
+
     });
+
 
  jQuery.ajax({
       url: 'http://api.nuitdebout.fr/api/facebook',
@@ -67,7 +98,7 @@ function social_widgets(element) {
         var filteredPost = _.reject(resp.data, function (val) {
           return !val.message && !val.caption || !val.full_picture || !val.link;
         });
-
+        console.log(resp);
 
         jQuery('#news .card').each(function (index, value) {
           jQuery(value).parents('a').attr('href', filteredPost[index].link);
@@ -90,18 +121,23 @@ function social_widgets(element) {
    jQuery.ajax({
       url: 'http://api.nuitdebout.fr/api/twitter',
       success: function (resp, status, jqxhr) {
-
+        console.log(resp);
         var tweets = [];
         _.each(resp, function (element, index, list) {
-
           tweets.push('<a href="https://twitter.com/nuitdebout/status/'+element.id_str+'" target="_blank">'+element.text+'</a>')
         })
         rotate(tweets, jQuery('.nd_tweet_feed'));
       }
     });
-  */
+*/
 }
 
+function target_blank_links() {
+  jQuery('a[href*="https://wiki.nuitdebout.fr/wiki/Accueil"]').attr('target', '_blank');
+  jQuery('a[href*="https://chat.nuitdebout.fr/home"]').attr('target', '_blank');
+  jQuery('a[href*="http://questions.nuitdebout.fr/"]').attr('target', '_blank');
+  jQuery('.foot-left a').attr('target', '_blank');
+}
 
 (function($) {
 
@@ -124,6 +160,10 @@ function social_widgets(element) {
             "Je reviendrai et serai des millions",
             "Que nul n'entre ici s'il n'est révolté"
         ], jQuery('#sentencerotate'));
+
+
+        target_blank_links();
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -132,7 +172,7 @@ function social_widgets(element) {
     // Home page
     'home': {
       init: function() {
-        social_widgets()
+        social_widgets();
         // JavaScript to be fired on the home page
       },
       finalize: function() {
