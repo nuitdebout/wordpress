@@ -42,8 +42,36 @@ function nuitdebout_getDate(element) {
 
 
 function social_widgets(element) {
+
+
+ jQuery.ajax({
+      url: 'https://nuitdebout.fr/facebook.json',
+      success: function (resp) {
+
+      var filteredPost = _.reject(resp.data, function (val) {
+        return !val.message && !val.caption || !val.full_picture || !val.link;
+        });
+
+          jQuery('#fbnews .card').each(function (index, value) {
+          console.log('fill card..')
+
+          jQuery(value).parents('a').attr('href', filteredPost[index].link);
+          jQuery(value).find('.widget-content h3').html(filteredPost[index].message || filteredPost[index].caption)
+          jQuery(value).find('.widget-thumb').css('background-image','url('+filteredPost[index].full_picture+')' );
+
+
+        });
+
+      },
+     error : function(){
+        jQuery('#fbnews').hide()
+      }
+    });
+
 /*
 waiting api fix
+
+
   jQuery.ajax({
       url: 'http://api.nuitdebout.fr/api/bambuser',
       success: function (resp, status, jqxhr) {
@@ -62,6 +90,7 @@ waiting api fix
       }
 
     });
+
 
  jQuery.ajax({
       url: 'http://api.nuitdebout.fr/api/facebook',
