@@ -6,7 +6,7 @@ if(get_field('page_include_screen') == 1){
 ?>
 <section class="section">
 	<div class="section__content">
-		<div class="post padded-top">
+		<div class="post">
 		 	<?php
 				if(get_field('page_include_screen') == 0){
 					get_template_part('templates/page', 'header');

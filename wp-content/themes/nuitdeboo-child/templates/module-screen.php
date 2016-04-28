@@ -48,6 +48,12 @@
 						echo '<div id="sentencerotate"></div>';
 					}
 
+					if (is_page() && get_field('page_include_subtitle') ) {
+						echo '<div class="subpage-title">'.get_field('page_include_subtitle').'</div>';
+					}
+
+
+
 					// add 2 more buttons if ville template
 					if(is_page_template('page-ville.php') ){ ?>
 						<div class="ville-screen_btns">
