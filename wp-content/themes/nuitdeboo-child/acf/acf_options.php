@@ -158,30 +158,30 @@ if(function_exists("register_field_group"))
 					'oui' => 'Oui',
 					'non' => 'Non',
 				),
-				'default_value' => '',
+				'default_value' => 'non',
 				'allow_null' => 0,
 				'multiple' => 0,
 			),
  			array (
-                                'key' => 'field_57qsd123qsqsd9sdf024bdd0',
-                                'label' => 'Module globalDebout',
-                                'name' => '',
-                                'type' => 'tab',
-                        ),
-                        array (
-                                'key' => 'field_571sqqez23848f36dqse',
-                                'label' => 'Inclure le module "globaldebout" ',
-                                'name' => 'homepage_module_global',
-                                'type' => 'select',
-                                'choices' => array (
-                                        'oui' => 'Oui',
-                                        'non' => 'Non',
-                                ),
-                                'default_value' => '',
-                                'allow_null' => 0,
-                                'multiple' => 0,
-                        ),
-                        array (
+                'key' => 'field_57qsd123qsqsd9sdf024bdd0',
+                'label' => 'Module globalDebout',
+                'name' => '',
+                'type' => 'tab',
+            ),
+            array (
+                'key' => 'field_571sqqez23848f36dqse',
+                'label' => 'Inclure le module "globaldebout" ',
+                'name' => 'homepage_module_global',
+                'type' => 'select',
+                'choices' => array (
+                        'oui' => 'Oui',
+                        'non' => 'Non',
+                ),
+                'default_value' => 'non',
+                'allow_null' => 0,
+                'multiple' => 0,
+            ),
+            array (
 				'key' => 'field_5712uio5edsddfc26c22',
 				'label' => 'global (page parent)',
 				'name' => 'homepage_global',
@@ -525,7 +525,7 @@ if(function_exists("register_field_group"))
 				'formatting' => 'none',
 				'maxlength' => '',
 			),
-			*/
+
 			array (
 				'key' => 'field_57123b4136e55',
 				'label' => 'Carte',
@@ -545,6 +545,7 @@ if(function_exists("register_field_group"))
 				'allow_null' => 0,
 				'multiple' => 0,
 			),
+			*/
 			array (
 				'key' => 'field_57123b4936e56',
 				'label' => 'Participer',
@@ -1055,6 +1056,14 @@ if(function_exists("register_field_group"))
 				'label' => 'inclure banniere en-tete',
 				'name' => 'page_include_screen',
 				'type' => 'true_false',
+				'instructions' => '',
+				'layout' => 'vertical',
+			),
+			array (
+				'key' => 'field_pagest228',
+				'label' => 'Sous-titre',
+				'name' => 'page_include_subtitle',
+				'type' => 'text',
 				'instructions' => '',
 				'layout' => 'vertical',
 			)
