@@ -1,26 +1,36 @@
-.tag a {
-  /* Rectangle 118: */
-  background: white;
-  border: 1px solid $gray-lighter;
-  border-radius: 16px;
-  padding: 0.5em 1em !important;
-  margin-bottom: 10px;
-  display: block;
+.tags-list {
+  @extend .list-inline;
 
-  transition: box-shadow .3s;
+  text-align: center;
+}
 
-  &:focus,
-  &:active,
-  &:hover {
-    background: $link-color;
-    border-color: $link-color;
-    color: white;
-    text-decoration:none;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  }
+.tag {
+  display: inline-block;
 
-  &:active {
-    box-shadow: none;
+  a {
+    /* Rectangle 118: */
+    background: white;
+    border: 1px solid $gray-lighter;
+    border-radius: 16px;
+    padding: 0.5em 1em !important;
+    margin-bottom: 10px;
+    display: block;
+
+    transition: box-shadow .3s;
+
+    &:focus,
+    &:active,
+    &:hover {
+      background: $link-color;
+      border-color: $link-color;
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    &:active {
+      box-shadow: none;
+    }
   }
 }
 
@@ -32,5 +42,5 @@
   font-size: 14px;
 
 }
-  .space-right-btn{margin-right:20px;}
+.space-right-btn{margin-right:20px;}
 

@@ -35,7 +35,7 @@ if($pages_sub){
 <section class="section list-towns">
     <h2 class="section__title">Liste des villes</h2>
     <div class="section__content">
-        <ul class="cities-list">
+        <ul class="tags-list">
             <?php foreach ($cities as $city) : ?>
                 <li class="tag">
                     <a href="<?php echo $city['url'] ?>"><?php echo $city['title'] ?></a>

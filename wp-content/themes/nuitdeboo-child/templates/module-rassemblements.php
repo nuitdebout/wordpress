@@ -21,7 +21,7 @@
 			$world_count = 0;
 
 			if(is_home()) {
-				echo '<ul class="cities-list">';
+				echo '<ul class="tags-list">';
 				echo '<li class="tag"><a href="'.get_bloginfo("home").'/ville/paris">Paris</a></li>';
 			}
 			foreach ( $pages_sub as $p ) {

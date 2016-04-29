@@ -27,7 +27,7 @@ if ($pages_sub = get_pages(['child_of' => $post->ID, 'post_type' => 'page', 'pos
     <h2 class="section__title"><?php echo get_the_title() ?></h2>
     <div class="section__content">
 	    <?php if (!empty($tags)) : ?>
-			<ul class="list-unstyled list-inline">
+			<ul class="tags-list">
 				<?php foreach ($tags as $tag) : ?>
 				<li class="tag">
                     <a href="<?php echo $tag['url'] ?>"><?php echo $tag['title'] ?></a>
