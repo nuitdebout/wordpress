@@ -45,7 +45,7 @@ if($pages_sub){
     </div>
 </section>
 
-<section class="section section--gray section--subsection">
+<section class="section section--gray">
     <h3 class="section__title">Votre ville n'est pas listée ?</h3>
     <div class="section__actions-container">
         <a class="primary-button" href="http://wiki.nuitdebout.fr">Ajoutez-la sur le wiki !</a>

@@ -22,7 +22,7 @@
 
 <?php get_template_part('templates/module', 'home-social') ?>
 
-<section class="section section--subsection">
+<section class="section">
 	<h2 class="section__title">Contribuez</h2>
 	<div class="section__content section__content--center ">
 		<p>Vous voulez compléter cette page, ajouter des liens ?</p>
@@ -34,7 +34,7 @@
 	</div>
 </section>
 
-<section class="section section--gray section--subsection">
+<section class="section section--gray">
 	<h2 class="section__title">Activez le site de votre ville</h2>
 	<div class="section__content section__content--center ">
 		<p>Pour déployer un site de votre ville debout et le gérer comme vous le souhaitez :</p>
