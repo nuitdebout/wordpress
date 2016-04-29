@@ -34,3 +34,8 @@ function get_iframe($nid){
 	endif;
     return $output;
 }
+function getAttachmentThumb($id) {
+	$thumb =  get_post_thumbnail_id( $id );
+	$url = wp_get_attachment_image_src($thumb , [330, 180])[0];
+	return $url;
+}

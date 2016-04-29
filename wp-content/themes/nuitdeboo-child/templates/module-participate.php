@@ -1,11 +1,4 @@
 <?php
-
-function getAttachmentThumb($id) {
-	$thumb =  get_post_thumbnail_id( $id );
-	$url = wp_get_attachment_image_src($thumb , [330, 180])[0];
-	return $url;
-}
-
 $page_parent = get_field('homepage_takepart', 'option');
 if ($page_parent->ID) :
 	$parent_id = $page_parent->ID;
@@ -35,7 +28,7 @@ if ($page_parent->ID) :
 		<?php foreach ($pages_sub as $p) : ?>
 			<div class="participate-action">
 				<div class="participate-action__image">
-					<img class="img-responsive" src="<?php echo getAttachmentThumb($p->ID) ?>">
+					<img class="img-responsive" src="<?php echo getAttachmentThumb($p->ID); ?>">
 				</div>
 				<div class="participate-action__content">
 					<h3 class="action-title">
