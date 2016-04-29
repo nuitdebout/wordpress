@@ -17,7 +17,33 @@
 
 .post-loop-item{
     border-bottom:1px solid $gray-lighter;
+    .entry-title{
+      font-size: 2em;
+      padding-top: 20px;
 
+    }
+    .entry-meta{
+       border-bottom:1px solid $gray-lighter;
+       width:100%;
+       padding:0px 0 20px;
+       float: left;
+       margin-bottom:20px;
+       time{
+         float:right;
+         font-size:14px;
+       }
+       p.author.byline{
+         float:left;
+       }
+
+    }
+
+
+
+
+    img{
+      max-width:100%;
+    }
 }
 
 

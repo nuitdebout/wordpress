@@ -2,15 +2,27 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <?php wp_head(); ?>
-
-
+  	  <?php wp_head(); ?>
 	  <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/favicon.ico" />
-	  <meta property="og:locale" content="fr_FR"> <!-- a tester : <?php bloginfo( 'language' ); ?> !-->
+	  <?php
+	  $url = get_bloginfo('home');
+	  $thumb = get_stylesheet_directory_uri().'/dist/images/nuitdebout-thumb.png';
+	  $suffix = ' - nuitdebout.fr';
+	  $title = get_bloginfo('name');
+	  if( is_single() || is_page() ){
+	  	  $title = get_the_title();
+		  if ( has_post_thumbnail() ) {
+			$thumb = getAttachmentThumb($post->ID);
+		  }
+		  $url = get_permalink();
+	  }
+	  $title .= $suffix;
+	  ?>
+	  <meta property="og:locale" content="fr_FR">
 	  <meta property="og:type" content="website">
-	  <meta property="og:title" content="<?php bloginfo( 'name' ); ?> - Nuit Debout">
-	  <meta property="og:description" content="<?php bloginfo( 'description' ); ?> - Chaque jour, nous sommes des milliers à occuper l’espace public pour reprendre notre place dans la République. Rejoignez-nous, et décidons ensemble de notre devenir commun dans ce mouvement politique sans parti ni bannières.">
-	  <meta property="og:url" content="<?php bloginfo( 'url' ); ?>">
+	  <meta property="og:description" content="<?php bloginfo( 'description' ); ?>">
 	  <meta property="og:site_name" content="<?php bloginfo( 'name' ); ?>">
-	  <meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/nuitdebout-thumb.png">
+	  <meta property="og:image" content="<?php echo $thumb ?>">
+	  <meta property="og:title" content="<?php echo $title ?>">
+	  <meta property="og:url" content="<?php echo $url ?>">
 </head>

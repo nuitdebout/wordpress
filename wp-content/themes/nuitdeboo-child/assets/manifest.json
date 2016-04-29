@@ -14,9 +14,6 @@
     },
     "jquery.js": {
       "bower": ["jquery"]
-    },
-    "underscore.js": {
-      "bower": ["underscore"]
     }
   },
   "config": {
