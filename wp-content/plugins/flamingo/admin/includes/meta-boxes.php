@@ -160,11 +160,28 @@ function flamingo_contact_name_meta_box( $post ) {
 
 function flamingo_inbound_fields_meta_box( $post ) {
 ?>
-<table class="widefat message-fields" cellspacing="0">
+<table class="widefat message-fields striped">
 <tbody>
 
-<?php foreach ( (array) $post->fields as $key => $value ) : $alt = 0; ?>
-<tr<?php $alt = 1 - $alt; echo $alt ? ' class="alt"' : ''; ?>>
+<?php foreach ( (array) $post->fields as $key => $value ) : ?>
+<tr>
+<td class="field-title"><?php echo esc_html( $key ); ?></td>
+<td class="field-value"><?php echo flamingo_htmlize( $value ); ?></td>
+</tr>
+<?php endforeach; ?>
+
+</tbody>
+</table>
+<?php
+}
+
+function flamingo_inbound_meta_meta_box( $post ) {
+?>
+<table class="widefat message-fields striped">
+<tbody>
+
+<?php foreach ( (array) $post->meta as $key => $value ) : ?>
+<tr>
 <td class="field-title"><?php echo esc_html( $key ); ?></td>
 <td class="field-value"><?php echo flamingo_htmlize( $value ); ?></td>
 </tr>
@@ -230,5 +247,3 @@ function flamingo_outbound_submit_meta_box( $post ) {
 </div>
 <?php
 }
-
-?>

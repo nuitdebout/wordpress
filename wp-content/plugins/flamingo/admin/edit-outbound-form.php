@@ -14,13 +14,13 @@ if ( ! empty( $post->id ) ) {
 <div class="wrap columns-2">
 <?php screen_icon(); ?>
 
-<h2><?php
+<h1><?php
 	if ( 'new' == $action ) {
 		echo esc_html( __( 'Compose a Message', 'flamingo' ) );
 	} else {
 		echo esc_html( __( 'Outbound Message', 'flamingo' ) );
 	}
-?></h2>
+?></h1>
 
 <?php do_action( 'flamingo_admin_updated_message', $post ); ?>
 

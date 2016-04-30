@@ -14,7 +14,7 @@ if ( ! empty( $post->id ) ) {
 <div class="wrap columns-2">
 <?php screen_icon(); ?>
 
-<h2><?php echo esc_html( __( 'Inbound Message', 'flamingo' ) ); ?></h2>
+<h1><?php echo esc_html( __( 'Inbound Message', 'flamingo' ) ); ?></h1>
 
 <?php do_action( 'flamingo_admin_updated_message', $post ); ?>
 
