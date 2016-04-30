@@ -18,13 +18,20 @@ $args = array(
 		'post_status' => 'publish'
 );
 $pages_sub = get_pages($args);
-$cities = [];
+$citiesByLetter = [];
 if($pages_sub){
 	foreach ( $pages_sub as $p ) {
 		$content = apply_filters('the_content',$p->post_content);
 		$title = apply_filters('the_title',$p->post_title);
 		$url = esc_url( get_permalink($p->ID) );
-        $cities[] = [
+        $letter = $title[0];
+        $letter = htmlentities($letter) === '' ? 'E' : $letter;
+
+        if (! $citiesByLetter[$letter]) {
+            $citiesByLetter[$letter] = [];
+        }
+
+        $citiesByLetter[$letter][] = [
             'url' => $url,
             'title' => $title
         ];
@@ -35,13 +42,16 @@ if($pages_sub){
 <section class="section list-towns">
     <h2 class="section__title">Liste des villes</h2>
     <div class="section__content">
-        <ul class="tags-list">
-            <?php foreach ($cities as $city) : ?>
-                <li class="tag">
-                    <a href="<?php echo $city['url'] ?>"><?php echo $city['title'] ?></a>
-                </li>
-            <?php endforeach; ?>
-        </ul>
+        <?php foreach ($citiesByLetter as $letter => $cities) : ?>
+            <h3><?php echo $letter; ?></h3>
+            <ul class="tags-list">
+                <?php foreach ($cities as $city) : ?>
+                    <li class="tag">
+                        <a href="<?php echo $city['url'] ?>"><?php echo $city['title'] ?></a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        <?php endforeach; ?>
     </div>
 </section>
 
