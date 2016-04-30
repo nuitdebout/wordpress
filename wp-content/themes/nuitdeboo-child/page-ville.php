@@ -13,7 +13,7 @@
 
 <section class="section">
 	<div class="section__content">
-		<div class="post padded-top">
+		<div class="post city-post">
 			<?php the_content(); ?>
 			<?php edit_post_link('edit', '<p>', '</p>') ?>
 		</div>
