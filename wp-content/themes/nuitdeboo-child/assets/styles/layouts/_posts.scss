@@ -1,6 +1,6 @@
 .share-btns{
   padding-top: 5px;
-   width:100%;
+  width:100%;
   float: left;
   .wrap{
     display: inline-block;
@@ -16,44 +16,77 @@
 
 
 .post-loop-item{
+  border-bottom:1px solid $gray-lighter;
+  .entry-title{
+    font-size: 2em;
+    padding-top: 20px;
+
+  }
+  .entry-meta{
     border-bottom:1px solid $gray-lighter;
-    .entry-title{
-      font-size: 2em;
-      padding-top: 20px;
-
+    width:100%;
+    padding:0px 0 20px;
+    float: left;
+    margin-bottom:20px;
+    time{
+      float:right;
+      font-size:14px;
     }
-    .entry-meta{
-       border-bottom:1px solid $gray-lighter;
-       width:100%;
-       padding:0px 0 20px;
-       float: left;
-       margin-bottom:20px;
-       time{
-         float:right;
-         font-size:14px;
-       }
-       p.author.byline{
-         float:left;
-       }
-
+    p.author.byline{
+      float:left;
     }
 
+  }
+  img{
 
-
-
-    img{
-      max-width:100%;
-    }
+    max-width:100%;
+  }
 }
 
 
 body.page-id-480 .post {
-    direction: rtl;
+  direction: rtl;
 }
 
 
+.city-post {
+
+  h1, h2 {
+    @include title-font();
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    @include title-font();
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  h4 {
+    text-align: left;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  // Only the first level list are stylised to display tags
+  & > ul {
+
+    text-align: center;
+    & > li {
+      display: inline-block;
+      border: none;
+      margin: 0;
+      padding: 0;
+
+      & > a {
+        @include tag-link();
+      }
+    }
+  }
 
 
-
-
+}
 
