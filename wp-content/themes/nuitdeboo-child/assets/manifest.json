@@ -6,6 +6,11 @@
       ],
       "main": true
     },
+    "periscope.js": {
+      "files": [
+        "scripts/periscope.js"
+      ]
+    },
     "main.css": {
       "files": [
         "styles/main.scss"
