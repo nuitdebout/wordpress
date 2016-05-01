@@ -126,8 +126,11 @@ function assets() {
     wp_enqueue_script('comment-reply');
   }
 
-
   wp_enqueue_script('underscore');
   wp_enqueue_script('sage/js', get_stylesheet_directory_uri() . '/dist/scripts/main.js', ['jquery', 'underscore'], null, true);
+
+  if (is_page_template('page-periscope.php')) {
+  	wp_enqueue_script('nuidebout/periscope', get_stylesheet_directory_uri() . '/dist/scripts/periscope.js');
+  }
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
