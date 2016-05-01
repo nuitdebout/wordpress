@@ -14,13 +14,7 @@
   }
 
   .section__content {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    width: 100%;
-    max-width: 780px;
+    @include container;
 
     font-size: 16px;
     p {
@@ -31,8 +25,8 @@
         margin: 0;
         font-size:14px;
     }
-
   }
+
   .section__content--center {
     text-align: center;
   }

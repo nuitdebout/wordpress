@@ -50,7 +50,6 @@ body.page-id-480 .post {
 
 
 .city-post {
-
   h1, h2 {
     @include title-font();
     font-size: 45px;
@@ -86,7 +85,63 @@ body.page-id-480 .post {
       }
     }
   }
-
-
 }
 
+.post.post--single {
+
+  margin-top: 10px;
+  background-color: $gray-lighter;
+
+  .post__header {
+    @include container(950px);
+
+    time.updated {
+      color: $gray-light;
+      display: block;
+    }
+
+    .wp-post-image {
+      width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+  }
+
+  .post__content {
+    @include container();
+
+    padding-bottom: 50px;
+    border-bottom: 1px solid $gray-light;
+  }
+  .post__comments {
+    @include container();
+
+    padding-top: 50px;
+  }
+
+  /**
+   * Post style
+   * Scoped in post--single but can be generalized
+   */
+  .entry-title {
+    font-size: 35px;
+    font-family: "Roboto", serif;
+
+    color: $gray;
+    margin: 20px 0;
+  }
+
+  .entry-content {
+    color: $gray;
+
+    ul > li {
+      border: none;
+      list-style: disc;
+      padding: 0;
+      margin-left: 30px;
+    }
+    p {
+      margin-bottom: 25px;
+    }
+  }
+}

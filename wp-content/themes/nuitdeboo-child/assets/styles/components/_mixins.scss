@@ -43,3 +43,11 @@
     box-shadow: none;
   }
 }
+
+@mixin container($max-width: 780px) {
+  @include container-fixed;
+
+  width: 100%;
+  max-width: $max-width;
+}
+
