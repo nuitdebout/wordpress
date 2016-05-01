@@ -6,6 +6,7 @@ echo "Compiling theme..."
 
 cd wp-content/themes/nuitdeboo-child
 
+composer install
 npm install
 bower install
 gulp
