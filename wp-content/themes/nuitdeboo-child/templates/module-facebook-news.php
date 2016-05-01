@@ -1,5 +1,5 @@
 <div id="fbnews" class="section home-widget-container">
-	<div class="section__title">Sur facebook</div>
+	<div class="section__title">Sur Facebook</div>
 	<div class="flex-widget-container">
 		<?php for ($c = 0; $c < 8; $c++) : ?>
 		<a class="flex-widget" href="" target="_blank">

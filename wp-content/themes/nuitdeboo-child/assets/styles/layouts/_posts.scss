@@ -32,7 +32,7 @@
       float:right;
       font-size:14px;
     }
-    p.author.byline{
+    div.byline{
       float:left;
     }
 
@@ -44,7 +44,7 @@
 }
 
 
-body.page-id-480 .post {
+body.page-id-480 .section__content {
   direction: rtl;
 }
 
@@ -71,7 +71,7 @@ body.page-id-480 .post {
   }
 
   // Only the first level list are stylised to display tags
-  & > ul {
+  /* & > ul {
 
     text-align: center;
     & > li {
@@ -85,11 +85,16 @@ body.page-id-480 .post {
       }
     }
   }
-}
+  */
 
+}
+body.single-post{
+    background-color: $gray-lighter;
+
+}
 .post.post--single {
 
-  margin-top: 10px;
+  padding-top: 10px;
   background-color: $gray-lighter;
 
   .post__header {

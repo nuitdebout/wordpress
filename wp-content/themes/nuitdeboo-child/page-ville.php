@@ -26,6 +26,8 @@
 	<h2 class="section__title">Contribuez</h2>
 	<div class="section__content section__content--center ">
 		<p>Vous voulez compléter cette page, ajouter des liens ?</p>
+		<p>Cette page sera automatiquement synchronisée (plusieurs fois par jour)</p>
+
 	</div>
 	<div class="section__actions-container">
 		<a class="primary-button" href="https://wiki.nuitdebout.fr/wiki/Villes/<?php echo get_the_title(); ?>">
@@ -40,10 +42,10 @@
 		<p>Pour déployer un site de votre ville debout et le gérer comme vous le souhaitez :</p>
 	</div>
 	<div class="section__actions-container">
-		<a class="primary-button" href="<?php echo get_bloginfo('home').'/contact' ?>">Faire une demande de site</a>
+		<a class="primary-button" href="<?php echo get_bloginfo('home').'/demande-de-creation-dun-site-pour-sa-ville/' ?>">(bientôt)</a>
 	</div>
 	<div class="section__content section__content--center ">
-		<p>Vous avez déja un site ? <a href="<?php echo get_bloginfo('home').'/contact' ?>">Envoyez-nous</a> le lien</p>
+		<p>Vous avez déja un site ? <a href="<?php echo get_bloginfo('home').'/contact/' ?>">Envoyez-nous</a> le lien</p>
 	</div>
 </section>
 

@@ -58,21 +58,16 @@
 					if(is_page_template('page-ville.php') ){ ?>
 						<div class="ville-screen_btns">
 							<?php
+							$chat_url = 'https://chat.nuitdebout.fr/';
+							$wiki_url = 'https://wiki.nuitdebout.fr/';
 							if(get_field('chat_page_url')){
-								echo '<a class="primary-button space-right-btn" href="'.get_field('chat_page_url').'">Aller sur le chat</a>';
-
+								$chat_url =  get_field('chat_page_url');
 							}
-							else{
-								echo '<a class="primary-button space-right-btn" href="https://chat.nuitdebout.fr">Aller sur le chat</a>';
-
-							}
-
 							if( get_field('wiki_page_url') ){
-								echo '<a class="primary-button" href="'.get_field('wiki_page_url').'">Aller sur le wiki</a>';
+								$wiki_url =  get_field('wiki_page_url');
 							}
-							else{
-								echo '<a class="primary-button" href="https://wiki.nuitdebout.fr">Aller sur le wiki</a>';
-							}
+							echo '<a class="primary-button space-right-btn" href="'.$wiki_url.'">Aller sur le wiki</a>';
+							echo '<a class="primary-button " href="'.$chat_url.'">Aller sur le chat</a>';
 							?>
 						</div>
 					<?php
