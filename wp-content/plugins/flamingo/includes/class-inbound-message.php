@@ -136,12 +136,14 @@ class Flamingo_Inbound_Message {
 			$this->from_email = get_post_meta( $post->ID, '_from_email', true );
 			$this->fields = get_post_meta( $post->ID, '_fields', true );
 
-			foreach ( $this->fields as $key => $value ) {
-				$meta_key = sanitize_key( '_field_' . $key );
+			if ( ! empty( $this->fields ) ) {
+				foreach ( (array) $this->fields as $key => $value ) {
+					$meta_key = sanitize_key( '_field_' . $key );
 
-				if ( metadata_exists( 'post', $post->ID, $meta_key ) ) {
-					$value = get_post_meta( $post->ID, $meta_key, true );
-					$this->fields[$key] = $value;
+					if ( metadata_exists( 'post', $post->ID, $meta_key ) ) {
+						$value = get_post_meta( $post->ID, $meta_key, true );
+						$this->fields[$key] = $value;
+					}
 				}
 			}
 

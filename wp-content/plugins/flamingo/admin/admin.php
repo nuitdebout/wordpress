@@ -5,11 +5,16 @@ require_once FLAMINGO_PLUGIN_DIR . '/admin/admin-functions.php';
 add_action( 'admin_menu', 'flamingo_admin_menu', 8 );
 
 function flamingo_admin_menu() {
-	add_object_page(
+	global $_wp_last_object_menu;
+
+	$_wp_last_object_menu++;
+
+	add_menu_page(
 		__( 'Flamingo Address Book', 'flamingo' ),
 		__( 'Flamingo', 'flamingo' ),
 		'flamingo_edit_contacts', 'flamingo',
-		'flamingo_contact_admin_page', 'dashicons-feedback' );
+		'flamingo_contact_admin_page', 'dashicons-feedback',
+		$_wp_last_object_menu );
 
 	$contact_admin = add_submenu_page( 'flamingo',
 		__( 'Flamingo Address Book', 'flamingo' ),
@@ -273,7 +278,7 @@ function flamingo_contact_admin_page() {
 <div class="wrap">
 <?php screen_icon(); ?>
 
-<h2><?php
+<h1><?php
 	echo esc_html( __( 'Flamingo Address Book', 'flamingo' ) );
 
 	if ( ! empty( $_REQUEST['s'] ) ) {
@@ -281,7 +286,7 @@ function flamingo_contact_admin_page() {
 			. __( 'Search results for &#8220;%s&#8221;', 'flamingo' )
 			. '</span>', esc_html( $_REQUEST['s'] ) );
 	}
-?></h2>
+?></h1>
 
 <?php do_action( 'flamingo_admin_updated_message' ); ?>
 
@@ -558,6 +563,9 @@ function flamingo_load_inbound_admin() {
 		add_meta_box( 'inboundfieldsdiv', __( 'Fields', 'flamingo' ),
 			'flamingo_inbound_fields_meta_box', null, 'normal', 'core' );
 
+		add_meta_box( 'inboundmetadiv', __( 'Meta', 'flamingo' ),
+			'flamingo_inbound_meta_meta_box', null, 'normal', 'core' );
+
 	} else {
 		if ( ! class_exists( 'Flamingo_Inbound_Messages_List_Table' ) )
 			require_once FLAMINGO_PLUGIN_DIR . '/admin/includes/class-inbound-messages-list-table.php';
@@ -589,7 +597,7 @@ function flamingo_inbound_admin_page() {
 <div class="wrap">
 <?php screen_icon(); ?>
 
-<h2><?php
+<h1><?php
 	echo esc_html( __( 'Inbound Messages', 'flamingo' ) );
 
 	if ( ! empty( $_REQUEST['s'] ) ) {
@@ -597,7 +605,7 @@ function flamingo_inbound_admin_page() {
 			. __( 'Search results for &#8220;%s&#8221;', 'flamingo' )
 			. '</span>', esc_html( $_REQUEST['s'] ) );
 	}
-?></h2>
+?></h1>
 
 <?php do_action( 'flamingo_admin_updated_message' ); ?>
 
@@ -701,7 +709,7 @@ function flamingo_outbound_admin_page() {
 <div class="wrap">
 <?php screen_icon(); ?>
 
-<h2><?php
+<h1><?php
 	echo esc_html( __( 'Outbound Messages', 'flamingo' ) );
 
 	if ( ! empty( $_REQUEST['s'] ) ) {
@@ -709,7 +717,7 @@ function flamingo_outbound_admin_page() {
 			. __( 'Search results for &#8220;%s&#8221;', 'flamingo' )
 			. '</span>', esc_html( $_REQUEST['s'] ) );
 	}
-?></h2>
+?></h1>
 
 <?php do_action( 'flamingo_admin_updated_message' ); ?>
 

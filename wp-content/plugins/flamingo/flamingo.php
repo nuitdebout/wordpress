@@ -1,15 +1,14 @@
 <?php
 /*
 Plugin Name: Flamingo
-Plugin URI: http://flamingo-eggs.com/
 Description: Flamingo manages your contact list on WordPress.
 Author: Takayuki Miyoshi
 Text Domain: flamingo
 Domain Path: /languages/
-Version: 1.3
+Version: 1.4
 */
 
-define( 'FLAMINGO_VERSION', '1.3' );
+define( 'FLAMINGO_VERSION', '1.4' );
 
 define( 'FLAMINGO_PLUGIN', __FILE__ );
 
