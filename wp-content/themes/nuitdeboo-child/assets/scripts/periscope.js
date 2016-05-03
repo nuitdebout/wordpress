@@ -29,7 +29,7 @@ var periscopers = [
       function() {
         return $.Deferred().resolveWith(this, arguments);
       }).always(function() {
-        console.log('DONE !!!')
+        console.log('DONE !!!');
         progress += percent;
         $('#periscope-wall .progress-bar')
           .css('width', progress+'%')
@@ -41,12 +41,13 @@ var periscopers = [
 
     $.each(arguments, function(index, responseArgs) {
 
-      if (responseArgs[1] === 'error')
+      if (responseArgs[1] === 'error') {
         return;
+      }
 
       var data = responseArgs[0];
 
-      var $wrapper = $('<div>').addClass('periscoper__wrapper')
+      var $wrapper = $('<div>').addClass('periscoper__wrapper');
 
       var $link = $('<a>')
         .attr('href', 'https://www.periscope.tv/'+data.user.username)
@@ -63,9 +64,8 @@ var periscopers = [
         .attr('href', 'https://www.periscope.tv/'+data.user.username)
         .text('@'+data.user.username);
 
-      $wrapper
-        .append($link)
-        .append($onair)
+      $wrapper.append($link)
+              .append($onair);
 
       $('<div>')
         .addClass('col-xs-12')
