@@ -26,7 +26,7 @@
 		get_template_part('templates/module', 'blog');
   }
 
-  if( !is_paged() && get_field('homepage_module_map', 'option') == 'oui' ) {
+  if (is_main_site($blog_id)) {
     	get_template_part('templates/module', 'rassemblements');
   }
   if ( is_active_sidebar( 'homepage-top' ) ) :

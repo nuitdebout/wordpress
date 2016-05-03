@@ -142,26 +142,6 @@ if(function_exists("register_field_group"))
 				'allow_null' => 0,
 				'multiple' => 0,
 			),
-
-			array (
-				'key' => 'field_571239sdf024bdd0',
-				'label' => 'carte',
-				'name' => '',
-				'type' => 'tab',
-			),
-			array (
-				'key' => 'field_571sqqez23848f36de',
-				'label' => 'Inclure le module "carte" fond d\'écran',
-				'name' => 'homepage_module_map',
-				'type' => 'select',
-				'choices' => array (
-					'oui' => 'Oui',
-					'non' => 'Non',
-				),
-				'default_value' => 'non',
-				'allow_null' => 0,
-				'multiple' => 0,
-			),
  			array (
                 'key' => 'field_57qsd123qsqsd9sdf024bdd0',
                 'label' => 'Module globalDebout',
