@@ -45,10 +45,6 @@
 	  echo '</div></div>';
   endif;
 
-  if( !is_paged() && get_field('global_module_social', 'option') == 'oui' ) {
-	get_template_part('templates/module', 'home-social');
-  }
-
   dynamic_sidebar('homepage-bottom');
 
   if ( !is_paged() && get_field('homepage_module_global', 'option') == 'oui' ) {
@@ -70,5 +66,8 @@
   }
   if ( !is_paged() &&get_field('homepage_module_free_iframe_2', 'option') ) {
     get_template_part('templates/module', 'free_iframe_2');
+  }
+  if( !is_paged() && get_field('global_module_social', 'option') == 'oui' ) {
+	get_template_part('templates/module', 'home-social');
   }
 ?>
