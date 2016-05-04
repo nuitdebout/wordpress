@@ -22,6 +22,10 @@
 		}
   }
 
+	if (!is_paged() && is_rootsite()) :
+		get_template_part('templates/module', 'news');
+	endif;
+
   if( get_field('homepage_module_blog', 'option') == 'oui' ) {
 		get_template_part('templates/module', 'blog');
   }
@@ -33,11 +37,6 @@
 	  echo '<div id="widget-homepage-top" class="section home-widget-container">';
 		dynamic_sidebar('homepage-top');
 	  echo '</div>';
-  endif;
-
-
-  if (!is_paged() && is_rootsite()):
-  	 get_template_part('templates/module', 'facebook-news');
   endif;
 
   if ( is_active_sidebar( 'homepage-flex-top' ) ) :

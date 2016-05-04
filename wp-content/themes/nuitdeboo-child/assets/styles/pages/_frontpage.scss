@@ -144,3 +144,19 @@ iframe {
   font-size: 18px;
   font-weight: bold;
 }
+
+.news-container {
+  h3 {
+    font-family: Roboto;
+  }
+  .news-container__rss {
+    .nav-links {
+      display: none;
+    }
+    .wprss-feed-meta {
+      .feed-source, .feed-date {
+        display: block;
+      }
+    }
+  }
+}
