@@ -69,6 +69,16 @@
   }
 }
 
+#homepage-map {
+  position: relative;
+  .homepage-map__button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+  }
+}
+
 iframe {
   border:none;
 }
