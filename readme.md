@@ -1,18 +1,42 @@
-# Site portail nuitdebout.fr
+```
+ _   _         _  _    ______       _                    _
+| \ | |       (_)| |   |  _  \     | |                  | |
+|  \| | _   _  _ | |_  | | | | ___ | |__    ___   _   _ | |_
+| . ` || | | || || __| | | | |/ _ \| '_ \  / _ \ | | | || __|
+| |\  || |_| || || |_  | |/ /|  __/| |_) || (_) || |_| || |_
+\_| \_/ \__,_||_| \__| |___/  \___||_.__/  \___/  \__,_| \__|
+```
 
-Utilise WordPress multisites.
+Ce dépôt contient le code source du site [nuitdebout.fr](nuitdebout.fr), propulsé par Wordpress.
 
-> utilisé pour faire le lien entre les differents outils disponibles (wiki, chat, )
-> faire le lien vers les comptes sociaux (FB, twitter, periscope, etc..)
-> destiné à pouvoir etre utilisé par chaque ville qui le souhaite (son propre site)
-> peut servir de base de redirection pour les villes ayant leur propre site deja en place
-> "juste" le theme peut être utilisé par les villes ayant un wordpress mais avec un theme generique
+## Contribuer
 
-exemple: nuitdebout.fr/marseille (utilisation de répertoire statué sur loomio)
+La plupart de choses à faire sur le site sont listées dans l'onglet [Issues](https://github.com/nuitdebout/wordpress/issues), nous nous efforçons de le tenir à jour.
 
-> utilise un "theme" commun qui peut etre largement modifié et adapté avec ses propres liens et contenus
+Vous pouvez en rajouter si vous remarquez un bug, ou si vous avez une suggestion.
+Vous pouvez bien entendu soumettre directement une Pull Request
 
-## Installation avec Vagrant
+Afin de simplifier l'usage des Issues, nous nous appuyons sur [ZenHub](https://www.zenhub.io/), une extension Chrome/Firefox qui ajoute des fonctionnalités à l'interface de Github, dont notamment un Kanban.
+
+Description rapide du workflow :
+
+- Les tâches dans la liste **Backlog** sont en cours de discussion
+- Les tâches dans la liste **Todo** sont prêtes à être traitées
+- Si vous commencez une tâche, **assignez-vous la tâche**, et déplacez-la dans la liste **In Progress**
+- Lorsque vous estimez que la tâche est terminée, créez une Pull Request : une fois la Pull Request validée, la tâche est déplacée dans la liste **Done**
+
+Si vous ne disposez pas des droits nécessaire pour déplacer les issues, mentionnez simplement l'un des développeurs, ou venez sur le [chat](https://chat.nuitdebout.fr/channel/dev-nuitdebout.fr).
+
+## Environnement de développement
+
+Le projet est fourni avec une machine virtuelle afin de pouvoir faire tourner le site sur sa machine.
+
+### Compte administrateur
+
+Identifiant ou adresse de messagerie : **admin**
+Mot de passe : **urWnshZ)f0xYJCbPJ9**
+
+### Avec Vagrant
 
 - Installer [VirtualBox](https://www.virtualbox.org/) & [Vagrant](https://docs.vagrantup.com/v2/installation/index.html)
 - Installer Vagrant Omnibus et hosts, puis lancer la création de la machine virtuelle
@@ -39,44 +63,31 @@ $ vagrant ssh -c 'cat /var/www/nuitdebout/dump/nuitdebout_multisite.sql | mysql 
 
 Pour arrêter la machine virtuelle, lancer `vagrant halt`.
 
-## Installation avec docker et docker-compose
+### Avec Docker
 
 1. Lancer `./script/bootstrap` et suivez les indications
 1. Aller sur [nuitdebout.dev](http://nuitdebout.dev)
 
 Pour relancer plus tard: `./script/server`
 
-## Default pwd for admin user (temporary)
+## Compilation du thème
 
-admin / urWnshZ)f0xYJCbPJ9 (utilise mon mail perso à changer svp)
+Le thème utilise Sass, Gulp, Bower et Composer.
 
-## Using the child theme named nuitdeboo-child
+```
+$ cd wp-content/themes/nuitdeboo-child
+$ npm install -g gulp bower
+$ npm install
+$ bower install
+$ composer install
+```
 
-Placez vous dans le répertoire (comme prédéfinit ci dessus) :
-**wp-content/themes/nuitdeboo-child**
+Les fichiers source se trouvent dans `wp-content/themes/nuitdeboo-child/assets`
 
-Vous devez utiliser le thème enfant nommé **nuitdeboo-child** puis au sein de ce répertoire lancer les commandes suivantes :
+Les fichiers compilés se trouvent dans `wp-content/themes/nuitdeboo-child/dist`
 
-1. `npm install -g gulp bower`
-2. `npm install`
-3. `bower install`
+Pour recompiler les assets à chaque modification de fichier, lancer la tâche `watch` :
 
-Changer l'url de assets/manifest.json (line 25) pour BrowserSync mon vhost étant nuitdebout.dev (Afin que http://localhost:3000 appelle le bon vhost et refresh auto à chaque sauvegarde d'un fichier du thème)
-
-Pour la suite :
-
-1. Au premier lancement ` gulp && gulp watch `
-
-### Available gulp commands
-
-* `gulp` — Compile and optimize the files in your assets directory
-* `gulp watch` — Compile assets when file changes are made
-* `gulp --production` — Compile assets for production (no source maps).
-
-2. Le reste du temps / les autres fois utilisez la commande
-**gulp watch**
-
-3. Les styles s'éditent bien sur dans assets/styles/
-
-4. Dès lors qu'on a besoin d'une librairie JS il n'y a plus qu'à se servir de la commande bower install
-exemple : ` bower install --save isotope `
+```
+$ gulp watch
+```
