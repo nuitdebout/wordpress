@@ -1075,13 +1075,26 @@ if(function_exists("register_field_group"))
 		'fields' => array (
 			array (
 				'key' => 'field_57182e6hj18',
-				'label' => 'langue code',
+				'label' => 'Langue de la page',
 				'name' => 'page_lang_code',
 				'type' => 'text',
 				'instructions' => '',
 				'layout' => 'vertical',
-			)
-
+			),
+			array (
+				'key' => 'field_5729f146f9b07',
+				'label' => 'Page du programme',
+				'name' => 'globaldebout_schedule_page',
+				'type' => 'post_object',
+				'post_type' => array (
+					0 => 'page',
+				),
+				'allow_null' => 0,
+				'multiple' => 0,
+				'taxonomy' => array (
+					0 => 'all',
+				),
+			),
 		),
 		'location' => array (
 			array (
