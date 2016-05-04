@@ -1,0 +1,713 @@
+body.post-type-wprss_feed q {
+    font-style: italic;
+}
+body.post-type-wprss_feed q:before {
+    content: '"';
+}
+body.post-type-wprss_feed q:after {
+    content: '"';
+}
+
+span.wp-rss-footer-text {
+    font-style: italic;
+}
+
+.wprss-input {
+    background: none repeat scroll 0 0 #EAF2FA;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 600px;
+}
+
+.wprss-input p { line-height: 28px; }
+
+.wprss-input label {
+    float: left;
+    width: 95px !important;
+}
+    
+.wprss-input input {
+    height: 28px;
+    margin-bottom: 0;
+    padding: 0 0 0 5px;
+    width: 400px;
+}
+
+.wprss-text-input {
+    display: inline-block;
+    width: 400px;
+    max-width: 100%;
+}
+
+label.description {
+    font-size: 13px;
+    font-style: italic;
+}
+
+span.wprss-row-id {
+	color: #8f8f8f;
+}
+
+#icon-wprss-aggregator {
+    background: transparent url( '../images/icon-adminpage32.png' ) no-repeat !important;
+}
+
+body.post-type-wprss_feed #titlediv div.inside { display: none !important; }
+
+#misc-publishing-actions,
+#minor-publishing-actions { display: none; }
+
+div#force-feed-container {
+    border-top: 1px solid #ddd;
+}
+
+
+/* FORM TABLES */
+.wprss-form-table th {
+    width: 135px;
+    max-width: 135px;
+    padding: 7px 10px 10px 0;
+}
+.wprss-form-table td {
+    padding: 7px 10px;
+}
+.wprss-form-table td label {
+    line-height: 15px;
+}
+@media screen and (max-width: 1025px) {
+    .wprss-form-table th {
+        display: block;
+        padding: 0;
+    }
+    .wprss-form-table td {
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .wprss-form-table td input[type="text"],
+    .wprss-form-table td input[type="url"],
+    .wprss-form-table td select {
+        display: block;
+        width: 100%;
+    }
+
+    .wprss-form-table td span.description {
+        display: inline;
+    }
+
+    .wprss-form-table td input[type="checkbox"] + label {
+        display: inline !important;
+    }
+
+    .wprss-form-table td input {
+        line-height: normal;
+    }
+}
+
+
+
+body.post-type-wprss_feed_item .add-new-h2, 
+body.post-type-wprss_feed_item .tablenav select[name="m"],
+body.post-type-wprss_feed_item #post-query-submit
+{ display: none; }
+
+body.post-type-wprss_feed_item a.row-title {
+            cursor: default;
+            font-weight: normal;
+            color: #555;
+}
+
+#latest-news-cpac-settings li {
+list-style: none;
+line-height: 16px;
+}
+
+li.twitter a {
+background: transparent url('../images/twitter.png') no-repeat 0;
+padding-left: 20px;
+}
+
+li.facebook a {
+background: transparent url('../images/facebook.png') no-repeat 0;
+padding-left: 20px;
+}
+
+li.donate_link a:hover {
+color: darkGreen;
+}
+
+#preview_meta_box ul {
+    list-style: disc;
+    margin-left: 16px;
+}
+
+#preview_meta_box .invalid-feed-url {
+    color: red;
+}
+
+#preview_meta_box .rss-date { 
+    color: #666;
+
+}
+
+/*.rss-aggregator_page_wprss-aggregator-settings .form-table th { width: 80px; }*/
+
+
+/* For excerpts and thumbnails admin screens
+.wprss_feed_page_wprss-aggregator-settings input,
+.wprss_feed_page_wprss-aggregator-settings input[type="checkbox"], 
+.wprss_feed_page_wprss-aggregator-settings input[type="radio"] {
+    margin-right: 8px; 
+}
+*/
+
+input#default-thumbnail,
+input#wprss-et-license-key,
+input#wprss-c-license-key,
+input#wprss-kf-license-key, 
+input#wprss-ftp-license-key { 
+    width: 300px; 
+}
+
+input#thumbnails-height,
+input#thumbnails-width {
+    /*width: 29px;*/
+}
+
+
+/* Red Button */
+
+.wp-core-ui .button-red {
+    background-color: #9B2124;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#C5292E), to(#9B2124));
+    background-image: -webkit-linear-gradient(top, #C5292E, #9B2124);
+    background-image:    -moz-linear-gradient(top, #C5292E, #9B2124);
+    background-image:     -ms-linear-gradient(top, #C5292E, #9B2124);
+    background-image:      -o-linear-gradient(top, #C5292E, #9B2124);
+    background-image:   linear-gradient(to bottom, #C5292E, #9B2124);
+    border-color: #9B2124;
+    border-bottom-color: #8D1F21;
+    -webkit-box-shadow: inset 0 1px 0 rgba(120,200,230,0.5);
+    box-shadow: inset 0 1px 0 rgba(120,200,230,0.5);
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+    /*float: right;*/
+}
+
+.wp-core-ui .button-red.hover,
+.wp-core-ui .button-red:hover,
+.wp-core-ui .button-red.focus,
+.wp-core-ui .button-red:focus {
+    background-color: #B72629;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#D22E30), to(#9B2124));
+    background-image: -webkit-linear-gradient(top, #D22E30, #9B2124);
+    background-image:    -moz-linear-gradient(top, #D22E30, #9B2124);
+    background-image:     -ms-linear-gradient(top, #D22E30, #9B2124);
+    background-image:      -o-linear-gradient(top, #D22E30, #9B2124);
+    background-image:   linear-gradient(to bottom, #D22E30, #9B2124);
+    border-color: #7F1C1F;
+    -webkit-box-shadow: inset 0 1px 0 rgba(120,200,230,0.6);
+    box-shadow: inset 0 1px 0 rgba(120,200,230,0.6);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+}
+
+.wp-core-ui .button-red.focus,
+.wp-core-ui .button-red:focus {
+    border-color: #500F0E;
+    -webkit-box-shadow: inset 0 1px 0 rgba(120,200,230,0.6), 1px 1px 2px rgba(0,0,0,0.4);
+    box-shadow: inset 0 1px 0 rgba(120,200,230,0.6), 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+.wp-core-ui .button-red.active,
+.wp-core-ui .button-red.active:hover,
+.wp-core-ui .button-red.active:focus,
+.wp-core-ui .button-red:active {
+    background: #7F1C1F;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9B2124), to(#B72629));
+    background-image: -webkit-linear-gradient(top, #9B2124, #B72629);
+    background-image:    -moz-linear-gradient(top, #9B2124, #B72629);
+    background-image:     -ms-linear-gradient(top, #9B2124, #B72629);
+    background-image:      -o-linear-gradient(top, #9B2124, #B72629);
+    background-image:   linear-gradient(to bottom, #9B2124, #B72629);
+    border-color: #601312 #AE2426 #AE2426 #AE2426;
+    color: rgba(255,255,255,0.95);
+    -webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
+    box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
+    text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+}
+
+.wp-core-ui .button-red[disabled],
+.wp-core-ui .button-red:disabled,
+.wp-core-ui .button-red-disabled {
+    color: #E79496 !important;
+    background: #BA292B !important;
+    border-color: #7F1C1F !important;
+    -webkit-box-shadow: none !important;
+    box-shadow:         none !important;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.1) !important;
+    cursor: default;
+}
+
+#system-info-textarea, 
+#wprss-error-log-textarea {
+    width: 800px;
+    height: 400px;
+    font-family: Menlo, Monaco, monospace;
+    white-space: pre;
+    overflow: auto;
+    display: block;
+}
+
+form.wprss-error-log-action {
+    display: inline-block;
+    margin: 15px 5px 15px 0;
+}
+form.wprss-error-log-action input[type="submit"]:active {
+    vertical-align: baseline;
+}
+
+@media screen and (min-width: 782px) {
+    #custom_feed_title {
+        width: 400px;
+    }
+}
+
+/* Number Roller for Feed Source Limit */
+.wprss-number-roller {
+    width: 80px;
+    vertical-align: middle;
+}
+@media screen and (max-width: 782px) {
+    .wprss-number-roller {
+        width: 100px;
+    }
+}
+
+/* Welcome Screen */
+.about-wrap ul {
+    list-style: disc;
+    padding-left: 30px;
+}
+
+/* Excerpts and Thumbnails */
+
+input#thumbnails-height,
+input#thumbnails-width {
+    margin-right: 2px;
+} 
+
+label[for=thumbnails-height],
+label[for=thumbnails-width] {
+    margin-left: 8px;
+}
+
+.wp-list-table > thead > tr > th#thumbnail[scope="col"] {
+    width: 95px;
+}
+
+select + label.description {
+    margin-left: 8px;
+}
+
+input#title-limit {
+    width: 100px;
+}
+
+.wprss-form-table th,
+.wprss-form-table tr,
+.wprss-form-table td {
+    border: 0 transparent !important;
+}
+
+.wprss-indicator-green,
+.wprss-indicator-red,
+.wprss-indicator-grey {
+    font-size: 1.6em;
+    vertical-align: middle;
+    margin-right: 10px;
+    line-height: 30px;
+}
+.wprss-indicator-green {
+    color: #009922;
+}
+.wprss-indicator-grey {
+    color: #888;
+}
+.wprss-indicator-red {
+    color: #EB442A;
+}
+
+
+.wprss-meta-slider {
+    display: none;
+    margin-top: 5px;
+}
+
+.wprss-slider-button {
+    cursor: pointer;
+    margin-right: 8px !important;
+}
+
+#wprss_activate_feed,
+#wprss_pause_feed {
+    display: block;
+}
+
+.wprss-date-error {
+    background: rgba( 245, 45, 45, 0.6 );
+}
+
+div.wprss-meta-side-setting {
+    display: block;
+    padding: 8px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+div.wprss-meta-side-setting > p {
+    margin: 2px 0;
+}
+div.wprss-meta-side-setting > p > label {
+    vertical-align: baseline;
+}
+div.wprss-meta-side-setting a.wprss-slider-button {
+    vertical-align: middle;
+}
+
+div.inside .wprss-meta-side-setting:last-child {
+    border-bottom: 0 solid transparent;
+}
+
+input[type="checkbox"]#wprss-force-feed {
+    margin-left: 10px;
+}
+
+/******************************
+ * FEED SOURCES PAGE COLUMNS
+ */
+body.post-type-wprss_feed.edit-php table.wp-list-table.posts thead th {
+    text-align: left;
+    overflow: hidden;
+}
+/* ERRORS */
+body.post-type-wprss_feed.edit-php table.wp-list-table.posts thead th#errors {
+    width: 15px !important;
+}
+/* ID */
+body.post-type-wprss_feed.edit-php table.wp-list-table.posts thead th#id {
+    width: 50px !important;
+}
+/* NAME */
+body.post-type-wprss_feed.edit-php table.wp-list-table.posts thead th#title {
+    width: 65% !important;
+}
+/* NEXT UPDATE */
+body.post-type-wprss_feed.edit-php table.wp-list-table.posts thead th#updates {
+    width: 220px !important;
+}
+body.post-type-wprss_feed.edit-php table.wp-list-table.posts td.column-updates p {
+    margin-bottom: 0 !important;
+}
+/* STATE */
+body.post-type-wprss_feed.edit-php table.wp-list-table.posts thead th#state {
+    width: 90px !important;
+}
+/* FEED COUNT */
+body.post-type-wprss_feed.edit-php table.wp-list-table.posts thead th#feed-count {
+    width: 140px !important;
+}
+/* CATEGORIES */
+body.post-type-wprss_feed_item.edit-php table.wp-list-table.posts thead th#category,
+body.post-type-wprss_feed.edit-php table.wp-list-table.posts thead th#category {
+    width: 130px !important;
+}
+
+
+/** FEED SOURCES TABLE RESPONSIVENESS */
+@media screen and (max-width: 1020px) {
+    body.post-type-wprss_feed.edit-php table.wp-list-table.posts thead th#updates,
+    body.post-type-wprss_feed.edit-php table.wp-list-table.posts tfoot th.column-updates,
+    body.post-type-wprss_feed.edit-php table.wp-list-table.posts tbody td.column-updates {
+        display: none;
+    }
+}
+@media screen and (max-width: 660px) {
+    body.post-type-wprss_feed.edit-php table.wp-list-table.posts thead th#id,
+    body.post-type-wprss_feed.edit-php table.wp-list-table.posts tfoot th.column-id,
+    body.post-type-wprss_feed.edit-php table.wp-list-table.posts tbody td.column-id,
+    body.post-type-wprss_feed.edit-php table.wp-list-table.posts thead th#state,
+    body.post-type-wprss_feed.edit-php table.wp-list-table.posts tfoot th.column-state,
+    body.post-type-wprss_feed.edit-php table.wp-list-table.posts tbody td.column-state {
+        display: none;
+    }
+}
+
+
+/* For feed items */
+body.post-type-wprss_feed_item.edit-php table.wp-list-table.posts thead th#publishdate {
+	width: 150px;
+}
+body.post-type-wprss_feed_item.edit-php table.wp-list-table.posts thead th#source {
+	width: 200px;
+}
+
+
+
+i.wprss-feed-error-symbol {
+    display: none;
+    font-size: 1.2em;
+    vertical-align: middle;
+    color: rgb(200,0,0);
+}
+
+i.wprss-updating-feed-icon {
+    margin-left: 8px;
+    display: none;
+}
+
+i.wprss-feed-error-symbol.wprss-show,
+i.wprss-updating-feed-icon.wprss-show {
+    display: inline-block;
+}
+
+/* Log textarea styles */
+#wprss-log-textarea {
+    width: 800px;
+    height: 400px;
+    font-family: Menlo, Monaco, monospace;
+    background: none;
+    white-space: pre-wrap;
+    overflow: auto;
+    display: block;
+    background: rgb( 255, 245, 245 );
+}
+
+
+
+/*--------------------------------------------------------------------------
+*
+*   Add-Ons
+*   
+*-------------------------------------------------------------------------*/
+
+#add-ons {
+    margin-bottom: 20px;
+}
+
+#add-ons .add-on-group {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: #F5F5F5 solid 1px;  
+}
+
+#add-ons .add-on-group:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0 none; 
+}
+
+#add-ons .add-on {
+    float: left;
+    width: 220px;
+    margin: 10px 20px 10px 0;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    position: relative;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+#add-ons .add-on h3 {
+    margin-top: 0.5em;
+}
+
+#add-ons .add-on h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#add-ons .add-on .inner {
+    min-height: 170px;
+    padding: 15px;
+}
+
+#add-ons .add-on .footer {
+    background: #F5F5F5;
+    border-top: 1px solid #E1E1E1;
+    overflow: hidden;
+    padding: 15px;
+    position: relative;
+}
+
+#add-ons .add-on-active .button-disabled:focus,
+#add-ons .add-on-active .button-disabled:active {
+    background: #fafafa;
+}
+
+#add-ons .add-on-title {
+    float: left;
+    width: 100%;
+    margin: 25px 0 25px;
+    border-top: #F5F5F5 solid 1px;
+}
+
+
+/*== BLACKLIST */
+body.post-type-wprss_blacklist .add-new-h2,
+body.post-type-wprss_blacklist ul.subsubsub,
+body.post-type-wprss_blacklist .alignleft.actions {
+	display: none;
+}
+
+body.post-type-wprss_blacklist .alignleft.actions.bulkactions {
+	display: inline-block;
+}
+
+.wprss-header-small {
+	color: #777;
+	font-size: 0.7em;
+}
+
+/* Inline Help ============================================================== */
+
+.wprss-tooltip-handle,
+.wprss-tooltip-handle:hover,
+.wprss-tooltip-handle:focus {
+    text-decoration: none;
+    color: #aaaaaa;
+    outline: none;
+}
+
+.wprss-tooltip-handle {
+    margin-left: 5px;
+    font-size: 15px;
+    color: rgb(190, 190, 190);
+    vertical-align: middle;
+}
+
+.wprss-tooltip-handle-side {
+    float: right;
+}
+
+.wprss-tooltip-content {
+    display: none;
+}
+
+.wprss-ui-tooltip {
+    color: #444 !important;
+    padding: 8px 10px !important;
+    background: #fefefe !important;
+    border: 1px solid #ccc !important;
+    border-radius: 1px !important;
+    font-family: "Open Sans", sans-serif !important;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.17) !important;
+}
+.wprss-ui-tooltip p:first-child {
+    margin-top: 0;
+}
+.wprss-ui-tooltip p:last-child {
+    margin-bottom: 0;
+}
+.wprss-ui-tooltip p {
+    margin: 8px 0;
+}
+.wprss-ui-tooltip p, code {
+    font-size: 0.9em !important;
+}
+.wprss-ui-tooltip hr {
+    margin: 0;
+}
+
+
+
+/* Admin Notifications ====================================================== */
+.wprss_admin-notice {
+    position: relative;
+}
+
+.wprss_admin-notice .notice-content {
+    margin-right: 200px;
+}
+
+.wprss_admin-notice .btn-close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    text-decoration: none;
+}
+
+
+/* For non settings page screens */
+@media only screen and (max-width: 850px) {
+
+    body:not(.wprss_feed_page_wprss-aggregator-settings)
+        .wprss-tooltip-handle {
+            color: #999;
+            font-size: 1em;
+            padding: 6px 10px;
+            margin-left: 0;
+            background: #e5e5e5;
+            border-radius: 3px;
+            vertical-align: middle;
+    }
+
+    body:not(.wprss_feed_page_wprss-aggregator-settings)
+        select + .wprss-tooltip-handle,
+    body:not(.wprss_feed_page_wprss-aggregator-settings)
+        input[type="input"] + .wprss-tooltip-handle,
+    body:not(.wprss_feed_page_wprss-aggregator-settings)
+        input[type="password"] + .wprss-tooltip-handle {
+            margin-top: 5px;
+    }
+
+    body:not(.wprss_feed_page_wprss-aggregator-settings)
+        .wprss-tooltip-handle:after {
+            content: 'Help';
+            margin-left: 5px;
+            font-family: 'Open Sans', sans-serif;
+    }
+
+}
+
+
+/* For settings page screens */
+@media only screen and (max-width: 782px) {
+
+    body.wprss_feed_page_wprss-aggregator-settings
+        .wprss-tooltip-handle {
+            color: #999;
+            font-size: 1em;
+            padding: 6px 10px;
+            margin-left: 0;
+            background: #e5e5e5;
+            border-radius: 3px;
+            vertical-align: middle;
+    }
+
+    body.wprss_feed_page_wprss-aggregator-settings
+        select + .wprss-tooltip-handle,
+    body.wprss_feed_page_wprss-aggregator-settings
+        input[type="input"] + .wprss-tooltip-handle,
+    body.wprss_feed_page_wprss-aggregator-settings
+        input[type="password"] + .wprss-tooltip-handle {
+            margin-top: 5px;
+    }
+
+    body.wprss_feed_page_wprss-aggregator-settings
+        .wprss-tooltip-handle:after {
+            content: 'Help';
+            margin-left: 5px;
+            font-family: 'Open Sans', sans-serif;
+    }
+
+}
+
+
+@media only screen and (max-width: 1026px) {
+    .wprss-tr-hr th {
+        padding-top: 10px;
+    }
+}
