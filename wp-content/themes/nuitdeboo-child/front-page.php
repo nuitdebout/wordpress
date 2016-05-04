@@ -22,6 +22,10 @@
 		}
   }
 
+	if (!is_paged() && is_rootsite()) :
+		get_template_part('templates/module', 'news');
+	endif;
+
   if( get_field('homepage_module_blog', 'option') == 'oui' ) {
 		get_template_part('templates/module', 'blog');
   }
@@ -35,20 +39,11 @@
 	  echo '</div>';
   endif;
 
-
-  if (!is_paged() && is_rootsite()):
-  	 get_template_part('templates/module', 'facebook-news');
-  endif;
-
   if ( is_active_sidebar( 'homepage-flex-top' ) ) :
 	  echo '<div class="section home-widget-container"><div class="flex-widget-container">';
 		dynamic_sidebar('homepage-flex-top');
 	  echo '</div></div>';
   endif;
-
-  if( !is_paged() && get_field('global_module_social', 'option') == 'oui' ) {
-	get_template_part('templates/module', 'home-social');
-  }
 
   dynamic_sidebar('homepage-bottom');
 
@@ -71,5 +66,8 @@
   }
   if ( !is_paged() &&get_field('homepage_module_free_iframe_2', 'option') ) {
     get_template_part('templates/module', 'free_iframe_2');
+  }
+  if( !is_paged() && get_field('global_module_social', 'option') == 'oui' ) {
+	get_template_part('templates/module', 'home-social');
   }
 ?>
