@@ -1,0 +1,36 @@
+---
+- name:          Test wordpress is installed
+  stat:          path=/var/www/wp-config.php
+  register:      wp_config
+  changed_when:  false
+
+- name:     Download Wordpress
+  when:     wp_config.stat.exists == false
+  shell:    wp core download --path=/var/www --locale=fr_FR
+
+- name:     Configure Wordpress
+  when:     wp_config.stat.exists == false
+  shell:    >
+            wp core config --dbprefix={{database.prefix}} --path=/var/www
+            --dbname={{database.name}} --dbuser={{database.user}} --dbpass={{database.password}}
+
+- name:     Configure Wordpress
+  when:     wp_config.stat.exists == false
+  shell:    cp /vagrant/export/wp-config.php /var/www
+
+- name:     Install Wordpress
+  when:     wp_config.stat.exists == false
+  shell:    >
+            wp core multisite-install --path=/var/www --url="http://nuitdebout.dev" --title="Nuit Debout"
+            --admin_user={{admin.user}} --admin_password={{ admin.password }} --admin_email="{{admin.email}}"
+
+
+- name:       Import Datas
+  shell:      mysql --user={{database.user}} --password={{database.password}} {{database.name}} < /vagrant/export/nuitdebout_multisite.sql
+
+- name:       Install plugins
+  with_items: plugins
+  shell:      wp plugin install {{ item }} --activate-network --activate --path=/var/www
+
+- name:       Install Theme
+  shell:      wp theme install https://github.com/nuitdebout/wordpress-theme/archive/release.zip --activate --path=/var/www
