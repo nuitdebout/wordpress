@@ -29,7 +29,6 @@ var periscopers = [
       function() {
         return $.Deferred().resolveWith(this, arguments);
       }).always(function() {
-        console.log('DONE !!!');
         progress += percent;
         $('#periscope-wall .progress-bar')
           .css('width', progress+'%')
