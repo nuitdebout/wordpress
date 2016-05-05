@@ -17,13 +17,15 @@
 		<div class="col-xs-12 col-md-4 news-container__rss">
 			<h3>Dernières news</h3>
 			<?php
-			wprss_display_feed_items(array(
-			    'links_before' => '<ul class="list-group">',
-			    'links_after' => '</ul>',
-			    'link_before' => '<li class="list-group-item">',
-			    'link_after' => '</li>',
-			    'limit' => '6',
-		    ));
+			if(function_exists('wprss_display_feed_items')) :
+				wprss_display_feed_items(array(
+				    'links_before' => '<ul class="list-group">',
+				    'links_after' => '</ul>',
+				    'link_before' => '<li class="list-group-item">',
+				    'link_after' => '</li>',
+				    'limit' => '6',
+			    ));
+			endif;
 			?>
 		</div>
 		<div class="col-xs-12 col-md-4 hidden-sm hidden-xs">
