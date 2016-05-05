@@ -120,17 +120,17 @@ function display_sidebar() {
  * Theme assets
  */
 function assets() {
-  wp_enqueue_style('sage/css', get_stylesheet_directory_uri() . '/dist/styles/main.css', false, null);
+  wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'), false, null);
 
   if (is_single() && comments_open() && get_option('thread_comments')) {
     wp_enqueue_script('comment-reply');
   }
 
   wp_enqueue_script('underscore');
-  wp_enqueue_script('sage/js', get_stylesheet_directory_uri() . '/dist/scripts/main.js', ['jquery', 'underscore'], null, true);
+  wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
 
   if (is_page_template('page-periscope.php')) {
-  	wp_enqueue_script('nuidebout/periscope', get_stylesheet_directory_uri() . '/dist/scripts/periscope.js');
+	wp_enqueue_script('nuidebout/periscope', Assets\asset_path('scripts/periscope.js'), ['jquery'], null, true);
   }
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
