@@ -35,6 +35,9 @@
 		<?php
 		if($pages_sub){
 			foreach ( $pages_sub as $p ) :
+				if (get_page_template_slug($p->ID) !== 'page-globaldebout.php') :
+					continue;
+				endif;
 				$content = apply_filters('the_content',$p->post_content);
 				$title = apply_filters('the_title',$p->post_title);
 				$permalink = get_permalink($p->ID);
