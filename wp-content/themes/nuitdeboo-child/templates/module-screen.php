@@ -21,10 +21,8 @@
 	?>
 	<div class="row homepagescreen <?php echo $inpage; ?>">
 		<div class="banner-homepage"
-			 style="background: url(<?= $bg ?>);
-					background-size: cover !important;
-					background-position: center center;
-					background-repeat: no-repeat;">
+			 style="background:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)
+    ), url(<?= $bg ?>);">
 			<div class="text-center container">
 				<div id="nuitdeboutdate"><?php echo nd_get_revolutionary_date(); ?></div>
 				<div id="site_title">
