@@ -1,0 +1,1402 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Enhanced Media Library PRO\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-30 12:52+0300\n"
+"PO-Revision-Date: 2016-04-30 12:52+0300\n"
+"Last-Translator: wpUXsolutions <wpUXsolutions@gmail.com>\n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Loco-Target-Locale: ko_KR\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: core/mime-types.php:30
+msgid "MIME Types settings restored."
+msgstr ""
+
+#: core/mime-types.php:39
+msgid "MIME Types settings saved."
+msgstr ""
+
+#: core/mime-types.php:115
+#, php-format
+msgid " <span class=\"count\">(%s)</span>"
+msgid_plural " <span class=\"count\">(%s)</span>"
+msgstr[0] "<span class=\"count\">(%s)</span>"
+
+#: core/options-pages.php:97 core/options-pages.php:217
+#: core/options-pages.php:932 core/options-pages.php:1057
+#: core/options-pages.php:1370 core/options-pages.php:1547
+msgid "Media Settings"
+msgstr "미디어 설정"
+
+#: core/options-pages.php:106 core/options-pages.php:189
+msgid "Media Library"
+msgstr "미디어 라이브러리"
+
+#: core/options-pages.php:115
+msgid "Taxonomies"
+msgstr "카테고리"
+
+#: core/options-pages.php:124 core/options-pages.php:191
+msgid "MIME Types"
+msgstr "MIME 유형"
+
+#: core/options-pages.php:135 core/options-pages.php:136
+msgid "Enhanced Media Library"
+msgstr "Enhanced Media Library"
+
+#: core/options-pages.php:188
+msgid "General"
+msgstr ""
+
+#: core/options-pages.php:190 core/options-pages.php:1078
+msgid "Media Taxonomies"
+msgstr "미디어 카테고리"
+
+#: core/options-pages.php:214 core/options-pages.php:520
+#: core/options-pages.php:928 core/options-pages.php:1053
+#: core/options-pages.php:1366
+msgid "You do not have sufficient permissions to access this page."
+msgstr "이 페이지에 접근할 권한이 없습니다."
+
+#: core/options-pages.php:228
+msgid "Image sizes"
+msgstr ""
+
+#: core/options-pages.php:229
+msgid ""
+"The sizes listed below determine the maximum dimensions in pixels to use "
+"when adding an image to the Media Library."
+msgstr ""
+
+#: core/options-pages.php:233
+msgid "Thumbnail size"
+msgstr ""
+
+#: core/options-pages.php:235
+msgid "Width"
+msgstr ""
+
+#: core/options-pages.php:237
+msgid "Height"
+msgstr ""
+
+#: core/options-pages.php:240
+msgid ""
+"Crop thumbnail to exact dimensions (normally thumbnails are proportional)"
+msgstr ""
+
+#: core/options-pages.php:245 core/options-pages.php:246
+msgid "Medium size"
+msgstr ""
+
+#: core/options-pages.php:247 core/options-pages.php:257
+msgid "Max Width"
+msgstr ""
+
+#: core/options-pages.php:249 core/options-pages.php:259
+msgid "Max Height"
+msgstr ""
+
+#: core/options-pages.php:255 core/options-pages.php:256
+msgid "Large size"
+msgstr ""
+
+#: core/options-pages.php:272
+msgid "Embeds"
+msgstr ""
+
+#: core/options-pages.php:279
+msgid "Uploading Files"
+msgstr ""
+
+#: core/options-pages.php:286
+msgid "Store uploads in this folder"
+msgstr ""
+
+#: core/options-pages.php:290
+#, php-format
+msgid "Default is %s"
+msgstr ""
+
+#: core/options-pages.php:296
+msgid "Full URL path to files"
+msgstr ""
+
+#: core/options-pages.php:298
+msgid "Configuring this is optional. By default, it should be blank."
+msgstr ""
+
+#: core/options-pages.php:306
+msgid "Organize my uploads into month- and year-based folders"
+msgstr ""
+
+#: core/options-pages.php:378 core/options-pages.php:1102
+#: core/options-pages.php:1117 core/options-pages.php:1180
+#: core/options-pages.php:1249
+msgid "Edit"
+msgstr "편집"
+
+#: core/options-pages.php:379 pro/enhanced-media-library-pro.php:125
+msgid "Close"
+msgstr "닫기"
+
+#: core/options-pages.php:380 core/options-pages.php:1118
+#: core/options-pages.php:1181
+msgid "View"
+msgstr "보기"
+
+#: core/options-pages.php:381 core/options-pages.php:1119
+#: core/options-pages.php:1182
+msgid "Update"
+msgstr "업데이트"
+
+#: core/options-pages.php:382 core/options-pages.php:1120
+#: core/options-pages.php:1183
+msgid "Add New"
+msgstr "새로 추가하기"
+
+#: core/options-pages.php:383 core/options-pages.php:1121
+#: core/options-pages.php:1184
+msgid "New"
+msgstr "신규"
+
+#: core/options-pages.php:384
+msgid "Name"
+msgstr "이름"
+
+#: core/options-pages.php:385 core/options-pages.php:1122
+#: core/options-pages.php:1185
+msgid "Parent"
+msgstr "부모"
+
+#: core/options-pages.php:386 core/options-pages.php:616
+#: core/options-pages.php:1116 core/options-pages.php:1179
+#: core/taxonomies.php:365 enhanced-media-library.php:490
+msgid "All"
+msgstr "모두"
+
+#: core/options-pages.php:387 core/options-pages.php:1123
+#: core/options-pages.php:1186
+msgid "Search"
+msgstr "검색"
+
+#: core/options-pages.php:389 core/options-pages.php:1167
+msgid "New Taxonomy"
+msgstr "새로운 카테고리"
+
+#: core/options-pages.php:391
+msgid "Remove Taxonomy"
+msgstr ""
+
+#: core/options-pages.php:392
+msgid "Taxonomy will be removed."
+msgstr ""
+
+#: core/options-pages.php:393
+msgid ""
+"Taxonomy terms (categories) will remain intact in the database. If you "
+"create a taxonomy with the same name in the future, its terms (categories) "
+"will be available again."
+msgstr ""
+
+#: core/options-pages.php:394
+msgid "Media items will remain intact."
+msgstr ""
+
+#: core/options-pages.php:395
+msgid "Are you still sure?"
+msgstr ""
+
+#: core/options-pages.php:396
+msgid "Yes, remove taxonomy"
+msgstr ""
+
+#: core/options-pages.php:398
+msgid "Duplicate"
+msgstr ""
+
+#: core/options-pages.php:399
+msgid "Taxonomy with the same name already exists. Please chose other one."
+msgstr ""
+
+#: core/options-pages.php:401
+msgid "Empty Fields"
+msgstr ""
+
+#: core/options-pages.php:402
+msgid "Please choose Singular and Plural names for all new taxomonies."
+msgstr ""
+
+#: core/options-pages.php:403
+msgid "Please choose Singilar name for all new taxomonies."
+msgstr ""
+
+#: core/options-pages.php:404
+msgid "Please choose Plural Name for all new taxomonies."
+msgstr ""
+
+#: core/options-pages.php:406
+msgid "Ok"
+msgstr ""
+
+#: core/options-pages.php:407 core/options-pages.php:412
+#: core/options-pages.php:495
+msgid "Cancel"
+msgstr ""
+
+#: core/options-pages.php:409 pro/core/options-pages.php:165
+msgid "Synchronize Now"
+msgstr ""
+
+#: core/options-pages.php:410 core/options-pages.php:492
+msgid "This operation cannot be canceled! Are you still sure?"
+msgstr ""
+
+#: core/options-pages.php:411
+msgid "Synchronize"
+msgstr ""
+
+#: core/options-pages.php:413
+msgid "Synchronizing..."
+msgstr ""
+
+#: core/options-pages.php:451
+msgid "Warning! All your custom MIME Types will be deleted by this operation."
+msgstr "경고! 이 작업으로 인해 모든 사용자 지정 MIME 유형이 삭제됩니다."
+
+#: core/options-pages.php:452
+msgid "Please fill into all fields."
+msgstr "모든 필드에 입력해주세요."
+
+#: core/options-pages.php:453
+msgid "Duplicate extensions or MIME types. Please chose other one."
+msgstr "중복 확장자 또는 MIME 유형. 다른 것을 선택해주세요."
+
+#: core/options-pages.php:490 core/options-pages.php:607
+msgid "Complete Cleanup"
+msgstr ""
+
+#: core/options-pages.php:491
+msgid ""
+"You are about to <strong style=\"text-transform:uppercase\">delete all "
+"plugin data</strong> from the database including backups."
+msgstr ""
+
+#: core/options-pages.php:493
+msgid "Yes, delete all data"
+msgstr ""
+
+#: core/options-pages.php:494
+msgid "Cleaning..."
+msgstr ""
+
+#: core/options-pages.php:525
+msgid "Enhanced Media Library Settings"
+msgstr ""
+
+#: core/options-pages.php:535
+msgid "Export"
+msgstr ""
+
+#: core/options-pages.php:539
+msgid ""
+"Plugin settings tabs <strong>Media Library</strong>, <strong>Media "
+"Taxonomies</strong>, and <strong>MIME Types</strong> will be exported to a "
+"configuration file. It allows you to easily import the configuration into "
+"another website."
+msgstr ""
+
+#: core/options-pages.php:544
+msgid "Export Plugin Settings"
+msgstr ""
+
+#: core/options-pages.php:554
+msgid "Import"
+msgstr ""
+
+#: core/options-pages.php:558
+msgid ""
+"Plugin settings tabs <strong>Media Library</strong>, <strong>Media "
+"Taxonomies</strong>, and <strong>MIME Types</strong> will be imported from a "
+"configuration file which can be obtained by exporting the settings on "
+"another website using the export button above."
+msgstr ""
+
+#: core/options-pages.php:559
+msgid ""
+"All plugin settings will be overridden by the import. You will have a chance "
+"to restore current data from an automatic backup in case you are not "
+"satisfied with the result of the import."
+msgstr ""
+
+#: core/options-pages.php:566
+msgid "Import Plugin Settings"
+msgstr ""
+
+#: core/options-pages.php:578
+msgid "Restore"
+msgstr ""
+
+#: core/options-pages.php:584
+msgid "No backup available at the moment."
+msgstr ""
+
+#: core/options-pages.php:586
+msgid "Backup will be created automatically before any import operation."
+msgstr ""
+
+#: core/options-pages.php:590
+msgid ""
+"The backup has been automatically created before the latest import operation."
+msgstr ""
+
+#: core/options-pages.php:594
+msgid "Restore Settings from the Backup"
+msgstr ""
+
+#: core/options-pages.php:614
+msgid "What will be deleted:"
+msgstr ""
+
+#: core/options-pages.php:619
+msgid "All plugin options"
+msgstr ""
+
+#: core/options-pages.php:620
+msgid "All plugin backups stored in database"
+msgstr ""
+
+#: core/options-pages.php:624
+msgid "What will remain intact:"
+msgstr ""
+
+#: core/options-pages.php:625
+msgid "All media items"
+msgstr ""
+
+#: core/options-pages.php:626
+msgid "All taxonomies not listed above"
+msgstr ""
+
+#: core/options-pages.php:629
+msgid ""
+"The plugin cannot delete itself because of security reason. Please delete it "
+"manually from plugin list after cleanup."
+msgstr ""
+
+#: core/options-pages.php:631
+msgid ""
+"If you are not sure about this operation please create a backup of your "
+"database prior to cleanup!"
+msgstr ""
+
+#: core/options-pages.php:637
+msgid "Delete All Data & Deactivate"
+msgstr ""
+
+#: core/options-pages.php:742
+msgid "Please upload a file to import settings."
+msgstr ""
+
+#: core/options-pages.php:762
+msgid "Plugin settings imported."
+msgstr ""
+
+#: core/options-pages.php:809
+msgid "Plugin settings restored from the backup."
+msgstr ""
+
+#: core/options-pages.php:953
+msgid "Media Items Order"
+msgstr ""
+
+#: core/options-pages.php:960
+msgid "Order media items by"
+msgstr ""
+
+#: core/options-pages.php:967 core/options-pages.php:979
+msgid "For media library and media popups"
+msgstr ""
+
+#: core/options-pages.php:968
+msgid "Option allows to change order by drag and drop with Custom Order value."
+msgstr ""
+
+#: core/options-pages.php:973
+msgid "Sort order"
+msgstr ""
+
+#: core/options-pages.php:992
+msgid "Media Shortcodes"
+msgstr ""
+
+#: core/options-pages.php:999 core/options-pages.php:1002
+msgid "Enhanced media shortcodes"
+msgstr ""
+
+#: core/options-pages.php:1003
+msgid ""
+"Enhance WordPress media shortcodes to make them understand media taxonomies, "
+"upload date, and media items number limit"
+msgstr ""
+
+#: core/options-pages.php:1004
+msgid "Gallery example:"
+msgstr ""
+
+#: core/options-pages.php:1005
+msgid "Audio playlist example:"
+msgstr ""
+
+#: core/options-pages.php:1006
+msgid "Video playlist example:"
+msgstr ""
+
+#: core/options-pages.php:1008
+#, php-format
+msgid ""
+"%sWarning:%s Incompatibility with other gallery plugins or themes possible!"
+msgstr ""
+
+#: core/options-pages.php:1010
+#, php-format
+msgid "%sLearn more%s."
+msgstr ""
+
+#: core/options-pages.php:1012
+#, php-format
+msgid ""
+"Please check out your gallery front-end and back-end functionality once this "
+"option activated. If you find an issue please inform plugin authors at %s or "
+"%s."
+msgstr ""
+
+#: core/options-pages.php:1082 core/options-pages.php:1229
+msgid "Assign following taxonomies to Media Library:"
+msgstr "다음 카테고리를 미디어 라이브러리에 할당:"
+
+#: core/options-pages.php:1101 core/options-pages.php:1167
+#: core/options-pages.php:1248
+msgid "Assign Taxonomy"
+msgstr "카테고리 할당"
+
+#: core/options-pages.php:1102 core/options-pages.php:1249
+msgid "Edit Taxonomy"
+msgstr "카테고리 편집"
+
+#: core/options-pages.php:1106 core/options-pages.php:1169
+msgid "Delete Taxonomy"
+msgstr "카테고리 삭제"
+
+#: core/options-pages.php:1111 core/options-pages.php:1174
+msgid "Labels"
+msgstr "라벨"
+
+#: core/options-pages.php:1113 core/options-pages.php:1176
+msgid "Singular"
+msgstr "단수"
+
+#: core/options-pages.php:1114 core/options-pages.php:1177
+msgid "Plural"
+msgstr "복수"
+
+#: core/options-pages.php:1115 core/options-pages.php:1178
+msgid "Menu Name"
+msgstr "메뉴명"
+
+#: core/options-pages.php:1128 core/options-pages.php:1151
+#: core/options-pages.php:1191 core/options-pages.php:1252
+msgid "Settings"
+msgstr "설정"
+
+#: core/options-pages.php:1130 core/options-pages.php:1193
+msgid "Taxonomy Name"
+msgstr "카테고리명"
+
+#: core/options-pages.php:1131 core/options-pages.php:1194
+msgid "Hierarchical"
+msgstr "계층 구조"
+
+#: core/options-pages.php:1132 core/options-pages.php:1195
+msgid "Column for List View"
+msgstr ""
+
+#: core/options-pages.php:1133 core/options-pages.php:1153
+#: core/options-pages.php:1196 core/options-pages.php:1254
+msgid "Filter for List View"
+msgstr ""
+
+#: core/options-pages.php:1134 core/options-pages.php:1154
+#: core/options-pages.php:1197 core/options-pages.php:1255
+msgid "Filter for Grid View / Media Popup"
+msgstr ""
+
+#: core/options-pages.php:1135 core/options-pages.php:1155
+#: core/options-pages.php:1198 core/options-pages.php:1256
+msgid "Edit in Media Popup"
+msgstr "미디어 팝업에서 편집"
+
+#: core/options-pages.php:1136 core/options-pages.php:1199
+msgid "Show in Nav Menu"
+msgstr "탐색 메뉴에서 표시"
+
+#: core/options-pages.php:1137 core/options-pages.php:1200
+msgid "Remember Terms Order (sort)"
+msgstr ""
+
+#: core/options-pages.php:1138 core/options-pages.php:1201
+msgid "Show in REST"
+msgstr ""
+
+#: core/options-pages.php:1139 core/options-pages.php:1202
+msgid "Rewrite Slug"
+msgstr "슬러그 다시 쓰기"
+
+#: core/options-pages.php:1140 core/options-pages.php:1203
+msgid "Slug with Front"
+msgstr "프런트를 포함한 슬러그"
+
+#: core/options-pages.php:1215
+msgid "Add New Taxonomy"
+msgstr "새로운 카테고리 추가"
+
+#: core/options-pages.php:1225
+msgid "Non-Media Taxonomies"
+msgstr "비 미디어 카테고리"
+
+#: core/options-pages.php:1286
+msgid "Options"
+msgstr "옵션"
+
+#: core/options-pages.php:1296 core/options-pages.php:1299
+msgid "Taxonomy archive pages"
+msgstr "카테고리 보관 페이지"
+
+#: core/options-pages.php:1300
+msgid "Turn on media taxonomy archive pages on the front-end"
+msgstr "전면에 미디어 카테고리 보관 페이지를 켜기"
+
+#: core/options-pages.php:1301
+msgid ""
+"Re-save your permalink settings after this option change to make it work."
+msgstr "이 옵션의 변경 사항을 적용하려면 고유주소 설정을 다시 저장하세요."
+
+#: core/options-pages.php:1307 core/options-pages.php:1310
+msgid "Assign all like hierarchical"
+msgstr "모두 계층 구조와 같이 할당"
+
+#: core/options-pages.php:1311
+msgid ""
+"Show non-hierarchical taxonomies like hierarchical in Grid View / Media Popup"
+msgstr ""
+"그리드 화면 / 미디어 그룹에서 비 계층 구조 카테고리를 계층 구조와 같이 표시"
+
+#: core/options-pages.php:1317 core/options-pages.php:1320
+msgid "Force filters"
+msgstr "필터 강제 적용"
+
+#: core/options-pages.php:1321
+msgid "Show media filters for ANY Media Popup"
+msgstr ""
+
+#: core/options-pages.php:1322
+msgid "Try this if filters are not shown for third-party plugins or themes."
+msgstr ""
+
+#: core/options-pages.php:1376
+msgid "Add New MIME Type"
+msgstr "새로운 MIME 유형 추가"
+
+#: core/options-pages.php:1394 core/options-pages.php:1449
+msgid "Extension"
+msgstr "확장자"
+
+#: core/options-pages.php:1395 core/options-pages.php:1450
+msgid "MIME Type"
+msgstr "MIME 유형"
+
+#: core/options-pages.php:1396 core/options-pages.php:1451
+msgid "Singular Label"
+msgstr "단수 라벨"
+
+#: core/options-pages.php:1397 core/options-pages.php:1452
+msgid "Plural Label"
+msgstr "복수 라벨"
+
+#: core/options-pages.php:1398 core/options-pages.php:1428
+#: core/options-pages.php:1441 core/options-pages.php:1453
+msgid "Add Filter"
+msgstr "필터 추가"
+
+#: core/options-pages.php:1399 core/options-pages.php:1429
+#: core/options-pages.php:1442 core/options-pages.php:1454
+msgid "Allow Upload"
+msgstr "업로드 허용"
+
+#: core/options-pages.php:1443
+msgid "Delete MIME Type"
+msgstr "MIME 유형 삭제"
+
+#: core/options-pages.php:1460
+msgid "Restore WordPress default MIME Types"
+msgstr ""
+
+#: core/options-pages.php:1462 pro/enhanced-media-library-pro.php:124
+msgid "Save Changes"
+msgstr "변경 사항 저장"
+
+#: core/options-pages.php:1499
+msgid "Changelog"
+msgstr ""
+
+#: core/options-pages.php:1500
+msgid "What's new in"
+msgstr ""
+
+#: core/options-pages.php:1500
+msgid "version"
+msgstr ""
+
+#: core/options-pages.php:1503
+msgid "More features under the hood"
+msgstr ""
+
+#: core/options-pages.php:1505
+msgid "Support"
+msgstr ""
+
+#: core/options-pages.php:1506
+msgid "Feel free to ask for help on"
+msgstr ""
+
+#: core/options-pages.php:1506
+msgid "Support is free for both versions of the plugin."
+msgstr ""
+
+#: core/options-pages.php:1508
+msgid "Plugin rating"
+msgstr ""
+
+#: core/options-pages.php:1509
+msgid "Please"
+msgstr ""
+
+#: core/options-pages.php:1509
+msgid "vote for the plugin"
+msgstr ""
+
+#: core/options-pages.php:1509
+msgid "Thanks!"
+msgstr ""
+
+#: core/options-pages.php:1511
+msgid "Other plugins you may find useful"
+msgstr ""
+
+#: core/options-pages.php:1550
+msgid "Utility"
+msgstr ""
+
+#: core/options-pages.php:1571
+msgid "Vote!"
+msgstr ""
+
+#: core/taxonomies.php:101
+msgid "Media Taxonomies settings saved."
+msgstr ""
+
+#: core/taxonomies.php:159
+msgid "Media Library settings saved."
+msgstr ""
+
+#: core/taxonomies.php:358 core/taxonomies.php:364
+#: enhanced-media-library.php:489
+msgid "Filter by"
+msgstr "필터 적용:"
+
+#: core/taxonomies.php:366 enhanced-media-library.php:491
+msgid "Not in"
+msgstr "포함되지 않음:"
+
+#: enhanced-media-library.php:331 enhanced-media-library.php:488
+msgid "All Uncategorized"
+msgstr "모두 미분류됨"
+
+#: enhanced-media-library.php:332 enhanced-media-library.php:492
+msgid "Reset All Filters"
+msgstr "모든 필터 재설정"
+
+#: enhanced-media-library.php:523
+msgid "Uploaded to post #"
+msgstr ""
+
+#: enhanced-media-library.php:524
+msgid "Based On"
+msgstr ""
+
+#: enhanced-media-library.php:569 enhanced-media-library.php:571
+msgid "Media Categories"
+msgstr ""
+
+#: enhanced-media-library.php:570
+msgid "Media Category"
+msgstr ""
+
+#: enhanced-media-library.php:572
+msgid "All Media Categories"
+msgstr ""
+
+#: enhanced-media-library.php:573
+msgid "Edit Media Category"
+msgstr ""
+
+#: enhanced-media-library.php:574
+msgid "View Media Category"
+msgstr ""
+
+#: enhanced-media-library.php:575
+msgid "Update Media Category"
+msgstr ""
+
+#: enhanced-media-library.php:576
+msgid "Add New Media Category"
+msgstr ""
+
+#: enhanced-media-library.php:577
+msgid "New Media Category Name"
+msgstr ""
+
+#: enhanced-media-library.php:578
+msgid "Parent Media Category"
+msgstr ""
+
+#: enhanced-media-library.php:579
+msgid "Parent Media Category:"
+msgstr ""
+
+#: enhanced-media-library.php:580
+msgid "Search Media Categories"
+msgstr ""
+
+#: pro/core/bulk-edit.php:51 pro/core/bulk-edit.php:58
+msgid "Remove"
+msgstr "제거"
+
+#: pro/core/bulk-edit.php:53 pro/core/bulk-edit.php:60
+msgid "Deselect"
+msgstr "선택 해제"
+
+#: pro/core/bulk-edit.php:105
+msgid "Caption this image&hellip;"
+msgstr "이 이미지에 캡션을 추가..."
+
+#: pro/core/bulk-edit.php:109
+msgid "Describe this video&hellip;"
+msgstr "이 비디오를 설명..."
+
+#: pro/core/bulk-edit.php:111
+msgid "Describe this audio file&hellip;"
+msgstr "이 오디오 파일을 설명..."
+
+#: pro/core/bulk-edit.php:113
+msgid "Describe this media file&hellip;"
+msgstr "이 미디어 파일을 설명..."
+
+#: pro/core/bulk-edit.php:122
+msgid "Attachments Details"
+msgstr "첨부 파일 세부 정보"
+
+#: pro/core/bulk-edit.php:175 pro/core/bulk-edit.php:180
+msgid "Select All"
+msgstr "모두 선택"
+
+#: pro/core/bulk-edit.php:176 pro/core/bulk-edit.php:181
+msgid "Edit Selection"
+msgstr "선택 편집"
+
+#: pro/core/bulk-edit.php:177 pro/core/bulk-edit.php:182
+msgid "Deselect All"
+msgstr "모두 선택 해제"
+
+#: pro/core/bulk-edit.php:178 pro/core/bulk-edit.php:183
+msgid "Delete Selected"
+msgstr "선택 삭제"
+
+#: pro/core/medialist.php:24 pro/core/medialist.php:69
+msgid "Order By"
+msgstr ""
+
+#: pro/core/medialist.php:28 pro/core/medialist.php:73
+msgid "Date"
+msgstr ""
+
+#: pro/core/medialist.php:31 pro/core/medialist.php:76
+msgid "Title"
+msgstr ""
+
+#: pro/core/medialist.php:34 pro/core/medialist.php:79
+msgid "Custom Order"
+msgstr ""
+
+#: pro/core/medialist.php:37 pro/core/medialist.php:82
+msgid "Random"
+msgstr ""
+
+#: pro/core/medialist.php:43 pro/core/medialist.php:88
+msgid "Order"
+msgstr ""
+
+#: pro/core/medialist.php:47 pro/core/medialist.php:92
+msgid "Ascending"
+msgstr ""
+
+#: pro/core/medialist.php:50 pro/core/medialist.php:95
+msgid "Descending"
+msgstr ""
+
+#: pro/core/medialist.php:60 pro/core/medialist.php:101
+msgid "Limit"
+msgstr ""
+
+#: pro/core/options-pages.php:78
+msgid "Your license has been deactivated."
+msgstr ""
+
+#: pro/core/options-pages.php:88
+msgid "Please check if your license key is correct and try again."
+msgstr ""
+
+#: pro/core/options-pages.php:101
+msgid ""
+"Wrong license key or a server error occured. Please check your license key "
+"and try again."
+msgstr ""
+
+#: pro/core/options-pages.php:111
+msgid "You license has been activated."
+msgstr ""
+
+#: pro/core/options-pages.php:164
+#, php-format
+msgid "Auto-assign media items to parent %s %s on upload"
+msgstr ""
+
+#: pro/core/options-pages.php:165
+#, php-format
+msgid ""
+"%sWarning:%s As a result of clicking \"Synchronize Now\" all media items "
+"attached to a %s will be assigned to %s of their parent %s. Currently "
+"assigned %s will not be saved. Media items that are not attached to any %s "
+"will not be affected."
+msgstr ""
+
+#: pro/core/options-pages.php:188 pro/enhanced-media-library-pro.php:127
+msgid "Bulk Edit"
+msgstr "일괄 편집"
+
+#: pro/core/options-pages.php:196 pro/core/options-pages.php:199
+msgid "Turn off 'Save Changes' button"
+msgstr "'변경 사항 저장' 버튼 해제"
+
+#: pro/core/options-pages.php:200
+msgid "Save changes on the fly"
+msgstr "변경 사항 즉시 저장"
+
+#: pro/core/options-pages.php:201
+msgid ""
+"Any click on a taxonomy checkbox during media files bulk editing will lead "
+"to an <strong style=\"color:red\">immediate saving</strong> of the data. "
+"Please, be careful! You have much greater chance to <strong style=\"color:red"
+"\">accidentally perform wrong re-assigning</strong> of a lot of your media "
+"files / taxonomies with this option turned on."
+msgstr ""
+
+#: pro/core/options-pages.php:202
+msgid ""
+"Strongly NOT recommended option if you work with more than hundred of files "
+"at a time."
+msgstr ""
+"한 번에 100 개 이상의 파일을 작업을하는 경우 절대로 권장하지 않는  옵션임."
+
+#: pro/core/options-pages.php:241 pro/core/options-pages.php:259
+msgid "License Key"
+msgstr "라이센스 키"
+
+#: pro/core/options-pages.php:252
+#, php-format
+msgid ""
+"To unlock updates please enter your license key below. You can get your "
+"license key in <a href=\"%s\">Your Account</a>. If you do not have a "
+"license, you are welcome to <a href=\"%s\">purchase it</a>."
+msgstr ""
+
+#: pro/core/options-pages.php:262
+msgid "Activate License"
+msgstr "라이센스 활성화"
+
+#: pro/core/options-pages.php:269
+msgid "Your license is active!"
+msgstr "라이센스가 활성화되었습니다!"
+
+#: pro/core/options-pages.php:273
+msgid "Deactivate License"
+msgstr ""
+
+#: pro/core/update.php:113 pro/core/update.php:119 pro/core/update.php:125
+msgid ""
+"An unexpected error occurred. Something may be wrong with WordPress.org or "
+"this server&#8217;s configuration. If you continue to have problems, please "
+"try the <a href=\"https://wordpress.org/support/\">support forums</a>."
+msgstr ""
+"예기치 않은 오류가 발생했습니다. WordPress.org 또는 이 서버의 구성에 문제가 "
+"있을 수 있습니다. 문제가 계속될 경우, <a href=\"https://wordpress.org/"
+"support/\">지원 포럼</a>을 시도해 보시기 바랍니다."
+
+#: pro/core/update.php:113
+msgid ""
+"(WordPress could not establish a secure connection to WordPress.org. Please "
+"contact your server administrator.)"
+msgstr ""
+"(워드프레스가 WordPress.org에 보안 연결을 설정할 수 없습니다. 서버 관리자에"
+"게 문의하세요.)"
+
+#: pro/core/update.php:180
+#, php-format
+msgid ""
+"To unlock updates, please <a href=\"%s\">activate your license</a>. You can "
+"get your license key in <a href=\"%s\">Your Account</a>. If you do not have "
+"a license, you are welcome to <a href=\"%s\">purchase it</a>."
+msgstr ""
+
+#: pro/enhanced-media-library-pro.php:119
+msgid "ALL files belong to this item"
+msgstr "이 항목에 모든 파일이 속합니다"
+
+#: pro/enhanced-media-library-pro.php:120
+msgid "SOME files belong to this item"
+msgstr "이 항목에 SOME 파일이 속합니다"
+
+#: pro/enhanced-media-library-pro.php:121
+msgid "NO files belong to this item"
+msgstr "이 항목에 속한 파일이 없습니다"
+
+#: pro/enhanced-media-library-pro.php:122
+msgid "Changes saved."
+msgstr "변경 사항이 저장됨."
+
+#: pro/enhanced-media-library-pro.php:123
+msgid "Something went wrong."
+msgstr "문제가 발생했습니다."
+
+#: pro/enhanced-media-library-pro.php:126
+msgid "Edit Media Files"
+msgstr "미디어 파일 편집"
+
+#: pro/enhanced-media-library-pro.php:151
+msgid "Create a filter-based gallery"
+msgstr ""
+
+#: pro/enhanced-media-library-pro.php:152
+msgid "Create a filter-based playlist"
+msgstr ""
+
+#: pro/enhanced-media-library-pro.php:153
+msgid "Create a filter-based video playlist"
+msgstr ""
+
+#: pro/enhanced-media-library-pro.php:231
+msgid ""
+"Please deactivate and <strong>remove</strong> the old FREE version prior to "
+"the <strong>Enhanced Media Library PRO</strong> activation. All your data "
+"will remain intact."
+msgstr ""
+
+#: pro/enhanced-media-library-pro.php:231
+msgid "Return to Plugins"
+msgstr "플러그인으로 돌아가기"
+
+#: pro/enhanced-media-library-pro.php:282
+msgid ""
+"Both FREE and PRO versions of the Enhanced Media Library are network active. "
+"<strong>Enhanced Media Library PRO</strong> does not require free version to "
+"be active. Please network deactivate and delete the free versions of the "
+"plugin. All your data will remain intact."
+msgstr ""
+
+#: pro/enhanced-media-library-pro.php:299
+msgid ""
+"<strong>Enhanced Media Library PRO</strong> does not require free version to "
+"be active. Please deactivate and delete the free version of the plugin. All "
+"your data will remain intact."
+msgstr ""
+
+#: pro/enhanced-media-library-pro.php:315
+msgid ""
+"Both FREE and PRO versions of the Enhanced Media Library are active for this "
+"site. <strong>Enhanced Media Library PRO</strong> does not require free "
+"version to be active. Please deactivate (or network deactivate) and delete "
+"the free version of the plugin for this site. All your data will remail "
+"intact."
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"This plugin will be handy for those who need to manage a lot of media files."
+msgstr "이 플러그인은 많은 미디어 파일을 관리해야 하는 사용자에게 유용합니다."
+
+#~ msgid ""
+#~ "Taxonomy will be deleted permanently! Your media files will remain "
+#~ "intacted, but all the connections with this taxonomy and its terms will "
+#~ "be lost."
+#~ msgstr ""
+#~ "카테고리가 영구적으로 삭제됩니다. 미디어 파일은 보존되지만, 이 카테고리 "
+#~ "및 용어와의 모든 연결은 손실됩니다."
+
+#~ msgid "Please choose Singular and Plural names for all your new taxomonies."
+#~ msgstr "모든 새로운 카테고리에 대한 단수 및 복수 이름을 선택해주세요."
+
+#~ msgid "Please choose Singilar name for all your new taxomonies."
+#~ msgstr "모든 새로운 카테고리에 대한 단수 이름을 선택해주세요."
+
+#~ msgid "Please choose Plural Name for all your new taxomonies."
+#~ msgstr "모든 새로운 카테고리에 대한 복수 이름을 선택해주세요."
+
+#~ msgid ""
+#~ "There is already a taxonomy with the same name. Please chose other one."
+#~ msgstr "동일한 이름의 카테고리가 이미 존재합니다. 다른 것을 선택해주세요."
+
+#~ msgid "Filter by "
+#~ msgstr "필터 적용: "
+
+#~ msgid "All "
+#~ msgstr "모든 "
+
+#~ msgid "Not in "
+#~ msgstr "포함되지 않음: "
+
+#~ msgid ""
+#~ "Any click on a taxonomy checkbox during media files bulk edition will "
+#~ "lead to an <strong style=\"color:red\">immediate saving</strong> of the "
+#~ "data. Please, be careful! You have much greater chance to <strong style="
+#~ "\"color:red\">accidentally perform wrong re-assigning</strong> of a lot "
+#~ "of your media files / taxonomies with this option turned on."
+#~ msgstr ""
+#~ "미디어 파일 일괄 편집 도중 카테고리 확인란에 클릭하면 데이터를 <strong "
+#~ "style=\"color:red\">즉시 저장</strong>하게 됩니다. 조심해주세요! 이 옵션"
+#~ "을 켜면 다수의 미디어 파일 / 카테고리에 <strong style=\"color:red\">실수"
+#~ "로 재할당을 잘못 수행</strong>할 가능성이 훨씬 더 높습니다."
+
+#~ msgctxt "uploaded files"
+#~ msgid "All (%s)"
+#~ msgid_plural "All (%s)"
+#~ msgstr[0] "모든 (%s)"
+
+#~ msgctxt "detached files"
+#~ msgid "Unattached (%s)"
+#~ msgid_plural "Unattached (%s)"
+#~ msgstr[0] "첨부되지 않음 (%s)"
+
+#~ msgctxt "uploaded files"
+#~ msgid "Trash (%s)"
+#~ msgid_plural "Trash (%s)"
+#~ msgstr[0] "휴지통 (%s)"
+
+#~ msgid "Filter"
+#~ msgstr "필터"
+
+#~ msgid "Empty Trash"
+#~ msgstr "휴지통 비우기"
+
+#~ msgid "You do not have permission to upload files."
+#~ msgstr "파일을 업로드할 권한이 없습니다."
+
+#~ msgid "Overview"
+#~ msgstr "개요"
+
+#~ msgid ""
+#~ "All the files you&#8217;ve uploaded are listed in the Media Library, with "
+#~ "the most recent uploads listed first."
+#~ msgstr ""
+#~ "업로드한 모든 파일은 미디어 라이브러리 내에 나열되며 가장 최근 업로드한 목"
+#~ "록을 먼저 표시합니다."
+
+#~ msgid ""
+#~ "You can view your media in a simple visual grid or a list with columns. "
+#~ "Switch between these views using the icons to the left above the media."
+#~ msgstr ""
+#~ "미디어를 간단한 비주얼 그리드 또는 열이 있는 목록으로 볼 수 있습니다. 미디"
+#~ "어 좌측 상단에 있는 아이콘을 이용하여 화면을 변경할 수 있습니다."
+
+#~ msgid ""
+#~ "To delete media items, click the Bulk Select button at the top of the "
+#~ "screen. Select any items you wish to delete, then click the Delete "
+#~ "Selected button. Clicking the Cancel Selection button takes you back to "
+#~ "viewing your media."
+#~ msgstr ""
+#~ "미디어 항목을 삭제하려면, 화면 상단의 일괄 선택 버튼을 클릭하세요. 삭제할 "
+#~ "모든 파일을 선택한 다음, 선택 삭제 버튼을 클릭하세요. 선택 해제 버튼을 클"
+#~ "릭하면 미디어 화면으로 돌아갑니다."
+
+#~ msgid "Attachment Details"
+#~ msgstr "첨부 파일 세부 정보"
+
+#~ msgid ""
+#~ "Clicking an item will display an Attachment Details dialog, which allows "
+#~ "you to preview media and make quick edits. Any changes you make to the "
+#~ "attachment details will be automatically saved."
+#~ msgstr ""
+#~ "항목을 클릭하면 미디어를 미리 보고 빠르게 편집할 수 있는 첨부 파일 상세 정"
+#~ "보 대화창이 표시됩니다. 첨부 파일 상세 정보에서의 모든 변경 사항은 자동으"
+#~ "로 저장됩니다."
+
+#~ msgid ""
+#~ "Use the arrow buttons at the top of the dialog, or the left and right "
+#~ "arrow keys on your keyboard, to navigate between media items quickly."
+#~ msgstr ""
+#~ "대화창 상단의 화살표 버튼을 사용하거나, 키보드의 왼쪽 및 오른쪽 화살표 키"
+#~ "를 이용하여 미디어 항목을 신속하게 탐색할 수 있습니다."
+
+#~ msgid ""
+#~ "You can also delete individual items and access the extended edit screen "
+#~ "from the details dialog."
+#~ msgstr ""
+#~ "상세 정보 대화에서 개별 항목을 삭제하고 확장 편집 화면에 접근할 수 있습니"
+#~ "다."
+
+#~ msgid "For more information:"
+#~ msgstr "더 많은 정보:"
+
+#~ msgid ""
+#~ "<a href=\"http://codex.wordpress.org/Media_Library_Screen\" target="
+#~ "\"_blank\">Documentation on Media Library</a>"
+#~ msgstr ""
+#~ "<a href=\"http://codex.wordpress.org/Media_Library_Screen\" target="
+#~ "\"_blank\">미디어 라이브러리에 대한 문서</a>"
+
+#~ msgid ""
+#~ "<a href=\"https://wordpress.org/support/\" target=\"_blank\">Support "
+#~ "Forums</a>"
+#~ msgstr "지원 포럼"
+
+#~ msgctxt "file"
+#~ msgid "Add New"
+#~ msgstr "새로 추가"
+
+#~ msgid ""
+#~ "The grid view for the Media Library requires JavaScript. <a href=\"upload."
+#~ "php?mode=list\">Switch to the list view</a>."
+#~ msgstr ""
+#~ "미디어 라이브러리에 대한 그리드 화면은 자바 스크립트가 필요합니다. <a "
+#~ "href=\"upload.php?mode=list\">목록 화면으로 전환</a>."
+
+#~ msgid "You are not allowed to edit this post."
+#~ msgstr "이 글을 편집할 권한이 없습니다."
+
+#~ msgid "You are not allowed to move this post to the trash."
+#~ msgstr "이 글을 휴지통으로 이동할 권한이 없습니다."
+
+#~ msgid "Error in moving to trash."
+#~ msgstr "휴지통으로 이동하는 도중 오류가 발생함."
+
+#~ msgid "You are not allowed to move this post out of the trash."
+#~ msgstr "이 글을 휴지통으로부터 이동할 권한이 없습니다."
+
+#~ msgid "Error in restoring from trash."
+#~ msgstr "휴지통으로부터 복구하는 도중 오류가 발생함."
+
+#~ msgid "You are not allowed to delete this post."
+#~ msgstr "이 글을 삭제할 권한이 없습니다."
+
+#~ msgid "Error in deleting."
+#~ msgstr "삭제하는 도중 오류가 발생함."
+
+#~ msgctxt "items per page (screen options)"
+#~ msgid "Media items"
+#~ msgstr "미디어 항목"
+
+#~ msgid ""
+#~ "All the files you&#8217;ve uploaded are listed in the Media Library, with "
+#~ "the most recent uploads listed first. You can use the Screen Options tab "
+#~ "to customize the display of this screen."
+#~ msgstr ""
+#~ "업로드한 모든 파일은 미디어 라이브러리 내에 나열되며 가장 최근 업로드한 목"
+#~ "록을 먼저 표시합니다. 화면 옵션 탭을 사용해 이 화면의 표시를 설정할 수 있"
+#~ "습니다."
+
+#~ msgid ""
+#~ "You can narrow the list by file type/status using the text link filters "
+#~ "at the top of the screen. You also can refine the list by date using the "
+#~ "dropdown menu above the media table."
+#~ msgstr ""
+#~ "화면 상단에 있는 텍스트 링크 필터를 사용하여 파일 유형/상태 기준으로 목록"
+#~ "을 좁힐 수 있습니다. 또한 미디어 표 위의 드롭 다운 메뉴를 사용하여 날짜 별"
+#~ "로 목록을 구체화 할 수 있습니다."
+
+#~ msgid "Available Actions"
+#~ msgstr "사용 가능한 동작"
+
+#~ msgid ""
+#~ "Hovering over a row reveals action links: Edit, Delete Permanently, and "
+#~ "View. Clicking Edit or on the media file&#8217;s name displays a simple "
+#~ "screen to edit that individual file&#8217;s metadata. Clicking Delete "
+#~ "Permanently will delete the file from the media library (as well as from "
+#~ "any posts to which it is currently attached). View will take you to the "
+#~ "display page for that file."
+#~ msgstr ""
+#~ "행에 마우스를 올리면 다음의 작업 링크가 나타납니다 : 편집, 영구 삭제, 그리"
+#~ "고 보기. 편집이나 미디어 파일의 이름을 클릭하면 개별 파일의 메타 데이터를 "
+#~ "편집하는 간단한 화면이 표시됩니다. 영구 삭제를 클릭하면 미디어 라이브러리"
+#~ "(뿐만 아니라 그것이 현재 첨부된 모든 글에서도)에서 파일을 삭제합니다. 보기"
+#~ "는 파일이 사용된 페이지로 이동합니다."
+
+#~ msgid "Attaching Files"
+#~ msgstr "파일을 첨부하는 중"
+
+#~ msgid ""
+#~ "If a media file has not been attached to any post, you will see that in "
+#~ "the Attached To column, and can click on Attach File to launch a small "
+#~ "popup that will allow you to search for a post and attach the file."
+#~ msgstr ""
+#~ "미디어 파일이 모든 글에 첨부되지 않은 경우, 다음에 첨부됨 열에 표시되고, "
+#~ "파일 첨부를 클릭하면 글을 검색하고 파일을 첨부할 수 있는 작은 팝업이 나타"
+#~ "납니다."
+
+#~ msgid "Search results for &#8220;%s&#8221;"
+#~ msgstr "&#8220;%s&#8221;에 대한 검색 결과"
+
+#~ msgid "Media attachment updated."
+#~ msgstr "미디어 첨부파일이 업데이트 됨."
+
+#~ msgid "Reattached %d attachment."
+#~ msgid_plural "Reattached %d attachments."
+#~ msgstr[0] "%d 첨부파일을 다시 첨부함."
+
+#~ msgid "Media attachment permanently deleted."
+#~ msgid_plural "%d media attachments permanently deleted."
+#~ msgstr[0] "미디어 첨부 파일을 영구적으로 삭제함."
+
+#~ msgid "Media attachment moved to the trash."
+#~ msgid_plural "%d media attachments moved to the trash."
+#~ msgstr[0] "미디어 첨부 파일을 휴지통으로 이동함."
+
+#~ msgid "Undo"
+#~ msgstr "실행 취소"
+
+#~ msgid "Media attachment restored from the trash."
+#~ msgid_plural "%d media attachments restored from the trash."
+#~ msgstr[0] "미디어 첨부 파일을 휴지통으로부터 복구함."
+
+#~ msgid "Media permanently deleted."
+#~ msgstr "미디어를 영구적으로 삭제함."
+
+#~ msgid "Error saving media attachment."
+#~ msgstr "미디어 첨부 파일을 저장하는 중 오류 발생."
+
+#~ msgid "Media moved to the trash."
+#~ msgstr "미디어가 휴지통으로 이동함."
+
+#~ msgid "Media restored from the trash."
+#~ msgstr "미디어를 휴지통에서 복구함."
+
+#~ msgid "Column in List View"
+#~ msgstr "목록 화면에서 열 표시"
+
+#~ msgid "Filter in List View"
+#~ msgstr "목록 화면에서 필터 적용"
+
+#~ msgid "Filter in Grid View / Media Popup"
+#~ msgstr "그리드 화면 / 미디어 팝업에서 필터 적용"
+
+#~ msgid "Remember terms order (sort)"
+#~ msgstr "용어 순서 기억 (정렬)"
+
+#~ msgid "Show media filters for ANY Media Popup."
+#~ msgstr "모든 미디어 팝업에 대한 미디어 필터 표시"
+
+#~ msgid ""
+#~ "May be useful for those who need forcing filters for third-party plugins "
+#~ "or themes."
+#~ msgstr ""
+#~ "제3자 플러그인 또는 테마에 대한 필터에 대한 강제 적용이 필요할 때 유용할 "
+#~ "수 있음."
+
+#~ msgid "Restore default MIME Types"
+#~ msgstr "기본 MIME 유형 복구"
+
+#~ msgid ""
+#~ "Please deactivate and <strong>remove</strong> the old version prior to "
+#~ "the <strong>Enhanced Media Library PRO</strong> activation. All your data "
+#~ "will remain intact."
+#~ msgstr ""
+#~ "<strong>Enhanced Media Library PRO</strong>를 활성화하기 전에 오래된 버전"
+#~ "을 비활성화 및 <strong>제거</strong>해주세요. 모든 데이터는 보존됩니다."
+
+#~ msgid "EML PRO Updates"
+#~ msgstr "EML PRO 업데이트"
+
+#~ msgid "Updates"
+#~ msgstr "업데이트"
+
+#~ msgid "Enhanced Media Library PRO License"
+#~ msgstr "Enhanced Media Library PRO 라이센스"
+
+#~ msgid ""
+#~ "To unlock updates, please enter your license key below. You can see your "
+#~ "license key in <a href=\"http://www.wpuxsolutions.com/account/\">Your "
+#~ "Account</a>. If you don&#8217;t have a licence key, you are welcome to <a "
+#~ "href=\"http://www.wpuxsolutions.com/pricing/\">purchase it</a>."
+#~ msgstr ""
+#~ "업데이트를 잠금 해제하려면, 아래 라이센스 키를 입력해주세요. <a href="
+#~ "\"http://www.wpuxsolutions.com/account/\">Your Account</a>에서 라이센스 키"
+#~ "를 확인할 수 있습니다. 라이센스 키가 없을 경우, <a href=\"http://www."
+#~ "wpuxsolutions.com/pricing/\">구입</a>하실 수 있습니다."
+
+#~ msgid ""
+#~ "To unlock updates, please enter your license key on the <a href=\"%s"
+#~ "\">Updates</a> page. You can see your license key in <a href=\"%s\">Your "
+#~ "Account</a>. If you don&#8217;t have a licence key, you are welcome to <a "
+#~ "href=\"%s\">purchase it</a>."
+#~ msgstr ""
+#~ "업데이트를 잠금 해제하려면, <a href=\"%s\">업데이트</a> 페이지에서 라이센"
+#~ "스 키를 입력해주세요. <a href=\"http://www.wpuxsolutions.com/account/"
+#~ "\">Your Account</a>에서 라이센스 키를 확인할 수 있습니다. 라이센스 키가 없"
+#~ "을 경우, <a href=\"http://www.wpuxsolutions.com/pricing/\">구입</a>하실 "
+#~ "수 있습니다."
+
+#~ msgid "Expand Details"
+#~ msgstr "세부 정보 펼치기"
+
+#~ msgid "Collapse Details"
+#~ msgstr "세부 정보 접기"
+
+#~ msgid "Validation Failed. One or more fields below are required."
+#~ msgstr "검증에 실패함. 아래 하나 이상의 필드가 필요합니다."
+
+#~ msgid ""
+#~ "The changes you made will be lost if you navigate away from this page"
+#~ msgstr "이 페이지에서 벗어나면 변경 사항을 잃게 됩니다."
+
+#~ msgid ""
+#~ "<strong>Enhanced Media Library PRO</strong> does not require free version "
+#~ "to be active. Please deactivate and remove the free version of the plugin."
+#~ msgstr ""
+#~ "<strong>Enhanced Media Library PRO</strong>는 활성화 시 무료 버전이 필요없"
+#~ "습니다. 플러그인의 무료 버전을 비활성화 및 제거해주세요. "
+
+#~ msgid "Enhanced Media Library PRO"
+#~ msgstr "Enhanced Media Library PRO"
