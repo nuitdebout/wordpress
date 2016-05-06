@@ -1,0 +1,13 @@
+---
+- name:          Test wordpress cli is installed
+  stat:          path=/usr/local/bin/wp
+  register:      wp_cli
+  changed_when:  false
+
+
+- name:     Install Wordpress Cli
+  when:     wp_cli.stat.exists == false
+  shell:    >
+            curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar &&
+            chmod +x wp-cli.phar &&
+            sudo mv wp-cli.phar /usr/local/bin/wp

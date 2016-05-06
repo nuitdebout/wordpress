@@ -39,55 +39,76 @@ Mot de passe : **urWnshZ)f0xYJCbPJ9**
 ### Avec Vagrant
 
 - Installer [VirtualBox](https://www.virtualbox.org/) & [Vagrant](https://docs.vagrantup.com/v2/installation/index.html)
-- Installer Vagrant Omnibus et hosts, puis lancer la création de la machine virtuelle
+- Installer [Ansible](http://ansible.com) via les [Instruction d'installation](http://docs.ansible.com/intro_installation.html#installation).
+
+Ensuite il n'y a plus qu'a lancer la machine. Elle devrait installer wordpress et importer les données.
 ```
-$ vagrant plugin install vagrant-omnibus
-$ vagrant plugin install vagrant-hosts
-$ vagrant up
-```
-- Copier la configuration
-```
-$ cp wp-config.php.dist wp-config.php
-```
-- Importer la base de données :
-```
-$ vagrant ssh -c 'cat /var/www/nuitdebout/dump/nuitdebout_multisite.sql | mysql -h127.0.0.1 -uroot -pleurfairepeur nuitdebout'
+    vagrant up
 ```
 
 - Ajouter la ligne suivante au fichier `/etc/hosts`
+
 ```
-192.168.31.3 nuitdebout.dev
+    192.168.31.3 nuitdebout.dev
 ```
+
 - Aller sur `http://nuitdebout.dev`.
 
+#### Utilisateur Windows
 
-Pour arrêter la machine virtuelle, lancer `vagrant halt`.
+Sur windows, le nfs n'est pas supporté. Pour corriger le problème, ajoutez la variable d'Environnement
+
+```
+VM_NFS="false"
+```
+
+Vous aurait peut-être besoin d'installer un plugin pour vagrant
+```
+vagrant plugin install vagrant-vbguest
+```
+
 
 ### Avec Docker
 
-1. Lancer `./script/bootstrap` et suivez les indications
+**Attention** : Suite à des modifications récentes, le Docker doit être mis à jour
+
+1. Lancer `./bin/bootstrap` et suivez les indications
 1. Aller sur [nuitdebout.dev](http://nuitdebout.dev)
 
-Pour relancer plus tard: `./script/server`
+Pour relancer plus tard: `./bin/server`
 
-## Compilation du thème
+## Développement
 
-Le thème utilise Sass, Gulp, Bower et Composer.
+### Compilation du thème
+
+Le thème est installé dans `./theme`. Il utilise Sass, Gulp, Bower et Composer.
 
 ```
-$ cd wp-content/themes/nuitdeboo-child
+$ cd theme
 $ npm install -g gulp bower
 $ npm install
 $ bower install
 $ composer install
 ```
 
-Les fichiers source se trouvent dans `wp-content/themes/nuitdeboo-child/assets`
-
-Les fichiers compilés se trouvent dans `wp-content/themes/nuitdeboo-child/dist`
-
+Les fichiers source se trouvent dans `theme/assets`
+Les fichiers compilés se trouvent dans `theme/dist`
 Pour recompiler les assets à chaque modification de fichier, lancer la tâche `watch` :
 
 ```
 $ gulp watch
+```
+
+### Ajout d'un plugin
+
+Pour ajouter un plugin, il faut le mettre à la fin de la liste située dans `./ansible/site.yml`.
+
+Pour lancer l'installation, le plus safe est reprovisionner la machine :
+```
+vagrant provision
+```
+
+Si vous aimez vivre dangereusement, vous pouvez lancer
+```
+vagrant ssh -c "wp plugin install nom_du_plugin --activate-network --activate --path=/var/www"
 ```

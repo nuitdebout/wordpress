@@ -28,7 +28,7 @@ define('DB_USER', 'root');
 define('DB_PASSWORD', 'leurfairepeur');
 
 /** Adresse de l'hébergement MySQL. */
-define('DB_HOST', 'mysql');
+define('DB_HOST', '127.0.0.1');
 
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 define('DB_CHARSET', 'utf8');
@@ -87,8 +87,6 @@ define('WP_ALLOW_MULTISITE', true);
 define('WP_DEBUG', false);
 
 /* C'est tout, ne touchez pas à ce qui suit ! Bon blogging ! */
-define( 'SUNRISE', 'on' );
-
 define('MULTISITE', true);
 define('SUBDOMAIN_INSTALL', false);
 define('DOMAIN_CURRENT_SITE', 'nuitdebout.dev');

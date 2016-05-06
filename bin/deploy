@@ -4,7 +4,7 @@ WWW="/var/www/wordpress"
 
 echo "Compiling theme..."
 
-cd wp-content/themes/nuitdeboo-child
+cd theme
 
 composer install
 npm install
@@ -14,10 +14,10 @@ gulp --production
 cd -
 
 echo "Deploying theme using rsync..."
-rsync --stats -t -P --recursive --exclude-from=bin/rsync.exclude.conf wp-content/themes/nuitdeboo-child/ nuitdebout.fr:$WWW/wp-content/themes/nuitdeboo-child/
+rsync --stats -t -P --recursive --exclude-from=bin/rsync.exclude.conf theme/ nuitdebout.fr:$WWW/wp-content/themes/nuitdeboo-child/
 
 # We need to clean because gulp watch does not remove the dist/assets.json file
 echo "Cleaning..."
-cd wp-content/themes/nuitdeboo-child
+cd theme
 gulp clean
 cd -

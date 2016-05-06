@@ -1,0 +1,22 @@
+---
+  - name: Install nginx
+    sudo: yes
+    apt:  pkg=nginx state=latest
+
+  - name: Ensure nginx log directory exists
+    file: dest=/var/log/nginx/wordpress state=directory
+
+  - name: Create global directory
+    sudo: yes
+    file: dest=/etc/nginx/global state=directory
+
+  - name: Copy wordpress configurations
+    sudo: yes
+    with_items: [multisite.conf, restrictions.conf, wordpress.conf]
+    template: src={{item}} dest=/etc/nginx/global/{{item}}
+    notify: restart nginx
+
+  - name: Change default nginx site
+    sudo: yes
+    template: src=default.tpl dest=/etc/nginx/sites-available/default
+    notify: restart nginx
