@@ -1,0 +1,67 @@
+---
+- hosts: all
+  sudo:  true
+  vars:
+    doc_root: /var/www
+    sys_packages:
+      - mcrypt
+      - vim
+    php_packages:
+      - { name: dev, package: php5-dev }
+      - { name: pear, package: php-pear }
+      - { name: xdebug, package: php5-xdebug }
+      - { name: curl, package: php5-curl }
+      - { name: mcrypt, package: php5-mcrypt }
+      - { name: mysql, package: php5-mysql }
+    php_extensions: ~
+    php_ppa: php5
+    nodejs:
+      version: _5.x
+      packages: [bower, gulp]
+    database:
+      name:     nuitdebout
+      user:     root
+      password: leurfairepeur
+  roles:
+    - init
+    - nginx
+    - php5-fpm
+    - php5-cli
+    - php5-common
+    - composer
+    - mysql
+    - curl
+    - wget
+    - nodejs
+    - git
+    - wordpress-cli
+
+- hosts: all
+  user: vagrant
+  vars:
+    admin:
+      email:    admin@admin.fr
+      password: password
+      user:     admin
+    database:
+      name:     nuitdebout
+      user:     root
+      password: leurfairepeur
+      prefix:   wpdb_
+    plugins:
+        - wordpress-importer
+        - acf-options-page
+        - flamingo
+        - redirection
+        - acf-repeater
+        - google-sitemap-generator
+        - wp-piwik
+        - advanced-custom-fields
+        - wp-rss-aggregator
+        - akismet
+        - wp-super-cache
+        - contact-form-7
+        - login-lockdown
+        - enhanced-media-library
+  roles:
+    - wordpress

@@ -87,8 +87,6 @@ define('WP_ALLOW_MULTISITE', true);
 define('WP_DEBUG', false);
 
 /* C'est tout, ne touchez pas à ce qui suit ! Bon blogging ! */
-define( 'SUNRISE', 'on' );
-
 define('MULTISITE', true);
 define('SUBDOMAIN_INSTALL', false);
 define('DOMAIN_CURRENT_SITE', 'nuitdebout.dev');

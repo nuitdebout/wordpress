@@ -1,0 +1,12 @@
+---
+- name:     Composer install
+  shell:    cd {{dir}} && composer install
+
+- name:     Npm install
+  shell:    cd {{dir}} && npm install
+
+- name:     Bower install
+  shell:    cd {{dir}} && bower install
+
+- name:     Gulping
+  shell:    cd {{dir}} && gulp
