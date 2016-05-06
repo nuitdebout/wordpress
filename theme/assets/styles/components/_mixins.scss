@@ -43,6 +43,34 @@
     box-shadow: none;
   }
 }
+@mixin tag-link-reverse {
+  /* Rectangle 118: */
+  background: $link-color;
+  border: 1px solid $gray-lighter;
+  transition: box-shadow .3s;
+    display: inline-block;
+    background: #0ab8d1;
+    border-radius: 11px;
+    padding: .0em .5em !important;;
+    margin-bottom: 0px;
+    display: inline-block;
+    color: #fff;
+    margin-right: .4em;
+
+  &:focus,
+  &:active,
+  &:hover {
+    background: white;
+    border-color: $link-color;
+    color:$link-color;
+    text-decoration: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
 
 @mixin container($max-width: 780px) {
   @include container-fixed;

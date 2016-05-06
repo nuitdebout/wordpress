@@ -115,7 +115,7 @@ body.single-post{
   .post__content {
     @include container();
 
-    padding-bottom: 50px;
+    padding-bottom: 25px;
     border-bottom: 1px solid $gray-light;
   }
   .post__comments {
@@ -149,4 +149,19 @@ body.single-post{
       margin-bottom: 25px;
     }
   }
+  .post-taxonomies{
+    margin:1em 0;
+    float:left;
+    display:block;
+    .post-taxonomy{
+      color: $gray-light;
+      &.post-taxonomy--post_tag{
+          & > a {
+            @include tag-link-reverse();
+          }
+      }
+    }
+
+  }
+
 }
