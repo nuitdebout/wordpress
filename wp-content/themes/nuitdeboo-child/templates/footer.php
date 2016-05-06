@@ -23,14 +23,14 @@
         </div>
 
         <div class="footer-section footer-section--link">
-            <h5 class="footer-section__title">Liens</h5>
             <?php
-            if (has_nav_menu('footer_navigation')) :
-                wp_nav_menu(['theme_location' => 'footer_navigation', 'menu_class' => 'list-unstyled']);
+            if (has_nav_menu('footer_navigation')) : ?>
+            	<h5 class="footer-section__title">Liens</h5>
+            <?php
+            wp_nav_menu(['theme_location' => 'footer_navigation', 'menu_class' => 'list-unstyled']);
             endif;
             ?>
         </div>
-
 
         <div class="footer-section">
             <h5 class="footer-section__title">Voir aussi</h5>
@@ -46,6 +46,9 @@
         <?php
         if (has_nav_menu('footer_colophon_navigation')) :
             wp_nav_menu(['theme_location' => 'footer_colophon_navigation', 'menu_class' => 'list-unstyled']);
+
+        else :
+        	wp_list_pages();
         endif;
         ?>
     </div>
