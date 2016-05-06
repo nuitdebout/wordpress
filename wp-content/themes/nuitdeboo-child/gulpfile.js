@@ -22,6 +22,10 @@ var uglify       = require('gulp-uglify');
 var iconfont     = require('gulp-iconfont');
 var consolidate  = require('gulp-consolidate');
 
+var slug = require('slug');
+var _ = require('underscore');
+var fs = require('fs');
+var request = require('request')
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
 
@@ -305,6 +309,163 @@ gulp.task('wiredep', function() {
     }))
     .pipe(gulp.dest(path.source + 'styles'));
 });
+
+
+
+var cities = [];
+function getCities(callback){
+
+  request.get('https://wiki.nuitdebout.fr/api.php?action=query&generator=categorymembers&gcmtitle=Cat%C3%A9gorie:Ville_NuitDebout&prop=pagecllimit=max&gcmlimit=max&format=json', function(err,res, body) {
+     var info = JSON.parse(body);
+     _.each(info.query.pages, function(page) {
+            var pt = page.title;
+            if(pt !=='Villes/en' && pt !=='Villes' && pt !=='Villes/fr' && pt.match(/Villes/g)){
+               var name = pt.replace('Villes/', '')
+               var nicename = slug(name, {lower: true})
+               var wiki_uri = page.title
+               cities.push({
+                  wiki_uri: wiki_uri,
+                  wiki_url: 'https://wiki.nuitdebout.fr/wiki/'+wiki_uri,
+                  uri: '/ville/' + nicename,
+                  slug: nicename,
+                  raw : '',
+                  name: name,
+                  links : [],
+                  linksFacebook : [],
+                  linksTwitter : '',
+                  linksChat : [],
+                  linksContact : [],
+                  map : '',
+                  sections : [],
+                  categories : [],
+                  images : [],
+              })
+             }
+     })
+
+  function getCityDetails(city, cb) {
+
+      request.get('https://wiki.nuitdebout.fr/api.php?action=parse&page='+city.wiki_uri+'&contentmodel=wikitext&format=json', function(err,res, body) {
+          var data = JSON.parse(body);
+          //console.log(data.parse)
+          _.each(data.parse.externallinks, function(link_){
+            //console.log(link_)
+            link = link_;
+            if(link !== 'https://twitter.com/NOM_DU_COMPTE_TWITTER'){
+
+              if (matches = /(twitter.com)/g.exec(link)) {
+                  city.linksTwitter = link;
+              }
+              if (matches = /(chat.nuitdebout.fr)/g.exec(link)) {
+                  city.linksChat.push(link);
+              }
+              if (matches = /(openstreetmap.org)/g.exec(link)) {
+                  city.map = link;
+              }
+              if (matches = /(facebook.com)/g.exec(link)) {
+                  city.linksFacebook.push(link);
+              }
+               if (matches = /(@)/g.exec(link)) {
+                  city.linksContact.push(link);
+              }
+              // add any in array
+              city.links.push(link);
+            }
+          })
+          _.each(data.parse.sections, function(section){
+            //console.log(section)
+          });
+          _.each(data.parse.categories, function(categorie){
+            //console.log(categorie)
+            city.categories.push(categorie['*'])
+          });
+          _.each(data.parse.images, function(image){
+            if(image !=='Twitter.svg' && image !=='F_icon.svg' && image !=='At_sign.svg' ){
+              console.log('img: '+image)
+              // seems there is a way to get image url but need extra api call..
+              //https://wiki.nuitdebout.fr/api.php?action=query&titles=File:Arras_beffroi.jpg&prop=imageinfo&iilimit=50&iiend=2007-12-31T23:59:59Z&iiprop=timestamp|user|url
+              city.images.push(image)
+            }
+          });
+
+          var content = data.parse.text['*']
+          var regex_comments = /(<!--)[^]*(-->)/gi;
+          var regex_break = /(<div style="clear:both;"><\/div>)/g
+          //respan = /<span class=\"mw-editsection-bracket\">[^<>]*<\/span>/g;
+          content = content.replace(regex_comments, "");
+          //content = content.replace(respan, "----");
+          content = content.replace(regex_break, "");
+          regex_form = /<div class=\"mw-inputbox-centered\" [^]*>[^]*<\/div>/g;
+          regex_e = /modifier le wikicode/g;
+          regex_f = /modifier/g;
+          regex_i = /\/images\/thumb/g;
+          regex_brack_open = /(<span class=\"mw-editsection-bracket\">\[<\/span>)/gi;
+          regex_brack_close = /(<span class=\"mw-editsection-bracket\">\]<\/span>)/gi;
+          regex_k = /<span class=\"mw-editsection-divider\"> \| <\/span>/gi;
+          regex_wikiword = /href=\"\/wiki\//g;
+          regex_notice= /(<p><br \/><br \/>[^]*<\/p>)/gi;
+          regex_div_float = /<div style=\"float:left;\">/gi;
+          regex_o = /&#160;;/gi;
+          regex_wikilink = /\/index.php\?title/gi;
+          regex_toc = /(<div id=\"toc\" class=\"toc\">[^]*<\/div>)/gi;
+
+          content = content.replace(regex_e, "");
+          content = content.replace(regex_f, "");
+          content = content.replace(regex_i, "https://wiki.nuitdebout.fr/images/thumb");
+          content = content.replace(regex_brack_open, "");
+          content = content.replace(regex_brack_close, "");
+          content = content.replace(regex_k, "");
+          content = content.replace(regex_wikiword, ' href="https://wiki.nuitdebout.fr/wiki/');
+          content = content.replace(regex_form, "");
+          content = content.replace(regex_notice, "");
+          content = content.replace(regex_div_float, "");
+          content = content.replace(regex_o, "");
+          content = content.replace(regex_wikilink, "https://wiki.nuitdebout.fr/index.php?title");
+          content = content.replace(regex_toc, "");
+
+          city.raw = content
+          cb(city);
+      })
+  };
+
+  function eachAsync(arr, func, cb) {
+      var doneCounter = 0,
+        results = [];
+      arr.forEach(function (item) {
+        func(item, function (res) {
+          doneCounter += 1;
+          results.push(res);
+          if (doneCounter === arr.length) {
+            //
+            cb(results);
+          }
+        });
+      });
+    }
+
+    eachAsync(cities, getCityDetails, function(results) {
+      callback.apply(undefined, [results]);
+    });
+
+  })
+}
+
+/**
+ * Retrieves the list of cities from the wiki and creates a JSON file.
+ */
+gulp.task('import:cities', function(cb) {
+  getCities(function(newCities) {
+    fs.writeFile('data/cities.json', JSON.stringify(newCities, null, 2), function(err) {
+      if (err) {
+        return console.log(err);
+      }
+      cb();
+    });
+ });
+});
+
+
+
 
 // ### Gulp
 // `gulp` - Run a complete build. To compile for production run `gulp --production`.
