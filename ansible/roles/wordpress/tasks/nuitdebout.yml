@@ -1,0 +1,26 @@
+---
+- name:          Test wordpress is installed
+  stat:          path={{ dir }}/wp-config.php
+  register:      wp_config
+  changed_when:  false
+
+- name:     Download Wordpress
+  when:     wp_config.stat.exists == false
+  shell:    rm -fR {{ dir }}/* && wp core download --path={{ dir }} --locale=fr_FR
+
+- name:     Configure Wordpress
+  when:     wp_config.stat.exists == false
+  shell:    cp /vagrant/wp-config.php {{ dir }}/wp-config.php
+
+- name:       Import Datas
+  shell:      mysql --user={{database.user}} --password={{database.password}} {{database.name}} < /vagrant/dump/nuitdebout_multisite.sql
+
+- name:       Install plugins
+  with_items: plugins
+  shell:      wp plugin install {{ item }} --activate-network --activate --path={{dir}}
+
+- name:       Link theme
+  shell:      ln -fs {{ theme_dir }} {{ dir }}/wp-content/themes/{{ theme }} 
+
+- name:       Activate theme
+  shell:      wp theme activate {{ theme }} --path={{dir}}

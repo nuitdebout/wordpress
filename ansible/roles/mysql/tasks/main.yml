@@ -1,0 +1,25 @@
+---
+- name: Install MySQL server
+  sudo: yes
+  apt:  pkg=mysql-server state=latest
+
+- name: install python mysql package #required for mysql_db tasks
+  apt: name=python-mysqldb state=present
+
+- name: add database user
+  mysql_user:
+    name: "{{database.user}}"
+    password: "{{database.password}}"
+    priv: "*.*:ALL"
+    state: present
+
+- name: create an user config
+  shell: echo "[client]\nuser={{database.user}}\npassword={{database.password}}" > ~/.my.cnf
+
+- name: create database
+  mysql_db:
+    name: "{{database.name}}"
+    login_user: "{{database.user}}"
+    login_password: "{{database.password}}"
+    state: present
+    collation: utf8_general_ci
