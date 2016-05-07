@@ -3,6 +3,7 @@
   sudo:  true
   vars:
     doc_root: /var/www
+    main_domain: nuitdebout.dev
     sys_packages:
       - mcrypt
       - vim

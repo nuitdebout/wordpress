@@ -59,10 +59,10 @@ Ensuite il n'y a plus qu'a lancer la machine. Elle devrait installer wordpress e
 
 **Attention** : Suite à des modifications récentes, le Docker doit être mis à jour
 
-1. Lancer `./script/bootstrap` et suivez les indications
+1. Lancer `./bin/bootstrap` et suivez les indications
 1. Aller sur [nuitdebout.dev](http://nuitdebout.dev)
 
-Pour relancer plus tard: `./script/server`
+Pour relancer plus tard: `./bin/server`
 
 ## Développement
 
