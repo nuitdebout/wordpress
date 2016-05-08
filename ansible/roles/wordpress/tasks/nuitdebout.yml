@@ -1,0 +1,32 @@
+---
+- name:          Test wordpress is installed
+  stat:          path={{ dir }}/wp-config.php
+  register:      wp_config
+  changed_when:  false
+
+- name:     Download Wordpress
+  when:     wp_config.stat.exists == false
+  shell:    wp core download --path={{ dir }} --locale=fr_FR
+
+- name:     Configure Wordpress
+  when:     wp_config.stat.exists == false
+  shell:    cp /vagrant/wp-config.php {{ dir }}/wp-config.php
+
+- name:     Import Datas
+  shell:    mysql --user={{database.user}} --password={{database.password}} {{database.name}} < /vagrant/sql/nuitdebout.sql
+
+- name:     Repair database
+  shell:    wp db repair --path={{dir}}
+
+- name:     Change site url
+  shell:    wp search-replace  nuitdebout.fr nuitdebout.dev '{{database.prefix}}*_options' wp_blogs --path={{dir}}
+
+- name:     Do not handle https
+  shell:    wp search-replace  https://nuitdebout.dev http://nuitdebout.dev '{{database.prefix}}*_options' wp_blogs --path={{dir}}
+
+- name:       Install plugins
+  with_items: plugins
+  shell:      wp plugin install {{ item }} --activate-network --activate --path={{dir}}
+
+- name:       Activate theme
+  shell:      wp theme enable {{ theme }} --network --activate --path={{dir}}

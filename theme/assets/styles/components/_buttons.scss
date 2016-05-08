@@ -1,0 +1,23 @@
+.tags-list {
+  @extend .list-inline;
+
+  text-align: center;
+}
+
+.tag {
+  display: inline-block;
+
+  a {
+    @include tag-link();
+  }
+}
+
+.primary-button {
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .btn-lg;
+  text-transform: uppercase;
+  font-size: 14px;
+
+}
+.space-right-btn{margin-right:20px;}
