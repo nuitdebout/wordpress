@@ -17,6 +17,9 @@ server {
 
 	include global/restrictions.conf;
 
+    error_log   /var/log/nginx/error.log;
+    access_log  /var/log/nginx/access.log;
+
 	# Additional rules go here.
 
 	include global/multisite.conf;
