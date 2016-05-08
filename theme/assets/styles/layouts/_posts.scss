@@ -1,7 +1,6 @@
 .share-btns{
   padding-top: 5px;
   width:100%;
-  float: left;
   .wrap{
     display: inline-block;
     margin-right: 13px;
@@ -151,13 +150,14 @@ body.single-post{
   }
   .post-taxonomies{
     margin:1em 0;
-    float:left;
     display:block;
     .post-taxonomy{
       color: $gray-light;
       &.post-taxonomy--post_tag{
           & > a {
             @include tag-link-reverse();
+            padding: 0 0.5em;
+            border-radius: 11px;
           }
       }
     }
