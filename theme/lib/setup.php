@@ -146,5 +146,8 @@ function assets() {
     wp_enqueue_script('nuidebout/snapwidget', Assets\asset_path('scripts/snapwidget.js'), ['jquery'], null, true);
   }
 
+  wp_localize_script('sage/js', 'WP', [
+  	'ajaxURL' => admin_url('admin-ajax.php')
+  ]);
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);

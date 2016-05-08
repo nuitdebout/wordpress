@@ -23,3 +23,29 @@
 .calendar-canvas .ccal li.calnextmonth {
   width: 15%;
 }
+
+.agenda {
+  .agenda__form {
+    border-top: 1px solid #f7f7f7;
+    border-bottom: 1px solid #f7f7f7;
+    padding-top: 15px;
+    margin-bottom: 15px;
+  }
+  .agenda__events {
+    @extend .panel-group;
+    .agenda__event {
+      @extend .panel;
+      @extend .panel-default;
+      border-radius: 0;
+      box-shadow: none;
+      + .agenda__event {
+        margin-top: 0;
+        border-top: none;
+      }
+      .agenda__event-heading {
+        @extend .panel-heading;
+        background-color: transparent;
+      }
+    }
+  }
+}

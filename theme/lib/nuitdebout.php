@@ -1,13 +1,14 @@
 <?php
 
-function nd_get_revolutionary_date()
+function nd_get_revolutionary_date(\DateTime $now = null)
 {
-
+	if (!$now) {
+		$now = new \DateTime('now');
+	}
 
 	$days = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
 
 	$start = new \DateTime('2016-03-31');
-	$now = new \DateTime();
 	$diff = $now->diff($start);
 	$diffDays = $diff->format('%a');
 	$dayNumber = $diffDays + 31;
