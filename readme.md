@@ -77,6 +77,37 @@ vagrant plugin install vagrant-vbguest
 
 Pour relancer plus tard: `./bin/server`
 
+### Installation sans machine virtuelle.
+
+Si vous preferez faire tourner le site directement sur votre machine locale, vous allez devoir téléchargé wordpress. Utilisez le fichier de configuration `wp-config.php`.
+
+Vous pouvez vous aidez de [wordpress cli](http://wp-cli.org).
+
+```
+cd /var/www
+wp core download --locale=fr_FR
+cp PATH_TO_THE_REPO/wp-config.php wp-config.php
+```
+
+Ensuite vous devez créer une base de donnée `nuidebout` et importer le fichier sql.
+```
+cd -
+mysql --user={{database.user}} --password={{database.password}} nuidebout < sql/nuitdebout.sql
+```
+
+Pour ajouter le theme, vous pouvez faire un lien symbolique vers le dossier `./theme`.
+```
+ln -s theme/ /var/www/wp-content/themes/nuidebout
+cd /var/www
+wp theme enable nuitdebout --network --activate
+```
+
+Il faut ensuite installer les diférents plugins. La liste est dans `ansible/site.yml`.
+
+Enfin vous devez configurer votre serveur web. Si vous avez apache, vous pouvez récurer un `.htaccess` [ici](https://codex.wordpress.org/htaccess).
+Si vous avez nginx, vous pouvez vous insprirer de ceux dans `./ansible/roles/nginx/templates`.
+
+
 ## Développement
 
 ### Compilation du thème
