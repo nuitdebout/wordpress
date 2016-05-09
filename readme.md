@@ -115,11 +115,11 @@ Si vous avez nginx, vous pouvez vous inspirer de ceux dans `./ansible/roles/ngin
 Le thème est installé dans `./theme`. Il utilise Sass, Gulp, Bower et Composer.
 
 ```
-$ cd theme
-$ npm install -g gulp bower
-$ npm install
-$ bower install
-$ composer install
+cd theme
+npm install -g gulp bower
+npm install
+bower install
+composer install
 ```
 
 Les fichiers source se trouvent dans `theme/assets`
@@ -127,7 +127,7 @@ Les fichiers compilés se trouvent dans `theme/dist`
 Pour recompiler les assets à chaque modification de fichier, lancer la tâche `watch` :
 
 ```
-$ gulp watch
+gulp watch
 ```
 
 ### Ajout d'un plugin
