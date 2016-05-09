@@ -1,11 +1,4 @@
 <?php
-function is_rootsite(){
-	$blogid = get_current_blog_id();
-	$blog_details = get_blog_details($blogid);
-	if($blog_details && $blogid && $blogid =='1' && ($blog_details->domain == 'nuitdebout.dev' || $blog_details->domain == 'nuitdebout.fr' || $blog_details->domain == '185.34.33.84' ) ){
-	  return 'is root site';
-	}
-}
 
 function get_extra_social_array() {
 
@@ -89,59 +82,6 @@ if(function_exists("register_field_group"))
 		'id' => 'acf_modules',
 		'title' => 'Modules',
 		'fields' => array (
-			array (
-				'key' => 'field_571239024bdd0',
-				'label' => 'Homepage',
-				'name' => '',
-				'type' => 'tab',
-			),
-			array (
-				'key' => 'field_57123848f36de',
-				'label' => 'Inclure le module "homepage" fond d\'écran',
-				'name' => 'homepage_module_screen',
-				'type' => 'select',
-				'choices' => array (
-					'oui' => 'Oui',
-					'non' => 'Non',
-				),
-				'default_value' => '',
-				'allow_null' => 0,
-				'multiple' => 0,
-			),
-
-			array (
-				'key' => 'field_571239164bdd1',
-				'label' => 'Changer l\'écran de la page d\'accueil',
-				'name' => 'homepage_screen',
-				'type' => 'image',
-				'conditional_logic' => array (
-					'status' => 1,
-					'rules' => array (
-						array (
-							'field' => 'field_57123848f36de',
-							'operator' => '==',
-							'value' => 'oui',
-						),
-					),
-					'allorany' => 'all',
-				),
-				'save_format' => 'object',
-				'preview_size' => 'thumbnail',
-				'library' => 'all',
-			),
-			array (
-				'key' => 'field_545d3848f36de',
-				'label' => 'homepage_module_blog',
-				'name' => 'homepage_module_blog',
-				'type' => 'select',
-				'choices' => array (
-					'oui' => 'Oui',
-					'non' => 'Non',
-				),
-				'default_value' => '',
-				'allow_null' => 0,
-				'multiple' => 0,
-			),
  			array (
                 'key' => 'field_57qsd123qsqsd9sdf024bdd0',
                 'label' => 'Module globalDebout',
@@ -571,90 +511,6 @@ if(function_exists("register_field_group"))
 				'multiple' => 0,
 			),
 			array (
-				'key' => 'field_57125fb0963e9',
-				'label' => 'Manifesto',
-				'name' => '',
-				'type' => 'tab',
-			),
-			array (
-				'key' => 'field_57125fb8963ea',
-				'label' => 'Inclure le module manifesto',
-				'name' => 'homepage_module_manifesto',
-				'type' => 'select',
-				'choices' => array (
-					'oui' => 'Oui',
-					'non' => 'Non',
-				),
-				'default_value' => '',
-				'allow_null' => 0,
-				'multiple' => 0,
-			),
-			array (
-				'key' => 'field_57qs125fb8963ea',
-				'label' => 'Url bouton libre',
-				'name' => 'homepage_manifesto_btn_url',
-				'type' => 'text',
-				'default_value' => '',
-				'allow_null' => 0,
-				'multiple' => 0,
-				'conditional_logic' => array (
-					'status' => 1,
-					'rules' => array (
-						array (
-							'field' => 'field_57125fb8963ea',
-							'operator' => '==',
-							'value' => 'oui',
-						),
-					),
-					'allorany' => 'all',
-				),
-			),
-			array (
-				'key' => 'field_57qs1qsd25fb8963ea',
-				'label' => 'Texte bouton libre',
-				'name' => 'homepage_manifesto_btn_text',
-				'default_value' => '',
-				'allow_null' => 0,
-				'multiple' => 0,
-				'conditional_logic' => array (
-					'status' => 1,
-					'rules' => array (
-						array (
-							'field' => 'field_57125fb8963ea',
-							'operator' => '==',
-							'value' => 'oui',
-						),
-					),
-					'allorany' => 'all',
-				),
-			),
-
-			array (
-				'key' => 'field_57125edc26c22',
-				'label' => 'Manifesto (page)',
-				'name' => 'homepage_manifesto',
-				'type' => 'post_object',
-				'conditional_logic' => array (
-					'status' => 1,
-					'rules' => array (
-						array (
-							'field' => 'field_57125fb8963ea',
-							'operator' => '==',
-							'value' => 'oui',
-						),
-					),
-					'allorany' => 'all',
-				),
-				'post_type' => array (
-					0 => 'page',
-				),
-				'taxonomy' => array (
-					0 => 'all',
-				),
-				'allow_null' => 0,
-				'multiple' => 0,
-			),
-			array (
 				'key' => 'field_57544125fb0963e9',
 				'label' => 'iframe libre',
 				'name' => 'iframe_libre',
@@ -750,60 +606,6 @@ if(function_exists("register_field_group"))
 				'allow_null' => 0,
 				'multiple' => 0,
 			),
-			array (
-				'key' => 'field_57544s5fb0963e9',
-				'label' => 'Agenda',
-				'name' => 'agenda',
-				'type' => 'tab',
-			),
-			array (
-				'key' => 'field_57125fbfgh8963ea',
-				'label' => 'Inclure le module agenda',
-				'name' => 'homepage_module_agenda',
-				'type' => 'select',
-				'choices' => array (
-					'oui' => 'Oui',
-					'non' => 'Non',
-				),
-				'default_value' => '',
-				'allow_null' => 0,
-				'multiple' => 0,
-			),
-			array (
-				'key' => 'field_5vuhvggfgh8963ea',
-				'label' => 'agenda ID',
-				'name' => 'homepage_agenda_ID',
-				'type' => 'text',
-				'default_value' => '',
-				'allow_null' => 0,
-				'multiple' => 0,
-			),
-			array (
-				'key' => 'field_5712uio5edc26c22',
-				'label' => 'agenda (page)',
-				'name' => 'homepage_agenda',
-				'type' => 'post_object',
-				'conditional_logic' => array (
-					'status' => 1,
-					'rules' => array (
-						array (
-							'field' => 'field_57125fbfgh8963ea',
-							'operator' => '==',
-							'value' => 'oui',
-						),
-					),
-					'allorany' => 'all',
-				),
-				'post_type' => array (
-					0 => 'page',
-				),
-				'taxonomy' => array (
-					0 => 'all',
-				),
-				'allow_null' => 0,
-				'multiple' => 0,
-			),
-
 		),
 		'location' => array (
 			array (

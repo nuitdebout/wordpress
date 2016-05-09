@@ -104,3 +104,13 @@
 
   }
 }
+
+
+.widget_categories,
+.widget_recent_entries,
+.widget_rss {
+  margin: 50px 0;
+  ul {
+    @extend .list-unstyled;
+  }
+}
