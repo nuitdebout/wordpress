@@ -613,60 +613,6 @@ if(function_exists("register_field_group"))
 				'allow_null' => 0,
 				'multiple' => 0,
 			),
-			array (
-				'key' => 'field_57544s5fb0963e9',
-				'label' => 'Agenda',
-				'name' => 'agenda',
-				'type' => 'tab',
-			),
-			array (
-				'key' => 'field_57125fbfgh8963ea',
-				'label' => 'Inclure le module agenda',
-				'name' => 'homepage_module_agenda',
-				'type' => 'select',
-				'choices' => array (
-					'oui' => 'Oui',
-					'non' => 'Non',
-				),
-				'default_value' => '',
-				'allow_null' => 0,
-				'multiple' => 0,
-			),
-			array (
-				'key' => 'field_5vuhvggfgh8963ea',
-				'label' => 'agenda ID',
-				'name' => 'homepage_agenda_ID',
-				'type' => 'text',
-				'default_value' => '',
-				'allow_null' => 0,
-				'multiple' => 0,
-			),
-			array (
-				'key' => 'field_5712uio5edc26c22',
-				'label' => 'agenda (page)',
-				'name' => 'homepage_agenda',
-				'type' => 'post_object',
-				'conditional_logic' => array (
-					'status' => 1,
-					'rules' => array (
-						array (
-							'field' => 'field_57125fbfgh8963ea',
-							'operator' => '==',
-							'value' => 'oui',
-						),
-					),
-					'allorany' => 'all',
-				),
-				'post_type' => array (
-					0 => 'page',
-				),
-				'taxonomy' => array (
-					0 => 'all',
-				),
-				'allow_null' => 0,
-				'multiple' => 0,
-			),
-
 		),
 		'location' => array (
 			array (
