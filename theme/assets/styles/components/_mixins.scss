@@ -23,9 +23,9 @@
   background: white;
   border: 1px solid $gray-lighter;
   border-radius: 16px;
-  padding: 0.5em 1em !important;
+  padding: 0.5em 1em;
   margin-bottom: 10px;
-  display: block;
+  display: inline-block;
 
   transition: box-shadow .3s;
 
@@ -43,6 +43,21 @@
     box-shadow: none;
   }
 }
+@mixin tag-link-reverse {
+  @include tag-link;
+
+  background: $link-color;
+  border: 1px solid $gray-lighter;
+  color: white;
+
+  &:focus,
+  &:active,
+  &:hover {
+    background: white;
+    border-color: $link-color;
+    color:$link-color;
+  }
+}
 
 @mixin container($max-width: 780px) {
   @include container-fixed;
@@ -50,4 +65,3 @@
   width: 100%;
   max-width: $max-width;
 }
-
