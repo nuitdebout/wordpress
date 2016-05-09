@@ -46,9 +46,6 @@
         <?php
         if (has_nav_menu('footer_colophon_navigation')) :
             wp_nav_menu(['theme_location' => 'footer_colophon_navigation', 'menu_class' => 'list-unstyled']);
-
-        else :
-        	wp_list_pages();
         endif;
         ?>
     </div>
