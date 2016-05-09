@@ -3,6 +3,27 @@
 use Roots\Sage\Setup;
 use Roots\Sage\Wrapper;
 
+$main_container_class = 'container';
+
+// @link http://codex.wordpress.org/Conditional_Tags
+// Default homepage
+if (is_front_page() && is_home()) {
+	if (is_main_site()) {
+		$main_container_class = 'container-fluid';
+	}
+// static homepage
+} elseif (is_front_page()) {
+
+// blog page
+} elseif (is_home()) {
+
+//everything else
+} else {
+	if (is_page_template('page-ville.php') || is_page_template('page-globaldebout.php')) {
+		$main_container_class = 'container-fluid';
+	}
+}
+
 ?>
 
 <!doctype html>
@@ -13,9 +34,18 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-    <div class="container-fluid">
-      <?php include Wrapper\template_path(); ?>
-    </div>
+    <div class="wrap <?php echo $main_container_class ?>" role="document">
+      <div class="content row">
+        <main class="main">
+          <?php include Wrapper\template_path(); ?>
+        </main><!-- /.main -->
+        <?php if (Setup\display_sidebar()) : ?>
+          <aside class="sidebar">
+            <?php include Wrapper\sidebar_path(); ?>
+          </aside><!-- /.sidebar -->
+        <?php endif; ?>
+      </div><!-- /.content -->
+    </div><!-- /.wrap -->
     <?php
       do_action('get_footer');
       get_template_part('templates/footer');

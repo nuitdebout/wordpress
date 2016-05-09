@@ -66,7 +66,6 @@ function widgets_init() {
     'before_title'  => '<h2 class="section__title">',
     'after_title'   => '</h2>'
   ]);
-
   register_sidebar([
     'name'          => 'homepage-flex-top',
     'id'            => 'homepage-flex-top',
@@ -75,7 +74,6 @@ function widgets_init() {
     'before_title'  => '<h2 class="flex-widget__title">',
     'after_title'   => '</h2>'
   ]);
-
   register_sidebar([
     'name'          => 'homepage-bottom',
     'id'            => 'homepage-bottom',
@@ -85,8 +83,14 @@ function widgets_init() {
     'after_title'   => '</h2>'
   ]);
 
-
-
+  register_sidebar([
+    'name'          => __('Primary', 'sage'),
+    'id'            => 'sidebar-primary',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+  ]);
   register_sidebar([
     'name'          => __('Footer', 'sage'),
     'id'            => 'sidebar-footer',
@@ -108,8 +112,12 @@ function display_sidebar() {
     // The sidebar will NOT be displayed if ANY of the following return true.
     // @link https://codex.wordpress.org/Conditional_Tags
     is_404(),
-    is_front_page(),
-   // is_page_template('page-ville.php'),
+    is_main_site() && is_front_page(),
+    is_page_template('page-globaldebout.php'),
+    is_page_template('page-list-subpages.php'),
+    is_page_template('page-periscope.php'),
+    is_page_template('page-ville.php'),
+    is_page_template('page-villes.php'),
   ]);
 
   return apply_filters('sage/display_sidebar', $display);
