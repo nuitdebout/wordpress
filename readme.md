@@ -79,7 +79,7 @@ Pour relancer plus tard: `./bin/server`
 
 ### Installation sans machine virtuelle.
 
-Si vous preferez faire tourner le site directement sur votre machine locale, vous allez devoir téléchargé wordpress. Utilisez le fichier de configuration `wp-config.php`.
+Si vous preferez faire tourner le site directement sur votre machine locale, vous allez devoir télécharger wordpress. Utilisez le fichier de configuration `wp-config.php`.
 
 Vous pouvez vous aidez de [wordpress cli](http://wp-cli.org).
 
@@ -102,10 +102,10 @@ cd /var/www
 wp theme enable nuitdebout --network --activate
 ```
 
-Il faut ensuite installer les diférents plugins. La liste est dans `ansible/site.yml`.
+Il faut ensuite installer les différents plugins. La liste est dans `ansible/site.yml`.
 
-Enfin vous devez configurer votre serveur web. Si vous avez apache, vous pouvez récurer un `.htaccess` [ici](https://codex.wordpress.org/htaccess).
-Si vous avez nginx, vous pouvez vous insprirer de ceux dans `./ansible/roles/nginx/templates`.
+Enfin vous devez configurer votre serveur web. Si vous avez apache, vous pouvez récupérer un `.htaccess` [ici](https://codex.wordpress.org/htaccess).
+Si vous avez nginx, vous pouvez vous inspirer de ceux dans `./ansible/roles/nginx/templates`.
 
 
 ## Développement
