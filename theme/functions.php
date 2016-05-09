@@ -13,6 +13,8 @@ define( 'ACF_LITE', true );
 
 include_once(ABSPATH . 'wp-content/plugins/advanced-custom-fields/acf.php');
 
+require_once(__DIR__ . '/vendor/autoload.php');
+
 $sage_includes = [
 	'lib/assets.php',    // Scripts and stylesheets
 	'lib/extras.php',    // Custom functions
@@ -20,6 +22,7 @@ $sage_includes = [
 	'lib/titles.php',    // Page titles
 	'lib/wrapper.php',   // Theme wrapper class
 	'lib/customizer.php', // Theme customizer
+	'lib/register_modules.php',
 
 	'acf/acf_options.php',
 	'lib/nuitdebout.php',

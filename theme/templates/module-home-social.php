@@ -1,24 +1,4 @@
 <?php
-$displayedSocials = [];
-
-$sc = get_social_array();
-foreach ( $sc as $key => $socialConfig ) {
-	if( is_page_template('page-ville.php') ){
-		$key_name = $key.'_page_url';
-		$val_key  = get_field($key_name);
-	}
-	else{
-		$key_name = 'social_'.$key;
-	    $val_key  = get_field($key_name, 'option');
-	}
-
-	if( $val_key ) {
-		$socialConfig['url'] = $val_key;
-		$displayedSocials[$key] = $socialConfig;
-	} elseif ($key === 'nuitdebout' && !is_page_template('page-ville.php') ) {
-		$displayedSocials[$key] = $socialConfig;
-	}
-}
 if (count($displayedSocials)) : ?>
 <div class="row social-networks-section">
 	<?php

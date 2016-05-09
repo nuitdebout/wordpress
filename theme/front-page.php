@@ -27,6 +27,11 @@ if (!is_main_site()) :
 else :
 
 	get_template_part('templates/module', 'screen');
+	if (is_active_sidebar('homepage-top')) : ?>
+		<div id="widget-homepage-top" class="section home-widget-container">
+		<?php dynamic_sidebar('homepage-top') ?>
+		</div>
+	<?php endif;
 	get_template_part('templates/module', 'manifesto');
 	get_template_part('templates/module', 'news');
 	get_template_part('templates/module', 'rassemblements');
