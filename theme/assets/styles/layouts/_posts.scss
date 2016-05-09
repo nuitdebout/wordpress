@@ -89,13 +89,11 @@ body.page-id-480 .section__content {
 
 }
 body.single-post{
-    background-color: $gray-lighter;
-
+  background-color: $gray-lighter;
 }
 .post.post--single {
 
-  padding-top: 10px;
-  background-color: $gray-lighter;
+  padding-top: 50px;
 
   .post__header {
     @include container(950px);
