@@ -11,7 +11,7 @@
         <strong>Cet agenda est ouvert et collaboratif, tout le monde peut y contribuer.</strong>
         <br>
         <span class="glyphicon glyphicon-hand-right"></span>
-        <a href="https://openagenda.com/nuitdebout" target="_blank">Ajouter un évènement à l'agenda Nuit Debout.</a>
+        <a href="https://openagenda.com/nuitdebout/addevent" target="_blank">Ajouter un évènement à l'agenda Nuit Debout.</a>
         <span class="glyphicon glyphicon-hand-left"></span>
         </p>
     </div>
