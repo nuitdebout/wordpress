@@ -59,23 +59,23 @@ add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
  */
 function widgets_init() {
   register_sidebar([
-    'name'          => 'homepage-top',
+    'name'          => 'Haut de page', // TODO translate
     'id'            => 'homepage-top',
     'before_widget' => '<div class=" %1$s %2$s section__content">',
     'after_widget'  => '</div>',
     'before_title'  => '<h2 class="section__title">',
     'after_title'   => '</h2>'
   ]);
+  // register_sidebar([
+  //   'name'          => 'homepage-flex-top',
+  //   'id'            => 'homepage-flex-top',
+  //   'before_widget' => '<div class="flex-widget"><div class=" %1$s %2$s">',
+  //   'after_widget'  => '</div></div>',
+  //   'before_title'  => '<h2 class="flex-widget__title">',
+  //   'after_title'   => '</h2>'
+  // ]);
   register_sidebar([
-    'name'          => 'homepage-flex-top',
-    'id'            => 'homepage-flex-top',
-    'before_widget' => '<div class="flex-widget"><div class=" %1$s %2$s">',
-    'after_widget'  => '</div></div>',
-    'before_title'  => '<h2 class="flex-widget__title">',
-    'after_title'   => '</h2>'
-  ]);
-  register_sidebar([
-    'name'          => 'homepage-bottom',
+    'name'          => 'Bas de page', // TODO translate
     'id'            => 'homepage-bottom',
     'before_widget' => '<div id="widget-homepage-bottom"><div class="container padded"><div class="row"><div class=" %1$s %2$s col-md-8 col-md-offset-2">',
     'after_widget'  => '</div></div></div></div>',
@@ -84,7 +84,7 @@ function widgets_init() {
   ]);
 
   register_sidebar([
-    'name'          => __('Primary', 'sage'),
+    'name'          => 'Panneau latéral', // TODO translate
     'id'            => 'sidebar-primary',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
@@ -92,7 +92,7 @@ function widgets_init() {
     'after_title'   => '</h3>'
   ]);
   register_sidebar([
-    'name'          => __('Footer', 'sage'),
+    'name'          => __('Footer', 'sage'), // TODO translate
     'id'            => 'sidebar-footer',
     'before_widget' => '<div>',
     'after_widget'  => '</div>',
@@ -118,6 +118,7 @@ function display_sidebar() {
     is_page_template('page-periscope.php'),
     is_page_template('page-ville.php'),
     is_page_template('page-villes.php'),
+    !is_active_sidebar('sidebar-primary'),
   ]);
 
   return apply_filters('sage/display_sidebar', $display);
