@@ -96,40 +96,6 @@ if(function_exists("register_field_group"))
 				'type' => 'tab',
 			),
 			array (
-				'key' => 'field_57123848f36de',
-				'label' => 'Inclure le module "homepage" fond d\'écran',
-				'name' => 'homepage_module_screen',
-				'type' => 'select',
-				'choices' => array (
-					'oui' => 'Oui',
-					'non' => 'Non',
-				),
-				'default_value' => '',
-				'allow_null' => 0,
-				'multiple' => 0,
-			),
-
-			array (
-				'key' => 'field_571239164bdd1',
-				'label' => 'Changer l\'écran de la page d\'accueil',
-				'name' => 'homepage_screen',
-				'type' => 'image',
-				'conditional_logic' => array (
-					'status' => 1,
-					'rules' => array (
-						array (
-							'field' => 'field_57123848f36de',
-							'operator' => '==',
-							'value' => 'oui',
-						),
-					),
-					'allorany' => 'all',
-				),
-				'save_format' => 'object',
-				'preview_size' => 'thumbnail',
-				'library' => 'all',
-			),
-			array (
 				'key' => 'field_545d3848f36de',
 				'label' => 'homepage_module_blog',
 				'name' => 'homepage_module_blog',
