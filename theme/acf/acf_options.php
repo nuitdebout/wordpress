@@ -1,11 +1,4 @@
 <?php
-function is_rootsite(){
-	$blogid = get_current_blog_id();
-	$blog_details = get_blog_details($blogid);
-	if($blog_details && $blogid && $blogid =='1' && ($blog_details->domain == 'nuitdebout.dev' || $blog_details->domain == 'nuitdebout.fr' || $blog_details->domain == '185.34.33.84' ) ){
-	  return 'is root site';
-	}
-}
 
 function get_extra_social_array() {
 
