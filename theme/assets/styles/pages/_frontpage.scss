@@ -163,4 +163,9 @@ iframe {
       }
     }
   }
+  .list-group-item-text {
+    a:last-child {
+      display: none;
+    }
+  }
 }

@@ -8,7 +8,7 @@
 					<?php $i = 0; while (have_posts()) : the_post(); ?>
 					<a href="<?php the_permalink(); ?>" class="list-group-item">
 						<h4 class="list-group-item-heading"><?php the_title(); ?></h4>
-						<p class="list-group-item-text"><?php the_excerpt(); ?></p>
+						<p class="list-group-item-text"><?php echo strip_tags(get_the_excerpt()); ?></p>
 					</a>
 					<?php if (++$i === 3) : break; endif; endwhile; ?>
 				</div>
