@@ -1,5 +1,5 @@
 <?php
-$sc = get_social_array(array('facebook', 'twitter', 'periscope'));
+$sc = \NuitDebout\modules\Home_Social::get_social_array(array('facebook', 'twitter', 'periscope'));
 foreach ( $sc as $key => $socialConfig  ) :
 	if( get_field('social_'.$key, 'option') ) : ?>
 		<li>

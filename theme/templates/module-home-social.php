@@ -1,5 +1,9 @@
-<?php
-if (count($displayedSocials)) : ?>
+<?php if (isset($title) && $title): ?>
+	<section class="section">
+		<h2 class="section__title"><?php echo $title ?></h2>
+<?php endif; ?>
+
+<?php if (count($displayedSocials)) : ?>
 <div class="row social-networks-section">
 	<?php
 	foreach ( $displayedSocials as $key => $socialConfig ) :
@@ -26,4 +30,8 @@ if (count($displayedSocials)) : ?>
 	endforeach;
 	?>
 </div>
+<?php endif; ?>
+
+<?php if (isset($title) && $title): ?>
+	</section>
 <?php endif; ?>

@@ -30,6 +30,6 @@
     "fabpot/goutte": "^3.1"
   },
   "autoload": {
-    "psr-4": {"Nuitdebout\\": "."}
+    "psr-4": {"NuitDebout\\": "."}
   }
 }

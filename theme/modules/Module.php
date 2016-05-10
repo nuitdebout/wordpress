@@ -1,6 +1,6 @@
 <?php
 
-namespace Nuitdebout\modules;
+namespace NuitDebout\modules;
 
 abstract class Module extends \WP_Widget
 {
@@ -21,6 +21,12 @@ abstract class Module extends \WP_Widget
 	 * @var string|null
 	 */
 	protected $templatePath = null;
+
+	/**
+	 * Path to the form template of the module
+	 * @var string|null
+	 */
+	protected $formTemplatePath = 'modules/forms/default_form.php';
 
     public function __construct($options = [])
 	{
@@ -62,19 +68,60 @@ abstract class Module extends \WP_Widget
 		include(locate_template($this->get_template_path($args, $instance)));
     }
 
+
+	/**
+	 * Get the path of the form template module
+	 * @param array $instance Saved values from database
+	 * @return string
+	 */
+	protected function get_form_template_path($instance)
+	{
+		return  $this->formTemplatePath;
+	}
+
+	public static function get_options()
+	{
+		return [
+			'title' => [
+				'tag' => 'input',
+				'type' => 'text',
+				'default' => 'Mon Title',
+				'label' => 'Title'
+			],
+		];
+	}
+
+	/**
+	 * Define the parameter to expose to the templates
+	 * @param Array $instance The instance of the widget (custom options)
+	 * @return Array
+	 */
+	protected function get_form_template_params($instance) {
+		$options = static::get_options();
+		foreach ($instance as $key => $value) {
+			$options[$key]['default'] = $value;
+		}
+
+		return [
+			'options' => $options,
+			'instance' => $instance
+		];
+	}
+
 	/**
 	 * {@inheritdoc}
 	 */
     public function form( $instance )
 	{
-        // outputs the options form in the admin
+		extract($this->get_form_template_params($instance));
+		include(locate_template($this->get_form_template_path($instance)));
     }
 
 	/**
 	 * {@inheritdoc}
 	 */
-    public function update( $new_instance, $old_instance )
+    public function update( $newInstance, $oldInstance )
 	{
-        // processes widget options to be saved
+		return $newInstance;
     }
 }
