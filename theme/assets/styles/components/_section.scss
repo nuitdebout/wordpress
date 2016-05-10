@@ -8,6 +8,7 @@
 
   .section__title {
     @include title-font;
+    text-align: center;
     font-size: 45px;
     margin: 0;
     margin-bottom: 30px;

@@ -51,6 +51,7 @@ body.page-id-480 .section__content {
 .city-post {
   h1, h2 {
     @include title-font();
+    text-align: center;
     font-size: 45px;
     text-align: center;
     margin-bottom: 30px;
@@ -58,7 +59,6 @@ body.page-id-480 .section__content {
 
   h3 {
     @include title-font();
-    text-align: left;
     font-size: 30px;
     margin-bottom: 20px;
   }

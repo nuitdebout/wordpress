@@ -53,6 +53,7 @@
 
   .flex-widget__title {
     @include title-font;
+    text-align: center;
      color:$heading-color;
      font-weight:bold;
      font-size: 30px;
