@@ -29,6 +29,9 @@ else :
 	get_template_part('templates/module', 'screen');
 	get_template_part('templates/module', 'manifesto');
 	get_template_part('templates/module', 'news');
+	if( !is_paged() && get_field('global_module_social', 'option') == 'oui' ) {
+		get_template_part('templates/module', 'home-social');
+	}
 	get_template_part('templates/module', 'rassemblements');
 	if (!is_paged() && get_field('homepage_module_global', 'option') == 'oui') {
 		get_template_part('templates/module', 'global');
@@ -40,9 +43,6 @@ else :
 	}
 	if ( !is_paged() &&get_field('homepage_module_free_iframe_2', 'option') ) {
 		get_template_part('templates/module', 'free_iframe_2');
-	}
-	if( !is_paged() && get_field('global_module_social', 'option') == 'oui' ) {
-		get_template_part('templates/module', 'home-social');
 	}
 
 endif;
