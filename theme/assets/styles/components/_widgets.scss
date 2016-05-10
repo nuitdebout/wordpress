@@ -106,12 +106,25 @@
   }
 }
 
+.widget {
+  border-top: 4px solid #36474f;
+  padding-top: 20px;
+  margin-bottom: 40px;
+  h1, h2, h3 {
+    @include title-font;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  ul {
+    @extend .list-unstyled;
+  }
+  a {
+    color: #000;
+  }
+}
 
 .widget_categories,
 .widget_recent_entries,
 .widget_rss {
-  margin: 50px 0;
-  ul {
-    @extend .list-unstyled;
-  }
+
 }

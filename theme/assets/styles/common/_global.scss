@@ -5,6 +5,13 @@ body {
   padding-top: 70px;
 }
 
+body.sidebar-primary {
+  .main,
+  .sidebar {
+    padding: 50px 0;
+  }
+}
+
 .mg-top0 {
   margin-top: 0;
 }
