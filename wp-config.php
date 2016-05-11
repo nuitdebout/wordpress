@@ -84,7 +84,8 @@ define('WP_ALLOW_MULTISITE', true);
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
+define( 'WP_DEBUG_LOG', true );
 
 /* C'est tout, ne touchez pas à ce qui suit ! Bon blogging ! */
 define('MULTISITE', true);
