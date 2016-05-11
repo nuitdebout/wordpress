@@ -11,12 +11,6 @@ abstract class Module extends \WP_Widget
 	protected $moduleName = null;
 
 	/**
-	 * Id of the module. Default lower case class name
-	 * @var string
-	 */
-	protected $moduleId = null;
-
-	/**
 	 * Path to the template of the module
 	 * @var string|null
 	 */
@@ -32,11 +26,19 @@ abstract class Module extends \WP_Widget
 	{
 		$reflected = new \ReflectionClass($this);
 		$this->moduleName = $this->moduleName ? $this->moduleName : $reflected->getShortName();
-		$this->moduleId = $this->moduleId ? $this->moduleId : strtolower($reflected->getShortName());
 		$this->moduleName = str_replace('_', ' ', $this->moduleName);
 
-		return parent::__construct($this->moduleId, $this->moduleName, $options);
+		return parent::__construct(static::get_module_id(), $this->moduleName, $options);
     }
+
+	/**
+	 * Get id of the module. Default lower case class name
+	 * @var string
+	 */
+	public static function get_module_id() {
+		$reflected = new \ReflectionClass('\\' . get_called_class());
+		return strtolower($reflected->getShortName());
+	}
 
 	/**
 	 * Get the path of the template module
@@ -124,4 +126,8 @@ abstract class Module extends \WP_Widget
 	{
 		return $newInstance;
     }
+
+	public static function register_as_widget() {
+		register_widget('\\' . get_called_class());
+	}
 }
