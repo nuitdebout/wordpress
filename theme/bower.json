@@ -8,7 +8,8 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass": "3.3.6",
-    "font-awesome": "fontawesome#^4.6.1"
+    "font-awesome": "fontawesome#^4.6.1",
+    "snapwidget": "http://snapwidget.com/js/snapwidget.js"
   },
   "overrides": {
     "bootstrap-sass": {
