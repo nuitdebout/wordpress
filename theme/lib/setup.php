@@ -74,6 +74,33 @@ function widgets_init() {
   //   'before_title'  => '<h2 class="flex-widget__title">',
   //   'after_title'   => '</h2>'
   // ]);
+
+  // Three columns layout
+  register_sidebar([
+    'name'          => 'Haut première colonne', // TODO translate
+    'id'            => 'homepage-top-one-third',
+    'before_widget' => '<div class=" %1$s %2$s col-md-4"><div id="widget-homepage-top-one-third">',
+    'after_widget'  => '</div></div>',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>'
+  ]);
+  register_sidebar([
+    'name'          => 'Haut seconde colonne', // TODO translate
+    'id'            => 'homepage-top-two-third',
+    'before_widget' => '<div class=" %1$s %2$s col-md-4"><div id="homepage-top-two-third">',
+    'after_widget'  => '</div></div>',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>'
+  ]);
+  register_sidebar([
+    'name'          => 'Haut troisième colonne', // TODO translate
+    'id'            => 'homepage-top-three-third',
+    'before_widget' => '<div class=" %1$s %2$s col-md-4"><div id="homepage-top-three-third">',
+    'after_widget'  => '</div></div>',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>'
+  ]);
+  //
   register_sidebar([
     'name'          => 'Bas de page', // TODO translate
     'id'            => 'homepage-bottom',

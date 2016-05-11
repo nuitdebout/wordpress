@@ -14,7 +14,18 @@ if (!is_main_site()) :
 		<div id="widget-homepage-top" class="section home-widget-container">
 		<?php dynamic_sidebar('homepage-top') ?>
 		</div>
-<?php endif;
+	<?php endif;
+	if (is_active_sidebar('homepage-top-one-third') || is_active_sidebar('homepage-top-two-third') || is_active_sidebar('homepage-top-three-third')) : ?>
+		<div id="widget-homepage-top" class="section home-widget-container">
+			<div class="container padded">
+				<div class="row">
+					<?php dynamic_sidebar('homepage-top-one-third') ?>
+					<?php dynamic_sidebar('homepage-top-two-third') ?>
+					<?php dynamic_sidebar('homepage-top-three-third') ?>
+				</div>
+			</div>
+		</div>
+	<?php endif;
 		include get_home_template();
 		dynamic_sidebar('homepage-bottom');
 	if (!is_paged() && get_field('global_module_social', 'option') == 'oui') :
