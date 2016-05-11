@@ -139,7 +139,12 @@ function assets() {
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
 
   if (is_page_template('page-periscope.php')) {
-	wp_enqueue_script('nuidebout/periscope', Assets\asset_path('scripts/periscope.js'), ['jquery'], null, true);
+	  wp_enqueue_script('nuidebout/periscope', Assets\asset_path('scripts/periscope.js'), ['jquery'], null, true);
   }
+
+  if (is_front_page() && is_main_site()) {
+    wp_enqueue_script('nuidebout/snapwidget', Assets\asset_path('scripts/snapwidget.js'), ['jquery'], null, true);
+  }
+
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);

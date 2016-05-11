@@ -19,6 +19,9 @@
     },
     "jquery.js": {
       "bower": ["jquery"]
+    },
+    "snapwidget.js": {
+      "bower": ["snapwidget"]
     }
   },
   "config": {
