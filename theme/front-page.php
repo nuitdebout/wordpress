@@ -14,13 +14,9 @@ if (!is_main_site()) :
 		<div id="widget-homepage-top" class="section home-widget-container">
 		<?php dynamic_sidebar('homepage-top') ?>
 		</div>
-	<?php endif;
-	if ('posts' == get_option('show_on_front')) :
+<?php endif;
 		include get_home_template();
-	else :
-	    include get_page_template();
-	endif;
-	dynamic_sidebar('homepage-bottom');
+		dynamic_sidebar('homepage-bottom');
 	if (!is_paged() && get_field('global_module_social', 'option') == 'oui') :
 		get_template_part('templates/module', 'home-social');
 	endif;
