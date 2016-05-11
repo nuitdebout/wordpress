@@ -11,6 +11,12 @@ abstract class Module extends \WP_Widget
 	protected $moduleName = null;
 
 	/**
+	 * Id of the module. Default lower case class name
+	 * @var string
+	 */
+	protected $moduleId = null;
+
+	/**
 	 * Path to the template of the module
 	 * @var string|null
 	 */
@@ -22,23 +28,18 @@ abstract class Module extends \WP_Widget
 	 */
 	protected $formTemplatePath = 'modules/forms/default_form.php';
 
+	protected $isWidget = true;
+	protected $isStatic = false;
+
     public function __construct($options = [])
 	{
 		$reflected = new \ReflectionClass($this);
 		$this->moduleName = $this->moduleName ? $this->moduleName : $reflected->getShortName();
+		$this->moduleId = $this->moduleId ? $this->moduleId : strtolower($this->moduleName);
 		$this->moduleName = str_replace('_', ' ', $this->moduleName);
 
-		return parent::__construct(static::get_module_id(), $this->moduleName, $options);
+		return parent::__construct($this->moduleId, $this->moduleName, $options);
     }
-
-	/**
-	 * Get id of the module. Default lower case class name
-	 * @var string
-	 */
-	public static function get_module_id() {
-		$reflected = new \ReflectionClass('\\' . get_called_class());
-		return strtolower($reflected->getShortName());
-	}
 
 	/**
 	 * Get the path of the template module
@@ -81,7 +82,7 @@ abstract class Module extends \WP_Widget
 		return  $this->formTemplatePath;
 	}
 
-	public static function get_options()
+	protected function get_options()
 	{
 		return [
 			'title' => [
@@ -99,11 +100,13 @@ abstract class Module extends \WP_Widget
 	 * @return Array
 	 */
 	protected function get_form_template_params($instance) {
-		$options = static::get_options();
-		foreach ($instance as $key => $value) {
-			$options[$key]['default'] = $value;
+		$options = $this->get_options();
+		foreach ($options as $key => $option) {
+			$options[$key]['value'] = $option['default'];
 		}
-
+		foreach ($instance as $key => $value) {
+			$options[$key]['value'] = $value;
+		}
 		return [
 			'options' => $options,
 			'instance' => $instance
@@ -127,7 +130,24 @@ abstract class Module extends \WP_Widget
 		return $newInstance;
     }
 
-	public static function register_as_widget() {
-		register_widget('\\' . get_called_class());
+	public function register_as_widget()
+	{
+		if (! $this->isWidget) {
+			return;
+		}
+		register_widget('\\' . get_class());
 	}
+
+
+	protected function get_static_instance($options)
+	{
+		return $options;
+	}
+
+	public function render_static($options = [])
+	{
+		$this->widget([], $this->get_static_instance($options));
+	}
+
+
 }

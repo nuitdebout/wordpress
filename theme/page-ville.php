@@ -9,7 +9,7 @@
 ?>
 <?php while (have_posts()) : the_post(); ?>
 
-<?php get_template_part('templates/module', 'screen') ?>
+<?php the_module('screen') ?>
 
 <section class="section">
 	<div class="section__content">

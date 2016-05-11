@@ -39,7 +39,7 @@ class Home_Social extends Module
 		];
 	}
 
-	public static function get_options()
+	protected function get_options()
 	{
 		$socials = static::get_social_array();
 		$options = [
