@@ -22,7 +22,7 @@ use NuitDebout\Wordress\OpenAgenda;
 					<label class="sr-only">Date</label>
 			      	<select class="form-control nd-js-agenda-date">
 			     	<?php foreach (OpenAgenda\get_dates() as $date) : ?>
-						<option value="<?php echo $date->format('Y-m-d') ?>"><?php echo nd_get_revolutionary_date($date) ?></option>
+						<option value="<?php echo $date->format('Y-m-d') ?>"><?php echo $date->format('d/m').' - '.nd_get_revolutionary_date($date) ?></option>
 					<?php endforeach; ?>
 					</select>
 				</div>
