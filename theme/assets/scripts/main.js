@@ -83,11 +83,15 @@ function target_blank_links() {
 
         var $city = $('.nd-js-agenda-city');
         var $date = $('.nd-js-agenda-date');
+        var $cityDropdown = $('.nd-js-agenda-city-dropdown');
         var $dateDropdown = $('.nd-js-agenda-date-dropdown');
+        var $citySpan = $('.nd-js-agenda-city');
+        var $dateSpan = $('.nd-js-agenda-date');
+
         var params = {
           'action': 'openagenda',
-          'city': $city.val(),
-          'date': $dateDropdown.data('value')
+          'city': $cityDropdown.data('defaut-value'),
+          'date': $dateDropdown.data('defaut-value')
         };
 
         var loading = function() {
@@ -117,11 +121,20 @@ function target_blank_links() {
           loading();
           $.get(WP.ajaxURL, data).then(refresh);
         });
+
+        $cityDropdown.find('li > a').on('click', function(e) {
+          e.preventDefault();
+          params.city = $(this).data('value');
+          loading();
+          $.get(WP.ajaxURL, params).then(refresh);
+          $citySpan.text($(this).data('value'));
+        });
         $dateDropdown.find('li > a').on('click', function(e) {
           e.preventDefault();
           params.date = $(this).data('value');
           loading();
           $.get(WP.ajaxURL, params).then(refresh);
+          $dateSpan.text($(this).data('value'));
         });
       },
       finalize: function() {

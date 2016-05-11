@@ -19,7 +19,7 @@ use NuitDebout\Wordress\OpenAgenda;
 		<?php $dates = OpenAgenda\get_dates() ?>
 		<?php $cities = OpenAgenda\get_cities() ?>
 
-		<nav class="navbar navbar-default">
+		<nav class="navbar">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -28,9 +28,11 @@ use NuitDebout\Wordress\OpenAgenda;
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
-						</button>
+					</button>
 					<a class="navbar-brand" href="#">
-						<?php echo $dates[0]->format('d/m').' - '.nd_get_revolutionary_date($dates[0]) ?> - <?php echo $cities[0] ?>
+						<span class="nd-js-agenda-city"><?php echo $cities[0] ?></span>
+						<span> - </span>
+						<span class="nd-js-agenda-date"><?php echo $dates[0]->format('d/m').' - '.nd_get_revolutionary_date($dates[0]) ?></span>
 					</a>
 				</div>
 				<div class="collapse navbar-collapse" id="agenda-nav">
@@ -39,7 +41,7 @@ use NuitDebout\Wordress\OpenAgenda;
           					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
           						Changer la ville <span class="caret"></span>
           					</a>
-          					<ul class="dropdown-menu nd-js-agenda-city-dropdown">
+          					<ul class="dropdown-menu nd-js-agenda-city-dropdown" default-value="<?php echo $cities[0] ?>">
 							<?php foreach ($cities as $city) : ?>
 								<li>
 									<a data-value="<?php echo $city ?>" href="#">
@@ -53,7 +55,7 @@ use NuitDebout\Wordress\OpenAgenda;
           					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
           						Changer la date <span class="caret"></span>
           					</a>
-          					<ul class="dropdown-menu nd-js-agenda-date-dropdown">
+          					<ul class="dropdown-menu nd-js-agenda-date-dropdown" default-value="<?php echo $dates[0]->format('Y-m-d') ?>">
 								<?php foreach ($dates as $date) : ?>
 									<li>
 										<a data-value="<?php echo $date->format('Y-m-d') ?>" href="#">

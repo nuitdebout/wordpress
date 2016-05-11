@@ -60,4 +60,8 @@
       }
     }
   }
+  .navbar {
+    @extend .navbar-default;
+    margin-bottom: 20px;
+  }
 }
