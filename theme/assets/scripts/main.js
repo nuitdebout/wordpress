@@ -81,8 +81,8 @@ function target_blank_links() {
     'home': {
       init: function() {
 
-        var $city = $('.nd-js-agenda-city')
-          , $date = $('.nd-js-agenda-date');
+        var $city = $('.nd-js-agenda-city');
+        var $date = $('.nd-js-agenda-date');
 
         var loading = function() {
           $('#accordion').css('opacity', 0.5);
