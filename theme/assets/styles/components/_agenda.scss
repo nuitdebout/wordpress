@@ -46,6 +46,18 @@
         @extend .panel-heading;
         background-color: transparent;
       }
+      .agenda__event-title {
+        @extend .panel-title;
+        a:last-child {
+          color: $link-color;
+          &:hover {
+            color: $link-hover-color;
+          }
+        }
+      }
+      .agenda__event-body {
+        @extend .panel-body;
+      }
     }
   }
 }
