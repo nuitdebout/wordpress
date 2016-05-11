@@ -147,11 +147,8 @@ function assets() {
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
 
   if ( is_home() ) {
-  wp_enqueue_style('sage/css', Assets\asset_path('styles/components/video-js.css'), false, null);
-  wp_enqueue_script('videojs', Assets\asset_path('scripts/video.js'), null, null, true);
-  wp_enqueue_script('videojs-ie8', Assets\asset_path('scripts/videojs-ie8.js'), null, null);
-  wp_enqueue_script('videojs-contrib', Assets\asset_path('scripts/videojs-contrib-hls.js'), ['videojs'], null, true);
-  wp_enqueue_script('nuitdebout/tvdeboutjs', Assets\asset_path('scripts/tvdebout.js'), ['videojs', 'videojs-contrib'], null, true);
+  wp_enqueue_script('videojs-contrib-hls', Assets\asset_path('scripts/videojs-contrib-hls.js'), ['jquery'], null, true);
+  wp_enqueue_script('nuitdebout/tvdeboutjs', Assets\asset_path('scripts/tvdebout.js'), ['jquery', 'videojs-contrib-hls'], null, true);
   }
 
   if (is_page_template('page-periscope.php')) {

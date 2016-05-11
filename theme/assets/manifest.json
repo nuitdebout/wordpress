@@ -11,16 +11,6 @@
         "scripts/periscope.js"
       ]
     },
-    "video.js": {
-      "files": [
-        "scripts/video.js"
-      ]
-    },
-    "videojs-ie8.js": {
-      "files": [
-        "scripts/ie8/videojs-ie8.js"
-      ]
-    },
     "videojs-contrib-hls.js": {
       "files": [
         "scripts/videojs-contrib-hls.js"
