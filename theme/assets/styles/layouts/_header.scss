@@ -2,36 +2,41 @@
   @extend .navbar-default;
   background: white;
   transition: all 0.3s ease;
+  $logo-size: 50px;
   &-logo {
-    width: 50px;
+    width: $logo-size;
+  }
+  .navbar-brand {
+    padding: (($navbar-height - $logo-size) / 2) $navbar-padding-horizontal;
+  }
+
+  ul li {
+    float:left;
+    diplay:block;
+    background: none;
+    font-weight: medium;
+  }
+  ul li a {
+    color: #bdbdbd;
+    text-transform: uppercase;
+    background: none;
+  }
+  ul li:hover a,
+  ul li:active a,
+  ul li:focus a,
+  ul li.active a,
+  ul li.current_page_item a {
+    color: #424242;
+    background: none;
+  }
+  ul li:hover,
+  ul li:active,
+  ul li:focus,
+  ul li.active,
+  ul li.current_page_item  {
+    background: none;
   }
 }
-
-nav ul li {
-  float:left;
-  diplay:block;
-  background: none;
-  font-weight: medium;
-}
-
-nav ul li a {
-  color: #bdbdbd;
-  text-transform: uppercase;
-  background: none;
-}
-
-nav ul li:hover a, nav ul li:active a, nav ul li:focus a, nav ul li.active a,  nav ul li.current_page_item a {
-  color: #424242;
-  background: none;
-}
-
-
-
-
-nav ul li:hover, nav ul li:active, nav ul li:focus, nav ul li.active, nav ul li.current_page_item  {
-  background: none;
-}
-
 
 body.logged-in{
   .navbar-nuitdebout {
@@ -42,16 +47,13 @@ body.logged-in{
           }
 
   }
-
 }
 
 .text-right {
     text-align: right;
 }
 
-.navbar-brand {
-  padding: (($navbar-height - 50) / 2) $navbar-padding-horizontal;
-}
+
 
 .menu-top {
   @extend .navbar-nav;

@@ -83,6 +83,12 @@ function target_blank_links() {
 
         var $city = $('.nd-js-agenda-city');
         var $date = $('.nd-js-agenda-date');
+        var $dateDropdown = $('.nd-js-agenda-date-dropdown');
+        var params = {
+          'action': 'openagenda',
+          'city': $city.val(),
+          'date': $dateDropdown.data('value')
+        };
 
         var loading = function() {
           $('#accordion').css('opacity', 0.5);
@@ -110,6 +116,12 @@ function target_blank_links() {
           };
           loading();
           $.get(WP.ajaxURL, data).then(refresh);
+        });
+        $dateDropdown.find('li > a').on('click', function(e) {
+          e.preventDefault();
+          params.date = $(this).data('value');
+          loading();
+          $.get(WP.ajaxURL, params).then(refresh);
         });
       },
       finalize: function() {
