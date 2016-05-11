@@ -8,9 +8,14 @@ Format is [{'date': [dol1, dol2]}]
 import re
 import json
 import requests
+import datetime
+import locale
 from bs4 import BeautifulSoup as BS
 
 db = {}
+
+
+locale.setlocale('fr_fr')
 
 
 if __name__ == '__main__':
@@ -37,6 +42,9 @@ if __name__ == '__main__':
             title = title.text
             head = title[:21]
             date = title[-14:-1]
+            date = datetime.datetime.strptime(date, '%d %B %Y')
+            date = datetime.datetime.(date, '%d %B %Y')
+            date = datetime.datetime.strftime(date, '%Y-%m-%d 00:00:00')
 
             text = soup.find(id='mw-content-text').text
 
