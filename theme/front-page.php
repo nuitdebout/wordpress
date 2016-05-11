@@ -15,13 +15,23 @@ if (!is_main_site()) :
 		<?php dynamic_sidebar('homepage-top') ?>
 		</div>
 	<?php endif;
-	if (is_active_sidebar('homepage-top-one-third') || is_active_sidebar('homepage-top-two-third') || is_active_sidebar('homepage-top-three-third')) : ?>
-		<div id="widget-homepage-top" class="section home-widget-container">
+	if (is_active_sidebar('homepage-one-half') || is_active_sidebar('homepage-two-half')) : ?>
+		<div id="widget-homepage-half" class="section home-widget-container">
 			<div class="container padded">
 				<div class="row">
-					<?php dynamic_sidebar('homepage-top-one-third') ?>
-					<?php dynamic_sidebar('homepage-top-two-third') ?>
-					<?php dynamic_sidebar('homepage-top-three-third') ?>
+					<?php dynamic_sidebar('homepage-one-half') ?>
+					<?php dynamic_sidebar('homepage-two-half') ?>
+				</div>
+			</div>
+		</div>
+	<?php endif;
+	if (is_active_sidebar('homepage-one-third') || is_active_sidebar('homepage-two-third') || is_active_sidebar('homepage-three-third')) : ?>
+		<div id="widget-homepage-third" class="section home-widget-container">
+			<div class="container padded">
+				<div class="row">
+					<?php dynamic_sidebar('homepage-one-third') ?>
+					<?php dynamic_sidebar('homepage-two-third') ?>
+					<?php dynamic_sidebar('homepage-three-third') ?>
 				</div>
 			</div>
 		</div>
