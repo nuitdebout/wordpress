@@ -34,9 +34,6 @@ else :
 	}
 	get_template_part('templates/module', 'agenda');
 	get_template_part('templates/module', 'rassemblements');
-	if (!is_paged() && get_field('homepage_module_global', 'option') == 'oui') {
-		get_template_part('templates/module', 'global');
-	}
 
 	if ( !is_paged() && get_field('homepage_module_free_iframe_1', 'option') ) {
 		get_template_part('templates/module', 'free_iframe_1');

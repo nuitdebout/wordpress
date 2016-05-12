@@ -82,50 +82,6 @@ if(function_exists("register_field_group"))
 		'id' => 'acf_modules',
 		'title' => 'Modules',
 		'fields' => array (
- 			array (
-                'key' => 'field_57qsd123qsqsd9sdf024bdd0',
-                'label' => 'Module globalDebout',
-                'name' => '',
-                'type' => 'tab',
-            ),
-            array (
-                'key' => 'field_571sqqez23848f36dqse',
-                'label' => 'Inclure le module "globaldebout" ',
-                'name' => 'homepage_module_global',
-                'type' => 'select',
-                'choices' => array (
-                        'oui' => 'Oui',
-                        'non' => 'Non',
-                ),
-                'default_value' => 'non',
-                'allow_null' => 0,
-                'multiple' => 0,
-            ),
-            array (
-				'key' => 'field_5712uio5edsddfc26c22',
-				'label' => 'global (page parent)',
-				'name' => 'homepage_global',
-				'type' => 'post_object',
-				'conditional_logic' => array (
-					'status' => 1,
-					'rules' => array (
-						array (
-							'field' => 'field_571sqqez23848f36dqse',
-							'operator' => '==',
-							'value' => 'oui',
-						),
-					),
-					'allorany' => 'all',
-				),
-				'post_type' => array (
-					0 => 'page',
-				),
-				'taxonomy' => array (
-					0 => 'all',
-				),
-				'allow_null' => 0,
-				'multiple' => 0,
-			),
 			array (
 				'key' => 'field_5712ssd397bda1ca',
 				'label' => 'Réseaux',
