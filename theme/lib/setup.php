@@ -59,6 +59,14 @@ add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
  */
 function widgets_init() {
   register_sidebar([
+    'name'          => 'Bannière homepage', // TODO translate
+    'id'            => 'homepage-banner',
+    'before_widget' => '<div>',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>'
+  ]);
+  register_sidebar([
     'name'          => 'Haut de page', // TODO translate
     'id'            => 'homepage-top',
     'before_widget' => '<div class=" %1$s %2$s section__content">',

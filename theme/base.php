@@ -34,6 +34,9 @@ if (is_front_page() && is_home()) {
       do_action('get_header');
       get_template_part('templates/header');
     ?>
+    <?php if (!is_main_site() && is_front_page()) : ?>
+	<?php dynamic_sidebar('homepage-banner') ?>
+	<?php endif; ?>
     <div class="wrap <?php echo $main_container_class ?>" role="document">
       <div class="content row">
         <main class="main">
