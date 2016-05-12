@@ -5,6 +5,7 @@ var TvDebout = function()
 var that = this;
 this._reloadTimer = null;
 this.player = videojs('tvdebout');
+this.sources = this.player.options_.sources;
 this.player.on('stalled', function(){ that.stalled(); });
 this.player.on('error', function(){ that.stalled(); });
 this.player.on('ended', function(){ that.ended(); });
@@ -14,14 +15,14 @@ this.player.on('canplay', function(){ that.canplay(); });
 TvDebout.prototype.stalled = function()
 {
 
-	if(this.player.readyState() != 0)
+	if(this.player.readyState() !== 0)
 	{
 	clearTimeout(this._reloadTimer);
 	return 0;
 	}
 var that = this;
 this.hide();
-this._reloadTimer = setTimeout(function(){ that.reload(); }, 15000);
+this._reloadTimer = setTimeout(function(){ that.reload(); }, 60000);
 };
 
 TvDebout.prototype.canplay = function()
@@ -38,7 +39,7 @@ this.reload();
 
 TvDebout.prototype.reload = function()
 {
-this.player.src(this.player.options_.sources);
+this.player.src(this.sources);
 };
 
 TvDebout.prototype.hide = function()

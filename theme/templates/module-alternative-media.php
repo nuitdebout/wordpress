@@ -17,7 +17,7 @@
 	</div>
 	<div class="replay">
 		<h3>Replay</h3>
-		<iframe width="500" height="250" src="https://www.youtube.com/embed/iVCxcieQJBs?list=PLlxYmhUBOogz2l-NHzxWQFGCpG2PmV7QO" frameborder="0" allowfullscreen></iframe>
+		<iframe width="500" height="250" src="https://www.youtube.com/embed/?list=PLlxYmhUBOogz2l-NHzxWQFGCpG2PmV7QO" frameborder="0" allowfullscreen></iframe>
 	</div>
     </div>
 </div>
