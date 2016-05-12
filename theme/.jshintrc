@@ -1,18 +1,15 @@
 {
-  "asi": true,
-  "bitwise": false,
+  "bitwise": true,
   "browser": true,
-  "curly": false,
+  "curly": true,
   "eqeqeq": true,
   "eqnull": true,
   "esnext": true,
-  "expr" : true,
   "immed": true,
   "jquery": true,
-  "latedef": false,
+  "latedef": true,
   "newcap": true,
   "noarg": true,
   "node": true,
-  "proto": true,
   "strict": false
 }
