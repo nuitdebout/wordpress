@@ -13,6 +13,8 @@ define( 'ACF_LITE', true );
 
 include_once(ABSPATH . 'wp-content/plugins/advanced-custom-fields/acf.php');
 
+require_once __DIR__.'/vendor/autoload.php';
+
 $sage_includes = [
 	'lib/assets.php',    // Scripts and stylesheets
 	'lib/extras.php',    // Custom functions
@@ -23,6 +25,7 @@ $sage_includes = [
 
 	'acf/acf_options.php',
 	'lib/nuitdebout.php',
+	'lib/openagenda.php',
 ];
 
 foreach ($sage_includes as $file) {

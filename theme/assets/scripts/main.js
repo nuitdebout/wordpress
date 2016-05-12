@@ -80,7 +80,37 @@ function target_blank_links() {
     // Home page
     'home': {
       init: function() {
+
+        var $city = $('.nd-js-agenda-city');
+        var $date = $('.nd-js-agenda-date');
+
+        var loading = function() {
+          $('#accordion').css('opacity', 0.5);
+        };
+        var refresh = function(response) {
+          $('#accordion').html(response);
+          $('#accordion').css('opacity', 1);
+        };
+
         // JavaScript to be fired on the home page
+        $city.on('change', function() {
+          var data = {
+            'action': 'openagenda',
+            'city': $(this).val(),
+            'date': $date.val()
+          };
+          loading();
+          $.get(WP.ajaxURL, data).then(refresh);
+        });
+        $date.on('change', function() {
+          var data = {
+            'action': 'openagenda',
+            'city': $city.val(),
+            'date': $(this).val()
+          };
+          loading();
+          $.get(WP.ajaxURL, data).then(refresh);
+        });
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
