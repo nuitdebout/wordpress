@@ -8,14 +8,10 @@ namespace NuitDebout\modules;
 class Screen extends Module
 {
 	protected $isStatic = true;
-	
+
 	protected $templatePath = 'templates/module-screen.php';
 
-	public function __construct() {
-		return parent::__construct([
-			'description' => __('Affiche un grande image avec un titre')
-		]);
-	}
+	protected $moduleDescription = 'Affiche un grande image avec un titre';
 
 	protected function get_options()
 	{
