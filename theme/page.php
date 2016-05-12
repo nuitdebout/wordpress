@@ -1,7 +1,7 @@
 <?php while (have_posts()) : the_post();
 
 if(get_field('page_include_screen') == 1){
-	get_template_part('templates/module', 'screen');
+	the_module('screen')
 }
 ?>
 <section class="section">

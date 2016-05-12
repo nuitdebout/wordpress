@@ -8,7 +8,7 @@
  */
 ?>
 
-<?php get_template_part('templates/module', 'screen') ?>
+<?php the_module('screen') ?>
 
 <?php $schedule_page = get_field('globaldebout_schedule_page', get_the_ID()) ?>
 

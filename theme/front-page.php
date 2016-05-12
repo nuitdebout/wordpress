@@ -9,12 +9,9 @@
 ?>
 <?php
 
+dynamic_sidebar('homepage-top');
+
 if (!is_main_site()) :
-	if (is_active_sidebar('homepage-top')) : ?>
-		<div id="widget-homepage-top" class="section home-widget-container">
-		<?php dynamic_sidebar('homepage-top') ?>
-		</div>
-	<?php endif;
 	if ('posts' == get_option('show_on_front')) :
 		include get_home_template();
 	else :
@@ -26,7 +23,6 @@ if (!is_main_site()) :
 	endif;
 else :
 
-	get_template_part('templates/module', 'screen');
 	get_template_part('templates/module', 'manifesto');
 	get_template_part('templates/module', 'news');
 	if( !is_paged() && get_field('global_module_social', 'option') == 'oui' ) {
