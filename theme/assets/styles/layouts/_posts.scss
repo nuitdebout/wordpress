@@ -92,10 +92,7 @@ body.single-post{
 }
 .post.post--single {
 
-  padding-top: 50px;
-
   .post__header {
-    @include container(950px);
 
     time.updated {
       color: $gray-light;
@@ -110,14 +107,10 @@ body.single-post{
   }
 
   .post__content {
-    @include container();
-
     padding-bottom: 25px;
     border-bottom: 1px solid $gray-light;
   }
   .post__comments {
-    @include container();
-
     padding-top: 50px;
   }
 
