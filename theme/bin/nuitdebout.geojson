@@ -1,0 +1,7489 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Berlin",
+        "description": "Wir treffen uns alle am jeden Mittwoch und Samstag um 17 oder 19Uhr, am Mariannenplatz! https://www.facebook.com/Nuit-Debout-Berlin-269408443394322/      https://www.facebook.com/groups/1582417058715123/\n"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.425292968750002,
+          52.50363135784057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "https://www.facebook.com/events/1728825810707980/\n\nWir treffen uns alle am 17.04 um 17Uhr am Sachsenbrücke. Wir laden euch ein, gemeinsam über die Perspektive einer Umsetzung der französischen sozialen Bewegung \"Nuit Debout\" hier in Leipzig nachdenken. Nach Berlin sind wir die zweiten in Deutschland, auf einen europaweiten Aufruf zur grenzenlosen Mobilisierung zu antworten. Es geht darum, sich die Politik wieder anzueignen. Also bringt deine Ideen, Vorschläge, Erfahrungen mit! Bezüglich der Logistik unseres politischen Abends brauchen wir geiles Essen, Getränke, sowie Infrastrukturmaterial (Tische, Planen, Decken, und elektronisches Material => meldet dich an ;) )",
+        "name": "#NuitDebout #Leipzig"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.374725341796877,
+          51.338762553296625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Aachen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.08642578125,
+          50.774681682270334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Bochum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.220764160156251,
+          51.47625114982365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Bremen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.816528320312502,
+          53.07422751310222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Chemnitz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.94189453125,
+          50.830228205617445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Dresden"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.732910156250002,
+          51.04484764446179
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Düsseldorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.745605468750001,
+          51.213765926935025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Frankfurt https://www.facebook.com/events/1700820990160965/ ",
+        "description": "Frankfurt Willy Brand Platz\nWilly Brand Platz, 60311 Frankfurt, Germany"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.679199218750002,
+          50.12057809796008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Hamburg ",
+        "description": "Erste Nuit Debout am Mittwoch 27. April, am Carl-Von-Ossietzky-Platz! https://www.facebook.com/events/257665001247766/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.975585937500002,
+          53.579461493732296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Karlsruhe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.404541015625002,
+          49.001843917978555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Kleve"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.139984130859376,
+          51.787382442729616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Koblenz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.594299316406251,
+          50.35422335480388
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Köln",
+        "description": "Roncalliplatz/Röm.-Germ. Museum\nVom 14.05.2016 ab 18:00 Uhr\nbis 1:00 Uhr am 15.05.2016\nhttps://www.facebook.com/events/268141616860464/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.960010528564453,
+          50.939933366064515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout München"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.574096679687502,
+          48.12943437745315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Nürnberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.140136718750002,
+          49.43241258024849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Osnabrück"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.031005859375002,
+          52.26815737376817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Passau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.455505371093752,
+          48.57660713188409
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "https://www.facebook.com/events/1671862273064614/\n\nhttps://www.facebook.com/events/961904477260927/",
+        "name": "#NuitDebout London"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0806647539138794,
+          51.50331326588124
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Liverpool Night Assembly",
+        "description": "https://www.facebook.com/events/1194784113866304/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9772949218750004,
+          53.41280615440963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Belfast"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9326171875,
+          54.57842969715518
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "We would like to invite you to participate in an global day of action on the 15th of May 2016, called by Nuit Debout in France. We will meet at the Fountains on the 15th of May at 12:00, with the participation of different local collectives, in order to show our rejection to a system based on competition and individualism and answer with solidarity, participatory democracy and collective action.\n\nA popular meal, where we can share our food and ideas, will follow the meeting, and the rest of the program is yet to come. If you would like to collaborate and have a concrete proposal, please contact Marea Granate Bristol at: bristol@mareagranate.org\n\nhttps://www.facebook.com/events/781507921983999/",
+        "name": "Nuit Debout Bristol"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.597451210021973,
+          51.45325811722971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Edinburgh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1805419921875004,
+          55.946123926300004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Glasgow",
+        "description": "https://www.facebook.com/events/1025744720846690/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.229736328125001,
+          55.8444821875883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Leeds",
+        "description": "Facebook - http://facebook.com/nuitdeboutleeds/\nTwitter - http://twitter.com/nuitdeboutleeds\n\nEvent - http://facebook.com/events/1765077140392086/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5435791015625002,
+          53.79578417873881
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Manchester",
+        "description": "Facebook - https://facebook.com/nuitdeboutmanchester/\nTwitter - https://twitter.com/NuitDeboutMCR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.2631835937500004,
+          53.474969999548556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Sheffield",
+        "description": "https://www.facebook.com/events/235835850110328/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.4556884765625002,
+          53.37677497506021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Buenos Aires",
+        "description": "https://twitter.com/NuitDeboutBsAs"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.57910156250001,
+          -34.705493410225465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Mendoza"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.86230468750001,
+          -32.9164853473144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.92773437500001,
+          -31.91486750327621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Brisbane"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.88574218750003,
+          -27.566721430409707
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Hobart",
+        "description": "https://www.facebook.com/events/939174802847726/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.34863281250003,
+          -43.06888777416962
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Melbourne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.93164062500003,
+          -37.92686760148135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Sydney"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.12792968750003,
+          -33.90689555128868
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout - Vienna - Austria",
+        "description": "Multi pages & events to Vienna:\n\nPage: https://www.facebook.com/Nuit-Debout-Austria-1115128998543296/\n\nEvent: https://www.facebook.com/events/1108093722545066/ \nhttps://www.facebook.com/events/389635511139514/ \n"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.375122070312504,
+          48.21003212234042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Innsbruck"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.39556884765625,
+          47.2624561696528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Villach",
+        "description": "https://www.facebook.com/events/1723926264559026/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.852386474609377,
+          46.61454465265751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#nuitdebout #buiten #dehors #burger opstaand",
+        "description": "elke woensdag 19u chaque mercredi Conscienceplein Antwerpen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.400024414062501,
+          51.217206807233396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#nuitdebout #buiten #dehors Leuven ",
+        "description": "Elke woensdag 19u Chaque mercredi 19h Martelarenplein Leuven"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.704895019531251,
+          50.87704423111104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "https://www.facebook.com/events/264237123909029/",
+        "name": "Nuit Debout #Charleroi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.443969726562501,
+          50.415081161002895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "https://www.facebook.com/Nuit-Debout-Mons-1709347026009897/?fref=ts",
+        "name": "Nuit Debout #Mons"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.951644897460938,
+          50.457066865294145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "https://www.facebook.com/Nuitdebout-Namur-706645572772499/?fref=ts",
+        "name": "Nuit Debout #Namur"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.866943359375,
+          50.467994531475725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "https://www.facebook.com/groups/129352220801336/",
+        "name": "Nuit Debout #Tournai"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.3947753906250004,
+          50.61113171332364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Arlon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.81451416015625,
+          49.68006974215033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Barvaux"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.496253967285156,
+          50.34787038002178
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_storage_options": {
+          "popupTemplate": "Default"
+        },
+        "name": "Nuit Debout Hasselt",
+        "description": "https://www.facebook.com/NuitDeboutHasselt/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.337016582489015,
+          50.93085973865174
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Kortrijk ",
+        "description": "https://www.facebook.com/events/266660587005632/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.2656860351562504,
+          50.83369767098071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Louvain-La-Neuve",
+        "description": "https://www.facebook.com/nuitdeboutlln/?fref=ts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.626617431640626,
+          50.6686131506577
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Noiseux"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3743743896484375,
+          50.29789323854711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Oostende",
+        "description": "https://www.facebook.com/events/1709314439338049/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.9209899902343754,
+          51.232687586462234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "https://www.facebook.com/events/607079019467639/",
+        "name": "NuitDebout - NachtjeOpstaan #Gent"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7298583984375004,
+          51.05175436468443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "https://www.facebook.com/NuitDeboutB/?fref=ts",
+        "name": "NuitDebout #Bruxelles"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.378051757812501,
+          50.83716687845954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "NuitDebout #Liège",
+        "description": "https://www.facebook.com/NuitDeboutLiege/?fref=ts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.578308105468751,
+          50.645977340713586
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Araraquara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.18603515625001,
+          -21.785006291915956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Belém",
+        "_storage_options": {
+          "iconClass": "Circle"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.69140625,
+          -1.4061088354351594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Rio de Janeiro"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.35205078125001,
+          -22.857194700969636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Sofia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.334960937500004,
+          42.66628070564928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "https://www.facebook.com/Nuit-Debout-Toronto-851738114971328/",
+        "name": "Nuit Debout Toronto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3834948539734,
+          43.65244901662315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Santiago"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.64208984375001,
+          -33.44977658311845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Valparaiso"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.61437988281251,
+          -33.040903117240916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Bogotá",
+        "description": "https://twitter.com/NochenpieBogota"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.08630371093751,
+          4.680454682128591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Prague"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.468994140625,
+          50.085344397538876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Copenaghen",
+        "description": "https://www.facebook.com/events/1176623495703762/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.587585449218752,
+          55.68687525596443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.8560332399829351,
+          38.996187587633024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#15M Castelló de la Plana #GlobalDebout",
+        "description": "#15M Castelló de la Plana #GlobalDebout"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.03447175025939942,
+          39.98841553119767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#38mars a as 21h en Plaza #15M de Valencia #UnaNocheSinTecho",
+        "description": "source:\nhttps://twitter.com/PAH_Valencia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3824615478515625,
+          39.46800484919317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#40mars a las 18h en Plaza del Ayuntamiento de Murcia",
+        "description": "Source:\nhttps://twitter.com/NocheEnPie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1329650878906252,
+          37.98912788178086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#40mars Plaza del Ayuntamiento de Tarragona (Spain) a las 18h #NuitDeboutTarragona",
+        "description": "Source:\nhttps://twitter.com/StopMordazas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2546515464782717,
+          41.11720544560027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#40mars Plaza del Ayuntamiento de Tarragona (Spain) a las 18h #NuitDeboutTarragona",
+        "description": "Source:\nhttps://twitter.com/StopMordazas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2546515464782717,
+          41.11720544560027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#40mars Pta del Sol de Madrid a las 18h ",
+        "description": "Source:\nhttps://twitter.com/Anonymous_UE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7243652343750004,
+          40.40931350359072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NocheEnPie Granada",
+        "description": "15 de Mayo\nPlaza del Carmen\nEvento : https://www.facebook.com/events/174715679590095/\nGrupo : https://www.facebook.com/groups/1569022613428188/?fref=ts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.59878420829773,
+          37.17405567749194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "",
+        "name": "#Unanochesintecho #Elx - Plaça 18 de maig / Ayuntamiento."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6988656576504583,
+          38.26531158265326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "15M #GLOBALDEBOUT Ferrol - Imos tod@s á Praza!",
+        "description": "https://wiki.nuitdebout.fr/wiki/Villes/Ferrol"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.205413818359377,
+          43.47185753169369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "15M GLOBAL DEBOUT A CORUÑA",
+        "description": "Praza do 15M (Antiga Praza do Obelisco)\n\nSábado 14/05/2016\n12:00 Presentacion de manifiesto y programa\n12:30 Colocación placa Plaza 15 de Mayo\nTarde: Talleres y actividades varias\nMedianoche: Noche en vela\n\nDomingo 15/05/2016\n12:30 Concentración Sanidad Publica Marea Branca\n13:00 Performance TTIP\n14:00 Comida en comun\n16:00-18:00 Actuaciones musicales\n18:00 Acto Plaza en lucha\n19:30 Batucada\n20:00 Manifestacion Global\n\nEvento Facebook: https://www.facebook.com/events/205334986525516/ \nContactos Twitter:\nhttps://twitter.com/Coruna15MEnVela\nhttps://twitter.com/GalizaMarcha22M\n\nContactos correo-e:\ncoruna15mnocheenvela@gmail.com\nmarchascorunha@gmail.com\n\nCanal streaming:\nhttps://bambuser.com/channel/Coruna15MNocheEnVela"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.395898938179018,
+          43.37097918571198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "15M_NuitDeBout_Santiago de COmpostela"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.544273376464846,
+          42.878480017739044
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "15MGlobal-NocheEnPie",
+        "description": "Plaza del Ayuntamiento\n15 de marzo 19:00h\nCartagena\n"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9915161132812501,
+          37.609879943747146
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "5º Aniversario 15M, ¡Seguimos indignados!",
+        "description": "Domingo, 15/05/2016, de 12:00h a 20:00h\n\nTemplete Bulevar Gran Capitán\n\nMesa redonda, mesas informativas, exposición fotográfica, asamblea abierta"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.7900390625,
+          37.82280243352759
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ALCALÁ DE GUADAÍRA",
+        "description": "Vista nuestra web https://15m2016alcala.wordpress.com/\nÚnete y colabora en https://15m2016alcala.wordpress.com/unete/\nLee nuestras actas https://15m2016alcala.wordpress.com/actas/\nParticipa en nuestras reuniones online en Mumble https://15m2016alcala.wordpress.com/asambleasonline/\nParticipa, opina, decide... nuestras consultas https://15m2016alcala.wordpress.com/consultas/\nSigue nuestra guía de actividades https://15m2016alcala.wordpress.com/guia-de-actividades/\nY nuestro calendario https://15m2016alcala.wordpress.com/calendario/\n\nDebate, participa, y difunde en Facebook\nPágina - https://www.facebook.com/15m2016alcala\nGrupo - https://www.facebook.com/groups/1759886414243585/\n\nCanal Telegram\nhttps://telegram.me/alcala15m2016\nGrupo Telegram\nhttps://telegram.me/joinchat/BFLp5wi_twe34galIzhthA\n\nRevisa nuestros documentos colaborativos https://15m2016alcala.titanpad.com/1\n\nEscríbenos a nuestro correo electrónico 15m2016alcala@gmail.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.838235616683961,
+          37.34088840167293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aniversario 15M Elda-Petrer, 2016.",
+        "description": "https://www.facebook.com/events/506415386231288/520496734823153/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.7849216461181642,
+          38.479163703816596
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AVILÉS - #40Mars - plaza del Parche, 16:30h"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.921718031167985,
+          43.555326599129
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BILBO/BILBAO - #47Mars, plaza Arriaga Emparantzan, 19:00h/",
+        "description": "Source:\nhttps://www.facebook.com/events/585498834959566/\n***\nhttps://m15mbizkaia.wordpress.com/2016/04/13/nocheen-pie-y-asamblea-abierta-en-apoyo-de-la-nuit-debout-francesa-el-sabado-16-de-abril-a-partir-de-las-1900-h-plaza-del-arriaga-de-bilbao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.924047708511353,
+          43.259612224437674
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_storage_options": {
+          "color": "Yellow",
+          "iconUrl": "/uploads/pictogram/camping-24_2qLEBqo.png"
+        },
+        "name": "Converxencia das Loitas - 15M Ourense - GlobalDebout"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.863909602165223,
+          42.335734891265126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DONOSTIA MAIATZAK 15 MAYO, 19:00(BOULEVARD)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9833,
+          43.3167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DOS HERMANAS"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.920364856719972,
+          37.28793342048548
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HUESCA - #44Mars, plaza Zaragoza, 19:00h"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4093936085700989,
+          42.13282436105951
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "JAÉN. Plaza de la Constitución, Jaén, 23001. Más info evento Facebook: https://www.facebook.com/events/1708093992808455/ "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7881803512573247,
+          37.77278402560022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Logroño, Plaza del Mercado",
+        "description": "Source:\nhttps://twitter.com/EnREDaLaRioja"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.4459815025329594,
+          42.466636247902876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "LUGO - 76Mars / 15 de mayo, praza Maior, 20:00h",
+        "description": "Source:\nhttps://twitter.com/acampadaLugo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.556968331336975,
+          43.0095977419785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MADRID - #15M 18.00h Manifestación Cibeles-Sol",
+        "description": "LA LUCHA SIN FRONTERAS\nES EL ÚNICO CAMINO\n\nPrograma http://mayoglobal.blogspot.ie/p/v-aniversario-15m.html\n\n#15M 18.00h Manifestación Cibeles-Sol\n#NuitDeboutMadrid #GlobalDebout \n\nConvocatoria \nhttps://twitter.com/PcpSol/status/727873740390944769"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7243652343750004,
+          40.40931350359072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MÁLAGA - "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.436416625976563,
+          36.700356469621305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mallorca15M NuitDebout",
+        "description": "https://www.facebook.com/events/1540333986270755/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6532196998596196,
+          39.57591580239686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mérida",
+        "description": "Plaza España \ndomingo 15 mayo de 19:30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.351470947265625,
+          38.914544497799476
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MURCIA - #40mars, plaza del Ayuntamiento, 18:00h",
+        "description": "Source:\nhttps://twitter.com/NocheEnPie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1329650878906252,
+          37.98912788178086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "NitDempeusBcn BARCELONA - #40Mars, Acampada Plaça de Catalunya",
+        "_storage_options": {
+          "showLabel": false,
+          "zoomTo": 10
+        },
+        "description": "Source:\nhttps://twitter.com/NitDempeusBCN\nfacebook: nit dempeus\nmail: nitdempeusbcn@gmail.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1697998046875004,
+          41.38505194970683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Ayerbe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6876754760742189,
+          42.27654669861051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Caceres"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.366577148437501,
+          39.46588451142044
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Jerez "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.146850585937501,
+          36.68769316564542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Terrassa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0324707031250004,
+          41.57436130598913
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Toledo",
+        "description": "https://www.facebook.com/events/628243863993731/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.010009765625001,
+          39.863371338285305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Vigo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.690185546875002,
+          42.21224516288584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Vitoria-Gasteiz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.6916503906250004,
+          42.85985981506279
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout/Nit en Peu Alacant",
+        "description": "15 de Mayo.   Plaza de la Montanyeta.   Toda la jornada.   ;)   Celebració popular i combativa. Tothom convidat.   =)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.48408508300781256,
+          38.34973404669637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PAMPLONA-IRUÑA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6428208351135256,
+          42.81686565255204
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Plaza del Ayuntamiento 18h #40mars",
+        "description": "Source:\nhttps://twitter.com/StopMordazas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2547481060028078,
+          41.11713270090163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Plaza del corrillo 18h #40Mars ",
+        "description": "http://imgur.com/h6JHxgM"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.664616227149964,
+          40.96460015539887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SALAMANCA - #40Mars, plaza del Corrillo, 18:00h ",
+        "description": "http://imgur.com/h6JHxgM"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.664616227149964,
+          40.96460015539887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Santoña ",
+        "description": "https://www.facebook.com/events/1783066875248384/1783247545230317/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.455256838642527,
+          43.44834905335355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SEGOVIA - #40Mars, plaza Azoguejo, 18:00h"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.1182342171669015,
+          40.94776511153077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SEVILLA - 15M",
+        "description": "https://www.facebook.com/events/1722304764678390/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.993041992187501,
+          37.391981943533516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TARRAGONA - #40mars, plaza del Ayuntamiento 18:00h",
+        "description": "Source:\nhttps://twitter.com/StopMordazas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2547481060028078,
+          41.11713270090163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "VALÈNCIA - #38Mars, plaza #15M, 21:00h ☛ #UnaNocheSinTecho",
+        "description": "source:\nhttps://twitter.com/PAH_Valencia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3824615478515625,
+          39.46800484919317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "VALLADOLID",
+        "description": "source:\nhttps://twitter.com/15MValladolid"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.726985692977905,
+          41.65418053587331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "XIXÓN - #40Mars, plaza del Marqués, 19:00h"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.663859844207765,
+          43.54489514802343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ZARAGOZA, #40mars, plaza del Pilar, 18:30h",
+        "description": "\n"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.8789062500000001,
+          41.654445072031265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Helsinki ",
+        "description": "https://www.facebook.com/events/993124240769742/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9609375,
+          60.1524422143808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Tampere"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.774414062500004,
+          61.48600452286418
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.022342681884766,
+          45.99475540185605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": " #nuitdebout #Evry",
+        "description": "https://www.facebook.com/events/1710188222559676"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4393081665039067,
+          48.62973194949527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": " #NuitDebout Concarneau",
+        "description": "https://www.facebook.com/nuitdebout.Concarneau.29900/\n\n c'est au SQUARE DES FILETS BLEUS (centre ville de Concarneau) qu'aura lieu le prochain rassemblement du samedi 30 avril)à partir de 19 h - 19 h 30\n"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.918857574462891,
+          47.870474292119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#MLV Debout - Marne la Vallée en luttes",
+        "description": "Assemblée populaire tous les mercredis soir, 18H00, sur la Dalle du Champy, RER-A Noisy-Champs, à l'angle de la Promenade Michel Simon et allée du bataillon Hildevert.\nwww.facebook.com/mlvdebout/ - mail : mlvdebout@lists.riseup.net"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5778469443321232,
+          48.84302482254161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#Nuit debout #Martigues ",
+        "description": "Samedi  Place de la libération quartier de l'île \n"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.056115569313989,
+          43.405855132795146
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#Nuit Debout #Tulle ",
+        "_storage_options": {
+          "zoomTo": 2
+        },
+        "description": "-30 avril - A partir de 19h place de la Cathédrale -\nAmie debout ! Ami debout!\n\nPrends sous ton bras tes idées, tes revendications, ta bonne humeur (quand même) tout ce qui te parait nécessaire à un moment de partage dans son sens le plus multiple: à manger, à boire, du matériel de communication ...).\n\nA samedi en nombre!\n\nhttps://www.facebook.com/Nuit-debout-Tulle-16-avril-2016-121098731624096/?fref=ts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.7711591720581055,
+          45.26775883826585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Rendez-vous vendredi 22 avril de 18h à minuit place Saint-Pierre à Mâcon. Contact Facebook nuit debout Mâcon",
+        "name": "#Nuit Debout Mâcon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.832198469002833,
+          46.30360088471048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout  #Grenoble ",
+        "description": "@NuitDeboutGre\n\nhttp://nuitdeboutgrenoble.gandi.ws/\n\nhttps://www.facebook.com/ovmqcgrenoble/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.732567310333252,
+          45.17249242549094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Amiens",
+        "description": "AG lundi #35mars  à 14h - amphi 600 Université de Picardie Jules Verne\nsource : https://twitter.com/christophesecq/status/716629964636991488"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2906494140625004,
+          49.88755653624285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_storage_options": {
+          "popupTemplate": "Default"
+        },
+        "name": "#NuitDebout #Avignon",
+        "description": "Les mercredi à 19h\nLes samedi à 18h\nPlace du Petit Palais.\nMercredi : AG et réunion inter-commissions\nSamedi : AG + programmation festive et cuisine debout participative\nhttps://www.facebook.com/events/1693813707573746/\nhttps://www.facebook.com/nuitdeboutavignon/?fref=ts\nhttps://doleancesnuitdeboutavignon.wordpress.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.806625843048097,
+          43.95124293616303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Beauvais #NuitDeboutBeauvais",
+        "description": "https://www.facebook.com/events/1537416849893005/     https://www.facebook.com/Nuit-Debout-Beauvais-491206364419329/    https://nuitdeboutbeauvais.wordpress.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0846557617187504,
+          49.439556958940855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Bourgoin-Jallieu.",
+        "description": "https://wiki.nuitdebout.fr/wiki/Villes/Bourgoin-Jallieu\nPremière réunion le 54 mars (23 avril) \nhttps://wiki.nuitdebout.fr/wiki/Villes/Bourgoin-Jallieu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2811622619628915,
+          45.585992862016695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Caen",
+        "description": "SVendredi 18h\nplace saint-Sauveur\n@CaenLoiTravail - http://twitter.com/CaenLoiTravail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.36840677261352545,
+          49.18309194929932
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Caen",
+        "description": "Vendredi 15 avril 18h\nplace saint-Sauveur\n@CaenLoiTravail - http://twitter.com/CaenLoiTravail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.36840677261352545,
+          49.18309194929932
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Calais",
+        "description": "Rendez-vous tous les soirs à 19h sur la place d’Armes :)\n\nWiki : https://wiki.nuitdebout.fr/wiki/Villes/Calais\nFacebook : https://www.facebook.com/groups/1584402891870709/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.8502092361450198,
+          50.95931876068709
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Castans",
+        "description": "54 Mars Place du Châtaignier"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4846267700195317,
+          43.405671056748304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #ChalonSurSaône",
+        "description": "A partir de 19h chaque jeudi, vendredi et samedi place de l'Hôtel de Ville !"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8528590798378,
+          46.78082289947408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Chambéry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.917038917541505,
+          45.56921648523651
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Châteauroux",
+        "description": "Place de la République Vendredi 15 avril à 18h00\nhttps://twitter.com/nuitdebout36\nhttps://www.facebook.com/nuitdebout36/\nPas besoin d'autorisations"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.6918945312500002,
+          46.81509864599243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "#NuitDebout #ChateauThierry\n\nPlace Victo Hugo (ex. place Thiers)  #54 Mars - samedi 23 avril à partir de 19h",
+        "name": "#NuitDebout #ChateauThierry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.40576171875,
+          49.04506962208049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Parvis de l'hôtel de ville, place du général De Gaulle, à partir de 18h:\n- Jeudi 14 Avril\n- Jeudi 21 Avril\n- Jeudi 28 Avril\n\nToutes les infos: https://wiki.nuitdebout.fr/wiki/Villes/Chinon\nGroupe Facebook : https://www.facebook.com/groups/143053879427459/\n\nRéunion préparatoire, ouverte à tous, le Lundi à 20h, au Café des Arts. Prochaine: 25 Avril.",
+        "name": "#nuitdebout #Chinon \"À la fin c'est nous qu'on va gagner !\""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.24006843566894534,
+          47.16687205323604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #ClermontDebout",
+        "description": "Twitter : https://twitter.com/NuitDeboutCLFD\n@NuitDeboutCLFD\n\nFacebook : https://www.facebook.com/NuitDeboutClermontFerrand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.099517822265625,
+          45.77614401215916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Crest",
+        "description": "Nuit Debout ce samedi 30 avril à partir de 12h30 sur la place l’Église à Crest\nhttps://www.facebook.com/groups/991189597624836/\n"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.022854804992677,
+          44.72855693837045
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Dijon",
+        "description": "Dès 14h place de la Libération\nhttps://www.facebook.com/dijoncontrelaloitravail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.041329860687257,
+          47.321217832674215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Fontenay sous Bois Place des Larris ",
+        "description": "LE 27 Avril à 18h30\nhttps://www.facebook.com/NuitDeboutFontenaySousBois/\n#BanlieuesDebout"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4732971191406254,
+          48.85116185716921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#nuitdebout #gap",
+        "description": "https://www.facebook.com/Nuit-Debout-Gap-1586083338371790/?ref=br_rs"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.090545654296876,
+          44.55720637041297
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Guebwiller"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.212368544714992,
+          47.909527869032225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Ivry #IvryDebout #BanlieuesDebout",
+        "description": "Prochain rendez-vous : samedi 16 avril à 18h pour l'assemblée citoyenne.\n\nhttps://www.facebook.com/Collectif-onvautmieuxqueca-Ivry-212732732418506/\n\nhttps://twitter.com/IvryVautMieux"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3848539590835576,
+          48.81255127184338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #LaCoteStAndre",
+        "description": "Première réunion le 47 mars (16avril)\nhttps://wiki.nuitdebout.fr/wiki/Villes/La_C%C3%B4te-Saint-Andr%C3%A9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.260133743286134,
+          45.3943214720629
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Laon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.6186218261718754,
+          49.567087209207784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #LaRéunion",
+        "description": "Théâtre de Champ Fleuri\n#54mars (23 avril)\n\nhttps://twitter.com/stducamp/status/716945382509514752"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.466011762619026,
+          -20.888394647399295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #LaRochelle",
+        "description": "https://www.facebook.com/Nuit-Debout-La-Rochelle-1579435572384537/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1535644531250002,
+          46.14178273759234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #LaRochelle",
+        "description": "https://www.facebook.com/Nuit-Debout-La-Rochelle-1579435572384537/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1535644531250002,
+          46.14178273759234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #LaRocheSurYon ",
+        "description": "Assemblées citoyennes tous les vendredis à 18h place napoléon https://www.facebook.com/events/250608491952512/250755011937860/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.4267098903656008,
+          46.67060616542813
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #LaRocheSurYon ",
+        "description": "Assemblées citoyennes tous les mercredis et vendredis à 17h place napoléon https://www.facebook.com/Nuit-Debout-Vend%C3%A9e-La-Roche-sur-Yon-157840477943271/?fref=ts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.4267098903656008,
+          46.67060616542813
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Laval",
+        "description": "38 mars\n19h - Parvis des droits de l'Homme\n\nhttps://www.facebook.com/Lavalanche-Populaire-1746772658891705/?fref=nf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.7727336883544922,
+          48.07091032341279
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #LeHavre",
+        "description": "Mardi 36 mars à 18h\nPlace de l'Hôtel de Ville\nFcbk : https://www.facebook.com/Nuit-debout-le-havre-1112230352174482/?hc_location=ufi \nTwitter : https://twitter.com/NHavre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.10797500610351564,
+          49.49344113172218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #LeHavre",
+        "description": "Mardi 36 mars à 18h\nPlace de l'Hôtel de Ville\nFcbk : https://www.facebook.com/Nuit-debout-le-havre-1112230352174482/?hc_location=ufi \nTwitter : https://twitter.com/NHavre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.10797500610351564,
+          49.49344113172218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #LeMans",
+        "description": "Page Facebook\nhttps://www.facebook.com/Nuitdeboutlemans-457540527768853/\nCompte Twitter \nhttps://twitter.com/NuitDeboutMans"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.20050048828125003,
+          48.00278733106706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#nuitdebout #lepuy #43",
+        "description": "http://twitter.com/nuitdebout43\n\nhttp://www.facebook.com/nuitdebout43/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.8905334472656254,
+          45.04635929200553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Lille",
+        "description": "Rassemblement tous les jours à 18h30 à République\nAG à 20h \nToutes les informations sur le wiki : https://wiki.nuitdebout.fr/wiki/Villes/Lille\n\n@NuitDeboutLille https://twitter.com/LilleNuitDebout"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.0706787109375004,
+          50.63378430878932
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Limoges",
+        "description": "9 avril (40 mars)\nPlace de la République\n>> https://www.facebook.com/events/779041398897101/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.259879,
+          45.831754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Limoges",
+        "description": "9 avril (40 mars)\nPlace de la République\n>> https://www.facebook.com/events/779041398897101/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.259879,
+          45.831754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #LODEVE",
+        "description": "Page facebook:\nhttps://www.facebook.com/Nuit-Debout-Lodève-250721985274568/\nÉvénement FaceBook :\nhttps://www.facebook.com/events/452746054935108/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.319684267044068,
+          43.7327086724162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "\nSamedi #61Mars (30 Avril), 15H\nplace de l'Hotel de Ville\nhttps://www.facebook.com/LorientDebout/",
+        "name": "#NuitDebout #Lorient "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.366172313690186,
+          47.74740375038144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Tous les mercredis et samedis\n18h place de l'Hotel de Ville\nhttp://www.lorientdebout.fr/\nhttps://www.facebook.com/LorientDebout\nhttps://twitter.com/LorientDebout\n",
+        "name": "#NuitDebout #Lorient #LorientDebout"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.366172313690186,
+          47.74740375038144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Luisetaines",
+        "description": " #NuitDeboutAtHome #DeboutPartout #DansMonVillageAussi #JeSuisUneBandeDeJeunes\nDans mon village aussi. Tchtatch direct vidéo at home.\n\nhttp://www.facebook.com/zabbalin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.1802845001220708,
+          48.467515151087625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Dimanche #48mars\n\nhttps://nuitdeboutlyon.fr/\nhttps://www.facebook.com/events/550643558430429/\n\nVenez nombreux et nombreuses !",
+        "name": "#NuitDebout #Lyon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.847331047058106,
+          45.75921496064122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Lyon",
+        "description": "AG Dimanche 3 avril à 17h\nLe Plongeoir, 2 rue Gaston Brissac, 69008 LYON\n\n@NuitDeboutLyon https://twitter.com/NuitDeboutLyon/status/716204328713916417"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.847524166107179,
+          45.759222445884056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Marseille",
+        "description": "Cours Julien\nAG à 18h30 tous les jours\nhttps://twitter.com/nuitDebout13\nhttps://www.facebook.com/groups/1260684377283035/?fref=ts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.383397340774537,
+          43.29341896623758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Metz",
+        "description": "Place de la comédie, devant l'Opéra.\n\nTous les jours à 18h depuis le 39 Mars.\nProjections-débats et grosses AG les Vendredi soirs !\n\nRejoignez-nous également sur notre forum : https://nuitdebout.today/\n\nFacebook : https://www.facebook.com/NuitDeboutMetz\nTwitter : https://twitter.com/nuitdeboutmetz\n"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.173404455184937,
+          49.12130537398101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#Nuitdebout #MLV #MarnelaVallée"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.097900390625001,
+          46.320378031062354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Vendredi 29 avril à partir de  19h, à la Pierre à Poissons, place des Halles. On peut apporter son casse croûte mais aussi ses idées.\nhttps://www.facebook.com/events/251671438521208/",
+        "name": "#NuitDebout #Montbéliard"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.794726103544236,
+          47.50906652047756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Montpellier",
+        "description": "Page FaceBook:\nhttps://www.facebook.com/groups/1319024728114419/ \nÉvénement FaceBook :\n\n",
+        "_storage_options": {
+          "popupTemplate": "Large"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.880834579467774,
+          43.609629987392125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Nantes",
+        "description": "Place du Bouffay 18h\nhttps://www.facebook.com/events/1733203956900834/\n\nhttps://twitter.com/NuitDebout44\nhttps://www.facebook.com/Nuit-Debout-Nantes-506945576172444/\n\n"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5532082319259646,
+          47.21475123583253
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Nantes",
+        "description": "Place du Bouffay 18h\nhttps://www.facebook.com/events/1733203956900834/\n\nhttps://twitter.com/NuitDebout44\nhttps://www.facebook.com/Nuit-Debout-Nantes-506945576172444/\n\n"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5532082319259646,
+          47.21475123583253
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Nice",
+        "description": "Place Garibaldi\nmardi #36mars vendredi #39mars à 20h, Place de Garibaldi\n\nEvenement facebook :\nhttps://www.facebook.com/events/1006674032747266/\n\nPage Facebook :\nhttps://www.facebook.com/nicedebout/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.280030250549317,
+          43.70077981033038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Nice",
+        "description": "Place Garibaldi\nmardi #36mars vendredi #39mars à 20h, Place de Garibaldi\n\nEvenement facebook :\nhttps://www.facebook.com/events/1006674032747266/\n\nPage Facebook :\nhttps://www.facebook.com/nicedebout/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.280030250549317,
+          43.70077981033038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Nîmes",
+        "description": "https://www.nuitdeboutnimes.fr\n\nhttps://www.facebook.com/NimesDebout\n@NimesDebout https://twitter.com/NimesDebout/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.355810880661012,
+          43.840044555947415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "https://www.facebook.com/Nuit-Debout-Orl%C3%A9ans-et-Loiret-964672846935435/\nChaque jour à 18h Place du Martroi.\n\nAmenez de la musique, à manger et des idées!\n",
+        "name": "#NuitDebout #Orléans"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.902190446853638,
+          47.90110285911177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "https://www.facebook.com/Nuit-Debout-Orl%C3%A9ans-et-Loiret-964672846935435/\nLundi #35mars 18h\nPlace du Martroi.\n\nAmenez de la musique, à manger et des idées!\n",
+        "name": "#NuitDebout #Orléans"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.902190446853638,
+          47.90110285911177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Paris",
+        "description": "Place de la république\n\nhttps://twitter.com/nuitdebout"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.363739609718323,
+          48.86758016642424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Poitiers",
+        "description": "Samedi 40 mars 18h\nPlace du Maréchal Leclerc (devant la mairie)\n\n>> https://www.facebook.com/events/1711640439121331/?active_tab=posts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.34005582332611084,
+          46.58033121235817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Poitiers #NuitDeboutPoitiers",
+        "description": "DIMANCHE 1er Mai\n10h30 Rassemblement/Manif aux Couronneries devant le Carré Bleu \n16h Goûter Debout au Parc Blossac au théâtre de verdure\n\nDu LUNDI 2 au VENDREDI 6 Mai \nPlace du Marché\n18h : Commissions\n19h : Assemblée Populaire\n\nSAMEDI 7 Mai\naux 3 Cités :\n18h : Commissions\n19h : Assemblée Populaire\n\nDiverses Animations et Action à voir sur les liens ci-dessous.\n\n>>https://nuitdeboutpoitiers.tumblr.com\n\n>>https://www.facebook.com/poitiersnuitdebout\n\n>>https://www.facebook.com/groups/992108854218819/\n\n>> https://twitter.com/NPoitiers"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.34005582332611084,
+          46.58033121235817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Samedi #40Mars\nPlace du Parlement\nhttps://www.facebook.com/events/1550169898616415/",
+        "name": "#NuitDebout #Redon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.0849803090095524,
+          47.65082065695479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Depuis le 36 mars sur la place du Peuple (ex-esplanade Charles de Gaulle).\nPlanning et comptes-rendus ici :\nhttps://wiki.nuitdebout.fr/Villes/Rennes\n\nPensez à suivre les pages Facebook et Twitter :\nhttps://www.facebook.com/Nuit-debout-Rennes-1718425701733962/\nhttps://twitter.com/RennesDebout\n",
+        "name": "#NuitDebout #Rennes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6754150390625002,
+          48.111099041065366
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Roanne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.078674316406251,
+          46.038922598236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "\nhttps://www.facebook.com/Nuitdeboutrouen/?fref=ts\nPlace de l'Hotel de Ville - 18h",
+        "name": "#nuitdebout #Rouen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.0794067382812502,
+          49.43241258024851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #SaintEtienne",
+        "description": "à partir du mardi #36mars\n@NuitDebout42 https://twitter.com/NuitDebout42\n\nsource : https://www.facebook.com/events/589267697887296/permalink/589357254545007/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.390411376953126,
+          45.4379719091347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #SaintNazaire",
+        "description": "La Nuit Debout continue ce 48 mars (17/04)\n\n à partir de 18h Esplanade des droits de l'homme et du citoyen.\n"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.2137451171875004,
+          47.27550216573706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Mardi #36mars (ex-5 avril) 18h\nPlace de la république\n\nOrganise toi, rassemble , fédère , autogére\n« Il faut construire quelque chose ».\n\nsource : https://www.facebook.com/events/239217129763994/\n\n@NuitDStrasbourg https://twitter.com/NuitDStrasbourg",
+        "name": "#NuitDebout #Strasbourg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.753965854644776,
+          48.58726779208929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout #Valence",
+        "description": "Samedi #40mars\nKiosque Peynet, Avenue du Champ de Mars\nhttps://www.facebook.com/events/1835493396677843/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.888556599617005,
+          44.92923783024626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "https://www.facebook.com/nuitdeboutvalenciennes/?ref=br_rs",
+        "name": "#NuitDebout #Valenciennes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.4909057617187504,
+          50.352470894936836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "https://www.facebook.com/Nuitdeboutrouen/?fref=ts\nPlace de l'Hotel de Ville  - 18h00 \n(Si pluie, sous les arcades à droite)",
+        "name": "#Nuitdebout à #Rouen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.0794067382812502,
+          49.43241258024851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_storage_options": {
+          "popupTemplate": "Default"
+        },
+        "name": "#nuitdebout Angers",
+        "description": "https://www.facebook.com/events/1683025955307512/permalink/1684226431854131/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5520200729370118,
+          47.471154416434075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_storage_options": {
+          "popupTemplate": "Default"
+        },
+        "name": "#nuitdebout Angers",
+        "description": "https://www.facebook.com/nuitdebout.angers/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5520200729370118,
+          47.471154416434075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout Auxerre",
+        "description": "Place de l'Arquebuse, tous les vendredi à partir de 20h\nhttps://wiki.nuitdebout.fr/wiki/Villes/Auxerre\n"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.566672801971436,
+          47.79232802247553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout Béthune",
+        "description": "#46Mars\nhttps://www.facebook.com/events/948060081968759/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.639154195785523,
+          50.53106946631597
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "lundi 49 Mars (18 avril) à 18h\nau Parc Chanoine Motte",
+        "name": "#NuitDebout Briançon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.652221679687501,
+          44.91035917458495
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout Manosque",
+        "description": "Rassemblements sur la Promenade Aubert Millot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.784714818000794,
+          43.83205793566208
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout Morlaix",
+        "description": "A partir du samedi 9 avril\nhttps://www.facebook.com/Nuit-debout-Morlaix-188878344837420/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.8288453221321106,
+          48.578193597553565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#Nuitdebout Nancy",
+        "description": "35, 36 et 37 Mars à 18h Place Stanislas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.182556152343751,
+          48.69096039092552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "#NuitDebout Saint Rémy de Pce n°3\n\nVendredi 29 avril, 19h30.\nPlace Jean Jaurès\nDiffusion publique de Merci Patron ! à 21h ! Allez viens !\nhttps://www.facebook.com/NuitDebout-Saint-R%C3%A9my-de-Pce-687947154641064/",
+        "name": "#NuitDebout Saint Rémy de Pce"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8312968015670785,
+          43.786241925127634
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "mercredi 20 avril à 18:00\nPlace de la mairie ",
+        "name": "#NuitDebout#Embrun"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4951890707016,
+          44.563975478136115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#nuitdebout#questembert",
+        "description": "vendredi 67 mars/06 mai 19h30 les halles\nhttps://www.facebook.com/nuitdeboutaquestembert/?pnref=story"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.45269775390625,
+          47.66041602143198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#nuitdebout#Tulle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7361174162942925,
+          43.430438020721766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#nuitdebout#vannes",
+        "description": "Prochain rendez-vous : date à confirmer\nhttps://www.facebook.com/ndbvannes/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7603149414062504,
+          47.65983792850961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "16 avril 2016 19h place colbert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9653075417736545,
+          45.94947635821328
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A Villefranche de Rouergue",
+        "description": "Plus forts et encore plus motivés... \"Nuit Debout Villefranchoise\" vous invite tous les samedi, sur la place de La Liberté, à 20H00."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0407104492187504,
+          44.357242035876375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BANLIEUES DEBOUT MANTES LA JOLIE",
+        "description": "Mantes-La-Jolie prépare sa #NuitDebout. On vous balance le programme ici très vite. \n[[https://www.facebook.com/events/100486257022448/|**Facebook**]]\n[[https://wiki.nuitdebout.fr/wiki/Villes/Mantes_la_Jolie|**Wiki**]]\nRendez-vous VENDREDI 15 AVRIL à 19h 30, Place Paul Bert (devant la Mairie de Gassicourt à Mantes-La-Jolie)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.7014673352241518,
+          48.9976628799191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bazas Debout"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.21667,
+          44.433331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bergerac",
+        "description": "https://wiki.nuitdebout.fr/wiki/Villes/Bergerac"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.4834145307540894,
+          44.85355288821168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cluny la nuit",
+        "description": "Premiers rassemblements vendredi 15 et samedi 16 avril, de 20h à minuit. Ensuite, chaque vendredi et chaque samedi ! Dans l'avant-nef de Cluny-III. Cluny. 71250"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.657749831676484,
+          46.435315258292675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "EVREUX - Nuit Debout",
+        "description": "Quand ???"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.151247024536133,
+          49.02695091591296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "https://www.facebook.com/fecamp.debout ",
+        "name": "Fecamp-Debout"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.37686109542846685,
+          49.75809232750672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "FOIX tous les jours à 18h"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.6149902343750002,
+          42.9735063886709
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gans debout"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.15,
+          44.450001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grasse https://www.facebook.com/ndgrasse/?fref=ts",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.92962646484375,
+          43.65793702655821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Guignols Debout"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.04223,
+          44.38942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "https://www.facebook.com/groups/606546239494686/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6078338623046875,
+          43.17739171137874
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "https://www.facebook.com/Nuit-Debout-Saint-Ouen-281100168888609/?fref=ts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3347234725952153,
+          48.91234666994148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "https://www.facebook.com/Nuit-Debout-Toulon-511734099008698/?fref=ts",
+        "description": "Nuit Debout à Toulon tous les soirs sur la place de la Liberté."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.930557250976563,
+          43.125606967028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "https://www.facebook.com/Nuit-Debout-Toulon-511734099008698/?fref=ts",
+        "description": "Nuit Debout à Toulon tous les soirs sur la place de la Liberté.\n\n https://www.facebook.com/events/574963432665286/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.930557250976563,
+          43.125606967028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "https://www.facebook.com/nuitdeboutbourges/",
+        "description": "https://www.facebook.com/nuitdeboutbourges/?fref=ts\nRDV Ilot Victor Hugo (face à l'office du toursime, proche de la cathédrale)\nMercredi à partir de 19h00\nSamedi à partir de 15h00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.397422790527344,
+          47.07783792189848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "https://www.facebook.com/nuitdeboutlibourne/?fref=ts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.23620605468750003,
+          44.91035917458495
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Perpignan \n\nPlace République les Vendredis Samedi Dimanche",
+        "name": "https://www.facebook.com/NuitDeboutPerpignan/?fref=ts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.895369529724121,
+          42.69847155970534
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "https://www.facebook.com/nuitdeboutredon/info?tab=page_info"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.083840370178223,
+          47.65178009206668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jour et Nuit Debout Aubenas (Ardèche)",
+        "description": "Rdv chaque jour à partir de 18 h au Kiosque, Place du Champ de Mars.\nLe programme sera en fonction des présent.e.s : apéro, pici nic, expos, ateliers divers, point info, rencontres, actions directes diverses... \nNos deux grands RDV de la semaine sont jeudi soir pour la grande assemblée, et samedi midi, jour de marché, pour le grand pic nic partagé et familial ! "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.391784667968751,
+          44.61393394730628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "La #nuitdebout arrive à Tours. #Onvautmieuxqueça !!!! #Toursenagros",
+        "description": "Place Jean Jaurès ce mercredi 37 Mars! A partir de 18h! Travaillons à un autre possible! \n\nhttps://www.facebook.com/events/1748366685449590/?active_tab=posts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.6889092922210694,
+          47.39009129679929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Langon Debout"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.25,
+          44.549999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Le 24 Avril à 14H au parc de Brissac! "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.702607154846192,
+          43.87842268112239
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Les Lilas",
+        "description": "Prochain rdv vendredi 22/04 devant la mairie 19h"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4157905578613286,
+          48.87954110551587
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mairie de St-denis mercredi 20 avril, 18h",
+        "description": "Place Jean Jaurès"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3593139648437504,
+          48.93603284572104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mercredi 6 avril à 18h30",
+        "description": "Devant le  cinéma le regain où sera projeté le film \"MERCI PATRON\" à l'initiative d'Assemblée Nationale Citoyenne https://www.facebook.com/-Nuit-debout-à-Le-Teil-Mercredi-6-avril-à-18-h-30-661730773968354/?pnref=story"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.747467041015625,
+          44.55622782328973
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Dimanche 1 Mai pour un pique nique citoyen.\n\nDiscuter, échanger et peut être proposer des actions concrètes\n\n>> https://www.facebook.com/events/1185055291517247/\n",
+        "name": "Mon Village Debout"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1811027526855469,
+          46.78660285007765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nontron",
+        "description": "Samedi 23 avril 2016 - 17h00\nAG à 18h00\nPlace de la mairie\nhttps://www.facebook.com/nuitdeboutnontron/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.6372070312500001,
+          45.390735154248894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit De Boue en Brenne",
+        "description": "Samedi 54 mars/23 avril rejoignez-nous pour débriefer au petit dej !"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.294444799423218,
+          46.71312727888431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout - Bourg-en-Bresse",
+        "description": "Rendez-vous tous les jeudis dès 20h au square des quinconces.\nPour plus d'informations : likez la page \"Initiative citoyenne\" sur Facebook"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2191388607025155,
+          46.203151314531816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout 43 mars parvis de l'Hôtel de Ville de Saint-Leu",
+        "description": "Nuit Debout 43 mars parvis de l'Hôtel de Ville de Saint-Leu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.287226438522346,
+          -21.166118674633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout à Besançon",
+        "description": "\"Officiellement\" lancée le samedi 9 Avril, occupation de la PLACE GRANVELLE\n-> https://www.facebook.com/NuitDeboutBesac/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.026317,
+          47.235284
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout à Besançon",
+        "description": "\"Officiellement\" lancée le samedi 9 Avril, occupation de la PLACE GRANVELLE\n-> https://www.facebook.com/NuitDeboutBesac/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.026317,
+          47.235284
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout à Blain",
+        "description": "Jeudi 21 avril \nà 20h sur la place\nEt tous les jeudis..."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.7550659179687502,
+          47.48380086737799
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "nuit debout à chateaubriant",
+        "description": "https://www.facebook.com/events/220962948275277/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.376166343688965,
+          47.7206182220987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit debout à Créteil ",
+        "description": "vendredi 46 mars (15avril) a 18h"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4446725845336914,
+          48.78796540623776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit debout à Mens, place de la Halle, vendredi 53 mars (22 avril) à 20h. Avec projection de \"Merci Patron !\" à 20h30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.745849609375,
+          44.820812031724444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout à Nevers",
+        "description": "Place de la Résistance\nTous les soirs à 20h\ndepuis dimanche 41 mars (10 avril) 2016\nhttps://www.facebook.com/groups/214249265615242/\nOuvert à tous (et même plus)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.160446882247925,
+          46.99227003803681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "nuit debout a saint aubin du cormier",
+        "description": "https://www.facebook.com/events/1710995572519341/?hc_location=ufi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.4039325714111328,
+          48.25722708797147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout à Saint-Malo Vendredi 29 avril à 19h00 Place Chateaubriand            Chacun apporte pour manger ensemble et faire de la musique!",
+        "description": "https://www.facebook.com/nuitdeboutstmalo/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.0050048828125004,
+          48.64561313162894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout à Saint-Quentin en Yvelines !",
+        "description": "Samedi 16 avril, à partir de 19h30. Entrée du Parc des Sources de la Bièvre, devant la Bibliothèque Universitaire de l'UVSQ à Guyancourt."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0454096794128422,
+          48.7809952168817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Abbeville"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.8319702148437502,
+          50.10472613984792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Accous"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5977249145507814,
+          42.97425997988116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Agen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.6207275390625001,
+          44.199928128583025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Aigues-Mortes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.194030761718751,
+          43.56770552917119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Aix-en-Provence le samedi 23 avril",
+        "description": "@NuitDebout_Aix sur Twitter\n\"Nuit Debout Aix\" sur Facebook \nEvénement : Facebookhttps://www.facebook.com/events/494233054093125/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.447818636894227,
+          43.529831871629185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Ajaccio"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.437500000000002,
+          50.958426723359935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Albi",
+        "description": "https://www.facebook.com/events/108780616192226/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1450805664062504,
+          43.92757183247526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Alençon  https://www.facebook.com/events/487805534751605/",
+        "description": "https://www.facebook.com/events/487805534751605/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.09338378906250001,
+          48.43284538647477
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Ales",
+        "description": "Place de la mairie, tous les soirs depuis le 40 mars!\n\nRejoignez nous pour la diffusion du film \"Merci Patron\", Samedi 16 avril."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.084596633911134,
+          44.12524131583805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Alfortville"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.427291870117188,
+          48.79272946139696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Ambert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.741531372070313,
+          45.54843807304054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "nuit debout ancenis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.17828369140625,
+          47.368594345213374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Anduze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.980827331542969,
+          44.049102784014536
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Angoulême"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.17303466796875003,
+          45.65244828675087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Annecy",
+        "description": "Au Paquier (face à Bonlieu)\nPour les infos concernant les prochains RDV:\nhttps://www.facebook.com/NuitDeboutAnnecy/\nhttps://twitter.com/nuitdebout74000\nhttps://wiki.nuitdebout.fr/index.php?title=Villes%2FAnnecy\nhttps://chat.nuitdebout.fr/channel/annecy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.129169464111329,
+          45.90108908698392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Annemasse",
+        "description": "https://wiki.nuitdebout.fr/wiki/Villes/Annemasse\nhttps://www.facebook.com/Annemassedebout/?fref=ts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.242294311523438,
+          46.193140876238004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Annonay"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.667816162109376,
+          45.23911861682938
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Argol"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.31591033935547,
+          48.24593970387843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Arles"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.630737304687501,
+          43.67581809328341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Arras"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.77679443359375,
+          50.292848766619365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Aubagne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.571441650390626,
+          43.292200750082806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Aubervilliers",
+        "description": "A partir de samedi 16 avril, 17h, place de la Mairie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3818874359130864,
+          48.914828605652765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit debout Auch 26avril 18h pl de La République"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.5987548828125,
+          43.644025847699496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Aumessas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.50240707397461,
+          43.99034449280364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Aurillac"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4472045898437504,
+          44.92591837128866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Avrechy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4269485473632817,
+          49.44781634951545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Bagneux"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3043823242187504,
+          48.794878086030664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Bagnols-Sur-Cèze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.619750976562501,
+          44.15560770738733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Bastia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.450988769531252,
+          42.70665956351041
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Baume-les-Dames (Place Chamars)",
+        "description": "Première édition samedi 16 avril\nDeuxième édition dimanche 24 avril\nPage Facebook : https://www.facebook.com/NuitDeboutBaume/\nTwitter : https://twitter.com/NuitDeBaume"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.3618671894073495,
+          47.350425169114835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Bayonne",
+        "description": "https://www.facebook.com/nuitdeboutBayonne/?ref=br_rs"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.4845275878906252,
+          43.48107551090951
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Bedous"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6015014648437501,
+          42.99811892521527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Belfort"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.863708496093751,
+          47.632081940263305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Bellevile-Menilmontant (Paris)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3850631713867188,
+          48.87126401699513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit debout berck sur mer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.5711671300232413,
+          50.40492290614384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Béziers",
+        "description": "Fb : Nuit Debout Beziers\nhttps://www.facebook.com/nuitdebout.beziers\nmail : nuitdeboutbeziers@gmail.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.2231140136718754,
+          43.33316939281735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Biarritz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5518188476562502,
+          43.480328159574604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Binan, Philippines",
+        "_storage_options": {
+          "color": "Red"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0847492516041,
+          14.338615559605332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Blanc-Mesnil",
+        "description": "https://www.facebook.com/events/571073346402794/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.462997436523438,
+          48.93851360451852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Blois",
+        "description": "https://www.facebook.com/nuitdeboutBlois/?fref=ts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.34033203125,
+          47.58023129789275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Bobigny"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.44497299194336,
+          48.90636695484554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Bonneuil-Sur-Marne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.486343383789063,
+          48.773387698680565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Bordeaux",
+        "description": "https://www.facebook.com/NuitDeboutBordeaux/?ref=br_rs"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5794000625610353,
+          44.83491947071593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit debout boulogne sur mer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.6259765625,
+          50.728632224449335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit debout Brest",
+        "description": "Place Guérin, St Martin\nhttps://twitter.com/NDebout29\nhttps://www.facebook.com/NuitDeboutBrest/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.479364156723023,
+          48.39663463963429
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit debout Brest",
+        "description": "Place Guérin, St Martin\nhttps://twitter.com/NDebout29\nhttps://www.facebook.com/NuitDeboutBrest/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.479364156723023,
+          48.39663463963429
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Brive"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.5133666992187502,
+          45.154927133618465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Cahors"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.43646240234375,
+          44.44750680513074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Carcassonne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3538208007812504,
+          43.21118152841773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Carhaix-Plouguer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5705566406250004,
+          48.27656701264155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Carpentras"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.042724609375001,
+          44.05403780323783
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Castelnaudary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9569396972656252,
+          43.316185746193504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit debout Châlons en Champagne",
+        "description": "Rendez vous tous les soirs au grand jard à partir de 18h00."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.359405040740968,
+          48.952120346615544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Chamalières"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.061923980712891,
+          45.77267180507134
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Chanopost"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.746780395507813,
+          45.71001523943372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Charleville-Mézières"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.732360839843751,
+          49.75820322340621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Chartres"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4886474609375002,
+          48.44742209577055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Chateaulin",
+        "description": "https://www.facebook.com/Nuit-Debout-Chateaulin-1011868685559083/?fref=ts\n\ndevant l'office de tourisme\n"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.094982147216798,
+          48.196531677389885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Cherbourg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6149902343750002,
+          49.62850392384226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Cholet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.8761596679687501,
+          47.05515408550348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Clamart"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.266616821289063,
+          48.80007963827959
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Clelles"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.622940063476563,
+          44.826899807532186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Clichy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3057556152343754,
+          48.902756214344116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Clichy-Sous-Bois",
+        "description": "https://www.facebook.com/events/232635733759121/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5464248657226567,
+          48.91099283485541
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Clichy-Sous-Bois",
+        "description": "https://www.facebook.com/events/232635733759121/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5464248657226567,
+          48.91099283485541
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Colmar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.363586425781251,
+          48.07807894349862
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Colombes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2525405883789067,
+          48.92295044225696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Couëron"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.7276000976562502,
+          47.21117290969669
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Courchelettes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.0596923828125,
+          50.34195477731002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Craon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9520339965820312,
+          47.84795719090599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Creil"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4829101562500004,
+          49.266908436728556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Decazeville"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2439575195312504,
+          44.55720637041297
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Dieppe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.0821533203125002,
+          49.924703719314344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Digne les Bains"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.230621337890626,
+          44.07476039341059
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Douai"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.0761718750000004,
+          50.36999258287717
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Draguignan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.464080810546875,
+          43.537598280094535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Dunkerque"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3675537109375004,
+          51.031031114144035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Enghien-Les-Bains"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3047256469726567,
+          48.969963441173306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Étampes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1615600585937504,
+          48.43102300370144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "nuit debout Figeac",
+        "description": "les dimanches et jeudis 18h place de la raison"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.034680843353272,
+          44.60744181278132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Florac",
+        "description": "Rendez-vous les mercredis et samedis à 18 heures, square Maury, devant La Genette Verte, 33 avenue Jean Monestier.\nPour vérifier les rendez-vous et vous informer : \nhttps://www.facebook.com/Nuit-Debout-48-192964481087421/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.5941761732101445,
+          44.32552513009385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Fontainebleau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.7005767822265625,
+          48.40367941865281
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Fort-de-France"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.06613159179688,
+          14.608833869968036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Fougères",
+        "description": "https://www.facebook.com/nuitdeboutfougeres35/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.2015384435653689,
+          48.35447024318774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Fresnes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325668334960938,
+          48.75392530642962
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Gaillac"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9006347656250002,
+          43.90185050527358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Gardanne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.469818115234375,
+          43.45391581188941
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Givors"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.776306152343751,
+          45.58136746810096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "A partir de 15h, samedi #40mars (ex-9 avril)\nhttps://www.facebook.com/events/254850534850605/\nhttps://twitter.com/NuitDeboutGre\nhttps://www.facebook.com/ovmqcgrenoble/\n\n",
+        "name": "Nuit Debout Grenoble"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.733103752136231,
+          45.172991618195184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit debout Guadeloupe à partir de 17h l'Esplanade du CROUS à Pointe à Pitre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.5278846025467,
+          16.223410546973405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Guéret"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.8731689453125002,
+          46.16841886922939
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Guichen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.795921325683594,
+          47.96578990089398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Hénin-Beaumont"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.9608154296875004,
+          50.41989391200378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Héricourt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.764831542968751,
+          47.57467282332527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Hossegor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.4326858520507815,
+          43.66936165585671
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Issoire"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.2492065429687504,
+          45.54290788814744
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Istres"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.993286132812501,
+          43.509717009288075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout L e Vigan",
+        "description": "http://nuitdebout.languedoc-cevennes.info/index.php?lng=fr&tconfig=0\nhttps://www.facebook.com/groups/487901848071009/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.6029148101806645,
+          43.99049887129568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout L'Argentière-la-Bessée",
+        "description": "https://www.facebook.com/events/1536504973310951/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.554374694824219,
+          44.788657917188125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout L'isle-Jourdain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.0811233520507815,
+          43.61321105671261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout La Bastide-de-Sérou"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.430625915527344,
+          43.012429847368345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout La Cadière-d'Azur"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.754089355468751,
+          43.19591585398981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "NUIT DEBOUT LA COTE ST ANDRE Samedi 16 avril"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.026245117187501,
+          45.21687321093267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout La Haye-du-Puits"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5439224243164065,
+          49.29087387861394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout La Possession samedi 47 mars à 17h devant la mairie",
+        "description": "Nuit Debout La Possession samedi 47 mars à 17h devant la mairie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.335972905159004,
+          -20.926439794927123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout La Verrière",
+        "description": "https://www.facebook.com/events/947603568693944/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.951103210449219,
+          48.750077196546826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Lac De Jouarres"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.7091598510742188,
+          43.27045617360653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Lac De Jouarres"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.7091598510742188,
+          43.27045617360653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Landernau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.251708984375001,
+          48.44742209577055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Lannion",
+        "description": "Dès le vendredi 22 mars, 18 h, devant la mairie. https://www.facebook.com/events/1720546664881749/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.458907008171082,
+          48.73226877800483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Le Beausset"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8014678955078125,
+          43.19841868534828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Le Castellet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7769203186035165,
+          43.2030486527286
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Le Teil (07)",
+        "description": "assemblées les mardi de 19h00 à 22h00 à côté de l'office du tourisme\nsite web: http://nuitdebout-le-teil.tumblr.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.684638977050782,
+          44.54742015866829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout les Sables d'Olonne",
+        "description": "Rassemblements les jeudis à 18h sur la grande plage au niveau de la pendule.      https://www.facebook.com/Nuit-Debout-Les-Sables-dOlonne-977770265607812/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.7825558781623843,
+          46.49441873499059
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Les Vans"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.134292602539063,
+          44.405825714112936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Lisieux"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.23071289062500003,
+          49.14219020768315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Longwy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7733154296875,
+          49.512726846153946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Lons le Saunier",
+        "description": "Chaque mercredi et dimanche à partir de 18h\nPlace de la Liberté"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.552306771278381,
+          46.67399259655464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit debout Malakoff",
+        "description": "Samedi 23 avril à 19h\n\nhttps://www.facebook.com/events/1592816491034669/1592817594367892/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3019146919250493,
+          48.82126190994536
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit debout malakoff",
+        "description": "Place Rosa Parks"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.529245376586914,
+          47.21481682407859
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Marais"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.3423919677734377,
+          49.38483128912196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Marennes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1085891723632815,
+          45.82473221210428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Maubeuge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.9743041992187504,
+          50.275298611425185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Mayenne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.61798095703125,
+          48.303293762253965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Melle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.14007568359375003,
+          46.219752144776876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Melun",
+        "description": "vendredi 29 avril à partir de 18 heures sur la place de l'Ermitage, près de la gare de Melun"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.653659582138062,
+          48.52683712582127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Mende"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.50189208984375,
+          44.51805165000559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Méréville"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.083969116210938,
+          48.314482860683654
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Millau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.0813431739807133,
+          44.100160335201814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit debout Mirepoix"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.8738555908203127,
+          43.08945063454082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Moissac"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.0869598388671877,
+          44.10533762552551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Monestier-de-Clermont"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.635986328125001,
+          44.91765307263093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Monistrol-Sur-Loire"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.173431396484376,
+          45.29227885197089
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Mont-De-Marsan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.49987792968750006,
+          43.887995955026405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Montargis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.7328491210937504,
+          47.995435916095225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Montauban"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3561248779296877,
+          44.017508923418916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Montbrison",
+        "description": "Les vendredis, place de la mairie, à partir de 18h !\nQu'on se le dise !\nhttps://www.facebook.com/profile.php?id=100011795833855 "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.063267707824708,
+          45.60749293547405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_storage_options": {
+          "popupTemplate": "Default"
+        },
+        "name": "Nuit Debout Montluçon",
+        "description": "facebook : \nhttps://www.facebook.com/NuitDeboutMontlucon/ \nPremière Nuit Debout :\nhttps://www.facebook.com/events/224140101289190/\nRadio-Debout-Montluçon :\nhttp://mixlr.com/radio-debout-montlu%C3%A7on/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6070320606231694,
+          46.33971368216453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Montreuil",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4389648437500004,
+          48.86110101269274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "https://www.facebook.com/Nuit-debout-Morlaix-188878344837420/?fref=nf\nhttps://twitter.com/MorlaixN\nRadio : http://mixlr.com/nuit-debout-morlaix/",
+        "name": "Nuit Debout Morlaix"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.8287353515625004,
+          48.57842428752037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Moulins"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.3357238769531254,
+          46.56169309108066
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "https://www.facebook.com/events/1731641303718533/1731729113709752",
+        "name": "Nuit Debout Mulhouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.34264373779297,
+          47.74509519579378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Nanterre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.209281921386719,
+          48.894066800857466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Nérac"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.341949462890625,
+          44.13417422873266
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "NUIT DEBOUT NEULISE",
+        "description": "https://www.facebook.com/Nuit-debout-Neulise-948708938578334/?fref=ts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.179954528808595,
+          45.90195515801997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit debout NIORT",
+        "description": "Vendredi 6Mai\n, 20h00, Place des Halles- 18H repas partagé même endroit."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.42846679687500006,
+          46.33175800051563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit debout NIORT",
+        "description": "Tous les vendredis, 18 heures, place des Halles\n\nhttps://twitter.com/NuitDeboutNiort\n\nhttps://www.facebook.com/nuitdeboutniort\n\nhttps://wiki.nuitdebout.fr/wiki/Villes/Niort"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.42846679687500006,
+          46.33175800051563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Nogent-Le-Routrou"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.81298828125,
+          48.32338671633094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Noisy-Le-Sec",
+        "description": "https://www.facebook.com/events/513403468843140/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.454586029052735,
+          48.890568039056824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Olonzac"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.7290725708007812,
+          43.28445357383563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Orly"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.394676208496094,
+          48.742380092597315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Pamiers"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.6122436523437502,
+          43.113014204188914
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Paris 13ème",
+        "description": "https://www.facebook.com/Nuit-Debout-Paris-13-2038462622868298/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3620390892028813,
+          48.83362234192195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Parthenay",
+        "description": "https://www.facebook.com/nuitdeboutparthenay/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.24993896484375003,
+          46.64755071082884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Nuit Debout Pau les mardi et vendredi\nPlace Clémenceau  - 19h\nhttps://www.facebook.com/NuitDeboutPau\nhttps://twitter.com/NuitDeboutPau",
+        "name": "Nuit Debout Pau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.37628173828125006,
+          43.28320393686986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Périgueux",
+        "description": "mardi 3 mai 2016 à 20h :\nNUIT DE BOUT SPÉCIALE SOUTIEN AU QUARTIER DE SALTGOURDE\n\nQuartier SALTGOURDE\nGour de L'ARCHE\nChemin de Saltgourde\nAu pied des HLM\n\nPour soutenir les habitants du quartier de Saltgourde contre la démolition des HLM, la Nuit Debout se déplace exceptionnellement dans le quartier du Gour de l'Arche mardi 3 mai. \n\nhttps://dordogne.demosphere.eu/rv/64"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.72235107421875,
+          45.18978009667531
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Place des Fêtes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.393560409545899,
+          48.87690923865779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Plombières-Les-Bains"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.454124450683595,
+          47.964180715412276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Prades ",
+        "description": "https://www.facebook.com/events/1771455193140755/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4224853515625004,
+          42.61577022637093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Pussay"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9960784912109377,
+          48.34940446125667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "https://www.facebook.com/nuitdeboutquimper/\n\nMail : <nuitdeboutquimper@lists.riseup.net>, et inscrivez vous sur la liste de diffusion https://lists.riseup.net/www/subscribe/nuitdeboutquimper\n\nhttps://wiki.nuitdebout.fr/wiki/Villes/Quimper",
+        "name": "Nuit debout Quimper"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.102495014667512,
+          47.99603182175129
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Rive-de-Gier"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.619750976562501,
+          45.533288879467456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Rodez",
+        "description": "https://www.facebook.com/nuitdeboutrodez/\n\nhttps://twitter.com/NuitDeboutRodez"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5735473632812504,
+          44.35331432151491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Rognac"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.234985351562501,
+          43.487303079190156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Romainville"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4350166320800786,
+          48.88503723876435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Romans-Sur-Isère"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.048217773437501,
+          45.04053733158769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Royan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0272216796875002,
+          45.61980072095504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Saint-Brieuc",
+        "description": "https://www.facebook.com/nuitdebout22",
+        "_storage_options": {
+          "popupTemplate": "SimplePanel"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7641290426254277,
+          48.51446515302268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Saint-Dizier"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.952087402343751,
+          48.636538782610494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Saint-Omer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2549438476562504,
+          50.75035931136963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Saint-Paul jeudi 45 mars au débarcadère "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.26539862155915,
+          -21.01060387792134
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Saint-Pierre mercredi 44 mars",
+        "description": "Nuit Debout Saint-Pierre mercredi 44 mars"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.47736823558808,
+          -21.340873247780895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout SAINTES",
+        "description": "à Saintes, le 15 et 16 Avril 2016\nPlace Bassompierre à 18H30\n\nhttps://www.facebook.com/Nuit-Debout-Saintes-1723648107912747/\n\nhttps://www.facebook.com/NuitDeboutSaintes\n\nhttps://twitter.com/DeboutSaintes\n\nON SE RASSEMBLE, ON NE RENTRE PAS CHEZ NOUS!\n\nIl y a un besoin très fort de s'exprimer.\n\nOn se réunit à partir de 18H30 place Bassompierre de Saintes.\n\nQui ? hommes et femmes de toutes origines, de toutes convictions, jeunes, vieux, intermittents, chômeurs, précaires, agriculteurs, fonctionnaires, salariés, syndicalistes ou incertains.\n\nA SAINTES et dans les autres villes de l'Hexagone.\n\nComment ? Avec ses idées, sa tchatche, ses expériences.\nPourquoi ? Si le projet de loi Travail mobilise tant c’est parce qu’en poussant toujours plus loin l’injustice, il fait craquer la digue de ce que nous pouvions supporter. Nos gouvernants sont murés dans l’obsession de perpétuer un système à bout de souffle, au prix de « réformes » de plus en plus rétrogrades et toujours conformes à la logique du néolibéralisme à l’œuvre depuis 30 ans.\nLes scandales se succèdent mais rien n'est ne change.\n#panamapapers ...ect\n\nNous invitons tous ceux qui, au-delà de leur opposition à la destruction du Code du Travail, aspirent à construire un projet de société ambitieux, émancipateur, éco-responsable et pacifique, à nous rejoindre.\n\nNOUS SERONS SUR LA PLACE BASSOMPIERRE DE SAINTES.\n\nPacifiques, solidaires, conscients.\nCampons sur nos droits, nous sommes l'alternative.\n\nVenez partager dans la bonne humeur et la convivialité un moment de partage et de réflexion pour s'engager"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6286185979843141,
+          45.74605435112975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Salon-De-Provence"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.100402832031251,
+          43.63905678866053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "NUIT DEBOUT SARLAT",
+        "description": "https://www.facebook.com/nuitdeboutsarlat/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2167787551879885,
+          44.89013656151496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Saverne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.363586425781251,
+          48.739889600673365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Sens"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.2876586914062504,
+          48.19904897935915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Sète-Thau",
+        "description": "Mardis et Jeudis à 18h00 place Aristide Briand\n\nhttps://www.facebook.com/groups/1712610099019569/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.6953464150428776,
+          43.40411601990367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Sisteron"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.940856933593751,
+          44.19598988458207
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Soissons"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.3261108398437504,
+          49.378796564350424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Sorgues"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.873809814453126,
+          44.004669106432225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout St-Amand-en-Puisaye"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.0730819702148438,
+          47.53018378265907
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout St-Avold 4 mai 2016",
+        "description": "place du marché à partir de 18h"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.708869934082032,
+          49.10589761083024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout St-Cyr-sur-Mer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.700531005859375,
+          43.1811470593997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout St-Girons"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.1480712890625002,
+          42.982548873720326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout St-Symphorien-sur-Coise"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.455299377441407,
+          45.63108548642421
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Tarbes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.06591796875000001,
+          43.22719386727831
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Tonnerre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.9732742309570317,
+          47.85671180394351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Toulouse",
+        "description": "https://www.facebook.com/NuitDeboutToulouse/?fref=ts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4392089843750002,
+          43.58834891179792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Vaulx-en-Velin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.92015838623047,
+          45.77853851177791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Verdun",
+        "description": "https://www.facebook.com/events/480646522122841/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.39703369140625,
+          49.154766002922024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Vichy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.4222412109375004,
+          46.12274903582433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Vienne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.872436523437501,
+          45.51404592560427
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Vierzon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0681762695312504,
+          47.22143353240336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Villefranche-Sur-Saône"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.724121093750001,
+          45.98646639778119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Villejuif"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3661804199218754,
+          48.79985349504944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Villemur"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.5013504028320312,
+          43.86374273605405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Villeneuve-Sur-Lot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.7113647460937501,
+          44.40042951858466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Vitry-Sur-Seine"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.398452758789063,
+          48.783568502957735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "NuitDebout à Cazères",
+        "description": "Vendredi #46mars / 15 avril\nPlace de l'Hôtel de ville\n31220 Cazères\nhttp://comminges.demosphere.eu/rv/612\nhttps://listes.tila.im/mailman/listinfo/nuitdebout-cazeres"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.086552143096924,
+          43.205852271288514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "NuitDebout à St-Go",
+        "description": "Mardi #50mars / 19 avril\nPlace Jean Jaurès\n31800 St-Gaudens\nhttp://comminges.demosphere.eu/rv/611"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.7247650623321534,
+          43.107770371160555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "NuitDebout Epinal",
+        "description": "Jeudi 21 avril  dés  18h \nvendredi 22 avril dés 18h\nsamedi 23  dés  14h  \ndimanche 24  dés  14h\nPlace Des Vosges, 88000, Epinal\nhttps://wiki.nuitdebout.fr/wiki/Villes/Epinal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4500944316387185,
+          48.174610011977194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "https://www.facebook.com/events/132813073780216/\n\nLa Nuit Rouge \"Manif A Guingamp Le 31 Mars",
+        "name": "NuitDebout Guingamp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1498682498931885,
+          48.563217792345256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pantin Debout, mardi 19 avril à partir de 18h, Place Olympe de Gouges (métro Hoche)",
+        "description": "https://www.facebook.com/events/514766912043980/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3991394042968754,
+          48.901740646573025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Place des Arts - Cergy Préfecture - Vendredi 18h.",
+        "description": "Place des Arts - Cergy Préfecture - Vendredi 18h.",
+        "_storage_options": {
+          "popupTemplate": "Default",
+          "iconClass": "Circle"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0571899414062504,
+          49.04867006939826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Nuit debout 3 : 28/04/16 à 20h, place de la mairie de Port-Sainte-Foy--et-Ponchapt\nNuit debout 4 : 03/05/16 à 19h30, place de la mairie de Port-Sainte-Foy--et-Ponchapt\nhttps://wiki.nuitdebout.fr/wiki/Villes/Sainte-Foy-la-Grande",
+        "name": "Port-Sainte-Foy-et-Ponchapt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2107357978820801,
+          44.84409810439232
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Prochaine Nuit Debout à Chaumont : Vendredi 6 mai 18h à La Rochotte",
+        "description": "https://www.facebook.com/Nuit-Debout-Chaumont-52-1000364760040977/?ref=aymt_homepage_panel\n"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.136108398437501,
+          48.116600329117695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Tous les vendredis dès 19h !\n\nhttps://www.facebook.com/Nuit-Debout-Rambouillet-698861506918974/",
+        "name": "Rambouillet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.831128001213074,
+          48.643848015068805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Reims Nuit Debout 20 Avril #51Mars",
+        "description": "https://www.facebook.com/events/1544159849218448/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.034149646759034,
+          49.255495562851046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saint Antonin",
+        "description": "VENDREDI 6 mai à 18 H 00\nNUIT DEBOUT\nASSEMBLÉE POPULAIRE\nPLACE DE LA HALLE\nAUBERGE ESPAGNOLE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.7555809020996094,
+          44.15228233286374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saint Lô",
+        "description": "14/04 : contact via saintlonuitdebout@ml.free.fr "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0915088653564455,
+          49.11566671598612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sainte-Foy-la-Grande",
+        "description": "Nuit debout 1 : 16/04/2016 19h place de la mairie à Sainte- Foy- La- Grande\nNuit debout 2 : 22/04/16 19h30, place de la mairie à Sainte- Foy- La- Grande\nNuit debout 3 : 28/04/16 à 20h, place de la mairie de Port-Sainte-Foy--et-Ponchapt\nNuit debout 4 : 03/05/16 à 19h30, place de la mairie de Port-Sainte-Foy--et-Ponchapt\nhttps://wiki.nuitdebout.fr/wiki/Villes/Sainte-Foy-la-Grande\n"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2150782942771912,
+          44.84162195727789
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Samedi16 avril 20h30 parvis du théâtre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.0075073242187504,
+          43.1811470593997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sauternes Debout"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.33333,
+          44.533329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "soirée  debout du 14e arrondissement",
+        "description": " Le jeudi 21 avril 18h 22h\nParvis du RER Denfert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3333930969238286,
+          48.833763586380556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tahiti Nui Debout"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -149.57302093505862,
+          -17.543224855823098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Troyes a aussi sa #nuitdebout  devant la Mairie!!!! ",
+        "description": "Mercredi 37 Mars à partir de 18h jusqu'à pas d'heure! #onvautmieuxqueca !\nAmenez de quoi vous réchauffer le corps et l'esprit!"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.074680507183076,
+          48.29707376068128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Uzès Debout",
+        "description": "Dimanche 17 Avril 2016 à midi\n1ère Assemblée Généreuse + Picnic partagé  https://www.facebook.com/nuit.debout.uzes/ "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.41976547241211,
+          44.0143609562872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Tbilisi",
+        "_storage_options": {
+          "iconClass": "Circle",
+          "color": "Purple"
+        },
+        "description": "https://www.facebook.com/Nuit-Debout-Tbilisi-152898075112106/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.8187255859375,
+          41.693424216151314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "https://www.facebook.com/events/574963432665286/",
+        "name": "#ARKETA στην Θεσσαλονίκη"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.939453125,
+          40.63896734381725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#ARKETA στην Πάρο",
+        "description": "https://www.facebook.com/events/1023717981032169/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.14952898025513,
+          37.08661101839764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#ΑΡΚΕΤΑ στα Γιάννενα",
+        "description": "https://www.facebook.com/events/1025036087572274/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.852200984954838,
+          39.66316281645336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#ΑΡΚΕΤΑ στα Τρίκαλα",
+        "description": "https://www.facebook.com/events/176587639402850/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.767563819885257,
+          39.55484997154472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#ΑΡΚΕΤΑ στα Χανιά",
+        "description": "https://www.facebook.com/events/1016816871744872/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.029588699340824,
+          35.49869215916574
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#ΑΡΚΕΤΑ στη λαμία",
+        "description": "https://www.facebook.com/events/1623877524499559/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.43335247039795,
+          38.89960012536504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#ΑΡΚΕΤΑ στη Λάρισα",
+        "description": "https://www.facebook.com/events/977330465678707/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.416036128997806,
+          39.63834782770389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#ΑΡΚΕΤΑ στην Αθήνα",
+        "description": "https://www.facebook.com/events/596214647214624/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.752441406250004,
+          38.06539235133249
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#ΑΡΚΕΤΑ στην Καλαμάτα",
+        "description": "https://www.facebook.com/events/1024084084339146/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.112131118774414,
+          37.03657771329108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#ΑΡΚΕΤΑ στην Καρδίτσα",
+        "description": "https://www.facebook.com/events/1123223094386198/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.922745704650882,
+          39.365094065036885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#ΑΡΚΕΤΑ στην Κάρπαθο",
+        "description": "https://www.facebook.com/events/1598416060476202/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.211804389953613,
+          35.50845690890513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#ΑΡΚΕΤΑ στην Κόρινθο",
+        "description": "https://www.facebook.com/events/264347667248719/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.93251156806946,
+          37.938376193452605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#ΑΡΚΕΤΑ στην Ξάνθη",
+        "description": "https://www.facebook.com/events/1038263636281186/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.887691736221317,
+          41.13951001647584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#ΑΡΚΕΤΑ στην Πάτρα",
+        "description": "https://www.facebook.com/events/219466798425824/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.743091344833374,
+          38.25317846640115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#ΑΡΚΕΤΑ στην Πτολεμαϊδα",
+        "description": "https://www.facebook.com/events/1065144800213675/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.679544448852543,
+          40.51340763745765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#ΑΡΚΕΤΑ στην Ρόδο",
+        "description": "https://www.facebook.com/events/958991037547839/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.224295377731327,
+          36.44732446387866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#ΑΡΚΕΤΑ στην Σητεία",
+        "description": "https://www.facebook.com/events/223230778039342/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.106905937194828,
+          35.20653077156228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#ΑΡΚΕΤΑ στην Τήνο",
+        "description": "https://www.facebook.com/events/961336593964199/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.16421139240265,
+          37.53675077012229
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#ΑΡΚΕΤΑ στις Σέρρες",
+        "description": "https://www.facebook.com/events/167355323659767/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.54657649993897,
+          41.0868234816692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#ΑΡΚΕΤΑ στο Αγρίνιο.",
+        "description": "https://www.facebook.com/events/463559883842252/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.409585475921634,
+          38.624783422509864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#ΑΡΚΕΤΑ στο Αργοστόλι Κεφαλονιάς",
+        "description": "https://www.facebook.com/events/1031003590309955/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.48730254173279,
+          38.17960640222491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#ΑΡΚΕΤΑ στο Ηράκλειο",
+        "description": "https://www.facebook.com/events/606181686198440/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.136107206344608,
+          35.337533782800975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#ΑΡΚΕΤΑ στο Ρέθυμνο",
+        "description": "https://www.facebook.com/events/859849260792522/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.47912693023682,
+          35.36674315509457
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#ΑΡΚΕΤΑ στον Βόλο",
+        "description": "https://www.facebook.com/events/1012214615494173/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.949967384338382,
+          39.357628454916494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Budapest"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.050292968750004,
+          47.502358951968596
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Dublin",
+        "description": "https://www.facebook.com/events/587633328071103/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.240234375,
+          53.350551318399916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#‎NUITDEBOUT‬ #76mars #GlobalDebout ",
+        "description": "Napoli, 15 Maggio.",
+        "_storage_options": {
+          "iconClass": "Circle"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.248645305633547,
+          40.847336296607644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Bologna"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.337890625,
+          44.49258696288604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Firenze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.271972656250002,
+          43.77109381775651
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Genova",
+        "description": "https://www.facebook.com/events/562899413834808/564255637032519/\nhttps://www.facebook.com/Alzati-che-ci-stiamo-alzando-Nuit-Debout-in-piazzetta-Rostagno-1594935910820315/?fref=ts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.931884765625002,
+          44.41808794374849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "nuitdebout.messina@gmail.com\nhttps://www.facebook.com/NuitDeboutMessina/\n\n",
+        "name": "Nuit Debout Messina"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.562133789062502,
+          38.199338565983844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Milano"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.228515625000002,
+          45.48324350868221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Padova",
+        "description": "https://www.facebook.com/Nuit-Debout-Padova-276410936035067/?fref=ts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.881713867187502,
+          45.40230699238177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Roma",
+        "description": "https://www.facebook.com/events/1713177865619501/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.502441406250002,
+          41.87774145109676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Torino",
+        "description": "https://www.facebook.com/NuitDeboutTorino/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.684936523437501,
+          45.06964120886865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.129523515701294,
+          49.61125219455235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Esch-sur-Alzette (Projet)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.97381591796875,
+          49.49489061140408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Kuala Lumpur"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.6455078125,
+          3.052753821574483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDeboutCasablanca"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.514648437500001,
+          33.5963189611327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Mexico"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.09667968750001,
+          19.394067895396613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.116882324218751,
+          52.101444087734635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#NuitDebout Amsterdam",
+        "description": "https://www.facebook.com/NuitDeboutAmsterdam"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.889084,
+          52.368766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Alkmaar ",
+        "description": "https://www.facebook.com/events/888280484613756/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.757080078125001,
+          52.633062890594374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Amersfoort ",
+        "description": "https://www.facebook.com/events/1004022439682732/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.386047363281251,
+          52.15708463620445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Breda",
+        "description": "https://www.facebook.com/events/769202239848321/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.784545898437501,
+          51.590722643120166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Den Bosch",
+        "description": "https://www.facebook.com/events/1604683473190895/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.303649902343751,
+          51.68958500811337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Den Haag"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.309387207031251,
+          52.07950600379697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Deventer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.16058349609375,
+          52.251346020673665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Groningen",
+        "description": "https://www.facebook.com/events/1619980594889253/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.575317382812501,
+          53.22247975316637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Maastricht",
+        "description": "Nuit Debout Maastricht"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.690368618816138,
+          50.84583876895451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Meppel",
+        "description": "https://www.facebook.com/groups/1693622007557431/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.19903564453125,
+          52.69469651093013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Rotterdam",
+        "description": "https://www.facebook.com/events/866119543531411/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.473677873611451,
+          51.9217466978735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Sittard"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.868072509765626,
+          50.99906460644636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Tilburg",
+        "description": "https://www.facebook.com/events/1721179598166181/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.083923339843751,
+          51.55999738544502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Vlissingen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.5760498046875004,
+          51.45571839040817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Zwolle",
+        "description": "https://www.facebook.com/Nuit-Debout-Zwolle-598284113680472/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.097412109375001,
+          52.506191342034576
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rossio - LISBOA / CONCENTRAÇÃO SOLIDÁRIA - Assembleia Popular ‪#‎NUITDEBOUT‬ 16/04 – 18h –   https://www.facebook.com/events/1009359972477953/ "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.140625000000002,
+          38.71980474264239
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "#nuitdebout #Montreal",
+        "description": "twitter : @NuitDeboutMtl_\n\nhttps://www.facebook.com/Nuit-Debout-Montr%C3%A9al-1263894720291898/?fref=ts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.59329223632814,
+          45.51500822962096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "https://www.facebook.com/Nuit-debout-Gatineau-Ottawa-850829848355141/",
+        "name": "Nuit debout Gatineau - Ottawa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.706787109375,
+          45.43170808198972
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Québec (ville)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.26281738281251,
+          46.81885778879603
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Sept-Iles"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.40136718750001,
+          50.24720490139267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Sherbrooke"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.88354492187501,
+          45.39844997630411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Trois-Rivières"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.57568359375001,
+          46.34692761055676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Bucharest https://www.facebook.com/NuitDeboutBucharest/?fref=ts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.125488281250004,
+          44.4808302785626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_storage_options": {
+          "iconClass": "Circle"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.93457031250001,
+          55.00282580979323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.810546875000002,
+          59.91097597079679
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Basel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.602539062500001,
+          47.54687159892238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Bern"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.448730468750001,
+          46.9465122958623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Fribourg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.149353027343751,
+          46.800059446787316
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Genève"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1248779296875,
+          46.20264638061019
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Neuchâtel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.9268798828125,
+          46.991494313050424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Pôle Sud",
+        "description": "Power to the pingouins"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.96658,
+          -68.576766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Zürich"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.536376953125002,
+          47.35371061951363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Suède ",
+        "description": "Malmö "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.997554056346418,
+          55.6091265377416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Bonjour les gens. Un petit mot pour vous dire qu'à l'étranger, les Expatriés Francophones sont avec vous. Nous-nous organisons de notre coté afin que le Monde sache que la France et les Français bougent. Il y a effectivement \"Un Truc\" et ce \"Truc\", n'ayons pas peur des mots, c'est la deuxième Révolution Française. Le Monde entier a le regard sur vous. Une fois de plus, la France sera le porte drapeau pour le renouveau. Ne fléchissez-pas! Continuez! Nous sommes avec vous!",
+        "name": "Les Expatriés Francophones sont avec vous !",
+        "_storage_options": {
+          "iconClass": "Circle"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6618118286133,
+          24.150865358013665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Burlington"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.20190429687501,
+          44.465151013519645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Chicago",
+        "description": "NuitDeboutChicago@gmail.com\nhttps://twitter.com/NuitDeboutCHI"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.61596679687501,
+          41.84501267270692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Las Vegas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.13671875,
+          36.15561783381855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Los Angeles"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.34472656250001,
+          34.016241889667036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout New York City",
+        "description": "https://www.facebook.com/Nuit-Debout-New-York-City-260717514268727/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.74023437500001,
+          40.713955826286046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout San Diego"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.1087646484375,
+          32.74570253945518
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout San Francisco",
+        "description": "https://www.facebook.com/events/583032545206856/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.40966796875001,
+          37.71859032558816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Torrington"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.11126708984376,
+          41.79179268262892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuit Debout Washington"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.99218750000001,
+          38.92522904714054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_storage_options": {
+          "iconClass": "Circle",
+          "popupTemplate": "Default"
+        },
+        "name": "Nuit Debout Panama"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.84863281250001,
+          9.058702156392139
+        ]
+      }
+    }
+  ]
+}
