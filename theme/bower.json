@@ -13,6 +13,11 @@
     "video.js": "videojs#^5.10.1"
   },
   "overrides": {
+    "video.js": {
+      "main": [
+        "dist/video.js"
+      ]
+    },
     "bootstrap-sass": {
       "main": [
         "./assets/stylesheets/_bootstrap.scss",
