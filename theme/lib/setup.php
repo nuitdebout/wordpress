@@ -146,6 +146,11 @@ function assets() {
   wp_enqueue_script('underscore');
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
 
+  if ( is_home() ) {
+  wp_enqueue_script('videojs-contrib-hls', Assets\asset_path('scripts/videojs-contrib-hls.js'), ['jquery'], null, true);
+  wp_enqueue_script('nuitdebout/tvdeboutjs', Assets\asset_path('scripts/tvdebout.js'), ['jquery', 'videojs-contrib-hls'], null, true);
+  }
+
   if (is_page_template('page-periscope.php')) {
 	  wp_enqueue_script('nuidebout/periscope', Assets\asset_path('scripts/periscope.js'), ['jquery'], null, true);
   }

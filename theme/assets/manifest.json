@@ -11,6 +11,16 @@
         "scripts/periscope.js"
       ]
     },
+    "videojs-contrib-hls.js": {
+      "files": [
+        "scripts/videojs-contrib-hls.js"
+      ]
+    },
+    "tvdebout.js": {
+      "files": [
+        "scripts/tvdebout.js"
+      ]
+    },
     "main.css": {
       "files": [
         "styles/main.scss"
