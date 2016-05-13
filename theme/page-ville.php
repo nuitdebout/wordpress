@@ -9,44 +9,64 @@
 ?>
 <?php while (have_posts()) : the_post(); ?>
 
+<?php $fields = get_fields($post->ID); ?>
+
 <?php get_template_part('templates/module', 'screen') ?>
 
-<section class="section">
-	<div class="section__content">
-		<div class="post city-post">
-			<?php the_content(); ?>
-			<?php edit_post_link('edit', '<p>', '</p>') ?>
+<?php $button_labels = [
+	'city_official_website' => 'Site web officiel',
+	'facebook_page_url' => 'Page Facebook',
+	'twitter_page_url' => 'Compte Twitter',
+]?>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-9">
+			<section class="padded">
+				<div class="post"><?php the_content(); ?></div>
+			</section>
+		</div>
+		<div class="col-md-3">
+			<section class="padded">
+
+				<?php if (isset($fields['city_gathering_details'])) : ?>
+				<h3>Rendez-vous</h3>
+				<p><?php echo $fields['city_gathering_details'] ?></p>
+				<?php endif; ?>
+
+				<h3>Réseaux</h3>
+				<?php foreach ($button_labels as $field_name => $label) : ?>
+				<?php if (isset($fields[$field_name])) : ?>
+				<p><a class="btn btn-primary" target="_blank" href="<?php echo $fields[$field_name] ?>"><?php echo $label ?></a></p>
+				<?php endif; ?>
+				<?php endforeach; ?>
+				<!-- Chat -->
+				<?php if (isset($fields['chat_page_url'])) : ?>
+				<p><a class="btn btn-primary" target="_blank" href="<?php echo $fields['chat_page_url'] ?>"><?php echo $post->post_title ?> sur chat.nuitdebout.fr</a></p>
+				<?php endif; ?>
+
+				<h3>Outils</h3>
+				<!-- Wiki -->
+				<p>Le Wiki est à votre disposition pour créer des pages de manière ouverte et collaborative.</p>
+				<p><a class="btn btn-primary" target="_blank" href="<?php echo $fields['wiki_page_url'] ?>"><?php echo $post->post_title ?> sur wiki.nuitdebout.fr</a></p>
+
+				<?php if (isset($fields['city_external_links']) && !empty($fields['city_external_links'])) : ?>
+				<h3>Liens</h3>
+				<?php $links = explode(PHP_EOL, $fields['city_external_links']) ?>
+				<ul class="list-unstyled">
+				<?php foreach ($links as $link) : ?>
+					<li><a target="_blank" href="<?php echo $link ?>"><?php echo substr($link, 0, 32) ?></a></li>
+				<?php endforeach; ?>
+				</ul>
+				<?php endif; ?>
+
+				<?php if (!isset($fields['city_official_website'])) : ?>
+				<hr>
+				<p>Vous avez déjà un site web pour votre ville, vous avez besoin d'un site web pour votre ville ? <a href="/contact/">Contactez-nous.</a></p>
+				<?php endif; ?>
+			</section>
 		</div>
 	</div>
-</section>
-
-<?php get_template_part('templates/module', 'home-social') ?>
-
-<section class="section">
-	<h2 class="section__title">Contribuez</h2>
-	<div class="section__content section__content--center ">
-		<p>Vous voulez compléter cette page, ajouter des liens ?</p>
-		<p>Cette page sera automatiquement synchronisée (plusieurs fois par jour)</p>
-
-	</div>
-	<div class="section__actions-container">
-		<a class="primary-button" href="https://wiki.nuitdebout.fr/wiki/Villes/<?php echo get_the_title(); ?>">
-			Venez sur le wiki
-		</a>
-	</div>
-</section>
-
-<section class="section section--gray">
-	<h2 class="section__title">Activez le site de votre ville</h2>
-	<div class="section__content section__content--center ">
-		<p>Pour déployer un site de votre ville debout et le gérer comme vous le souhaitez :</p>
-	</div>
-	<div class="section__actions-container">
-		<a class="primary-button" href="<?php echo get_bloginfo('home').'/demande-de-creation-dun-site-pour-sa-ville/' ?>">(bientôt)</a>
-	</div>
-	<div class="section__content section__content--center ">
-		<p>Vous avez déja un site ? <a href="<?php echo get_bloginfo('home').'/contact/' ?>">Envoyez-nous</a> le lien</p>
-	</div>
-</section>
+</div>
 
 <?php endwhile; ?>

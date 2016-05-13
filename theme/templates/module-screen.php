@@ -12,22 +12,6 @@
 				<?php elseif (is_page()) : ?>
 					<h2 class="CommuneFont  CommuneFont-page_title"><?php echo get_the_title() ?></h2>
 				<?php endif ?>
-				<?php if (is_page_template('page-ville.php')) : ?>
-					<?php
-					$chat_url = 'https://chat.nuitdebout.fr/';
-					$wiki_url = 'https://wiki.nuitdebout.fr/';
-					if (get_field('chat_page_url')) {
-						$chat_url = get_field('chat_page_url');
-					}
-					if (get_field('wiki_page_url')) {
-						$wiki_url = get_field('wiki_page_url');
-					}
-					?>
-					<div class="ville-screen_btns">
-						<a class="primary-button space-right-btn" href="<?php echo $wiki_url ?>">Aller sur le wiki</a>
-						<a class="primary-button " href="<?php echo $chat_url ?>">Aller sur le chat</a>
-					</div>
-				<?php endif ?>
 			</div>
 		</div>
 	</div>

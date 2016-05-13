@@ -5,7 +5,7 @@
   	  <?php wp_head(); ?>
 	  <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/favicon.ico" />
 	  <?php
-	  $url = get_bloginfo('home');
+	  $url = get_bloginfo('url');
 	  $thumb = get_stylesheet_directory_uri().'/dist/images/nuitdebout-thumb.png';
 	  $suffix = ' - nuitdebout.fr';
 	  $title = get_bloginfo('name');
