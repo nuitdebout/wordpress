@@ -5,6 +5,21 @@
   &-logo {
     width: 50px;
   }
+  &-bloginfo {
+    position: relative;
+    font-weight: bold;
+    font-family: Roboto;
+    color: #111 !important;
+    &:before {
+      content: '//';
+      font-size: 25px;
+      position: absolute;
+      left: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+      vertical-align: middle;
+    }
+  }
 }
 
 nav ul li {
