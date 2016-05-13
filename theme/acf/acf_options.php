@@ -1,81 +1,5 @@
 <?php
 
-function get_extra_social_array() {
-
-	$sc = array(
-		'wiki'=> array(
-			'name'=>'Wiki',
-			'icon' => 'ic-wiki'
-		),
-		'chat'=> array(
-			'name'=>'chat',
-			'icon' => 'ic-chat'
-		)
-
-	);
-	return $sc;
-}
-
-function get_social_array($include_only = NULL) {
-	$sc = array(
-		'twitter'=> array(
-			'name'=>'Twitter',
-			'icon' => 'ic-twitter'
-		),
-		'facebook' => array(
-			'name'=>'Facebook',
-			'icon' => 'ic-facebook'
-		),
-		'bambuser'=> array(
-			'name'=>'Bambuser',
-			'icon' => 'ic-bambuser'
-		),
-		'youtube'=> array(
-			'name'=>'Youtube',
-			'icon' => 'ic-youtube'
-		),
-
-		'instagram'=> array(
-			'name'=>'Instagram',
-			'icon' => 'ic-instagram'
-		),
-		'tumblr'=> array(
-			'name'=>'Tumblr',
-			'icon' => 'ic-tumblr'
-		),
-		'periscope'=> array(
-			'name'=>'Periscope',
-			'icon' => 'ic-periscope'
-		),
-		'snapchat'=> array(
-			'name'=>'Snapchat',
-			'icon' => 'ic-snapchat'
-		),
-		'scoopit'=> array(
-			'name'=>'Scoopit',
-			'icon' => 'ic-scoopit'
-		),
-		'github'=> array(
-			'name'=>'Github',
-			'icon' => 'ic-github'
-		),
-		'reddit'=> array(
-			'name'=>'Reddit',
-			'icon' => 'ic-reddit'
-		),
-
-		'nuitdebout'=> array(
-			'icon' => '',
-			'name' => 'est partout',
-			'image' => 'logowhite.svg'
-		),
-	);
-	if ($include_only) {
-		return array_filter($sc, function($key) use ($include_only) { return in_array($key, $include_only);  }, ARRAY_FILTER_USE_KEY);
-	}
-	return $sc;
-}
-
 if(function_exists("register_field_group"))
 {
 	register_field_group(array (
@@ -583,8 +507,6 @@ if(function_exists("register_field_group"))
 		'menu_order' => 0,
 	));
 
-
-
 	register_field_group(array (
 		'id' => 'acf_social-page',
 		'title' => 'social page',
@@ -695,17 +617,6 @@ if(function_exists("register_field_group"))
 				'type' => 'text',
 				'instructions' => 'url',
 				'default_value' => 'http://wiki.nuitdebout.fr',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_4sdesdf45658',
-				'label' => 'agendaID',
-				'name' => 'agenda_page',
-				'type' => 'text',
 				'placeholder' => '',
 				'prepend' => '',
 				'append' => '',
@@ -873,13 +784,4 @@ if(function_exists("register_field_group"))
 		),
 		'menu_order' => 0,
 	));
-
-
-
-
-
-
-
 }
-
-?>
