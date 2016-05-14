@@ -128,3 +128,9 @@
 .widget_rss {
 
 }
+
+.widget_polylang {
+  select {
+    @extend .form-control;
+  }
+}
