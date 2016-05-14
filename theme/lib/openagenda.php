@@ -25,16 +25,41 @@ class JsonApiClient extends GoutteClient
 
 	public function getEvents(array $params = [])
 	{
+		$events = [];
+
 		$get_params = ['oaq' => $params];
-		$query_string = http_build_query($get_params);
 
-		$url = "https://openagenda.com/agendas/{$this->agendaID}/events.json?{$query_string}";
-		$this->request('GET', $url);
+		$page = 1;
+		while (true) {
 
-		$content = $this->getResponse()->getContent();
-		$data = json_decode($content, true);
+			$get_params['page'] = $page;
+			$query_string = http_build_query($get_params);
 
-		return $data['events'];
+			$url = "https://openagenda.com/agendas/{$this->agendaID}/events.json?{$query_string}";
+			$this->request('GET', $url);
+
+			$content = $this->getResponse()->getContent();
+			$data = json_decode($content, true);
+
+			if (empty($data['events'])) {
+				break;
+			}
+
+			$events = array_merge($events, $data['events']);
+			$page++;
+		}
+
+		usort($events, function($a, $b) {
+			$date_a = new \DateTime($a['firstDateStart'].' '.$a['firstTimeStart']);
+			$date_b = new \DateTime($b['firstDateStart'].' '.$b['firstTimeStart']);
+			if ($date_a === $date_b) {
+				return 0;
+			}
+
+			return $date_a < $date_b ? -1 : 1;
+		});
+
+		return $events;
 	}
 }
 
@@ -48,7 +73,11 @@ function get_cities()
 		$cities[] = $city;
 	}
 
-	return array_values(array_unique($cities));
+	$cities = array_values(array_unique($cities));
+
+	sort($cities);
+
+	return $cities;
 }
 
 function get_events()
@@ -61,6 +90,11 @@ function filter_by_city(array $events, $city)
 	return array_filter($events, function($event) use ($city) {
 		return $event['city'] == $city;
 	});
+}
+
+function get_default_city()
+{
+	return 'Paris';
 }
 
 function get_dates()

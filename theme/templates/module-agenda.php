@@ -30,7 +30,7 @@ use NuitDebout\Wordress\OpenAgenda;
 			      	<label class="sr-only">Ville</label>
 			      	<select class="form-control nd-js-agenda-city">
 			     	<?php foreach (OpenAgenda\get_cities() as $city) : ?>
-						<option><?php echo $city ?></option>
+						<option <?php echo Openagenda\get_default_city() === $city ? 'selected="selected"' : '' ?>><?php echo $city ?></option>
 					<?php endforeach; ?>
 					</select>
 				</div>
