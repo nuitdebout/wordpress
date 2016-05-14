@@ -156,3 +156,40 @@ body.single-post{
   }
 
 }
+
+article.post.format-standard {
+  margin-bottom: 40px;
+  header {
+    display: table;
+    width: 100%;
+    .entry-meta,
+    .entry-title {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 15px;
+    }
+    .entry-meta {
+      width: 20%;
+      border-bottom: 4px solid $light-blue;
+    }
+    .entry-title {
+      font-family: 'Roboto';
+      font-weight: bold;
+      line-height: 1;
+      width: 80%;
+      border-bottom: 4px solid $gray-lighter;
+      > a {
+        color: $brand-primary;
+      }
+      > a:hover {
+        text-decoration: none;
+        color: lighten($brand-primary, 20%);
+      }
+    }
+  }
+  .entry-summary {
+    font-size: 16px;
+    border-bottom: 1px dashed $gray-lighter;
+    padding: 30px 0 15px;
+  }
+}
