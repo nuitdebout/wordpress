@@ -7,12 +7,16 @@
   }
   &-bloginfo {
     position: relative;
-    font-weight: bold;
-    font-family: Roboto;
+    font-family: 'CommuneB1San31';
+    letter-spacing: 1.1px;
+    line-height: 1 !important;
+    font-size: 32px !important;
+    $navbar-space: (($navbar-height - 32px) / 2);
+    padding: ($navbar-space + 4px) $navbar-padding-horizontal ($navbar-space - 4px) !important;
     color: #111 !important;
     &:before {
+      padding-top: 4px;
       content: '//';
-      font-size: 25px;
       position: absolute;
       left: -10px;
       top: 50%;
