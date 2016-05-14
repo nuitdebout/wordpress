@@ -85,8 +85,8 @@ function widgets_init() {
   register_sidebar([
     'name'          => 'Bas de page', // TODO translate
     'id'            => 'homepage-bottom',
-    'before_widget' => '<div id="widget-homepage-bottom"><div class="container padded"><div class="row"><div class=" %1$s %2$s col-md-8 col-md-offset-2">',
-    'after_widget'  => '</div></div></div></div>',
+    'before_widget' => '<div class=" %1$s %2$s section__content">',
+    'after_widget'  => '</div>',
     'before_title'  => '<h2>',
     'after_title'   => '</h2>'
   ]);
@@ -164,3 +164,5 @@ function assets() {
   ]);
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
+
+add_filter('widget_text', 'do_shortcode');
