@@ -82,6 +82,52 @@ function widgets_init() {
   //   'before_title'  => '<h2 class="flex-widget__title">',
   //   'after_title'   => '</h2>'
   // ]);
+
+  // Two columns layout
+  register_sidebar([
+    'name'          => '[Deux colonnes] Première colonne', // TODO translate
+    'id'            => 'homepage-one-half',
+    'before_widget' => '<div class=" %1$s %2$s col-md-6"><div id="homepage-one-half">',
+    'after_widget'  => '</div></div>',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>'
+  ]);
+  register_sidebar([
+    'name'          => '[Deux colonnes] Seconde colonne', // TODO translate
+    'id'            => 'homepage-two-half',
+    'before_widget' => '<div class=" %1$s %2$s col-md-6"><div id="homepage-two-half">',
+    'after_widget'  => '</div></div>',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>'
+  ]);
+  //
+
+  // Three columns layout
+  register_sidebar([
+    'name'          => '[Trois colonnes] Première colonne', // TODO translate
+    'id'            => 'homepage-one-third',
+    'before_widget' => '<div class=" %1$s %2$s col-md-4"><div id="homepage-one-third">',
+    'after_widget'  => '</div></div>',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>'
+  ]);
+  register_sidebar([
+    'name'          => '[Trois colonnes] Seconde colonne', // TODO translate
+    'id'            => 'homepage-two-third',
+    'before_widget' => '<div class=" %1$s %2$s col-md-4"><div id="homepage-two-third">',
+    'after_widget'  => '</div></div>',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>'
+  ]);
+  register_sidebar([
+    'name'          => '[Trois colonnes] Troisième colonne', // TODO translate
+    'id'            => 'homepage-three-third',
+    'before_widget' => '<div class=" %1$s %2$s col-md-4"><div id="homepage-top-three-third">',
+    'after_widget'  => '</div></div>',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>'
+  ]);
+  //
   register_sidebar([
     'name'          => 'Bas de page', // TODO translate
     'id'            => 'homepage-bottom',
