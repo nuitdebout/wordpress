@@ -136,6 +136,7 @@ function ajax_action()
 
 	$events = filter_by_city($events, $city);
 
+	header('Cache-Control: max-age=300, must-revalidate'); # 5min cache
 	foreach ($events as $event) {
 		include locate_template('templates/module-oaevent.php');
 	}
