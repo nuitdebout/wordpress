@@ -206,11 +206,65 @@ function nuitdebout_getDate(element) {
           $('#current-actions').find('span:last-child').text(featuredEvents[0].text);
         }
 
-
-
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
+      }
+    },
+    'page_template_page_villes': {
+      init: function() {
+
+        var $container = $('.cities-container');
+        var $loader = $container.find('.loader');
+        var $details = $container.find('.nd-js-city-details');
+
+        var renderCity = function(city) {
+          $details.empty();
+          $loader.show();
+          var data = {
+            'action': 'cities_api_render_city_details',
+            'id': city.page_id
+          };
+          $.get(WP.ajaxURL, data).then(function(html) {
+            $loader.hide();
+            $details.html(html);
+          });
+        };
+
+        $container.find('.nd-js-city-search-form').on('submit', function(e) {
+          e.preventDefault();
+          return false;
+        });
+
+        $container.find('[data-page-id]').on('click', function(e) {
+          e.preventDefault();
+          var city = {
+            page_id: $(this).data('page-id')
+          };
+          renderCity(city);
+        });
+
+        var data = {
+          'action': 'cities_api_search'
+        };
+        $.getJSON(WP.ajaxURL, data).then(function(cities) {
+
+          cities = cities.map(function(city) {
+            return {
+              value: city.name,
+              data: city
+            };
+          });
+
+          $('#ajax-example').autocomplete({
+            lookup: cities,
+            onSelect: function (suggestion) {
+              renderCity(suggestion.data);
+            }
+          });
+
+        });
+
       }
     },
     // About us page, note the change from about-us to about_us.

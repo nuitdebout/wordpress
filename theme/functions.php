@@ -24,6 +24,7 @@ $sage_includes = [
 	'lib/customizer.php', // Theme customizer
 
 	'acf/acf_options.php',
+	'lib/nuitdebout/cities.php',
 	'lib/nuitdebout/homepage.php',
 	'lib/nuitdebout/openagenda.php',
 	'lib/nuitdebout/periscope.php',

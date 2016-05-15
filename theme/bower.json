@@ -11,7 +11,9 @@
     "font-awesome": "fontawesome#^4.6.1",
     "video.js": "videojs#^5.10.1",
     "sass-flex-mixin": "~1.0.3",
-    "bluebird": "^3.4.0"
+    "bluebird": "^3.4.0",
+    "devbridge-autocomplete": "^1.2.24",
+    "SpinKit": "^1.2.5"
   },
   "overrides": {
     "video.js": {
@@ -24,6 +26,9 @@
         "scss/font-awesome.scss",
         "fonts/*"
       ]
+    },
+    "SpinKit": {
+      "main": []
     },
     "bootstrap-sass": {
       "main": [
