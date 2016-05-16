@@ -11,7 +11,7 @@
 		<h3>Live</h3>
 		<video id="tvdebout" width="500" height="250" class="video-js vjs-default-skin" controls>
 			  <source
-	     src="http://tvdebout.zkp.fr/hls/repu.m3u8"
+	     src="http://tvdebout.thekey.pw/hls/repu.m3u8"
 	     type="application/x-mpegURL" />
 		</video>
 	</div>
