@@ -1,12 +1,11 @@
 ---
+- include: theme.yml
+  vars:
+    dir: /vagrant/theme
+    name: nuitdebout
+
 - include: nuitdebout.yml
   vars:
     dir: /var/www/nuitdebout
     theme: nuitdebout
     theme_dir: /vagrant/theme
-
-
-- include: theme.yml
-  vars:
-    dir: /vagrant/theme
-    name: nuitdebout
