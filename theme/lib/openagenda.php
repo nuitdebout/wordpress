@@ -3,6 +3,8 @@
 namespace NuitDebout\Wordress\OpenAgenda;
 
 use Goutte\Client as GoutteClient;
+use Doctrine\Common\Cache\Cache;
+use Doctrine\Common\Cache\FilesystemCache;
 
 class Registry
 {
@@ -22,42 +24,62 @@ class Registry
 class JsonApiClient extends GoutteClient
 {
 	private $agendaID = '27805494';
+	private $cache;
+
+	public function __construct(Cache $cache)
+	{
+		$this->cache = $cache;
+
+		parent::__construct();
+	}
 
 	public function getEvents(array $params = [])
 	{
-		$events = [];
+		$cache_key = sha1(json_encode($params));
 
-		$get_params = ['oaq' => $params];
+		if (!$events = $this->cache->fetch($cache_key)) {
 
-		$page = 1;
-		while (true) {
+			$events = [];
 
-			$get_params['page'] = $page;
-			$query_string = http_build_query($get_params);
+			$get_params = ['oaq' => $params];
 
-			$url = "https://openagenda.com/agendas/{$this->agendaID}/events.json?{$query_string}";
-			$this->request('GET', $url);
+			$page = 1;
 
-			$content = $this->getResponse()->getContent();
-			$data = json_decode($content, true);
+			try {
 
-			if (empty($data['events'])) {
-				break;
-			}
+				while (true) {
 
-			$events = array_merge($events, $data['events']);
-			$page++;
+					$get_params['page'] = $page;
+					$query_string = http_build_query($get_params);
+
+					$url = "https://openagenda.com/agendas/{$this->agendaID}/events.json?{$query_string}";
+					$this->request('GET', $url);
+
+					$content = $this->getResponse()->getContent();
+					$data = json_decode($content, true);
+
+					if (empty($data['events'])) {
+						break;
+					}
+
+					$events = array_merge($events, $data['events']);
+					$page++;
+				}
+
+			} catch (\Exception $e) {}
+
+			usort($events, function($a, $b) {
+				$date_a = new \DateTime($a['firstDateStart'].' '.$a['firstTimeStart']);
+				$date_b = new \DateTime($b['firstDateStart'].' '.$b['firstTimeStart']);
+				if ($date_a === $date_b) {
+					return 0;
+				}
+
+				return $date_a < $date_b ? -1 : 1;
+			});
+
+			$this->cache->save($cache_key, $events, 5 * 60);
 		}
-
-		usort($events, function($a, $b) {
-			$date_a = new \DateTime($a['firstDateStart'].' '.$a['firstTimeStart']);
-			$date_b = new \DateTime($b['firstDateStart'].' '.$b['firstTimeStart']);
-			if ($date_a === $date_b) {
-				return 0;
-			}
-
-			return $date_a < $date_b ? -1 : 1;
-		});
 
 		return $events;
 	}
@@ -110,7 +132,8 @@ function get_dates()
 
 /* Wordpress actions */
 
-$client = new JsonApiClient();
+$cache = new FilesystemCache(__DIR__.'/../cache');
+$client = new JsonApiClient($cache);
 
 add_action('wp_head', function() use ($client) {
 	if (is_main_site() && is_front_page()) {
