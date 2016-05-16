@@ -159,43 +159,87 @@ iframe {
   }
 }
 
-.tvdebout-container {
-  text-align: center;
-  > * {
-    text-align: left;
-  }
-  h3 {
-    font-family: Roboto;
-  }
-  > div {
-  display: inline-block;
+.video-section {
+  padding: 50px 0;
+  .live {
+  transition : all 0.3s ease;
   vertical-align: top;
   opacity: 1;
   width: 100%;
   height: 100%;
-  max-width: 528px;
-  padding: 0 1em;
-  transition : all 0.3s ease;
+  padding-bottom: 30px;
   overflow: hidden;
+    .vjs-paused.vjs-has-started .vjs-big-play-button {
+    display: block;
+    }
+    #tvdebout {
+    transition : all 0.3s ease;
+    width: 100%;
+    height: 100%;
+    padding-top: 50%;
+      .vjs-big-play-button {
+      width: 100%;
+      height: 48px;
+      line-height: 48px;
+      font-size: 3.5em;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border: 0;
+      border-radius: 0;
+        .vjs-status {
+        display: inline-block;
+        vertical-align: middle;
+        font-family: CommuneB1San31;
+        font-size: 1.25em;
+        margin-top: 15%;
+        white-space: nowrap;
+          &:before {
+          display: inline-block;
+          vertical-align: middle;
+          content: "";
+          margin-right: 0.125em;
+          border-radius: 0.5em;
+          height: 0.5em;
+          width: 0.5em;
+          background: red;
+          animation: live 2s ease-in-out infinite;
+            @keyframes "live" {
+              0% {
+              background: rgba(255, 0, 0, 1);
+              }
+              50% {
+              background: rgba(255,100,100,1);
+              }
+            }
+          }
+        }
+      }
+    }
   }
   .hide-live {
   opacity: 0;
-  width: 0px;
-  height: 0px;
+  padding: 0px;
+    #tvdebout {
+    padding-top: 0%;
+    }
   }
-  .live #tvdebout, .replay iframe {
-  width: 100%;
-    .vjs-big-play-button {
-    width: 68px;
-    height: 48px;
-    line-height: 48px;
-    font-size: 3.5em;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border: 0;
+  .video-section__title {
+    display: table;
+    width: 100%;
+    padding-bottom: 20px;
+    a, h1 {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    h1 {
+      width: 80%;
+      font-size: 48px;
+      font-family: CommuneB1San31;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
   }
 }

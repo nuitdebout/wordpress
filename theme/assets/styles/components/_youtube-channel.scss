@@ -1,0 +1,14 @@
+.youtube_channel  {
+    &.responsive {
+      .ytc_video_container {
+        width: 50% !important;
+        padding-bottom: 30px;
+      }
+      .ytc_video_container:nth-child(odd) {
+        padding-right: 15px;
+      }
+      .ytc_video_container:nth-child(even) {
+        padding-left: 15px;
+      }
+    }
+}
