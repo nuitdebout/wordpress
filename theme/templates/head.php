@@ -25,4 +25,5 @@
 	  <meta property="og:image" content="<?php echo $thumb ?>">
 	  <meta property="og:title" content="<?php echo $title ?>">
 	  <meta property="og:url" content="<?php echo $url ?>">
+	  <link rel="dns-prefetch" href="https://www.googleapis.com/">
 </head>

@@ -58,5 +58,6 @@
         - contact-form-7
         - login-lockdown
         - enhanced-media-library
+        - youtube-channel
   roles:
     - wordpress
