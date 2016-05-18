@@ -10,7 +10,9 @@
     "bootstrap-sass": "3.3.6",
     "font-awesome": "fontawesome#^4.6.1",
     "snapwidget": "http://snapwidget.com/js/snapwidget.js",
-    "video.js": "videojs#^5.10.1"
+    "video.js": "videojs#^5.10.1",
+    "salvattore": "~1.0.9",
+    "sass-flex-mixin": "~1.0.3"
   },
   "overrides": {
     "video.js": {

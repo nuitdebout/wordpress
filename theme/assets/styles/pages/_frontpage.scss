@@ -139,24 +139,115 @@ iframe {
 }
 
 .news-container {
+
   h3 {
     font-family: Roboto;
   }
-  .news-container__rss {
-    .nav-links {
-      display: none;
+
+  .news-tile {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin-bottom: 15px;
+    @include box-shadow(1px, 1px, 10px, #ddd);
+    img {
+      width: 100%;
+      height: auto;
     }
-    .wprss-feed-meta {
-      .feed-source, .feed-date {
-        display: block;
+    .news-tile__caption {
+      padding: 15px;
+      > a {
+        color: #111;
+        &:hover,
+        &:active {
+          text-decoration: none;
+          color: lighten(#111, 33.333%);
+        }
       }
     }
   }
-  .list-group-item-text {
-    a:last-child {
-      display: none;
+
+  .news-headlines {
+
+    @include flexbox;
+    margin: 15px 0;
+
+    > div {
+
+      min-height: 360px;
+      text-align: center;
+      @include box-shadow(1px, 1px, 10px, #ddd);
+
+      border: 1px solid #ddd;
+      padding: 15px;
+
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+
+      @include flexbox;
+      @include align-items(center);
+
+      > a {
+        width: 100%;
+        h2 {
+          font-family: Roboto;
+          color: #fff;
+          text-shadow: 0 3px 4px rgba(0,0,0,.5);
+        }
+      }
+    }
+    .news-headlines__first {
+      width: 66.666%;
+      margin-right: 15px;
+    }
+    .news-headlines__second {
+      width: 33.333%;
     }
   }
+
+  /* Salvattore styles */
+
+  div[data-columns]::before {
+    content: '4 .column.size-1of4';
+  }
+
+  @media screen and (max-width: 480px){
+    div[data-columns]::before {
+      content: '1 .column.size-1of1';
+    }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    div[data-columns]::before {
+      content: '2 .column.size-1of2';
+    }
+  }
+
+  div[data-columns] {
+    > div {
+      padding-right: 15px;
+    }
+    > div:last-child {
+      padding-right: 0;
+    }
+  }
+
+  .column {
+    float: left;
+  }
+  .size-1of4 {
+    width: 25%;
+  }
+  .size-1of3 {
+    width: 33.333%;
+  }
+  .size-1of2 {
+    width: 50%;
+  }
+  .size-1of1 {
+    width: 100%;
+  }
+
 }
 
 .video-section {

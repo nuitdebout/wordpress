@@ -27,12 +27,10 @@ if (!is_main_site()) :
 else :
 
 	get_template_part('templates/module', 'screen');
-	get_template_part('templates/module', 'manifesto');
 	get_template_part('templates/module', 'news');
 	if( !is_paged() && get_field('global_module_social', 'option') == 'oui' ) {
 		get_template_part('templates/module', 'home-social');
 	}
-	get_template_part('templates/module', 'agenda');
 	get_template_part('templates/module', 'rassemblements');
 	get_template_part('templates/module', 'youtube');
 

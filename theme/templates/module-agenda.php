@@ -1,11 +1,11 @@
 <?php
 use NuitDebout\Wordress\OpenAgenda;
 ?>
-<section id="agenda" class="section agenda">
-    <h2 class="section__title">Agenda</h2>
-    <div class="section__content">
+<section id="agenda" class="agenda">
+    <h2 class="agenda__title">Agenda</h2>
+    <div class="agenda__content">
 
-    	<div class="text-center">
+    	<div>
 	    	<p>
 	    	Retrouvez les horaires de réunion des commissions, des AG, ainsi que les actions en cours.
 	    	<br>
