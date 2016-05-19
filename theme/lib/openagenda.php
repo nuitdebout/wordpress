@@ -125,6 +125,7 @@ function get_dates()
 		new \DateTime('now'),
 		new \DateTime('+1 day'),
 		new \DateTime('+2 days'),
+		new \DateTime('+3 days'),
 	];
 
 	return $dates;
@@ -132,14 +133,14 @@ function get_dates()
 
 /* Wordpress actions */
 
-$cache = new FilesystemCache(__DIR__.'/../cache');
+$cache = new FilesystemCache(__DIR__.'/../cache/agenda');
 $client = new JsonApiClient($cache);
 
 add_action('wp_head', function() use ($client) {
 	if (is_main_site() && is_front_page()) {
 		$events = $client->getEvents([
 			'from' => (new \DateTime('now'))->format('Y-m-d'),
-			'to' => (new \DateTime('+2 days'))->format('Y-m-d'),
+			'to' => (new \DateTime('+3 days'))->format('Y-m-d'),
 		]);
 		Registry::setEvents($events);
 	}
