@@ -109,6 +109,6 @@ this.statusElem = status;
 $('#tvdebout .vjs-big-play-button').append(status);
 };
 
-new TvDebout();
+// new TvDebout();
 
 })(jQuery);
