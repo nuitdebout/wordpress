@@ -38,7 +38,7 @@ use NuitDebout\Wordress\OpenAgenda;
 		</form>
 
 		<div class="agenda__events" id="accordion" role="tablist" aria-multiselectable="true">
-  			<?php foreach (OpenAgenda\filter_by_city(OpenAgenda\get_events(), 'Paris') as $event) : ?>
+  			<?php foreach (OpenAgenda\filter_by_city(OpenAgenda\get_events(new \DateTime('now')), 'Paris') as $event) : ?>
   				<?php include locate_template('templates/module-oaevent.php') ?>
 			<?php endforeach; ?>
 		</div>

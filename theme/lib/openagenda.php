@@ -5,6 +5,7 @@ namespace NuitDebout\Wordress\OpenAgenda;
 use Goutte\Client as GoutteClient;
 use Doctrine\Common\Cache\Cache;
 use Doctrine\Common\Cache\FilesystemCache;
+use Doctrine\Common\Cache\VoidCache;
 
 class Registry
 {
@@ -68,9 +69,10 @@ class JsonApiClient extends GoutteClient
 
 			} catch (\Exception $e) {}
 
+			// FIXME should rely on timings, not firstDate / firstTimeStart
 			usort($events, function($a, $b) {
-				$date_a = new \DateTime($a['firstDateStart'].' '.$a['firstTimeStart']);
-				$date_b = new \DateTime($b['firstDateStart'].' '.$b['firstTimeStart']);
+				$date_a = new \DateTime($a['firstDate'].' '.$a['firstTimeStart']);
+				$date_b = new \DateTime($b['firstDate'].' '.$b['firstTimeStart']);
 				if ($date_a === $date_b) {
 					return 0;
 				}
@@ -102,9 +104,30 @@ function get_cities()
 	return $cities;
 }
 
-function get_events()
+function get_events(\DateTime $date = null)
 {
-	return Registry::getEvents();
+	$events = Registry::getEvents();
+
+	if (isset($date)) {
+		return filter_by_date($events, $date);
+	}
+
+	return $events;
+}
+
+function filter_by_date(array $events, \DateTime $date)
+{
+	return array_filter($events, function($event) use ($date) {
+		foreach ($event['timings'] as $timing) {
+			$start = new \DateTime($timing['start']);
+			if ($start->format('Y-m-d') === $date->format('Y-m-d')) {
+
+				return true;
+			}
+		}
+
+		return false;
+	});
 }
 
 function filter_by_city(array $events, $city)
@@ -133,7 +156,9 @@ function get_dates()
 
 /* Wordpress actions */
 
-$cache = new FilesystemCache(__DIR__.'/../cache/agenda');
+define('USE_CACHE', true);
+
+$cache = USE_CACHE ? new FilesystemCache(__DIR__.'/../cache/agenda') : new VoidCache();
 $client = new JsonApiClient($cache);
 
 add_action('wp_head', function() use ($client) {
