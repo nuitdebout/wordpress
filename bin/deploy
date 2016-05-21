@@ -19,5 +19,5 @@ rsync --stats -t -P --recursive --exclude-from=bin/rsync.exclude.conf theme/ nui
 # We need to clean because gulp watch does not remove the dist/assets.json file
 echo "Cleaning..."
 cd theme
-gulp clean
+gulp
 cd -
