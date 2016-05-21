@@ -1,36 +1,64 @@
-<div id="news" class="section section--gray">
-	<h2 class="section__title">Actualités</h2>
-	<div class="container news-container">
+<?php
+
+use NuitDebout\Wordress\Homepage;
+
+$featured = Homepage\get_featured_post();
+$important = Homepage\get_important_post();
+
+$exclude = [];
+
+?>
+
+<div class="row news-container">
+	<div class="col-xs-12 col-md-8">
+
+		<div class="news-headlines">
+			<?php while ($featured->have_posts()) : $featured->the_post(); $exclude[] = get_the_ID(); ?>
+			<div class="news-headlines__first" style="background-image: url(<?php the_post_thumbnail_url( 'large' ) ?>)">
+				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+					<h2><?php the_title(); ?></h2>
+				</a>
+			</div>
+			<?php endwhile; ?>
+			<?php while ($important->have_posts()) : $important->the_post(); $exclude[] = get_the_ID(); ?>
+			<div class="news-headlines__second" style="background-image: url(<?php the_post_thumbnail_url( 'large' ) ?>)">
+				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+					<h2><?php the_title(); ?></h2>
+				</a>
+			</div>
+			<?php endwhile; ?>
+		</div>
+
+		<!-- Sticky posts -->
+		<?php
+
+		$sticky = Homepage\get_sticky_posts(12, $exclude);
+
+		?>
 		<div class="row">
-			<div class="col-xs-12 col-md-4">
-				<h3>Derniers posts</h3>
-				<div class="list-group">
-					<?php $i = 0; while (have_posts()) : the_post(); ?>
-					<a href="<?php the_permalink(); ?>" class="list-group-item">
-						<h4 class="list-group-item-heading"><?php the_title(); ?></h4>
-						<p class="list-group-item-text"><?php echo strip_tags(get_the_excerpt()); ?></p>
-					</a>
-					<?php if (++$i === 3) : break; endif; endwhile; ?>
+			<div class="col-xs-12">
+				<div data-columns>
+					<?php while ($sticky->have_posts()) : $sticky->the_post(); ?>
+					<div class="news-tile">
+						<?php if (has_post_thumbnail()) : ?>
+						<a href="<?php the_permalink(); ?>">
+							<?php the_post_thumbnail('medium') ?>
+						</a>
+						<?php endif; ?>
+						<div class="news-tile__caption">
+							<a href="<?php the_permalink(); ?>">
+								<h4><?php the_title(); ?></h4>
+								<p><?php echo strip_tags(get_the_excerpt()); ?></p>
+								<small><?php echo get_post_meta(get_the_ID(), 'source_title', true) ?></small>
+							</a>
+						</div>
+					</div>
+					<?php endwhile; ?>
 				</div>
 			</div>
-			<div class="col-xs-12 col-md-4 news-container__rss">
-				<h3>Dernières news</h3>
-				<?php
-				if(function_exists('wprss_display_feed_items')) :
-					wprss_display_feed_items(array(
-						'links_before' => '<ul class="list-group">',
-						'links_after' => '</ul>',
-						'link_before' => '<li class="list-group-item">',
-						'link_after' => '</li>',
-						'limit' => '6',
-					));
-				endif;
-				?>
-			</div>
-			<div class="col-xs-12 col-md-4 hidden-sm hidden-xs">
-				<h3>Facebook</h3>
-				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNuitDebout%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=false&hide_cover=true&show_facepile=false&appId=353426784843236" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-			</div>
 		</div>
+	</div>
+	<div class="col-xs-12 col-md-4">
+		<?php get_template_part('templates/module', 'agenda'); ?>
 	</div>
 </div>

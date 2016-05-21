@@ -8,7 +8,7 @@
 
 @mixin title-font {
   font-family: "Roboto";
-
+  font-weight: bold;
   &:first-letter {
     box-shadow:
     0 3px 0 -1px $light-blue, /* to indent the green bottom line with the same color as the background */
@@ -63,4 +63,16 @@
 
   width: 100%;
   max-width: $max-width;
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
 }
