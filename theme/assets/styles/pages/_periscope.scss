@@ -1,16 +1,16 @@
-#periscope-wall {
-  min-height: 480px;
-  .periscoper__wrapper {
+.periscoper {
+  position: relative;
+  margin-bottom: 30px;
+  img {
+    @extend .img-circle;
     width: 100%;
-    position: relative;
-    margin-bottom: 30px;
-    img {
-      min-width: 100%;
-    }
-    .periscope-on-air {
-      position: absolute !important;
-      bottom: 0;
-      left: 0;
-    }
+    height: auto;
+    border: 1px solid #ddd;
+  }
+  .periscope-on-air {
+    position: absolute !important;
+    top: 75%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
   }
 }

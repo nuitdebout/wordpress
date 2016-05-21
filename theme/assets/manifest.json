@@ -6,11 +6,6 @@
       ],
       "main": true
     },
-    "periscope.js": {
-      "files": [
-        "scripts/periscope.js"
-      ]
-    },
     "videojs-contrib-hls.js": {
       "files": [
         "scripts/videojs-contrib-hls.js"

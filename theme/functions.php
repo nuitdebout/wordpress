@@ -27,6 +27,7 @@ $sage_includes = [
 	'lib/nuitdebout.php',
 	'lib/nuitdebout_homepage.php',
 	'lib/openagenda.php',
+	'lib/nuitdebout/periscope.php',
 ];
 
 foreach ($sage_includes as $file) {

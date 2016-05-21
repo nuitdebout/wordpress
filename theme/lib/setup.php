@@ -151,10 +151,6 @@ function assets() {
   wp_enqueue_script('nuitdebout/tvdeboutjs', Assets\asset_path('scripts/tvdebout.js'), ['jquery', 'videojs-contrib-hls'], null, true);
   }
 
-  if (is_page_template('page-periscope.php')) {
-	  wp_enqueue_script('nuidebout/periscope', Assets\asset_path('scripts/periscope.js'), ['jquery'], null, true);
-  }
-
   if (is_front_page() && is_main_site()) {
     wp_enqueue_script('nuidebout/snapwidget', Assets\asset_path('scripts/snapwidget.js'), ['jquery'], null, true);
   }
