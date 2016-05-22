@@ -40,13 +40,6 @@ function nuitdebout_getDate(element) {
     return d;
 }
 
-function target_blank_links() {
-  jQuery('a[href*="https://wiki.nuitdebout.fr/wiki/Accueil"]').attr('target', '_blank');
-  jQuery('a[href*="https://chat.nuitdebout.fr/home"]').attr('target', '_blank');
-  jQuery('a[href*="http://questions.nuitdebout.fr/"]').attr('target', '_blank');
-  jQuery('.foot-left a').attr('target', '_blank');
-}
-
 (function($) {
 
   // Use this variable to set up the common and page specific functions. If you
@@ -68,10 +61,6 @@ function target_blank_links() {
             "Je reviendrai et serai des millions",
             "Que nul n'entre ici s'il n'est révolté"
         ], jQuery('#sentencerotate'));
-
-
-        target_blank_links();
-
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
