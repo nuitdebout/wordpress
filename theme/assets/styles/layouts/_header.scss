@@ -8,6 +8,7 @@
   &-bloginfo {
     position: relative;
     font-family: 'CommuneB1San31';
+    text-transform: uppercase;
     letter-spacing: 1.1px;
     line-height: 1 !important;
     font-size: 32px !important;
@@ -24,33 +25,21 @@
       vertical-align: middle;
     }
   }
+  .social-icons {
+    line-height: 1;
+    $padding-vertical: (($navbar-height - 33px) / 2);
+    padding: $padding-vertical $navbar-padding-horizontal;
+  }
+  // .current-menu-item
+  .navbar-nav > .active > a,
+  .navbar-nav > .active > a:hover,
+  .navbar-nav > .active > a:active {
+    background: none;
+  }
+  .navbar-nav > .active > a:hover {
+    color: #424242
+  }
 }
-
-nav ul li {
-  float:left;
-  diplay:block;
-  background: none;
-  font-weight: medium;
-}
-
-nav ul li a {
-  color: #bdbdbd;
-  text-transform: uppercase;
-  background: none;
-}
-
-nav ul li:hover a, nav ul li:active a, nav ul li:focus a, nav ul li.active a,  nav ul li.current_page_item a {
-  color: #424242;
-  background: none;
-}
-
-
-
-
-nav ul li:hover, nav ul li:active, nav ul li:focus, nav ul li.active, nav ul li.current_page_item  {
-  background: none;
-}
-
 
 body.logged-in{
   .navbar-nuitdebout {
@@ -73,8 +62,9 @@ body.logged-in{
 }
 
 .menu-top {
-  @extend .navbar-nav;
   > li > a {
-    padding: $navbar-padding-vertical $navbar-padding-horizontal;
+    color: #bdbdbd;
+    text-transform: uppercase;
+    background: none;
   }
 }

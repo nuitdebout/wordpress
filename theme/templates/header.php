@@ -14,19 +14,30 @@
         </a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		<?php if (!is_main_site()) : ?>
-		<ul class="nav navbar-nav navbar-left">
-			<li><a class="navbar-nuitdebout-bloginfo" href="<?php echo home_url() ?>"><?php echo get_bloginfo('name') ?></a></li>
-		</ul>
-		<?php endif ?>
+
+				<?php if (!is_main_site()) : ?>
+				<ul class="nav navbar-nav navbar-left">
+					<li><a class="navbar-nuitdebout-bloginfo" href="<?php echo home_url() ?>"><?php echo get_bloginfo('name') ?></a></li>
+				</ul>
+				<?php endif ?>
+
         <?php
         if (has_nav_menu('primary_navigation')) :
-        wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav menu-top']);
+					wp_nav_menu([
+						'theme_location' => 'primary_navigation',
+						'depth' => 2,
+						'container' => 'div',
+						'menu_class' => 'nav navbar-nav menu-top',
+						'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+						'walker' => new wp_bootstrap_navwalker(),
+					]);
         endif;
         ?>
+
         <ul class="nav navbar-nav navbar-right">
         <?php get_template_part('templates/module', 'social'); ?>
         </ul>
+
       </div>
     </div>
   </nav><!--/.nav-collapse -->

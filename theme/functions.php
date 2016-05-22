@@ -24,6 +24,7 @@ $sage_includes = [
 	'lib/customizer.php', // Theme customizer
 
 	'acf/acf_options.php',
+	'lib/wp_bootstrap_navwalker.php',
 	'lib/nuitdebout.php',
 	'lib/nuitdebout_homepage.php',
 	'lib/openagenda.php',
