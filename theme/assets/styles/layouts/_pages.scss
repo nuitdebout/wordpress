@@ -3,3 +3,22 @@
   margin: 0;
   border-bottom: none;
 }
+
+.page {
+
+  .page__header {
+    margin-bottom: 30px;
+    > h2 {
+      @include title-font;
+      margin-top: 0;
+    }
+  }
+
+  .page__thumbnail {
+    padding: 15px 0;
+  }
+
+  .wp-post-image {
+    @extend .img-responsive;
+  }
+}
