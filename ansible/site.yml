@@ -59,5 +59,6 @@
         - login-lockdown
         - enhanced-media-library
         - youtube-channel
+        - display-posts-shortcode
   roles:
     - wordpress
