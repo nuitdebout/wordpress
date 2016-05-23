@@ -70,6 +70,7 @@ function nuitdebout_getDate(element) {
     'home': {
       init: function() {
 
+        // agenda
         var $city = $('.nd-js-agenda-city');
         var $date = $('.nd-js-agenda-date');
 
@@ -100,7 +101,6 @@ function nuitdebout_getDate(element) {
           loading();
           $.get(WP.ajaxURL, data).then(refresh);
         });
-
 
         // Display loading text
         $('#live .text').text('Nous recherchons les derniers lives sur Periscope…');
@@ -189,8 +189,26 @@ function nuitdebout_getDate(element) {
 
         });
 
+        // featured events
 
+        var bannerIndex = 0;
+        var featuredEvents = window.NuitDebout.featuredEvents;
 
+        var loadCurrentActions = function () {
+          $('#current-actions')
+            .fadeOut('slow', function() {
+              $(this).attr('href', featuredEvents[bannerIndex].url);
+              $(this).find('span:last-child').text(featuredEvents[bannerIndex].text);
+              $(this).fadeIn();
+            });
+
+          if (++bannerIndex >= featuredEvents.length) {
+            bannerIndex = 0;
+          }
+
+          setTimeout(loadCurrentActions, 3000);
+        };
+        setTimeout(loadCurrentActions, 3000);
 
       },
       finalize: function() {

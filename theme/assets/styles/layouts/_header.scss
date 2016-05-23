@@ -106,10 +106,16 @@ body.logged-in{
 .header-placeholder {
   height: 115px;
   width: 100%;
+  &.header-placeholder--with-events {
+    height: 152px;
+  }
 }
 
 @media (max-width: $screen-xs-max) {
   .header-placeholder {
     height: 70px;
+    &.header-placeholder--with-events {
+      height: 92px;
+    }
   }
 }

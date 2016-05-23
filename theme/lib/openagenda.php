@@ -108,6 +108,16 @@ function get_cities()
 	return $cities;
 }
 
+function get_featured_events()
+{
+    return filter_featured(get_events_by_date(new \DateTime('now')));
+}
+
+function has_featured_events()
+{
+    return count(get_featured_events()) > 0;
+}
+
 function get_events_by_date(\DateTime $date)
 {
 	global $client;
@@ -133,9 +143,16 @@ function get_events_by_date(\DateTime $date)
 
 function filter_by_city(array $events, $city)
 {
-	return array_filter($events, function($event) use ($city) {
+	return array_values(array_filter($events, function($event) use ($city) {
 		return $event['city'] == $city;
-	});
+	}));
+}
+
+function filter_featured(array $events)
+{
+	return array_values(array_filter($events, function($event) {
+		return $event['featured'] == 1;
+	}));
 }
 
 function get_default_city()
@@ -183,6 +200,10 @@ function ajax_action()
 
 	$events = get_events_by_date($date);
 	$events = filter_by_city($events, $city);
+
+	if (isset($_GET['featured'])) {
+		$events = filter_featured($events);
+	}
 
 	foreach ($events as $event) {
 		include locate_template('templates/module-oaevent.php');
