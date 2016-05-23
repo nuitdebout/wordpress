@@ -69,6 +69,15 @@ class JsonApiClient extends GoutteClient
 
 			} catch (\Exception $e) {}
 
+			// Dirty fix for Paris
+			$events = array_map(function($event) {
+				if (preg_match('/Paris-[0-9]+E-Arrondissement/', $event['city'])) {
+					$event['city'] = 'Paris';
+				}
+
+				return $event;
+			}, $events);
+
 			// FIXME should rely on timings, not firstDate / firstTimeStart
 			usort($events, function($a, $b) {
 				$date_a = new \DateTime($a['firstDate'].' '.$a['firstTimeStart']);
