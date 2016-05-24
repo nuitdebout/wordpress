@@ -4,3 +4,4 @@
 /wordpress
 /logs
 /theme/cache
+ansible/site.retry
