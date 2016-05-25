@@ -2,6 +2,9 @@
   @extend .navbar-default;
   background: white;
   transition: all 0.3s ease;
+
+  padding: 0 10px;
+
   &-logo {
     width: 50px;
   }
@@ -30,6 +33,37 @@
     $padding-vertical: (($navbar-height - 33px) / 2);
     padding: $padding-vertical $navbar-padding-horizontal;
   }
+
+  .navbar-nav-content {
+    clear: both;
+
+    border-top: 1px solid #eee;
+
+    .navbar-nav {
+
+      text-align: center;
+      float: none;
+
+      & > li {
+        display: inline-block;
+        float: none;
+
+        @media (max-width: $screen-xs-max) {
+          display: block;
+        }
+
+        & > a {
+          padding: 10px 30px;
+        }
+
+        border-bottom: 5px solid transparent;
+        &:hover, &.open {
+          border-color: $light-blue;
+        }
+      }
+    }
+  }
+
   // .current-menu-item
   .navbar-nav > .active > a,
   .navbar-nav > .active > a:hover,
@@ -66,5 +100,16 @@ body.logged-in{
     color: #bdbdbd;
     text-transform: uppercase;
     background: none;
+  }
+}
+
+.header-placeholder {
+  height: 115px;
+  width: 100%;
+}
+
+@media (max-width: $screen-xs-max) {
+  .header-placeholder {
+    height: 70px;
   }
 }
