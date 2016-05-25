@@ -26,7 +26,7 @@ $sage_includes = [
 	'acf/acf_options.php',
 	'lib/wp_bootstrap_navwalker.php',
 	'lib/nuitdebout.php',
-	'lib/nuitdebout_homepage.php',
+	'lib/nuitdebout/homepage.php',
 	'lib/openagenda.php',
 	'lib/nuitdebout/periscope.php',
 ];
