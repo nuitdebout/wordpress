@@ -187,3 +187,41 @@
     height: auto;
   }
 }
+
+.navbar-subnav-container {
+  position: relative;
+}
+
+.navbar-open-subnav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  background-color: $footer-bg;
+  color: white;
+
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-subnav-list {
+  margin: auto;
+  list-style: none;
+
+  .navbar-subnav-list__item {
+    padding: 10px 30px;
+    display: inline-block;
+
+    & > a {
+      color: white;
+      &:hover, &:active, &:focus {
+        color: $gray-lighter;
+      }
+    }
+  }
+
+}

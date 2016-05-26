@@ -50,6 +50,36 @@
 			<?php get_template_part('templates/module', 'social'); ?>
 		</ul>
 	</div>
-
 </nav>
 
+
+<div class="navbar-subnav-container">
+	<div class="navbar-open-subnav">
+		<ul class="navbar-subnav-list">
+			<li class="navbar-subnav-list__item">
+				<a href="#">
+					<i class="fa fa-times-circle-o "></i>
+					Le mouvement
+				</a>
+			</li>
+			<li class="navbar-subnav-list__item">
+				<a href="#">
+					<i class="fa fa-times-circle-o "></i>
+					Les villes
+				</a>
+			</li>
+			<li class="navbar-subnav-list__item">
+				<a href="#">
+					<i class="fa fa-times-circle-o "></i>
+					Les commissions
+				</a>
+			</li>
+			<li class="navbar-subnav-list__item">
+				<a href="#">
+					<i class="fa fa-times-circle-o "></i>
+					Transparence
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
