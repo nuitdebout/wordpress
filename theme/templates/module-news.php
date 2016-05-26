@@ -4,6 +4,7 @@ use NuitDebout\Wordress\Homepage;
 
 $featured = Homepage\get_featured_post();
 $important = Homepage\get_important_post();
+$latest = Homepage\get_latest_posts();
 
 $exclude = [];
 
@@ -29,11 +30,9 @@ $exclude = [];
 			<?php endwhile; ?>
 		</div>
 
-		<!-- Sticky posts -->
+			<!-- Sticky posts -->
 		<?php
-
-		$sticky = Homepage\get_sticky_posts(12, $exclude);
-
+			$sticky = Homepage\get_sticky_posts(12, $exclude);
 		?>
         <div class="news-list">
             <?php while ($sticky->have_posts()) : $sticky->the_post(); ?>
@@ -55,8 +54,30 @@ $exclude = [];
             </a>
             <?php endwhile; ?>
 		</div>
+		<div class="col-md-4">
+			<?php get_template_part('templates/module', 'agenda'); ?>
+		</div>
 	</div>
-	<div class="col-md-4">
-		<?php get_template_part('templates/module', 'agenda'); ?>
+
+	<div class="news-container__bottom">
+		<div class="row">
+			<div class="col-md-5 col-md-offset-1">
+				<h2>Derniers articles</h2>
+				<?php while ($latest->have_posts()) : $latest->the_post(); ?>
+					<div class="entry">
+						<a class="block-link" href="<?php the_permalink(); ?>">
+							<div class="news-latest">
+								<h4><?php the_title(); ?></h4>
+								<?php the_excerpt(); ?>
+							</div>
+						</a>
+						<?php get_template_part('templates/entry-taxonomies'); ?>
+					</div>
+				<?php endwhile; ?>
+			</div>
+			<div class="col-md-5">
+				<h2>Dans la presse</h2>
+			</div>
+		</div>
 	</div>
 </div>

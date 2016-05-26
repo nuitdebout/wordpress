@@ -198,6 +198,10 @@ iframe {
 
 .news-container {
 
+  h2 {
+    @include title-font;
+  }
+
   h3 {
     font-family: Roboto;
   }
@@ -449,4 +453,21 @@ $news-headline-size: 360px !default;
       letter-spacing: 1px;
     }
   }
+}
+
+.news-container__bottom {
+    a.block-link {
+      display: block;
+      color: initial;
+    }
+
+    .entry:nth-child(2) {
+      margin-top: 20px;
+    }
+
+    .entry {
+      margin-top: 10px;
+      padding: 10px 0;
+      border-top: 1px solid grey;
+    }
 }
