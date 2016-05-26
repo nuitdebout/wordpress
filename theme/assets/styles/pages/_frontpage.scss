@@ -205,6 +205,18 @@ iframe {
     }
   }
 
+  @media screen and (max-width: 480px){
+      .news-headlines {
+        display: block;
+      }
+      .news-headlines__first,  .news-headlines__second{
+        width: 100%;
+      }
+      .news-headlines__first {
+        margin-bottom: 15px;
+      }
+    }
+
   /* Salvattore styles */
 
   div[data-columns]::before {
