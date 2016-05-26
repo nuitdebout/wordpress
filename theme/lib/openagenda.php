@@ -7,21 +7,6 @@ use Doctrine\Common\Cache\Cache;
 use Doctrine\Common\Cache\FilesystemCache;
 use Doctrine\Common\Cache\VoidCache;
 
-class Registry
-{
-	private static $events = [];
-
-	public static function setEvents(array $events = [])
-	{
-		self::$events = $events;
-	}
-
-	public static function getEvents()
-	{
-		return self::$events;
-	}
-}
-
 class JsonApiClient extends GoutteClient
 {
 	private $agendaID = '27805494';
@@ -36,7 +21,7 @@ class JsonApiClient extends GoutteClient
 
 	public function getEvents(array $params = [])
 	{
-		$cache_key = sha1(json_encode($params));
+		$cache_key = 'openagenda_request_'.sha1(json_encode($params));
 
 		if (!$events = $this->cache->fetch($cache_key)) {
 
@@ -78,17 +63,7 @@ class JsonApiClient extends GoutteClient
 				return $event;
 			}, $events);
 
-			// FIXME should rely on timings, not firstDate / firstTimeStart
-			usort($events, function($a, $b) {
-				$date_a = new \DateTime($a['firstDate'].' '.$a['firstTimeStart']);
-				$date_b = new \DateTime($b['firstDate'].' '.$b['firstTimeStart']);
-				if ($date_a === $date_b) {
-					return 0;
-				}
-
-				return $date_a < $date_b ? -1 : 1;
-			});
-
+			// Cache for 5 minutes
 			$this->cache->save($cache_key, $events, 5 * 60);
 		}
 
@@ -96,9 +71,29 @@ class JsonApiClient extends GoutteClient
 	}
 }
 
+function get_next_timing($event, \DateTime $date = null)
+{
+	if (!$date) {
+		$date = new \DateTime('now');
+	}
+
+	$date->setTime(0, 0, 0);
+
+	foreach ($event['timings'] as $timing) {
+		$start = new \DateTime($timing['start'], new \DateTimeZone('UTC'));
+		$start->setTimeZone(new \DateTimeZone('Europe/Paris'));
+		if ($start >= $date) {
+			return $start;
+		}
+	}
+}
+
 function get_cities()
 {
-	$events = get_events();
+	$events = [];
+	foreach (get_dates() as $date) {
+		$events = array_merge($events, get_events_by_date($date));
+	}
 
 	$cities = [];
 	foreach ($events as $event) {
@@ -113,30 +108,27 @@ function get_cities()
 	return $cities;
 }
 
-function get_events(\DateTime $date = null)
+function get_events_by_date(\DateTime $date)
 {
-	$events = Registry::getEvents();
+	global $client;
 
-	if (isset($date)) {
-		return filter_by_date($events, $date);
-	}
+	$events = $client->getEvents([
+		'from' => $date->format('Y-m-d'),
+		'to' => $date->format('Y-m-d'),
+	]);
 
-	return $events;
-}
+	usort($events, function($a, $b) use ($date) {
+		$next_timing_a = get_next_timing($a, $date);
+		$next_timing_b = get_next_timing($b, $date);
 
-function filter_by_date(array $events, \DateTime $date)
-{
-	return array_filter($events, function($event) use ($date) {
-		foreach ($event['timings'] as $timing) {
-			$start = new \DateTime($timing['start']);
-			if ($start->format('Y-m-d') === $date->format('Y-m-d')) {
-
-				return true;
-			}
+		if ($next_timing_a === $next_timing_b) {
+			return 0;
 		}
 
-		return false;
+		return $next_timing_a < $next_timing_b ? -1 : 1;
 	});
+
+	return $events;
 }
 
 function filter_by_city(array $events, $city)
@@ -170,28 +162,26 @@ define('USE_CACHE', true);
 $cache = USE_CACHE ? new FilesystemCache(__DIR__.'/../cache/agenda') : new VoidCache();
 $client = new JsonApiClient($cache);
 
-add_action('wp_head', function() use ($client) {
+function precache_events()
+{
 	if (is_main_site() && is_front_page()) {
-		$events = $client->getEvents([
-			'from' => (new \DateTime('now'))->format('Y-m-d'),
-			'to' => (new \DateTime('+3 days'))->format('Y-m-d'),
-		]);
-		Registry::setEvents($events);
+		foreach (get_dates() as $date) {
+			get_events_by_date($date);
+		}
 	}
-});
+}
+
+// TODO Find a callback which is called earlier during Wordpress request lifecycle
+add_action('wp_head', __NAMESPACE__ . '\\precache_events');
 
 function ajax_action()
 {
 	global $client;
 
-	$city = isset($_GET['city']) ? $_GET['city'] : 'Paris';
-	$date = isset($_GET['date']) ? $_GET['date'] : (new \DateTime('now'))->format('Y-m-d');
+	$city = isset($_GET['city']) ? $_GET['city'] : get_default_city();
+	$date = isset($_GET['date']) ? new \DateTime($_GET['date']) : new \DateTime('now');
 
-	$events = $client->getEvents([
-		'from' => $date,
-		'to' => $date,
-	]);
-
+	$events = get_events_by_date($date);
 	$events = filter_by_city($events, $city);
 
 	foreach ($events as $event) {
