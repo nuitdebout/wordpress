@@ -39,3 +39,11 @@ function get_important_post()
 		'category__in' => [$cat->cat_ID],
 	]);
 }
+
+function get_first_image($postContent) {
+	$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $postContent, $matches);
+	// return $output;
+	$first_img = $matches[1][0];
+	return $first_img;
+	// return 'test';
+}
