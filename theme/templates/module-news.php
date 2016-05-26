@@ -41,9 +41,13 @@ $exclude = [];
 					<?php while ($sticky->have_posts()) : $sticky->the_post(); ?>
 					<div class="news-tile">
 						<?php if (has_post_thumbnail()) : ?>
-						<a href="<?php the_permalink(); ?>">
-							<?php the_post_thumbnail('medium') ?>
-						</a>
+							<a href="<?php the_permalink(); ?>">
+								<?php the_post_thumbnail('medium') ?>
+							</a>
+			    		<?php elseif (Homepage\get_first_image(the_content())) : ?>
+							<a href="<?php the_permalink(); ?>">
+								<img width="300" class="attachment-medium size-medium wp-post-image" src="<?php echo Homepage\get_first_image(the_content()); ?>"></img>
+							</a>
 						<?php endif; ?>
 						<div class="news-tile__caption">
 							<a href="<?php the_permalink(); ?>">
