@@ -19,6 +19,12 @@
         "dist/video.js"
       ]
     },
+    "font-awesome": {
+      "main": [
+        "scss/font-awesome.scss",
+        "fonts/*"
+      ]
+    },
     "bootstrap-sass": {
       "main": [
         "./assets/stylesheets/_bootstrap.scss",
