@@ -184,6 +184,10 @@ function ajax_action()
 	$events = get_events_by_date($date);
 	$events = filter_by_city($events, $city);
 
+	$events = usort($events, function($a, $b) {
+		return $a['firstTimeStart'] < $b['firstTimeStart']
+	});
+
 	foreach ($events as $event) {
 		include locate_template('templates/module-oaevent.php');
 	}
