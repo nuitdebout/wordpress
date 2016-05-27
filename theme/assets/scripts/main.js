@@ -146,7 +146,7 @@ function nuitdebout_getDate(element) {
                   lastResortStreamerIndex = index + 1;
                 }
 
-                if (resp && resp.type !== 'StreamTypeReplay')
+                if (resp && !resp.success === false && resp.type !== 'StreamTypeReplay')
                 {
 
                   embedLiveStreamer(data.statuses[index]);
