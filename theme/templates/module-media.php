@@ -14,7 +14,7 @@ use Roots\Sage\Assets;
 		<img width="50" height="50" src="<?php echo Assets\asset_path('images/radiodebout.jpg') ?>" alt="..." class="img-circle">
 		<span>Radio Debout</span>
 	</a>
-	<a href="http://mixlr.com/radiodebout/" target="_blank">
+	<a href="https://gazettedebout.org/" target="_blank">
 		<img width="50" height="50" src="<?php echo Assets\asset_path('images/gazettedebout.png') ?>" alt="..." class="img-circle">
 		<span>Gazette Debout</span>
 	</a>
