@@ -33,7 +33,6 @@ else :
 		get_template_part('templates/module', 'home-social');
 	}
 	get_template_part('templates/module', 'rassemblements');
-	get_template_part('templates/module', 'youtube');
 
 	if ( !is_paged() &&get_field('homepage_module_free_iframe_2', 'option') ) {
 		get_template_part('templates/module', 'free_iframe_2');
