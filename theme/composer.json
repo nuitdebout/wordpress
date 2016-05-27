@@ -28,6 +28,7 @@
     "composer/installers": "~1.0",
     "symfony/dom-crawler": "^3.0",
     "fabpot/goutte": "^3.1",
-    "doctrine/cache": "^1.6"
+    "doctrine/cache": "^1.6",
+    "j7mbo/twitter-api-php": "dev-master"
   }
 }

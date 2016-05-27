@@ -100,6 +100,98 @@ function nuitdebout_getDate(element) {
           loading();
           $.get(WP.ajaxURL, data).then(refresh);
         });
+
+
+        // Display loading text
+        $('#live .text').text('Nous recherchons les derniers lives sur Periscope…');
+
+        // Live tv
+        $.getJSON(WP.ajaxURL, {action: 'homepage_twitter_periscope'})
+        .done(function (data) {
+
+          if (data && data.statuses && data.statuses.length)
+          {
+
+
+            var embedLiveStreamer = function (liveStreamer) {
+
+              $('#live .text').text( liveStreamer.text );
+              $('#live').addClass('active');
+
+              $('#live .ic-play').on('click', function (){
+
+                $('#live').html('');
+
+                $('<iframe />');  // Create an iframe element
+                $('<iframe />', {
+                    src: liveStreamer.entities.urls[0].expanded_url
+                }).appendTo('#live');
+
+              });
+
+            };
+
+            // reject unsuccessfull streamer
+            var lastResortStreamerIndex = 0;
+
+            var checkIfLive = function (index) {
+
+              var token = data.statuses[index].entities.urls[0].expanded_url.split('/').pop();
+
+              $.getJSON(WP.ajaxURL, {action: 'homepage_periscope_check', token: token})
+              .always(function (resp) {
+
+                if ((!resp || resp.success === false) && data.statuses[index+1])
+                {
+                  lastResortStreamerIndex = index + 1;
+                }
+
+                if (resp && resp.type !== 'StreamTypeReplay')
+                {
+
+                  embedLiveStreamer(data.statuses[index]);
+
+                }
+                else
+                {
+
+                  if (data.statuses[index+1])
+                  {
+                    checkIfLive(index+1);
+                  }
+                  else
+                  {
+                    embedLiveStreamer(data.statuses[lastResortStreamerIndex]);
+                  }
+
+                }
+
+              });
+            };
+
+            checkIfLive(0);
+
+
+            $('#live .replay').on('click', function (){
+
+              $('#live').html('');
+
+              _(8).times(function (n){
+
+                var thumbStreamUrl = data.statuses[n].entities.urls[0].expanded_url;
+                $('#live').append('<div class="col-md-3 replay-thumb"><iframe src="'+thumbStreamUrl+'"></iframe></div>');
+
+              });
+
+            });
+
+          }
+
+        });
+
+
+
+
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
