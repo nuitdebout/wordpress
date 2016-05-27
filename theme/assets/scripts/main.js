@@ -171,20 +171,6 @@ function nuitdebout_getDate(element) {
 
             checkIfLive(0);
 
-
-            $('#live .replay').on('click', function (){
-
-              $('#live').html('');
-
-              _(8).times(function (n){
-
-                var thumbStreamUrl = data.statuses[n].entities.urls[0].expanded_url;
-                $('#live').append('<div class="col-md-3 replay-thumb"><iframe src="'+thumbStreamUrl+'"></iframe></div>');
-
-              });
-
-            });
-
           }
 
         });
