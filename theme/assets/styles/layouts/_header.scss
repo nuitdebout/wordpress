@@ -111,6 +111,7 @@ body.logged-in{
 }
 
 .header-placeholder {
+  display: none; // waiting until smaller height nav is implemented
   height: 115px;
   width: 100%;
   &.header-placeholder--with-events {

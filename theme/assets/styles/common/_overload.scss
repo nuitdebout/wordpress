@@ -2,11 +2,13 @@
   margin-bottom: 0;
   border: none;
 }
-body.admin-bar {
-  .navbar-fixed-top {
-    top: 32px !important;
-  }
+
+.navbar-fixed-top {
+  /* wait for new navbar with smaller height */
+  /* top: 32px !important; */
+  position: relative;
 }
+
 .opaque-navbar {
     background-color: rgba(255,255,255,0.9);
   /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
