@@ -227,8 +227,14 @@ $news-card-size: 350px;
   overflow: hidden;
 
   margin: 5px;
+  @media (max-width: $screen-sm-max) {
+    margin: 0 0 10px 0;
+  }
 
   flex: 1 0 $news-card-size;
+  @media (max-width: $screen-sm-max) {
+    flex: 1 0 100%;
+  }
   @include box-shadow(1px, 1px, 10px, #ddd);
 
   &:hover, &:active, &:focus {

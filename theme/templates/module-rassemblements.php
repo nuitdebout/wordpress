@@ -1,4 +1,4 @@
-<div id="rassemblements" class="section">
+<div id="rassemblements" class="section hidden">
 	<h2 class="section__title">Rassemblements</h2>
 </div>
 <div class="row" id="homepage-map">
