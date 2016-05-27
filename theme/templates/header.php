@@ -1,6 +1,10 @@
+<?php use NuitDebout\Wordress\OpenAgenda; ?>
 <!-- Static navbar -->
 <header class="banner">
 	<nav class="navbar navbar-nuitdebout navbar-fixed-top">
+		<?php if (is_main_site()) : ?>
+			<?php get_template_part('templates/module', 'current-actions'); ?>
+		<?php endif ?>
 		<div class="navbar-top">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -48,5 +52,6 @@
 		</div>
 	</nav><!--/.nav-collapse -->
 </header>
-<div class="header-placeholder"></div>
+<?php $placeholder_class = OpenAgenda\has_featured_events() ? 'header-placeholder header-placeholder--with-events' : 'header-placeholder' ?>
+<div class="<?php echo $placeholder_class ?>"></div>
 
