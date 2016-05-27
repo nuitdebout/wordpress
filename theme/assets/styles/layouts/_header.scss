@@ -53,13 +53,20 @@
         }
 
         & > a {
-          padding: 10px 30px;
+          border-bottom: 5px solid transparent;
+          padding: 10px 0;
+          margin: 0 30px;
         }
 
-        border-bottom: 5px solid transparent;
+
+
+
         &:hover, &.open {
-          border-color: $light-blue;
+          a {
+            border-color: $light-blue;
+          }
         }
+
       }
     }
   }
