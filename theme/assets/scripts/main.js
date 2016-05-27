@@ -194,7 +194,19 @@ function nuitdebout_getDate(element) {
 
           setTimeout(loadCurrentActions, 3000);
         };
-        setTimeout(loadCurrentActions, 3000);
+
+        if (featuredEvents.length > 1)
+        {
+          setTimeout(loadCurrentActions, 3000);
+        }
+        else
+        {
+          // only one action dont fade out / in
+          $('#current-actions').attr('href', featuredEvents[0].url);
+          $('#current-actions').find('span:last-child').text(featuredEvents[0].text);
+        }
+
+
 
       },
       finalize: function() {
