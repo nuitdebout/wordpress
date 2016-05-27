@@ -19,7 +19,7 @@
 	<?php $event = array_shift($featured_events); ?>
 
 	<div class="current-actions">
-	    <a id="current-actions" href="<?php echo $event['url'] ?>">
+	    <a id="current-actions" href="<?php echo $event['url'] ?>" target="_blank">
 	        <span class="glyphicon glyphicon-play"></span>
 	        <span>
 	            <?php echo $event['text'] ?>
