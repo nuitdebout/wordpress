@@ -1,10 +1,11 @@
 <?php use NuitDebout\Wordress\OpenAgenda; ?>
 <!-- Static navbar -->
-<header class="banner">
+<?php if (is_main_site()) : ?>
+	<?php get_template_part('templates/module', 'current-actions'); ?>
+<?php endif ?>
+
+<header class="banner container-fluid">
 	<nav class="navbar navbar-nuitdebout navbar-fixed-top">
-		<?php if (is_main_site()) : ?>
-			<?php get_template_part('templates/module', 'current-actions'); ?>
-		<?php endif ?>
 		<div class="navbar-top">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -32,26 +33,25 @@
 			<ul class="hidden-xs nav navbar-nav navbar-right">
 				<?php get_template_part('templates/module', 'social'); ?>
 			</ul>
-		</div>
 
-		<div class="collapse navbar-collapse navbar-nav-content" id="bs-example-navbar-collapse-1">
-			<?php
-			if (has_nav_menu('primary_navigation')) :
-				wp_nav_menu([
-					'theme_location' => 'primary_navigation',
-					'depth' => 2,
-					'container' => 'div',
-					'menu_class' => 'nav navbar-nav menu-top',
-					'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-					'walker' => new wp_bootstrap_navwalker(),
-				]);
-			endif;
-			?>
-
+			<div class="collapse navbar-collapse navbar-nav-content" id="bs-example-navbar-collapse-1">
+				<?php
+				if (has_nav_menu('primary_navigation')) :
+					wp_nav_menu([
+						'theme_location' => 'primary_navigation',
+						'depth' => 2,
+						'container' => 'div',
+						'menu_class' => 'nav navbar-nav menu-top',
+						'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+						'walker' => new wp_bootstrap_navwalker(),
+					]);
+				endif;
+				?>
+			</div>
 
 		</div>
 	</nav><!--/.nav-collapse -->
 </header>
+
 <?php $placeholder_class = OpenAgenda\has_featured_events() ? 'header-placeholder header-placeholder--with-events' : 'header-placeholder' ?>
 <div class="<?php echo $placeholder_class ?>"></div>
-
