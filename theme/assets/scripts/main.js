@@ -254,4 +254,25 @@ function nuitdebout_getDate(element) {
   // Load Events
   $(document).ready(UTIL.loadEvents);
 
+
+  $('[data-toggle="class"]').click(function(event) {
+    var element = $(this);
+    var target = $(element.data('target'));
+    var classes = element.data('class') || 'toggled';
+
+    target.toggleClass(classes);
+    event.stopPropagation();
+    event.preventDefault();
+  });
+
+  $(document).click(function(event) {
+    if( !$(event.target).closest('[data-remove-class-on-outside]').length &&
+        !$(event.target).is('[data-remove-class-on-outside]')) {
+
+      var element = $('[data-remove-class-on-outside]');
+      var classes = element.data('remove-class-on-outside');
+      element.removeClass(classes);
+    }
+  });
+
 })(jQuery); // Fully reference jQuery after this point.
