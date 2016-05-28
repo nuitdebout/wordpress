@@ -150,6 +150,12 @@
       width: 250px;
       left: -250px;
 
+      background-color: white;
+
+      height: 100vh;
+      overflow-y: auto;
+
+
       transition: transform .3s;
     }
 
@@ -164,10 +170,6 @@
 
   .primary-nav {
     display: block;
-    background-color: white;
-
-    height: 100vh;
-    overflow-y: auto;
 
     & > li {
       display: block;
