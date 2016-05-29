@@ -7,6 +7,7 @@
 <?php $logoImg =  get_stylesheet_directory_uri() . '/assets/images/logoblack.svg'; ?>
 <?php $mobileNavImg =  get_stylesheet_directory_uri() . '/assets/images/headertest.jpg'; ?>
 
+<header class="header">
 <nav class="nd-navbar">
 
 	<div class="nd-navbar__item nd-navbar__toggle">
@@ -31,18 +32,54 @@
 	<div class="nd-navbar__item nd-navbar__item--navigation" id="main-nav" data-remove-class-on-outside="open">
 
 		<img class="mobile-navigation-image" src="<?php echo $mobileNavImg ?>" alt="" />
-		<?php
-		if (has_nav_menu('primary_navigation')) :
-			wp_nav_menu([
-				'theme_location' => 'primary_navigation',
-				'depth' => 2,
-				'container' => 'div',
-				'menu_class' => 'primary-nav',
-				'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-				'walker' => new wp_bootstrap_navwalker(),
-			]);
-		endif;
-		?>
+
+		<div class="menu-top-container">
+			<ul id="menu-top" class="primary-nav">
+				<li id="menu-item-323" class="menu-item active">
+					<a href="/">En direct</a>
+				</li>
+				<li id="menu-item-324" class="menu-item">
+					<a href="#" data-toggle="class" data-target="#menu-item-324" data-class="open">
+						Decouvrir
+					</a>
+
+					<div class="navbar-subnav">
+						<ul class="navbar-subnav-list">
+							<li class="navbar-subnav-list__item">
+								<a href="#">
+									<i class="fa fa-times-circle-o "></i>
+									Le mouvement
+								</a>
+							</li>
+							<li class="navbar-subnav-list__item">
+								<a href="#">
+									<i class="fa fa-times-circle-o "></i>
+									Les villes
+								</a>
+							</li>
+							<li class="navbar-subnav-list__item">
+								<a href="#">
+									<i class="fa fa-times-circle-o "></i>
+									Les commissions
+								</a>
+							</li>
+							<li class="navbar-subnav-list__item">
+								<a href="#">
+									<i class="fa fa-times-circle-o "></i>
+									Transparence
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li id="menu-item-325" class="menu-item">
+					<a href="/">Participer</a>
+				</li>
+				<li id="menu-item-326" class="menu-item">
+					<a href="/">S'informer</a>
+				</li>
+			</ul>
+		</div>
 	</div>
 
 	<div class="nd-navbar__item nd-navbar__item--social">
@@ -52,34 +89,4 @@
 	</div>
 </nav>
 
-
-<div class="navbar-subnav-container">
-	<div class="navbar-open-subnav">
-		<ul class="navbar-subnav-list">
-			<li class="navbar-subnav-list__item">
-				<a href="#">
-					<i class="fa fa-times-circle-o "></i>
-					Le mouvement
-				</a>
-			</li>
-			<li class="navbar-subnav-list__item">
-				<a href="#">
-					<i class="fa fa-times-circle-o "></i>
-					Les villes
-				</a>
-			</li>
-			<li class="navbar-subnav-list__item">
-				<a href="#">
-					<i class="fa fa-times-circle-o "></i>
-					Les commissions
-				</a>
-			</li>
-			<li class="navbar-subnav-list__item">
-				<a href="#">
-					<i class="fa fa-times-circle-o "></i>
-					Transparence
-				</a>
-			</li>
-		</ul>
-	</div>
-</div>
+</header>
