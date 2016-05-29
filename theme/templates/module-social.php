@@ -6,9 +6,6 @@
 <li>
 	<a href="https://twitter.com/nuitdebout" target="_blank" title="Twitter" class="social-icons social-icons-bigger"><i class="ic-twitter_rounded"></i></a>
 </li>
-<li>
-	<a href="/periscope" title="Periscope" class="social-icons social-icons-bigger"><i class="ic-periscope_rounded"></i></a>
-</li>
 
 <?php else : ?>
 

@@ -28,6 +28,11 @@
       vertical-align: middle;
     }
   }
+
+  .navbar-right {
+    margin-right: 0;
+  }
+
   .social-icons {
     line-height: 1;
     $padding-vertical: (($navbar-height - 33px) / 2);
