@@ -1,129 +1,190 @@
-.navbar-nuitdebout {
-  @extend .navbar-default;
-  background: white;
-  transition: all 0.3s ease;
+.nd-navbar {
+  background-color: white;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
 
   padding: 0 10px;
 
-  &-logo {
-    width: 50px;
+  .nd-navbar__item {
+    display: inline-block;
+    min-width: 150px;
   }
-  &-bloginfo {
-    position: relative;
-    font-family: 'CommuneB1San31';
-    text-transform: uppercase;
-    letter-spacing: 1.1px;
-    line-height: 1 !important;
-    font-size: 32px !important;
-    $navbar-space: (($navbar-height - 32px) / 2);
-    padding: ($navbar-space + 4px) $navbar-padding-horizontal ($navbar-space - 4px) !important;
-    color: #111 !important;
-    &:before {
-      padding-top: 4px;
-      content: '//';
-      position: absolute;
-      left: -10px;
-      top: 50%;
-      transform: translateY(-50%);
-      vertical-align: middle;
+
+  .nd-navbar__toggle {
+    display: none;
+  }
+
+  .nd-navbar__item--logo {
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+
+  .nd-navbar__item--navigation {
+    text-align: center;
+    flex: 1;
+  }
+  .social-icon-list {
+    text-align: right;
+  }
+}
+
+.social-icon-list {
+  list-style: none;
+  padding: 0;
+  min-width: 180px;
+
+  & > li {
+    display: inline-block;
+
+  }
+  & > li > a {
+    color: $gray;
+    padding: 10px;
+
+
+    &:hover, &:active, &:focus {
+      color: $gray-dark;
     }
   }
-  .social-icons {
-    line-height: 1;
-    $padding-vertical: (($navbar-height - 33px) / 2);
-    padding: $padding-vertical $navbar-padding-horizontal;
-  }
+}
 
-  .navbar-nav-content {
-    clear: both;
+.primary-nav {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
-    border-top: 1px solid #eee;
-
-    .navbar-nav {
-
-      text-align: center;
-      float: none;
-
-      & > li {
-        display: inline-block;
-        float: none;
-
-        @media (max-width: $screen-xs-max) {
-          display: block;
-        }
-
-        & > a {
-          border-bottom: 5px solid transparent;
-          padding: 10px 0;
-          margin: 0 30px;
-        }
+  & > li {
+    display: inline-block;
 
 
+    > a {
+      display: inline-block;
+      border-bottom: 5px solid transparent;
+      padding: 10px 30px;
 
+      font-weight: bold;
+      text-transform: uppercase;
 
-        &:hover, &.open {
-          a {
-            border-color: $light-blue;
-          }
-        }
+      color: $gray;
+    }
 
+    &:hover, &.open {
+      > a {
+        border-color: $light-blue;
+        color: $gray-dark;
       }
     }
   }
-
-  // .current-menu-item
-  .navbar-nav > .active > a,
-  .navbar-nav > .active > a:hover,
-  .navbar-nav > .active > a:active {
-    background: none;
-  }
-  .navbar-nav > .active > a:hover {
-    color: #424242
-  }
 }
 
-body.logged-in{
-  .navbar-nuitdebout {
-         &-fixed {
-            position: fixed;
-            left: 0px;
-            top: 30px;
-          }
-
-  }
-
+.mobile-navigation-image {
+  display: none;
 }
 
-.text-right {
-    text-align: right;
-}
+.menu-button {
+  display: inline-block;
 
-.navbar-brand {
-  padding: (($navbar-height - 50) / 2) $navbar-padding-horizontal;
-}
+  padding: 10px 30px;
+  font-size: 25px;
+  cursor: pointer;
 
-.menu-top {
-  > li > a {
-    color: #bdbdbd;
-    text-transform: uppercase;
-    background: none;
+  border-radius: 5px;
+
+  &:active {
+    background-color: $gray-lighter;
   }
 }
 
-.header-placeholder {
-  display: none; // waiting until smaller height nav is implemented
-  height: 115px;
-  width: 100%;
-  &.header-placeholder--with-events {
-    height: 151px;
+.navbar-nuitdebout-logo {
+  width: 50px;
+}
+.navbar-nuitdebout-bloginfo {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+
+  font-family: 'CommuneB1San31';
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  font-size: 32px;
+  line-height: 1;
+
+  margin-left: 10px;
+  padding: 0;
+
+  color: #111;
+  &:before {
+    content: '//';
   }
 }
 
-@media (max-width: $screen-xs-max) {
-  .header-placeholder {
-    height: 70px;
-    &.header-placeholder--with-events {
-      height: 92px;
+
+@media (max-width: $screen-sm-max) {
+
+  .nd-navbar {
+    align-items: center;
+
+    .nd-navbar__item {
+      min-width: 80px;
+    }
+    .nd-navbar__toggle {
+      display: inline-block;
+    }
+
+    .nd-navbar__item--logo {
+      justify-content: center;
+      flex: 1;
+    }
+
+    .nd-navbar__item--navigation {
+      position: fixed;
+      top: 0;
+      z-index: 100;
+
+      width: 250px;
+      left: -250px;
+
+      background-color: white;
+
+      height: 100vh;
+      overflow-y: auto;
+
+
+      transition: transform .3s;
+    }
+
+    .nd-navbar__item--navigation.open {
+      transform: translateX(250px);
+    }
+
+  }
+  .social-icon-list {
+    display: none;
+  }
+
+  .primary-nav {
+    display: block;
+
+    & > li {
+      display: block;
+      width: 100%;
+    }
+
+    & > li > a {
+      width: 100%;
+      font-weight: 400;
     }
   }
+  .mobile-navigation-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }
+

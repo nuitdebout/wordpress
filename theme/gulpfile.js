@@ -21,6 +21,9 @@ var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
 var iconfont     = require('gulp-iconfont');
 var consolidate  = require('gulp-consolidate');
+var filter       = require('gulp-filter');
+
+var mainBowerFiles = require('main-bower-files');
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
@@ -224,8 +227,16 @@ gulp.task('font-socialIcons', function(){
 // ### Fonts
 // `gulp fonts` - Grabs all the fonts and outputs them in a flattened directory
 // structure. See: https://github.com/armed/gulp-flatten
-gulp.task('fonts', function() {
+gulp.task('fonts', ['fonts:vendor'], function() {
   return gulp.src(globs.fonts)
+    .pipe(flatten())
+    .pipe(gulp.dest(path.dist + 'fonts'))
+    .pipe(browserSync.stream());
+});
+
+gulp.task('fonts:vendor', function () {
+  return gulp.src(mainBowerFiles())
+    .pipe(filter('**/*.{eot,svg,ttf,woff,woff2}'))
     .pipe(flatten())
     .pipe(gulp.dest(path.dist + 'fonts'))
     .pipe(browserSync.stream());
