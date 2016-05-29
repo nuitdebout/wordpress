@@ -61,12 +61,16 @@
           border-bottom: 5px solid transparent;
           padding: 10px 0;
           margin: 0 30px;
+
+          &:focus {
+            background: none;
+          }
         }
 
 
 
 
-        &:hover, &.open {
+        &:hover, &.open, &.active {
           a {
             border-color: $light-blue;
           }
