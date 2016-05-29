@@ -1,0 +1,283 @@
+@import "../../bower_components/font-awesome/scss/font-awesome";
+
+.nd-navbar {
+  background-color: white;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  padding: 0 10px;
+  position: relative;
+
+  .nd-navbar__item {
+    display: inline-block;
+    min-width: 150px;
+  }
+
+  .nd-navbar__toggle {
+    display: none;
+  }
+
+  .nd-navbar__item--logo {
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .nd-navbar__item--navigation {
+    text-align: center;
+    flex: 1;
+  }
+  .social-icon-list {
+    text-align: right;
+  }
+}
+
+.social-icon-list {
+  list-style: none;
+  padding: 0;
+  min-width: 180px;
+
+  & > li {
+    display: inline-block;
+
+  }
+  & > li > a {
+    color: $gray;
+    padding: 10px;
+
+
+    &:hover, &:active, &:focus {
+      color: $gray-dark;
+    }
+  }
+}
+
+.primary-nav {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  & > .menu-item {
+    display: inline-block;
+
+    > a {
+      display: inline-block;
+      border-bottom: 5px solid transparent;
+      padding: 10px 30px;
+
+      text-transform: uppercase;
+
+      color: $gray;
+    }
+    > a:hover, > a:active, > a:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+.mobile-navigation-image {
+  display: none;
+}
+
+.menu-button {
+  display: inline-block;
+
+  padding: 10px 30px;
+  font-size: 25px;
+  cursor: pointer;
+
+  border-radius: 5px;
+
+  &:active {
+    background-color: $gray-lighter;
+  }
+}
+
+.navbar-nuitdebout-logo {
+  width: 50px;
+}
+
+.navbar-nuitdebout-bloginfo {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+
+  font-family: 'CommuneB1San31';
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  font-size: 32px;
+  line-height: 1;
+
+  margin-left: 10px;
+  padding: 0;
+
+  color: #111;
+  &:before {
+    content: '//';
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .primary-nav {
+    & > .menu-item {
+      > a {
+        font-weight: bold;
+      }
+
+      &:hover, &.open, &.active {
+        > a {
+          border-color: $light-blue;
+          color: $gray-dark;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-sm-max) {
+  .nd-navbar {
+    align-items: center;
+
+    .nd-navbar__item {
+      min-width: 80px;
+    }
+    .nd-navbar__toggle {
+      display: inline-block;
+    }
+
+    .nd-navbar__item--logo {
+      justify-content: center;
+      flex: 1;
+    }
+
+    .nd-navbar__item--navigation {
+      position: fixed;
+      top: 0;
+      z-index: 101;
+
+      width: 250px;
+      left: -250px;
+
+      background-color: white;
+
+      height: 100vh;
+      overflow-y: auto;
+
+
+      transition: transform .3s;
+    }
+
+    .nd-navbar__item--navigation.open {
+      transform: translateX(250px);
+    }
+
+  }
+  .social-icon-list {
+    display: none;
+  }
+
+  .primary-nav {
+    display: block;
+    text-align: left;
+
+    & > .menu-item {
+      display: block;
+      width: 100%;
+
+      &:hover, &.open, &.active {
+        color: $gray-darker;
+      }
+    }
+
+    & > .menu-item > a {
+      width: 100%;
+    }
+  }
+  .mobile-navigation-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+.navbar-subnav-list {
+  list-style: none;
+
+  & > .menu-item {
+    display: inline-block;
+
+    & > a {
+      display: inline-block;
+      padding: 10px 30px;
+      color: $gray-lighter;
+
+      &:hover, &:active, &:focus {
+        color: white;
+      }
+
+      &:before {
+        @extend .fa;
+        @extend .fa-times-circle-o;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-md-min) {
+
+  .navbar-subnav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+
+    background-color: $footer-bg;
+    color: white;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+
+    transform: translateY(-200px);
+    transition: transform .3s;
+  }
+
+  .menu-item.open {
+    .navbar-subnav {
+      transform: translateY(0);
+    }
+  }
+
+}
+
+@media (max-width: $screen-sm-max) {
+  .navbar-subnav-list {
+    display: block;
+
+    & > .menu-item {
+      display: block;
+
+      & > a {
+        display: inline-block;
+        padding: 10px 30px;
+        color: $gray;
+
+        &:hover, &:active, &:focus {
+          color: $gray-darker;
+        }
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}
