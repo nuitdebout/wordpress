@@ -11,7 +11,7 @@ $event_description = current($event['description']);
 	        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#oa-event-<?php echo $event['uid'] ?>" aria-expanded="true" aria-controls="collapseOne" title="<?php echo $event_title ?>">
 				<strong>
 					<?php
-						echo OpenAgenda\get_next_timing($event, new \DateTime('now'))->format('H:i');
+						echo OpenAgenda\get_next_timing($event, $date)->format('H:i');
 					?>
 				</strong> <?php echo wp_trim_words($event_title, 10) ?>
 	        </a>
