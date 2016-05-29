@@ -60,5 +60,6 @@
         - enhanced-media-library
         - youtube-channel
         - display-posts-shortcode
+        - instagram-feed
   roles:
     - wordpress
