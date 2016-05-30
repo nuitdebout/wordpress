@@ -128,7 +128,7 @@
         font-weight: bold;
       }
 
-      &:hover, &.open, &.active {
+      &:hover, &.open, &.current-menu-item:not(.not-display-as-current) {
         > a {
           border-color: $light-blue;
           color: $gray-dark;
@@ -188,7 +188,7 @@
       display: block;
       width: 100%;
 
-      &:hover, &.open, &.active {
+      &:hover, &.open, &.current-menu-item {
         color: $gray-darker;
       }
     }

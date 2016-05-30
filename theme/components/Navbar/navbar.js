@@ -20,9 +20,14 @@
     if(isIn(event.target, '.navbar-subnav')) {
       return;
     }
+    var isOpen = $(this).is('.open');
+
+    $('.menu-item.open').removeClass('open');
+    if (! isOpen) {
+      $(this).addClass('open');
+    }
 
     event.stopPropagation();
-    $(this).toggleClass('open');
   });
 
   $(document).click(function(event) {
@@ -30,6 +35,20 @@
       return;
     }
     $navbar.find('.menu-item-has-children.open').removeClass('open');
+    $('.not-display-as-current').removeClass('not-display-as-current');
+  });
+
+  $('.menu-item:not(.current-menu-item)').mouseover(function() {
+    $('.current-menu-item').addClass('not-display-as-current');
+  });
+
+  $('.menu-item').mouseout(function() {
+    var open = $('.menu-item.open').length;
+    if (open) {
+      return;
+    }
+
+    $('.not-display-as-current').removeClass('not-display-as-current');
   });
 
 
