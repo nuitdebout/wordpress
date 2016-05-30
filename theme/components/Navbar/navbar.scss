@@ -33,7 +33,47 @@
   .social-icon-list {
     text-align: right;
   }
+
+  @media (max-width: $screen-sm-max) {
+    align-items: center;
+
+    .nd-navbar__item {
+      min-width: 80px;
+    }
+    .nd-navbar__toggle {
+      display: inline-block;
+    }
+
+    .nd-navbar__item--logo {
+      justify-content: center;
+      flex: 1;
+    }
+
+    .nd-navbar__item--navigation {
+      position: fixed;
+      top: 0;
+      z-index: 101;
+
+      width: 250px;
+      left: -250px;
+
+      background-color: white;
+
+      height: 100vh;
+      overflow-y: auto;
+
+
+      transition: transform .3s;
+    }
+
+    .nd-navbar__item--navigation.open {
+      transform: translateX(250px);
+    }
+  }
+
 }
+
+
 
 .social-icon-list {
   list-style: none;
@@ -53,7 +93,14 @@
       color: $gray-dark;
     }
   }
+
+  @media (max-width: $screen-sm-max) {
+    display: none;
+  }
+
 }
+
+
 
 .primary-nav {
   display: inline-block;
@@ -77,11 +124,51 @@
       text-decoration: none;
     }
   }
+
+  @media (max-width: $screen-sm-max) {
+    display: block;
+    text-align: left;
+
+    & > .menu-item {
+      display: block;
+      width: 100%;
+
+      &:hover, &.open, &.current-menu-item {
+        color: $gray-darker;
+      }
+    }
+
+    & > .menu-item > a {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    & > .menu-item {
+      > a {
+        font-weight: bold;
+      }
+
+      &:hover, &.open, &.current-menu-item:not(.not-display-as-current) {
+        > a {
+          border-color: $light-blue;
+          color: $gray-dark;
+        }
+      }
+    }
+  }
+
 }
 
 .mobile-navigation-image {
-  display: none;
+  display: block;
+  width: 100%;
+  height: auto;
+  @media (min-width: $screen-md-min) {
+    display: none;
+  }
 }
+
 
 .menu-button {
   display: inline-block;
@@ -121,88 +208,7 @@
   }
 }
 
-@media (min-width: $screen-md-min) {
-  .primary-nav {
-    & > .menu-item {
-      > a {
-        font-weight: bold;
-      }
 
-      &:hover, &.open, &.current-menu-item:not(.not-display-as-current) {
-        > a {
-          border-color: $light-blue;
-          color: $gray-dark;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: $screen-sm-max) {
-  .nd-navbar {
-    align-items: center;
-
-    .nd-navbar__item {
-      min-width: 80px;
-    }
-    .nd-navbar__toggle {
-      display: inline-block;
-    }
-
-    .nd-navbar__item--logo {
-      justify-content: center;
-      flex: 1;
-    }
-
-    .nd-navbar__item--navigation {
-      position: fixed;
-      top: 0;
-      z-index: 101;
-
-      width: 250px;
-      left: -250px;
-
-      background-color: white;
-
-      height: 100vh;
-      overflow-y: auto;
-
-
-      transition: transform .3s;
-    }
-
-    .nd-navbar__item--navigation.open {
-      transform: translateX(250px);
-    }
-
-  }
-  .social-icon-list {
-    display: none;
-  }
-
-  .primary-nav {
-    display: block;
-    text-align: left;
-
-    & > .menu-item {
-      display: block;
-      width: 100%;
-
-      &:hover, &.open, &.current-menu-item {
-        color: $gray-darker;
-      }
-    }
-
-    & > .menu-item > a {
-      width: 100%;
-    }
-  }
-  .mobile-navigation-image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-}
 
 
 .navbar-subnav-list {
@@ -224,6 +230,28 @@
         @extend .fa;
         @extend .fa-times-circle-o;
         margin-right: 5px;
+      }
+    }
+  }
+
+  @media (max-width: $screen-sm-max) {
+    display: block;
+
+    & > .menu-item {
+      display: block;
+
+      & > a {
+        display: inline-block;
+        padding: 10px 30px;
+        color: $gray;
+
+        &:hover, &:active, &:focus {
+          color: $gray-darker;
+        }
+
+        &:before {
+          display: none;
+        }
       }
     }
   }
@@ -258,26 +286,3 @@
 
 }
 
-@media (max-width: $screen-sm-max) {
-  .navbar-subnav-list {
-    display: block;
-
-    & > .menu-item {
-      display: block;
-
-      & > a {
-        display: inline-block;
-        padding: 10px 30px;
-        color: $gray;
-
-        &:hover, &:active, &:focus {
-          color: $gray-darker;
-        }
-
-        &:before {
-          display: none;
-        }
-      }
-    }
-  }
-}
