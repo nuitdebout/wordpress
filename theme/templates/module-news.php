@@ -64,49 +64,62 @@ $exclude = [];
 		</div>
 	</div>
 
-	<div class="row news-container__bottom">
-		<div class="col-md-4">
-			<h2>Actions</h2>
-			<?php while ($actions->have_posts()) : $actions->the_post(); ?>
-				<div class="entry">
-					<a class="block-link" href="<?php the_permalink(); ?>">
-						<div class="news-latest">
-							<h4><?php the_title(); ?></h4>
-							<?php the_excerpt(); ?>
-						</div>
-					</a>
-					<?php get_template_part('templates/entry-taxonomies'); ?>
+	<div class="news-container__bottom">
+		<div class="row">
+			<div class="col-md-4">
+				<h2>Actions</h2>
+				<?php while ($actions->have_posts()) : $actions->the_post(); ?>
+					<div class="entry">
+						<a class="block-link" href="<?php the_permalink(); ?>">
+							<div class="news-latest">
+								<h4><?php the_title(); ?></h4>
+								<?php the_excerpt(); ?>
+							</div>
+						</a>
+						<?php get_template_part('templates/entry-taxonomies'); ?>
+					</div>
+				<?php endwhile; ?>
+			</div>
+			<div class="col-md-4">
+				<h2>Nuit debout en France</h2>
+				<?php while ($deboutFrance->have_posts()) : $deboutFrance->the_post(); ?>
+					<div class="entry">
+						<a class="block-link" href="<?php the_permalink(); ?>">
+							<div class="news-latest">
+								<h4><?php the_title(); ?></h4>
+								<?php the_excerpt(); ?>
+							</div>
+						</a>
+						<?php get_template_part('templates/entry-taxonomies'); ?>
+					</div>
+				<?php endwhile; ?>
+			</div>
+			<div class="col-md-4">
+				<h2>Analyses</h2>
+				<?php while ($analyses->have_posts()) : $analyses->the_post(); ?>
+					<div class="entry">
+						<a class="block-link" href="<?php the_permalink(); ?>">
+							<div class="news-latest">
+								<h4><?php the_title(); ?></h4>
+								<?php the_excerpt(); ?>
+							</div>
+						</a>
+						<?php get_template_part('templates/entry-taxonomies'); ?>
+					</div>
+				<?php endwhile; ?>
+			</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<a class="primary-button" href="/blog">Voir tous les articles</a>
 				</div>
-			<?php endwhile; ?>
-		</div>
-		<div class="col-md-4">
-			<h2>Nuit debout en France</h2>
-			<?php while ($deboutFrance->have_posts()) : $deboutFrance->the_post(); ?>
-				<div class="entry">
-					<a class="block-link" href="<?php the_permalink(); ?>">
-						<div class="news-latest">
-							<h4><?php the_title(); ?></h4>
-							<?php the_excerpt(); ?>
-						</div>
-					</a>
-					<?php get_template_part('templates/entry-taxonomies'); ?>
+				<div class="col-md-4">
+					<a class="primary-button" href="/blog">Voir tous les articles</a>
 				</div>
-			<?php endwhile; ?>
-		</div>
-		<div class="col-md-4">
-			<h2>Analyses</h2>
-			<?php while ($analyses->have_posts()) : $analyses->the_post(); ?>
-				<div class="entry">
-					<a class="block-link" href="<?php the_permalink(); ?>">
-						<div class="news-latest">
-							<h4><?php the_title(); ?></h4>
-							<?php the_excerpt(); ?>
-						</div>
-					</a>
-					<?php get_template_part('templates/entry-taxonomies'); ?>
+				<div class="col-md-4">
+					<a class="primary-button" href="/blog">Voir tous les articles</a>
 				</div>
-			<?php endwhile; ?>
-		</div>
+			</div>
 		</div>
 	</div>
 </div>
