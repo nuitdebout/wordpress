@@ -29,7 +29,7 @@
 					'theme_location' => 'primary_navigation',
 					'container' => 'div',
 					'menu_class' => 'primary-nav',
-					'depth' => 2,
+					'depth' => 3,
 					'walker' => $walker,
 				]);
 			?>
