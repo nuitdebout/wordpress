@@ -109,7 +109,7 @@ $exclude = [];
 				<?php endwhile; ?>
 			</div>
 			</div>
-			<div class="row">
+			<div class="row see-all-buttons">
 				<div class="col-md-4">
 					<a class="primary-button" href="/blog">Voir tous les articles</a>
 				</div>

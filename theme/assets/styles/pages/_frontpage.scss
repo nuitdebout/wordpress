@@ -477,6 +477,17 @@ $news-headline-size: 360px !default;
       width: 240px;
     }
 
+    @media (max-width: $screen-xs-max) {
+      .see-all-buttons .col-md-4 {
+        display: none;
+      }
+
+      .see-all-buttons .col-md-4:first-child {
+        display: block;
+      }
+
+    }
+
     .post-taxonomies{
       margin:1em 0;
       display:block;
