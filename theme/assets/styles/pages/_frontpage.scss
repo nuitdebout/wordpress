@@ -348,24 +348,34 @@ $news-headline-size: 360px !default;
 
 .homepage-media {
   @extend .row;
-  @include flexbox;
   @include justify-content(space-between);
-  > * {
-    @include flex-grow(1);
-    text-align: center;
-    border: 1px solid #ddd;
-    img {
-      vertical-align: middle;
-      margin: 10px;
-      width: 50px;
-      height: 50px;
-    }
-    span {
-      vertical-align: middle;
-      font-family: AmaticSC;
-      color: #111;
-      font-size: 36px;
-    }
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.external-media-link {
+  flex-grow: 1;
+  width: 240px;
+
+  text-align: center;
+  border: 1px solid #ddd;
+  background-color: white;
+
+  .external-media-link__logo {
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .external-media-link__title {
+    display: inline;
+    vertical-align: middle;
+    font-family: AmaticSC;
+    color: #111;
+    font-size: 36px;
   }
 }
 
