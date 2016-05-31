@@ -301,7 +301,7 @@ $news-headline-size: 360px !default;
   flex-wrap: wrap;
   align-items: stretch;
 
-  margin: 15px 0;
+  margin: 5px 0;
 
   .news-headlines__item {
 
@@ -346,6 +346,7 @@ $news-headline-size: 360px !default;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
+  margin-bottom: 15px;
 }
 .external-media-link {
   flex-grow: 1;
