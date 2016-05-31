@@ -1,7 +1,7 @@
 <nav class="nd-navbar">
 
 	<div class="nd-navbar__item nd-navbar__toggle">
-		<div class="menu-button" data-toggle="class" data-target="#main-nav" data-class="open">
+		<div class="menu-button">
 			<i class="fa fa-bars"></i>
 		</div>
 	</div>
@@ -19,7 +19,7 @@
 	</div>
 
 
-	<div class="nd-navbar__item nd-navbar__item--navigation" id="main-nav" data-remove-class-on-outside="open">
+	<div class="nd-navbar__item nd-navbar__item--navigation" id="main-nav">
 
 		<img class="mobile-navigation-image" src="<?php echo $mobileNavImg ?>" alt="" />
 

@@ -52,4 +52,15 @@
   });
 
 
+  // side menu
+  $('.menu-button').click(function() {
+    $('#main-nav').addClass('open');
+    $('.side-nav-overlay').removeClass('closed');
+  });
+
+  $('.side-nav-overlay').click(function() {
+    $('#main-nav').removeClass('open');
+    $('.side-nav-overlay').addClass('closed');
+  });
+
 });

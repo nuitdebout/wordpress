@@ -11,6 +11,8 @@
   padding: 0 10px;
   position: relative;
 
+  border-bottom: 1px solid $gray-light;
+
   .nd-navbar__item {
     display: inline-block;
     min-width: 150px;
@@ -52,7 +54,7 @@
     .nd-navbar__item--navigation {
       position: fixed;
       top: 0;
-      z-index: 101;
+      z-index: 102;
 
       width: 250px;
       left: -250px;
@@ -62,12 +64,12 @@
       height: 100vh;
       overflow-y: auto;
 
-
       transition: transform .3s;
     }
 
     .nd-navbar__item--navigation.open {
       transform: translateX(250px);
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
     }
   }
 
@@ -209,9 +211,6 @@
   }
 }
 
-
-
-
 .navbar-subnav-list {
   list-style: none;
 
@@ -291,6 +290,20 @@
       padding-bottom: 10px;
     }
 
+  }
+}
+
+.side-nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 101;
+
+  &.closed {
+    display: none;
   }
 }
 

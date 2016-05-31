@@ -6,4 +6,6 @@
 	<?php endif ?>
 
 	<?php the_component('navbar'); ?>
+
+	<div class="side-nav-overlay closed"></div>
 </header>
