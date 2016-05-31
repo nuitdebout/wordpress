@@ -38,7 +38,7 @@ $exclude = [];
 				$sticky = Homepage\get_sticky_posts(12, $exclude);
 			?>
 	        <div class="news-list">
-	            <?php while ($sticky->have_posts()) : $sticky->the_post(); ?>
+	            <?php for ($i = 0; $sticky->have_posts() && $i < 6; $i++ ) : $sticky->the_post(); ?>
 	            <a class="news-card  <?php echo has_post_thumbnail() ? 'news-card--animated' : ''?>"
 				   href="<?php the_permalink(); ?>">
 	                <?php if (has_post_thumbnail()) : ?>
@@ -55,7 +55,7 @@ $exclude = [];
 						<?php echo strip_tags(get_the_excerpt());?>
 					</p>
 	            </a>
-	            <?php endwhile; ?>
+	            <?php endfor; ?>
 			</div>
 		</div>
 
