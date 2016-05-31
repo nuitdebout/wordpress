@@ -219,18 +219,12 @@ iframe {
 $news-card-size: 350px;
 
 .news-card {
+  @include card;
   position: relative;
-
-  border: 1px solid #ddd;
-  border-radius: 5px;
-
-  background-color: #fff;
-  color: $gray-darker;
 
   min-height: $news-card-size/2;
   overflow: hidden;
 
-  margin: 5px;
   @media (max-width: $screen-sm-max) {
     margin: 0 0 10px 0;
   }
@@ -239,7 +233,6 @@ $news-card-size: 350px;
   @media (max-width: $screen-sm-max) {
     flex: 1 0 100%;
   }
-  @include box-shadow(1px, 1px, 10px, #ddd);
 
   &:hover, &:active, &:focus {
     color: $gray;
@@ -466,51 +459,73 @@ $news-headline-size: 360px !default;
 }
 
 .news-container__bottom {
-    a.block-link {
+  display: flex;
+  align-items: stretch;
+
+  @media (max-width: $screen-sm-max) {
+    flex-wrap: wrap;
+  }
+}
+.article-list-column {
+  @include card;
+
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 15px;
+
+  .article-list-column__articles {
+    flex: 1;
+  }
+
+
+  a.block-link {
+    display: block;
+    color: initial;
+  }
+
+  .entry:nth-child(2) {
+    margin-top: 20px;
+  }
+
+  .entry {
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 1px solid $gray-light;
+  }
+
+  .primary-button {
+    margin: 10px  auto;
+    display: block;
+    width: 240px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    .see-all-buttons .col-md-4 {
+      display: none;
+    }
+
+    .see-all-buttons .col-md-4:first-child {
       display: block;
-      color: initial;
     }
 
-    .entry:nth-child(2) {
-      margin-top: 20px;
-    }
+  }
 
-    .entry {
-      margin-top: 10px;
-      padding: 10px 0;
-      border-top: 1px solid grey;
-    }
-
-    .primary-button {
-      margin: 10px  auto;
-      display: block;
-      width: 240px;
-    }
-
-    @media (max-width: $screen-xs-max) {
-      .see-all-buttons .col-md-4 {
-        display: none;
-      }
-
-      .see-all-buttons .col-md-4:first-child {
-        display: block;
-      }
-
-    }
-
-    .post-taxonomies{
-      margin:1em 0;
-      display:block;
-      .post-taxonomy{
-        color: $gray-light;
-        &.post-taxonomy--post_tag{
-            & > a {
-              @include tag-link-reverse();
-              padding: 0 0.5em;
-              border-radius: 11px;
-            }
+  .post-taxonomies{
+    margin:1em 0;
+    display:block;
+    .post-taxonomy{
+      color: $gray;
+      &.post-taxonomy--post_tag{
+        & > a {
+          @include tag-link-reverse();
+          padding: 0 0.5em;
+          border-radius: 11px;
         }
       }
-
     }
+
+  }
 }

@@ -65,9 +65,9 @@ $exclude = [];
 	</div>
 
 	<div class="news-container__bottom">
-		<div class="row">
-			<div class="col-md-4">
-				<h2>Actions</h2>
+		<div class="article-list-column">
+			<h2 class="article-list-column__title">Actions</h2>
+			<div class="article-list-column__articles">
 				<?php while ($actions->have_posts()) : $actions->the_post(); ?>
 					<div class="entry">
 						<a class="block-link" href="<?php the_permalink(); ?>">
@@ -80,8 +80,13 @@ $exclude = [];
 					</div>
 				<?php endwhile; ?>
 			</div>
-			<div class="col-md-4">
-				<h2>Nuit debout en France</h2>
+			<div class="article-list-column__call-to-action">
+				<a class="primary-button" href="/blog">Voir tous les articles</a>
+			</div>
+		</div>
+		<div class="article-list-column">
+			<h2 class="article-list-column__title">Nuit debout en France</h2>
+			<div class="article-list-column__articles">
 				<?php while ($deboutFrance->have_posts()) : $deboutFrance->the_post(); ?>
 					<div class="entry">
 						<a class="block-link" href="<?php the_permalink(); ?>">
@@ -94,8 +99,14 @@ $exclude = [];
 					</div>
 				<?php endwhile; ?>
 			</div>
-			<div class="col-md-4">
-				<h2>Analyses</h2>
+			<div class="article-list-column__call-to-action">
+				<a class="primary-button" href="/blog">Voir tous les articles</a>
+			</div>
+		</div>
+
+		<div class="article-list-column">
+			<h2 class="article-list-column__title">Analyses</h2>
+			<div class="article-list-column__articles">
 				<?php while ($analyses->have_posts()) : $analyses->the_post(); ?>
 					<div class="entry">
 						<a class="block-link" href="<?php the_permalink(); ?>">
@@ -108,17 +119,8 @@ $exclude = [];
 					</div>
 				<?php endwhile; ?>
 			</div>
-			</div>
-			<div class="row see-all-buttons">
-				<div class="col-md-4">
-					<a class="primary-button" href="/blog">Voir tous les articles</a>
-				</div>
-				<div class="col-md-4">
-					<a class="primary-button" href="/blog">Voir tous les articles</a>
-				</div>
-				<div class="col-md-4">
-					<a class="primary-button" href="/blog">Voir tous les articles</a>
-				</div>
+			<div class="article-list-column__call-to-action">
+				<a class="primary-button" href="/blog">Voir tous les articles</a>
 			</div>
 		</div>
 	</div>
