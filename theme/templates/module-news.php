@@ -4,9 +4,7 @@ use NuitDebout\Wordress\Homepage;
 
 $featured = Homepage\get_featured_post();
 $important = Homepage\get_important_post();
-$actions = Homepage\get_latest_posts_by_slug('action');
-$analyses = Homepage\get_latest_posts_by_slug('analyses');
-$deboutFrance = Homepage\get_latest_posts_by_slug('nuitdebout-en-france');
+$category_slugs = ['action', 'nuitdebout-en-france', 'analyses'];
 
 $exclude = [];
 
@@ -65,10 +63,15 @@ $exclude = [];
 	</div>
 
 	<div class="news-container__bottom">
+		<?php foreach ($category_slugs as $category_slug) : ?>
+		<?php
+		$query = Homepage\get_latest_posts_by_slug($category_slug);
+		$category = get_category_by_slug($category_slug);
+		?>
 		<div class="article-list-column">
-			<h2 class="article-list-column__title">Actions</h2>
+			<h2 class="article-list-column__title"><?php echo $category->cat_name ?></h2>
 			<div class="article-list-column__articles">
-				<?php while ($actions->have_posts()) : $actions->the_post(); ?>
+				<?php while ($query->have_posts()) : $query->the_post(); ?>
 					<div class="entry">
 						<a class="block-link" href="<?php the_permalink(); ?>">
 							<div class="news-latest">
@@ -81,47 +84,9 @@ $exclude = [];
 				<?php endwhile; ?>
 			</div>
 			<div class="article-list-column__call-to-action">
-				<a class="primary-button" href="/blog">Voir tous les articles</a>
+				<a class="primary-button" href="<?php echo get_category_link($category->cat_ID) ?>">Voir tous les articles</a>
 			</div>
 		</div>
-		<div class="article-list-column">
-			<h2 class="article-list-column__title">Nuit debout en France</h2>
-			<div class="article-list-column__articles">
-				<?php while ($deboutFrance->have_posts()) : $deboutFrance->the_post(); ?>
-					<div class="entry">
-						<a class="block-link" href="<?php the_permalink(); ?>">
-							<div class="news-latest">
-								<h4><?php the_title(); ?></h4>
-								<?php the_excerpt(); ?>
-							</div>
-						</a>
-						<?php get_template_part('templates/entry-taxonomies'); ?>
-					</div>
-				<?php endwhile; ?>
-			</div>
-			<div class="article-list-column__call-to-action">
-				<a class="primary-button" href="/blog">Voir tous les articles</a>
-			</div>
-		</div>
-
-		<div class="article-list-column">
-			<h2 class="article-list-column__title">Analyses</h2>
-			<div class="article-list-column__articles">
-				<?php while ($analyses->have_posts()) : $analyses->the_post(); ?>
-					<div class="entry">
-						<a class="block-link" href="<?php the_permalink(); ?>">
-							<div class="news-latest">
-								<h4><?php the_title(); ?></h4>
-								<?php the_excerpt(); ?>
-							</div>
-						</a>
-						<?php get_template_part('templates/entry-taxonomies'); ?>
-					</div>
-				<?php endwhile; ?>
-			</div>
-			<div class="article-list-column__call-to-action">
-				<a class="primary-button" href="/blog">Voir tous les articles</a>
-			</div>
-		</div>
+		<?php endforeach ?>
 	</div>
 </div>
