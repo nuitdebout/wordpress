@@ -10,12 +10,19 @@
     "bootstrap-sass": "3.3.6",
     "font-awesome": "fontawesome#^4.6.1",
     "video.js": "videojs#^5.10.1",
-    "sass-flex-mixin": "~1.0.3"
+    "sass-flex-mixin": "~1.0.3",
+    "bluebird": "^3.4.0"
   },
   "overrides": {
     "video.js": {
       "main": [
         "dist/video.js"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "scss/font-awesome.scss",
+        "fonts/*"
       ]
     },
     "bootstrap-sass": {

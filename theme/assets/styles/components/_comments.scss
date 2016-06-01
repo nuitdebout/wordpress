@@ -3,7 +3,7 @@
   font-size: 30px;
   font-family: "Roboto", serif;
 
-  color: $gray;
+  color: $gray-dark;
   margin: 0;
 }
 
@@ -11,7 +11,7 @@
   @include list-unstyled;
 
   padding-bottom: 50px;
-  border-bottom: 1px solid $gray-light;
+  border-bottom: 1px solid $gray;
 
   .comment {
     display: block;
@@ -29,7 +29,7 @@
 
     .comment-awaiting-moderation,
     .comment-metadata time {
-      color: $gray-light;
+      color: $gray;
       margin: 0;
     }
 
@@ -59,7 +59,7 @@
 
   .comment-notes {
     @extend .form-group;
-    color: $gray-light;
+    color: $gray;
   }
 
   .comment-form-author,

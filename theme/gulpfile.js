@@ -21,6 +21,10 @@ var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
 var iconfont     = require('gulp-iconfont');
 var consolidate  = require('gulp-consolidate');
+var inject       = require('gulp-inject');
+var filter       = require('gulp-filter');
+
+var mainBowerFiles = require('main-bower-files');
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
@@ -168,7 +172,7 @@ var writeToManifest = function(directory) {
 // `gulp styles` - Compiles, combines, and optimizes Bower CSS and project CSS.
 // By default this task will only log a warning if a precompiler error is
 // raised. If the `--production` flag is set: this task will fail outright.
-gulp.task('styles', ['wiredep'], function() {
+gulp.task('styles', ['wiredep', 'style:component'], function() {
   var merged = merge();
   manifest.forEachDependency('css', function(dep) {
     var cssTasksInstance = cssTasks(dep.name);
@@ -224,8 +228,16 @@ gulp.task('font-socialIcons', function(){
 // ### Fonts
 // `gulp fonts` - Grabs all the fonts and outputs them in a flattened directory
 // structure. See: https://github.com/armed/gulp-flatten
-gulp.task('fonts', function() {
+gulp.task('fonts', ['fonts:vendor'], function() {
   return gulp.src(globs.fonts)
+    .pipe(flatten())
+    .pipe(gulp.dest(path.dist + 'fonts'))
+    .pipe(browserSync.stream());
+});
+
+gulp.task('fonts:vendor', function () {
+  return gulp.src(mainBowerFiles())
+    .pipe(filter('**/*.{eot,svg,ttf,woff,woff2}'))
     .pipe(flatten())
     .pipe(gulp.dest(path.dist + 'fonts'))
     .pipe(browserSync.stream());
@@ -279,6 +291,8 @@ gulp.task('watch', ['build'], function() {
   gulp.watch([path.source + 'fonts/**/**'], ['fonts']);
   gulp.watch([path.source + 'socialIcons/*.svg'], ['font-socialIcons']);
   gulp.watch([path.source + 'images/**/*'], ['images']);
+  gulp.watch([config.componentScss.sources], ['style:component']);
+  gulp.watch(['components/**/*.js'], ['jshint', 'scripts']);
   gulp.watch(['bower.json', 'assets/manifest.json'], ['build']);
 });
 
@@ -310,4 +324,41 @@ gulp.task('wiredep', function() {
 // `gulp` - Run a complete build. To compile for production run `gulp --production`.
 gulp.task('default', ['clean'], function() {
   gulp.start('build');
+});
+
+
+gulp.task('style:component', ['wiredep'], function() {
+  var sassOptions = {
+    outputStyle: 'nested', // libsass doesn't support expanded yet
+    precision: 10,
+    includePaths: ['.'],
+    errLogToConsole: !enabled.failStyleTask
+  };
+
+  var injectFiles = gulp.src([
+    config.componentScss.sources,
+    '!' + config.componentScss.main
+  ], { read: false });
+
+  var injectOptions = {
+    transform: function(filePath) {
+      filePath = filePath.replace(config.componentScss.dir + '/', '');
+      return '@import "' + filePath + '";';
+    },
+    starttag: '// injector',
+    endtag: '// endinjector',
+    addRootSlash: false
+  };
+
+  return gulp.src(config.componentScss.main)
+    .pipe(inject(injectFiles, injectOptions))
+    .pipe(sourcemaps.init())
+    .pipe(sass(sassOptions))
+    .pipe(autoprefixer())
+    .pipe(cssNano())
+    .pipe(gulp.dest('dist/styles'))
+    .pipe(browserSync.reload({ stream: true }))
+    .pipe(sourcemaps.write('.', {
+      sourceRoot: 'assets/styles/'
+    }));
 });

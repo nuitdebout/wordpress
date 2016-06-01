@@ -19,6 +19,12 @@
   "keywords": [
     "wordpress"
   ],
+  "autoload": {
+    "psr-4": {
+      "NuitDebout\\": ".",
+      "Component\\": "./components"
+    }
+  },
   "support": {
     "issues": "https://github.com/roots/sage/issues",
     "forum": "https://discourse.roots.io/"

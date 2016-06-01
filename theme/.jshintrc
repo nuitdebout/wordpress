@@ -7,7 +7,6 @@
   "esnext": true,
   "immed": true,
   "jquery": true,
-  "latedef": true,
   "newcap": true,
   "noarg": true,
   "node": true,

@@ -28,7 +28,6 @@ function setup() {
   // Register wp_nav_menu() menus
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
   register_nav_menus([
-    'primary_navigation' => __('Primary Navigation', 'sage'),
     'footer_navigation'  =>  __('Footer Navigation', 'sage'),
     'footer_colophon_navigation'  =>  __('footer Colophon', 'sage')
   ]);
@@ -138,6 +137,7 @@ function display_sidebar() {
  */
 function assets() {
   wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'), false, null);
+  wp_enqueue_style('components/css', Assets\asset_path('styles/components.css'), false, null);
 
   if (is_single() && comments_open() && get_option('thread_comments')) {
     wp_enqueue_script('comment-reply');
@@ -145,6 +145,7 @@ function assets() {
 
   wp_enqueue_script('underscore');
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
+  wp_enqueue_script('components/js', Assets\asset_path('scripts/components.js'), ['jquery'], null, true);
 
   if ( is_home() ) {
   wp_enqueue_script('videojs-contrib-hls', Assets\asset_path('scripts/videojs-contrib-hls.js'), ['jquery'], null, true);

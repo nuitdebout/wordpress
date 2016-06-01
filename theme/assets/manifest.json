@@ -6,6 +6,11 @@
       ],
       "main": true
     },
+    "components.js": {
+      "files": [
+        "../components/**/*.js"
+      ]
+    },
     "videojs-contrib-hls.js": {
       "files": [
         "scripts/videojs-contrib-hls.js"
@@ -27,6 +32,11 @@
     }
   },
   "config": {
-    "devUrl": "http://nuitdebout.dev"
+    "devUrl": "http://nuitdebout.dev",
+    "componentScss": {
+      "main":  "components/components.scss",
+      "sources": "components/**/*.scss",
+      "dir": "components"
+    }
   }
 }
