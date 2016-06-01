@@ -36,6 +36,12 @@ abstract class BaseComponent extends \WP_Widget
 	 */
 	protected $formTemplatePath = 'components/Common/default_form.php';
 
+	/**
+	 * If must add the wrapper used to identify the component in javascript
+	 * @var bool
+	 */
+	protected $addJsWrapper = true;
+
 	protected $isWidget = true;
 	protected $isStatic = false;
 
@@ -91,9 +97,15 @@ abstract class BaseComponent extends \WP_Widget
 		try {
 			extract($this->get_template_params($instance));
 
-			echo '<div class="js-component-' . $this->get_id() . '">';
+			if ($this->addJsWrapper) {
+				echo '<div class="' . $this->get_js_class() . '">';
+			}
+
 			include(locate_template($this->get_template_path($args, $instance)));
-			echo "</div>";
+
+			if ($this->addJsWrapper) {
+				echo "</div>";
+			}
 		} catch (NotDisplayableException $e) {}
 	}
 
@@ -190,6 +202,8 @@ abstract class BaseComponent extends \WP_Widget
 	{
 		return $this->get_options();
 	}
+
+
 	public function register_static($wpCustomize, $panel)
 	{
 		if (! $this->isStatic) {
@@ -220,5 +234,12 @@ abstract class BaseComponent extends \WP_Widget
 		}
 	}
 
-
+	/**
+	 * Get the class used to identify the component in javascript
+	 * @return string
+	 */
+	protected function get_js_class()
+	{
+		return 'js-component-' . $this->get_id();
+	}
 }
