@@ -151,9 +151,6 @@ function assets() {
   wp_enqueue_script('nuitdebout/tvdeboutjs', Assets\asset_path('scripts/tvdebout.js'), ['jquery', 'videojs-contrib-hls'], null, true);
   }
 
-  if (is_front_page() && is_main_site()) {
-    wp_enqueue_script('nuidebout/snapwidget', Assets\asset_path('scripts/snapwidget.js'), ['jquery'], null, true);
-  }
 
   wp_localize_script('sage/js', 'WP', [
   	'ajaxURL' => admin_url('admin-ajax.php')

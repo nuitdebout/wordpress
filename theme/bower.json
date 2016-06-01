@@ -9,7 +9,6 @@
   "dependencies": {
     "bootstrap-sass": "3.3.6",
     "font-awesome": "fontawesome#^4.6.1",
-    "snapwidget": "http://snapwidget.com/js/snapwidget.js",
     "video.js": "videojs#^5.10.1",
     "sass-flex-mixin": "~1.0.3"
   },
