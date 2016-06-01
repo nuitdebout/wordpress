@@ -1,6 +1,9 @@
 .section {
-  @include make-row;
-  padding: 50px 0;
+
+  &:not(.section--container) {
+    @include make-row;
+  }
+  padding: 15px 0;
 
   &.section--gray {
     background-color: $gray-lighter;
@@ -11,7 +14,7 @@
     text-align: center;
     font-size: 45px;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .section__content {

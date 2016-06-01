@@ -48,6 +48,21 @@ function get_important_post()
 	]);
 }
 
+function get_latest_posts_by_slug($slug)
+{
+	$cat = get_category_by_slug($slug);
+
+	return new \WP_Query([
+		'posts_per_page'   => 3,
+		'category__in' => [$cat->cat_ID],
+	    'orderby'          => 'post_date',
+	    'order'            => 'DESC',
+	    'post_type'        => 'post',
+	    'post_status'      => 'publish',
+	    'suppress_filters' => false
+	 ]);
+}
+
 /* Search for live Periscope on Twitter */
 
 function twitter_periscope()

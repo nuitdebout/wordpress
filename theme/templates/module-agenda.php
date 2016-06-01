@@ -36,15 +36,15 @@ use NuitDebout\Wordress\OpenAgenda;
 				</div>
 			</div>
 		</form>
+	</div>
 
-		<div class="agenda__events" id="accordion" role="tablist" aria-multiselectable="true">
-			<?php
-				$date = new \DateTime('now');
-			?>
-			<?php foreach (OpenAgenda\filter_by_city(OpenAgenda\get_events_by_date($date), 'Paris') as $event) : ?>
-  				<?php include locate_template('templates/module-oaevent.php') ?>
-			<?php endforeach; ?>
-		</div>
+	<div class="agenda__events" id="accordion" role="tablist" aria-multiselectable="true">
+		<?php
+			$date = new \DateTime('now');
+		?>
+		<?php foreach (OpenAgenda\filter_by_city(OpenAgenda\get_events_by_date($date), 'Paris') as $event) : ?>
+			<?php include locate_template('templates/module-oaevent.php') ?>
+		<?php endforeach; ?>
+	</div>
 
-    </div>
 </section>

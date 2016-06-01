@@ -84,3 +84,15 @@
   -webkit-transform: $transforms;
           transform: $transforms;
 }
+
+@mixin card() {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+
+  background-color: #fff;
+  color: $gray-darker;
+
+  margin: 5px;
+
+  @include box-shadow(1px, 1px, 10px, #ddd);
+}

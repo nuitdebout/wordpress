@@ -44,6 +44,15 @@
 }
 
 .agenda {
+
+  @include card;
+
+  .agenda__content,
+  .agenda__title {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
   .agenda__title {
     @include title-font;
   }
@@ -51,10 +60,11 @@
     border-top: 1px solid #f7f7f7;
     border-bottom: 1px solid #f7f7f7;
     padding-top: 15px;
-    margin-bottom: 15px;
   }
   .agenda__events {
     @extend .panel-group;
+    margin-bottom: 0;
+
     .agenda__event {
       @extend .panel;
       @extend .panel-default;
