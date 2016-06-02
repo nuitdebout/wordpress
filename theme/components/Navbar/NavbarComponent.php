@@ -17,7 +17,7 @@ class NavbarComponent extends BaseComponent
 
 	protected $templatePath = 'components/Navbar/navbar_template.php';
 
-	public function __construct($options) {
+	public function __construct($options = []) {
 		parent::__construct($options);
 		register_nav_menu('primary_navigation', __('Primary Navigation', 'sage'));
 	}
