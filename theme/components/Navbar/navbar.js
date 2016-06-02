@@ -20,6 +20,9 @@
     if(isIn(event.target, '.navbar-subnav')) {
       return;
     }
+
+    event.preventDefault();
+
     var isOpen = $(this).is('.open');
 
     $('.menu-item.open').removeClass('open');
