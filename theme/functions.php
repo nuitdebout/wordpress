@@ -25,10 +25,10 @@ $sage_includes = [
 
 	'acf/acf_options.php',
 	'lib/wp_bootstrap_navwalker.php',
-	'lib/nuitdebout.php',
 	'lib/nuitdebout/homepage.php',
-	'lib/openagenda.php',
+	'lib/nuitdebout/openagenda.php',
 	'lib/nuitdebout/periscope.php',
+	'lib/nuitdebout/utils.php',
 	'components/register_component.php',
 ];
 
