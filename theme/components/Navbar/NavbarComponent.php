@@ -32,7 +32,7 @@ class NavbarComponent extends BaseComponent
 
 		return [
 			'logoImg' => Assets\asset_path('images/logoblack.svg'),
-			'mobileNavImg' =>  Assets\asset_path('images/headertest.jpg'),
+			'mobileNavImg' =>  Assets\asset_path('images/mobile-nav.jpg'),
 			'walker' => $walker,
 		];
 	}
