@@ -527,46 +527,4 @@ if(function_exists("register_field_group"))
 		),
 		'menu_order' => 0,
 	));
-
-	register_field_group(array (
-		'id' => 'acf_extra-page',
-		'title' => 'extra page',
-		'fields' => array (
-			array (
-				'key' => 'field_opedffd6hj18',
-				'label' => 'inclure banniere en-tete',
-				'name' => 'page_include_screen',
-				'type' => 'true_false',
-				'instructions' => '',
-				'layout' => 'vertical',
-			),
-			array (
-				'key' => 'field_pagest228',
-				'label' => 'Sous-titre',
-				'name' => 'page_include_subtitle',
-				'type' => 'text',
-				'instructions' => '',
-				'layout' => 'vertical',
-			)
-
-		),
-		'location' => array (
-			array (
-				array (
-					'param' => 'page_template',
-					'operator' => '==',
-					'value' => 'default',
-					'order_no' => 0,
-					'group_no' => 0,
-				),
-			),
-		),
-		'options' => array (
-			'position' => 'normal',
-			'layout' => 'no_box',
-			'hide_on_screen' => array (
-			),
-		),
-		'menu_order' => 0,
-	));
 }
