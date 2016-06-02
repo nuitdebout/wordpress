@@ -1,1 +1,0 @@
-<a class="url action-link js_use_search" href="{ShareUrl}" target="_blank">{ShareLabel}</a>
