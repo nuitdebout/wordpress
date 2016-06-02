@@ -1,3 +1,6 @@
+<?php
+use Roots\Sage\Assets;
+?>
 <footer class="footer">
 
     <div class="footer__main">
@@ -35,7 +38,7 @@
         <div class="footer-section">
             <h5 class="footer-section__title">Voir aussi</h5>
             <a title="CONVERGENCE DES LUTTES" target="_blank" href="https://www.convergence-des-luttes.org/">
-                <img alt="CONVERGENCE DES LUTTES" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/CONVERGENCE-DES-LUTTES.png"/>
+                <img alt="CONVERGENCE DES LUTTES" src="<?php echo Assets\asset_path('images/CONVERGENCE-DES-LUTTES.png') ?>"/>
             </a>
             <?php dynamic_sidebar('sidebar-footer'); ?>
         </div>
