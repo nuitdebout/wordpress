@@ -508,50 +508,6 @@ if(function_exists("register_field_group"))
 				'maxlength' => '',
 			),
 			array (
-				'key' => 'field_57123b4936e56',
-				'label' => 'Participer',
-				'name' => '',
-				'type' => 'tab',
-			),
-			array (
-				'key' => 'field_57123c1936e58',
-				'label' => 'Inclure le module participer',
-				'name' => 'homepage_module_takepart',
-				'type' => 'select',
-				'choices' => array (
-					'oui' => 'Oui',
-					'non' => 'Non',
-				),
-				'default_value' => '',
-				'allow_null' => 0,
-				'multiple' => 0,
-			),
-			array (
-				'key' => 'field_571261bcb088d',
-				'label' => 'Participer (page)',
-				'name' => 'homepage_takepart',
-				'type' => 'post_object',
-				'conditional_logic' => array (
-					'status' => 1,
-					'rules' => array (
-						array (
-							'field' => 'field_57125fb8963ea',
-							'operator' => '==',
-							'value' => 'oui',
-						),
-					),
-					'allorany' => 'all',
-				),
-				'post_type' => array (
-					0 => 'page',
-				),
-				'taxonomy' => array (
-					0 => 'all',
-				),
-				'allow_null' => 0,
-				'multiple' => 0,
-			),
-			array (
 				'key' => 'field_57544125fb0963e9',
 				'label' => 'iframe libre',
 				'name' => 'iframe_libre',
