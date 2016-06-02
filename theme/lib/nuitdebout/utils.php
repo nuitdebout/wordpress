@@ -22,22 +22,6 @@ function getAttachmentThumb($id) {
 	return $url;
 }
 
-function get_extra_social_array() {
-
-	$sc = array(
-		'wiki'=> array(
-			'name'=>'Wiki',
-			'icon' => 'ic-wiki'
-		),
-		'chat'=> array(
-			'name'=>'chat',
-			'icon' => 'ic-chat'
-		)
-
-	);
-	return $sc;
-}
-
 function get_social_array($include_only = NULL) {
 	$sc = array(
 		'twitter'=> array(
