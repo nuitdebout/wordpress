@@ -1,6 +1,6 @@
 <?php
 
-namespace NuitDebout\Wordress\OpenAgenda;
+namespace NuitDebout\Wordpress\OpenAgenda;
 
 use Goutte\Client as GoutteClient;
 use Doctrine\Common\Cache\Cache;
@@ -176,7 +176,7 @@ function get_dates()
 
 define('USE_CACHE', true);
 
-$cache = USE_CACHE ? new FilesystemCache(__DIR__.'/../cache/agenda') : new VoidCache();
+$cache = USE_CACHE ? new FilesystemCache(__DIR__.'/../../cache/agenda') : new VoidCache();
 $client = new JsonApiClient($cache);
 
 function precache_events()

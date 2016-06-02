@@ -1,52 +1,76 @@
 <?php
-$displayedSocials = [];
 
-$sc = get_social_array();
-foreach ( $sc as $key => $socialConfig ) {
-	if( is_page_template('page-ville.php') ){
-		$key_name = $key.'_page_url';
-		$val_key  = get_field($key_name);
-	}
-	else{
-		$key_name = 'social_'.$key;
-	    $val_key  = get_field($key_name, 'option');
-	}
+$displayedSocials = [
+	'twitter' => array(
+		'name' => 'Twitter',
+		'url' => 'https://twitter.com/nuitdebout',
+		'icon' => 'ic-twitter'
+	),
+	'facebook' => array(
+		'name' => 'Facebook',
+		'url' => 'https://www.facebook.com/NuitDebout',
+		'icon' => 'ic-facebook'
+	),
+	'bambuser' => array(
+		'name' => 'Bambuser',
+		'url' => 'http://bambuser.com/channel/nuitdebout',
+		'icon' => 'ic-bambuser'
+	),
+	'instagram' => array(
+		'name' => 'Instagram',
+		'url' => 'https://www.instagram.com/nuitdebout',
+		'icon' => 'ic-instagram'
+	),
+	'tumblr' => array(
+		'name' => 'Tumblr',
+		'url' => 'https://nuitdebout.tumblr.com/',
+		'icon' => 'ic-tumblr'
+	),
+	'periscope' => array(
+		'name' => 'Periscope',
+		'url' => 'https://nuitdebout.fr/periscope/',
+		'icon' => 'ic-periscope'
+	),
+	'snapchat' => array(
+		'name' => 'Snapchat',
+		'url' => 'https://www.snapchat.com/#nuitdebout',
+		'icon' => 'ic-snapchat'
+	),
+	'scoopit' => array(
+		'name' => 'Scoopit',
+		'url' => 'http://www.scoop.it/t/nuit-debout',
+		'icon' => 'ic-scoopit'
+	),
+	'github' => array(
+		'name' => 'Github',
+		'url' => 'https://github.com/nuitdebout',
+		'icon' => 'ic-github'
+	),
+	'reddit' => array(
+		'name' => 'Reddit',
+		'url' => 'https://www.reddit.com/r/nuitdebout/',
+		'icon' => 'ic-reddit'
+	),
+];
 
-	if( $val_key ) {
-		$socialConfig['url'] = $val_key;
-		$displayedSocials[$key] = $socialConfig;
-	} elseif ($key === 'nuitdebout' && !is_page_template('page-ville.php') ) {
-		$displayedSocials[$key] = $socialConfig;
-	}
-}
 if (count($displayedSocials)) : ?>
 	<section class="section">
 		<div class="section__title">Réseaux sociaux</div>
 		<div class="social-networks-section">
-			<?php
-			foreach ( $displayedSocials as $key => $socialConfig ) :
-				if( $key !== 'nuitdebout' ) : ?>
-					<a href="<?php echo $socialConfig['url']; ?>" target="_blank"
-					   class="social-networks-section-item social-networks-section-item--<?php echo $key ?>">
-						<i class="social-networks-section-item__icon <?= $socialConfig['icon'] ?>" ></i>
-						<div class="social-networks-section-item__name">
-							<?php echo $socialConfig['name']; ?>
-						</div>
-					</a>
-				<?php
-				else:
-					?>
-					<div class="social-networks-section-item social-networks-section-item--<?php echo $key ?>">
-						<img class="social-networks-section-item__image" alt="<?php echo $key ?>"
-							 src="<?php echo get_stylesheet_directory_uri() . '/assets/images/' . $socialConfig['image'] ?>" />
-						<div class="social-networks-section-item__name">
-							<?php echo $socialConfig['name']; ?>
-						</div>
+			<?php foreach ( $displayedSocials as $key => $socialConfig ) : ?>
+				<a href="<?php echo $socialConfig['url']; ?>" target="_blank"
+				   class="social-networks-section-item social-networks-section-item--<?php echo $key ?>">
+					<i class="social-networks-section-item__icon <?= $socialConfig['icon'] ?>" ></i>
+					<div class="social-networks-section-item__name">
+						<?php echo $socialConfig['name']; ?>
 					</div>
-				<?php
-				endif;
-			endforeach;
-			?>
+				</a>
+			<?php endforeach; ?>
+			<div class="social-networks-section-item social-networks-section-item--nuitdebout">
+				<img class="social-networks-section-item__image" alt="Nuitdebout"
+					 src="<?php echo get_stylesheet_directory_uri() ?>/dist/images/logowhite.svg" />
+				<div class="social-networks-section-item__name">est partout</div>
+			</div>
 		</div>
 	</section>
 <?php endif; ?>

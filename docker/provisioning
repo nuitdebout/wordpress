@@ -1,7 +1,0 @@
-FROM node:latest
-
-RUN npm install -g gulp bower
-
-COPY provisioning.sh /
-
-CMD /provisioning.sh

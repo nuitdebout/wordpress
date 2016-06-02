@@ -1,6 +1,0 @@
-#!/bin/sh
-
-set -e
-
-docker-compose up -d
-echo "Go to http://nuitdebout.dev"

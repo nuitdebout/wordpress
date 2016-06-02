@@ -3,7 +3,7 @@ namespace Component\Navbar;
 
 use Component\BaseComponent;
 use Component\Common\NotDisplayableException;
-
+use Roots\Sage\Assets;
 
 class NavbarComponent extends BaseComponent
 {
@@ -28,12 +28,11 @@ class NavbarComponent extends BaseComponent
 			throw new NotDisplayableException('No menu to display in the navbar');
 		}
 
-		$baseImgUri =  get_stylesheet_directory_uri() . '/assets/images/';
 		$walker = new NavWalker();
 
 		return [
-			'logoImg' => $baseImgUri . 'logoblack.svg',
-			'mobileNavImg' =>  $baseImgUri . 'headertest.jpg',
+			'logoImg' => Assets\asset_path('images/logoblack.svg'),
+			'mobileNavImg' =>  Assets\asset_path('images/mobile-nav.jpg'),
 			'walker' => $walker,
 		];
 	}

@@ -67,16 +67,6 @@ Vous aurait peut-être besoin d'installer un plugin pour vagrant
 vagrant plugin install vagrant-vbguest
 ```
 
-
-### Avec Docker
-
-**Attention** : Suite à des modifications récentes, le Docker doit être mis à jour
-
-1. Lancer `./bin/bootstrap` et suivez les indications
-1. Aller sur [nuitdebout.dev](http://nuitdebout.dev)
-
-Pour relancer plus tard: `./bin/server`
-
 ### Installation sans machine virtuelle.
 
 Si vous preferez faire tourner le site directement sur votre machine locale, vous allez devoir télécharger wordpress. Utilisez le fichier de configuration `wp-config.php`.

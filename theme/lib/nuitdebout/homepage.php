@@ -1,6 +1,6 @@
 <?php
 
-namespace NuitDebout\Wordress\Homepage;
+namespace NuitDebout\Wordpress\Homepage;
 
 use TwitterAPIExchange;
 use GuzzleHttp\Client;

@@ -1,5 +1,5 @@
 <?php
-use NuitDebout\Wordress\OpenAgenda;
+use NuitDebout\Wordpress\OpenAgenda;
 // Get event title & description in default language
 $event_title = current($event['title']);
 $event_description = current($event['description']);
