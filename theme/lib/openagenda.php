@@ -1,6 +1,6 @@
 <?php
 
-namespace NuitDebout\Wordress\OpenAgenda;
+namespace NuitDebout\Wordpress\OpenAgenda;
 
 use Goutte\Client as GoutteClient;
 use Doctrine\Common\Cache\Cache;

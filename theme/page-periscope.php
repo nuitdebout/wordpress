@@ -7,7 +7,7 @@
  * @since Twenty Fourteen 1.0
  */
 
-use NuitDebout\Wordress\Periscope;
+use NuitDebout\Wordpress\Periscope;
 
 ?>
 <?php while (have_posts()) : the_post(); ?>

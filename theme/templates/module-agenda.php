@@ -1,5 +1,5 @@
 <?php
-use NuitDebout\Wordress\OpenAgenda;
+use NuitDebout\Wordpress\OpenAgenda;
 ?>
 <section id="agenda" class="agenda">
     <h2 class="agenda__title">Agenda</h2>

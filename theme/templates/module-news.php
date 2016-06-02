@@ -1,6 +1,6 @@
 <?php
 
-use NuitDebout\Wordress\Homepage;
+use NuitDebout\Wordpress\Homepage;
 
 $featured = Homepage\get_featured_post();
 $important = Homepage\get_important_post();

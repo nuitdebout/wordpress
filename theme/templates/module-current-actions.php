@@ -1,4 +1,4 @@
-<?php use NuitDebout\Wordress\OpenAgenda; ?>
+<?php use NuitDebout\Wordpress\OpenAgenda; ?>
 <?php if (OpenAgenda\has_featured_events()) : ?>
 
 	<?php

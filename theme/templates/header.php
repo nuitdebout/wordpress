@@ -1,4 +1,4 @@
-<?php use NuitDebout\Wordress\OpenAgenda; ?>
+<?php use NuitDebout\Wordpress\OpenAgenda; ?>
 
 <header class="header">
 	<?php if (is_main_site()) : ?>

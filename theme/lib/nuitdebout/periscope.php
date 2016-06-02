@@ -1,6 +1,6 @@
 <?php
 
-namespace NuitDebout\Wordress\Periscope;
+namespace NuitDebout\Wordpress\Periscope;
 
 function get_periscopers($post)
 {
