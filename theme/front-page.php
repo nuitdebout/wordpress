@@ -10,6 +10,7 @@
 <?php
 
 if (!is_main_site()) :
+
 	if (is_active_sidebar('homepage-top')) :
 		dynamic_sidebar('homepage-top');
 	endif;
@@ -21,17 +22,13 @@ if (!is_main_site()) :
 	if (is_active_sidebar('homepage-top')) :
 		dynamic_sidebar('homepage-bottom');
 	endif;
-	if (!is_paged() && get_field('global_module_social', 'option') == 'oui') :
-		get_template_part('templates/module', 'home-social');
-	endif;
+
 else :
 
 	get_template_part('templates/module', 'screen');
 	get_template_part('templates/module', 'media');
 	get_template_part('templates/module', 'news');
-	if( !is_paged() && get_field('global_module_social', 'option') == 'oui' ) {
-		get_template_part('templates/module', 'home-social');
-	}
+	get_template_part('templates/module', 'home-social');
 	get_template_part('templates/module', 'rassemblements');
 	get_template_part('templates/module', 'instagram');
 
