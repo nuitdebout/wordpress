@@ -197,13 +197,19 @@ iframe {
 
 
 .news-container {
-
+  @extend .row;
+  background-color: $gray-lighter;
   h2 {
     @include title-font;
   }
 
   h3 {
     font-family: Roboto;
+  }
+
+  > .section {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -346,7 +352,6 @@ $news-headline-size: 360px !default;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  margin-bottom: 15px;
 }
 .external-media-link {
   flex-grow: 1;

@@ -10,7 +10,8 @@ $exclude = [];
 
 ?>
 
-<div class="news-container section section--container">
+<div class="news-container">
+<div class="section section--container">
 	<div class="row">
 		<div class="col-md-8">
 
@@ -89,4 +90,5 @@ $exclude = [];
 		</div>
 		<?php endforeach ?>
 	</div>
+</div>
 </div>
