@@ -11,6 +11,8 @@
   padding: 0 10px;
   position: relative;
 
+  border-bottom: 1px solid $gray-light;
+
   .nd-navbar__item {
     display: inline-block;
     min-width: 150px;
