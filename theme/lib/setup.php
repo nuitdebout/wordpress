@@ -120,11 +120,7 @@ function display_sidebar() {
     // @link https://codex.wordpress.org/Conditional_Tags
     is_404(),
     is_main_site() && is_front_page(),
-    is_page_template('page-globaldebout.php'),
-    is_page_template('page-list-subpages.php'),
-    is_page_template('page-periscope.php'),
-    is_page_template('page-ville.php'),
-    is_page_template('page-villes.php'),
+    is_page(),
     !is_active_sidebar('sidebar-primary'),
   ]);
 
