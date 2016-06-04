@@ -44,7 +44,7 @@ $exclude = [];
 						'source' => get_post_meta(get_the_ID(), 'source_title', true),
 						'content' => strip_tags(get_the_excerpt()),
 						'link' => get_the_permalink(),
-						'image' => get_the_post_thumbnail( null, 'medium', ['class' => 'news-card__thumb']),
+						'image' =>  get_the_post_thumbnail_url(null, 'medium'),
 					]); ?>
 	            <?php endfor; ?>
 			</div>
