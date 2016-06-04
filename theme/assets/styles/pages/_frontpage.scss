@@ -218,6 +218,8 @@ iframe {
 
 
 $news-headline-size: 360px !default;
+$news-headline-mobile-size: 150px !default;
+
 .news-headlines {
   display: flex;
   flex-wrap: wrap;
@@ -248,6 +250,13 @@ $news-headline-size: 360px !default;
     font-size: 30px;
     color: #fff;
     text-shadow: 0 3px 4px rgba(0,0,0,.5);
+
+    @media (max-width: $screen-xs-max) {
+      height: $news-headline-mobile-size;
+      flex-basis: $news-headline-mobile-size;
+      font-size: 18px;
+
+    }
   }
   .news-headlines__item--first {
     flex-grow: 2;
