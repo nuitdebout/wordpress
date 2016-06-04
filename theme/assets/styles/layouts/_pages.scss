@@ -1,7 +1,8 @@
 .page-header {
-  padding-bottom: 0;
-  margin: 0;
-  border-bottom: none;
+  h1, h2, h3 {
+    font-family: Roboto;
+    font-weight: bold;
+  }
 }
 
 .page {
@@ -20,5 +21,20 @@
 
   .wp-post-image {
     @extend .img-responsive;
+  }
+}
+
+body {
+  &.page-template-page-villes {
+    #results {
+      .panel {
+        .list-group-item > i:before {
+          vertical-align: middle;
+          font-size: 18px;
+          line-height: 1;
+          margin-right: 5px;
+        }
+      }
+    }
   }
 }

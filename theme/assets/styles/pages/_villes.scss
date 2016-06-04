@@ -1,0 +1,22 @@
+.cities-container {
+  .loader {
+    display: none;
+  }
+  .affix {
+    @media (min-width: $screen-sm-min) {
+      top: 20px;
+    }
+    @media (min-width: $screen-lg-min) {
+      width: 360px;
+    }
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+      width: 293.33px;
+    }
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      width: 220px;
+    }
+    @media (max-width: $screen-xs-max) {
+      position: static !important;
+    }
+  }
+}

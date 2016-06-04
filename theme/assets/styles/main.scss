@@ -32,6 +32,8 @@
 @import "pages/_frontpage";
 @import "pages/_frontpage_social";
 @import "pages/_periscope";
+@import "pages/_villes";
 
 // For a strange reason, video-js.css screws the fonts when included via bower:scss
 @import "../../bower_components/video.js/dist/video-js.css";
+@import "../../bower_components/SpinKit/css/spinkit.css";
