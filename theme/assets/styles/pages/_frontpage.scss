@@ -402,11 +402,18 @@ $news-headline-mobile-size: 150px !default;
   @include card;
 
   flex: 1;
+  @media (max-width: $screen-xs-max) {
+    flex: 1 0 100%;
+  }
 
   display: flex;
   flex-direction: column;
 
   padding: 15px;
+
+  .article-list-column__title {
+    text-align: center;
+  }
 
   .article-list-column__articles {
     flex: 1;
