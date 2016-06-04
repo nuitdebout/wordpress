@@ -25,6 +25,7 @@ $sage_includes = [
 
 	'acf/acf_options.php',
 	'lib/nuitdebout/cities.php',
+	'lib/nuitdebout/coordination.php',
 	'lib/nuitdebout/homepage.php',
 	'lib/nuitdebout/openagenda.php',
 	'lib/nuitdebout/periscope.php',

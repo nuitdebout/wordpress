@@ -35,6 +35,8 @@
     "symfony/dom-crawler": "^3.0",
     "fabpot/goutte": "^3.1",
     "doctrine/cache": "^1.6",
-    "j7mbo/twitter-api-php": "dev-master"
+    "j7mbo/twitter-api-php": "dev-master",
+    "asimlqt/php-google-spreadsheet-client": "^2.3",
+    "google/apiclient": "^1.1"
   }
 }
