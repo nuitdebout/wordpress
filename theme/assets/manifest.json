@@ -37,6 +37,12 @@
       "main":  "components/components.scss",
       "sources": "components/**/*.scss",
       "dir": "components"
-    }
+    },
+    "browsers": [
+      "last 2 versions",
+      "android 4",
+      "opera 12",
+      "IE >= 10"
+    ]
   }
 }

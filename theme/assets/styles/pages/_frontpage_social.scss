@@ -142,6 +142,7 @@ a[href].social-networks-section-item {
 @media (max-width: $screen-xs-max) {
   .social-networks-section-item{
     height: 70px;
+    flex-basis: 100px;
   }
   .social-networks-section-item__name {
     display: none;

@@ -255,7 +255,6 @@ $news-headline-mobile-size: 150px !default;
       height: $news-headline-mobile-size;
       flex-basis: $news-headline-mobile-size;
       font-size: 18px;
-
     }
   }
   .news-headlines__item--first {
@@ -406,7 +405,7 @@ $news-headline-mobile-size: 150px !default;
     flex: 1 0 100%;
   }
 
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
 
   padding: 15px;
@@ -416,13 +415,13 @@ $news-headline-mobile-size: 150px !default;
   }
 
   .article-list-column__articles {
-    flex: 1;
+    flex-grow: 1;
   }
 
 
   a.block-link {
     display: block;
-    color: initial;
+    color: $gray-darker;
   }
 
   .entry:nth-child(2) {
