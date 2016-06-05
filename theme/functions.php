@@ -29,6 +29,7 @@ $sage_includes = [
 	'lib/nuitdebout/openagenda.php',
 	'lib/nuitdebout/periscope.php',
 	'lib/nuitdebout/utils.php',
+	'lib/nuitdebout/jeuxdebout.php',
 	'components/register_component.php',
 ];
 
