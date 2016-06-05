@@ -103,9 +103,11 @@
 }
 
 .widget {
-  border-top: 4px solid #36474f;
-  padding-top: 20px;
-  margin-bottom: 40px;
+  @include card;
+
+  margin-bottom: 20px;
+  padding: $padding-base;
+
   h1, h2, h3 {
     @include title-font;
     margin-top: 0;
