@@ -38,22 +38,13 @@ $exclude = [];
 			?>
 	        <div class="news-list">
 	            <?php for ($i = 0; $sticky->have_posts() && $i < 6; $i++ ) : $sticky->the_post(); ?>
-	            <a class="news-card  <?php echo has_post_thumbnail() ? 'news-card--animated' : ''?>"
-				   href="<?php the_permalink(); ?>">
-	                <?php if (has_post_thumbnail()) : ?>
-	                    <?php the_post_thumbnail('medium', ['class' => 'news-card__thumb']) ?>
-	                <?php endif; ?>
-	                <div class="news-card__caption">
-	                    <h4 class="news-card__title"><?php the_title(); ?></h4>
-						<p class="news-card__content"><?php echo strip_tags(get_the_excerpt()); ?></p>
-	                    <small class="news-card__source">
-	                        <?php echo get_post_meta(get_the_ID(), 'source_title', true) ?>
-	                    </small>
-	                </div>
-					<p class="news-card__content-animated">
-						<?php echo strip_tags(get_the_excerpt());?>
-					</p>
-	            </a>
+					<?php the_component('news-card', [
+						'title' => get_the_title(),
+						'source' => get_post_meta(get_the_ID(), 'source_title', true),
+						'content' => strip_tags(get_the_excerpt()),
+						'link' => get_the_permalink(),
+						'image' =>  get_the_post_thumbnail_url(null, 'medium'),
+					]); ?>
 	            <?php endfor; ?>
 			</div>
 		</div>

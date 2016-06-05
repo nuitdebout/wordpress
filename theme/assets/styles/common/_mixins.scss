@@ -95,4 +95,8 @@
   margin: 5px;
 
   @include box-shadow(1px, 1px, 10px, #ddd);
+
+  @media (max-width: $screen-xs-max) {
+    @include make-row;
+  }
 }

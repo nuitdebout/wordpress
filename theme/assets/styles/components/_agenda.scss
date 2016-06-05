@@ -53,6 +53,7 @@
 
   .agenda__title {
     @include title-font;
+    text-align: center;
   }
   .agenda__form {
     border-top: 1px solid #f7f7f7;

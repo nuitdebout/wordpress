@@ -1,6 +1,7 @@
 <?php
 $componentClasses = [
 	'\Component\Navbar\NavbarComponent',
+	'\Component\NewsCard\NewsCardComponent',
 ];
 
 /** @var \Component\BaseComponent[] $components */

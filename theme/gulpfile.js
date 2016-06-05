@@ -103,13 +103,7 @@ var cssTasks = function(filename) {
       }));
     })
     .pipe(concat, filename)
-    .pipe(autoprefixer, {
-      browsers: [
-        'last 2 versions',
-        'android 4',
-        'opera 12'
-      ]
-    })
+    .pipe(autoprefixer, config.browsers)
     .pipe(cssNano, {
       safe: true
     })
@@ -354,7 +348,7 @@ gulp.task('style:component', ['wiredep'], function() {
     .pipe(inject(injectFiles, injectOptions))
     .pipe(sourcemaps.init())
     .pipe(sass(sassOptions))
-    .pipe(autoprefixer())
+    .pipe(autoprefixer(config.browsers))
     .pipe(cssNano())
     .pipe(gulp.dest('dist/styles'))
     .pipe(browserSync.reload({ stream: true }))
