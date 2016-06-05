@@ -11,8 +11,17 @@ body.sidebar-primary,
 body.page:not(.home) {
   .main,
   .sidebar {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media (max-width: $screen-sm-max) {
+    .main {
+      padding-bottom: 0;
+    }
+    .sidebar {
+      padding-top: 0;
+    }
   }
 }
 

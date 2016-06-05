@@ -68,34 +68,20 @@ body.page-id-480 .section__content {
     font-size: 22px;
     margin-bottom: 10px;
   }
-
-  // Only the first level list are stylised to display tags
-  /* & > ul {
-
-    text-align: center;
-    & > li {
-      display: inline-block;
-      border: none;
-      margin: 0;
-      padding: 0;
-
-      & > a {
-        @include tag-link();
-      }
-    }
-  }
-  */
-
 }
 body.single-post{
   background-color: $gray-lighter;
 }
 .post.post--single {
 
+  @include card;
+  padding: $padding-base;
+  margin-bottom: 30px;
+
   .post__header {
 
     time.updated {
-      color: $gray-light;
+      color: $gray;
       display: block;
     }
 
@@ -106,14 +92,6 @@ body.single-post{
     }
   }
 
-  .post__content {
-    padding-bottom: 25px;
-    border-bottom: 1px solid $gray-light;
-  }
-  .post__comments {
-    padding-top: 50px;
-  }
-
   /**
    * Post style
    * Scoped in post--single but can be generalized
@@ -122,12 +100,12 @@ body.single-post{
     font-size: 35px;
     font-family: "Roboto", serif;
 
-    color: $gray;
+    color: $gray-dark;
     margin: 20px 0;
   }
 
   .entry-content {
-    color: $gray;
+    color: $gray-dark;
 
     ul > li {
       border: none;
@@ -138,12 +116,15 @@ body.single-post{
     p {
       margin-bottom: 25px;
     }
+    .size-full {
+      max-width: 100%;
+    }
   }
   .post-taxonomies{
     margin:1em 0;
     display:block;
     .post-taxonomy{
-      color: $gray-light;
+      color: $gray;
       &.post-taxonomy--post_tag{
           & > a {
             @include tag-link-reverse();

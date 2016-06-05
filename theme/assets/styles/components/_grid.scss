@@ -1,12 +1,9 @@
 // Grid system
-.main {
-  @include make-sm-column($main-sm-columns);
-  .sidebar-primary & {
-    @include make-sm-column($main-sm-columns - $sidebar-sm-columns);
-  }
+.sidebar-primary .main {
+  @include make-md-column(12 - $sidebar-md-columns);
 }
 
 .sidebar {
-  @include make-sm-column($sidebar-sm-columns);
+  @include make-md-column($sidebar-md-columns);
 }
 

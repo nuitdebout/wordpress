@@ -15,7 +15,6 @@
             <?php the_content(); ?>
         </div>
 
-
         <div class="share-btns">
             <div class="center-block">
                 <div class="fb-share-button" data-layout="button_count"></div>
@@ -27,11 +26,9 @@
         </div>
 
         <?php get_template_part('templates/entry-taxonomies'); ?>
-
-    </div>
-
-    <div class="post__comments">
-        <?php comments_template('/templates/comments.php'); ?>
     </div>
 </article>
+
+<?php comments_template('/templates/comments.php'); ?>
+
 <?php endwhile; ?>

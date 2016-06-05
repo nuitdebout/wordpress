@@ -14,18 +14,13 @@
   border-bottom: 1px solid $gray;
 
   .comment {
+    @include card;
+
     display: block;
     width: 100%;
 
-    background-color: white;
-    border-radius: 5px;
-
-    border: none;
-
-    padding: 10px;
+    padding: $padding-base;
     margin: 20px 0;
-
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10), 0 1px 3px rgba(0, 0, 0, 0.16);
 
     .comment-awaiting-moderation,
     .comment-metadata time {
@@ -40,6 +35,14 @@
     .reply {
       font-weight: bold;
     }
+
+    .comment {
+      border: none;
+      border-left: 2px solid $gray-light;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
   }
 }
 
