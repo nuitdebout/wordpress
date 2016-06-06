@@ -2,6 +2,27 @@
 
 namespace NuitDebout\Wordpress\Cities;
 
+function get_commissions($city_page)
+{
+	$commissions = [];
+	if ($commission_pages = get_pages(['child_of' => $city_page->ID, 'post_type' => 'page', 'post_status' => 'publish'])) {
+	    foreach ($commission_pages as $commission_page) {
+	    	$commissions[] = $commission_page; // hydrate_city($city_page);
+	    }
+	}
+
+	return $commissions;
+}
+
+function hydrate_commission($commission_page)
+{
+	return [
+		'name' => get_field('commission_name', $commission_page->ID),
+		'contact_email' => get_field('contact_email', $commission_page->ID),
+		'goals' => get_field('commission_goals', $commission_page->ID),
+	];
+}
+
 function hydrate_city($city_page)
 {
 	$fields = get_fields($city_page->ID);
@@ -10,6 +31,10 @@ function hydrate_city($city_page)
 	if (!empty($fields['city_external_links'])) {
 		$other_links = explode(PHP_EOL, $fields['city_external_links']);
 	}
+
+	$commissions = array_map(function($commission_page) {
+		return hydrate_commission($commission_page);
+	}, get_commissions($city_page)) ;
 
 	return [
 		'name' => $city_page->post_title,
@@ -21,6 +46,7 @@ function hydrate_city($city_page)
 		'gathering_details' => $fields['city_gathering_details'],
 		'other_links' => $other_links,
 		'page_id' => $city_page->ID,
+		'commissions' => $commissions,
 	];
 }
 

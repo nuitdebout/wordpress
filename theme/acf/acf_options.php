@@ -228,3 +228,65 @@ if(function_exists("register_field_group"))
 		'menu_order' => 0,
 	));
 }
+
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_page-commission',
+		'title' => 'Page commission',
+		'fields' => array (
+			array (
+				'key' => 'field_573e153d9555f',
+				'label' => 'Nom de la commission',
+				'name' => 'commission_name',
+				'type' => 'text',
+				'required' => 1,
+				'default_value' => 'Commission Écologie',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_573e1560e1fa5',
+				'label' => 'E-mail de contact',
+				'name' => 'contact_email',
+				'type' => 'email',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+			),
+			array (
+				'key' => 'field_5755a1a669913',
+				'label' => 'Objectifs de la commission',
+				'name' => 'commission_goals',
+				'type' => 'textarea',
+				'default_value' => '',
+				'placeholder' => '',
+				'maxlength' => '',
+				'rows' => '',
+				'formatting' => 'br',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'page_template',
+					'operator' => '==',
+					'value' => 'page-commission.php',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}

@@ -10,6 +10,14 @@
 	</div>
 	<?php endif; ?>
 
+	<?php if (!empty($city['commissions'])) : ?>
+		<h4>Commissions</h4>
+	  	<?php foreach ($city['commissions'] as $commission) : ?>
+			<?php echo $commission['name'] ?>
+		<?php endforeach; ?>
+	<?php endif; ?>
+
+
 	<ul class="list-group">
 
 		<?php if (!empty($city['official_website'])) : ?>

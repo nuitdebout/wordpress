@@ -9,7 +9,7 @@
  *
  * @link https://github.com/roots/sage/pull/1042
  */
-define( 'ACF_LITE', true );
+define( 'ACF_LITE', false );
 
 include_once(ABSPATH . 'wp-content/plugins/advanced-custom-fields/acf.php');
 
