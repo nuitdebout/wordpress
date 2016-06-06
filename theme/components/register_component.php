@@ -10,6 +10,12 @@ $components = [];
 function instanciate_components() {
 	global $componentClasses;
 	global $components;
+
+	// on wp-cli
+	if ($componentClasses === null) {
+		return;
+	}
+
 	foreach ($componentClasses as $componentClass) {
 		$reflected = new \ReflectionClass($componentClass);
 		$component = $reflected->newInstance();
@@ -21,6 +27,10 @@ add_action('after_setup_theme', 'instanciate_components');
 
 function register_modules_as_widget () {
 	global $components;
+	// on wp-cli
+	if ($components === null) {
+		return;
+	}
 	foreach ($components as $component) {
 		$component->register_as_widget();
 	}
