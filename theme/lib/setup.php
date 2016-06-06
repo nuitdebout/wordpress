@@ -57,55 +57,47 @@ add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
  * Register sidebars
  */
 function widgets_init() {
-  register_sidebar([
-    'name'          => 'Bannière homepage', // TODO translate
-    'id'            => 'homepage-banner',
-    'before_widget' => '<div>',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h2>',
-    'after_title'   => '</h2>'
-  ]);
-  register_sidebar([
-    'name'          => 'Haut de page', // TODO translate
-    'id'            => 'homepage-top',
-    'before_widget' => '<div class=" %1$s %2$s section__content">',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h2 class="section__title">',
-    'after_title'   => '</h2>'
-  ]);
-  // register_sidebar([
-  //   'name'          => 'homepage-flex-top',
-  //   'id'            => 'homepage-flex-top',
-  //   'before_widget' => '<div class="flex-widget"><div class=" %1$s %2$s">',
-  //   'after_widget'  => '</div></div>',
-  //   'before_title'  => '<h2 class="flex-widget__title">',
-  //   'after_title'   => '</h2>'
-  // ]);
-  register_sidebar([
-    'name'          => 'Bas de page', // TODO translate
-    'id'            => 'homepage-bottom',
-    'before_widget' => '<div class=" %1$s %2$s section__content">',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h2>',
-    'after_title'   => '</h2>'
-  ]);
+	register_sidebar([
+		'name'          => 'Panneau latéral', // TODO translate
+		'id'            => 'sidebar-primary',
+		'before_widget' => '<section class="widget %1$s %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h3>',
+		'after_title'   => '</h3>'
+	]);
+	register_sidebar([
+		'name'          => 'Bannière homepage', // TODO translate
+		'id'            => 'homepage-banner',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>'
+	]);
+	register_sidebar([
+		'name'          => 'Haut de page', // TODO translate
+		'id'            => 'homepage-top',
+		'before_widget' => '<div class=" %1$s %2$s section__content">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="section__title">',
+		'after_title'   => '</h2>'
+	]);
+	register_sidebar([
+		'name'          => 'Bas de page', // TODO translate
+		'id'            => 'homepage-bottom',
+		'before_widget' => '<div class=" %1$s %2$s section__content">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>'
+	]);
 
-  register_sidebar([
-    'name'          => 'Panneau latéral', // TODO translate
-    'id'            => 'sidebar-primary',
-    'before_widget' => '<section class="widget %1$s %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
-  ]);
-  register_sidebar([
-    'name'          => __('Footer', 'sage'), // TODO translate
-    'id'            => 'sidebar-footer',
-    'before_widget' => '<div>',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h5>',
-    'after_title'   => '</h5>'
-  ]);
+	register_sidebar([
+		'name'          => __('Footer', 'sage'), // TODO translate
+		'id'            => 'sidebar-footer',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h5>',
+		'after_title'   => '</h5>'
+	]);
 }
 add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
 
