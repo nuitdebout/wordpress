@@ -8,12 +8,18 @@ $news-card-size: 300px;
   overflow: hidden;
 
   flex: 1 0 $news-card-size;
+  flex-direction: column;
 
   background-size: cover;
   background-position: center;
 
   &:hover, &:active, &:focus {
     color: $gray;
+  }
+
+  .news-card__embedded > iframe {
+    max-width: 100% !important;
+    max-height: $news-card-size !important;
   }
 
   .news-card__caption {

@@ -24,6 +24,7 @@ class NewsCardComponent extends BaseComponent
 			'content' => [],
 			'image' => [],
 			'source' => [],
+			'embedded' => [],
 			'link' => [
 				'default' => '#'
 			]
@@ -32,6 +33,10 @@ class NewsCardComponent extends BaseComponent
 
 	protected function get_template_path($args, $instance)
 	{
+		if (sizeof($instance['embedded']) > 0) {
+			return 'components/NewsCard/news_card_embedded_template.php';
+		}
+
 		if (! $instance['image']) {
 			return 'components/NewsCard/news_card_no_image_template.php';
 		}

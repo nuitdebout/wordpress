@@ -38,13 +38,16 @@ $exclude = [];
 			?>
 	        <div class="news-list">
 	            <?php for ($i = 0; $sticky->have_posts() && $i < 6; $i++ ) : $sticky->the_post(); ?>
-					<?php the_component('news-card', [
-						'title' => get_the_title(),
-						'source' => get_post_meta(get_the_ID(), 'source_title', true),
-						'content' => strip_tags(get_the_excerpt()),
-						'link' => get_the_permalink(),
-						'image' =>  get_the_post_thumbnail_url(null, 'medium'),
-					]); ?>
+					<?php
+						the_component('news-card', [
+							'title' => get_the_title(),
+							'source' => get_post_meta(get_the_ID(), 'source_title', true),
+							'content' => strip_tags(get_the_excerpt()),
+							'link' => get_the_permalink(),
+							'image' => get_attached_media('image')[0]->guid,
+							'embedded' => get_media_embedded_in_content(apply_filters( 'the_content', get_the_content()))
+						]);
+					?>
 	            <?php endfor; ?>
 			</div>
 		</div>
