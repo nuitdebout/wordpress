@@ -4,8 +4,17 @@ a:active {
   text-decoration: none;
 }
 
-.content {
+// to always move the footer at the bottom of the page
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
+.wrap {
+  flex: 1;
+}
+
 
 body.sidebar-primary,
 body.page:not(.home) {
