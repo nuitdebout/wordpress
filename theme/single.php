@@ -25,7 +25,9 @@
             </div>
         </div>
 
-        <?php get_template_part('templates/entry-taxonomies'); ?>
+		<?php get_template_part('templates/entry-taxonomies'); ?>
+
+		<?php wp_link_pages( ); ?>
     </div>
 </article>
 
