@@ -11,7 +11,7 @@
             <?php the_title() ?>
         </h1>
 
-        <div class="entry-content">
+        <div class="entry-content user-content">
             <?php the_content(); ?>
         </div>
 

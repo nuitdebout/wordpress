@@ -1,0 +1,18 @@
+/**
+ * This file contains the style of all content enter by the user in the admin interface
+ * This is the html where we have no control on the class applied
+ *
+ * Indeally, this is the only place where you can set style directly on tag name
+ */
+
+.user-content {
+
+  table {
+    @extend .table;
+  }
+
+
+  h1 {
+    @include title-font;
+  }
+}
