@@ -195,7 +195,6 @@
 .navbar-nuitdebout-bloginfo {
   position: relative;
   display: inline-block;
-  white-space: nowrap;
 
   font-family: 'CommuneB1San31';
   text-transform: uppercase;
@@ -209,6 +208,10 @@
   color: #111;
   &:before {
     content: '//';
+  }
+
+  @media (min-width: $screen-sm-min) {
+    white-space: nowrap;
   }
 }
 

@@ -11,8 +11,12 @@
     @extend .table;
   }
 
-
   h1 {
     @include title-font;
+  }
+
+  figure,
+  img {
+    max-width: 100%;
   }
 }
