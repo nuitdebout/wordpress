@@ -16,7 +16,7 @@ use NuitDebout\Wordpress\Cities;
 <?php
 $cities_by_letter = [];
 foreach ($cities as $city) {
-    $letter = $city['name'][0];
+    $letter = $city->name[0];
     // hack for the É
     $letter = htmlentities($letter) === '' ? 'E' : $letter;
 
@@ -87,7 +87,7 @@ foreach ($cities as $city) {
 					<div class="col-xs-12 col-sm-4">
 						<ul class="list-unstyled">
 						<?php foreach ($column as $city) : ?>
-							<li><a href="<?php echo get_page_link($city['page_id']) ?>" data-page-id="<?php echo $city['page_id'] ?>"><?php echo $city['name'] ?></a></li>
+							<li><a href="<?php echo get_page_link($city->id) ?>" data-page-id="<?php echo $city->id ?>"><?php echo $city->name ?></a></li>
 						<?php endforeach; ?>
 						</ul>
 					</div>

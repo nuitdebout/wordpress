@@ -223,7 +223,7 @@ function nuitdebout_getDate(element) {
           $loader.show();
           var data = {
             'action': 'cities_api_render_city_details',
-            'id': city.page_id
+            'id': city.id
           };
           $.get(WP.ajaxURL, data).then(function(html) {
             $loader.hide();
@@ -239,7 +239,7 @@ function nuitdebout_getDate(element) {
         $container.find('[data-page-id]').on('click', function(e) {
           e.preventDefault();
           var city = {
-            page_id: $(this).data('page-id')
+            id: $(this).data('page-id')
           };
           renderCity(city);
         });

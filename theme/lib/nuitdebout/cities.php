@@ -2,60 +2,120 @@
 
 namespace NuitDebout\Wordpress\Cities;
 
-function get_commissions($city_page)
+/* Classes */
+
+class City implements \JsonSerializable
 {
-	$commissions = [];
-	if ($commission_pages = get_pages(['child_of' => $city_page->ID, 'post_type' => 'page', 'post_status' => 'publish'])) {
-	    foreach ($commission_pages as $commission_page) {
-	    	$commissions[] = $commission_page; // hydrate_city($city_page);
+	public $id;
+	public $slug;
+	public $name;
+	public $officia_website;
+	public $facebook_url;
+	public $twitter_url;
+	public $wiki_url;
+	public $coordinates;
+	public $gathering_details;
+	public $other_links;
+
+	private $commissions_loaded = false;
+	private $commissions = [];
+	private $page;
+
+	public function __construct($page)
+	{
+		$this->page = $page;
+
+		$this->id = $page->ID;
+		$this->slug = $page->post_name;
+		$this->name = $page->post_title;
+
+		$fields = get_fields($page->ID);
+
+		$other_links = [];
+		if (!empty($fields['city_external_links'])) {
+			$other_links = explode(PHP_EOL, $fields['city_external_links']);
+		}
+
+		$this->official_website = $fields['city_official_website'];
+		$this->facebook_url = $fields['facebook_page_url'];
+		$this->twitter_url = $fields['twitter_page_url'];
+		$this->wiki_url = $fields['wiki_page_url'];
+		$this->coordinates = $fields['city_coordinates'];
+		$this->gathering_details = $fields['city_gathering_details'];
+		$this->other_links = $other_links;
+	}
+
+	public function hasCommissions()
+	{
+		return !empty($this->getCommissions());
+	}
+
+	public function getCommissions()
+	{
+		if (!$this->commissions_loaded) {
+			if ($pages = get_pages(['child_of' => $this->page->ID, 'post_type' => 'page', 'post_status' => 'publish'])) {
+			    foreach ($pages as $page) {
+			    	$this->commissions[] = new Commission($page);
+			    }
+			}
+			$this->commissions_loaded = true;
+		}
+
+		return $this->commissions;
+	}
+
+	public function __get($name)
+	{
+	    switch ($name) {
+	    	case 'commissions':
+	    		return $this->getCommissions();
+	    		break;
 	    }
 	}
 
-	return $commissions;
-}
-
-function hydrate_commission($commission_page)
-{
-	return [
-		'name' => get_field('commission_name', $commission_page->ID),
-		'contact_email' => get_field('contact_email', $commission_page->ID),
-		'goals' => get_field('commission_goals', $commission_page->ID),
-	];
-}
-
-function hydrate_city($city_page)
-{
-	$fields = get_fields($city_page->ID);
-
-	$other_links = [];
-	if (!empty($fields['city_external_links'])) {
-		$other_links = explode(PHP_EOL, $fields['city_external_links']);
+	public function jsonSerialize()
+	{
+		return [
+			'id' => $this->id,
+			'name' => $this->name,
+			'official_website' => $this->official_website,
+			'facebook_url' => $this->facebook_url,
+			'twitter_url' => $this->twitter_url,
+			'wiki_url' => $this->wiki_url,
+			'coordinates' => $this->coordinates,
+			'gathering_details' => $this->gathering_details,
+			'other_links' => $this->other_links,
+		];
 	}
-
-	$commissions = array_map(function($commission_page) {
-		return hydrate_commission($commission_page);
-	}, get_commissions($city_page)) ;
-
-	return [
-		'name' => $city_page->post_title,
-		'official_website' => $fields['city_official_website'],
-		'facebook_url' => $fields['facebook_page_url'],
-		'twitter_url' => $fields['twitter_page_url'],
-		'wiki_url' => $fields['wiki_page_url'],
-		'coordinates' => $fields['city_coordinates'],
-		'gathering_details' => $fields['city_gathering_details'],
-		'other_links' => $other_links,
-		'page_id' => $city_page->ID,
-		'commissions' => $commissions,
-	];
 }
+
+class Commission
+{
+	public $name;
+	public $contact_email;
+	public $goals;
+
+	public function __construct($page)
+	{
+		$this->page = $page;
+
+		$this->id = $page->ID;
+		$this->slug = $page->post_name;
+		$this->name = $page->post_title;
+
+		$this->contact_email = get_field('contact_email', $page->ID);
+		$this->goals = get_field('commission_goals', $page->ID);
+	}
+}
+
+/* Functions */
 
 function get_cities()
 {
 	$cities = [];
 	if ($city_pages = get_pages(['child_of' => 17, 'post_type' => 'page', 'post_status' => 'publish'])) {
 	    foreach ($city_pages as $city_page) {
-	    	$cities[] = hydrate_city($city_page);
+	    	$cities[] = new City($city_page);
 	    }
 	}
 
@@ -65,12 +125,15 @@ function get_cities()
 function find_city($page_id)
 {
 	if ($city_page = get_page($page_id)) {
+		$city = new City($city_page);
 
-		return hydrate_city($city_page);
+		return $city;
 	}
 
 	return null;
 }
+
+/* Ajax actions */
 
 function ajax_search_action()
 {
