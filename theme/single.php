@@ -15,6 +15,19 @@
             <?php the_content(); ?>
         </div>
 
+		<div class="post-pagination">
+			<?php bootstrap_link_pages([
+				'before' => '<ul class="pagination">',
+				'after' => '</ul>',
+				'before_link' => '<li>',
+				'after_link' => '</li>',
+				'current_before' => '<li class="active">',
+				'current_after' => '</li>',
+				'previouspagelink' => '&laquo;',
+				'nextpagelink' => '&raquo;'
+			]); ?>
+		</div>
+
         <div class="share-btns">
             <div class="center-block">
                 <div class="fb-share-button" data-layout="button_count"></div>
@@ -26,8 +39,6 @@
         </div>
 
 		<?php get_template_part('templates/entry-taxonomies'); ?>
-
-		<?php wp_link_pages( ); ?>
     </div>
 </article>
 
