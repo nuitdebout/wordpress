@@ -3,11 +3,25 @@
   sudo: yes
   apt:  pkg=mysql-server state=latest
 
+# This is required to be able to access to the MySQL server
+# from the guest machine.
+- name: change MySQL server bind address
+  shell: sudo sed -i 's/bind-address.*/bind-address = 0.0.0.0/' /etc/mysql/my.cnf
+  notify: restart mysql
+
 - name: install python mysql package #required for mysql_db tasks
   apt: name=python-mysqldb state=present
 
 - name: add database user
   mysql_user:
+    name: "{{database.user}}"
+    password: "{{database.password}}"
+    priv: "*.*:ALL,GRANT"
+    state: present
+
+- name: add database user for guest machine
+  mysql_user:
+    host: "192.168.%"
     name: "{{database.user}}"
     password: "{{database.password}}"
     priv: "*.*:ALL"

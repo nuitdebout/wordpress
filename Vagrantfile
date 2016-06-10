@@ -25,6 +25,10 @@ Vagrant.configure("2") do |config|
         v.customize [ "modifyvm", :id, "--memory", 512 ]
     end
 
+    config.vm.provision :hosts do |provisioner|
+        provisioner.add_host '127.0.0.1', ['nuitdebout.dev']
+    end
+
     # Provision the box
     config.vm.provision :ansible do |ansible|
         ansible.extra_vars = { ansible_ssh_user: 'vagrant' }

@@ -40,6 +40,7 @@ Mot de passe : **urWnshZ)f0xYJCbPJ9**
 
 - Installer [VirtualBox](https://www.virtualbox.org/) & [Vagrant](https://docs.vagrantup.com/v2/installation/index.html)
 - Installer [Ansible](http://ansible.com) via les [Instruction d'installation](http://docs.ansible.com/intro_installation.html#installation).
+- Installer le plugin [vagrant-hosts](https://github.com/oscar-stack/vagrant-hosts)
 
 Ensuite il n'y a plus qu'a lancer la machine. Elle devrait installer wordpress et importer les données.
 ```
