@@ -76,6 +76,7 @@ body.single-post{
 
   @include card;
   padding: $padding-base;
+  margin: 0;
   margin-bottom: 30px;
 
   .post__header {

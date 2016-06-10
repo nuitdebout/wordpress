@@ -1,0 +1,11 @@
+.sidebar {
+  @include card;
+  margin: 30px 0;
+  padding: $padding-base;
+
+  @media (max-width: $screen-sm-max) {
+    .sidebar {
+      margin-top: 0;
+    }
+  }
+}
