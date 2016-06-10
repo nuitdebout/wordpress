@@ -42,12 +42,6 @@
   }
 }
 
-
-body.page-id-480 .section__content {
-  direction: rtl;
-}
-
-
 .city-post {
   h1, h2 {
     @include title-font();
@@ -69,9 +63,15 @@ body.page-id-480 .section__content {
     margin-bottom: 10px;
   }
 }
+
 body.single-post{
   background-color: $gray-lighter;
+  .sidebar {
+    @include card;
+    margin: 30px 0;
+  }
 }
+
 .post.post--single {
 
   @include card;
