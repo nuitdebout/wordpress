@@ -15,19 +15,23 @@ $exclude = [];
 	<div class="row">
 		<div class="col-md-8">
 
-			<div class="news-headlines">
+			<div class="news-headlines-container">
 				<?php while ($featured->have_posts()) : $featured->the_post(); $exclude[] = get_the_ID(); ?>
-				<a class="news-headlines__item news-headlines__item--first" style="background-image: url(<?php
+				<a class="news-headline news-headline--first" style="background-image: url(<?php
 	            the_post_thumbnail_url( 'large' ) ?>)"
 	               href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"
 	            >
-					<?php the_title(); ?>
+					<div class="news-headline__title">
+						<?php the_title(); ?>
+					</div>
 				</a>
 				<?php endwhile; ?>
 				<?php while ($important->have_posts()) : $important->the_post(); $exclude[] = get_the_ID(); ?>
-				<a class="news-headlines__item news-headlines__item--second" style="background-image: url(<?php the_post_thumbnail_url( 'large' ) ?>)"
+				<a class="news-headline news-headline--second" style="background-image: url(<?php the_post_thumbnail_url( 'large' ) ?>)"
 	                href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-	                <?php the_title(); ?>
+					<div class="news-headline__title">
+						<?php the_title(); ?>
+					</div>
 				</a>
 				<?php endwhile; ?>
 			</div>
