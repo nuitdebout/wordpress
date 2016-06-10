@@ -61,5 +61,6 @@
         - youtube-channel
         - display-posts-shortcode
         - instagram-feed
+        - category-posts
   roles:
     - wordpress
