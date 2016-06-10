@@ -40,7 +40,7 @@ if (is_front_page() && is_home()) {
 	<?php dynamic_sidebar('homepage-banner') ?>
 	<?php endif; ?>
 		<div class="wrap <?php echo $main_container_class ?>" role="document">
-			<div class="content row">
+			<div class="content">
 				<main class="main">
 					<?php include Wrapper\template_path(); ?>
 				</main><!-- /.main -->
