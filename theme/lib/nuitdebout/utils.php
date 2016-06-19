@@ -21,3 +21,11 @@ function getAttachmentThumb($id) {
 	$url = wp_get_attachment_image_src($thumb , [330, 180])[0];
 	return $url;
 }
+function attachment_search( $query ) {
+    if ( $query->is_search ) {
+       $query->set( 'post_type', array( 'post', 'attachment' ) );
+       $query->set( 'post_status', array( 'publish', 'inherit' ) );
+    }
+   return $query;
+}
+add_filter( 'pre_get_posts', 'attachment_search' );
