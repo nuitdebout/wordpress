@@ -17,7 +17,7 @@ use Roots\Sage\Assets;
 			 alt="Radio Debout" />
 		<div class="external-media-link__title">Radio Debout</div>
 	</a>
-	<a class="external-media-link" href="https://gazettedebout.org/" target="_blank">
+	<a class="external-media-link" href="http://gazettedebout.fr/" target="_blank">
 		<img class="external-media-link__logo" src="<?php echo Assets\asset_path('images/gazettedebout.png') ?>"
 			 alt="Cazette Debout" />
 		<div class="external-media-link__title">Gazette Debout</div>
