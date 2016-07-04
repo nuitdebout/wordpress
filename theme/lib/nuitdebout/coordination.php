@@ -53,43 +53,61 @@ function get_spreadsheet_data()
 	}
 }
 
-function render_spreadsheet_table($attrs)
+function letter_to_col($letter)
 {
+	$ord = ord(strtolower($letter));
+
+	return $ord - 96;
+}
+
+function render_spreadsheet_table($atts)
+{
+	$atts = shortcode_atts([
+		'cols' => 'B,C,G',
+	], $atts, 'nd_coord_contacts');
+
+	$cols = explode(',', $atts['cols']);
+
 	$data = get_spreadsheet_data();
 
-	$commissions = [];
-
+	$headings = [];
 	foreach ($data as $rowNum => $row) {
-		if ($rowNum >= 3) {
-			$publicEmails = $row[7];
-			$publicEmails = explode(PHP_EOL, $publicEmails);
-			$commissions[] = [
-				'name' => $row[2],
-				'referent' => $row[3],
-				'public_emails' => $publicEmails,
-			];
+		if ($rowNum == 2) {
+			foreach ($cols as $col) {
+				$headings[] = $row[letter_to_col($col)];
+			}
 		}
 	}
 
-	$html = <<<EOF
+	$nl2br = ['D', 'E', 'F', 'G'];
+
+	$commissions = [];
+	foreach ($data as $rowNum => $row) {
+		if ($rowNum >= 3) {
+
+			$item = [];
+			foreach ($cols as $col) {
+				$value = $row[letter_to_col($col)];
+				if (in_array($col, $nl2br)) {
+					$value = nl2br($value);
+				}
+				$item[] = $value;
+			}
+
+			$commissions[] = $item;
+		}
+	}
+
+	$thead = '<thead><th>'.implode('</th><th>', $headings).'</th></thead>';
+
+	$html .= <<<EOF
 <div class="table-responsive">
 	<table class="table">
-		<thead>
-			<th>Nom</th>
-			<th>Référent</th>
-			<th>Emails</th>
-		</thead>
+		{$thead}
 		<tbody>
 EOF;
 	foreach ($commissions as $commission) {
-		$emails = implode('<br>', $commission['public_emails']);
-		$row = <<<EOF
-<tr>
-	<td>{$commission['name']}</td>
-	<td>{$commission['referent']}</td>
-	<td>{$emails}</td>
-</tr>
-EOF;
+		$row = '<tr><td>'.implode('</td><td>', $commission).'</td></tr>';
 		$html .= $row;
 	}
 	$html .= '</tbody></table></div>';
