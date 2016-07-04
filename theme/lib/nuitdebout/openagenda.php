@@ -110,7 +110,18 @@ function get_cities()
 
 function get_featured_events()
 {
-    return filter_featured(get_events_by_date(new \DateTime('now')));
+	$dates = [
+		new \DateTime('now'),
+		new \DateTime('+1 day'),
+		new \DateTime('+2 days'),
+	];
+
+	$events = [];
+	foreach ($dates as $date) {
+		$events = array_merge($events, get_events_by_date($date));
+	}
+
+    return filter_featured($events);
 }
 
 function has_featured_events()
