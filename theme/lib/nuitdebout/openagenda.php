@@ -96,14 +96,17 @@ function get_cities()
 	}
 
 	$cities = [];
+
 	foreach ($events as $event) {
 		$city = $event['city'];
-		$cities[] = $city;
+		if ($city != '') $cities[] = $city;
 	}
 
 	$cities = array_values(array_unique($cities));
 
 	sort($cities);
+
+	array_unshift($cities, get_default_city());
 
 	return $cities;
 }
@@ -154,6 +157,9 @@ function get_events_by_date(\DateTime $date)
 
 function filter_by_city(array $events, $city)
 {
+
+	if ($city == get_default_city()) return $events;
+
 	return array_values(array_filter($events, function($event) use ($city) {
 		return $event['city'] == $city;
 	}));
@@ -168,19 +174,60 @@ function filter_featured(array $events)
 
 function get_default_city()
 {
-	return 'Paris';
+	return 'Toutes les villes';
 }
 
 function get_dates()
 {
-	$dates = [
-		new \DateTime('now'),
-		new \DateTime('+1 day'),
-		new \DateTime('+2 days'),
-		new \DateTime('+3 days'),
-	];
 
-	return $dates;
+	$events = get_next_events();
+
+	$dates = [];
+
+	foreach ($events as $event) {
+
+		$date = get_next_timing($event);
+		$date = $date->format('Y-m-d');
+		array_push($dates, $date);
+
+	}
+
+	$dates = array_unique($dates);
+
+	$results = [];
+
+	foreach ($dates as $date) {
+
+		array_push($results, date_create_from_format('Y-m-d', $date));
+
+	}
+
+	return $results;
+}
+
+function get_next_events()
+{
+	global $client;
+
+	$now = new \DateTime('now');
+
+	$events = $client->getEvents([
+		'from' => $now->format('Y-m-d'),
+		'to' => date('Y-m-d', strtotime('+1 year'))
+	]);
+
+	usort($events, function($a, $b) use ($date) {
+		$next_timing_a = get_next_timing($a, $date);
+		$next_timing_b = get_next_timing($b, $date);
+
+		if ($next_timing_a === $next_timing_b) {
+			return 0;
+		}
+
+		return $next_timing_a < $next_timing_b ? -1 : 1;
+	});
+
+	return $events;
 }
 
 /* Wordpress actions */

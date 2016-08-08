@@ -7,6 +7,10 @@ $event_description = current($event['description']);
 
 <div class="agenda__event">
 	<div class="agenda__event-heading" role="tab" id="headingOne">
+	  	<div class="agenda__event-city">
+	  		<i class="ic-pin"></i>
+	  		<span><?php echo $event['city'] ?></span>
+	  	</div>
 	  	<div class="agenda__event-title">
 	        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#oa-event-<?php echo $event['uid'] ?>" aria-expanded="true" aria-controls="collapseOne" title="<?php echo $event_title ?>">
 				<strong>
