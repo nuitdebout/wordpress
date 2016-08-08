@@ -42,7 +42,7 @@ use NuitDebout\Wordpress\OpenAgenda;
 		<?php
 			$date = new \DateTime('now');
 		?>
-		<?php foreach (OpenAgenda\filter_by_city(OpenAgenda\get_events_by_date($date), 'Paris') as $event) : ?>
+		<?php foreach (OpenAgenda\get_events_by_date($date) as $event) : ?>
 			<?php include locate_template('templates/module-oaevent.php') ?>
 		<?php endforeach; ?>
 	</div>
