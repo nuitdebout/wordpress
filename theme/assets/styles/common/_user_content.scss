@@ -1,0 +1,66 @@
+/**
+ * This file contains the style of all content enter by the user in the admin interface
+ * This is the html where we have no control on the class applied
+ *
+ * Indeally, this is the only place where you can set style directly on tag name
+ */
+
+.user-content {
+
+  table {
+    @extend .table;
+  }
+
+  h1 {
+    @include title-font;
+  }
+
+  figure,
+  img {
+    max-width: 100%;
+  }
+
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+
+    .gallery-item {
+      position: relative;
+      border: 1px solid white;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      &:hover .gallery-caption {
+        transform: translateY(0);
+      }
+    }
+
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+
+      white-space: nowrap;
+      background: rgba(255, 255, 255, .8);
+      width: 100%;
+
+      transition: transform .3s;
+      transform: translateY(100px);
+    }
+  }
+
+  @for $i from 1 through 10 {
+    .gallery-columns-#{$i} .gallery-item {
+      flex: 1 0 100%/$i;
+
+    }
+  }
+}

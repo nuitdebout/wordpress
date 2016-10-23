@@ -139,7 +139,8 @@ body.single-post{
 
 }
 
-article.post.format-standard {
+article.page.type-page,
+article.post {
   margin-bottom: 40px;
   header {
     display: table;
@@ -174,4 +175,8 @@ article.post.format-standard {
     border-bottom: 1px dashed $gray-lighter;
     padding: 30px 0 15px;
   }
+}
+
+.post-pagination {
+  text-align: center;
 }

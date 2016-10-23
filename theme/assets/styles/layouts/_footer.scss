@@ -3,6 +3,7 @@ $footer-font-color: #e4f7f7 !default;
 .footer {
   background-color: $footer-bg;
   color: $footer-font-color;
+  clear: both;
 
   .footer__main {
     @include make-row();
@@ -80,5 +81,5 @@ $footer-font-color: #e4f7f7 !default;
 
     }
   }
-  
+
 }

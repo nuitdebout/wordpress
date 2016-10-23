@@ -1,0 +1,26 @@
+---
+- name:          Test Unit site is installed
+  shell:         wp site list --path={{dir}} | grep {{site_name}}
+  register:      unit
+  changed_when:  false
+  ignore_errors: True
+
+- name:     Create unit site
+  when:     unit|failed
+  shell:    wp site create  --path={{dir}} --slug={{site_name}} --title="{{site_title}}"
+
+- name:     Empty the site
+  when:     unit|failed
+  shell:    wp site empty --path={{dir}} --yes --url={{site}}
+
+- name:     Active the theme
+  when:     unit|failed
+  shell:    wp theme activate {{theme}} --path={{dir}} --url={{site}}
+
+- name:     Download testing datas
+  when:     unit|failed
+  get_url:  url=https://wpcom-themes.svn.automattic.com/demo/theme-unit-test-data.xml dest=~/testing-data.xml
+
+- name:     Import testing datas
+  when:     unit|failed
+  shell:    wp import --path={{dir}} --url={{site}} --authors=create ~/testing-data.xml

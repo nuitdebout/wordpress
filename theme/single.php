@@ -11,9 +11,22 @@
             <?php the_title() ?>
         </h1>
 
-        <div class="entry-content">
+        <div class="entry-content user-content">
             <?php the_content(); ?>
         </div>
+
+		<div class="post-pagination">
+			<?php bootstrap_link_pages([
+				'before' => '<ul class="pagination">',
+				'after' => '</ul>',
+				'before_link' => '<li>',
+				'after_link' => '</li>',
+				'current_before' => '<li class="active">',
+				'current_after' => '</li>',
+				'previouspagelink' => '&laquo;',
+				'nextpagelink' => '&raquo;'
+			]); ?>
+		</div>
 
         <div class="share-btns">
             <div class="center-block">
@@ -25,7 +38,7 @@
             </div>
         </div>
 
-        <?php get_template_part('templates/entry-taxonomies'); ?>
+		<?php get_template_part('templates/entry-taxonomies'); ?>
     </div>
 </article>
 

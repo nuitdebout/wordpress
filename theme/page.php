@@ -8,7 +8,7 @@
 		<div class="page__thumbnail"><?php the_post_thumbnail() ?></div>
 		<?php endif; ?>
 	</header>
-	<div class="page__content">
+	<div class="page__content user-content">
 	<?php get_template_part('templates/content', 'page'); ?>
 	</div>
 </article>

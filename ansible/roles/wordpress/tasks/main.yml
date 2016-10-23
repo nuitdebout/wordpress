@@ -9,3 +9,11 @@
     dir: /var/www/nuitdebout
     theme: nuitdebout
     theme_dir: /vagrant/theme
+
+- include: unit.yml
+  vars:
+    dir: /var/www/nuitdebout
+    site_name: unit
+    site: nuitdebout.dev/unit
+    site_title: A very log name for the unit test site to test if all is ok
+    theme: nuitdebout
